@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+ETC-UPDATE(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+ETC-UPDATE(1)</td>
+<td class="head-vol">
+Portage</td>
+<td class="head-rtitle">
+ETC-UPDATE(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> etc-update - handle configuration file updates</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>etc-update</b> [ <i>options</i>] [<i>--automode &lt;mode&gt;</i>] [<i>paths to scan</i>]</div>
+<div class="section">
+<h1>DESCRIPTION</h1>  <i>etc-update</i> is supposed to be run after merging a new package to see if there are updates to the configuration files.  If a new configuration file will override an old one,  <i>etc-update</i> will prompt the user for a decision.<div class="spacer">
+</div>
+<i>etc-update</i> will check all directories specified on the command line.  If no paths are given, then the  <i>CONFIG_PROTECT</i> variable will be used.  All config files found in  <i>CONFIG_PROTECT_MASK</i> will automatically be updated for you by  <i>etc-update</i>. See  <b>make.conf</b>(5) for more information.<div class="spacer">
+</div>
+<i>etc-update</i> respects the normal <i>PORTAGE_CONFIGROOT</i> and  <i>EROOT</i> variables for finding the aforementioned config protect variables.</div>
+<div class="section">
+<h1>OPTIONS</h1><dl>
+<dt>
+<b>-d</b>, <b>--debug</b></dt>
+<dd>
+Run with shell tracing enabled.</dd>
+</dl>
+<dl>
+<dt>
+<b>-h</b>, <b>--help</b></dt>
+<dd>
+Surprisingly, show the help output.</dd>
+</dl>
+<dl>
+<dt>
+<b>-p</b>, <b>--preen</b></dt>
+<dd>
+Automerge trivial changes only and quit.</dd>
+</dl>
+<dl>
+<dt>
+<b>-v</b>, <b>--verbose</b></dt>
+<dd>
+Show settings and important decision info while running.</dd>
+</dl>
+<dl>
+<dt>
+<b>--automode &lt;mode&gt;</b></dt>
+<dd>
+Select one of the automatic merge modes.  Valid modes are: -3 -5 -7 -9. See the  <i>--help</i> text for more details.</dd>
+</dl>
+</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Please report bugs via http://bugs.gentoo.org/</div>
+<div class="section">
+<h1>AUTHORS</h1><br/>
+Jochem Kossen and Leo Lipelis<br/>
+Karl Trygve Kalleberg &lt;karltk@gentoo.org&gt;<br/>
+Mike Frysinger &lt;vapier@gentoo.org&gt;<br/>
+</div>
+<div class="section">
+<h1>FILES</h1><dl>
+<dt>
+<b>/etc/etc-update.conf</b></dt>
+<dd>
+Configuration settings for <i>etc-update</i> are stored here.</dd>
+</dl>
+</div>
+<div class="section">
+<h1>SEE ALSO</h1> <b>dispatch-conf</b>(1), <b>make.conf</b>(5)</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+Mar 2012</td>
+<td class="foot-os">
+Portage 2.2.20</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

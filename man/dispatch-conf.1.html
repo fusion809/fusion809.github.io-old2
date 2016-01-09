@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+DISPATCH-CONF(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+DISPATCH-CONF(1)</td>
+<td class="head-vol">
+Portage</td>
+<td class="head-rtitle">
+DISPATCH-CONF(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> dispatch-conf - Sanely update configuration files after emerging new packages</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>dispatch-conf</b></div>
+<div class="section">
+<h1>DESCRIPTION</h1>  <i>dispatch-conf</i> is designed to be run after merging new packages in order to see if there are updates to the configuration files. If a new configuration file will overwrite an old one,  <i>dispatch-conf</i> will prompt the user for a decision about how to resolve the discrepancy. Advantages of  <i>dispatch-conf</i> include easy rollback (changes to config files are stored either using patches or rcs) and the ability to automatically update config files that the user has never modified or that differ from the current version only in CVS cruft or white space.<div style="height: 1.00em;">
+&#160;</div>
+<i>dispatch-conf</i> will check all directories in the <i>CONFIG_PROTECT</i> variable.  All config files found in  <i>CONFIG_PROTECT_MASK</i> will automatically be updated for you by  <i>dispatch-conf</i>.  See  <b>make.conf</b>(5) for more information.</div>
+<div class="section">
+<h1>OPTIONS</h1><dl>
+<dt>
+None.</dt>
+<dd>
+</dd>
+</dl>
+</div>
+<div class="section">
+<h1>USAGE</h1>  <i>dispatch-conf</i> must be run as root, since the config files to be replaced are generally owned by root.  Before running  <i>dispatch-conf</i> for the first time the settings in  <b>/etc/dispatch-conf.conf</b> should be edited and the archive directory specified in  <b>/etc/dispatch-conf.conf</b> will need to be created.  All changes to config files will be saved in the archive directory either as patches or using rcs, making restoration to an earlier version rather simple.<div style="height: 1.00em;">
+&#160;</div>
+When <i>dispatch-conf</i> finds a config file that has a new update the user is provided with a menu of options for how to handle the update:<dl>
+<dt>
+<b>u</b></dt>
+<dd>
+Update (replace) the current config file with the new config file and continue.</dd>
+</dl>
+<dl>
+<dt>
+<b>z</b></dt>
+<dd>
+Zap (delete) the new config file and continue.</dd>
+</dl>
+<dl>
+<dt>
+<b>n</b></dt>
+<dd>
+Skip to the next config file, leaving both the original config file and any  <i>CONFIG_PROTECT</i>ed files.</dd>
+</dl>
+<dl>
+<dt>
+<b>e</b></dt>
+<dd>
+Edit the new config file, using the editor defined in <i>EDITOR</i>.</dd>
+</dl>
+<dl>
+<dt>
+<b>m</b></dt>
+<dd>
+Interactively merge the current and new config files.</dd>
+</dl>
+<dl>
+<dt>
+<b>l</b></dt>
+<dd>
+Look at the differences between the pre-merged and merged config files.</dd>
+</dl>
+<dl>
+<dt>
+<b>t</b></dt>
+<dd>
+Toggle between the merged and pre-merged config files (in terms of which should be installed using the  <b>u</b> command).</dd>
+</dl>
+<dl>
+<dt>
+<b>h</b></dt>
+<dd>
+Display a help screen.</dd>
+</dl>
+<dl>
+<dt>
+<b>q</b></dt>
+<dd>
+Quit <i>dispatch-conf</i>.</dd>
+</dl>
+</div>
+<div class="section">
+<h1>FILE MODES</h1>  <b>WARNING:</b> When <b>/etc/dispatch-conf.conf</b> is configured to use  <b>rcs</b>(1), read and execute permissions of archived files may be inherited from the first check in of a working file, as documented in the  <b>ci</b>(1) man page. This means that even if the permissions of the working file have since changed, the older permissions of the first check in may be inherited. As mentioned in the  <b>ci</b>(1) man page, users can control access to RCS files by setting the permissions of the directory containing the files.</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Please report bugs via http://bugs.gentoo.org/</div>
+<div class="section">
+<h1>AUTHORS</h1><br/>
+Jeremy Wohl<br/>
+Karl Trygve Kalleberg &lt;karltk@gentoo.org&gt;<br/>
+Mike Frysinger &lt;vapier@gentoo.org&gt;<br/>
+Grant Goodyear &lt;g2boojum@gentoo.org&gt;<br/>
+</div>
+<div class="section">
+<h1>FILES</h1><dl>
+<dt>
+<b>/etc/dispatch-conf.conf</b></dt>
+<dd>
+Configuration settings for <i>dispatch-conf</i> are stored here.</dd>
+</dl>
+</div>
+<div class="section">
+<h1>SEE ALSO</h1> <b>make.conf</b>(5), <b>ci</b>(1), <b>etc-update</b>(1), <b>rcs</b>(1)</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+Jan 2011</td>
+<td class="foot-os">
+Portage 2.2.20</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

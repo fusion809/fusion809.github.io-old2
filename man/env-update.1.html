@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+ENV-UPDATE(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+ENV-UPDATE(1)</td>
+<td class="head-vol">
+Portage</td>
+<td class="head-rtitle">
+ENV-UPDATE(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> env-update - updates environment settings automatically</div>
+<div class="section">
+<h1>SYNOPSIS</h1>  <b>env-update</b> <i>[options]</i></div>
+<div class="section">
+<h1>DESCRIPTION</h1> <b>env-update</b> reads the files in  <i>/etc/env.d</i> and automatically generates  <i>/etc/profile.env</i> and <i>/etc/ld.so.conf</i>.  Then <b>ldconfig</b>(8) is run to update  <i>/etc/ld.so.cache</i>.  <b>env-update</b> is run by  <b>emerge</b>(1) automatically after each package merge.  Also, if you make changes to  <i>/etc/env.d</i>, you should run <b>env-update</b> yourself for changes to take effect immediately.  Note that this would only affect new processes.  In order for the changes to affect your active shell, you will probably have to run  <i>source /etc/profile</i> first.</div>
+<div class="section">
+<h1>OPTIONS</h1><dl>
+<dt>
+<b>--no-ldconfig</b></dt>
+<dd>
+Do not run <b>ldconfig</b> (and thus skip rebuilding the <i>ld.so.cache</i>, etc...).</dd>
+</dl>
+</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Please report bugs via http://bugs.gentoo.org/</div>
+<div class="section">
+<h1>AUTHORS</h1> Daniel Robbins &lt;drobbins@gentoo.org&gt;</div>
+<div class="section">
+<h1>SEE ALSO</h1> <b>emerge</b>(1), <b>ldconfig</b>(8)</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+Aug 2008</td>
+<td class="foot-os">
+Portage 2.2.20</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

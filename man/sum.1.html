@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+SUM(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+SUM(1)</td>
+<td class="head-vol">
+User Commands</td>
+<td class="head-rtitle">
+SUM(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> sum - checksum and count the blocks in a file</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>sum</b> [ <i>OPTION</i>]... [<i>FILE</i>]...</div>
+<div class="section">
+<h1>DESCRIPTION</h1> Print checksum and block counts for each FILE.<div class="spacer">
+</div>
+With no FILE, or when FILE is -, read standard input.<dl>
+<dt>
+<b>-r</b></dt>
+<dd>
+use BSD sum algorithm, use 1K blocks</dd>
+</dl>
+<dl>
+<dt>
+<b>-s</b>, <b>--sysv</b></dt>
+<dd>
+use System V sum algorithm, use 512 bytes blocks</dd>
+</dl>
+<dl>
+<dt>
+<b>--help</b></dt>
+<dd>
+display this help and exit</dd>
+</dl>
+<dl>
+<dt>
+<b>--version</b></dt>
+<dd>
+output version information and exit</dd>
+</dl>
+</div>
+<div class="section">
+<h1>AUTHOR</h1> Written by Kayvan Aghaiepour and David MacKenzie.</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;<div style="height: 0.00em;">
+&#160;</div>
+Report sum translation bugs to &lt;http://translationproject.org/team/&gt;</div>
+<div class="section">
+<h1>COPYRIGHT</h1> Copyright &#169; 2015 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;.<div style="height: 0.00em;">
+&#160;</div>
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.</div>
+<div class="section">
+<h1>SEE ALSO</h1> Full documentation at: &lt;http://www.gnu.org/software/coreutils/sum&gt;<div style="height: 0.00em;">
+&#160;</div>
+or available locally via: info '(coreutils) sum invocation'</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+July 2015</td>
+<td class="foot-os">
+GNU coreutils 8.24</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

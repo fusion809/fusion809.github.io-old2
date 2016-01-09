@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+ESHOWKW(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+ESHOWKW(1)</td>
+<td class="head-vol">
+</td>
+<td class="head-rtitle">
+ESHOWKW(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> eshowkw - Gentoo: Tool to package keywords</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>eshowkw</b> [OPTIONS] [--] [package [package ...]]</div>
+<div class="section">
+<h1>DESCRIPTION</h1> Display keywords for specified package(s) or for package that is in the current working directory.<div style="height: 1.00em;">
+&#160;</div>
+</div>
+<div class="section">
+<h1>OPTIONS</h1><dl>
+<dt>
+<b>package</b></dt>
+<dd>
+The packages to check. (The default is to read ebuilds in the current directory)</dd>
+</dl>
+<dl>
+<dt>
+<b>-h | --help</b></dt>
+<dd>
+Print usage.</dd>
+</dl>
+<dl>
+<dt>
+<b>-v | --version</b></dt>
+<dd>
+Show version and exit.</dd>
+</dl>
+<dl>
+<dt>
+<b>-a=ARCH[,ARCH ...] | --arch=ARCH[,ARCH ...]</b></dt>
+<dd>
+Display only specified architectures.</dd>
+</dl>
+<dl>
+<dt>
+<b>-A {top,bottom} | --align {top,bottom}</b></dt>
+<dd>
+Specify alignment for descriptions. (default: bottom)</dd>
+</dl>
+<dl>
+<dt>
+<b>-T {archlist,versionlist} | --top-position {archlist,versionlist}</b></dt>
+<dd>
+Specify which fields we want to have in top listing. (default: archlist)</dd>
+</dl>
+<dl>
+<dt>
+<b>-B | --bold</b></dt>
+<dd>
+Print out each other column in bold for easier visual separation. (default: False)</dd>
+</dl>
+<dl>
+<dt>
+<b>-C | --color</b></dt>
+<dd>
+Force colored output (default: False)</dd>
+</dl>
+<dl>
+<dt>
+<b>-O | --overlays</b></dt>
+<dd>
+Search overlays (default: False)</dd>
+</dl>
+<dl>
+<dt>
+<b>-P | --prefix</b></dt>
+<dd>
+Display prefix keywords in output. (default: False)</dd>
+</dl>
+<dl>
+<dt>
+<b>-S | --ignore-slot</b></dt>
+<dd>
+Treat slots as irelevant during detection of redundant packages. (default: False)</dd>
+</dl>
+</div>
+<div class="section">
+<h1>BUGS</h1> Report bugs to &lt;http://bugs.gentoo.org&gt;.</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+0.3.0.9-r2</td>
+<td class="foot-os">
+Tom&#225;&#353; Chv&#225;tal</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

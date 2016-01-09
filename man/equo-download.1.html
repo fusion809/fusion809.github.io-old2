@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+EQUO-DOWNLOAD(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+EQUO-DOWNLOAD(1)</td>
+<td class="head-vol">
+equo 1.0</td>
+<td class="head-rtitle">
+EQUO-DOWNLOAD(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> equo-download - download packages, essentially</div>
+<div class="section">
+<h1>SYNOPSIS</h1> equo download [-h] [--ask | --pretend] [--verbose] [--quiet] [--nodeps] [--onlydeps] [--norecursive] [--deep] [--relaxed] [--bdeps] [--multifetch {1,2,3,4,5,6,7,8,9,10}] &lt;package&gt; [&lt;package&gt; ...]</div>
+<div class="section">
+<h1>INTRODUCTION</h1> Download packages, essentially.</div>
+<div class="section">
+<h1>OPTIONS</h1> &quot;equo download&quot; supports the following options which alters its behaviour.<div class="subsection">
+<h2>POSITIONAL ARGUMENTS</h2>  <b>&lt;package&gt;</b><div style="margin-left: 4.00ex;">
+package name</div>
+</div>
+<div class="subsection">
+<h2>OPTIONAL ARGUMENTS</h2>  <b>--help</b><div style="margin-left: 4.00ex;">
+show this help message and exit</div>
+<div class="spacer">
+</div>
+<b>-a</b><div style="margin-left: 4.00ex;">
+ask before making any changes</div>
+<div class="spacer">
+</div>
+<b>-p</b><div style="margin-left: 4.00ex;">
+show what would be done</div>
+<div class="spacer">
+</div>
+<b>-v</b><div style="margin-left: 4.00ex;">
+verbose output</div>
+<div class="spacer">
+</div>
+<b>--quiet</b><div style="margin-left: 4.00ex;">
+quiet output</div>
+<div class="spacer">
+</div>
+<b>--nodeps</b><div style="margin-left: 4.00ex;">
+exclude package dependencies</div>
+<div class="spacer">
+</div>
+<b>-o</b><div style="margin-left: 4.00ex;">
+only include dependencies of selected packages</div>
+<div class="spacer">
+</div>
+<b>--norecursive</b><div style="margin-left: 4.00ex;">
+do not calculate dependencies recursively</div>
+<div class="spacer">
+</div>
+<b>--deep</b><div style="margin-left: 4.00ex;">
+include dependencies no longer needed</div>
+<div class="spacer">
+</div>
+<b>--relaxed</b><div style="margin-left: 4.00ex;">
+calculate dependencies relaxing constraints</div>
+<div class="spacer">
+</div>
+<b>--bdeps</b><div style="margin-left: 4.00ex;">
+include build-time dependencies</div>
+<div class="spacer">
+</div>
+<b>--multifetch</b><div style="margin-left: 4.00ex;">
+download multiple packages in parallel (max 10)</div>
+</div>
+</div>
+<div class="section">
+<h1>AUTHORS</h1> Fabio Erculiani (lxnay@sabayon.org)</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Report bugs to https://bugs.sabayon.org or directly to the author at lxnay@sabayon.org.</div>
+<div class="section">
+<h1>SEE ALSO</h1><div style="margin-left: 4.00ex;">
+<br/>
+equo(1), equo-source(1)<br/>
+</div>
+</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+11/12/2015</td>
+<td class="foot-os">
+equo 1.0</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

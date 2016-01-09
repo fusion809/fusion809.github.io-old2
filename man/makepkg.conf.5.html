@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+MAKEPKG.CONF(5)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+MAKEPKG.CONF(5)</td>
+<td class="head-vol">
+Pacman Manual</td>
+<td class="head-rtitle">
+MAKEPKG.CONF(5)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> makepkg.conf - makepkg configuration file</div>
+<div class="section">
+<h1>SYNOPSIS</h1> /etc/makepkg.conf, ~/.makepkg.conf</div>
+<div class="section">
+<h1>DESCRIPTION</h1> Configuration options for makekpg are stored in makepkg.conf. This file is sourced, so you can include any special compiler flags you wish to use. This is helpful for building for different architectures, or with different optimizations. However, only the variables described below are exported to the build environment.<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+<div style="height: 0.00em;">
+&#160;</div>
+<b>Note</b><div style="height: 0.00em;">
+&#160;</div>
+<div style="height: 0.00em;">
+&#160;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+This does not guarantee that all package Makefiles will use your exported variables. Some of them are non-standard.<div style="height: 0.50em;">
+&#160;</div>
+</div>
+<div style="height: 1.00em;">
+&#160;</div>
+The default file is fairly well commented, so it may be easiest to simply follow directions given there for customization.</div>
+<div class="section">
+<h1>OPTIONS</h1>  <b>DLAGENTS=(</b>'protocol::/path/to/command [options]' ...<b>)</b><div style="margin-left: 4.00ex;">
+Sets the download agents used to fetch source files specified with a URL in the  <b>PKGBUILD</b>(5) file. Options can be specified for each command as well, and any protocol can have a download agent. Several examples are provided in the default makepkg.conf.<div style="height: 1.00em;">
+&#160;</div>
+If present, %u will be replaced with the download URL. Otherwise, the download URL will be placed on the end of the command. If present, %o will be replaced with the local filename, plus a &#8220;.part&#8221; extension, which allows makepkg to handle resuming file downloads.</div>
+<div class="spacer">
+</div>
+<b>CARCH=</b>&quot;carch&quot;<div style="margin-left: 4.00ex;">
+Specifies your computer architecture; possible values include such things as &#8220;i686&#8221;, &#8220;x86_64&#8221;, &#8220;ppc&#8221;, etc. This should be automatically set on installation.</div>
+<div class="spacer">
+</div>
+<b>CHOST=</b>&quot;chost&quot;<div style="margin-left: 4.00ex;">
+A string such as &#8220;i686-pc-linux-gnu&#8221;, do not touch unless you know what you are doing. This can be commented out by most users if desired.</div>
+<div class="spacer">
+</div>
+<b>CFLAGS=</b>&quot;cflags&quot;<div style="margin-left: 4.00ex;">
+Flags used for the C compiler. This is a key part to the use of makepkg. Usually several options are specified, and the most common string resembles something like this: &#8220;-march=i686 -O2 -pipe&#8221;. Another useful option may be -mcpu in place of -march. Read gcc(1) for more details on the wide variety of compiler flags available.</div>
+<div class="spacer">
+</div>
+<b>CXXFLAGS=</b>&quot;cxxflags&quot;<div style="margin-left: 4.00ex;">
+Flags used for the C++ compiler; see CFLAGS for more info.</div>
+<div class="spacer">
+</div>
+<b>LDFLAGS=</b>&quot;ldflags&quot;<div style="margin-left: 4.00ex;">
+Flags used for the linker. Several options may be specified with common usage resembling &#8220;-Wl,--hash-style=gnu&#8221;. Read ld(1) for more details on available linker flags.</div>
+<div class="spacer">
+</div>
+<b>MAKEFLAGS=</b>&quot;makeflags&quot;<div style="margin-left: 4.00ex;">
+This is often used to set the number of jobs used, for example, -j2. Other flags that make accepts can also be passed.</div>
+<div class="spacer">
+</div>
+<b>BUILDENV=(</b>fakeroot !distcc color !ccache check !sign<b>)</b><div style="margin-left: 4.00ex;">
+This array contains options that affect the build environment, the defaults are shown here. All options should always be left in the array; to enable or disable an option simply remove or place an &#8220;!&#8221; at the front of the option. Each works as follows:<div class="spacer">
+</div>
+<b>fakeroot</b><div style="margin-left: 4.00ex;">
+Allow building packages as a non-root user. This is highly recommended.</div>
+<div class="spacer">
+</div>
+<b>distcc</b><div style="margin-left: 4.00ex;">
+Use the distributed C/C++/ObjC compiler to spread compilation among multiple machines. If this is enabled, DISTCC_HOSTS must be specified as well.</div>
+<div class="spacer">
+</div>
+<b>color</b><div style="margin-left: 4.00ex;">
+Colorize output messages, making output easier to read.</div>
+<div class="spacer">
+</div>
+<b>ccache</b><div style="margin-left: 4.00ex;">
+Use ccache to cache compilation by default. This allows for faster compiles if you are continuously recompiling the same packages. It can be disabled for individual packages by placing !ccache in the PKGBUILD options array.</div>
+<div class="spacer">
+</div>
+<b>check</b><div style="margin-left: 4.00ex;">
+Run the check() function if present in the PKGBUILD. This can be enabled or disabled for individual packages through the use of makepkg&#8217;s  <i>--check</i> and  <i>--nocheck</i> options respectively.</div>
+<div class="spacer">
+</div>
+<b>sign</b><div style="margin-left: 4.00ex;">
+Generate a PGP signature file using GnuPG. This will execute gpg --detach-sign --use-agent on the built package to generate a detached signature file, using the GPG agent if it is available. The signature file will be the entire filename of the package with a &#8220;.sig&#8221; extension.</div>
+</div>
+<div class="spacer">
+</div>
+<b>DISTCC_HOSTS=</b>&quot;host1 ...&quot;<div style="margin-left: 4.00ex;">
+If using DistCC, this is used to specify a space-delimited list of hosts running in the DistCC cluster. In addition, you will want to modify your MAKEFLAGS.</div>
+<div class="spacer">
+</div>
+<b>BUILDDIR=</b>&quot;/path/to/folder&quot;<div style="margin-left: 4.00ex;">
+If this value is not set, packages will by default be built in subdirectories of the directory that makepkg is called from. This option allows setting the build location to another folder. Incorrect use of $startdir in a PKGBUILD may cause building with this option to fail.</div>
+<div class="spacer">
+</div>
+<b>GPGKEY=</b>&quot;&quot;<div style="margin-left: 4.00ex;">
+Specify a key to use for gpg signing instead of the default key in the keyring. Can be overridden with makepkg&#8217;s  <i>--key</i> option.</div>
+<div class="spacer">
+</div>
+<b>OPTIONS=(</b>strip docs libtool emptydirs zipman purge !upx<b>)</b><div style="margin-left: 4.00ex;">
+This array contains options that affect the default packaging. They are equivalent to options that can be placed in the PKGBUILD; the defaults are shown here. All options should always be left in the array; to enable or disable an option simply remove or place an &#8220;!&#8221; at the front of the option. Each works as follows:<div class="spacer">
+</div>
+<b>strip</b><div style="margin-left: 4.00ex;">
+Strip symbols from binaries and libraries. If you frequently use a debugger on programs or libraries, it may be helpful to disable this option.</div>
+<div class="spacer">
+</div>
+<b>docs</b><div style="margin-left: 4.00ex;">
+Save doc directories. If you wish to delete doc directories, specify !docs in the array. The directories affected are specified by the DOC_DIRS variable.</div>
+<div class="spacer">
+</div>
+<b>libtool</b><div style="margin-left: 4.00ex;">
+Leave libtool (.la) files in packages. Specify !libtool to remove them.</div>
+<div class="spacer">
+</div>
+<b>emptydirs</b><div style="margin-left: 4.00ex;">
+Leave empty directories in packages.</div>
+<div class="spacer">
+</div>
+<b>zipman</b><div style="margin-left: 4.00ex;">
+Compress manual (man and info) pages with gzip. The directories affected are specified by the MAN_DIRS variable.</div>
+<div class="spacer">
+</div>
+<b>purge</b><div style="margin-left: 4.00ex;">
+Remove files specified by the PURGE_TARGETS variable from the package.</div>
+<div class="spacer">
+</div>
+<b>upx</b><div style="margin-left: 4.00ex;">
+Compress binary executable files using UPX. Additional options can be passed to UPX by specifying the UPXFLAGS variable.</div>
+</div>
+<div class="spacer">
+</div>
+<b>INTEGRITY_CHECK=(</b>check1 ...<b>)</b><div style="margin-left: 4.00ex;">
+File integrity checks to use. Multiple checks may be specified; this affects both generation and checking. The current valid options are: md5, sha1, sha256, sha384, and sha512.</div>
+<div class="spacer">
+</div>
+<b>STRIP_BINARIES=</b>&quot;--strip-all&quot;<div style="margin-left: 4.00ex;">
+Options to be used when stripping binaries. See  <b>strip</b>(1) for details.</div>
+<div class="spacer">
+</div>
+<b>STRIP_SHARED=</b>&quot;--strip-unneeded&quot;<div style="margin-left: 4.00ex;">
+Options to be used when stripping shared libraries. See  <b>strip</b>(1) for details.</div>
+<div class="spacer">
+</div>
+<b>STRIP_STATIC=</b>&quot;--strip-debug&quot;<div style="margin-left: 4.00ex;">
+Options to be used when stripping static libraries. See  <b>strip</b>(1) for details.</div>
+<div class="spacer">
+</div>
+<b>MAN_DIRS=(</b>{usr{,/local}{,/share},opt/*}/{man,info} ...<b>)</b><div style="margin-left: 4.00ex;">
+If zipman is specified in the OPTIONS array, this variable will instruct makepkg where to look to compress manual (man and info) pages. If you build packages that are located in opt/, you may need to add the directory to this array.  <b>NOTE:</b> Do not add the leading slash to the directory name.</div>
+<div class="spacer">
+</div>
+<b>DOC_DIRS=(</b>usr/{,share/}{doc,gtk-doc} ...<b>)</b><div style="margin-left: 4.00ex;">
+If !docs is specified in the OPTIONS array, this variable will instruct makepkg where to look to remove docs. If you build packages that are located in opt/, you may need to add the directory to this array.  <b>NOTE:</b> Do not add the leading slash to the directory name.</div>
+<div class="spacer">
+</div>
+<b>PURGE_TARGETS=(</b>usr/{,share}/info/dir .podlist *.pod...<b>)</b><div style="margin-left: 4.00ex;">
+If purge is specified in the OPTIONS array, this variable will instruct makepkg which files to remove from the package. This is useful for index files that are added by multiple packages.</div>
+<div class="spacer">
+</div>
+<b>PKGDEST=</b>&quot;/path/to/folder&quot;<div style="margin-left: 4.00ex;">
+If this value is not set, packages will by default be placed in the current directory (location of the  <b>PKGBUILD</b>(5)). Many people like to keep all their packages in one place so this option allows this behavior. A common location is &#8220;/home/packages&#8221;.</div>
+<div class="spacer">
+</div>
+<b>SRCDEST=</b>&quot;/path/to/folder&quot;<div style="margin-left: 4.00ex;">
+If this value is not set, downloaded source files will only be stored in the current directory. Many people like to keep all source files in a central location for easy cleanup, so this path can be set here.</div>
+<div class="spacer">
+</div>
+<b>SRCPKGDEST=</b>&quot;/path/to/folder&quot;<div style="margin-left: 4.00ex;">
+If this value is not set, source package files will be stored in in the current directory. Many people like to keep all source package files in a central location for easy cleanup, so this path can be set here.</div>
+<div class="spacer">
+</div>
+<b>PACKAGER=</b>&quot;John Doe &lt;john@example.com&gt;&quot;<div style="margin-left: 4.00ex;">
+This value is used when querying a package to see who was the builder. It is recommended you change this to your name and email address.</div>
+<div class="spacer">
+</div>
+<b>PKGEXT=</b>&quot;.pkg.tar.gz&quot;, <b>SRCEXT=</b>&quot;.src.tar.gz&quot;<div style="margin-left: 4.00ex;">
+Sets the compression used when making compiled or source packages. The current valid suffixes are .tar, .tar.gz, .tar.bz2, .tar.xz, and .tar.Z. Do not touch these unless you know what you are doing.</div>
+</div>
+<div class="section">
+<h1>SEE ALSO</h1>  <b>makepkg</b>(8), <b>pacman</b>(8), <b>PKGBUILD</b>(5)<div style="height: 1.00em;">
+&#160;</div>
+See the pacman website at http://www.archlinux.org/pacman/ for current information on pacman and its related tools.</div>
+<div class="section">
+<h1>BUGS</h1> Bugs? You must be kidding, there are no bugs in this software. But if we happen to be wrong, send us an email with as much detail as possible to pacman-dev@archlinux.org.</div>
+<div class="section">
+<h1>AUTHORS</h1> Current maintainers:<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Allan McRae &lt;allan@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Dan McGee &lt;dan@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Dave Reisner &lt;dreisner@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+Past major contributors:<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Judd Vinet &lt;jvinet@zeroflux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Aurelien Foret &lt;aurelien@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Aaron Griffin &lt;aaron@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Xavier Chantry &lt;shiningxc@gmail.com&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Nagy Gabor &lt;ngaba@bibl.u-szeged.hu&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+For additional contributors, use git shortlog -s on the pacman.git repository.</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+2015-12-03</td>
+<td class="foot-os">
+Pacman 4.0.3</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+EQUO(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+EQUO(1)</td>
+<td class="head-vol">
+equo 1.0</td>
+<td class="head-rtitle">
+EQUO(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> equo - The Ingenuous Entropy Package Manager.</div>
+<div class="section">
+<h1>SYNOPSIS</h1>  <b>equo</b> [command] [command options]</div>
+<div class="section">
+<h1>INTRODUCTION</h1> Equo is the command-line frontend of the Entropy Package Manager Library. Installing, Removing and taking care of your system is easier than ever. There is nothing much left to say, just try it out yourself!</div>
+<div class="section">
+<h1>USAGE</h1> Equo has a modular design, commands can be added and removed in a pluggable way. There are however a set of built-in commands that are shipped with the default Equo distribution.</div>
+<div class="section">
+<h1>OPTIONS</h1>  <b>--help</b><div style="margin-left: 4.00ex;">
+Show Equo Help, listing all the runtime available commands.</div>
+</div>
+<div class="section">
+<h1>COMMANDS</h1>  <b>cache</b><div style="margin-left: 4.00ex;">
+manage Entropy Library Cache</div>
+<div class="spacer">
+</div>
+<b>cleanup</b><div style="margin-left: 4.00ex;">
+remove downloaded packages and clean temp. directories</div>
+<div class="spacer">
+</div>
+<b>conf</b><div style="margin-left: 4.00ex;">
+manage package file updates</div>
+<div class="spacer">
+</div>
+<b>config</b><div style="margin-left: 4.00ex;">
+configure installed packages</div>
+<div class="spacer">
+</div>
+<b>deptest [dt]</b><div style="margin-left: 4.00ex;">
+look for unsatisfied dependencies</div>
+<div class="spacer">
+</div>
+<b>download [fetch]</b><div style="margin-left: 4.00ex;">
+download packages, essentially</div>
+<div class="spacer">
+</div>
+<b>help [-h, --help]</b><div style="margin-left: 4.00ex;">
+this help</div>
+<div class="spacer">
+</div>
+<b>hop</b><div style="margin-left: 4.00ex;">
+upgrade the System to a new branch</div>
+<div class="spacer">
+</div>
+<b>install [i]</b><div style="margin-left: 4.00ex;">
+install or update packages or package files</div>
+<div class="spacer">
+</div>
+<b>libtest [lt]</b><div style="margin-left: 4.00ex;">
+look for missing libraries</div>
+<div class="spacer">
+</div>
+<b>lxnay</b><div style="margin-left: 4.00ex;">
+bow to lxnay</div>
+<div class="spacer">
+</div>
+<b>mask</b><div style="margin-left: 4.00ex;">
+mask one or more packages</div>
+<div class="spacer">
+</div>
+<b>match [m]</b><div style="margin-left: 4.00ex;">
+match packages in repositories</div>
+<div class="spacer">
+</div>
+<b>moo</b><div style="margin-left: 4.00ex;">
+moo at user</div>
+<div class="spacer">
+</div>
+<b>notice</b><div style="margin-left: 4.00ex;">
+repository notice board reader</div>
+<div class="spacer">
+</div>
+<b>pkg [smart]</b><div style="margin-left: 4.00ex;">
+execute advanced tasks on packages</div>
+<div class="spacer">
+</div>
+<b>preservedlibs [pl]</b><div style="margin-left: 4.00ex;">
+Tools to manage the preserved libraries on the system</div>
+<div class="spacer">
+</div>
+<b>query [q]</b><div style="margin-left: 4.00ex;">
+repository query tools</div>
+<div class="spacer">
+</div>
+<b>remove [rm]</b><div style="margin-left: 4.00ex;">
+remove packages from system</div>
+<div class="spacer">
+</div>
+<b>repo</b><div style="margin-left: 4.00ex;">
+manage repositories</div>
+<div class="spacer">
+</div>
+<b>rescue</b><div style="margin-left: 4.00ex;">
+tools to rescue the running system</div>
+<div class="spacer">
+</div>
+<b>search [s]</b><div style="margin-left: 4.00ex;">
+search packages in repositories</div>
+<div class="spacer">
+</div>
+<b>security [sec]</b><div style="margin-left: 4.00ex;">
+system security tools</div>
+<div class="spacer">
+</div>
+<b>source [src]</b><div style="margin-left: 4.00ex;">
+download packages source code</div>
+<div class="spacer">
+</div>
+<b>status [st, --info]</b><div style="margin-left: 4.00ex;">
+show Repositories status</div>
+<div class="spacer">
+</div>
+<b>ugc</b><div style="margin-left: 4.00ex;">
+manage User Generated Content</div>
+<div class="spacer">
+</div>
+<b>unmask</b><div style="margin-left: 4.00ex;">
+unmask one or more packages</div>
+<div class="spacer">
+</div>
+<b>unusedpackages [unused]</b><div style="margin-left: 4.00ex;">
+look for unused packages (pay attention)</div>
+<div class="spacer">
+</div>
+<b>update [up]</b><div style="margin-left: 4.00ex;">
+update repositories</div>
+<div class="spacer">
+</div>
+<b>upgrade [u]</b><div style="margin-left: 4.00ex;">
+upgrade the system</div>
+<div class="spacer">
+</div>
+<b>version [--version]</b><div style="margin-left: 4.00ex;">
+show equo version</div>
+<div class="spacer">
+</div>
+<b>yell</b><div style="margin-left: 4.00ex;">
+yell at user</div>
+</div>
+<div class="section">
+<h1>AUTHORS</h1> Fabio Erculiani (lxnay@sabayon.org)</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Report bugs to https://bugs.sabayon.org or directly to the author at lxnay@sabayon.org.</div>
+<div class="section">
+<h1>SEE ALSO</h1><div style="margin-left: 4.00ex;">
+<br/>
+equo-cache(1), equo-cleanup(1), equo-conf(1), equo-config(1), equo-deptest(1)<br/>
+equo-download(1), equo-hop(1), equo-install(1), equo-libtest(1), equo-mask(1)<br/>
+equo-match(1), equo-notice(1), equo-pkg(1), equo-preservedlibs(1), equo-query(1)<br/>
+equo-remove(1), equo-repo(1), equo-rescue(1), equo-search(1), equo-security(1)<br/>
+equo-source(1), equo-status(1), equo-ugc(1), equo-unmask(1), equo-unusedpackages(1)<br/>
+equo-update(1), equo-upgrade(1)<br/>
+</div>
+</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+11/12/2015</td>
+<td class="foot-os">
+equo 1.0</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

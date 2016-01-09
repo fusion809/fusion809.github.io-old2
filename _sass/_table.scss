@@ -1,0 +1,105 @@
+table.green, td.green, tr.green {
+  border-collapse: collapse !important;
+  padding: 8px;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  background-color: rgb(128, 255, 128);
+}
+
+table.blue, td.blue, tr.blue {
+  border-collapse: collapse !important;
+  padding: 8px;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  background-color: rgb(128,255,255);
+}
+
+td.title {
+  border-collapse: collapse !important;
+  padding: 8px;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  background-color: rgb(128, 255, 128);
+  font-weight: bold;
+}
+
+td.title1 {
+  border-collapse: collapse !important;
+  padding: 8px;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  background-color: rgb(255, 128, 128);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+td.title2 {
+  border-collapse: collapse !important;
+  padding: 8px;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  background-color: rgb(128, 128, 255);
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+td.no, td.No {
+  background-color: red;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+td.Interpreted {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+td.Mixed, td.mixed {
+  background-color: rgb(255,255,0);
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+td.yes, td.Yes, td.Compiled {
+  background-color: green;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #000;
+  border: 2px solid #000 !important;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+div.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 4px;
+}

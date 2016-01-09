@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+QUICKPKG(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+QUICKPKG(1)</td>
+<td class="head-vol">
+Portage</td>
+<td class="head-rtitle">
+QUICKPKG(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> quickpkg - creates portage packages</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>quickpkg [options] &lt;list of packages or package-sets&gt;</b></div>
+<div class="section">
+<h1>DESCRIPTION</h1> <i>quickpkg</i> can be utilized to quickly create a package for portage by utilizing the files already on your filesystem.  This package then can be emerged on any system.  To review syntax for emerging binary packages, review  <b>emerge</b>(1).  The upside of this process is that you don't have to wait for the package to unpack, configure, compile, and install before you can have the package ready to go.  The downside is that the package will contain the files that exist on your filesystem even if they have modified since they were first installed.<div style="height: 0.00em;">
+&#160;</div>
+The packages, after being created, will be placed in <b>PKGDIR</b>. This variable is defined in  <b>make.conf</b>(5) and defaults to /usr/portage/packages.</div>
+<div class="section">
+<h1>OPTIONS</h1><dl>
+<dt>
+<b>&lt;list of packages or package-sets&gt;</b></dt>
+<dd>
+Each package in the list can be of two forms.  First you can give it the full path to the installed entry in the virtual database.  That is, /var/db/pkg/&lt;CATEGORY&gt;/&lt;PKG-VERSION&gt;/. The second form is a portage depend atom or a portage package set.  The atom or set is of the same form that you would give  <b>emerge</b> if you wanted to emerge something. See  <b>ebuild</b>(5) for full definition.</dd>
+</dl>
+<dl>
+<dt>
+<b>--ignore-default-opts</b></dt>
+<dd>
+Causes the <i>QUICKPKG_DEFAULT_OPTS</i> environment variable to be ignored.</dd>
+</dl>
+<dl>
+<dt>
+<b>--include-config &lt; y | n &gt;</b></dt>
+<dd>
+Include all files protected by CONFIG_PROTECT (as a security precaution, default is 'n').</dd>
+</dl>
+<dl>
+<dt>
+<b>--include-unmodified-config &lt; y | n &gt;</b></dt>
+<dd>
+Include files protected by CONFIG_PROTECT that have not been modified since installation (as a security precaution, default is 'n').</dd>
+</dl>
+<dl>
+<dt>
+<b>--umask=UMASK</b></dt>
+<dd>
+The umask used during package creation (default is 0077).</dd>
+</dl>
+</div>
+<div class="section">
+<h1>EXAMPLES</h1> <b>quickpkg</b> /var/db/pkg/dev-python/pyogg-1.1<div style="height: 0.00em;">
+&#160;</div>
+<b>quickpkg</b> planeshift<div style="height: 0.00em;">
+&#160;</div>
+<b>quickpkg</b> =apache-1.3.27-r1<div style="height: 0.00em;">
+&#160;</div>
+<b>quickpkg</b> =net-www/apache-2*<div style="height: 0.00em;">
+&#160;</div>
+<b>quickpkg</b> @system</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Please report bugs via http://bugs.gentoo.org/</div>
+<div class="section">
+<h1>AUTHORS</h1><br/>
+Terry Chan (original author)<br/>
+Mike Frysinger &lt;vapier@gentoo.org&gt; (revamped version)<br/>
+</div>
+<div class="section">
+<h1>FILES</h1><dl>
+<dt>
+<b>/etc/portage/make.conf</b></dt>
+<dd>
+The <b>PKGDIR</b> variable is defined here.</dd>
+</dl>
+</div>
+<div class="section">
+<h1>SEE ALSO</h1> <b>ebuild</b>(5), <b>make.conf</b>(5)</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+Dec 2012</td>
+<td class="foot-os">
+Portage 2.2.20</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

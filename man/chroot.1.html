@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+CHROOT(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+CHROOT(1)</td>
+<td class="head-vol">
+User Commands</td>
+<td class="head-rtitle">
+CHROOT(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> chroot - run command or interactive shell with special root directory</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>chroot</b> [ <i>OPTION</i>] <i>NEWROOT </i>[<i>COMMAND </i>[<i>ARG</i>]...]<div style="height: 0.00em;">
+&#160;</div>
+<b>chroot</b>  <i>OPTION</i></div>
+<div class="section">
+<h1>DESCRIPTION</h1> Run COMMAND with root directory set to NEWROOT.<dl>
+<dt>
+<b>--groups</b>=<i>G_LIST</i></dt>
+<dd>
+specify supplementary groups as g1,g2,..,gN</dd>
+</dl>
+<dl>
+<dt>
+<b>--userspec</b>=<i>USER</i>:GROUP</dt>
+<dd>
+specify user and group (ID or name) to use</dd>
+</dl>
+<dl>
+<dt>
+<b>--skip-chdir</b></dt>
+<dd>
+do not change working directory to '/'</dd>
+</dl>
+<dl>
+<dt>
+<b>--help</b></dt>
+<dd>
+display this help and exit</dd>
+</dl>
+<dl>
+<dt>
+<b>--version</b></dt>
+<dd>
+output version information and exit</dd>
+</dl>
+<div class="spacer">
+</div>
+If no command is given, run '${SHELL} <b>-i</b>' (default: '/bin/sh <b>-i</b>').</div>
+<div class="section">
+<h1>AUTHOR</h1> Written by Roland McGrath.</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;<div style="height: 0.00em;">
+&#160;</div>
+Report chroot translation bugs to &lt;http://translationproject.org/team/&gt;</div>
+<div class="section">
+<h1>COPYRIGHT</h1> Copyright &#169; 2015 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;.<div style="height: 0.00em;">
+&#160;</div>
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.</div>
+<div class="section">
+<h1>SEE ALSO</h1> chroot(2)<div class="spacer">
+</div>
+<div style="height: 0.00em;">
+&#160;</div>
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/chroot&gt;<div style="height: 0.00em;">
+&#160;</div>
+or available locally via: info '(coreutils) chroot invocation'</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+July 2015</td>
+<td class="foot-os">
+GNU coreutils 8.24</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+PORTAGE(5)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+PORTAGE(5)</td>
+<td class="head-vol">
+Portage</td>
+<td class="head-rtitle">
+PORTAGE(5)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> portage - the heart of Gentoo</div>
+<div class="section">
+<h1>DESCRIPTION</h1> The current portage code uses many different configuration files, most of which are unknown to users and normal developers.  Here we will try to collect all the odds and ends so as to help users more effectively utilize portage.  This is a reference only for files which do not already have a man page.<div style="height: 1.00em;">
+&#160;</div>
+All files in the make.profile directory may be tweaked via parent profiles when using cascading profiles.  For more info, please see http://www.gentoo.org/proj/en/releng/docs/cascading-profiles.xml<dl>
+<dt>
+Note:</dt>
+<dd>
+If you are looking for information on how to emerge something, please see <b>emerge</b>(1).</dd>
+</dl>
+</div>
+<div class="section">
+<h1>SYNOPSIS</h1><dl>
+<dt>
+<b>/etc/portage/make.profile/</b> or <b>/etc/make.profile/</b></dt>
+<dd>
+site-specific overrides go in <b>/etc/portage/profile/</b><br/>
+deprecated<br/>
+eapi<br/>
+make.defaults<br/>
+packages<br/>
+packages.build<br/>
+package.accept_keywords<br/>
+package.bashrc<br/>
+package.keywords<br/>
+package.mask<br/>
+package.provided<br/>
+package.unmask<br/>
+package.use<br/>
+package.use.force<br/>
+package.use.mask<br/>
+package.use.stable.force<br/>
+package.use.stable.mask<br/>
+parent<br/>
+profile.bashrc<br/>
+soname.provided<br/>
+use.force<br/>
+use.mask<br/>
+use.stable.mask<br/>
+use.stable.force<br/>
+virtuals<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>/etc/portage/</b></dt>
+<dd>
+<br/>
+bashrc<br/>
+categories<br/>
+color.map<br/>
+license_groups<br/>
+<b>make.conf</b>(5)<br/>
+mirrors<br/>
+modules<br/>
+package.accept_keywords<br/>
+package.accept_restrict<br/>
+package.env<br/>
+package.keywords<br/>
+package.license<br/>
+package.mask<br/>
+package.properties<br/>
+package.unmask<br/>
+package.use<br/>
+postsync.d<br/>
+repo.postsync.d<br/>
+repos.conf<br/>
+sets.conf<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>/etc/portage/env/</b></dt>
+<dd>
+package-specific bashrc files</dd>
+</dl>
+<dl>
+<dt>
+<b>/etc/portage/profile/</b></dt>
+<dd>
+site-specific overrides of <b>/etc/portage/make.profile/</b></dd>
+</dl>
+<dl>
+<dt>
+<b>/etc/portage/sets/</b></dt>
+<dd>
+user-defined package sets</dd>
+</dl>
+<dl>
+<dt>
+<b>/usr/portage/</b></dt>
+<dd>
+<br/>
+sets.conf<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>/usr/portage/metadata/</b></dt>
+<dd>
+<br/>
+layout.conf<br/>
+pkg_desc_index<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>/usr/portage/profiles/</b></dt>
+<dd>
+<br/>
+arch.list<br/>
+categories<br/>
+info_pkgs<br/>
+info_vars<br/>
+license_groups<br/>
+make.defaults<br/>
+package.mask<br/>
+package.unmask<br/>
+package.use<br/>
+package.use.force<br/>
+package.use.mask<br/>
+package.use.stable.force<br/>
+package.use.stable.mask<br/>
+profiles.desc<br/>
+repo_name<br/>
+thirdpartymirrors<br/>
+use.desc<br/>
+use.force<br/>
+use.local.desc<br/>
+use.mask<br/>
+use.stable.mask<br/>
+use.stable.force<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>/usr/share/portage/config/</b></dt>
+<dd>
+<br/>
+make.globals<br/>
+repos.conf<br/>
+sets<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>/var/cache/edb/</b></dt>
+<dd>
+misc internal cache files</dd>
+</dl>
+<dl>
+<dt>
+<b>/var/db/pkg/</b></dt>
+<dd>
+database to track installed packages</dd>
+</dl>
+<dl>
+<dt>
+<b>/var/lib/portage/</b></dt>
+<dd>
+<br/>
+config<br/>
+world<br/>
+world_sets<br/>
+</dd>
+</dl>
+</div>
+<div class="section">
+<h1>GLOSSARY</h1> In the following sections, some terminology may be foreign to you or used with meaning specific to Portage.  Please see the referenced manpages for more detailed explanations.<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>DEPEND atom</b></dt>
+<dd>
+An atom is either of the form category/package or consists of an operator followed by category/package followed by a hyphen and a version specification. An atom might be suffixed by a slot specification.<div style="height: 0.00em;">
+&#160;</div>
+More reading: <b>ebuild</b>(5)<div style="height: 1.00em;">
+&#160;</div>
+<b>Extended Atom Syntax</b><div style="height: 0.00em;">
+&#160;</div>
+The following atom syntax extensions are only supported in user configuration files and command line arguments for programs such as  <b>emerge</b>(1):<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>Repository Constraints</b></dt>
+<dd>
+Atoms with repository constraints have a '::' separator appended to the right side, followed by a repository name. Each repository name should correspond to the value of a  <b>repo_name</b> entry from one of the repositories that is configured in  <b>repos.conf</b> file.<div style="height: 1.00em;">
+&#160;</div>
+<i>Examples:</i><br/>
+# match sed from the 'gentoo' repository<br/>
+sys-apps/sed::gentoo<br/>
+# match kdelibs from the 'kde-testing' repository<br/>
+kde-base/kdelibs::kde-testing<br/>
+# match empathy from the 'gnome' repository<br/>
+net-im/empathy::gnome<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Wildcard Patterns</b></dt>
+<dd>
+Atoms containing wildcard patterns are of the form category/package, where the special '*' wildcard character substitutes for an arbitrary number of normal characters. More than one '*' character is allowed, but not two next to each other.<div style="height: 1.00em;">
+&#160;</div>
+<i>Examples:</i><br/>
+# match anything with a version containing 9999, which can be used in<br/>
+# package.mask to prevent emerge --autounmask from selecting live ebuilds<br/>
+=*/*-*9999*<br/>
+# match anything with a version containing _beta<br/>
+=*/*-*_beta*<br/>
+# match anything from the 'sys-apps' category<br/>
+sys-apps/*<br/>
+# match packages named 'zlib' from any category<br/>
+*/zlib<br/>
+# match any package from a category that begins with 'net-'<br/>
+net-*/*<br/>
+# match any package name from any category<br/>
+*/*<br/>
+# match any package from the 'gentoo' repository<br/>
+*/*::gentoo<br/>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>KEYWORD</b></dt>
+<dd>
+Each architecture has a unique KEYWORD.<div style="height: 0.00em;">
+&#160;</div>
+More reading: <b>ebuild</b>(5)</dd>
+</dl>
+<dl>
+<dt>
+<b>virtual</b></dt>
+<dd>
+A DEPEND atom that is part of the &quot;virtual&quot; category.  They are used when different packages can satisfy a dependency and only one of them is needed.<div style="height: 0.00em;">
+&#160;</div>
+More reading: <b>ebuild</b>(5)</dd>
+</dl>
+</div>
+</div>
+<div class="section">
+<h1>SPECIFIC FILE DESCRIPTIONS</h1><dl>
+<dt>
+<b>/etc/portage/make.profile/</b> or <b>/etc/make.profile/</b></dt>
+<dd>
+This is usually just a symlink to the correct profile in  <b>/usr/portage/profiles/</b>.  Since it is part of the portage tree, it may easily be updated/regenerated by running `emerge --sync`.  It defines what a profile is (usually arch specific stuff).  If you need a custom profile, then you should make your own  <b>make.profile</b> directory and populate it.  However, if you just wish to override some settings, use  <b>/etc/portage/profile/</b> (it supports all of the same file types that  <b>make.profile</b> does, except parent). Do NOT edit the settings in  <b>make.profile</b> because they WILL be lost with the next `emerge --sync`. If both  <b>/etc/portage/make.profile/</b> and  <b>/etc/make.profile/</b> exist, then <b>/etc/portage/make.profile/</b> will be preferred.<div style="height: 1.00em;">
+&#160;</div>
+Any file in this directory, directories of other profiles or top-level &quot;profiles&quot; directory that begins with &quot;package.&quot; or &quot;use.&quot; can be more than just a flat file.  If it is a directory, then all the files in that directory will be sorted in ascending alphabetical order by file name and summed together as if it were a single file. Note that this behavior is only supported since portage-2.1.6.7, and it is not included in PMS at this time.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+${repository_location}/profiles/package.mask/removals<br/>
+${repository_location}/profiles/package.mask/testing<br/>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>deprecated</b></dt>
+<dd>
+The existence of this file marks a profile as deprecated, meaning it is not supported by Gentoo anymore.  The first line must be the profile to which users are encouraged to upgrade, optionally followed by some instructions explaining how they can upgrade.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+default-linux/x86/2005.0<br/>
+# emerge -n '&gt;=sys-apps/portage-2.0.51'<br/>
+# rm -f /etc/portage/make.profile<br/>
+# ln -s /usr/portage/profiles/default-linux/alpha/2005.0 /etc/portage/make.profile<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>eapi</b></dt>
+<dd>
+The first line of this file specifies the <b>EAPI</b> to which files in the same directory conform. See  <b>ebuild</b>(5) for information about <b>EAPI</b> and related features. Beginning with  <b>EAPI 5</b>, new USE configuration files are supported: use.stable.mask, use.stable.force, package.use.stable.mask and package.use.stable.force. These files behave similarly to previously supported USE configuration files, except that they only influence packages that are merged due to a stable keyword.<div style="height: 1.00em;">
+&#160;</div>
+If the eapi file does not exist, then the <b>EAPI</b> defaults to  <i>0</i> unless the default has been overridden by a profile_eapi_when_unspecified setting inside  <i>metadata/layout.conf</i> of the containing repository.</dd>
+</dl>
+<dl>
+<dt>
+<b>make.defaults</b></dt>
+<dd>
+The profile default settings for Portage.  The general format is described in  <b>make.conf</b>(5).  The <i>make.defaults</i> for your profile defines a few specific variables too:<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>ARCH</b></dt>
+<dd>
+Architecture type (x86/ppc/hppa/etc...).</dd>
+</dl>
+<dl>
+<dt>
+<b>IUSE_IMPLICIT</b> = <i>[space delimited list of USE flags]</i></dt>
+<dd>
+Defines implicit <b>IUSE</b> for ebuilds using <b>EAPI 5</b> or later. Flags that come from  <b>USE_EXPAND</b> or  <b>USE_EXPAND_UNPREFIXED</b> variables do not belong in  <b>IUSE_IMPLICIT</b>, since <b>USE_EXPAND_VALUES_*</b> variables are used to define implicit  <b>IUSE</b> for those flags. See  <b>ebuild</b>(5) for more information about <b>IUSE</b>.</dd>
+</dl>
+<dl>
+<dt>
+<b>USERLAND = <i>&quot;GNU&quot;</i></b></dt>
+<dd>
+Support BSD/cygwin/etc...</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND</b> = <i>[space delimited list of variable names]</i></dt>
+<dd>
+Any variable listed here will be used to augment USE by inserting a new flag for every value in that variable, so USE_EXPAND=&quot;FOO&quot; and FOO=&quot;bar bla&quot; results in USE=&quot;foo_bar foo_bla&quot;.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_HIDDEN</b> = <i>[space delimited list of variable names]</i></dt>
+<dd>
+Names of <b>USE_EXPAND</b> variables that should not be shown in the verbose merge list output of the  <b>emerge</b>(1) command.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_IMPLICIT</b> = <i>[space delimited list of variable names]</i></dt>
+<dd>
+Defines <b>USE_EXPAND</b> and <b>USE_EXPAND_UNPREFIXED</b> variables for which the corresponding USE flags may have implicit  <b>IUSE</b> for ebuilds using <b>EAPI 5</b> or later.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_UNPREFIXED</b> = <i>[space delimited list of variable names]</i></dt>
+<dd>
+Any variable listed here will be used to augment USE by inserting a new flag for every value in that variable, so USE_EXPAND_UNPREFIXED=&quot;FOO&quot; and FOO=&quot;bar bla&quot; results in USE=&quot;bar bla&quot;.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_VALUES_ARCH</b> = <i>[space delimited list of ARCH values]</i></dt>
+<dd>
+Defines ARCH values used to generate implicit  <b>IUSE</b> for ebuilds using <b>EAPI 5</b> or later.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_VALUES_ELIBC</b> = <i>[space delimited list of ELIBC values]</i></dt>
+<dd>
+Defines ELIBC values used to generate implicit  <b>IUSE</b> for ebuilds using <b>EAPI 5</b> or later.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_VALUES_KERNEL</b> = <i>[space delimited list of KERNEL values]</i></dt>
+<dd>
+Defines KERNEL values used to generate implicit  <b>IUSE</b> for ebuilds using <b>EAPI 5</b> or later.</dd>
+</dl>
+<dl>
+<dt>
+<b>USE_EXPAND_VALUES_USERLAND</b> = <i>[space delimited list of USERLAND values]</i></dt>
+<dd>
+Defines USERLAND values used to generate implicit  <b>IUSE</b> for ebuilds using <b>EAPI 5</b> or later.</dd>
+</dl>
+<dl>
+<dt>
+<b>ELIBC = <i>&quot;glibc&quot;</i></b></dt>
+<dd>
+Support uClibc/BSD libc/etc...</dd>
+</dl>
+<dl>
+<dt>
+<b>PROFILE_ONLY_VARIABLES = <i>&quot;ARCH&quot;</i></b></dt>
+<dd>
+Prevent critical variables from being changed by the user in make.conf or the env.</dd>
+</dl>
+<dl>
+<dt>
+<b>PROFILE_ARCH</b></dt>
+<dd>
+Distinguish machines classes that have the same <b>ARCH</b>.  All sparc machines have ARCH=sparc but set this to either 'sparc32' or 'sparc64'.</dd>
+</dl>
+<dl>
+<dt>
+<b>BOOTSTRAP_USE</b></dt>
+<dd>
+Special USE flags which may be needed when bootstrapping from stage1 to stage2.</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>packages</b></dt>
+<dd>
+Provides the list of packages that compose the <i>@system</i> and  <i>@profile</i>  package sets. The motivation to have <i>@profile</i> separate from  <i>@system</i> is that <i>@system</i> packages may have incomplete dependency specifications (due to long-standing Gentoo policy), and incomplete dependency specifications have deleterious effects on the ability of  <b>emerge</b> to parallelize builds. So, unlike  <i>@system</i>, packages included in <i>@profile</i> do not hurt  <b>emerge</b>'s ability to parallelize.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one DEPEND atom per line<br/>
+- packages to be added to the @system set begin with a *<br/>
+- packages to be added to the @profile set do not begin with a *<br/>
+- packages may only be added to the @profile set if the containing<br/>
+  repository's layout.conf has 'profile-set' listed in the<br/>
+  profile-formats field. Otherwise, packages that do not begin with<br/>
+  '*' will simply be ignored for legacy reasons<br/>
+<i>Note:</i> In a cascading profile setup, you can remove packages in children profiles which were added by parent profiles by prefixing the atom with a '-'.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# i am a comment !<br/>
+# pull a version of glibc less than 2.3 into @system<br/>
+*&lt;sys-libs/glibc-2.3<br/>
+# pull any version of bash into @system<br/>
+*app-shells/bash<br/>
+# pull a version of readline earlier than 4.2 into @system<br/>
+*&lt;sys-libs/readline-4.2<br/>
+# pull vim into @profile<br/>
+app-editors/vim<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>packages.build</b></dt>
+<dd>
+A list of packages (one per line) that make up a stage1 tarball.  Really only useful for stage builders.</dd>
+</dl>
+<dl>
+<dt>
+<b>package.bashrc</b></dt>
+<dd>
+Per-package bashrc mechanism.  Contains a list of bashrc files to be sourced before emerging a given atom.  The bashrc files must be stored in bashrc/, in the profile directory.<div style="height: 1.00em;">
+&#160;</div>
+<i>Note:</i><br/>
+- The bashrc files will be sourced after profile.bashrc for the same profile.<br/>
+- profile-formats in metadata/layout.conf must contain profile-bashrcs for this<br/>
+to be enabled.<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments).<br/>
+- one atom per line with space-delimited list of bashrc files.<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# By setting INSTALL_MASK in bashrc/nostandardconf.conf, we can avoid installing<br/>
+# the standard configuration and enable another package to install it.<br/>
+net-misc/dhcp nostardardconf.conf<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.provided</b></dt>
+<dd>
+A list of packages (one per line) that portage should assume have been provided.  Useful for porting to non-Linux systems. Basically, it's a list that replaces the  <b>emerge --inject</b> syntax.<div style="height: 1.00em;">
+&#160;</div>
+For example, if you manage your own copy of a 2.6 kernel, then you can tell portage that 'sys-kernel/development-sources-2.6.7' is already taken care of and it should get off your back about it.<div style="height: 1.00em;">
+&#160;</div>
+Portage will not attempt to update a package that is listed here unless another package explicitly requires a version that is newer than what has been listed. Dependencies that are satisfied by package.provided entries may cause installed packages satisfying equivalent dependencies to be removed by  <b>emerge</b>(1) <b>--depclean</b> actions (see the  <b>ACTIONS</b> section of the <b>emerge</b>(1) man page for more information).<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one DEPEND atom per line<br/>
+- relational operators are not allowed<br/>
+- must include a version<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# you take care of the kernel<br/>
+sys-kernel/development-sources-2.6.7<div class="spacer">
+</div>
+<br/>
+# you installed your own special copy of QT<br/>
+x11-libs/qt-3.3.0<div class="spacer">
+</div>
+<br/>
+# you have modular X but packages want monolithic<br/>
+x11-base/xorg-x11-6.8<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.use.force</b> and <b>package.use.stable.force</b></dt>
+<dd>
+Per-package USE flag forcing.<div style="height: 1.00em;">
+&#160;</div>
+<i>Note:</i> In a cascading profile setup, you can remove USE flags in children profiles which were added by parent profiles by prefixing the flag with a '-'.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one DEPEND atom per line with space-delimited USE flags<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# force docs for GTK 2.x<br/>
+=x11-libs/gtk+-2* doc<br/>
+# unforce mysql support for QT<br/>
+x11-libs/qt -mysql<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.use.mask</b> and <b>package.use.stable.mask</b></dt>
+<dd>
+Per-package USE flag masks.<div style="height: 1.00em;">
+&#160;</div>
+<i>Note:</i> In a cascading profile setup, you can remove USE flags in children profiles which were added by parent profiles by prefixing the flag with a '-'.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one DEPEND atom per line with space-delimited USE flags<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# mask docs for GTK 2.x<br/>
+=x11-libs/gtk+-2* doc<br/>
+# unmask mysql support for QT<br/>
+x11-libs/qt -mysql<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>parent</b></dt>
+<dd>
+This contains paths to the parent profiles (one per line).  They may be either relative (to the location of the profile) or absolute.  Most commonly this file contains '..' to indicate the directory above.  Utilized only in cascading profiles.<div style="height: 1.00em;">
+&#160;</div>
+When multiple parent profiles are specified, they are inherited in order from the first line to the last.<div style="height: 1.00em;">
+&#160;</div>
+If <b>layout.conf</b> is new enough, you can also use the &lt;repo&gt;:&lt;path&gt; syntax.  The &lt;repo&gt; is the same string as is stored in the  <b>repo_name</b> file (or omitted to refer to the current repo), and &lt;path&gt; is a subdir starting at profiles/.</dd>
+</dl>
+<dl>
+<dt>
+<b>profile.bashrc</b></dt>
+<dd>
+If needed, this file can be used to set up a special environment for ebuilds, different from the standard root environment.  The syntax is the same as for any other bash script.</dd>
+</dl>
+<dl>
+<dt>
+<b>soname.provided</b></dt>
+<dd>
+A list of sonames that portage should assume have been provided. This is useful for using portage to install binary packages on top of a base image which lacks /var/db/pkg for some reason (perhaps the image was assembled by another package manager, or by Linux From Scratch).<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- line begins with a multilib category<br/>
+- multilib category is followed by one or more sonames<br/>
+- only one multilib category is allowed per line<br/>
+- prefixing an soname with a '-' will negate a parent profile setting<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# provide libc and ld-linux sonames for x86_32 and x86_64 categories<br/>
+x86_32 ld-linux.so.2 libc.so.6<br/>
+x86_64 ld-linux-x86-64.so.2 libc.so.6<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>use.force</b> and <b>use.stable.force</b></dt>
+<dd>
+Some USE flags don't make sense to disable under certain conditions.  Here we list forced flags.<div style="height: 1.00em;">
+&#160;</div>
+<i>Note:</i> In a cascading profile setup, you can remove USE flags in children profiles which were added by parent profiles by prefixing the flag with a '-'.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one USE flag per line<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>use.mask</b> and <b>use.stable.mask</b></dt>
+<dd>
+Some USE flags don't make sense on some archs (for example altivec on non-ppc or mmx on non-x86), or haven't yet been tested.  Here we list the masked ones.<div style="height: 1.00em;">
+&#160;</div>
+<i>Note:</i> In a cascading profile setup, you can remove USE flags in children profiles which were added by parent profiles by prefixing the flag with a '-'.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one USE flag per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# mask doc<br/>
+doc<br/>
+# unmask mysql<br/>
+-mysql<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>virtuals</b></dt>
+<dd>
+The virtuals file controls default preferences for virtuals that are defined via the  <b>PROVIDE</b> ebuild variable (see  <b>ebuild</b>(5)). Since Gentoo now uses <b>GLEP 37</b> virtuals instead of  <b>PROVIDE</b> virtuals, the virtuals file is irrelevant for all Gentoo ebuilds. However, it is still possible for third-parties to distribute ebuilds that make use of  <b>PROVIDE</b>.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one virtual and DEPEND atom base pair per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# use net-mail/ssmtp as the default mta<br/>
+virtual/mta           net-mail/ssmtp<br/>
+# use app-dicts/aspell-en as the default dictionary<br/>
+virtual/aspell-dict   app-dicts/aspell-en<br/>
+</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/etc/portage/</b></dt>
+<dd>
+Files in this directory including make.conf, repos.conf, and any file with a name that begins with &quot;package.&quot; can be more than just a flat file.  If it is a directory, then all the files in that directory will be sorted in ascending alphabetical order by file name and summed together as if it were a single file.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+/etc/portage/package.accept_keywords/common<br/>
+/etc/portage/package.accept_keywords/e17<br/>
+/etc/portage/package.accept_keywords/kde<br/>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>bashrc</b></dt>
+<dd>
+If needed, this file can be used to set up a special environment for ebuilds, different from the standard root environment.  The syntax is the same as for any other bash script.<div style="height: 1.00em;">
+&#160;</div>
+Additional package-specific bashrc files can be created in /etc/portage/env.</dd>
+</dl>
+<dl>
+<dt>
+<b>categories</b></dt>
+<dd>
+A simple list of valid categories that may be used in repositories and PKGDIR (see  <b>make.conf</b>(5)). This allows for custom categories to be created.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- one category per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+app-hackers<br/>
+media-other<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>color.map</b></dt>
+<dd>
+Contains variables customizing colors. See <b>color.map</b>(5).</dd>
+</dl>
+<dl>
+<dt>
+<b>make.conf</b></dt>
+<dd>
+The global custom settings for Portage. See <b>make.conf</b>(5).</dd>
+</dl>
+<dl>
+<dt>
+<b>mirrors</b></dt>
+<dd>
+Whenever portage encounters a mirror:// style URI it will look up the actual hosts here.  If the mirror set is not found here, it will check the global mirrors file at /usr/portage/profiles/thirdpartymirrors.  You may also set a special mirror type called &quot;local&quot;.  This list of mirrors will be checked before GENTOO_MIRRORS and will be used even if the package has RESTRICT=&quot;mirror&quot; or RESTRICT=&quot;fetch&quot;.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- mirror type followed by a list of hosts<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# local private mirrors used only by my company<br/>
+local ftp://192.168.0.3/mirrors/gentoo http://192.168.0.4/distfiles<div class="spacer">
+</div>
+<br/>
+# people in japan would want to use the japanese mirror first<br/>
+sourceforge http://keihanna.dl.sourceforge.net/sourceforge<div class="spacer">
+</div>
+<br/>
+# people in tawain would want to use the local gnu mirror first<br/>
+gnu ftp://ftp.nctu.edu.tw/UNIX/gnu/<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>modules</b></dt>
+<dd>
+This file can be used to override the metadata cache implementation.  In practice, portdbapi.auxdbmodule is the only variable that the user will want to override.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+portdbapi.auxdbmodule = portage.cache.sqlite.database<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+After changing the portdbapi.auxdbmodule setting, it may be necessary to transfer or regenerate metadata cache. Users of the rsync tree need to run `emerge --metadata` if they have enabled FEATURES=&quot;metadata-transfer&quot; in  <b>make.conf</b>(5). In order to regenerate metadata for repositories not distributing pregenerated metadata cache, run `emerge --regen` (see  <b>emerge</b>(1)). If you use something like the sqlite module and want to keep all metadata in that format alone (useful for querying), enable FEATURES=&quot;metadata-transfer&quot; in  <b>make.conf</b>(5).</dd>
+</dl>
+<dl>
+<dt>
+<b>package.accept_keywords</b> and <b>package.keywords</b></dt>
+<dd>
+Per-package ACCEPT_KEYWORDS.  Useful for mixing unstable packages in with a normally stable system or vice versa.  This will allow ACCEPT_KEYWORDS to be augmented for a single package. If both  <b>package.accept_keywords</b> and  <b>package.keywords</b> are present, both of them will be used, and values from  <b>package.accept_keywords</b> will override values from  <b>package.keywords</b>. The <b>package.accept_keywords</b> file is intended to replace the  <b>package.keywords</b> file, since profiles support a different form of  <b>package.keywords</b> which modifies effective KEYWORDS (rather than ACCEPT_KEYWORDS).<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line followed by additional KEYWORDS<br/>
+- lines without any KEYWORDS imply unstable host arch<div class="spacer">
+</div>
+<i>Example:</i><br/>
+# always use unstable libgd<br/>
+media-libs/libgd ~x86<br/>
+# only use stable mplayer<br/>
+media-video/mplayer -~x86<br/>
+# always use unstable netcat<br/>
+net-analyzer/netcat<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Note:</i><br/>
+In addition to the normal values from ACCEPT_KEYWORDS package.keywords supports three special tokens:<div style="height: 1.00em;">
+&#160;</div>
+<br/>
+<b>*</b>  package is visible if it is stable on any architecture<br/>
+<b>~*</b> package is visible if it is in testing on any architecture<br/>
+<b>**</b> package is always visible (KEYWORDS are ignored completely)<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Additional Note:</i> If you encounter the  <b>-*</b> KEYWORD, this indicates that the package is known to be broken on all systems which are not otherwise listed in KEYWORDS.  For example, a binary only package which is built for x86 will look like:<div style="height: 1.00em;">
+&#160;</div>
+games-fps/quake3-demo-1.11.ebuild:KEYWORDS=&quot;-* x86&quot;<div style="height: 1.00em;">
+&#160;</div>
+If you wish to accept this package anyways, then use one of the other keywords in your package.accept_keywords like this:<div style="height: 1.00em;">
+&#160;</div>
+games-fps/quake3-demo x86<div style="height: 1.00em;">
+&#160;</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.accept_restrict</b></dt>
+<dd>
+This will allow ACCEPT_RESTRICT (see <b>make.conf</b>(5)) to be augmented for a single package.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line followed by additional RESTRICT tokens<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.env</b></dt>
+<dd>
+Per-package environment variable settings. Entries refer to environment files that are placed in the  <b>/etc/portage/env/</b> directory and have the same format as  <b>make.conf</b>(5). Note that these files are interpreted much earlier than the package-specific  <i>bashrc</i> files which are described in a later section about  <b>/etc/portage/env/</b>. Beginners should be careful to recognize the difference between these two types of files. When environment variable settings are all that's needed,  <b>package.env</b> is the recommended approach to use.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line followed by name(s) of environment file(s)<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# use environment variables from /etc/portage/env/glibc.conf for the glibc package<br/>
+sys-libs/glibc glibc.conf<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.license</b></dt>
+<dd>
+This will allow ACCEPT_LICENSE (see <b>make.conf</b>(5)) to be augmented for a single package.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line followed by additional licenses or groups<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.mask</b></dt>
+<dd>
+A list of package atoms to mask.  Useful if specific versions of packages do not work well for you.  For example, you swear by the Nvidia drivers, but only versions earlier than 1.0.4496.  No problem!<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# mask out versions 1.0.4496 of the nvidia<br/>
+# drivers and later<br/>
+&gt;=media-video/nvidia-kernel-1.0.4496<br/>
+&gt;=media-video/nvidia-glx-1.0.4496<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.properties</b></dt>
+<dd>
+This will allow ACCEPT_PROPERTIES (see <b>make.conf</b>(5)) to be augmented for a single package.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line followed by additional properties<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.unmask</b></dt>
+<dd>
+Just like package.mask above, except here you list packages you want to unmask.  Useful for overriding the global package.mask file (see above).  Note that this does not override packages that are masked via KEYWORDS.</dd>
+</dl>
+<dl>
+<dt>
+<b>package.use</b></dt>
+<dd>
+Per-package USE flags.  Useful for tracking local USE flags or for enabling USE flags for certain packages only.  Perhaps you develop GTK and thus you want documentation for it, but you don't want documentation for QT.  Easy as pie my friend!<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one DEPEND atom per line with space-delimited USE flags<br/>
+- USE flags can be prefixed with USE_EXPAND name followed by a colon (:)<br/>
+and a space. In this case, all the names following it are treated<br/>
+as values for the USE_EXPAND. Note that if you need to remove earlier<br/>
+assignments or defaults, you need to explicitly specify '-*'.<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# turn on docs for GTK 2.x<br/>
+=x11-libs/gtk+-2* doc<br/>
+# disable mysql support for QT<br/>
+x11-libs/qt -mysql<br/>
+# set preferred video card for all packages<br/>
+*/* VIDEO_CARDS: -* radeon<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>postsync.d/</b></dt>
+<dd>
+This directory is for user supplied postsync hooks to be run once after all repositories have been synced.  Each script is called in alphabetic order without any arguments.<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>repo.postsync.d/</b></dt>
+<dd>
+This directory is for user supplied postsync hooks to be run once after each repository has been synced.  Each script is called in alphabetic order with three arguments.<div style="height: 1.00em;">
+&#160;</div>
+<i>args:</i><br/>
+        repository name, sync-uri, location<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+Using this information it is possible for hooks to be run for only a certain repository.  This way other update actions can be performed for that repository only.<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>repos.conf</b></dt>
+<dd>
+Specifies <i>site-specific</i> repository configuration information.<div style="height: 0.00em;">
+&#160;</div>
+Configuration specified in <b>repos.conf</b> can be overriden by <b>PORTAGE_REPOSITORIES</b> environmental variable, which has the same format as  <b>repos.conf</b>.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- configuration of each repository is specified in a section starting with &quot;[${repository_name}]&quot;<br/>
+- attributes are specified in &quot;${attribute} = ${value}&quot; format<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Attributes supported in DEFAULT section:</i><div style="margin-left: 5.00ex;">
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>main-repo</b></dt>
+<dd>
+Specifies main repository.</dd>
+</dl>
+<dl>
+<dt>
+<b>eclass-overrides</b></dt>
+<dd>
+Makes all repositories inherit eclasses from specified repositories.<div style="height: 0.00em;">
+&#160;</div>
+Setting this attribute is generally not recommended since resulting changes in eclass inheritance may trigger performance issues due to invalidation of metadata cache.<div style="height: 0.00em;">
+&#160;</div>
+When 'force = eclass-overrides' attribute is not set, <b>egencache</b>(1),  <b>emirrordist</b>(1) and <b>repoman</b>(1) ignore this attribute, since operations performed by these tools are inherently  <b>not</b> <i>site-specific</i>.</dd>
+</dl>
+<dl>
+<dt>
+<b>force</b></dt>
+<dd>
+Specifies names of attributes, which should be forcefully respected by  <b>egencache</b>(1), <b>emirrordist</b>(1) and <b>repoman</b>(1).<div style="height: 0.00em;">
+&#160;</div>
+Valid values: aliases, eclass-overrides, masters</dd>
+</dl>
+</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Attributes supported in sections of repositories:</i><div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>aliases</b></dt>
+<dd>
+Specifies aliases of given repository.<div style="height: 0.00em;">
+&#160;</div>
+Setting this attribute is generally not recommended since resulting changes in eclass inheritance may trigger performance issues due to invalidation of metadata cache.<div style="height: 0.00em;">
+&#160;</div>
+When 'force = aliases' attribute is not set, <b>egencache</b>(1),  <b>emirrordist</b>(1) and <b>repoman</b>(1) ignore this attribute, since operations performed by these tools are inherently  <b>not</b> <i>site-specific</i>.</dd>
+</dl>
+<dl>
+<dt>
+<b>auto-sync</b></dt>
+<dd>
+This setting determines if the repo will be synced during &quot;<b>emerge --sync</b>&quot; or &quot; <b>emaint sync --auto</b>&quot; runs.  This allows for repositories to be synced only when desired via &quot; <b>emaint sync --repo foo</b>&quot;.<div style="height: 0.00em;">
+&#160;</div>
+Valid values: yes, no, true, false.<div style="height: 0.00em;">
+&#160;</div>
+If unset, the repo will be treated as set yes, true.</dd>
+</dl>
+<dl>
+<dt>
+<b>eclass-overrides</b></dt>
+<dd>
+Makes given repository inherit eclasses from specified repositories.<div style="height: 0.00em;">
+&#160;</div>
+Setting this attribute is generally not recommended since resulting changes in eclass inheritance may trigger performance issues due to invalidation of metadata cache.<div style="height: 0.00em;">
+&#160;</div>
+When 'force = eclass-overrides' attribute is not set, <b>egencache</b>(1),  <b>emirrordist</b>(1) and <b>repoman</b>(1) ignore this attribute, since operations performed by these tools are inherently  <b>not</b> <i>site-specific</i>.</dd>
+</dl>
+<dl>
+<dt>
+<b>force</b></dt>
+<dd>
+Specifies names of attributes, which should be forcefully respected by  <b>egencache</b>(1), <b>emirrordist</b>(1) and <b>repoman</b>(1).<div style="height: 0.00em;">
+&#160;</div>
+Valid values: aliases, eclass-overrides, masters</dd>
+</dl>
+<dl>
+<dt>
+<b>location</b></dt>
+<dd>
+Specifies location of given repository.</dd>
+</dl>
+<dl>
+<dt>
+<b>masters</b></dt>
+<dd>
+Specifies master repositories of given repository.<div style="height: 0.00em;">
+&#160;</div>
+Setting this attribute is generally not recommended since resulting changes in eclass inheritance may trigger performance issues due to invalidation of metadata cache.<div style="height: 0.00em;">
+&#160;</div>
+When 'force = masters' attribute is not set, <b>egencache</b>(1),  <b>emirrordist</b>(1) and <b>repoman</b>(1) ignore this attribute, since operations performed by these tools are inherently  <b>not</b> <i>site-specific</i>.</dd>
+</dl>
+<dl>
+<dt>
+<b>priority</b></dt>
+<dd>
+Specifies priority of given repository.</dd>
+</dl>
+<dl>
+<dt>
+<b>sync-cvs-repo</b></dt>
+<dd>
+Specifies CVS repository.</dd>
+</dl>
+<dl>
+<dt>
+<b>sync-depth</b></dt>
+<dd>
+Specifies clone depth to use for DVCS repositories. Defaults to 1 (only the newest commit). If set to 0, the depth is unlimited.</dd>
+</dl>
+<dl>
+<dt>
+<b>sync-type</b></dt>
+<dd>
+Specifies type of synchronization performed by `emerge --sync`.<div style="height: 0.00em;">
+&#160;</div>
+Valid non-empty values: cvs, git, rsync, svn, websync (emerge-webrsync)<div style="height: 0.00em;">
+&#160;</div>
+This attribute can be set to empty value to disable synchronization of given repository. Empty value is default.</dd>
+</dl>
+<dl>
+<dt>
+<b>sync-umask</b></dt>
+<dd>
+Specifies umask used to synchronize the repository.<div style="height: 0.00em;">
+&#160;</div>
+Takes an octal permission mask, e.g. 022.</dd>
+</dl>
+<dl>
+<dt>
+<b>sync-uri</b></dt>
+<dd>
+Specifies URI of repository used for synchronization performed by `emerge --sync`.<div style="height: 0.00em;">
+&#160;</div>
+This attribute can be set to empty value to disable synchronization of given repository. Empty value is default.<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+Syntax:</dt>
+<dd>
+cvs: [cvs://]:access_method:[username@]hostname[:port]:/path<div style="height: 0.00em;">
+&#160;</div>
+git: (git|git+ssh|http|https)://[username@]hostname[:port]/path<div style="height: 0.00em;">
+&#160;</div>
+rsync: (rsync|ssh)://[username@]hostname[:port]/(module|path)</dd>
+</dl>
+<dl>
+<dt>
+Examples:</dt>
+<dd>
+<div style="margin-left: 5.00ex;">
+rsync://private-mirror.com/portage-module<div style="height: 0.00em;">
+&#160;</div>
+rsync://rsync-user@private-mirror.com:873/gentoo-portage<div style="height: 0.00em;">
+&#160;</div>
+ssh://ssh-user@192.168.0.1:22/usr/portage<div style="height: 0.00em;">
+&#160;</div>
+ssh://ssh-user@192.168.0.1:22/\${HOME}/portage-storage</div>
+</dd>
+</dl>
+<dl>
+<dt>
+Note: For the ssh:// scheme, key-based authentication might be of interest.</dt>
+<dd>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>sync-user</b></dt>
+<dd>
+Specifies the credentials used to perform the synchronization.<div style="height: 0.00em;">
+&#160;</div>
+Syntax: [user][:group]<div style="height: 0.00em;">
+&#160;</div>
+If only user is provided, the primary group of the user will be used. If only group is provided, the current user will be preserved and only group id will be changed.<div style="height: 0.00em;">
+&#160;</div>
+This key takes precedence over FEATURES=userpriv. If user or group id is provided, Portage no longer uses owner of the directory.</dd>
+</dl>
+</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+[DEFAULT]<br/>
+# make gentoo the main repository, which makes it the default master<br/>
+# repository for repositories that do not specify masters<br/>
+main-repo = gentoo<br/>
+# make all repositories inherit eclasses from the java-overlay and<br/>
+# java-experimental repositories, with eclasses from java-experimental<br/>
+# taking precedence over those from java-overlay<br/>
+eclass-overrides = java-overlay java-experimental<div class="spacer">
+</div>
+<br/>
+[gentoo]<br/>
+# repos with higher priorities are preferred when ebuilds with equal versions<br/>
+# are found in multiple repos (see the `emerge --info --verbose` repo<br/>
+# display for a listing of repos and their corresponding priorities).<br/>
+priority = 9999<br/>
+# disable all eclass overrides for ebuilds from the gentoo repository<br/>
+eclass-overrides =<br/>
+# when processing metadata/layout.conf from other repositories, substitute<br/>
+# 'gentoo' in place of references to repositories named 'foo' and 'bar',<br/>
+# and discard the 'baz' alias contained in gentoo's layout.conf<br/>
+aliases = foo bar -baz<div class="spacer">
+</div>
+<br/>
+[kde-testing]<br/>
+# override the metadata/layout.conf masters setting from the kde-testing repo<br/>
+masters = gentoo kde<div class="spacer">
+</div>
+<br/>
+[python]<br/>
+# override the metadata/layout.conf masters setting from the python repo,<br/>
+# so that settings won't be inherited from those masters, and so that<br/>
+# those master repos won't be required as dependencies (the user must<br/>
+# ensure that any required dependencies such as eclasses are satisfied)<br/>
+masters =<div class="spacer">
+</div>
+<br/>
+# Repository 'gentoo' synchronized using CVS<br/>
+[gentoo]<br/>
+location = /usr/portage<br/>
+sync-type = cvs<br/>
+sync-uri = :pserver:anonymous@anoncvs.gentoo.org:/var/cvsroot<br/>
+sync-cvs-repo = gentoo-x86<br/>
+auto-sync = yes<div class="spacer">
+</div>
+<br/>
+# Overlay 'voip' syncronized with layman's plug-in sync module<br/>
+[voip]<br/>
+location = /var/lib/layman/voip<br/>
+sync-type = laymanator<br/>
+sync-uri = git://git.overlays.gentoo.org/proj/voip.git<br/>
+auto-sync = yes<br/>
+</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>sets.conf</b></dt>
+<dd>
+A package set configuration file. Settings here override settings from  <b>/usr/portage/sets.conf</b> and <b>/usr/share/portage/config/sets</b>. The format is described extensively in the  <i>Package Set Configuration</i> section of the html documentation which is installed with portage when the &quot;doc&quot; USE flag is enabled.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+[world]<br/>
+class = portage.sets.base.DummyPackageSet<br/>
+packages = @profile @selected @system<div class="spacer">
+</div>
+<br/>
+[usersets]<br/>
+class = portage.sets.files.StaticFileSet<br/>
+multiset = true<br/>
+directory =  %(PORTAGE_CONFIGROOT)setc/portage/sets<br/>
+world-candidate = True<div class="spacer">
+</div>
+<br/>
+[module-rebuild]<br/>
+class = portage.sets.dbapi.OwnerSet<br/>
+files = /lib/modules<br/>
+</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/etc/portage/env/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+In this directory additional package-specific bashrc files can be created. Note that if package-specific environment variable settings are all that's needed, then  <b>/etc/portage/package.env</b> should be used instead of the bashrc approach that is described here. Also note that special variables such as  <b>FEATURES</b> and <b>INSTALL_MASK</b> will not produce the intended results if they are set in bashrc, and therefore  <b>/etc/portage/package.env</b> should be used instead. Lastly, note that these files are interpreted much later than the portage environment file  <b>package.env</b>.<div style="height: 1.00em;">
+&#160;</div>
+Portage will source all of these bashrc files after <b>/etc/portage/bashrc</b> in the following order:<dl>
+<dt>
+1.</dt>
+<dd>
+/etc/portage/env/${CATEGORY}/${PN}</dd>
+</dl>
+<dl>
+<dt>
+0[step].</dt>
+<dd>
+/etc/portage/env/${CATEGORY}/${PN}:${SLOT}</dd>
+</dl>
+<dl>
+<dt>
+0[step].</dt>
+<dd>
+/etc/portage/env/${CATEGORY}/${P}</dd>
+</dl>
+<dl>
+<dt>
+0[step].</dt>
+<dd>
+/etc/portage/env/${CATEGORY}/${PF}</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/etc/portage/sets/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+For each file in this directory, a package set is created with its name corresponding to the name of the file. Each file should contain a list of package atoms and nested package sets, one per line. When a package set is referenced as an  <b>emerge</b>(1) argument or when it is referenced as a nested package set (inside of another package set), the set name is prefixed with  <b>@</b>.<div style="height: 1.00em;">
+&#160;</div>
+Also see <b>/var/lib/portage/world_sets</b> and the <b>emerge</b>(1)  <b>--list-sets</b> option.</div>
+<dl>
+<dt>
+<b>/usr/portage/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>sets.conf</b></dt>
+<dd>
+A package set configuration file. Also see <b>/etc/portage/sets.conf</b> which overrides these settings, and  <b>/usr/share/portage/config/sets</b> which contains default settings.</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/usr/portage/metadata/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>layout.conf</b></dt>
+<dd>
+Specifies information about the repository layout.  <i>Site-specific</i> overrides to <b>layout.conf</b> settings may be specified in  <b>/etc/portage/repos.conf</b>. Settings in  <b>repos.conf</b> take precedence over settings in  <b>layout.conf</b>, except tools such as <b>repoman</b>(1) and <b>egencache</b>(1) ignore &quot;aliases&quot;, &quot;eclass-overrides&quot; and &quot;masters&quot; attributes set in  <b>repos.conf</b> since their operations are inherently <b>not</b>  <i>site-specific</i>.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- attributes are specified in &quot;${attribute} = ${value}&quot; format<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Supported attributes.</i><div style="margin-left: 5.00ex;">
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>aliases</b></dt>
+<dd>
+Behaves like an &quot;aliases&quot; attribute in <b>repos.conf</b>.</dd>
+</dl>
+<dl>
+<dt>
+<b>eapis-banned</b></dt>
+<dd>
+List of EAPIs which are not allowed in this repo.</dd>
+</dl>
+<dl>
+<dt>
+<b>eapis-deprecated</b></dt>
+<dd>
+List of EAPIs which are allowed but generate warnings when used.</dd>
+</dl>
+<dl>
+<dt>
+<b>masters</b></dt>
+<dd>
+Names of repositories which satisfy dependencies on eclasses and from which settings specified in various repository-level files ( <b>package.mask</b>,  <b>package.use.mask</b>, <b>use.mask</b> etc.) are inherited. Each repository name should correspond to the value of a  <b>repo_name</b> entry from one of the repositories that is configured in  <b>repos.conf</b> file. Repositories listed toward the right of the  <b>masters</b> list take precedence over those listed toward the left of the list.</dd>
+</dl>
+<dl>
+<dt>
+<b>repo-name</b> = &lt;value of profiles/repo_name&gt;</dt>
+<dd>
+The name of this repository (overrides profiles/repo_name if it exists).</dd>
+</dl>
+<dl>
+<dt>
+<b>sign-commits</b> = [true|<b>false</b>]</dt>
+<dd>
+Boolean value whether we should sign commits in this repo.</dd>
+</dl>
+<dl>
+<dt>
+<b>sign-manifests</b> = [<b>true</b>|false]</dt>
+<dd>
+Boolean value whether we should sign Manifest files in this repo.</dd>
+</dl>
+<dl>
+<dt>
+<b>thin-manifests</b> = [true|<b>false</b>]</dt>
+<dd>
+Boolean value whether Manifest files contain only DIST entries.</dd>
+</dl>
+<dl>
+<dt>
+<b>use-manifests</b> = [<b>strict</b>|true|false]</dt>
+<dd>
+How Manifest files get used.  Possible values are &quot;strict&quot; (require an entry for every file), &quot;true&quot; (if an entry exists for a file, enforce it), or &quot;false&quot; (don't check Manifest files at all).</dd>
+</dl>
+<dl>
+<dt>
+<b>manifest-hashes</b></dt>
+<dd>
+List of hashes to generate/check in Manifest files.  Valid hashes depend on the current version of portage; see the portage.const.MANIFEST2_HASH_FUNCTIONS constant for the current list.</dd>
+</dl>
+<dl>
+<dt>
+<b>update-changelog</b> = [true|<b>false</b>]</dt>
+<dd>
+The default setting for repoman's --echangelog option.</dd>
+</dl>
+<dl>
+<dt>
+<b>cache-formats</b> = [pms] [md5-dict]</dt>
+<dd>
+The cache formats supported in the metadata tree.  There is the old &quot;pms&quot; format and the newer/faster &quot;md5-dict&quot; format.  Default is to detect dirs.</dd>
+</dl>
+<dl>
+<dt>
+<b>profile_eapi_when_unspecified</b></dt>
+<dd>
+The EAPI to use for profiles when unspecified. This attribute is supported only if profile-default-eapi is included in profile-formats.</dd>
+</dl>
+<dl>
+<dt>
+<b>profile-formats</b> = [pms] [portage-1] [portage-2] [profile-bashrcs] [profile-set] [profile-default-eapi] [build-id]</dt>
+<dd>
+Control functionality available to profiles in this repo such as which files may be dirs, or the syntax available in parent files.  Use &quot;portage-2&quot; if you're unsure.  The default is &quot;portage-1-compat&quot; mode which is meant to be compatible with old profiles, but is not allowed to be opted into directly. Setting profile-bashrcs will enable the per-profile bashrc mechanism  <b>package.bashrc</b>. Setting profile-set enables support for using the profile  <b>packages</b> file to add atoms to the @profile package set. See the profile  <b>packages</b> section for more information. Setting profile-default-eapi enables support for the profile_eapi_when_unspecified attribute. Setting build-id allows dependency atoms in the profile to refer to specific builds (see the binpkg-multi-instance FEATURES setting in  <b>make.conf</b>(5)). A build-id atom is identical to a version-specific atom, except that the version is followed by a hyphen and an integer build-id.</dd>
+</dl>
+</div>
+</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 5.00ex;">
+<i>Example:</i><br/>
+# Specify the repository name (overriding profils/repo_name).<br/>
+repo-name = foo-overlay<div class="spacer">
+</div>
+<br/>
+# eclasses provided by java-overlay take precedence over identically named<br/>
+# eclasses that are provided by gentoo<br/>
+masters = gentoo java-overlay<div class="spacer">
+</div>
+<br/>
+# indicate that this repo can be used as a substitute for foo-overlay<br/>
+aliases = foo-overlay<div class="spacer">
+</div>
+<br/>
+# indicate that ebuilds with the specified EAPIs are banned<br/>
+eapis-banned = 0 1<div class="spacer">
+</div>
+<br/>
+# indicate that ebuilds with the specified EAPIs are deprecated<br/>
+eapis-deprecated = 2 3<div class="spacer">
+</div>
+<br/>
+# sign commits in this repo, which requires Git &gt;=1.7.9, and<br/>
+# key configured by `git config user.signingkey key_id`<br/>
+sign-commits = true<div class="spacer">
+</div>
+<br/>
+# do not sign Manifest files in this repo<br/>
+sign-manifests = false<div class="spacer">
+</div>
+<br/>
+# Manifest files only contain DIST entries<br/>
+thin-manifests = true<div class="spacer">
+</div>
+<br/>
+# indicate that this repo requires manifests for each package, and is<br/>
+# considered a failure if a manifest file is missing/incorrect<br/>
+use-manifests = strict<div class="spacer">
+</div>
+<br/>
+# customize the set of hashes generated for Manifest entries<br/>
+manifest-hashes = SHA256 SHA512 WHIRLPOOL<div class="spacer">
+</div>
+<br/>
+# indicate that this repo enables repoman's --echangelog=y option automatically<br/>
+update-changelog = true<div class="spacer">
+</div>
+<br/>
+# indicate that this repo contains both md5-dict and pms cache formats,<br/>
+# which may be generated by egencache(1)<br/>
+cache-formats = md5-dict pms<div class="spacer">
+</div>
+<br/>
+# indicate that this repo contains profiles that may use directories for<br/>
+# package.mask, package.provided, package.use, package.use.force,<br/>
+# package.use.mask, package.use.stable.force, package.use.stable.mask,<br/>
+# use.force, use.mask, use.stable.force, and use.stable.mask.<br/>
+# profile-formats = portage-1<br/>
+# indicate that paths such as 'gentoo:targets/desktop' or ':targets/desktop' in<br/>
+# profile parent files can be used to express paths relative to the root<br/>
+# 'profiles' directory of a repository (when the repo name is omitted before<br/>
+# the colon, it refers to the current repository the parent file is inside)<br/>
+profile-formats = portage-2<br/>
+</div>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>pkg_desc_index</b></dt>
+<dd>
+This is an index of package names, versions, and descriptions which may be generated by  <b>egencache</b>(1) in order to optimize  <b>emerge</b>(1) search actions.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+sys-apps/sed 4.2 4.2.1 4.2.1-r1 4.2.2: Super-useful stream editor<br/>
+sys-apps/usleep 0.1: A wrapper for usleep<br/>
+</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/usr/portage/profiles/</b></dt>
+<dd>
+Global Gentoo settings that are controlled by the developers.  To override these settings, you can use the files in  <b>/etc/portage/</b>.</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>arch.list</b></dt>
+<dd>
+A list of all valid KEYWORDS.  This does not include modifiers.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- one KEYWORD per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+x86<br/>
+ppc<br/>
+sparc<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>categories</b></dt>
+<dd>
+A simple list of valid categories that may be used in repositories and PKGDIR (see  <b>make.conf</b>(5)).<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- one category per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+app-admin<br/>
+dev-lang<br/>
+games-strategy<br/>
+sys-kernel<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>info_pkgs</b></dt>
+<dd>
+A list of all the packages which will be displayed when you run `emerge info`.</dd>
+</dl>
+<dl>
+<dt>
+<b>info_vars</b></dt>
+<dd>
+A list of all the variables which will be displayed when you run `emerge info`.</dd>
+</dl>
+<dl>
+<dt>
+<b>license_groups</b></dt>
+<dd>
+This contains groups of licenses that may be specifed in the  <b>ACCEPT_LICENSE</b> variable (see <b>make.conf</b>(5)). Refer to GLEP 23 for further information:  <i>http://www.gentoo.org/proj/en/glep/glep-0023.html</i>.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one group name, followed by list of licenses and nested groups<br/>
+- nested groups are prefixed with the '@' symbol<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# The FSF-APPROVED group includes the entire GPL-COMPATIBLE group and more.<br/>
+FSF-APPROVED @GPL-COMPATIBLE Apache-1.1 BSD-4 MPL-1.0 MPL-1.1<br/>
+# The GPL-COMPATIBLE group includes all licenses compatible with the GNU GPL.<br/>
+GPL-COMPATIBLE Apache-2.0 BSD BSD-2 GPL-2 GPL-3 LGPL-2.1 LGPL-3 X11 ZLIB<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.accept_keywords</b></dt>
+<dd>
+Per-package ACCEPT_KEYWORDS for profiles. This has the same format and behavior as /etc/portage/package.accept_keywords, including the ability to list atoms without any keywords in order to accept unstable variants of all stable keywords listed in ACCEPT_KEYWORDS.</dd>
+</dl>
+<dl>
+<dt>
+<b>package.keywords</b></dt>
+<dd>
+Per-profile KEYWORDS. Useful for cases in which the effective KEYWORDS of a given package should vary depending on which profile the user has selected.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comment lines begin with # (no inline comments)<br/>
+- one DEPEND atom per line followed by additional KEYWORDS<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# add stable keyword to libgd<br/>
+media-libs/libgd x86<br/>
+# remove stable keyword from mplayer and add unstable keyword<br/>
+media-video/mplayer -x86 ~x86<br/>
+# remove all keywords from netcat<br/>
+net-analyzer/netcat -*<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>package.mask</b></dt>
+<dd>
+This contains a list of DEPEND atoms for packages that should not be installed in any profile.  Useful for adding the latest KDE betas and making sure no one accidentally upgrades to them.  Also useful for quickly masking specific versions due to security issues.  ALWAYS include a comment explaining WHY the package has been masked and WHO is doing the masking.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one DEPEND atom per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+# masked for security reasons<br/>
+&lt;sys-libs/zlib-1.1.4<br/>
+# &lt;caleb@gentoo.org&gt; (10 Sep 2003)<br/>
+# new kde betas<br/>
+=kde-base/kde-3.2.0_beta1<br/>
+=kde-base/kdeaccessibility-3.2.0_beta1<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>profiles.desc</b></dt>
+<dd>
+List all the current stable and development profiles.  If a profile is listed here, then it will be checked by repoman. <i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- one profile list per line in format: arch dir status<br/>
+- arch must be listed in arch.list<br/>
+- dir is relative to profiles.desc<br/>
+- status must be 'stable', 'dev', or 'exp'<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+alpha        default/linux/alpha/10.0    stable<br/>
+m68k         default/linux/m68k/10.0     dev<br/>
+x86          default/linux/x86/10.0      stable<br/>
+x86-linux    prefix/linux/x86            exp<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>repo_name</b></dt>
+<dd>
+The first line of the file should define a unique repository name. The name may contain any of the characters [A-Za-z0-9_-]. It must not begin with a hyphen. If the repo-name attribute is specified in layout.conf, then that setting will take precedence.</dd>
+</dl>
+<dl>
+<dt>
+<b>thirdpartymirrors</b></dt>
+<dd>
+Controls the mapping of mirror:// style URIs to actual lists of mirrors.  Keeps us from overloading a single server.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- mirror type followed by a list of hosts<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+sourceforge http://aleron.dl.sourceforge.net/sourceforge http://unc.dl.sourceforge.net/sourceforge<div class="spacer">
+</div>
+<br/>
+gentoo http://distro.ibiblio.org/pub/linux/distributions/gentoo/distfiles/ ftp://ftp.gtlib.cc.gatech.edu/pub/gentoo/distfiles<div class="spacer">
+</div>
+<br/>
+kernel http://www.kernel.org/pub http://www.us.kernel.org/pub<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>use.desc</b></dt>
+<dd>
+All global USE flags must be listed here with a description of what they do.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- use flag - some description<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+3dfx - Adds support for 3dfx video cards<br/>
+acl - Adds support for Access Control Lists<br/>
+doc - Adds extra documentation<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>use.local.desc</b></dt>
+<dd>
+All local USE flags are listed here along with the package and a description. This file is automatically generated from the metadata.xml files that are included with each individual package. Refer to GLEP 56 for further information:  <i>http://www.gentoo.org/proj/en/glep/glep-0056.html</i>.<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- comments begin with # (no inline comments)<br/>
+- package:use flag - description<div class="spacer">
+</div>
+<i>Example:</i><br/>
+app-editors/nano:justify - Toggles the justify option<br/>
+dev-libs/DirectFB:fusion - Adds Multi Application support<br/>
+games-emulation/xmess:net - Adds network support<br/>
+</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/usr/share/portage/config/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>make.globals</b></dt>
+<dd>
+The global default settings for Portage.  This comes from the portage package itself.  Settings in  <b>make.conf</b> or <b>package.env</b> override values set here. The format is described extensively in  <b>make.conf</b>(5).</dd>
+</dl>
+<dl>
+<dt>
+<b>repos.conf</b></dt>
+<dd>
+The default configuration of repositories for Portage.  This comes from the portage package itself.  Settings in  <b>/etc/portage/repos.conf</b> override values set here. The format is described extensively in section for  <b>/etc/portage/repos.conf</b>.</dd>
+</dl>
+<dl>
+<dt>
+<b>sets</b></dt>
+<dd>
+A directory containing package set configuration files. Also see  <b>/etc/portage/sets.conf</b> and <b>/usr/portage/sets.conf</b>, both of which override values set here. Default set configurations are installed in  <b>/usr/share/portage/config/sets/portage.conf</b>.</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/var/cache/edb/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+This directory is used to store internal portage cache files.  The names and purpose of these files are not documented on purpose so as to keep down bitrot as internals change.  If you aren't working on portage internally, then the details most likely do not matter to you.<div style="height: 1.00em;">
+&#160;</div>
+This entire directory can be safely deleted.  It is highly recommended you do not do this however as it can be a time consuming process to generate them all again.</div>
+<dl>
+<dt>
+<b>/var/db/pkg/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+All installed package information is recorded here.  If portage thinks you have a package installed, it is usually because it is listed here.<div style="height: 1.00em;">
+&#160;</div>
+The format follows somewhat closely that of the portage tree.  There is a directory for each category and a package-version subdirectory for each package you have installed.<div style="height: 1.00em;">
+&#160;</div>
+Inside each package directory are misc files that describe the installed contents of the package as well as build time information (so that the package can be unmerged without needing the portage tree).<div style="height: 1.00em;">
+&#160;</div>
+The exact file contents and format are not described here again so that things can be changed quickly.  Generally though there is one file per environment variable that &quot;matters&quot; (like CFLAGS) with the contents stored inside of it. Another common file is the CONTENTS file which lists the path and hashes of all objects that the package installed onto your system.<dl>
+<dt>
+<b>PROVIDES</b></dt>
+<dd>
+Contains information about the sonames that a package provides, which is automatically generated from the files that it installs. The sonames may have been filtered by the  <b>PROVIDES_EXCLUDE</b> <b>ebuild</b>(5) variable. A multilib category, followed by a colon, always preceeds a list of one or more sonames.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+x86_32: libcom_err.so.2 libss.so.2 x86_64: libcom_err.so.2 libss.so.2<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>REQUIRES</b></dt>
+<dd>
+Contains information about the sonames that a package requires, which is automatically generated from the files that it installs. The sonames may have been filtered by the  <b>REQUIRES_EXCLUDE</b> <b>ebuild</b>(5) variable. Any sonames that a package provides are automatically excluded from  <b>REQUIRES</b>. A multilib category, followed by a colon, always preceeds a list of one or more sonames.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+x86_32: ld-linux.so.2 libc.so.6 x86_64: ld-linux-x86-64.so.2 libc.so.6<br/>
+</dd>
+</dl>
+</div>
+<dl>
+<dt>
+<b>/var/lib/portage/</b></dt>
+<dd>
+</dd>
+</dl>
+<div style="margin-left: 5.00ex;">
+<dl>
+<dt>
+<b>config</b></dt>
+<dd>
+Hashes which are used to determine whether files in config protected directories have been modified since being installed.  Files which have not been modified will automatically be unmerged.</dd>
+</dl>
+<dl>
+<dt>
+<b>world</b></dt>
+<dd>
+Every time you emerge a package, the package that you requested is recorded here.  Then when you run `emerge world -up`, the list of packages is read from this file.  Note that this does not mean that the packages that were installed as dependencies are listed here.  For example, if you run `emerge mod_wsgi` and you do not have apache already, then &quot;www-apache/mod_wsgi&quot; is recorded in the world file but &quot;www-servers/apache&quot; is not.  For more information, review  <b>emerge</b>(1).<div style="height: 1.00em;">
+&#160;</div>
+<i>Format:</i><br/>
+- one DEPEND atom base per line<br/>
+<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+games-misc/fortune-mod-gentoo-dev<br/>
+dev-libs/uclibc<br/>
+app-cdr/cdemu<br/>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>world_sets</b></dt>
+<dd>
+This is like the world file but instead of package atoms it contains packages sets which always begin with the  <b>@</b> character. Use  <b>/etc/portage/sets/</b> to define user package sets.<div style="height: 1.00em;">
+&#160;</div>
+<i>Example:</i><br/>
+@kde<br/>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> Please report bugs via http://bugs.gentoo.org/</div>
+<div class="section">
+<h1>AUTHORS</h1><br/>
+Marius Mauch &lt;genone@gentoo.org&gt;<br/>
+Mike Frysinger &lt;vapier@gentoo.org&gt;<br/>
+Drake Wyrm &lt;wyrm@haell.com&gt;<br/>
+Arfrever Frehtes Taifersar Arahesis &lt;arfrever@apache.org&gt;<br/>
+</div>
+<div class="section">
+<h1>SEE ALSO</h1> <b>emerge</b>(1), <b>ebuild</b>(1), <b>ebuild</b>(5), <b>make.conf</b>(5), <b>color.map</b>(5)</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+Feb 2015</td>
+<td class="foot-os">
+Portage 2.2.20</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

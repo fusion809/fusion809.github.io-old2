@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+BASENAME(1)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+BASENAME(1)</td>
+<td class="head-vol">
+User Commands</td>
+<td class="head-rtitle">
+BASENAME(1)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> basename - strip directory and suffix from filenames</div>
+<div class="section">
+<h1>SYNOPSIS</h1> <b>basename</b>  <i>NAME </i>[<i>SUFFIX</i>]<div style="height: 0.00em;">
+&#160;</div>
+<b>basename</b>  <i>OPTION</i>... <i>NAME</i>...</div>
+<div class="section">
+<h1>DESCRIPTION</h1> Print NAME with any leading directory components removed. If specified, also remove a trailing SUFFIX.<div class="spacer">
+</div>
+Mandatory arguments to long options are mandatory for short options too.<dl>
+<dt>
+<b>-a</b>, <b>--multiple</b></dt>
+<dd>
+support multiple arguments and treat each as a NAME</dd>
+</dl>
+<dl>
+<dt>
+<b>-s</b>, <b>--suffix</b>=<i>SUFFIX</i></dt>
+<dd>
+remove a trailing SUFFIX; implies <b>-a</b></dd>
+</dl>
+<dl>
+<dt>
+<b>-z</b>, <b>--zero</b></dt>
+<dd>
+end each output line with NUL, not newline</dd>
+</dl>
+<dl>
+<dt>
+<b>--help</b></dt>
+<dd>
+display this help and exit</dd>
+</dl>
+<dl>
+<dt>
+<b>--version</b></dt>
+<dd>
+output version information and exit</dd>
+</dl>
+</div>
+<div class="section">
+<h1>EXAMPLES</h1><dl>
+<dt>
+basename /usr/bin/sort</dt>
+<dd>
+-&gt; &quot;sort&quot;</dd>
+</dl>
+<dl>
+<dt>
+basename include/stdio.h .h</dt>
+<dd>
+-&gt; &quot;stdio&quot;</dd>
+</dl>
+<dl>
+<dt>
+basename -s .h include/stdio.h</dt>
+<dd>
+-&gt; &quot;stdio&quot;</dd>
+</dl>
+<dl>
+<dt>
+basename -a any/str1 any/str2</dt>
+<dd>
+-&gt; &quot;str1&quot; followed by &quot;str2&quot;</dd>
+</dl>
+</div>
+<div class="section">
+<h1>AUTHOR</h1> Written by David MacKenzie.</div>
+<div class="section">
+<h1>REPORTING BUGS</h1> GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;<div style="height: 0.00em;">
+&#160;</div>
+Report basename translation bugs to &lt;http://translationproject.org/team/&gt;</div>
+<div class="section">
+<h1>COPYRIGHT</h1> Copyright &#169; 2015 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;.<div style="height: 0.00em;">
+&#160;</div>
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.</div>
+<div class="section">
+<h1>SEE ALSO</h1> dirname(1), readlink(1)<div class="spacer">
+</div>
+<div style="height: 0.00em;">
+&#160;</div>
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/basename&gt;<div style="height: 0.00em;">
+&#160;</div>
+or available locally via: info '(coreutils) basename invocation'</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+July 2015</td>
+<td class="foot-os">
+GNU coreutils 8.24</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+

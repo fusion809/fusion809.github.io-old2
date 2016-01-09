@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+table.head, table.foot { width: 100%; }
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+table.foot td { width: 50%; }
+table.head td { width: 33%; }
+div.spacer { margin: 1em 0; }
+</style>
+<title>
+REPO-ADD(8)</title>
+</head>
+<body>
+<div class="mandoc">
+<table class="head">
+<tbody>
+<tr>
+<td class="head-ltitle">
+REPO-ADD(8)</td>
+<td class="head-vol">
+Pacman Manual</td>
+<td class="head-rtitle">
+REPO-ADD(8)</td>
+</tr>
+</tbody>
+</table>
+<div class="section">
+<h1>NAME</h1> repo-add - package database maintenance utility</div>
+<div class="section">
+<h1>SYNOPSIS</h1>  <i>repo-add</i> [options] &lt;path-to-db&gt; &lt;package|delta&gt; [&lt;package|delta&gt; ...]<div style="height: 1.00em;">
+&#160;</div>
+<i>repo-remove</i> [options] &lt;path-to-db&gt; &lt;packagename|delta&gt; [&lt;packagename|delta&gt; ...]</div>
+<div class="section">
+<h1>DESCRIPTION</h1>  <i>repo-add</i> and <i>repo-remove</i> are two scripts to help build a package database for packages built with <b>makepkg</b>(8) and installed with <b>pacman</b>(8). They also handle package deltas produced by <b>pkgdelta</b>(8).<div style="height: 1.00em;">
+&#160;</div>
+<i>repo-add</i> will update a package database by reading a built package or package delta file. Multiple packages and/or deltas to add can be specified on the command line.<div style="height: 1.00em;">
+&#160;</div>
+<i>repo-remove</i> will update a package database by removing the package name or delta specified on the command line. Multiple packages and/or delta to remove can be specified on the command line.<div style="height: 1.00em;">
+&#160;</div>
+A package database is a tar file, optionally compressed. Valid extensions are &#8220;.db&#8221; or &#8220;.files&#8221; followed by an archive extension of &#8220;.tar&#8221;, &#8220;.tar.gz&#8221;, &#8220;.tar.bz2&#8221;, &#8220;.tar.xz&#8221;, or &#8220;.tar.Z&#8221;. The file does not need to exist, but all parent directories must exist.</div>
+<div class="section">
+<h1>COMMON OPTIONS</h1>  <b>-q, --quiet</b><div style="margin-left: 4.00ex;">
+Force this program to keep quiet and run silent except for warning and error messages.</div>
+<div class="spacer">
+</div>
+<b>-s, --sign</b><div style="margin-left: 4.00ex;">
+Generate a PGP signature file using GnuPG. This will execute gpg --detach-sign --use-agent on the generated database to generate a detached signature file, using the GPG agent if it is available. The signature file will be the entire filename of the database with a &#8220;.sig&#8221; extension.</div>
+<div class="spacer">
+</div>
+<b>-k, --key</b> &lt;key&gt;<div style="margin-left: 4.00ex;">
+Specify a key to use when signing packages. Can also be specified using the GPGKEY environmental variable. If not specified in either location, the default key from the keyring will be used.</div>
+<div class="spacer">
+</div>
+<b>-v, --verify</b><div style="margin-left: 4.00ex;">
+Verify the PGP signature of the database before updating the database. If the signature is invalid, an error is produced and the update does not proceed.</div>
+</div>
+<div class="section">
+<h1>REPO-ADD OPTIONS</h1>  <b>-d, --delta</b><div style="margin-left: 4.00ex;">
+Automatically generate and add a delta file between the old entry and the new one, if the old package file is found next to the new one.</div>
+<div class="spacer">
+</div>
+<b>-f, --files</b><div style="margin-left: 4.00ex;">
+Tells repo-add also to create and include a list of the files in the specified packages. This is useful for creating databases listing all files in a given sync repository for tools that may use this information.</div>
+</div>
+<div class="section">
+<h1>SEE ALSO</h1>  <b>makepkg</b>(8), <b>pacman</b>(8), <b>pkgdelta</b>(8)<div style="height: 1.00em;">
+&#160;</div>
+See the pacman website at http://www.archlinux.org/pacman/ for current information on pacman and its related tools.</div>
+<div class="section">
+<h1>BUGS</h1> Bugs? You must be kidding, there are no bugs in this software. But if we happen to be wrong, send us an email with as much detail as possible to pacman-dev@archlinux.org.</div>
+<div class="section">
+<h1>AUTHORS</h1> Current maintainers:<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Allan McRae &lt;allan@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Dan McGee &lt;dan@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Dave Reisner &lt;dreisner@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+Past major contributors:<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Judd Vinet &lt;jvinet@zeroflux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Aurelien Foret &lt;aurelien@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Aaron Griffin &lt;aaron@archlinux.org&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Xavier Chantry &lt;shiningxc@gmail.com&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+<div style="margin-left: 4.00ex;">
+&#8226;Nagy Gabor &lt;ngaba@bibl.u-szeged.hu&gt;</div>
+<div style="height: 1.00em;">
+&#160;</div>
+For additional contributors, use git shortlog -s on the pacman.git repository.</div>
+<table class="foot">
+<tr>
+<td class="foot-date">
+2015-12-03</td>
+<td class="foot-os">
+Pacman 4.0.3</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+
