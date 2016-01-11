@@ -25,6 +25,7 @@ On Manjaro Linux many, if not all of these text editors, are also available from
 {% include_relative TE/comparisons.md %}
 {% include_relative TE/atom.md %}
 {% include_relative TE/bluefish.md %}
+{% include_relative TE/eclipse.md %}
 {% include_relative TE/geany.md %}
 {% include_relative TE/gedit.md %}
 {% include_relative TE/emacs.md %}
