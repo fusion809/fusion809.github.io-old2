@@ -22,5 +22,13 @@ It is fairly simple to get nano on Sabayon. Odds are it will already be installe
 alternatively, to install it with Portage, run:
 {% include coder.html line1="emerge -av app-editors/nano" %}
 
+### Advantages (Pros)
+* Easy to install on both Manjaro and Sabayon, likely to come preinstalled too.
+* It is also the lightest-weight of TEs/IDEs.
+
+### Disadvantages (Cons)
+* Unintuitive keymap, can take a little getting used to.
+* It also lacks customizability
+
 ### Ratings
 {% include_relative TE/nano-ratings.html %}
