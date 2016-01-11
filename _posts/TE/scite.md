@@ -23,13 +23,13 @@ It is easy to install it with Entropy or Portage. To install it with Entropy, ru
 To install it with Portage, run:
 {% include coder.html line1="emerge -av app-editors/scite" %}
 
-### Disadvantages (Cons)
-* The list of languages it automatically supports is &lt;30.
-
 ### Advantages (Pros)
 * Fairly lightweight
 * Extensively customizable
 * Easy to get on Sabayon and other Linux distributions like Manjaro.
+
+### Disadvantages (Cons)
+* The list of languages it automatically supports is &lt;30.
 
 ### Ratings
 {% include_relative TE/scite-ratings.html %}

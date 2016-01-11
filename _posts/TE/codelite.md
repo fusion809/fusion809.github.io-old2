@@ -25,3 +25,15 @@ alternatively, one can install it from an unofficial Portage overlay. At the tim
 * [`sabayon-tools`](https://github.com/fusion809/sabayon-tools)
 I have tried building CodeLite using the `kaa` overlay's ebuild and it failed due to a missing dependency:
 `x11-libs/wxGTK:3.0`. I would personally recommend using my overlay's ebuild, because I have some control over it, so I can personally vouch for the fact it manages to build under Sabayon Linux.
+
+### Advantages (Pros)
+* Cross-platform able to run on Windows, OS X and Linux.
+* Fairly lightweight for an IDE.
+* Feature-packed
+
+### Disadvantages (Cons)
+* Support for only four programming languages.
+* Not in the official binary package repositories for either Manjaro or Sabayon.
+
+### Ratings
+{% include_relative TE/codelite-ratings.html %}
