@@ -16,4 +16,12 @@ Eclipse can be installed by issuing the command:
 {% include coder.html line1="pacman -S eclipse-common" %}
 
 #### Sabayon
-On Sabayon, Eclipse should not be installed via the default package managers: Entropy and Portage, due to the fact that it is not in the Entropy repositories and the versions found in the official and unofficial Portage overlays are fairly out-of-date.
+On Sabayon, Eclipse should not be installed via the default package managers: Entropy and Portage, due to the fact that it is not in the Entropy repositories and the versions found in the official and unofficial Portage overlays are fairly out-of-date and present security risks. Instead I would recommend you go to the download page, https://eclipse.org/downloads/, find the version you want (which will depend on the specifics of the programming you would like to perform) and download the respective tarball. This tarball should contain the executable script for launching the program. Alternatively, you can install it using the new installer:
+
+```bash
+# Set this mirror variable, according to whichever mirror is closest to you
+MIRROR=http://mirror.internode.on.net
+wget -cqO- $MIRROR/pub/eclipse/oomph/epp/mars/R1a/eclipse-inst-linux64.tar.gz | tar -xz
+cd eclipse-installer
+./eclipse-inst
+```
