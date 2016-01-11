@@ -11,6 +11,11 @@ Some basic customization can be done, graphically, by going to Edit←Preference
 It supports syntax-highlighting for roughly, a couple of dozen computer languages.
 
 ### Obtaining it
+#### Manjaro
+It can be easily installed by running:
+{% include coder.html line1="pacman -S mousepad" %}
+
+#### Sabayon
 It is fairly easy to obtain it on Sabayon, to install it with Entropy run:
 {% include coder.html line1="equo i -av app-editors/mousepad" %}
 while to install it with Portage (and yes it is available in the Portage Tree):

@@ -13,6 +13,11 @@ SciTE can be customized by editing `.properties` files or via scripting with Lua
 It provides syntax-highlighting for dozens of computer languages. Support for extra languages can be added by creating `.properties` files for them.
 
 ### Obtaining it
+#### Manjaro
+It is easy to install SciTE on Manjaro using pacman. To do this run:
+{% include coder.html line1="pacman -S scite" %}
+
+#### Sabayon
 It is easy to install it with Entropy or Portage. To install it with Entropy, run:
 {% include coder.html line1="equo i -av app-editors/scite" %}
 To install it with Portage, run:

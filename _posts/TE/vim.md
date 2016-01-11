@@ -11,6 +11,14 @@ Vim is extensively customizable, for people with the required level of finesse i
 It has syntax-highlighting support for almost (if not every) every computer language. It also has several IDE-type features, like compiling source code from within it. Several other features can be added to it, for example, I wrote some of this post in Vim when my blog was powered by WordPress, using the [Vimpress plugin](https://github.com/PotHix/Vimpress). Several plugins are available in the [app-vim](http://gpo.zugaina.org/app-vim/) Portage category.
 
 ### Obtaining it
+#### Manjaro
+It is easy to install Vim on Manjaro using pacman. To do this run:
+{% include coder.html line1="pacman -S vim" %}
+if you want to be able to use the graphical user interface of Vim too run:
+{% include coder.html line1="pacman -S gvim" %}
+instead. Vim and gVim **cannot** be installed simultaneously on the same machine. 
+
+#### Sabayon
 It is easy to obtain Vim (and gVim) on Sabayon using Entropy or Portage. To install Vim and gVim using Entropy, run:
 {% include coder.html line1="equo i -av app-editors/vim app-editors/gvim" %}
 whereas to install it with Portage run:

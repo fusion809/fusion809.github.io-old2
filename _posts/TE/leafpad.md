@@ -11,6 +11,11 @@ There is little, if any, customizability for Leafpad.
 It offers no syntax highlighting support or auto-indentation support that I am aware of.
 
 ### Obtaining it
+#### Manjaro
+To install Leafpad on Manjaro merely run:
+{% include coder.html line1="pacman -S leafpad" %}
+
+#### Sabayon
 To install it on Sabayon with Entropy run:
 {% include coder.html line1="equo i -av app-editors/leafpad" %}
 while to install it with Portage run:

@@ -15,6 +15,14 @@ Some customization (such as of keyboard shortcuts, the toolbar and a few other f
 It has syntax-highlighting and auto-indentation support for over 180 different computer languages, including MediaWiki and shell script, but excluding PyMOL. It also has embedded terminal support.
 
 ### Obtaining it
+#### Manjaro
+Kate/KWrite can be installed using pacman, via running:
+{% include coder.html line1="pacman -S kate" %}
+and:
+{% include coder.html line1="pacman -S kwrite" %}
+, respectively.
+
+#### Sabayon
 Kate can be quite easily obtained from Entropy or Portage. To install it from Entropy run:
 {% include coder.html line1="equo i -av kde-apps/kate" %}
 while to install it with Portage run:

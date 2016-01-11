@@ -11,6 +11,11 @@ It is extensively customizable, via scripts in supported languages. Several plug
 As previously mentioned auto-indentation and syntax-highlighting support exists for a long list of computer languages. Plugins with extra IDE-like capabilities also exist, including a plugin for using git from within jEdit, another for using a Jython interpreter from within jEdit, another for a Python shell, *etc.*
 
 ### Obtaining it
+#### Manjaro
+On Manjaro jEdit can be installed with:
+{% include coder.html line1="pacman -S jedit" %}
+
+#### Sabayon
 On Sabayon jEdit can be installed via Entropy or Portage (from the Portage Tree, no need to add unofficial overlays for it). To install it using Entropy run:
 {% include coder.html line1="equo i -av app-editors/jedit" %}
 while to install it using Portage run:

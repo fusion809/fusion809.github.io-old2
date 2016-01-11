@@ -11,6 +11,12 @@ GE is one of the most customizable text editors available, but much of this cust
 GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs.
 
 ### Obtaining it
+#### Manjaro
+GNU Emacs is in the official pacman repository for Manjaro and can be installed using:
+{% include coder.html line1="pacman -S emacs" %}
+should install it.
+
+#### Sabayon
 GNU Emacs is available from the Entropy Store and the Portage Tree. To install it with Entropy run:
 {% include coder.html line1="equo i -av app-editors/emacs" %}
 while to install it with Portage run:
