@@ -10,11 +10,11 @@ I am unaware of any possible customization of nano, if you know some please do t
 ### Features
 It offers syntax-highlighting, auto-indenting and miscellaneous other support for several computer languages. It also auto-detects the computer language using file extensions. It also has search functions (accessable via pressing <kbd>Ctrl</kbd>+<kbd>W</kbd>).
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 It is simple to install it on Manjaro, to do so merely run:
 {% include coder.html line1="pacman -S nano" %}
-it is found in Manjaro's core repository, which makes it unique amongst text editors and IDEs on Manjaro, which are usually found in the community or extra repositories. 
+it is found in Manjaro's core repository, which makes it unique amongst text editors and IDEs on Manjaro, which are usually found in the community or extra repositories.
 
 #### Sabayon
 It is fairly simple to get nano on Sabayon. Odds are it will already be installed by default on your Sabayon machine, so check to see if it is with `nano` (does not matter if you execute this as root or standard user). If you do not have it, you can try to install it with Entropy, via running:

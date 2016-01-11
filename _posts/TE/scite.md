@@ -12,7 +12,7 @@ SciTE can be customized by editing `.properties` files or via scripting with Lua
 ### Features
 It provides syntax-highlighting for dozens of computer languages. Support for extra languages can be added by creating `.properties` files for them.
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 It is easy to install SciTE on Manjaro using pacman. To do this run:
 {% include coder.html line1="pacman -S scite" %}

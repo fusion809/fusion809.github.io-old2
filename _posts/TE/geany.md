@@ -10,11 +10,11 @@ The `~/.geany` directory is where customizations are kept. This customization ca
 ### Features
 Geany provides auto-indentation and syntax-highlighting for over a dozen different computer languages. Geany has an embedded terminal emulator. Several extra features can be added to Geany, using plugins.
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 The latest version of Geany (1.26) is presently in the official pacman repositories of Manjaro, so running:
 {% include coder.html line1="pacman -S geany" %}
-should install it. 
+should install it.
 
 #### Sabayon
 Geany can be easily installed using Entropy or Portage. Using Entropy run:

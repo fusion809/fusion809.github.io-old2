@@ -10,7 +10,7 @@ GE is one of the most customizable text editors available, but much of this cust
 ### Features
 GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs.
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 GNU Emacs is in the official pacman repository for Manjaro and can be installed using:
 {% include coder.html line1="pacman -S emacs" %}

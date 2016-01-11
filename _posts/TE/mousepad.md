@@ -10,7 +10,7 @@ Some basic customization can be done, graphically, by going to Edit←Preference
 ### Features
 It supports syntax-highlighting for roughly, a couple of dozen computer languages.
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 It can be easily installed by running:
 {% include coder.html line1="pacman -S mousepad" %}

@@ -10,7 +10,7 @@ There is little, if any, customizability for Leafpad.
 ### Features
 It offers no syntax highlighting support or auto-indentation support that I am aware of.
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 To install Leafpad on Manjaro merely run:
 {% include coder.html line1="pacman -S leafpad" %}

@@ -60,10 +60,10 @@ Atom has plugins for syntax highlighting and auto-indentation of most major comp
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">{{ proglang | markdownify }}</div>
 and several others. It also has packages that provide other features, including previews for markup languages such as HTML and markdown, an in-built terminal, *etc.*
 
-### Obtaining it
+### Obtaining It
 #### Manjaro
 Manjaro users must install Atom via the Arch User Repository (AUR), or via using my own [PKGBUILD](https://github.com/fusion809/PKGBUILDs/blob/master/atom-editor/PKGBUILD). At the time of writing the AUR contains five Atom packages, you can check to see if this statement has become outdated by going to [here](https://aur.archlinux.org/packages/?O=0&SeB=nd&K=atom-editor&outdated=&SB=n&SO=a&PP=50&do_Search=Go). These Atom packages are (**bold** is used to highlight keywords or points):
-* {% include aur.md package="atom-editor" %}, which builds a package for the **latest stable release** of Atom from **source code**. As it builds Atom from source code any momentary glitches in Internet connectivity can cause the build to fail, which would require one to start building the package again from scratch. My PKGBUILD is a more resilient version of this one, it will not fail due to momentary Internet connectivity issues.
+* {% include aurb.md package="atom-editor" %}, which builds a package for the **latest stable release** of Atom from **source code**. As it builds Atom from source code any momentary glitches in Internet connectivity can cause the build to fail, which would require one to start building the package again from scratch. My PKGBUILD is a more resilient version of this one, it will not fail due to momentary Internet connectivity issues.
 * {% include aurb.md package="atom-editor-bin" %}, which builds a package for the **latest stable release** of Atom from a **precompiled Debian binary**. This PKGBUILD tends to lag behind its source code counterpart.
 * {% include aurb.md package="atom-editor-beta" %}, which builds a package for the latest beta release of Atom from source code.
 * {% include aurb.md package="atom-editor-beta-bin" %}, which builds a package for the latest beta release of Atom from its Debian binary package.
