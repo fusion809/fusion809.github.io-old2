@@ -32,6 +32,7 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/comparisons.md %}
 {% include_relative TE/atom.md %}
 {% include_relative TE/bluefish.md %}
+{% include_relative TE/codelite.md %}
 {% include_relative TE/eclipse.md %}
 {% include_relative TE/geany.md %}
 {% include_relative TE/gedit.md %}
