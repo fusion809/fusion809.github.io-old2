@@ -16,7 +16,11 @@ Eclipse can be installed by issuing the command:
 {% include coder.html line1="pacman -S eclipse-common" %}
 
 #### Sabayon
-On Sabayon, Eclipse should not be installed via the default package managers: Entropy and Portage, due to the fact that it is not in the Entropy repositories and the versions found in the official and unofficial Portage overlays are fairly out-of-date and present security risks. Instead I would recommend you go to the download page, https://eclipse.org/downloads/, find the version you want (which will depend on the specifics of the programming you would like to perform) and download the respective tarball. This tarball should contain the executable script for launching the program. Alternatively, you can install it using the new installer:
+On Sabayon, Eclipse should not be installed via the default package managers: Entropy and Portage, due to the fact that it is not in the Entropy repositories and the versions found in the official and unofficial Portage overlays are fairly out-of-date and present security risks. Instead I would recommend you go to the download page, https://eclipse.org/downloads/, find the version you want (which will depend on the specifics of the programming you would like to perform) and download the respective tarball. This tarball should contain the executable script for launching the program. Alternatively, you can install it using the new installer, assuming you have all the dependencies already installed. I cannot find a comprehensive list of dependencies for Eclipse, but based on [this](http://gpo.zugaina.org/AJAX/Ebuild/13519201/View) ebuild I would hazard a guess that they are:
+```bash
+>=virtual/jdk-1.6
+x11-libs/gtk+:2
+```
 
 ```bash
 # Set this mirror variable, according to whichever mirror is closest and best for you
@@ -27,3 +31,14 @@ cd eclipse-installer
 ```
 
 ### Disadvantages (Cons)
+* Cannot be installed using Entropy.
+* Fairly heavy on system resource usage.
+* Slow to boot.
+* Extra plugins are required in order to program in other programming languages.
+
+### Advantages (Pros)
+* Written in Java, so it is incredibly cross-platform. Any Java-capable platform should be able to run Eclipse without a problem.
+* Easy to install, using the new installer.
+
+### Ratings
+{% include_relative TE/eclipse-ratings.html %}

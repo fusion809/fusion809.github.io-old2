@@ -27,8 +27,9 @@ alternatively, to install it with Portage, run:
 * It is also the lightest-weight of TEs/IDEs.
 
 ### Disadvantages (Cons)
+* Command-line TE only, no advanced IDE-like features.
+* Lacks customizability.
 * Unintuitive keymap, can take a little getting used to.
-* It also lacks customizability
 
 ### Ratings
 {% include_relative TE/nano-ratings.html %}
