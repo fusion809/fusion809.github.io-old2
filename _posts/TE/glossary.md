@@ -18,5 +18,10 @@ An {% include wpb.md name="Integrated Development Environment" %} (**IDE**) is a
 * [PyCharm Community Edition](#pycharm) (an IDE that as its name suggests is focused solely on Python. It is written in Java and is the FOSS version of PyCharm, a more feature-packed proprietary version also exists)
 * [Spyder](#spyder) (an IDE that is focused solely on Python, with a particular emphasis on scientific computing. It too is written mostly in Python)
 
+### IDE Features
+IDEs possess several features that are supposed to distinguish them from standard TEs, these features include:
+* **In-built implementation support**: in other words, the ability to implement (compile or interpret, depending on the programming language) the files being edited or created in the IDE. 
+* **Project Views**: this is my way of saying that usually in IDEs you can navigate the contents of a project folder, editing each file therein without having to open up a new IDE window.
+
 ### Text Editor
 A {% include wpb.md name="Text editor" %} (**TE**) is any program that can be used to edit text files, they are particularly invaluable to computer programmers because they can be used to edit software source code or document markup.

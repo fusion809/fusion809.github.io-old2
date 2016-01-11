@@ -1,25 +1,32 @@
 ---
 layout: post
-title:  "A Comparison of Text Editors"
+title:  "A Comparison of Text Editors on Manjaro and Sabayon Linux"
 date:   2016-01-12 +1000
 categories: comparisons, text-editors
 redirect_from:
       - /comparison-of-text-editors/
 ---
 {% include draft.html %}
-{% include image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE)" %}
+{% include image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
 
-**Text editors** are essential programs for software developers and programmers in general, as they enable users to write and edit source code or markup files. They are popular tools used by both experienced and novice Linux users. In this post I will compare the various text editors available for Sabayon, with regard to several features and properties of each. It is important to note that I am not a programmer, my experience with programming is limited to mostly MATLAB/GNU Octave scripts, a small handful of Python scripts I wrote for technical computing (that is, numerical analysis) and a few Bash scripts I have written to make my life easier, when I use Linux systems.
+**Text editors** are essential programs for software developers and programmers in general, as they enable users to write and edit source code or markup files. They are popular tools used by both experienced and novice Linux users. In this post I will compare the various text editors available for Manjaro and Sabayon, with regard to several features and properties of each. It is important to note that I am not a programmer, my experience with programming is limited to mostly MATLAB/GNU Octave scripts, a small handful of Python scripts I wrote for technical computing (that is, numerical analysis) and a few Bash scripts I have written to make my life easier, when I use Linux systems.
 
-On Sabayon there are over a dozen different text editors (see, for example, the category [app-editors](http://gpo.zugaina.org/app-editors/) at gpo.zugaina.org) available for installation, many of these are part of the core applications of complete desktop environments, such as GNOME or KDE Plasma. Each of these text editors also has its own target audience, with some being designed to be used only by seasoned programmers while others are useful only for writing simple text files. Entropy and Portage both use the category for programs relating to text editing of `app-editors`. To list the Entropy packages in this category, from the command-line, run:
+Also covered in this post are **integrated development environments** (see [here](#integrated-development-environment) for a definition), or **IDEs** for short, which are essentially text editors with extra tools for programmers. Many of the IDEs compared here I have even less experience with than I do with standard text editors, due to the fact I am not a computer programmer.
+
+On Sabayon there are over a dozen different text editors (see, for example, the category [app-editors](http://gpo.zugaina.org/app-editors/) at gpo.zugaina.org) and IDEs available for installation, many of these are part of the core applications of complete desktop environments, such as GNOME or KDE Plasma. Each of these programs also have their own target market, with some being designed to be used only by seasoned programmers while others are useful only for writing simple text files. Entropy and Portage both use the category for programs relating to text editing of `app-editors`. To list the Entropy packages in this category, from the command-line, run:
 {% include codeu.html line1="equo search &quot;app-editors&quot;" %}
 While to list ebuilds in installed overlays, plus the Portage tree, within the category of app-editors run:
 {% include codeu.html line1="emerge --search &quot;%@^app-editors&quot;" %}
 To search all overlays run:
 {% include codeu.html line1="eix-update &amp;&amp; eix-remote update &amp;&amp; eix -RCc &quot;app-editors&quot;" %}
 This post will compare several different text editors that are available for Sabayon (I know as I have installed them all myself), with respect to several aspects.
+IDEs can usually be found in the `dev-util` category, so to list those available in the Entropy repositories, run:
+{% include codeu.html line1="equo search &quot;dev-util&quot;" %}
 
-On Manjaro Linux many, if not all of these text editors, are also available from the [**Arch User Repository**](https://aur.archlinux.org) (**AUR**) or the Manjaro repositories.
+{% include image.html image="PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
+On Manjaro Linux many, if not all of these text editors/IDEs, are also available from the [**Arch User Repository**](https://aur.archlinux.org) (**AUR**) or the Manjaro repositories. Unfortunately, pacman, does not use categories for its packages, so one cannot use this to search for TEs/IDEs. One can, however, use the graphical PkgBrowser program, which can be installed using the command:
+{% include coder.html line1="pacman -S pkgbrowser" %}
+to show the text editors in the pacman repositories go to the `Categories` menu, press the `app` submenu and then the `editor` submenu under there.
 
 {% include_relative TE/glossary.md %}
 {% include_relative TE/comparisons.md %}
