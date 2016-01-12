@@ -23,3 +23,11 @@ while to install it with Portage run:
 ### Advantages (Pros)
 * It is extensible
 * Cross-platform and is able to run on any Java-capable platform.
+* Feature-packed
+
+### Disadvantages (Cons)
+* Fairly heavy on system resources
+* Fairly limited set of supported languages
+
+### Ratings
+{% include_relative TE/netbeans-ratings.html %}
