@@ -2,7 +2,7 @@
 {% include image.html image="Code::Blocks-13.12.png" width="1130px" float="none" description="Code::Blocks 13.12 running under Manjaro" %}
 
 ### Background
-{% include_relative TE/links2.md program="Code::Blocks" package="dev-util/codeblocks" link="http://www.codeblocks.org/" forum="http://forums.codeblocks.org/" wiki="http://wiki.codeblocks.org/index.php/Main_Page" sf="http://sourceforge.net/projects/codeblocks/" wp="Code::Blocks" pacman="codeblocks" gr="https://github.com/jenslody/codeblocks" %} is a free and open-source cross-platform IDE for C, C++ and Fortran, that is written predominantly in C++ and to a lesser extent C. Its GUI is based on the wxWidgets toolkit. It is compatible with a wide range of different compilers, including GCC, Clang and Visual C++. Its development began ca. 2004.[^2]
+{% include_relative TE/links2.md program="Code::Blocks" package="dev-util/codeblocks" link="http://www.codeblocks.org/" forum="http://forums.codeblocks.org/" wiki="http://wiki.codeblocks.org/index.php/Main_Page" sf="http://sourceforge.net/projects/codeblocks/" wp="Code::Blocks" pacman="codeblocks" pacman="community/x86_64/codeblocks" gr="https://github.com/jenslody/codeblocks" %} is a free and open-source cross-platform IDE for C, C++ and Fortran, that is written predominantly in C++ and to a lesser extent C. Its GUI is based on the wxWidgets toolkit. It is compatible with a wide range of different compilers, including GCC, Clang and Visual C++. Its development began ca. 2004.[^2]
 
 ### Customizability
 It is extensible through plugins[^3], although I have limited experience with this program so I cannot really comment any further on this.
