@@ -38,7 +38,7 @@ Atom has plugins for syntax highlighting and auto-indentation of most major comp
 * XML
 {% endcapture %}
 <div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">{{ proglang | markdownify }}</div>
-and several others. It has packages that provide other features, including previews for markup languages such as [HTML](https://atom.io/packages/atom-html-preview) and [markdown](https://atom.io/packages/markdown-preview) (which comes preinstalled with Atom) and [one](https://atom.io/packages/markdown-writer) that turns Atom into an excellent markdown writer. These packages make it very convenient for me to write The Hornery in Atom, which I have since The Hornery's inception. It also has packages that give the text editor IDE capabilities, including compiling and interpreting source code files from within the Atom's own interface. I personally have installed the [`script`](https://atom.io/packages/script) package for the purpose of running Python scripts from within Atom, C/C++ developers may also wish to install the [`build`](https://atom.io/packages/build) or [`build-tools`](https://atom.io/packages/build-tools) packages.
+and several others. It has packages that provide other features, including previews for markup languages such as [HTML](https://atom.io/packages/atom-html-preview) and [markdown](https://atom.io/packages/markdown-preview) (which comes preinstalled with Atom) and [one](https://atom.io/packages/markdown-writer) that turns Atom into an excellent markdown writer. These packages make it very convenient for me to write The Hornery in Atom, which I have since The Hornery's inception. It also has packages that give the text editor IDE capabilities, including compiling and interpreting source code files from within the Atom's own interface. I personally have installed the [`script`](https://atom.io/packages/script) package for the purpose of running Python scripts from within Atom, C/C++ developers may also wish to install the [`build`](https://atom.io/packages/build) or [`build-tools`](https://atom.io/packages/build-tools) packages. Additionally I have installed the [`terminal-plus`](https://atom.io/packages/terminal-plus) package so I can access the terminal from within Atom.
 
 ### Obtaining It
 #### Manjaro
@@ -54,6 +54,14 @@ Atom is in the Entropy repositories now, presently as of {{ page.date | date:"%d
 {% include coder.html line1="equo i -av app-editors/atom" %}
 If, the version of Atom in the Entropy repositories are significantly out-of-date I usually use the ebuild in my overlay, {% include sabayon-tools.md %} to install it. The advantage of my ebuild over other ebuilds (including the one in the `sabayon` overlay, which I too help mantain) is that if you experience any momentary disruption of your Internet connection the other ebuilds may fail and you will have to start the build from the beginning again, while my ebuild will keep soldering on. This is unless the glitches in your Internet connection are so great in number and/or length that it overwhelms my ebuild.
 
+#### Building from Source Code
+If you are using some other platform, or for whatever reason none of the methods previously mentioned is applicable I suggest you compile and install Atom from source code. Official instructions on this can be found [here](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md). To do this, you need to:
+<ul>
+  <li>{% capture point1 %}Get the source code. This can be done via running: {% include codeu.html line1="git clone https://github.com/atom/atom" %} and then checking out the latest release with: {% include codeu.html line1="cd atom" line2="git fetch -p" line3="git checkout $(git describe --tags `git rev-list --tags --max-count=1`)" %}{% endcapture %}{{ point1 | markdownify}}</li>
+  <li>{% capture point2 %}Compile the source code, by running: {% include codeu.html line1="script/build" %} This step requires a reliable Internet connection, as otherwise it will fail and you need to re-run this step.{% endcapture %}{{ point2 | markdownify }}</li>
+  <li>{% capture point3 %}Install Atom by issuing the command {% include codeu.html line1="sudo script/grunt install" %}{% endcapture %}{{ point3 | markdownify }}</li>
+</ul>
+
 ### Advantages (Pros)
 * Easily and extensively customizable.
 * Intuitive and easy to learn.
@@ -66,6 +74,3 @@ If, the version of Atom in the Entropy repositories are significantly out-of-dat
 
 ### Ratings
 {% include_relative TE/atom-ratings.html %}
-
-### Website(s)
-* [Linux Build Instructions](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md)
