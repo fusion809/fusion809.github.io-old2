@@ -19,3 +19,7 @@ On Sabayon installing NetBeans can be done using Entropy or Portage. To install 
 {% include coder.html line1="equo i -av dev-util/netbeans" %}
 while to install it with Portage run:
 {% include coder.html line1="emerge -av dev-util/netbeans" %}
+
+### Advantages (Pros)
+* It is extensible
+* Cross-platform and is able to run on any Java-capable platform.
