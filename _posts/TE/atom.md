@@ -42,6 +42,8 @@ and several others. It has packages that provide other features, including previ
 
 Atom also has packages that give it IDE capabilities, including compiling and interpreting source code files from within the Atom's own interface as well as the ability to run git commands from within Atom (which is provided by {% include apm.md package="git-plus" puncr=")." %} It also has a package ({% include apm.md package="mercurial" %}) that provides support for managing Mercurial (`hg`) repositories, support for GNU Bazaar and Subversion repositories, from my understanding, is not yet available. I personally have installed the [`script`](https://atom.io/packages/script) package for the purpose of running Python scripts from within Atom, C/C++ developers may also wish to install the [`build`](https://atom.io/packages/build) or [`build-tools`](https://atom.io/packages/build-tools) packages.
 
+One can also do Gentoo/Sabayon development in Atom using the {% include apm.md package="language-gentoo" %} package, specifically it is helpful in maintaining Portage overlays as it can create and update manifests without the need for opening up a terminal.
+
 ### Obtaining It
 #### Manjaro
 Manjaro users must install Atom via the Arch User Repository (AUR), or via using my own [PKGBUILD](https://github.com/fusion809/PKGBUILDs/blob/master/atom-editor/PKGBUILD). At the time of writing the AUR contains five Atom packages, you can check to see if this statement has become outdated by going to [here](https://aur.archlinux.org/packages/?O=0&SeB=nd&K=atom-editor&outdated=&SB=n&SO=a&PP=50&do_Search=Go). These Atom packages are (**bold** is used to highlight keywords or points):
