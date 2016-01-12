@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Comparison of Text Editors on Manjaro and Sabayon Linux"
+title:  "A Comparison of Text Editors and IDEs on Manjaro and Sabayon Linux"
 date:   2016-01-12 +1000
 categories: comparisons, text-editors
 redirect_from:
