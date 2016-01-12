@@ -1,5 +1,5 @@
 <ul>
-  <li><strong>Availability</strong>: {{ include.availability | markdownify }}</li>
+  <li><strong>Availability</strong>:{{ include.availability | markdownify }}</li>
   <li><strong>Beginner-friendliness</strong>: {% if include.beginner-friendliness %}{{ include.beginner-friendliness | markdownify }}{% elsif include.bf %}{{ include.bf | markdownify }}{% endif %}</li>
   <li><strong>Customizability</strong>: {% if include.customizability %}{{ include.customizability | markdownify }}{% elsif include.cmb %}{{ include.cmb | markdownify }}{% endif %}</li>
   <li><strong>Features</strong>: {{ include.features | markdownify }}</li>
