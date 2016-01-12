@@ -8,7 +8,7 @@
 I have limited experience with Bluefish but from what I can gather, it is customizable, although I cannot comment on how extensive this customizability is.
 
 ### Features
-Syntax highlighting is available for almost (if not all) all computer languages used in web development.
+Syntax highlighting is available for almost (if not all) all computer languages used in web development. 
 
 ### Obtaining It
 #### Manjaro

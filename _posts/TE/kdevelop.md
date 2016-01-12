@@ -20,3 +20,12 @@ KDevelop is in the Entropy repositories and Portage Tree, merely run:
 {% include coder.html line1="equo i -av dev-util/kdevelop" %}
 or:
 {% include coder.html line1="emerge -av dev-util/kdevelop" %}
+
+### Advantages (Pros)
+* Easy to install.
+
+### Disadvantages (Cons)
+* Only supports four programming languages.
+* Not very customizable.
+
+### Ratings
