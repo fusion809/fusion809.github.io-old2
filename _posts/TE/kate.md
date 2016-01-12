@@ -32,14 +32,14 @@ Getting KWrite is similarly easy, just use (for installation with Entropy):
 while to install KWrite with Portage run (no need to add any overlays, it is in the Portage Tree):
 {% include coder.html line1="emerge -av kde-apps/kwrite" %}
 
-### Disadvantages (Cons)
-* Minimal customization can be made to Kate/KWrite, via user-supplied scripts.
-* Due to it being part of KDE SC it cannot be too easily ported to Microsoft Windows or OS X, although it is readily available on most Linux distributions.
-
 ### Advantages (Pros)
 * Easily customizable via graphical tools
 * Intuitive keyboard shortcuts by default
 * Extensive support for a wide range of computer languages
+
+### Disadvantages (Cons)
+* Minimal customization can be made to Kate/KWrite, via user-supplied scripts.
+* Due to it being part of KDE SC it cannot be too easily ported to Microsoft Windows or OS X, although it is readily available on most Linux distributions.
 
 ### Ratings
 {% include_relative TE/kate-ratings.html %}

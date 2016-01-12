@@ -23,16 +23,16 @@ while to install it using Portage run:
 {% include coder.html line1="emerge -av geany" %}
 The latest version of Geany in the [Entropy Store](https://packages.sabayon.org/show/geany,126394,sabayon-weekly,amd64,5,standard) is 1.24.1, while the latest version of Geany as of {{ page.date | date: "%d %B %Y" }} is 1.26 (released 15 November 2015) which is available from the [Portage Tree](https://packages.gentoo.org/packages/dev-util/geany).
 
-### Disadvantages (Cons)
-* The list of supported computer languages, for syntax-highlighting and other features is fairly small, compared to Atom, Gedit, GNU Emacs and Vim. See for example, the screenshot below, showing allowed file types.
-{% include image.html image="Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
-* The version of Geany in the Entropy Store is not the latest available
-
 ### Advantages (Pros)
 * It has a few IDE-type features.
 * It is fairly lightweight.
 * It is cross-platform, hence if you switch from Sabayon to another OS fairly frequently, it should not be too difficult to get Geany on said OS.
 * Keyboard shortcuts are fairly intuitive.
+
+### Disadvantages (Cons)
+* The list of supported computer languages, for syntax-highlighting and other features is fairly small, compared to Atom, Gedit, GNU Emacs and Vim. See for example, the screenshot below, showing allowed file types.
+{% include image.html image="Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
+* The version of Geany in the Entropy Store is not the latest available
 
 ### Ratings
 {% include_relative TE/geany-ratings.html %}

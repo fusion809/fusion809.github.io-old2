@@ -21,14 +21,14 @@ It is fairly easy to obtain it on Sabayon, to install it with Entropy run:
 while to install it with Portage (and yes it is available in the Portage Tree):
 {% include coder.html line1="emerge -av app-editors/mousepad" %}
 
+### Disadvantages (Cons)
+* Basic, limited computer language support
+* Limited customization options
+
 ### Advantages (Pros)
 * Lightweight
 * All customization can be done graphically
 * User-friendly
 
-### Disadvantages (Cons)
-* Basic, limited computer language support
-* Limited customization options
-*
 ### Ratings
 {% include_relative TE/mousepad-ratings.html %}

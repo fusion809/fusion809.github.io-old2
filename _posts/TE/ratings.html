@@ -1,0 +1,10 @@
+<ul>
+  <li><strong>Availability</strong>: {{ include.availability | markdownify }}</li>
+  <li><strong>Beginner-friendliness</strong>: {% if include.beginner-friendliness %}{{ include.beginner-friendliness | markdownify }}{% elsif include.bf %}{{ include.bf | markdownify }}{% endif %}</li>
+  <li><strong>Customizability</strong>: {% if include.customizability %}{{ include.customizability | markdownify }}{% elsif include.cmb %}{{ include.cmb | markdownify }}{% endif %}</li>
+  <li><strong>Features</strong>: {{ include.features | markdownify }}</li>
+  <li><abbr title="My Experience With It"><strong>MEWI</strong></abbr>: {{ include.mewi | markdownify }}.</li>
+  <li><strong>Popularity</strong>: {{ include.popularity | markdownify }}</li>
+  <li><strong>SRU</strong>: {{ include.sru | markdownify }}</li>
+  <li><strong>Overall</strong>: {% if include.overall %}{{ include.overall }}{% elsif include.oa %}{{ include.oa }}{% endif %}</li>
+</ul>

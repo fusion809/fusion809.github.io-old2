@@ -21,15 +21,15 @@ On Sabayon jEdit can be installed via Entropy or Portage (from the Portage Tree,
 while to install it using Portage run:
 {% include coder.html line1="emerge -av app-editors/jedit" %}
 
-### Disadvantages (Cons)
-* Heavy on system resources.
-
 ### Advantages (Pros)
 * Easy to obtain it on Sabayon
 * Extensively customizable
 * Has intuitive keyboard shortcuts
 * Written in Java, hence can run on most platforms, if you end up switching to a new operating system in the future
 * User-friendly
+
+### Disadvantages (Cons)
+* Heavy on system resources.
 
 ### Ratings
 {% include_relative TE/jedit-ratings.html %}

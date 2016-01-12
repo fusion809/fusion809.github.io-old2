@@ -1,5 +1,6 @@
 ## gedit
 {% include image.html image="gedit-screenshot-under-Moksha.png" float="none" width="1130px" description="gedit running under Moksha" %}
+
 ### Background
 {% include_relative TE/links.md aw="GNOME/Gedit" wp="gedit" program="gedit" ml="https://help.gnome.org/users/gedit/" link="https://wiki.gnome.org/Apps/Gedit" %} is a GTK+ based text editor that is one of the core applications of GNOME. In my opinion, it is the second most advanced text editor (after Kate) that is part of a desktop environment's core application suite. It is also more advanced than Windows' Notepad and Wordpad text editors.
 
@@ -20,13 +21,13 @@ It is easy to obtain gedit on Sabayon, via either Entropy or Portage (and yes it
 Alternatively to install it using Portage run:
 {% include coder.html line1="emerge -av app-editors/gedit" %}
 
-### Disadvantages (Cons)
-* Customization options, beyond with a limited set of available themes and plugins, are limited.
-* Fairly light on features, beyond syntax highlighting.
-
 ### Advantages (Pros)
 * Light on resources
 * Easy to obtain on Manjaro and Sabayon
+
+### Disadvantages (Cons)
+* Customization options, beyond with a limited set of available themes and plugins, are limited.
+* Fairly light on features, beyond syntax highlighting.
 
 ### Ratings
 {% include_relative TE/gedit-ratings.html %}

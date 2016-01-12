@@ -24,13 +24,13 @@ It is easy to obtain Vim (and gVim) on Sabayon using Entropy or Portage. To inst
 whereas to install it with Portage run:
 {% include coder.html line1="emerge -av app-editors/vim app-editors/gvim" %}
 
-### Disadvantages (Cons)
-* Steep learning curve, making it difficult to learn. If you run `vimtutor` from the command-line after installing it, you will be taken through a tutorial of how to use it, which can be helpful.
-
 ### Advantages (Pros)
 * Easy to obtain it on Manjaro, Sabayon and virtually every &#42;nix system.
 * Extremely customizable
 * Fairly light on system resources
+
+### Disadvantages (Cons)
+* Steep learning curve, making it difficult to learn. If you run `vimtutor` from the command-line after installing it, you will be taken through a tutorial of how to use it, which can be helpful.
 
 ### Ratings
 {% include_relative TE/vim-ratings.html %}

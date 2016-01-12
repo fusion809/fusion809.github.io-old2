@@ -22,15 +22,15 @@ GNU Emacs is available from the Entropy Store and the Portage Tree. To install i
 while to install it with Portage run:
 {% include coder.html line1="emerge -av app-editors/emacs" %}
 
-### Disadvantages (Cons)
-* Has a steep learning curve for newcomers, hence making it inaccessible to newcomers to Linux and programming, in general.
-* Has an unconventional keymap, which can take some time to learn. For example, to cut text you use <kbd>Ctrl+W</kbd>, as opposed to the usual <kbd>Ctrl+X</kbd>, while to paste text you use <kbd>Ctrl+Y</kbd>.
-
 ### Advantages (Pros)
 * Extensively customizable.
 * Heavy on features, especially for advanced users that can extend it using ELisp.
 * Provides syntax highlighting for dozens, if not hundreds, of computer languages.
 * Has its own Wiki, manual and other documentation.
+
+### Disadvantages (Cons)
+* Has a steep learning curve for newcomers, hence making it inaccessible to newcomers to Linux and programming, in general.
+* Has an unconventional keymap, which can take some time to learn. For example, to cut text you use <kbd>Ctrl+W</kbd>, as opposed to the usual <kbd>Ctrl+X</kbd>, while to paste text you use <kbd>Ctrl+Y</kbd>.
 
 ### Ratings
 {% include_relative TE/emacs-ratings.html %}

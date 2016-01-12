@@ -32,15 +32,15 @@ cd eclipse-installer
 ./eclipse-inst
 ```
 
+### Advantages (Pros)
+* Written in Java, so it is incredibly cross-platform. Any Java-capable platform should be able to run Eclipse without a problem.
+* Easy to install, using the new installer.
+
 ### Disadvantages (Cons)
 * Cannot be installed using Entropy.
 * Fairly heavy on system resource usage.
 * Slow to boot.
 * Extra plugins are required in order to program in other programming languages.
-
-### Advantages (Pros)
-* Written in Java, so it is incredibly cross-platform. Any Java-capable platform should be able to run Eclipse without a problem.
-* Easy to install, using the new installer.
 
 ### Ratings
 {% include_relative TE/eclipse-ratings.html %}

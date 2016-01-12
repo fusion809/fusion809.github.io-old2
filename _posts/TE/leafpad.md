@@ -21,12 +21,12 @@ To install it on Sabayon with Entropy run:
 while to install it with Portage run:
 {% include coder.html line1="emerge -av app-editors/leafpad" %}
 
-### Disadvantages (Cons)
-* It is very basic, has minimal customizability or features
-
 ### Advantages (Pros)
 * Its chief advantage is its low system resource usage
 * Easy to install on Sabayon
+
+### Disadvantages (Cons)
+* It is very basic, has minimal customizability or features
 
 ### Ratings
 {% include_relative TE/leafpad-ratings.html %}
