@@ -16,7 +16,7 @@ KDevelop is in Manjaro's pacman repositories and can be installed by running the
 {% include coder.html line1="pacman -S kdevelop" %}
 
 #### Sabayon
-KDevelop is in the Entropy repositories and Portage Tree, merely run:
+KDevelop is in the Entropy repositories and Portage Tree. The version in the Entropy repositories is a developmental version based on Qt5. To install KDevelop on Sabayon, merely run:
 {% include coder.html line1="equo i -av dev-util/kdevelop" %}
 or:
 {% include coder.html line1="emerge -av dev-util/kdevelop" %}
@@ -29,3 +29,13 @@ or:
 * Not very customizable.
 
 ### Ratings
+<ul>
+  <li><strong>Availability</strong>: 8.</li>
+  <li><strong>Beginner-friendliness</strong>: 8.</li>
+  <li><strong>Customizability</strong>: &lt;5.</li>
+  <li><strong>Features</strong>: 6.</li>
+  <li><abbr title="My Experience With It"><strong>MEWI</strong></abbr>: 1.</li>
+  <li><strong>Popularity</strong>: ?</li>
+  <li><strong>SRU</strong>: 4-5. On Manjaro KDevelop is a 4.9 MB download and takes up 12.2 MB when installed. Here is my <code>ps_mem</code> table under Manjaro: <script src="/js/36795a1d8cdbc72bdd1f.js"></script>. Under Sabayon it is a 5.7 MB download and takes up 13.4 MB when installed. Here is my <code>ps_mem</code> table under Sabayon: <script src="/js/6899e31f999156e85ea2.js"></script></li>
+  <li><strong>Overall</strong>: 8.</li>
+</ul>
