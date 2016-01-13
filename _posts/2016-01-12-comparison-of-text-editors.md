@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "A Comparison of Text Editors and IDEs on Manjaro and Sabayon Linux"
-date:   2016-01-12 +1000
+date:   2016-01-20 +1000
 categories: comparisons, text-editors
 redirect_from:
       - /comparison-of-text-editors/
+      - /2016/01/12/comparison-of-text-editors/
 ---
 {% include draft.html %}
 {% include image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
