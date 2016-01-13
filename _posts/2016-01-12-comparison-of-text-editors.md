@@ -27,7 +27,7 @@ IDEs can usually be found in the `dev-util` category, so to list those available
 {% include image.html image="PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
 On Manjaro Linux many, if not all of these text editors/IDEs, are also available from the [**Arch User Repository**](https://aur.archlinux.org) (**AUR**) or the Manjaro repositories. Unfortunately, pacman, does not use categories for its packages, so one cannot use this to search for TEs/IDEs. One can, however, use the graphical PkgBrowser program, which can be installed using the command:
 {% include coder.html line1="pacman -S pkgbrowser" %}
-to show the text editors in the pacman repositories go to the `Categories` menu, press the `app` submenu and then the `editor` submenu under there.        {% jekyll_search_box %}
+to show the text editors in the pacman repositories go to the `Categories` menu, press the `app` submenu and then the `editor` submenu under there.
 {% include_relative TE/glossary.md %}
 {% include_relative TE/comparisons.md %}
 {% include_relative TE/atom.md %}
