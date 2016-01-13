@@ -26,7 +26,7 @@ Komodo Edit can be installed from the [`spike`](https://github.com/Spike-Pentest
 
 
 ### Disadvantages (Cons)
-* Komodo Edit
+* Komodo Edit is fairly heavy on SRU
 
 ### Ratings
 {% include_relative TE/komodoedit-ratings.html %}

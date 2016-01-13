@@ -43,6 +43,7 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/jedit.md %}
 {% include_relative TE/kate.md %}
 {% include_relative TE/kdevelop.md %}
+{% include_relative TE/komodoedit.md %}
 {% include_relative TE/leafpad.md %}
 {% include_relative TE/mousepad.md %}
 {% include_relative TE/netbeans.md %}
