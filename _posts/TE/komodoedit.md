@@ -24,9 +24,9 @@ Komodo Edit can be installed from the [`spike`](https://github.com/Spike-Pentest
 ### Advantages (Pros)
 * Seems fairly feature-packed, something tells me that its feature set is likely similar to Atom.
 
-
 ### Disadvantages (Cons)
-* Komodo Edit is fairly heavy on SRU
+* Komodo Edit is fairly heavy on SRU.
+* Not in the pacman repos for Manjaro. Komodo Edit 9.3.2 cannot be installed from any ebuilds in the Layman remote list.
 
 ### Ratings
 {% include_relative TE/komodoedit-ratings.html %}
