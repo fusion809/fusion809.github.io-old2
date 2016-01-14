@@ -23,7 +23,8 @@ To search all overlays run:
 This post will compare several different text editors that are available for Sabayon (I know as I have installed them all myself), with respect to several aspects.
 IDEs can usually be found in the `dev-util` category, so to list those available in the Entropy repositories, run:
 {% include codeu.html line1="equo search &quot;dev-util&quot;" %}
-
+to search all overlays (including the Portage Tree) run:
+{% include codeu.html line1="eix -RCc &quot;dev-util&quot;" %}
 {% include image.html image="PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
 On Manjaro Linux many, if not all of these text editors/IDEs, are also available from the [**Arch User Repository**](https://aur.archlinux.org) (**AUR**) or the Manjaro repositories. Unfortunately, pacman, does not use categories for its packages, so one cannot use this to search for TEs/IDEs. One can, however, use the graphical PkgBrowser program, which can be installed using the command:
 {% include coder.html line1="pacman -S pkgbrowser" %}
@@ -35,6 +36,7 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/codeblocks.md %}
 {% include_relative TE/codelite.md %}
 {% include_relative TE/eclipse.md %}
+{% include_relative TE/eric.md %}
 {% include_relative TE/geany.md %}
 {% include_relative TE/gedit.md %}
 {% include_relative TE/emacs.md %}

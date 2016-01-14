@@ -11,7 +11,7 @@ It has a [plugin repository](https://plugins.jetbrains.com/?pycharm), with plugi
 It is not as feature-packed as its proprietary counterpart, but it does have a pretty good feature set. This includes the basic text editor amenities such as syntax highlighting for Python, auto-indentation, *etc.* as well as an in-built interpreter for Python that can be set to use whichever interpreter one has installed on one's system.
 
 ### Obtaining It
-There is a 130 MB binary tarball available for installing PyCharm on any Linux platform that can be downloaded from https://www.jetbrains.com/pycharm/download/#section=linux. Merely extract it and run the `bin/pycharm.sh` installer script inside.
+There is a 130 MB binary tarball available for installing PyCharm on any Linux platform that can be downloaded from [here](https://www.jetbrains.com/pycharm/download/#section=linux). Merely extract it and run the `bin/pycharm.sh` installer script inside.
 
 #### Manjaro
 PyCharm CE can be installed from the AUR by running:
