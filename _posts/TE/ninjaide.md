@@ -12,7 +12,7 @@ Ninja-IDE can be customized via its preferences window. Its keyboard shortcuts c
 Ninja-IDE seems to be fairly light on features, but it has basic TE features like syntax-highlighting and  auto-indentation, it also has an embedded Python shell and can run Python scripts by the user right-clicking them and clicking the "Run" option.
 
 ### Obtaining It
-It is in the official binary package repositories of both Manjaro and Sabayon.
+It is in the official binary package repositories of both Manjaro and Sabayon. It is possible to run it without install it too, by getting the source code and running {% include codeu.html line1="python ninja-ide.py" %} from within its top-level directory. Although on platforms that use Python 3 as their default Python (that is invoked by the `python` command), such as Manjaro Linux and other Arch descendants, one will have to call Python 2 instead of Python in this command. Thus ammending this command to: {% include codeu.html line1="python2 ninja-ide.py" %}
 
 #### Manjaro
 Ninja-IDE can be installed on Manjaro by running:
