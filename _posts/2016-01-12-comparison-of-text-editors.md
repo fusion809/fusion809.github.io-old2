@@ -48,6 +48,7 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/mousepad.md %}
 {% include_relative TE/netbeans.md %}
 {% include_relative TE/pluma.md %}
+{% include_relative TE/pycharm.md %}
 {% include_relative TE/scite.md %}
 {% include_relative TE/vim.md %}
 
