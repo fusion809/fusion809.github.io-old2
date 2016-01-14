@@ -1,8 +1,8 @@
-## IntelliJ IDEA Community Edition
+## IntelliJ IDEA CE
 {% include image.html image="IntellijIDE-CE-15.0.2.png" description="IntelliJ IDEA Community Edition 15.0.2 running under Manjaro Linux" float="none" width="1130px" %}
 
 ### Background
-{% include_relative TE/links2.md program="IntelliJ IDEA Community Edition" package="dev-util/idea-community" %}, which I will abbreviate as **IJCE**, is a free and open-source IDE developed by JetBrains that is designed specifically for Java development. It is the free counterpart to a proprietary IDE (called IntelliJ IDEA Ultimate Edition) that is more feature-packed with support for several additional programming languages.
+{% include_relative TE/links2.md program="IntelliJ IDEA Community Edition" package="dev-util/idea-community" aur="intellij-idea-ce-eap" wp="IntelliJ_IDEA" link="http://www.jetbrains.com/idea/" %}, which I will abbreviate as **IJCE**, is a free and open-source IDE developed by JetBrains that is designed specifically for Java development. It is the free counterpart to a proprietary IDE (called IntelliJ IDEA Ultimate Edition) that is more feature-packed with support for several additional programming languages.
 
 ### Customizability
 IntelliJ IDEA's customizability is something I really cannot comment on, but I would imagine it is not very customizable due to the fact that this would defeat the purpose of JetBeans creating a community edition, which is to tempt users to buy the proprietary, Ultimate Edition, with the extra features it has as opposed to the community edition.
