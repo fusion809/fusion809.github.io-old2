@@ -2,34 +2,34 @@
 {% include Links/links.html program="Python" package="dev-lang/python" category="dev-python" wp="Python_(programming_language)" %} is a widely and extensively-used high-level general-purpose multi-paradigm programming language that is particularly invaluable as a cross-platform scripting language. It is named after the BBC TV series [*Monty Python's Flying Circus*](https://en.wikipedia.org/wiki/Monty_Python's_Flying_Circus). Python is licensed under its own free, permissive (BSD-like) license called the [Python Software Foundation License](https://en.wikipedia.org/wiki/Python_Software_Foundation_License). It is probably the most flexible programming language I have seen and it is used for numerical computations, scientific computing, writing and working with web applications, application software and package management systems. Its design philosophy emphasizes code readability and concision. It also automatically performs some tasks that users would have to perform manually if they were working with lower-level languages like C. For these reasons it, and JavaScript, are usually the programming languages that people interested in programming, are recommended to learn first, before they learn more complicated programming languages like C, C++ and Java. Its major caveat is its speed, however, it is worthwhile noting that its speed is significantly dependent on how it is implemented. The standard, official implementation of Python is [CPython](https://en.wikipedia.org/wiki/CPython) which while it is more efficient than most implementations (like Jython), is less efficient than the [PyPy](https://en.wikipedia.org/wiki/PyPy) implementation. Regardless of the implementation used, however, it is usually significantly slower than compiled languages like C, C++ and Java.
 
 There are also two main versions of Python presently in widespread use: Python 2 and Python 3. Most programs I have come across have
-greater support for Python 2 than for Python 3. Python also has its own command-line package manager called {% include wp.md name="pip" cat="software" %} (`pip`). Some programs I am particularly familiar with that are written predominantly (if not exclusively) in Python that are compatible with Linux systems include:
+greater support for Python 2 than for Python 3. Python also has its own command-line package manager called {% include Links/wp.md name="pip" cat="software" %} (`pip`). Some programs I am particularly familiar with that are written predominantly (if not exclusively) in Python that are compatible with Linux systems include:
 
 {% capture point1 %}
-{% include wp.md name="Anaconda" cat="installer" %} &mdash; an operating system installer used by Fedora and most of its derivatives, see the [Fedora](#fedora) section for details.
+{% include Links/wp.md name="Anaconda" cat="installer" %} &mdash; an operating system installer used by Fedora and most of its derivatives, see the [Fedora](#fedora) section for details.
 {% endcapture %}
 {% capture point2 %}
-{% include wp.md name="DNF" cat="software" %} &mdash; the default package manager of Fedora &geq;22.
+{% include Links/wp.md name="DNF" cat="software" %} &mdash; the default package manager of Fedora &geq;22.
 {% endcapture %}
 {% capture point3 %}
 {% include Links/gr.md owner="Sabayon" repo="entropy" name="Entropy" %} &mdash; the default binary package manager of Sabayon Linux.
 {% endcapture %}
 {% capture point4 %}
-{% include wp.md name="GNU Bazaar" %} &mdash; the distributed version control system developed by Canonical Ltd.
+{% include Links/wp.md name="GNU Bazaar" %} &mdash; the distributed version control system developed by Canonical Ltd.
 {% endcapture %}
 {% capture point5 %}
-{% include wp.md name="Portage" cat="software" %} &mdash; the default package manager of Gentoo Linux, and the default source code package manager of its derivatives such as Sabayon Linux.
+{% include Links/wp.md name="Portage" cat="software" %} &mdash; the default package manager of Gentoo Linux, and the default source code package manager of its derivatives such as Sabayon Linux.
 {% endcapture %}
 {% capture point6 %}
-{% include wp.md name="PyMOL" %} &mdash; an application for viewing and performing calculations relating to molecules, especially macromolecules like proteins, DNA double helices and RNA helices. Which is managed by pip, so running {% include Code/codeus.html line1="sudo pip install pymol" %} should install it.
+{% include Links/wp.md name="PyMOL" %} &mdash; an application for viewing and performing calculations relating to molecules, especially macromolecules like proteins, DNA double helices and RNA helices. Which is managed by pip, so running {% include Code/codeus.html line1="sudo pip install pymol" %} should install it.
 {% include Links/image.html image="PyMOL-1.7.6.0-3EIG.png" float="none" %}
 {% endcapture %}
 {% capture point7 %}
-{% include wp.md name="SageMath" %} &mdash; a mathematics program that uses a Python-like syntax and integrates several free pieces of
+{% include Links/wp.md name="SageMath" %} &mdash; a mathematics program that uses a Python-like syntax and integrates several free pieces of
 mathematics software in a single command-line and notebook interface, with interfaces available for several proprietary mathematics programs too.
 {% include Links/image.html image="SageMath-6.10.png" float="none" %}
 {% endcapture %}
 {% capture point8 %}
-{% include wp.md name="Spyder" cat="software" %} &mdash; a cross-platform free and open-source IDE for scientific computing in Python. It is managed by pip, so running {% include Code/codeus.html line1="sudo pip install spyder" %} should install it, provided its dependency PyQt4/PyQt5 is already installed.
+{% include Links/wp.md name="Spyder" cat="software" %} &mdash; a cross-platform free and open-source IDE for scientific computing in Python. It is managed by pip, so running {% include Code/codeus.html line1="sudo pip install spyder" %} should install it, provided its dependency PyQt4/PyQt5 is already installed.
 {% include Links/image.html image="Spyder-2.3.8.png" float="none" %}
 {% endcapture %}
 {% capture point9 %}

@@ -7,7 +7,7 @@
 Manjaro is currently the 7th most popular operating system ranked, according to *DistroWatch*.
 
 ### Installer
-{% include_relative OS/os-shot.html image="Manjaro-Thus-installer.png" width="500px" float="left" description="Manjaro's Thus installer" %}{% include_relative OS/os-shot.html image="Manjaro-Calamares-installer.png" width="500px" float="right" description="The Calamares installer on Manjaro 15.09" %}{% include clear.html %}
+{% include_relative OS/os-shot.html image="Manjaro-Thus-installer.png" width="500px" float="left" description="Manjaro's Thus installer" %}{% include_relative OS/os-shot.html image="Manjaro-Calamares-installer.png" width="500px" float="right" description="The Calamares installer on Manjaro 15.09" %}{% include Layouts/clear.html %}
 One of the major features that distinguishes Manjaro from Arch is an automated installation process that can be performed graphically or textually. Graphically this installation can be done using the distribution-independent Calamares installer or Manjaro's own Thus installer. Textually this must be done using Manjaro's Thus installer. I have not had enough experience with Manjaro installation to really offer any real comparison between the two installers, but I have found [this blog post](http://www.zdnet.com/article/thus-versus-calamares-comparing-manjaro-15-09-installers/) from another author that seems like a decent comparison between the two. I found them both buggy when I tried to install Manjaro Linux on my removable drive.
 
 ### Package Management
