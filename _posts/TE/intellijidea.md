@@ -15,4 +15,17 @@ IJCE is installable on both distributions covered in this post (theoretically th
 {% include codeu.html line1="wget -cqO- https://d1opms6zj7jotq.cloudfront.net/idea/ideaIC-15.0.2.tar.gz | tar -xz" line2="cd idea-IC-143.1184.17/bin" line3="./idea.sh" %}
 to get the installer for the program running. From there just follow the installer through its various steps and hopefully you should have IJCE install on your system.
 
+#### Manjaro
+On Manjaro an experimental version of IJCE is also installable from the AUR by running:
+{% include codeu.html line1="yaourt -S intellij-idea-ce-eap" %}
+
 ### Advantages (Pros)
+* Easy to install on any Linux platform.
+* Cross-platform
+
+### Disadvantages (Cons)
+* Cannot be installed via the usual methods on Manjaro and Sabayon.
+* Limited set of features and supported languages
+
+### Ratings
+{% include_relative TE/intellijidea-ratings.html %}

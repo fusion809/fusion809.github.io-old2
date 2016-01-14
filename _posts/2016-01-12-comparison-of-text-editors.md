@@ -2,7 +2,7 @@
 layout: post
 title:  "A Comparison of Text Editors and IDEs on Manjaro and Sabayon Linux"
 date:   2016-01-20 +1000
-categories: comparisons, text-editors
+categories: comparisons, text-editors, integrated-development-environment
 redirect_from:
       - /2016/01/12/comparison-of-text-editors/
       - /comparison-of-text-editors/
@@ -43,7 +43,7 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/kate.md %}
 {% include_relative TE/kdevelop.md %}
 {% include_relative TE/komodoedit.md %}
-{% include_relative TE/intellijide.md %}
+{% include_relative TE/intellijidea.md %}
 {% include_relative TE/leafpad.md %}
 {% include_relative TE/mousepad.md %}
 {% include_relative TE/netbeans.md %}
