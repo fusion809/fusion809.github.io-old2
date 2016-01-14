@@ -15,11 +15,11 @@ There is a 130 MB binary tarball available for installing PyCharm on any Linux p
 
 #### Manjaro
 PyCharm CE can be installed from the AUR by running:
-{% include codeu.html line1="yaourt -S pycharm-community" %}
+{% include Code/codeu.html line1="yaourt -S pycharm-community" %}
 
 #### Sabayon
 PyCharm CE can be installed from the Tree using Portage, although it is not in the Entropy repositories at the moment. To install it using Portage run:
-{% include coder.html line1="emerge -av pycharm-community" %}
+{% include Code/coder.html line1="emerge -av pycharm-community" %}
 
 ### Advantages (Pros)
 * Cross-platform

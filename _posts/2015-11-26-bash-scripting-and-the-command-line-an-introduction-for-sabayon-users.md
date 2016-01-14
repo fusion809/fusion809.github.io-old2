@@ -36,16 +36,16 @@ While Bash was originally developed as a free "imitation" of the Bourne Shell, i
 Along with these shells, another free Unix shell that has gained notoriety, that I feel is worthwhile mentioning is the **[Z shell](https://en.wikipedia.org/wiki/Z_shell)** (**Zsh**). Zsh was first released by Paul Falstad in 1990 and at the time Falstad was a student at Princeton University. Since then Zsh's development has become coordinated by Peter Stephenson. What is notable about Zsh, is how feature-packed it is. It has many of the same features as Bash, but it also has spelling-correction, easier customizability and a few other features that Bash lacks.
 
 All free Unix shells that are available for Gentoo or Sabayon systems are located in the category of app-shells within the [Entropy Store](https://packages.sabayon.org/quicksearch?q=app-shells&amp;filter=category_startswith&amp;filter_data=app-shells), [Portage Tree](https://packages.gentoo.org/categories/app-shells) and [Gentoo Portage Overlays](http://gpo.zugaina.org/app-shells). To show them all from the command-line run:
-{% include coder.html line1='eix -C -c "app-shells"' %}
+{% include Code/coder.html line1='eix -C -c "app-shells"' %}
 
 ## Changing Unix Shells
 On Unix/Unix-like platforms it is possible to change your login shell using the [`chsh`](/man/chsh.1.html) command. For example, to change your login shell to Zsh (assuming it is installed), run:
-{% include codeu.html line1="chsh -s /bin/zsh" %}
+{% include Code/codeu.html line1="chsh -s /bin/zsh" %}
 and then reboot.
 
 ## Definitions
 On most Linux systems, Unix shells are stored in the file directory `/bin`. You can list them all by issuing the command:
-{% include coder.html line1="cat /etc/shells" %}
+{% include Code/coder.html line1="cat /etc/shells" %}
 for me, for example, on my Sabayon machine this gives the output:
 ```sh
 /bin/bash
@@ -464,9 +464,9 @@ Tests are essential for conditionals. As their name suggests, they test to see w
 
 ## Variables
 Bash **variables** are defined using equal signs. They can be made global (making them available for all processes) or local (making them available just for the script at hand). Local variables are defined by just using an equal sign, for example:
-{% include codeu.html line1="PYTHONPATH=/usr/bin/python" %}
+{% include Code/codeu.html line1="PYTHONPATH=/usr/bin/python" %}
 while to define this variable globally, one would run:
-{% include codeu.html line1="export PYTHONPATH=/usr/bin/python" %}
+{% include Code/codeu.html line1="export PYTHONPATH=/usr/bin/python" %}
 
 # Bash Scripting Applications
 The primary value of Bash scripts is to automate tasks that would otherwise have to be done, over a longer time-frame by a human operator. I personally use shell scripts to make my life, when I am at the command-line, easier.
@@ -500,7 +500,7 @@ I have at least three dozen functions I have defined in shell scripts located in
 *Whether these scripts are interesting, is, of course, in the eye of the beholder, you may not find these interesting at all.*
 
 You may have noticed that I am hosting HTML versions of several Linux man pages within the `/man` subdomain of this blog. I generate them using a function contained within `~/Shell/man.sh` called `manhtml`. For example, to generate [emerge.1.html](/man/emerge.1.html) I ran:
-{% include codeu.html line1="manhtml 1 emerge" %}
+{% include Code/codeu.html line1="manhtml 1 emerge" %}
 
 Here are the contents of `~/Shell/man.sh` (showing all the contents as `manhtml` depends on other functions to work):
 ```bash
@@ -548,7 +548,7 @@ function theme {
 }
 ```
 to install a new Moksha theme you would run:
-{% include codeu.html line1="theme &lt;THEME&gt;" %} where `<THEME>` is, of course, the theme's name (how they appear in their respective GitHub repo's URL).
+{% include Code/codeu.html line1="theme &lt;THEME&gt;" %} where `<THEME>` is, of course, the theme's name (how they appear in their respective GitHub repo's URL).
 
 ## Useful Functions for Sabayon Users
 The following are some functions that, depending on how you operate on Sabayon, may be helpful.
@@ -759,9 +759,9 @@ function spm {
 
 ###Gentoo Documentation
 I wrote a Bash script ([`~/Shell/gentoo-doc.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/gentoo-doc.sh)) to generate a PDF of the complete Gentoo Handbook. Sadly, the final document does not include the CSS styling of the original handbook, but still it is better than no PDF at all. To get the complete PDF handbook for a specific architecture merely run:
-{% include codeu.html line1="unit &lt;ARCHITECTURE&gt;"%}
+{% include Code/codeu.html line1="unit &lt;ARCHITECTURE&gt;"%}
 where `<ARCHITECTURE>` is, of course, the architecture of the system. For example for AMD64 run:
-{% include codeu.html line1="unit AMD64"%}
+{% include Code/codeu.html line1="unit AMD64"%}
 
 gentoo-doc.sh is shown below.
 
@@ -885,7 +885,7 @@ function tailf {
 
 # Terminal Emulators
 Terminal emulators (TEs) for Sabayon include tty1-tty6, the whole-screen virtual terminals managed by the getty Unix command[^7] and various graphical TEs (<abbr title="Graphical Terminal Emulators">GTEs</abbr>; that is, TE windows running within a graphical user interface) including GNOME Terminal, Konsole and LXTerminal. Most of these graphical TEs are found in the "x11-terms" category in the [Portage Tree](https://packages.gentoo.org/categories/x11-terms), [Gentoo Portage Overlays](http://gpo.zugaina.org/x11-terms/) and [Entropy Store](https://packages.sabayon.org/category/x11-terms), although there are exceptions, the most notable one being Konsole (which is in the kde-apps category). You can list all programs in this category by issuing the command:
-{% include coder.html line1='eix -C -c "x11-terms"' %}
+{% include Code/coder.html line1='eix -C -c "x11-terms"' %}
 
 The following section will involve me comparing the various graphical terminal emulators I have any real experience with.
 

@@ -1,6 +1,6 @@
 ## ebuild Writing
 {% include note.md note1="This section is for advanced users (or those that are interested in attaining this level of understanding) and is mostly based on the [official ebuild writing guide](https://devmanual.gentoo.org/)." %}
-**ebuild writing** and **testing** are two of the most important, yet difficult activities for Gentoo developers to do. Efficient ebuild writing requires a good knowledge of [Bash scripting](/2015/11/26/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/), which I do not even possess, so bare with me. ebuilds can contain traditional Bash functions and calls to standard POSIX utilities (such as `cp` or `mv`), as well as specialized ebuild functions, ebuild variables and code snippets. **eclasses** (which are included into an ebuild by a line that starts with `inherit`) can add extra functions, variables and code snippets to ebuilds. If you are interested in writing ebuilds I recommend you install `app-portage/eclass-manpages` with Entropy by running: {% include coders.html line1="equo i app-portage/eclass-manpages" %} as this will add manpages (and additional documentation) for the various eclasses to your system. To list the eclass manpages installed with this package, run (assumming you have the [Gentoolkit](#gentoolkit) installed): {% include codeus-fs.html line1="equery files app-portage/eclass-manpages | grep /usr/share/man" %}
+**ebuild writing** and **testing** are two of the most important, yet difficult activities for Gentoo developers to do. Efficient ebuild writing requires a good knowledge of [Bash scripting](/2015/11/26/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/), which I do not even possess, so bare with me. ebuilds can contain traditional Bash functions and calls to standard POSIX utilities (such as `cp` or `mv`), as well as specialized ebuild functions, ebuild variables and code snippets. **eclasses** (which are included into an ebuild by a line that starts with `inherit`) can add extra functions, variables and code snippets to ebuilds. If you are interested in writing ebuilds I recommend you install `app-portage/eclass-manpages` with Entropy by running: {% include Code/coders.html line1="equo i app-portage/eclass-manpages" %} as this will add manpages (and additional documentation) for the various eclasses to your system. To list the eclass manpages installed with this package, run (assumming you have the [Gentoolkit](#gentoolkit) installed): {% include Code/codeus-fs.html line1="equery files app-portage/eclass-manpages | grep /usr/share/man" %}
 
 ebuilds are so varied in their contents and structure that it is difficult for me to find a reasonable example with which to teach their general structure. This is partly because many ebuilds have components that are specific to them and take up so much space that I do not wish to include them here. This is probably the best ebuild example I can provide (which is in the Portage Tree, its name is `supertux-0.1.3.ebuild` and is in the `games-arcade` category):
 {% include_relative PMS/supertux-0.1.3.html %}
@@ -17,17 +17,17 @@ ebuilds also contain their own set of functions, that are specified in **table 1
 ### Learning by Example
 I personally learn ebuild writing best by trying it out myself, aided by the documentation and guided by specific examples that share similarities with the ebuild I am writing, so in order to aid you in finding example ebuilds I have decided to include this Bash script that can be used to search for them:
 
-{% include codeu.html line1="grep --include='&#42;.ebuild' -R &quot;&lt;PATTERN&gt;&quot; &lt;DIRECTORY&gt;" %}
+{% include Code/codeu.html line1="grep --include='&#42;.ebuild' -R &quot;&lt;PATTERN&gt;&quot; &lt;DIRECTORY&gt;" %}
 
 In most cases the best value for `<DIRECTORY>` would likely be `/usr/portage` (the Portage Tree), although for ebuilds found in all the unofficial overlays managed by Layman that have been locally installed on your system, the `<DIRECTORY>` variable can be set to `/var/lib/layman`. The `<PATTERN>` field depends on what you want in the ebuild examples you are searching for. For example:
 
-{% include codeu.html line1="grep --include='&#42;.ebuild' -R &quot;pkg_config() {&quot; /usr/portage" %}
+{% include Code/codeu.html line1="grep --include='&#42;.ebuild' -R &quot;pkg_config() {&quot; /usr/portage" %}
 
 can be used to search for ebuilds in the Portage Tree with `pkg_config() {` appearing in them.
 
 Whenever I feel I am ready to test out an ebuild, to see if it works, what I do is I run:
 
-{% include coder.html line1="ebuild &lt;PACKAGE&gt;.ebuild manifest && ebuild &lt;PACKAGE&gt;.ebuild package" %}
+{% include Code/coder.html line1="ebuild &lt;PACKAGE&gt;.ebuild manifest && ebuild &lt;PACKAGE&gt;.ebuild package" %}
 
 if this command returns errors I go back to the ebuild and look for any errors I may have made, whilst simultaneously looking at the error message I received from `ebuild`.
 

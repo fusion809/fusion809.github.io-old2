@@ -13,14 +13,14 @@ Geany provides auto-indentation and syntax-highlighting for over a dozen differe
 ### Obtaining It
 #### Manjaro
 The latest version of Geany (1.26) is presently in the official pacman repositories of Manjaro, so running:
-{% include coder.html line1="pacman -S geany" %}
+{% include Code/coder.html line1="pacman -S geany" %}
 should install it.
 
 #### Sabayon
 Geany can be easily installed using Entropy or Portage. Using Entropy run:
-{% include coder.html line1="equo i -av geany" %}
+{% include Code/coder.html line1="equo i -av geany" %}
 while to install it using Portage run:
-{% include coder.html line1="emerge -av geany" %}
+{% include Code/coder.html line1="emerge -av geany" %}
 The latest version of Geany in the [Entropy Store](https://packages.sabayon.org/show/geany,126394,sabayon-weekly,amd64,5,standard) is 1.24.1, while the latest version of Geany as of {{ page.date | date: "%d %B %Y" }} is 1.26 (released 15 November 2015) which is available from the [Portage Tree](https://packages.gentoo.org/packages/dev-util/geany).
 
 ### Advantages (Pros)

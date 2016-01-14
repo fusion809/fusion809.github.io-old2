@@ -17,20 +17,20 @@ It has syntax-highlighting and auto-indentation support for over 180 different c
 ### Obtaining It
 #### Manjaro
 Kate/KWrite can be installed using pacman, via running:
-{% include coder.html line1="pacman -S kate" %}
+{% include Code/coder.html line1="pacman -S kate" %}
 and:
-{% include coder.html line1="pacman -S kwrite" %}
+{% include Code/coder.html line1="pacman -S kwrite" %}
 , respectively.
 
 #### Sabayon
 Kate can be quite easily obtained from Entropy or Portage. To install it from Entropy run:
-{% include coder.html line1="equo i -av kde-apps/kate" %}
+{% include Code/coder.html line1="equo i -av kde-apps/kate" %}
 while to install it with Portage run:
-{% include coder.html line1="emerge -av kde-apps/kate" %}
+{% include Code/coder.html line1="emerge -av kde-apps/kate" %}
 Getting KWrite is similarly easy, just use (for installation with Entropy):
-{% include coder.html line1="equo i -av kde-apps/kwrite" %}
+{% include Code/coder.html line1="equo i -av kde-apps/kwrite" %}
 while to install KWrite with Portage run (no need to add any overlays, it is in the Portage Tree):
-{% include coder.html line1="emerge -av kde-apps/kwrite" %}
+{% include Code/coder.html line1="emerge -av kde-apps/kwrite" %}
 
 ### Advantages (Pros)
 * Easily customizable via graphical tools

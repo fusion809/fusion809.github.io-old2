@@ -13,13 +13,13 @@ KDevelop features source code editor support (including syntax highlighting, aut
 ### Obtaining It
 #### Manjaro
 KDevelop is in Manjaro's pacman repositories and can be installed by running the command:
-{% include coder.html line1="pacman -S kdevelop" %}
+{% include Code/coder.html line1="pacman -S kdevelop" %}
 
 #### Sabayon
 KDevelop is in the Entropy repositories and Portage Tree. The version in the Entropy repositories is a developmental version based on Qt5. To install KDevelop on Sabayon, merely run:
-{% include coder.html line1="equo i -av dev-util/kdevelop" %}
+{% include Code/coder.html line1="equo i -av dev-util/kdevelop" %}
 or:
-{% include coder.html line1="emerge -av dev-util/kdevelop" %}
+{% include Code/coder.html line1="emerge -av dev-util/kdevelop" %}
 
 ### Advantages (Pros)
 * Easy to install.

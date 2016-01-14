@@ -62,7 +62,7 @@ Very few are written, predominantly, in Pascal itself, the only program I recogn
 
 ### Ruby
 {% include links.html program="Ruby" package="dev-lang/ruby" category="dev-ruby" %} is a general-purpose, interpreted, programming language that is not as widely-used as C, C++, Java or Python, in my experience. The programs that are written in it, that I have experience with are two in number: {% include wp.md name="Jekyll" cat="software" %} (the static site generator that powers this website) and {% include wp.md name="YaST2" %} (the graphical package manager used by openSUSE). A program that I have never used, but I have heard of, that is used as a package management system for OS X, {% include wp.md name="Homebrew" puncr="," %} is written in Ruby too. Ruby like Python has its own package manager too, [RubyGems](https://rubygems.org/) that is invoked by the command `gem`. For example, to install Jekyll one may run:
-{% include coder.html line1="gem install jekyll" %}
+{% include Code/coder.html line1="gem install jekyll" %}
 [Bundler](http://bundler.io) is a Ruby package manager that has better dependency-resolution than RubyGems that is also popular. I personally use Bundler to install Jekyll, because installing it with RubyGems can be a nightmare. Ruby, Bundler and RubyGems are all licensed under the permissive MIT License.
 
 ### Swift

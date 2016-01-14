@@ -13,13 +13,13 @@ pluma has a few plugins that can be used to add features (mostly IDE-like featur
 ### Obtaining It
 #### Manjaro
 pluma can be installed from the pacman extra repository by running:
-{% include coder.html line1="pacman -S pluma" %}
+{% include Code/coder.html line1="pacman -S pluma" %}
 
 #### Sabayon
 It can be installed with Entropy by running:
-{% include coder.html line1="equo i -av app-editors/pluma" %}
+{% include Code/coder.html line1="equo i -av app-editors/pluma" %}
 or with Portage by running:
-{% include coder.html line1="emerge -av app-editors/pluma" %}
+{% include Code/coder.html line1="emerge -av app-editors/pluma" %}
 
 ### Advantages (Pros)
 * Customization is done graphically, making it easier for beginners.

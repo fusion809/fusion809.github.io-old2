@@ -13,16 +13,16 @@ It has syntax-highlighting support for almost (if not every) every computer lang
 ### Obtaining It
 #### Manjaro
 It is easy to install Vim on Manjaro using pacman. To do this run:
-{% include coder.html line1="pacman -S vim" %}
+{% include Code/coder.html line1="pacman -S vim" %}
 if you want to be able to use the graphical user interface of Vim too run:
-{% include coder.html line1="pacman -S gvim" %}
+{% include Code/coder.html line1="pacman -S gvim" %}
 instead. The Vim and gVim packages **cannot** be installed simultaneously on the same machine. The gVim package provides the `vim` command for the command-line.
 
 #### Sabayon
 It is easy to obtain Vim (and gVim) on Sabayon using Entropy or Portage. To install Vim and gVim using Entropy, run:
-{% include coder.html line1="equo i -av app-editors/vim app-editors/gvim" %}
+{% include Code/coder.html line1="equo i -av app-editors/vim app-editors/gvim" %}
 whereas to install it with Portage run:
-{% include coder.html line1="emerge -av app-editors/vim app-editors/gvim" %}
+{% include Code/coder.html line1="emerge -av app-editors/vim app-editors/gvim" %}
 
 ### Advantages (Pros)
 * Easy to obtain it on Manjaro, Sabayon and virtually every &#42;nix system.

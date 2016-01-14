@@ -15,13 +15,13 @@ It provides syntax-highlighting for dozens of computer languages. Support for ex
 ### Obtaining It
 #### Manjaro
 It is easy to install SciTE on Manjaro using pacman. To do this run:
-{% include coder.html line1="pacman -S scite" %}
+{% include Code/coder.html line1="pacman -S scite" %}
 
 #### Sabayon
 It is easy to install it with Entropy or Portage. To install it with Entropy, run:
-{% include coder.html line1="equo i -av app-editors/scite" %}
+{% include Code/coder.html line1="equo i -av app-editors/scite" %}
 To install it with Portage, run:
-{% include coder.html line1="emerge -av app-editors/scite" %}
+{% include Code/coder.html line1="emerge -av app-editors/scite" %}
 
 ### Disadvantages (Cons)
 * The list of languages it automatically supports is &lt;30.

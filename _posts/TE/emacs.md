@@ -13,14 +13,14 @@ GNU Emacs provides syntax highlighting for dozens of different computer language
 ### Obtaining It
 #### Manjaro
 GNU Emacs is in the official pacman repository for Manjaro and can be installed using:
-{% include coder.html line1="pacman -S emacs" %}
+{% include Code/coder.html line1="pacman -S emacs" %}
 should install it.
 
 #### Sabayon
 GNU Emacs is available from the Entropy Store and the Portage Tree. To install it with Entropy run:
-{% include coder.html line1="equo i -av app-editors/emacs" %}
+{% include Code/coder.html line1="equo i -av app-editors/emacs" %}
 while to install it with Portage run:
-{% include coder.html line1="emerge -av app-editors/emacs" %}
+{% include Code/coder.html line1="emerge -av app-editors/emacs" %}
 
 ### Advantages (Pros)
 * Extensively customizable.

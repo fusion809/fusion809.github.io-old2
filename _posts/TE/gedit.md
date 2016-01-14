@@ -13,13 +13,13 @@ It supports syntax highlighting of several computer languages, including Desktop
 ### Obtaining It
 ### Manjaro
 gedit is in the official pacman repositories of Manjaro so merely running:
-{% include coder.html line1="pacman -S gedit" %}
+{% include Code/coder.html line1="pacman -S gedit" %}
 should install it.
 #### Sabayon
 It is easy to obtain gedit on Sabayon, via either Entropy or Portage (and yes it is available in the Portage Tree). gedit comes with a default installation of Sabayon GNOME edition. To install it using Entropy on an existing Sabayon machine, simply run (you can omit the `-av` options, if you are sure gedit is not already installed on your system, I am using these options in case it is and you are not aware of it):
-{% include coder.html line1="equo i -av app-editors/gedit" %}
+{% include Code/coder.html line1="equo i -av app-editors/gedit" %}
 Alternatively to install it using Portage run:
-{% include coder.html line1="emerge -av app-editors/gedit" %}
+{% include Code/coder.html line1="emerge -av app-editors/gedit" %}
 
 ### Advantages (Pros)
 * Light on resources

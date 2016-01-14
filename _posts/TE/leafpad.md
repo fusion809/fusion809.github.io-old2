@@ -13,13 +13,13 @@ It offers no syntax highlighting support or auto-indentation support that I am a
 ### Obtaining It
 #### Manjaro
 To install Leafpad on Manjaro merely run:
-{% include coder.html line1="pacman -S leafpad" %}
+{% include Code/coder.html line1="pacman -S leafpad" %}
 
 #### Sabayon
 To install it on Sabayon with Entropy run:
-{% include coder.html line1="equo i -av app-editors/leafpad" %}
+{% include Code/coder.html line1="equo i -av app-editors/leafpad" %}
 while to install it with Portage run:
-{% include coder.html line1="emerge -av app-editors/leafpad" %}
+{% include Code/coder.html line1="emerge -av app-editors/leafpad" %}
 
 ### Advantages (Pros)
 * Its chief advantage is its low system resource usage

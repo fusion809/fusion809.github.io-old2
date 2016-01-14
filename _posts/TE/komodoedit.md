@@ -15,11 +15,11 @@ Komodo Edit is built from precompiled binaries on both Manjaro and Sabayon, when
 
 #### Manjaro
 Komodo Edit can be installed from the AUR by running:
-{% include codeu.html line1="yaourt -S komodo-edit" %}
+{% include Code/codeu.html line1="yaourt -S komodo-edit" %}
 
 #### Sabayon
 Komodo Edit can be installed from the [`spike`](https://github.com/Spike-Pentesting/spike-overlay) overlay, but it is a fairly old version (9.0.0, as of {{ page.date | date:"%e %M %Y" }} the latest version is 9.3.2). Presently my overlay, [`sabayon-tools`](https://github.com/fusion809/sabayon-tools), contains a newer Komodo Edit ebuild (9.3.2), but it is presently not working. The following code should install Komodo Edit on Sabayon:
-{% include coder.html line1="layman -a spike" line2="emerge -av app-editors/komodo-edit-bin::spike" %}
+{% include Code/coder.html line1="layman -a spike" line2="emerge -av app-editors/komodo-edit-bin::spike" %}
 
 ### Advantages (Pros)
 * Seems fairly feature-packed, something tells me that its feature set is likely similar to Atom.

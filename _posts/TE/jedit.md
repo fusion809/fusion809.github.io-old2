@@ -13,13 +13,13 @@ As previously mentioned auto-indentation and syntax-highlighting support exists 
 ### Obtaining It
 #### Manjaro
 On Manjaro jEdit can be installed with:
-{% include coder.html line1="pacman -S jedit" %}
+{% include Code/coder.html line1="pacman -S jedit" %}
 
 #### Sabayon
 On Sabayon jEdit can be installed via Entropy or Portage (from the Portage Tree, no need to add unofficial overlays for it). To install it using Entropy run:
-{% include coder.html line1="equo i -av app-editors/jedit" %}
+{% include Code/coder.html line1="equo i -av app-editors/jedit" %}
 while to install it using Portage run:
-{% include coder.html line1="emerge -av app-editors/jedit" %}
+{% include Code/coder.html line1="emerge -av app-editors/jedit" %}
 
 ### Advantages (Pros)
 * Easy to obtain it on Sabayon

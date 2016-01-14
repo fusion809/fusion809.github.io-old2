@@ -13,13 +13,13 @@ It provides many of the advanced features of text editors like syntax highlighti
 ### Obtaining It
 #### Manjaro
 On Manjaro Code::Blocks can be very easily installed using pacman:
-{% include coder.html line1="pacman -S codeblocks" %}
+{% include Code/coder.html line1="pacman -S codeblocks" %}
 
 #### Sabayon
 Code::Blocks is in the Entropy repositories and Portage Tree, consequently it can be installed via running:
-{% include coder.html line1="equo i -av codeblocks" %}
+{% include Code/coder.html line1="equo i -av codeblocks" %}
 or:
-{% include coder.html line1="emerge -av codeblocks" %}
+{% include Code/coder.html line1="emerge -av codeblocks" %}
 
 ### Advantages (Pros)
 * Cross-platform and able to run on Windows, OS X and Linux.

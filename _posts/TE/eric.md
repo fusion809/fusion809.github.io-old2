@@ -13,16 +13,16 @@ Its features include support for managing Mercurial, Subversion and Git reposito
 ### Obtaining It
 #### Manjaro
 On Manjaro Eric can be installed from the official pacman repositories with:
-{% include coder.html line1="pacman -S eric" %}
+{% include Code/coder.html line1="pacman -S eric" %}
 this will install `eric` and `eric-common` packages, which have a net installed size of 46.6 MB and download size of approximately 8.1 MB.
 
 #### Sabayon
 The version of Eric in the Entropy repository is 4.5.25, which is very out-of-date. The versions of Eric in the Portage Tree are 4.5.25 and 5.5.2, which support only Python 2 and Python 3, respectively. These two versions are slotted differently, which means that they can both be installed simultaneously on the same machine. To install Eric 4.5.25 with Entropy run:
-{% include coder.html line1="equo i -av eric" %}
+{% include Code/coder.html line1="equo i -av eric" %}
 while to install Eric 4.5.25 with Portage run:
-{% include coder.html line1="emerge -av eric:4" %}
+{% include Code/coder.html line1="emerge -av eric:4" %}
 and to install Eric 5.5.2 with Portage run:
-{% include coder.html line1="emerge -av eric:5" %}
+{% include Code/coder.html line1="emerge -av eric:5" %}
 
 ### Advantages (Pros)
 * Cross-platform

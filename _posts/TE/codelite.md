@@ -13,12 +13,12 @@ It is fairly feature-packed (including git, subversion, GUI-building, *etc.* sup
 ### Obtaining It
 #### Manjaro
 On Manjaro CodeLite must be installed from the AUR, by running:
-{% include coder.html line1="yaourt -S codelite" %}
+{% include Code/codeu.html line1="yaourt -S codelite" %}
 for example. At the time of writing this version of the latest (9.0).
 
 #### Sabayon
 An old (from February 2013) version of CodeLite (4.1.5770) is presently in the Entropy repositories, to install it run:
-{% include coder.html line1="equo i -av codelite" %}
+{% include Code/coder.html line1="equo i -av codelite" %}
 alternatively, one can install it from an unofficial Portage overlay. At the time of writing the following overlays have the latest version of CodeLite:
 * [`kaa`](http://gpo.zugaina.org/Overlays/kaa)
 * [`lif`](https://github.com/killer2tester/gentoo-overlay-lif)

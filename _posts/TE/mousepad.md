@@ -13,13 +13,13 @@ It supports syntax-highlighting for roughly, a couple of dozen computer language
 ### Obtaining It
 #### Manjaro
 It can be easily installed by running:
-{% include coder.html line1="pacman -S mousepad" %}
+{% include Code/coder.html line1="pacman -S mousepad" %}
 
 #### Sabayon
 It is fairly easy to obtain it on Sabayon, to install it with Entropy run:
-{% include coder.html line1="equo i -av app-editors/mousepad" %}
+{% include Code/coder.html line1="equo i -av app-editors/mousepad" %}
 while to install it with Portage (and yes it is available in the Portage Tree):
-{% include coder.html line1="emerge -av app-editors/mousepad" %}
+{% include Code/coder.html line1="emerge -av app-editors/mousepad" %}
 
 ### Advantages (Pros)
 * Lightweight
