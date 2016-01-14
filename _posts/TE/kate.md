@@ -1,7 +1,7 @@
 ## Kate/KWrite
-{% include image.html image="Kate-under-Moksha.png" float="none" description="Kate 15.08.1 running under Moksha" width="1130px" %}
+{% include Links/image.html image="Kate-under-Moksha.png" float="none" description="Kate 15.08.1 running under Moksha" width="1130px" %}
 
-{% include image.html image="KWrite-15.08.0-under-Moksha.png" float="none" description="KWrite 15.08.0 running under Moksha" width="1130px" %}
+{% include Links/image.html image="KWrite-15.08.0-under-Moksha.png" float="none" description="KWrite 15.08.0 running under Moksha" width="1130px" %}
 
 ### Background
 {% include_relative TE/links2.md program="Kate" package="kde-apps/kate" wp="Kate_(text_editor)" pacman="extra/x86_64/kate/" link="http://kate-editor.org" forum="http://kate-editor.org/support/" gr="https://projects.kde.org/projects/kde/applications/kate/repository" %} which is abbreviated from <b>K</b>DE <b>A</b>dvanced <b>T</b>ext <b>E</b>ditor, is a text editor that is a KDE Core Application (a part of the KDE Software Compilation or KDE SC) and combines features of an advanced text editor (that is, one geared towards software developers and experienced programmers) such as customizability, extensive syntax-highlighting, code-indentation, *etc.* support with sufficient user-friendliness for it to be suitable for inexperienced Linux users. Its development began in 2001 and has been a central part of KDE SC ever since.

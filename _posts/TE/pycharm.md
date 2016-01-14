@@ -1,5 +1,5 @@
 ## PyCharm CE
-{% include image.html image="PyCharm-CE-5.0.3.png" width="1130px" float="none" description="PyCharm Community Edition 5.0.3" %}
+{% include Links/image.html image="PyCharm-CE-5.0.3.png" width="1130px" float="none" description="PyCharm Community Edition 5.0.3" %}
 
 ### Background
 {% include_relative TE/links2.md program="PyCharm Community Edition" package="pycharm-community" aur="pycharm-community" wp="PyCharm" link="https://www.jetbrains.com/pycharm/" gr="https://github.com/JetBrains/intellij-community/tree/master/python" %}, or **PyCharm CE**, is a free and open-source IDE for Python development that is written in Java and developed by JetBrains (the same company that develops IntelliJ IDEA). As it is written in Java it is cross-platform and able to run on Linux, OS X and Windows. Like IntelliJ IDEA it has a proprietary counterpart that is more feature-packed than its FOSS equivalent that this section is about.

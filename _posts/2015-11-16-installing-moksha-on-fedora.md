@@ -6,7 +6,7 @@ categories: fedora, moksha, installation-guides
 redirect_from:
   - /installing-moksha-on-fedora/
 ---
-{% include image.html url="/images/Fedora-23-Moksha-desktop.png" description="Moksha running under Fedora 23, with the default Fedora 23 wallpaper" id="1" width = "1034px" %}
+{% include Links/image.html url="/images/Fedora-23-Moksha-desktop.png" description="Moksha running under Fedora 23, with the default Fedora 23 wallpaper" id="1" width = "1034px" %}
 
 **[Moksha](http://mokshadesktop.org/)**, the free Enlightenment 17 fork, is the default desktop environment of the lightweight Ubuntu (LTS) derivative, [Bodhi Linux](http://www.bodhilinux.com). Unlike most desktop environments originally developed with a specific distribution in mind, however, I have found very little interest in building binary packages for it on other distributions, including Fedora. The only distribution, besides Bodhi Linux, with an official binary package available for Moksha, that I am aware of, is [Sabayon Linux](http://www.sabayon.org).
 

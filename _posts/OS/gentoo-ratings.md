@@ -1,5 +1,4 @@
 ### Ratings
-
 * **Beginner-friendliness**: &leq;3.
 * **Customizability**: &geq;9.
 * **Documentation**: &geq;8. Some of the best documentation around, most of which is present at the Gentoo Wiki, while more complicated developer-type documentation (like writing ebuilds) can be found [here](https://devmanual.gentoo.org/). Most Gentoo ebuilds for complex programs (that actually need documentation, as they are not self-explanatory) also have USE flags that can be used to build documentation for the program.

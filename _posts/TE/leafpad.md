@@ -1,5 +1,5 @@
 ## Leafpad
-{% include image.html image="Leafpad-running-under-Moksha.png" description="Leafpad 0.8.18.1 running under Moksha" float="none" width="1130px" %}
+{% include Links/image.html image="Leafpad-running-under-Moksha.png" description="Leafpad 0.8.18.1 running under Moksha" float="none" width="1130px" %}
 
 ### Background
 {% include_relative TE/links2.md program="Leafpad" package="app-editors/leafpad" pacman="extra/x86_64/leafpad/" wp="Leafpad" link="http://tarot.freeshell.org/leafpad/" %} is a lightweight and basic GTK+ based text editor. Its capabilities (or rather lack thereof) are very similar to those of Windows' Notepad.

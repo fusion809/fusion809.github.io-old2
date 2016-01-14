@@ -15,7 +15,7 @@ $$ \theta(0)=0 $$
 $$ \dot{\theta}(0)=0 $$
 
 solved in SageMath gives the graph:
-{% include image.html image="Simple_Pendulum.png" width="1140px" description="Simple Pendulum" %}
+{% include Links/image.html image="Simple_Pendulum.png" width="1140px" description="Simple Pendulum" %}
 </div>
 
 <div>

@@ -1,5 +1,5 @@
 ## NetBeans
-{% include image.html image="NetBeans-8.1.png" width="1130px" float="none" description="NetBeans 8.1 running under Manjaro" %}
+{% include Links/image.html image="NetBeans-8.1.png" width="1130px" float="none" description="NetBeans 8.1 running under Manjaro" %}
 
 ### Background
 {% include_relative TE/links2.md program="NetBeans" package="dev-util/netbeans" pacman="community/any/netbeans" link="https://netbeans.org/" forum="http://forums.netbeans.org/" wp="NetBeans" aw="Netbeans" hr="http://hg.netbeans.org/" %} is a cross-platform free and open-source IDE written in Java and developed by the Oracle Corporation. It was originally proprietary, but it has since been re-released under the <abbr title="Common Development and Distribution License">CDDL</abbr> and GNU GPL licenses. It can be used to write programs in C, C++, Java, PHP and HTML5.

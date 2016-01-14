@@ -1,5 +1,5 @@
 ## Geany
-{% include image.html image="Geany-1.24.1.png" float="none" width="1130px" description="Geany 1.24.1 running under Moksha" %}
+{% include Links/image.html image="Geany-1.24.1.png" float="none" width="1130px" description="Geany 1.24.1 running under Moksha" %}
 
 ### Background
 {% include_relative TE/links.md program="Geany" package="dev-util/geany" link="http://geany.org/" wiki="http://wiki.geany.org/" pacman="community/x86_64/geany/" wp="Geany" %} is a lightweight GTK+ and Scintilla-based text editor with basic IDE-type features that was originally developed by Enrico Tr&ouml;ger in 2005. It is licensed under GNU GPLv2.
@@ -31,7 +31,7 @@ The latest version of Geany in the [Entropy Store](https://packages.sabayon.org/
 
 ### Disadvantages (Cons)
 * The list of supported computer languages, for syntax-highlighting and other features is fairly small, compared to Atom, Gedit, GNU Emacs and Vim. See for example, the screenshot below, showing allowed file types.
-{% include image.html image="Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
+{% include Links/image.html image="Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
 * The version of Geany in the Entropy Store is not the latest available
 
 ### Ratings

@@ -1,5 +1,5 @@
 ## Eclipse
-{% include image.html image="Eclipse-4.5.1.png" width="1130px" float="none" description="Eclipse 4.5.1 running under Manjaro" %}
+{% include Links/image.html image="Eclipse-4.5.1.png" width="1130px" float="none" description="Eclipse 4.5.1 running under Manjaro" %}
 
 ### Background
 {% include_relative TE/links.md program="Eclipse" forum="https://www.eclipse.org/forums/" irc="eclipse" link="http://eclipse.org/eclipse" package="dev-util/eclipse-sdk" wiki="http://wiki.eclipse.org/Main_Page" wp="Eclipse_(software)" gw="Eclipse" aw="Eclipse" pacman="extra/x86_64/eclipse" %} is an free and open-source Integrated Development Environment (IDE) written in Java, that is primarily used for programming in C, C++, Java and PHP, although it is possible to program in other languages (such as Lua, Perl and Python) using it too. These other languages usually require the installation of additional plugins, such as {% include ArchLinux/aur.md package="pydev" program="PyDev" %} for Python. It features in-built support for several compilers and interpreters.
