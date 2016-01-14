@@ -1,5 +1,5 @@
 ## Debian
-{% include image.html image="operating-systems/Debian-8.2-KDE-appmenu.png" width="1130px" description="Debian 8.2 running KDE Plasma 4" float="none" %}
+{% include Links/image.html image="operating-systems/Debian-8.2-KDE-appmenu.png" width="1130px" description="Debian 8.2 running KDE Plasma 4" float="none" %}
 <br/>
 ### Background
 {% include_relative OS/os.md bugs="https://www.debian.org/Bugs/" wiki="https://wiki.debian.org/" ml="https://www.debian.org/MailingLists/" irc="https://wiki.debian.org/IRC" forum="http://forums.debian.net/" wp="Debian" os="Debian" docs="https://www.debian.org/doc/" dw="debian" d="https://www.debian.org/distrib/" gr="Debian" %} was one of the first Linux distributions to be founded and was founded back in 1993, by a then [Purdue University](https://en.wikipedia.org/wiki/Purdue_University) student, named [Ian Murdock](https://en.wikipedia.org/wiki/Ian_Murdock). He named it Debian as a portmanteau of his first name and the first name of his then girlfriend, Debra Lynn. Since 1993 Debian has become one of the most popular Linux distributions, in fact, since 2002 every year Debian has appeared within the top 10 list for popularity in terms of page hit rankings, according to *DistroWatch*. Presently Debian is ranked number 2 for popularity according to *DistroWatch*.

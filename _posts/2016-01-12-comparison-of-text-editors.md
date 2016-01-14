@@ -8,7 +8,7 @@ redirect_from:
       - /comparison-of-text-editors/
 ---
 {% include draft.html %}
-{% include image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
+{% include Links/image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
 
 **Text editors** are essential programs for software developers and programmers in general, as they enable users to write and edit source code or markup files. They are popular tools used by both experienced and novice Linux users. In this post I will compare the various text editors available for Manjaro and Sabayon, with regard to several features and properties of each. It is important to note that I am not a programmer, my experience with programming is limited to mostly MATLAB/GNU Octave scripts, a small handful of Python scripts I wrote for technical computing (that is, numerical analysis) and a few Bash scripts I have written to make my life easier, when I use Linux systems.
 
@@ -25,7 +25,7 @@ IDEs can usually be found in the `dev-util` category, so to list those available
 {% include Code/codeu.html line1="equo search &quot;dev-util&quot;" %}
 to search all overlays (including the Portage Tree) run:
 {% include Code/codeu.html line1="eix -RCc &quot;dev-util&quot;" %}
-{% include image.html image="PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
+{% include Links/image.html image="PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
 On Manjaro Linux many, if not all of these text editors/IDEs, are also available from the [**Arch User Repository**](https://aur.archlinux.org) (**AUR**) or the Manjaro repositories. Unfortunately, pacman, does not use categories for its packages, so one cannot use this to search for TEs/IDEs. One can, however, use the graphical PkgBrowser program, which can be installed using the command:
 {% include Code/coder.html line1="pacman -S pkgbrowser" %}
 to show the text editors in the pacman repositories go to the `Categories` menu, press the `app` submenu and then the `editor` submenu under there.
@@ -68,8 +68,8 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 </script>
 
 ## SRU Comparison
-{% include image.html image="TextEditors.png" width="1130px" float="none" description="A comparison of the RAM usage of the various text editors compared here on Sabayon" %}
-{% include image.html image="TextEditors-manjaro.png" width="1130px" float="none" description="A comparison of the RAM usage of the various text editors compared here on Manjaro" %}
+{% include Links/image.html image="TextEditors.png" width="1130px" float="none" description="A comparison of the RAM usage of the various text editors compared here on Sabayon" %}
+{% include Links/image.html image="TextEditors-manjaro.png" width="1130px" float="none" description="A comparison of the RAM usage of the various text editors compared here on Manjaro" %}
 
 [^1]: Ben Ogle (11 November 2015). [*Atom 1.3*](http://blog.atom.io/2015/12/11/atom-1-3.html). *blog.atom.io*: Atom.
 [^2]: [Releases &middot; jenslody/codeblocks](https://github.com/jenslody/codeblocks/releases?after=CODEBLOCKS_1_0_BETA5). Retrieved 12 January 2016.
