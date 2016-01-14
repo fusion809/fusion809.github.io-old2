@@ -44,7 +44,7 @@ If you come across a program you want to install on your Sabayon machine (and yo
 {% include_relative PMS/enlightenment.md %}
 
 ## Acknowledgements
-I would like to thank pontiki from the {% include irc.html channel="jekyll" %} channel for some help with the formatting of this post and floppym from the {% include irc.html channel="gentoo-dev-help" %} channel for providing the Bash script for use searching the Portage Tree for specific examples.
+I would like to thank pontiki from the {% include Links/irc.html channel="jekyll" %} channel for some help with the formatting of this post and floppym from the {% include Links/irc.html channel="gentoo-dev-help" %} channel for providing the Bash script for use searching the Portage Tree for specific examples.
 
 ## Footnotes
 [^1]: This is copied mostly from the [English Wikipedia](https://en.wikipedia.org/wiki/Package_manager)
