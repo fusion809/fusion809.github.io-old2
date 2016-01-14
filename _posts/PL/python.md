@@ -11,7 +11,7 @@ greater support for Python 2 than for Python 3. Python also has its own command-
 {% include wp.md name="DNF" cat="software" %} &mdash; the default package manager of Fedora &geq;22.
 {% endcapture %}
 {% capture point3 %}
-{% include gr.md owner="Sabayon" repo="entropy" name="Entropy" %} &mdash; the default binary package manager of Sabayon Linux.
+{% include Links/gr.md owner="Sabayon" repo="entropy" name="Entropy" %} &mdash; the default binary package manager of Sabayon Linux.
 {% endcapture %}
 {% capture point4 %}
 {% include wp.md name="GNU Bazaar" %} &mdash; the distributed version control system developed by Canonical Ltd.
