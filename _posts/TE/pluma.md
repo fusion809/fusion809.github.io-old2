@@ -1,18 +1,18 @@
-## Pluma
-{% include image.html image="Pluma-1.8.1-running-under-Mokhsa.png" description="Pluma 1.8.1 running under Moksha" float="none" width="1130px" %}
+## pluma
+{% include image.html image="Pluma-1.8.1-running-under-Mokhsa.png" description="pluma 1.8.1 running under Moksha" float="none" width="1130px" %}
 
 ### Background
-{% include_relative TE/links.md program="Pluma" package="app-editors/pluma" pacman="extra/x86_64/pluma/" %} is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.
+{% include_relative TE/links.md program="pluma" package="app-editors/pluma" pacman="extra/x86_64/pluma/" gr="https://github.com/mate-desktop/pluma" wp="Pluma_(editor)" %} is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.
 
 ### Customizability
 Some customization (to the theme or adding some plugins) can be done by going to Edit→Preferences.
 
 ### Features
-Pluma has a few plugins that can be used to add features (mostly IDE-like features) to the text editor. It also has syntax-highlighting and auto-indenting support for several computer languages.
+pluma has a few plugins that can be used to add features (mostly IDE-like features) to the text editor. It also has syntax-highlighting and auto-indenting support for several computer languages.
 
 ### Obtaining It
 #### Manjaro
-Pluma can be installed from the pacman extra repository by running:
+pluma can be installed from the pacman extra repository by running:
 {% include coder.html line1="pacman -S pluma" %}
 
 #### Sabayon

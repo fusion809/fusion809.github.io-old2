@@ -2,7 +2,7 @@
 {% include image.html image="Ninja-IDE-2.3.0.png" width="1130px" float="none" description="Ninja IDE 2.3.0 running under Manjaro" %}
 
 ### Background
-{% include_relative TE/links2.md package="dev-util/ninja-ide" program="Ninja IDE" pacman="community/any/ninja-ide" link="http://ninja-ide.org/" wp="Ninja_IDE" forum="https://groups.google.com/forum/#!forum/ninja-ide" gr="https://github.com/ninja-ide/ninja-ide" %} is a free and open-source IDE that is designed specifically for Python development.
+{% include_relative TE/links2.md package="dev-util/ninja-ide" program="Ninja IDE" pacman="community/any/ninja-ide" link="http://ninja-ide.org/" wp="Ninja_IDE" forum="https://groups.google.com/forum/#!forum/ninja-ide" gr="https://github.com/ninja-ide/ninja-ide" %} is a free and open-source IDE that is designed specifically for Python development. It is developed by its own small donation-sponsored community of developers and only supports Python 2.
 
 ### Customizability
 {% include image.html image="Ninja-IDE-Preferences.png" width="1130px" float="none" description="Ninja IDE Preferences Window" %}
