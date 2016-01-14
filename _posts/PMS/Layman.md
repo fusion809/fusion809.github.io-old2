@@ -1,5 +1,5 @@
 ### Layman
-{% include links.html gp="Layman" gw="Layman" package="app-portage/layman" program="Layman" link="http://layman.sourceforge.net/" gr="gentoo/layman" %} is a command-line tool for managing Portage overlays. It can be installed with Portage (from the PT) using the command:
+{% include Links/links.html gp="Layman" gw="Layman" package="app-portage/layman" program="Layman" link="http://layman.sourceforge.net/" gr="gentoo/layman" %} is a command-line tool for managing Portage overlays. It can be installed with Portage (from the PT) using the command:
 {% include Code/coder.html line1="emerge -av app-portage/layman" %}
 or with Entropy using the command:
 {% include Code/coder.html line1="equo i -av app-portage/layman" %}

@@ -1,6 +1,6 @@
 {% capture my_capture %}
 ### Gentoolkit
-{% include links.html program="Gentoolkit" package="app-portage/gentoolkit" gw="Gentoolkit" wp="Gentoolkit" gr="den4ix/gentoolkit" %} is a suite of tools written in Python and Bash script that make Gentoo administration easier. Examples of these tools include:
+{% include Links/links.html program="Gentoolkit" package="app-portage/gentoolkit" gw="Gentoolkit" wp="Gentoolkit" gr="den4ix/gentoolkit" %} is a suite of tools written in Python and Bash script that make Gentoo administration easier. Examples of these tools include:
 * [`eclean`](/man/eclean.1.html) which can be used to remove old source files and binary packages from one's system.
 * [`equery`](/man/equery.1.html) which can be used to query installed packages. For example, it can list the installed files associated with a package, as well as to determine which package an installed file belongs. It can also be used to determine an installed package's dependencies
 * [`euse`](/man/euse.1.html) which can be used to set, unset or see USE flags.
@@ -9,6 +9,6 @@
 
 The Gentoolkit can be installed using Entropy or Portage. Using Entropy one would install it using the command:
 {% include Code/coder.html line1="equo i app-portage/gentoolkit" %}
-The Gentoolkit also has a toolkit for Gentoo developers: {% include links.html puncr="." program="Gentoolkit-dev" package="app-portage/gentoolkit-dev" %}
+The Gentoolkit also has a toolkit for Gentoo developers: {% include Links/links.html puncr="." program="Gentoolkit-dev" package="app-portage/gentoolkit-dev" %}
 {% endcapture %}
 {{ my_capture | markdownify }}
