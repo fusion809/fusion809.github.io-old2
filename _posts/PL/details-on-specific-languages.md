@@ -12,7 +12,7 @@
 {% include_relative PL/cpp.md %}
 
 ### C Sharp
-{% include note.md note1="The use of the name <b>C Sharp</b>, is because of technical restrictions, the correct name is C#" %}
+{% include Layouts/note.md note1="The use of the name <b>C Sharp</b>, is because of technical restrictions, the correct name is C#" %}
 **C#** is a proprietary programming language that is developed by the Microsoft Corporation. Some C# compilers are proprietary, others are not. It is very popular, according to [TIOBE][1]. Microsoft employees started its development in the late 1990s, for the purpose of it being used in their .NET framework. In its early days it was said to be very similar to Java, although since then the two have become increasingly different to one another.
 
 ### D

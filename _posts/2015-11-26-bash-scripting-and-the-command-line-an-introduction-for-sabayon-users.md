@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 {% include Links/image.html image="optipng2.png" description="OptiPNG 0.7.5 running under Bash 4.3.39 in LXTerminal 0.2.0" width = "1150px" float = "none" %}
-{% include note.html note1="Links to Wiki articles are provided in this post for those that wish to learn more, but it is important to note that I cannot guarantee their accuracy." %}
+{% include Layouts/note.html note1="Links to Wiki articles are provided in this post for those that wish to learn more, but it is important to note that I cannot guarantee their accuracy." %}
 
 On **Sabayon Linux** and other [Linux distributions](https://en.wikipedia.org/wiki/Linux_distribution), along with other [Unix](https://en.wikipedia.org/wiki/Unix)/[Unix-like](https://en.wikipedia.org/wiki/Unix-like) systems,[^1] the command-line is a pivotal way by which users can interact with the operating system, the files stored on it and the system's various components. The command-line on such systems is usually accessed via so called &ldquo;**[terminal emulators](https://en.wikipedia.org/wiki/Terminal_emulator)**&rdquo;, which start and allow users to interact with their [Unix shell](https://en.wikipedia.org/wiki/Unix_shell). It is Unix shells that really serve as the command-line of &#42;nix systems and from within them various command-line programs can be called and used to perform specific tasks. Examples of such programs include `cp`, `find`, `ls`, `rm`, *etc.* In fact, one of the defining properties of all &#42;nix systems is that they share a set of basic command-line utilities that perform specific and usually singular tasks. On Linux platforms such as Sabayon these basic utilities are usually provided by the [**GNU Core Utilities**](https://en.wikipedia.org/wiki/GNU_Core_Utilities) ([sys-apps/coreutils](https://packages.sabayon.org/show/coreutils,156043,sabayon-weekly,amd64,5,standard)) package and the Unix shell used is usually **[Bash](https://en.wikipdia.org/wiki/Bash_(Unix_shell))**.
 
@@ -85,79 +85,79 @@ The Bash syntax has several distinct components, which can be classed as <a href
 <td class="green"><code>cat</code></td>
 <td class="green">Concatenate file. Take file contents and send them to <a href = "https://en.wikipedia.org/wiki/Standard_streams">standard output</a>.</td>
 <td class="green">{% highlight bash %}cat /etc/shells{% endhighlight %}</td>
-<td class="green">{% include man.html man="cat.1p" %}</td>
+<td class="green">{% include Links/man.html man="cat.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>chmod</code></td>
 <td class="green">Change the permissions of a file</td>
 <td class="green">{% highlight bash %}chmod +x build.sh{% endhighlight %}</td>
-<td class="green">{% include man.html man="chmod.1p" %}</td>
+<td class="green">{% include Links/man.html man="chmod.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>chown</code></td>
 <td class="green">Change the ownership of a file</td>
 <td class="green">{% highlight bash %}chmown apache:apache -R /var/www/localhost/htdocs{% endhighlight %}</td>
-<td class="green">{% include man.html man="chown.1p" %}</td>
+<td class="green">{% include Links/man.html man="chown.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>chroot</code></td>
 <td class="green">Run a command/interactive shell with a special root directory</td>
 <td class="green">{% highlight bash %}chroot /mnt/sabayon /bin/bash{% endhighlight %}</td>
-<td class="green">{% include man.html man="chroot.1" %}</td>
+<td class="green">{% include Links/man.html man="chroot.1" %}</td>
 </tr>
 <tr>
 <td class="green"><code>cp</code></td>
 <td class="green">Copy file</td>
 <td class="green">{% highlight bash %}cp ~/.bashrc ~/GitHub/.bashrc{% endhighlight %}</td>
-<td class="green">{% include man.html man="cp.1p" %}</td>
+<td class="green">{% include Links/man.html man="cp.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>du</code></td>
 <td class="green">Estimate file space usage</td>
 <td class="green">{% highlight bash %}du -bs tmp.bundle{% endhighlight %}</td>
-<td class="green">{% include man.html man="du.1" %}</td>
+<td class="green">{% include Links/man.html man="du.1" %}</td>
 </tr>
 <tr>
 <td class="green"><code>echo</code></td>
 <td class="green">Display a line of text</td>
 <td class="green">{% highlight bash %}echo $SHELL{% endhighlight %} returns the current shell's file system location.</td>
-<td class="green">{% include man.html man="echo.1" %}</td>
+<td class="green">{% include Links/man.html man="echo.1" %}</td>
 </tr>
 <tr>
 <td class="green"><code>ln</code></td>
 <td class="green">Make a link between files</td>
 <td class="green">{% highlight bash %}ln -s /usr/bin/atom /usr/local/bin/atom {% endhighlight %} when Atom is installed from Entropy allows <code>/usr/local/bin/atom</code> to be used to launch Atom.</td>
-<td class="green">{% include man.html man="ln.1p" %}</td>
+<td class="green">{% include Links/man.html man="ln.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>ls</code></td>
 <td class="green">List files</td>
 <td class="green">{% highlight bash %}ls{% endhighlight %} lists files and directories in the current directory, except for hidden ones.</td>
-<td class="green">{% include man.html man="ls.1p" %}</td>
+<td class="green">{% include Links/man.html man="ls.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>mkdir</code></td>
 <td class="green">Create a new empty directory</td>
 <td class="green">{% highlight bash %}mkdir -p $HOME/Documents/Manpages{% endhighlight %}</td>
-<td class="green">{% include man.html man="mkdir.1"%}</td>
+<td class="green">{% include Links/man.html man="mkdir.1"%}</td>
 </tr>
 <tr>
 <td class="green"><code>mv</code></td>
 <td class="green">Move file</td>
 <td class="green">{% highlight bash %}mv ~/.bashrc ~/GitHub/sabayon-scripts/{% endhighlight %}</td>
-<td class="green">{% include man.html man="mv.1p" %}</td>
+<td class="green">{% include Links/man.html man="mv.1p" %}</td>
 </tr>
 <tr>
 <td class="green"><code>rm</code></td>
 <td class="green">Remove file(s)</td>
 <td class="green">{% highlight bash %}rm $HOME/Documents/Manpages/equo.1.html{% endhighlight %}</td>
-<td class="green">{% include man.html man="rm.1" %}</td>
+<td class="green">{% include Links/man.html man="rm.1" %}</td>
 </tr>
 <tr>
 <td class="green"><code>uname</code></td>
 <td class="green">Print system information</td>
 <td class="green">{% highlight bash %}uname -r{% endhighlight %} lists the kernel details.</td>
-<td class="green">{% include man.html man="uname.1" %}</td>
+<td class="green">{% include Links/man.html man="uname.1" %}</td>
 </tr>
 </tbody>
 </table>
@@ -951,7 +951,7 @@ I have limited experience with drop-down terminals and X terminals like UXTerm a
 * [Unix & Linux StackExchange](http://unix.stackexchange.com)[^9]
 
 # Further Reading
-{% include note.html note1="All the following links are to free PDFs" %}
+{% include Layouts/note.html note1="All the following links are to free PDFs" %}
 * [Advanced Bash-Scripting Guide (2014) @ www.tldp.org](http://www.tldp.org/LDP/abs/abs-guide.pdf)
 * [Bash Guide for Beginners (2008) @ www.tldp.org](http://www.tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
 * [Bash Official Manual (2014) @ www.gnu.org](http://www.gnu.org/software/bash/manual/bash.pdf)
