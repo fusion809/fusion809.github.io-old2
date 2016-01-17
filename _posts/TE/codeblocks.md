@@ -29,7 +29,7 @@ or:
 
 ### Disadvantages (Cons)
 * Only supports three programming languages: C, C++ and Fortran.
-* Fairly infrequently updated. As of the time of writing (12 January 2015) the latest version was released in December 2013. although a new version is expected to be released within the next month or so.
+* Fairly infrequently updated. As of the time of writing (12 January 2016) the latest version was released in December 2013. although a new version is expected to be released within the next month or so.
 
 ### Summary
 {% include_relative TE/codeblocks-summary.html %}
