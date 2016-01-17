@@ -28,6 +28,7 @@ Atom has plugins for syntax highlighting and auto-indentation of most major comp
 * JavaScript
 * Less
 * [Lua](https://atom.io/packages/language-lua)
+* Markdown
 * [MediaWiki markup](https://atom.io/packages/language-mediawiki)
 * [PyMOL](https://atom.io/packages/language-pymol)
 * Python
