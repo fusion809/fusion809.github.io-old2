@@ -16,10 +16,10 @@ It is easy to install Vim on Manjaro using pacman. To do this run:
 {% include Code/coder.html line1="pacman -S vim" %}
 if you want to be able to use the graphical user interface of Vim too run:
 {% include Code/coder.html line1="pacman -S gvim" %}
-instead. The Vim and gVim packages **cannot** be installed simultaneously on the same machine. The gVim package provides the `vim` command for the command-line.
+instead. The Vim and gVim packages **cannot** be installed simultaneously on the same machine. The gVim package, not only provides the graphical user interface, but it also provides the `vim` command for the command-line.
 
 #### Sabayon
-It is easy to obtain Vim (and gVim) on Sabayon using Entropy or Portage. To install Vim and gVim using Entropy, run:
+It is easy to obtain Vim and gVim on Sabayon using Entropy or Portage. To install Vim and gVim using Entropy, run:
 {% include Code/coder.html line1="equo i -av app-editors/vim app-editors/gvim" %}
 whereas to install it with Portage run:
 {% include Code/coder.html line1="emerge -av app-editors/vim app-editors/gvim" %}
