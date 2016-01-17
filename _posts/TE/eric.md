@@ -30,7 +30,7 @@ while to install Eric 4.5.25 with Portage run:
 {% include Code/coder.html line1="emerge -av eric:4" %}
 and to install Eric 5.5.2 with Portage run:
 {% include Code/coder.html line1="emerge -av eric:5" %}
-It is possible to install the latest release of Eric from my Portage Overlay, {% include Sabayon/sabayon-tools.md %}, by running (assuming this overlay is not currently added):
+It is possible to install the latest release of Eric from my Portage Overlay, {% include Sabayon/sabayon-tools.md puncr="," %} by running (assuming this overlay is not currently added):
 {% include Code/coder.html line1="layman -a sabayon-tools" line2="emerge -av dev-util/eric::sabayon-tools" %}
 To install the latest release of Eric on Sabayon, via following the general instructions outlined earlier, run:
 {% include Code/codeu.html line1="sudo equo i -av dev-python/pyqt5 dev-python/sip dev-python/qscintilla-python" line2="mkdir eric" line3="wget -c http://sourceforge.net/projects/eric-ide/files/latest/download -O- > eric.tar.gz" line4="tar -xz -f eric.tar.gz -C eric --strip-components=1" line5="sudo python install.py -b /usr/bin" line6="sudo install -Dm644 eric/eric6.desktop /usr/share/applications/eric6.desktop" %}
