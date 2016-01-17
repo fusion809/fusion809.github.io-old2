@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "A Comparison of Text Editors and IDEs on Manjaro and Sabayon Linux"
-date:   2016-01-20 +1000
+date:   2016-01-18 +1000
 categories: comparisons, text-editors, integrated-development-environment
 redirect_from:
       - /2016/01/12/comparison-of-text-editors/
+      - /2016/01/20/comparison-of-text-editors/
       - /comparison-of-text-editors/
 ---
 {% include Layouts/draft.html %}
@@ -35,12 +36,11 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/bluefish.md %}
 {% include_relative TE/codeblocks.md %}
 {% include_relative TE/codelite.md %}
+{% include_relative TE/emacs.md %}
 {% include_relative TE/eclipse.md %}
 {% include_relative TE/eric.md %}
 {% include_relative TE/geany.md %}
 {% include_relative TE/gedit.md %}
-{% include_relative TE/emacs.md %}
-{% include_relative TE/nano.md %}
 {% include_relative TE/intellijidea.md %}
 {% include_relative TE/jedit.md %}
 {% include_relative TE/kate.md %}
@@ -48,6 +48,7 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/komodoedit.md %}
 {% include_relative TE/leafpad.md %}
 {% include_relative TE/mousepad.md %}
+{% include_relative TE/nano.md %}
 {% include_relative TE/netbeans.md %}
 {% include_relative TE/pluma.md %}
 {% include_relative TE/pycharm.md %}
