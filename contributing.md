@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Corrections
-permalink:
-  - /contributing/
-  - /corrections/
+permalink: /contributing/
 ---
 
 **The Hornery**, as its name suggests (which, if you have not figured out is a play on my surname, Horne, this is not meant to be condescending, just mentioning in case you are wondering) is really just my (fusion809/Brenton)'s personal website. So its format is not really that of a Wiki (wherein everyone is invited to join in and contribute), despite this, if you find something that you feel is inaccurate or misinformed, I am interested in receiving your feedback. Please remember, however, that if your feedback is more subjective than it is objective (in other you are telling me what you *think* or *believe* and not what you *know* and have evidence to support), odds are it will ignored, as this website is supposed to be from *my point of view*. I will also accept any recommendations of how to improve this website, in its aesthetics and such. There are four main ways you can provide me with feedback:
