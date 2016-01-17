@@ -29,5 +29,5 @@ while to install it with Portage run:
 * Fairly heavy on system resources
 * Fairly limited set of supported languages
 
-### Ratings
-{% include_relative TE/netbeans-ratings.html %}
+### Summary
+{% include_relative TE/netbeans-summary.html %}

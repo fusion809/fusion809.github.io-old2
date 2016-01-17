@@ -28,5 +28,5 @@ While to install it with Portage run:
 ### Disadvantages (Cons)
 * Support for non-web markup/programming languages is less than adequate.
 
-### Ratings
-{% include_relative TE/bluefish-ratings.html %}
+### Summary
+{% include_relative TE/bluefish-summary.html %}

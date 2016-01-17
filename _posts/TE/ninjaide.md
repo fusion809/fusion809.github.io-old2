@@ -31,6 +31,6 @@ or:
 ### Disadvantages (Cons)
 * Does not support many programming languages
 
-### Ratings
-{% include_relative TE/ninjaide-ratings.html %}
+### Summary
+{% include_relative TE/ninjaide-summary.html %}
 430d6322b56c7f4f2fb6

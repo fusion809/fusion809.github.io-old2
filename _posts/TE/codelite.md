@@ -35,5 +35,5 @@ I have tried building CodeLite using the `kaa` overlay's ebuild and it failed du
 * Support for only four programming languages.
 * Not in the official binary package repositories for either Manjaro or Sabayon.
 
-### Ratings
-{% include_relative TE/codelite-ratings.html %}
+### Summary
+{% include_relative TE/codelite-summary.html %}

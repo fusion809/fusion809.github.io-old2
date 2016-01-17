@@ -31,5 +31,5 @@ alternatively, to install it with Portage, run:
 * Lacks customizability.
 * Unintuitive keymap, can take a little getting used to.
 
-### Ratings
-{% include_relative TE/nano-ratings.html %}
+### Summary
+{% include_relative TE/nano-summary.html %}

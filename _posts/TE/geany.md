@@ -34,5 +34,5 @@ The latest version of Geany in the [Entropy Store](https://packages.sabayon.org/
 {% include Links/image.html image="Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
 * The version of Geany in the Entropy Store is not the latest available
 
-### Ratings
-{% include_relative TE/geany-ratings.html %}
+### Summary
+{% include_relative TE/geany-summary.html %}

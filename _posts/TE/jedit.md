@@ -31,5 +31,5 @@ while to install it using Portage run:
 ### Disadvantages (Cons)
 * Heavy on system resources.
 
-### Ratings
-{% include_relative TE/jedit-ratings.html %}
+### Summary
+{% include_relative TE/jedit-summary.html %}

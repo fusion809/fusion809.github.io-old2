@@ -30,5 +30,5 @@ or with Portage by running:
 ### Disadvantages (Cons)
 * Customization options are fairly limited
 
-### Ratings
-{% include_relative TE/pluma-ratings.html %}
+### Summary
+{% include_relative TE/pluma-summary.html %}

@@ -29,5 +29,5 @@ Alternatively to install it using Portage run:
 * Customization options, beyond with a limited set of available themes and plugins, are limited.
 * Fairly light on features, beyond syntax highlighting.
 
-### Ratings
-{% include_relative TE/gedit-ratings.html %}
+### Summary
+{% include_relative TE/gedit-summary.html %}

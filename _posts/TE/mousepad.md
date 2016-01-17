@@ -31,4 +31,4 @@ while to install it with Portage (and yes it is available in the Portage Tree):
 * Limited customization options
 
 ### Ratings
-{% include_relative TE/mousepad-ratings.html %}
+{% include_relative TE/mousepad-summary.html %}

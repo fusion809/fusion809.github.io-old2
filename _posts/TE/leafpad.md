@@ -29,4 +29,4 @@ while to install it with Portage run:
 * It is very basic, has minimal customizability or features
 
 ### Ratings
-{% include_relative TE/leafpad-ratings.html %}
+{% include_relative TE/leafpad-summary.html %}

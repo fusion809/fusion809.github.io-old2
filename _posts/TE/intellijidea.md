@@ -27,5 +27,5 @@ On Manjaro an experimental version of IJCE is also installable from the AUR by r
 * Cannot be installed via the usual methods on Manjaro and Sabayon.
 * Limited set of features and supported languages
 
-### Ratings
-{% include_relative TE/intellijidea-ratings.html %}
+### Summary
+{% include_relative TE/intellijidea-summary.html %}

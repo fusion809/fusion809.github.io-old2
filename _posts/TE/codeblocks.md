@@ -31,5 +31,5 @@ or:
 * Only supports three programming languages: C, C++ and Fortran.
 * Fairly infrequently updated. As of the time of writing (12 January 2015) the latest version was released in December 2013. although a new version is expected to be released within the next month or so.
 
-### Ratings
-{% include_relative TE/codeblocks-ratings.html %}
+### Summary
+{% include_relative TE/codeblocks-summary.html %}

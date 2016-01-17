@@ -29,4 +29,4 @@ or:
 * Not very customizable.
 
 ### Ratings
-{% include_relative TE/kdevelop-ratings.html %}
+{% include_relative TE/kdevelop-summary.html %}

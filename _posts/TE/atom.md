@@ -76,5 +76,5 @@ If you are using some other platform, or for whatever reason none of the methods
 ### Disadvantages (Cons)
 * Slow to start, although with the release of version 1.3.0 the start time has been supposedly cut by 20-30%.[^1] I personally have not noticed any such improvement, although I cannot say for certain I would even if there was such an improvement. Atom can be installed via three major methods on Sabayon: adding an overlay with Layman that contains an Atom ebuild and then installing this package with Portage or manually building the program from source code or installing it using Entropy. I usually prefer to install using Entropy, via issuing the command:
 
-### Ratings
-{% include_relative TE/atom-ratings.html %}
+### Summary
+{% include_relative TE/atom-summary.html %}

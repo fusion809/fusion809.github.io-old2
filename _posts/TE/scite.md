@@ -31,5 +31,5 @@ To install it with Portage, run:
 * Extensively customizable
 * Easy to get on Sabayon and other Linux distributions like Manjaro.
 
-### Ratings
-{% include_relative TE/scite-ratings.html %}
+### Summary
+{% include_relative TE/scite-summary.html %}

@@ -44,5 +44,5 @@ To install the latest release of Eric on Sabayon, via following the general inst
 ### Disadvantages (Cons)
 * The latest version is not available via the usual channels on Sabayon
 
-### Ratings
-{% include_relative TE/eric-ratings.html %}
+### Summary
+{% include_relative TE/eric-summary.html %}

@@ -41,5 +41,5 @@ while to install KWrite with Portage run (no need to add any overlays, it is in 
 * Minimal customization can be made to Kate/KWrite, via user-supplied scripts.
 * Due to it being part of KDE SC it cannot be too easily ported to Microsoft Windows or OS X, although it is readily available on most Linux distributions.
 
-### Ratings
-{% include_relative TE/kate-ratings.html %}
+### Summary
+{% include_relative TE/kate-summary.html %}

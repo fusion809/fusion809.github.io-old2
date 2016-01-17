@@ -42,5 +42,5 @@ cd eclipse-installer
 * Slow to boot.
 * Extra plugins are required in order to program in other programming languages.
 
-### Ratings
-{% include_relative TE/eclipse-ratings.html %}
+### Summary
+{% include_relative TE/eclipse-summary.html %}

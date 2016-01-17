@@ -28,5 +28,5 @@ PyCharm CE can be installed from the Tree using Portage, although it is not in t
 ### Disadvantages (Cons)
 * Heavy on system resource usage
 
-### Ratings
-{% include_relative TE/pycharm-ratings.html %}
+### Summary
+{% include_relative TE/pycharm-summary.html %}
