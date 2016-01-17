@@ -2,7 +2,7 @@
 {% include Links/image.html image="CodeLite-9.0.0.png" description="CodeLite 9.0.0 running under Manjaro" float="none" width="1130px" %}
 
 ### Background
-{% include_relative TE/links2.md program="CodeLite" package="dev-util/codelite" gr="https://github.com/eranif/codelite" aur="codelite" link="http://codelite.org/" wp="CodeLite" %} is a lightweight IDE for C, C++, PHP and Node.js that is written in C and C++. It does not support other programming languages, just these four.
+{% include_relative TE/links.md program="CodeLite" package="dev-util/codelite" gr="https://github.com/eranif/codelite" aur="codelite" link="http://codelite.org/" wp="CodeLite" %} is a lightweight IDE for C, C++, PHP and Node.js that is written in C and C++. It does not support other programming languages, just these four.
 
 ### Customizability
 I have limited experience with CodeLite, so I cannot really comment with confidence on its customizability, but from what I understand it is designed to be lightweight and their website does not really mention any plugins or other customizations.
