@@ -54,7 +54,7 @@ Manjaro users must install Atom via the Arch User Repository (AUR), or via using
 * {% include ArchLinux/aurb.md package="atom-editor-git" %} which builds a package for the **latest git snapshot** of Atom from **source code**.
 
 #### Sabayon
-Recently, I have noticed that Atom in the Entropy repositories is usually updated within a day or so of me updating it in the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay, so it should almost always be the latest version available. So to install it from the command-line one would merely run:
+Recently, I have noticed that Atom in the Entropy repositories is usually updated within a week or so of me updating it in the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay, so it should almost always be the latest version available. So to install it from the command-line one would merely run:
 {% include Code/coder.html line1="equo i -av app-editors/atom" %}
 If, the version(s) of Atom in the Entropy repositories are significantly out-of-date I usually use the ebuild in my overlay, {% include Sabayon/sabayon-tools.md %} to install it. The advantage of my ebuild over other ebuilds (including the one in the `sabayon` overlay, which I too help mantain) is that if you experience any momentary disruption of your Internet connection the other ebuilds may fail and you will have to start the build from the beginning again, while my ebuild will keep soldering on. This is unless the glitches in your Internet connection are so great in severity or length that it overwhelms my ebuild.
 
