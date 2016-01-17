@@ -2,7 +2,7 @@
 {% include Links/image.html image="Komodo-Edit-9.3.1.png" width="1130px" float="none" description="Komodo Edit 9.3.1 running under Manjaro Linux" %}
 
 ### Background
-{% include_relative TE/links.md program="Komodo Edit" package="app-editors/komodo-edit-bin" aur="komodo-edit" link="http://komodoide.com/komodo-edit/" gr="https://github.com/Komodo/KomodoEdit" wp="Komodo_Edit" %} is a free and open-source text editor developed by ActiveState that is based on the Mozilla Platform. ActiveState also develops a proprietary IDE based on Komodo Edit called [Komodo IDE](https://en.wikipedia.org/wiki/Komodo_IDE). It supports several popular computer languages, including: Bash, C, C++, C#, CoffeeScript, CSS, Go, HTML, JavaScript, Less, Markdown, Perl, PHP, Python, Python3, *etc.*
+{% include_relative TE/links2.md program="Komodo Edit" package="app-editors/komodo-edit-bin" aur="komodo-edit" link="http://komodoide.com/komodo-edit/" gr="https://github.com/Komodo/KomodoEdit" wp="Komodo_Edit" %} is a free and open-source text editor developed by ActiveState that is based on the Mozilla Platform. ActiveState also develops a proprietary IDE based on Komodo Edit called [Komodo IDE](https://en.wikipedia.org/wiki/Komodo_IDE). It supports several popular computer languages, including: Bash, C, C++, C#, CoffeeScript, CSS, Go, HTML, JavaScript, Less, Markdown, Perl, PHP, Python, Python3, *etc.*
 
 ### Customizability
 Komodo Edit can be customized and extended by use of packages that come in the `.xpi` file format (the same format used by Firefox extensions) and can be downloaded from http://komodoide.com/packages/. I have limited experience with Komodo Edit, so I do not know just how customizable it is by use of these extensions.

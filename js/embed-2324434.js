@@ -8,7 +8,6 @@
         opinionStage.legacy.polls = []; // Polls ids
         opinionStage.legacy.sets = []; // Set ids
         opinionStage.legacy.widgets = []; // Widgets urls
-        opinionStage.legacy.containers = []; // Containers ids
         opinionStage.legacy.polls_locations = {};
         opinionStage.legacy.sets_locations = {};
         opinionStage.legacy.widgets_locations = {};
@@ -79,7 +78,7 @@
                     opinionStage.legacy.setFrameHeight(opinionStage.legacy.sets_locations[msg.data.src_id], msg.data.height);
                 } else if ((msg.type == "redirect") && msg.data) {
                     opinionStage.legacy.redirect(msg.data.url);
-                } else if (((msg.type == "pollVote") || (msg.type == "pollPreVote")) && msg.data) {
+                } else if ((msg.type == "pollVote") && msg.data) {
                     if (opinionStage.legacy.hooks[msg.data.sides[0]] != null) {
                         opinionStage.legacy.hooks[msg.data.sides[0]]();
                     }
@@ -224,6 +223,6 @@
         opinionStage.legacy.firstTimeInit();
     }
 })(window.OpinionStage = window.OpinionStage || {} );
-  OpinionStage.legacy.addPollLocation(2300580, "debate_1_" + 2300580);
-  OpinionStage.legacy.insertLoader("debate_1_" + 2300580);
-  OpinionStage.legacy.waitForCommunication(OpinionStage.legacy.embedPoll, {poll_id: 2300580, width: '100%'});
+  OpinionStage.legacy.addPollLocation(2324434, "debate_1_" + 2324434);
+  OpinionStage.legacy.insertLoader("debate_1_" + 2324434);
+  OpinionStage.legacy.waitForCommunication(OpinionStage.legacy.embedPoll, {poll_id: 2324434, width: '100%'});

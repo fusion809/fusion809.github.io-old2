@@ -55,21 +55,21 @@ to show the text editors in the pacman repositories go to the `Categories` menu,
 {% include_relative TE/vim.md %}
 
 ## Poll
-<div id="debate_1_2300580"></div>
+<div id="debate_1_2324434"></div>
 <script>
   (function () {
     var opst = document.createElement('script');
     opst.type = 'text/javascript';
     opst.async = true;
-    opst.src = '/js/embed-2300580.js';
+    opst.src = '/js/embed-2324434.js';
     (document.getElementsByTagName('head')[0] ||
       document.getElementsByTagName('body')[0]).appendChild(opst);
   }());
 </script>
 
 ## SRU Comparison
-{% include Links/image.html image="TextEditors.png" width="1130px" float="none" description="A comparison of the RAM usage of the various text editors compared here on Sabayon" %}
-{% include Links/image.html image="TextEditors-manjaro.png" width="1130px" float="none" description="A comparison of the RAM usage of the various text editors compared here on Manjaro" %}
+{% include Links/image.html image="ISRAM-usage-TEs-Sab.svg" width="1130px" float="none" %}
+{% include Links/image.html image="ISRAM-usage-TEs-Man.svg" width="1130px" float="none" %}
 
 [^1]: Ben Ogle (11 November 2015). [*Atom 1.3*](http://blog.atom.io/2015/12/11/atom-1-3.html). *blog.atom.io*: Atom.
 [^2]: [Releases &middot; jenslody/codeblocks](https://github.com/jenslody/codeblocks/releases?after=CODEBLOCKS_1_0_BETA5). Retrieved 12 January 2016.
