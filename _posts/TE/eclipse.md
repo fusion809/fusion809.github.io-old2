@@ -32,7 +32,7 @@ cd eclipse-installer
 ./eclipse-inst
 ```
 
-**Update**: Soon after I posted this, Francesco Ferro added [`dev-util/eclipse-sdk-bin`](https://packages.sabayon.org/quicksearch?q=dev-util%2Feclipse-sdk-bin&x=0&y=0) (version 4.4.2, not quite the latest but it is fairly recent) to the [`sabayon`](https://github.com/Sabayon/for-gentoo/commit/38234bc122094ca4cc818d92e2e42bd32fe749d9) overlay and then to the sabayon-limbo repository. To install it run: {% include coder.html line1="equo i -av dev-util/eclipse-sdk-bin" %}
+**Update**: Soon after I posted this, Francesco Ferro added [`dev-util/eclipse-sdk-bin`](https://packages.sabayon.org/quicksearch?q=dev-util%2Feclipse-sdk-bin&x=0&y=0) (version 4.4.2, not quite the latest but it is fairly recent) to the [`sabayon`](https://github.com/Sabayon/for-gentoo/commit/38234bc122094ca4cc818d92e2e42bd32fe749d9) overlay and then to the sabayon-limbo repository. To install it run: {% include Code/coder.html line1="equo i -av dev-util/eclipse-sdk-bin" %}
 
 ### Advantages (Pros)
 * Written in Java, so it is incredibly cross-platform. Any Java-capable platform should be able to run Eclipse without a problem.

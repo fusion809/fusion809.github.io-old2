@@ -21,7 +21,7 @@ On Manjaro an experimental version of IJCE is also installable from the AUR by r
 
 #### Sabayon
 **Update**: soon after posting this Francesco Ferro added IntelliJ Community Edition 15.0.0 to the [`sabayon`](https://github.com/Sabayon/for-gentoo/commit/51194fcbbf4fa67a83519fbebd1c1ec3036fdf99) overlay, which was then added to the sabayon-limbo repository. To install it run:
-{% include coder.html line1="equo i -av dev-util/idea-community" %}
+{% include Code/coder.html line1="equo i -av dev-util/idea-community" %}
 
 ### Advantages (Pros)
 * Easy to install on any Linux platform.
