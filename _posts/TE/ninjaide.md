@@ -20,9 +20,9 @@ Ninja-IDE can be installed on Manjaro by running:
 
 #### Sabayon
 It can be installed on Sabayon by running:
-{% include Code/coder.html line1="equo i -av ninja-ide" %}
+{% include Code/coder.html line1="equo i -av dev-util/ninja-ide" %}
 or:
-{% include Code/coder.html line1="emerge -av ninja-ide" %}
+{% include Code/coder.html line1="emerge -av dev-util/ninja-ide" %}
 
 ### Advantages (Pros)
 * It is easily installable via binary packages on both Manjaro and Sabayon.

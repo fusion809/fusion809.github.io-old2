@@ -17,9 +17,9 @@ On Manjaro Code::Blocks can be very easily installed using pacman:
 
 #### Sabayon
 Code::Blocks is in the Entropy repositories and Portage Tree, consequently it can be installed via running:
-{% include Code/coder.html line1="equo i -av codeblocks" %}
+{% include Code/coder.html line1="equo i -av dev-util/codeblocks" %}
 or:
-{% include Code/coder.html line1="emerge -av codeblocks" %}
+{% include Code/coder.html line1="emerge -av dev-util/codeblocks" %}
 
 ### Advantages (Pros)
 * Cross-platform and able to run on Windows, OS X and Linux.
