@@ -31,12 +31,14 @@ div.code {
 /**
 * Span
 */
-span.coder {
+span.coder abbr {
   color: #ef2929;
+  border-bottom: 0px;
 }
 
-.codeu {
+span.codeu abbr {
   color: #4e9a06;
+  border-bottom: 0px;
 }
 
 /**
