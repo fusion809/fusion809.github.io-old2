@@ -2,7 +2,7 @@
 layout: post
 title:  "A Comparison of Text Editors and IDEs for Manjaro and Sabayon Linux"
 date:   2016-01-18 +1000
-categories: comparisons, text-editors, integrated-development-environment
+categories: comparisons, text-editors, integrated-development-environment, manjaro-linux, sabayon-linux
 redirect_from:
       - /2016/01/12/comparison-of-text-editors/
       - /2016/01/20/comparison-of-text-editors/
