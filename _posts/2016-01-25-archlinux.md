@@ -8,3 +8,7 @@ redirect_from:
   - /installing-arch-linux/
 ---
 {% include Layouts/draft.html %}
+
+On 19 January 2016 I installed Arch Linux on my Lenovo Laptop
+
+<script src="/js/b44fa06f1ed0075af0cc.js"></script>

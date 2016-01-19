@@ -28,6 +28,20 @@ figure img {
   max-width: 100%;
 }
 
+div.clear {
+  all: initial;
+}
+
+div.highlight.highlight-source-shell pre {
+  background-color: white;
+  color: #222;
+}
+
+div#readme p code {
+  border: none;
+  color: #222;
+}
+
 div.image-box {
   padding: 10px;
   padding-bottom: 6px;
