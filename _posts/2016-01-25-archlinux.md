@@ -16,15 +16,17 @@ On 19 January 2016 I installed Arch Linux on a removable drive, using my Lenovo 
 For anyone that is interested, this laptop I used to install Arch Linux on the removable drive, had the following specs:
 <script src="/js/b44fa06f1ed0075af0cc.js"></script>
 
-## Creating a custom ISO
+## Creating a Custom ISO
 I started off by creating a releng ISO by following the [archiso](https://wiki.archlinux.org/index.php/Archiso) guide at the ArchWiki on an Arch VirtualBox VM. I found the section entitled ["Installation without Internet access"](https://wiki.archlinux.org/index.php/Archiso#Installation_without_Internet_access) especially alluring, as it sounded like what I wanted, but confusing and difficult for me to follow. It was so confusing that at first I thought it was about creating a live ISO without an Internet connection, while it is really about creating a live ISO that can be used to install Arch Linux without an Internet connection.
 
 Of course, the natural answer to such a query is "Ask for help via official channels such as the IRC Channel or Forum", well when I initially misunderstood the purpose of the "Installation without Internet access" section, I asked for help on the {% include Links/irc.html channel="archlinux" %}, a user gave me a response that gave me the sense that I was being a burden to them. Plus if you read the [Arch forum rules](https://bbs.archlinux.org/viewtopic.php?id=130309), you may understand that me, a less than advanced Linux user, felt that I would be called a "Help Vampire" as to them it might seem like I just want them to hand-hold me through the process. My standpoint on this, is that I am willing to do as much of the work myself as I can, but I do not have a computer science degree, I do not have an in-depth understanding of Bash scripting and Unix commands, *etc.* so some "hand-holding", from their point of view, may be necessary. I am mentioning this, because if this fear of mine is unjustified, I would like someone with experience on these forums or IRC channel to:
 1. Tell me.
 2. Get the Arch Linux forum rules to be rephrased in a less misleading way, I doubt I am not the only person afraid to ask questions there.
 
-I ended up settling on just creating an ISO for Arch following the instructions for those with a net connection on the target machine, with custom repos containing i686 and x86_64 packages for `broadcom-wl`, `broadcom-wl-dkms`, `package-query` and `yaourt` that were all built from the AUR. I was hoping that this might enable me to boot the host machine that would automatically connect to my Wi-Fi. To my surprise when I booted the archiso live session not one of the custom packages were installed and I could not figure out a way to install them without an Internet connection. So I ended up having to connect my Laptop to an Ethernet cable, which I took from my mum's computer (I have no spare cables, hence why I wanted to just use my Wi-Fi from the beginning) and using the resulting Ethernet connection to install Arch. See in my home I sit on the couch with my laptop and a little over a metre to my right is the computer room where my mum and dad's desktop computers lie. In there is also the modem that provides my parent's desktop computers Ethernet and my Wi-Fi.
+I ended up settling on just creating an ISO for Arch following the instructions for those with a net connection on the target machine, with custom repos containing i686 and x86_64 packages for `broadcom-wl`, `broadcom-wl-dkms`, `package-query` and `yaourt` that were all built from the AUR. I was hoping that this might enable me to boot the host machine that would automatically connect to my Wi-Fi. To my surprise when I booted the archiso live session not one of the custom packages were installed and I could not figure out a way to install them without an Internet connection. So I ended up having to connect my Laptop to an Ethernet cable, which I took from my mum's computer (I have no spare cables, this is partly why I wanted to just use my Wi-Fi from the beginning) and using the resulting Ethernet connection to install Arch. See in my home I sit on the couch with my laptop and a little over a metre to my right is the computer room where my mum and dad's desktop computers lie. In there is also the modem that provides my parent's desktop computers Ethernet and my Wi-Fi. There are no spare power points in this computer room too, so I had to disconnect my laptop from its battery recharger. 
 
+## Booting the Live Session
+{% include Layouts/note.md note1="I do not have perfect memory &mdash; I may have missed the odd command or mixed up when I ran the command, whether it be from the live session or from my Manjaro session." %}
 Fortunately before I booted my archiso live session I had created a partition on which to install Arch Linux. This partition was called `/dev/sdc3` in my archiso live session so I ran:
 ```bash
 mount /dev/sdc3 /mnt
@@ -43,9 +45,11 @@ locale-gen
 echo LANG=en_AU.UTF-8 > /etc/locale.conf
 mkinitcpio -p linux
 passwd root
-pacman -S git base-devel --noconfirm
 ```
-Then I set my root password. Then I ran:
+Then I set my root password and ran {% include coder.html line1="pacman -S grub" %}, I tried to follow the ArchWiki guide on setting up GRUB, but it was over my head, so I just hoped that installing GRUB would somehow be sufficient to use it as a bootloader. Then I rebooted and attempted to boot from my Arch Linux installation on `/dev/sdc3`. This failed to boot. At this point I felt like giving up, but instead I rebooted and started Manjaro and unplugged the Ethernet cable.
+
+## On Manjaro
+On Manjaro I conducted a Google Search in Chromium, I cannot remember it exactly but it was roughly along the lines of updating the GRUB bootloader. See my Manjaro installation on my internal drive has its own GRUB bootloader that I was hoping to use. This worked and I learned that running `update-grub` should add an Arch entry to my bootloader and it worked. Then I rebooted and entered the Arch session, unfortunately I had no Internet connection
 ```bash
 useradd -m -g wheel fusion809
 ```
@@ -61,4 +65,4 @@ makepkg -si --noconfirm
 popd
 yaourt -S broadcom-wl --noconfirm
 ```
-to install Yaourt and broadcom-wl. 
+to install Yaourt and broadcom-wl. Then exited the archiso session and entered Manjaro Linux on my internal drive. Then I
