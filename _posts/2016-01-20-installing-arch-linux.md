@@ -2,10 +2,12 @@
 layout:     post
 title:      "How I managed to install Arch Linux and set it up"
 categories: arch-linux, installation-guide
-date:       2016-01-25 +1000
+permalink:  /2016/01/20/installing-archlinux/
+date:       2016-01-20 +1000
 redirect_from:
   - /how-to-install-arch-linux/
   - /installing-arch-linux/
+  - /2016/01/20/installing-arch-linux
 ---
 {% include Links/image.html image="operating-systems/Arch-Linux-GNOME.png" float="none" width="1130px" description="GNOME 3.18 running on Arch Linux installed on this removable drive" %}
 
