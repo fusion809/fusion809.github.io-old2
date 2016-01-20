@@ -47,11 +47,10 @@ then in this arch-chroot I ran:
 {% include Code/coder.html line1="useradd -m -g wheel fusion809" %}
 to create a user entitled fusion809, with a home folder. Then I ran `nano /etc/sudoers`, uncommented the `wheel`-related lines, so that I could run the `sudo` command as fusion809. Then I entered a standard user session for fusion809 (with `su - fusion809`) and ran:
 {% include Code/codeu.html line1="git clone https://aur.archlinux.org/package-query.git" line2="pushd package-query" line3="makepkg -si --noconfirm" line4="popd" line5="git clone https://aur.archlinux.org/yaourt.git" line6="pushd yaourt" line7="makepkg -si --noconfirm" line8="popd" line9="git clone https://aur.archlinux.org/broadcom-wl.git" line10="pushd broadcom-wl" line11="makepkg -si --noconfirm" line12="popd" %}
-to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom-wl`? Well because every new kernel I install I must rebuild and install this package, so I felt that I should not use Yaourt (as Yaourt places PKGBUILDs in a subfolder of `/tmp` which is cleaned with each reboot). Then to ensure that my Wi-Fi is loaded on boot I ran {% include Code/coder.html line1="wifi-menu -o" %} after installing the `dialog` package, entered my Wi-Fi network details and ran {% include Code/coder.html line1="netctl list" %} (to check whether I configured `wifi-menu -o` correctly), this returned:
-```bash
-wlp4s0-SSID
-```
-where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="netctl enable wlp4s0-SSID" %}.
+to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom-wl`? Well because every new kernel I install I must rebuild and install this package, so I felt that I should not use Yaourt (as Yaourt places PKGBUILDs in a subfolder of `/tmp` which is cleaned with each reboot). Then to ensure that my Wi-Fi is loaded on boot I ran:
+{% include Code/coder.html line1="wifi-menu -o" %}
+after installing the `dialog` package, entered my Wi-Fi network details and ran {% include Code/coders.html line1="netctl list" %} (to check whether I configured `wifi-menu -o` correctly), this returned `wlp4s0-SSID` where `SSID` was my Wi-Fi SSID. I then ran:
+{% include Code/coder.html line1="netctl enable wlp4s0-SSID" %}
 
 ## Home at Last
 At this point I could have rebooted (to the standard command-line interface of Arch), but instead I wanted to install a GUI before I rebooted so I ran:
