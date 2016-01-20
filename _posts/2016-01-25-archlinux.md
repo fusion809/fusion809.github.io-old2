@@ -83,4 +83,8 @@ to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom
 ```bash
 wlp4s0-SSID
 ```
-where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="netctl enable wlp4s0-SSID" %} and rebooted. 
+where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="netctl enable wlp4s0-SSID" %}. At this point I could have rebooted, but instead I wanted to install a GUI before I rebooted so I ran:
+```bash
+pacman -S mate mate-extra xorg sddm --noconfirm
+systemctl enable sddm
+```
