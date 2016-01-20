@@ -48,9 +48,10 @@ passwd root
 ```
 Then I set my root password and ran {% include Code/coder.html line1="pacman -S grub" %}, I tried to follow the ArchWiki guide on setting up GRUB, but it was over my head, so I just hoped that installing GRUB would somehow be sufficient to use it as a bootloader. Then I rebooted and attempted to boot from my Arch Linux installation on `/dev/sdc3`. This failed to boot. At this point I felt like giving up, but instead I rebooted and started Manjaro and unplugged the Ethernet cable.
 
-## Post-Installation
+## Configuring GRUB
 On Manjaro I conducted a Google Search in Chromium, I cannot remember it exactly but it was roughly along the lines of updating the GRUB bootloader. See my Manjaro installation on my internal drive has its own GRUB bootloader that I was hoping to use. This worked and I learned that running `update-grub` should add an Arch entry to my bootloader and it worked. Then I rebooted and entered the Arch session, but it failed to boot properly and it gave me an error message indicating that it could not detect a device with the UUID specified for this session and started a `rootfs` prompt. Yet again I felt like giving up, as this was so frustrating, but instead I rebooted into Manjaro again. I then did another Google search on keywords I remembered from this rootfs session and realized if I could determine the device's UUID and edited `/boot/grub/grub.cfg` (on my Internal drive), adjusting the UUID mentioned for the Arch session, accordingly I could fix this problem. Although this was after a few failed attempts to fix the problem, following solutions I had found from this Google Search. Each time to test if the problem was fixed, I of course rebooted, which added to my desire to give up. When I successfully booted into my Arch session noticed that my Wi-Fi was still offline.
 
+## Setting up the Wi-Fi
 Then I booted Manjaro and I ran (as root):
 ```bash
 mount /dev/sdc3 /mnt
@@ -83,8 +84,12 @@ to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom
 ```bash
 wlp4s0-SSID
 ```
-where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="netctl enable wlp4s0-SSID" %}. At this point I could have rebooted, but instead I wanted to install a GUI before I rebooted so I ran:
+where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="netctl enable wlp4s0-SSID" %}.
+
+## Home at Last
+At this point I could have rebooted (to the standard command-line interface of Arch), but instead I wanted to install a GUI before I rebooted so I ran:
 ```bash
 pacman -S mate mate-extra xorg sddm --noconfirm
 systemctl enable sddm
 ```
+and rebooted. At this point I finally had the Arch Linux experience I wanted.
