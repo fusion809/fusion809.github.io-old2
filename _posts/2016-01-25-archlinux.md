@@ -74,6 +74,9 @@ git clone https://aur.archlinux.org/yaourt.git
 pushd yaourt
 makepkg -si --noconfirm
 popd
-yaourt -S broadcom-wl --noconfirm
+git clone https://aur.archlinux.org/broadcom-wl.git
+pushd broadcom-wl
+makepkg -si --noconfirm
+popd
 ```
-to install Yaourt and broadcom-wl. Then exited the archiso session and entered Manjaro Linux on my internal drive. Then I
+to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom-wl`? Well because every new kernel I install I must rebuild and install this package, so I felt that I should not use Yaourt (as Yaourt places PKGBUILDs in a subfolder of `/tmp` which is cleaned with each reboot). At this point I could reboot and
