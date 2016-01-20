@@ -28,58 +28,25 @@ I ended up settling on just creating an ISO for Arch following the instructions 
 
 ## Booting the Live Session
 Fortunately before I booted my archiso live session I had created a partition on which to install Arch Linux. This partition was called `/dev/sdc3` in my archiso live session so I ran:
-```bash
-mount /dev/sdc3 /mnt
-pacstrap /mnt base
-genfstab -p /mnt >> /mnt/etc/fstab
-arch-chroot /mnt
-```
+{% include Code/coder.html line1="mount /dev/sdc3 /mnt" line2="pacstrap /mnt base" line3="genfstab -p /mnt >> /mnt/etc/fstab" line4="arch-chroot /mnt" %}
 as root. Then I ran, in the chroot, the commands:
-```bash
-echo "brenton-pc" >> /etc/hostname
-ln -s /usr/share/zoneinfo/Australia/Brisbane /etc/localtime
-```
+{% include Code/coder.html line1="echo 'brenton-pc' >> /etc/hostname" line2="ln -s /usr/share/zoneinfo/Australia/Brisbane /etc/localtime" %}
 uncommented `en_AU.UTF-8` in my `/etc/locale.gen` file and then ran:
-```bash
-locale-gen
-echo LANG=en_AU.UTF-8 > /etc/locale.conf
-mkinitcpio -p linux
-passwd root
-```
-Then I set my root password and ran {% include Code/coder.html line1="pacman -S grub" %}, I tried to follow the ArchWiki guide on setting up GRUB, but it was over my head, so I just hoped that installing GRUB would somehow be sufficient to use it as a bootloader. Then I rebooted and attempted to boot from my Arch Linux installation on `/dev/sdc3`. This failed to boot. At this point I felt like giving up, but instead I rebooted and started Manjaro and unplugged the Ethernet cable.
+{% include Code/coder.html line1="locale-gen" line2="echo LANG=en_AU.UTF-8 > /etc/locale.conf" line3="mkinitcpio -p linux" line4="passwd root" %}
+Then I set my root password and ran {% include Code/coder.html line1="pacman -S grub --noconfirm" %}, I tried to follow the ArchWiki guide on setting up GRUB, but it was over my head, so I just hoped that installing GRUB would somehow be sufficient to use it as a bootloader. Then I rebooted and attempted to boot from my Arch Linux installation on `/dev/sdc3`. This failed to boot. At this point I felt like giving up, but instead I rebooted and started Manjaro and unplugged the Ethernet cable.
 
 ## Configuring GRUB
 On Manjaro I conducted a Google Search in Chromium, I cannot remember it exactly but it was roughly along the lines of updating the GRUB bootloader. See my Manjaro installation on my internal drive has its own GRUB bootloader that I was hoping to use. This worked and I learned that running `update-grub` should add an Arch entry to my bootloader and it worked. Then I rebooted and entered the Arch session, but it failed to boot properly and it gave me an error message indicating that it could not detect a device with the UUID specified for this session and started a `rootfs` prompt. Yet again I felt like giving up, as this was so frustrating, but instead I rebooted into Manjaro again. I then did another Google search on keywords I remembered from this rootfs session and realized if I could determine the device's UUID and edited `/boot/grub/grub.cfg` (on my Internal drive), adjusting the UUID mentioned for the Arch session, accordingly I could fix this problem. Although this was after a few failed attempts to fix the problem, following solutions I had found from this Google Search. Each time to test if the problem was fixed, I of course rebooted, which added to my desire to give up. When I successfully booted into my Arch session noticed that my Wi-Fi was still offline.
 
 ## Setting up the Wi-Fi
-Then I booted Manjaro and I ran (as root):
-```bash
-mount /dev/sdc3 /mnt
-```
+Then I booted Manjaro and I ran:
+{% include Code/coder.html line1="mount /dev/sdc3 /mnt" %}
 but to my surprise the `/dev/sdc3` device could not be found, instead my removable drive was at `/dev/sdd3`, so I instead ran:
-```bash
-mount /dev/sdd3 /mnt
-arch-chroot /mnt
-```
+{% include Code/coder.html line1="mount /dev/sdd3 /mnt" line2="arch-chroot /mnt" %}
 then in this arch-chroot I ran:
-```bash
-useradd -m -g wheel fusion809
-```
+{% include Code/coder.html line1="useradd -m -g wheel fusion809" %}
 to create a user entitled fusion809, with a home folder. Then I ran `nano /etc/sudoers`, uncommented the `wheel`-related lines, so that I could run the `sudo` command as fusion809. Then I entered a standard user session for fusion809 (with `su - fusion809`) and ran:
-```bash
-git clone https://aur.archlinux.org/package-query.git
-pushd package-query
-makepkg -si --noconfirm
-popd
-git clone https://aur.archlinux.org/yaourt.git
-pushd yaourt
-makepkg -si --noconfirm
-popd
-git clone https://aur.archlinux.org/broadcom-wl.git
-pushd broadcom-wl
-makepkg -si --noconfirm
-popd
-```
+{% include Code/codeu.html line1="git clone https://aur.archlinux.org/package-query.git" line2="pushd package-query" line3="makepkg -si --noconfirm" line4="popd" line5="git clone https://aur.archlinux.org/yaourt.git" line6="pushd yaourt" line7="makepkg -si --noconfirm" line8="popd" line9="git clone https://aur.archlinux.org/broadcom-wl.git" line10="pushd broadcom-wl" line11="makepkg -si --noconfirm" line12="popd" %}
 to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom-wl`? Well because every new kernel I install I must rebuild and install this package, so I felt that I should not use Yaourt (as Yaourt places PKGBUILDs in a subfolder of `/tmp` which is cleaned with each reboot). Then to ensure that my Wi-Fi is loaded on boot I ran {% include Code/coder.html line1="wifi-menu -o" %} after installing the `dialog` package, entered my Wi-Fi network details and ran {% include Code/coder.html line1="netctl list" %} (to check whether I configured `wifi-menu -o` correctly), this returned:
 ```bash
 wlp4s0-SSID
@@ -88,8 +55,5 @@ where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="net
 
 ## Home at Last
 At this point I could have rebooted (to the standard command-line interface of Arch), but instead I wanted to install a GUI before I rebooted so I ran:
-```bash
-pacman -S mate mate-extra xorg sddm --noconfirm
-systemctl enable sddm
-```
+{% include Code/coder.html line1="pacman -S mate mate-extra xorg sddm --noconfirm" line2="systemctl enable sddm" %}
 and rebooted. At this point I finally had the Arch Linux experience I wanted.
