@@ -23,4 +23,42 @@ Of course, the natural answer to such a query is "Ask for help via official chan
 1. Tell me.
 2. Get the Arch Linux forum rules to be rephrased in a less misleading way, I doubt I am not the only person afraid to ask questions there.
 
-I ended up settling on just creating an ISO for Arch following the instructions for those with a net connection on the target machine, with custom repos containing i686 and x86_64 packages for `broadcom-wl`, `broadcom-wl-dkms`, `package-query` and `yaourt` that were all built from the AUR. I was hoping that this might enable me to boot the host machine that would automatically connect to my Wi-Fi. To my surprise when I booted the archiso live session not one of the custom packages were installed and I could not figure out a way to install them without an Internet connection. So I ended up having to connect my Laptop to an Ethernet cable, which I took from my mum's computer (I have no spare cables, hence why I wanted to just use my Wi-Fi from the beginning). See in my home I sit on the couch with my laptop and a little over a metre to my right is the computer room where my mum and dad's desktop computers lie. In there is also the modem that provides my parent's desktop computers Ethernet and my Wi-Fi. 
+I ended up settling on just creating an ISO for Arch following the instructions for those with a net connection on the target machine, with custom repos containing i686 and x86_64 packages for `broadcom-wl`, `broadcom-wl-dkms`, `package-query` and `yaourt` that were all built from the AUR. I was hoping that this might enable me to boot the host machine that would automatically connect to my Wi-Fi. To my surprise when I booted the archiso live session not one of the custom packages were installed and I could not figure out a way to install them without an Internet connection. So I ended up having to connect my Laptop to an Ethernet cable, which I took from my mum's computer (I have no spare cables, hence why I wanted to just use my Wi-Fi from the beginning) and using the resulting Ethernet connection to install Arch. See in my home I sit on the couch with my laptop and a little over a metre to my right is the computer room where my mum and dad's desktop computers lie. In there is also the modem that provides my parent's desktop computers Ethernet and my Wi-Fi.
+
+Fortunately before I booted my archiso live session I had created a partition on which to install Arch Linux. This partition was called `/dev/sdc3` in my archiso live session so I ran:
+```bash
+mount /dev/sdc3 /mnt
+pacstrap /mnt base
+genfstab -p /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+```
+as root. Then I ran, in the chroot, the commands:
+```bash
+echo "brenton-pc" >> /etc/hostname
+ln -s /usr/share/zoneinfo/Australia/Brisbane /etc/localtime
+```
+uncommented `en_AU.UTF-8` in my `/etc/locale.gen` file and then ran:
+```bash
+locale-gen
+echo LANG=en_AU.UTF-8 > /etc/locale.conf
+mkinitcpio -p linux
+passwd root
+pacman -S git base-devel --noconfirm
+```
+Then I set my root password. Then I ran:
+```bash
+useradd -m -g wheel fusion809
+```
+to create a user entitled fusion809, with a home folder. Then I ran `nano /etc/sudoers`, uncommented the `wheel`-related lines, so that I could run the `sudo` command as fusion809. Then I entered a standard user session for fusion809 (with `su - fusion809`) and ran:
+```bash
+git clone https://aur.archlinux.org/package-query.git
+pushd package-query
+makepkg -si --noconfirm
+popd
+git clone https://aur.archlinux.org/yaourt.git
+pushd yaourt
+makepkg -si --noconfirm
+popd
+yaourt -S broadcom-wl --noconfirm
+```
+to install Yaourt and broadcom-wl. 
