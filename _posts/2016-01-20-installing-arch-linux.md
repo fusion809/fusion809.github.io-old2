@@ -8,7 +8,6 @@ redirect_from:
   - /installing-arch-linux/
 ---
 {% include Links/image.html image="operating-systems/Arch-Linux-GNOME.png" float="none" width="1130px" description="GNOME 3.18 running on Arch Linux installed on this removable drive" %}
-{% include Layouts/draft.html %}
 
 On 19 January 2016 I installed Arch Linux on a removable drive, using my Lenovo Laptop, after trying and failing to install this distro on this removable drive several times. Major hurdles in the past were my Broadcom chipset (specifically BCM43228), inexperience with installing Arch Linux on anything but a VirtualBox VM (for which I used install scripts written by others) and inexperience with installing any Linux distribution without some automation.
 
@@ -16,7 +15,7 @@ On 19 January 2016 I installed Arch Linux on a removable drive, using my Lenovo 
 For anyone that is interested, this laptop I used to install Arch Linux on the removable drive, had the following specs:
 <script src="/js/b44fa06f1ed0075af0cc.js"></script>
 
-## Creating a Custom ISO
+## Creating the ISO
 {% include Layouts/note.md note1="I do not have perfect memory &mdash; I may have missed the odd command or mixed up when I ran the command, whether it be from the live session or from my Manjaro session, <i>etc.</i>" %}
 I started off by creating a releng ISO by following the [archiso](https://wiki.archlinux.org/index.php/Archiso) guide at the ArchWiki on an Arch VirtualBox VM. I found the section entitled ["Installation without Internet access"](https://wiki.archlinux.org/index.php/Archiso#Installation_without_Internet_access) especially alluring, as it sounded like what I wanted, but confusing and difficult for me to follow. It was so confusing that at first I thought it was about creating a live ISO without an Internet connection, while it is really about creating a live ISO that can be used to install Arch Linux without an Internet connection.
 
@@ -33,7 +32,7 @@ as root. Then I ran, in the chroot, the commands:
 {% include Code/coder.html line1="echo 'brenton-pc' >> /etc/hostname" line2="ln -s /usr/share/zoneinfo/Australia/Brisbane /etc/localtime" %}
 uncommented `en_AU.UTF-8` in my `/etc/locale.gen` file and then ran:
 {% include Code/coder.html line1="locale-gen" line2="echo LANG=en_AU.UTF-8 > /etc/locale.conf" line3="mkinitcpio -p linux" line4="passwd root" %}
-Then I set my root password and ran {% include Code/coders.html line1="pacman -S grub --noconfirm" puncr="," %} I tried to follow the ArchWiki guide on setting up GRUB, but it was over my head, so I just hoped that installing GRUB would somehow be sufficient to use it as a bootloader. Then I rebooted and attempted to boot from my Arch Linux installation on `/dev/sdc3`. This failed to boot. At this point I felt like giving up, but instead I rebooted and started Manjaro and unplugged the Ethernet cable.
+Then I set my root password and ran {% include Code/coders.html line1="pacman -S grub --noconfirm" puncr="," %} I tried to follow the ArchWiki guide on setting up GRUB, but it was over my head, so I just hoped that installing GRUB would somehow be sufficient to use it as a bootloader. Then I rebooted and attempted to boot from my Arch Linux installation on `/dev/sdc3`. This failed to boot. At this point I felt like giving up, but instead I exited, started Manjaro and unplugged the Ethernet cable.
 
 ## Configuring GRUB
 On Manjaro I conducted a Google Search in Chromium, I cannot remember it exactly but it was roughly along the lines of updating the GRUB bootloader. See my Manjaro installation on my internal drive has its own GRUB bootloader that I was hoping to use. This worked and I learned that running `update-grub` should add an Arch entry to my bootloader and it worked. Then I rebooted and entered the Arch session, but it failed to boot properly and it gave me an error message indicating that it could not detect a device with the UUID specified for this session and started a `rootfs` prompt. Yet again I felt like giving up, as this was so frustrating, but instead I rebooted into Manjaro again. I then did another Google search on keywords I remembered from this rootfs session and realized if I could determine the device's UUID and edited `/boot/grub/grub.cfg` (on my Internal drive), adjusting the UUID mentioned for the Arch session, accordingly I could fix this problem. Although this was after a few failed attempts to fix the problem, following solutions I had found from this Google Search. Each time to test if the problem was fixed, I of course rebooted, which added to my desire to give up. When I successfully booted into my Arch session noticed that my Wi-Fi was still offline.
