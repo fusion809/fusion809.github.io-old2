@@ -79,4 +79,8 @@ pushd broadcom-wl
 makepkg -si --noconfirm
 popd
 ```
-to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom-wl`? Well because every new kernel I install I must rebuild and install this package, so I felt that I should not use Yaourt (as Yaourt places PKGBUILDs in a subfolder of `/tmp` which is cleaned with each reboot). At this point I could reboot and
+to install Yaourt and broadcom-wl. Why did not I use Yaourt to install `broadcom-wl`? Well because every new kernel I install I must rebuild and install this package, so I felt that I should not use Yaourt (as Yaourt places PKGBUILDs in a subfolder of `/tmp` which is cleaned with each reboot). Then to ensure that my Wi-Fi is loaded on boot I ran {% include Code/coder.html line1="wifi-menu -o" %} after installing the `dialog` package, entered my Wi-Fi network details and ran {% include Code/coder.html line1="netctl list" %} (to check whether I configured `wifi-menu -o` correctly), this returned:
+```bash
+wlp4s0-SSID
+```
+where `SSID` was my Wi-Fi SSID. I then ran {% include Code/coder.html line1="netctl enable wlp4s0-SSID" %} and rebooted. 
