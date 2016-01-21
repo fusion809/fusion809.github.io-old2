@@ -23,6 +23,7 @@ locale: en_AU
 permalink: /:year/:month/:day/:title/
 exclude: [vendor]
 gems:
+  - disqus
   - jekyll-redirect-from
 # Build settings
 markdown: redcarpet
