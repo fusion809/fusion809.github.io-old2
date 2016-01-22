@@ -4,6 +4,8 @@ This repository contains the Jekyll-powered GitHub Pages-hosted website, [The Ho
 This website is predominantly on Linux-related topics and includes howtos and comparisons of free and open-source software.  
 
 # Running Jekyll Locally
+**Note**: This little howto must be contained in this README, as opposed to a post of its own in *The Hornery* itself, due to technical limitations. See on *The Hornery* Liquid tag rendering is active so the Liquid tags provided as examples below would in themselves generate Jekyll errors if this was hosted in the site itself.
+
 If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that Rubygems has already been installed on your Linux system:
 ```bash
 gem install bundler
@@ -76,5 +78,12 @@ Regenerating: 1 file(s) changed at 2016-01-22 19:26:44   Liquid Exception: Inclu
 where `{% include_relative SS/table2-builtins.html %}` appeared in the `_post/SS/syntax.md`, which in turn was included (by use of the line `{% include_relative SS/syntax.md %}` in `_posts/2016-01-30-shell-scripting-and-the-command-line-an-introduction.md` and the file `_post/SS/table2-builtins.html` does not exist.
 
 ## Further Reading
-* {% include Links/irc.html channel="jekyll" %}
+* [Configuration](http://jekyllrb.com/docs/configuration/)
+* [Creating pages](http://jekyllrb.com/docs/pages/)
+* [Directory Structure](http://jekyllrb.com/docs/structure/)
+* [Front Matter](http://jekyllrb.com/docs/frontmatter/)
+* IRC Channel [#jekyll](irc://irc.freenode.net/#jekyll)
 * [Liquid documentation](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+* [Quick-start guide](http://jekyllrb.com/docs/quickstart/)
+* [Working with drafts](http://jekyllrb.com/docs/drafts/)
+* [Writing posts](http://jekyllrb.com/docs/posts/)
