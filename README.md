@@ -74,3 +74,7 @@ Regenerating: 1 file(s) changed at 2016-01-22 19:26:44   Liquid Exception: Inclu
        Error: Run jekyll build --trace for more information.
 ```
 where `{% include_relative SS/table2-builtins.html %}` appeared in the `_post/SS/syntax.md`, which in turn was included (by use of the line `{% include_relative SS/syntax.md %}` in `_posts/2016-01-30-shell-scripting-and-the-command-line-an-introduction.md` and the file `_post/SS/table2-builtins.html` does not exist.
+
+## Further Reading
+* {% include Links/irc.html channel="jekyll" %}
+* [Liquid documentation](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
