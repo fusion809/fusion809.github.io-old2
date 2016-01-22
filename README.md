@@ -7,8 +7,9 @@ If you are interested in setting up Jekyll locally on your Linux machine here is
 gem install bundler
 bundle install
 ```
-then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard, non-root user).
+then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard, non-root user). This will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by Rubygems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, do this before making any commits, however, as otherwise your site will still be larger than it would be without the vendor folder.
 
+# Handling Jekyll Errors
 If this returns errors then my guess is that your `Gemfile` and `_config.yml` files, which should both be in the top-level directory of your Jekyll site, are incorrectly written or you have made some syntactic error in the Liquid tags on your website. Including Liquid tags that are not defined is known to return errors like:
 ```bash
 Regenerating: 1 file(s) changed at 2016-01-22 15:57:55
