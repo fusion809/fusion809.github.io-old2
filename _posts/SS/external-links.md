@@ -1,8 +1,8 @@
-# Free Help Resources
+## Free Help Resources
 * [Stack Overflow](http://stackoverflow.com/)[^8]
 * [Unix & Linux StackExchange](http://unix.stackexchange.com)[^9]
 
-# Further Reading
+## Further Reading
 {% include Layouts/note.html note1="All the following links are to free PDFs" %}
 * [Advanced Bash-Scripting Guide (2014) @ www.tldp.org](http://www.tldp.org/LDP/abs/abs-guide.pdf)
 * [Bash Guide for Beginners (2008) @ www.tldp.org](http://www.tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)

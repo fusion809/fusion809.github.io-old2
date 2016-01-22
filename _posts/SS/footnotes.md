@@ -1,4 +1,4 @@
-# Footnotes
+## Footnotes
 [^1]: Henceforth I will refer to Unix/Unix-like systems, collectively, as &#42;nix systems.
 [^2]: Source: [email from 1987](https://groups.google.com/forum/#!original/comp.unix.questions/iNjWwkyroR8/yedr9yDWSuQJ)
 [^3]: Source: [Chet Ramey's Scribd document](http://www.scribd.com/doc/40556434/2010-10-31-Chet-Ramey-Early-Bash-Dates)

@@ -1,4 +1,4 @@
-# Bash Scripting Applications
+## Bash Scripting Applications
 The primary value of Bash scripts is to automate tasks that would otherwise have to be done, over a longer time-frame by a human operator. I personally use shell scripts to make my life, when I am at the command-line, easier.
 
 In my `~/.bashrc` file I have links to several shell scripts stored in my `~/Shell` directory. Both my `~/.bashrc` and the shell scripts in my `~/Shell` directory can be found at [this GitHub repository](https://github.com/fusion809/sabayon-scripts). Here is my current `~/.bashrc` file:[^6]
@@ -80,10 +80,10 @@ function theme {
 to install a new Moksha theme you would run:
 {% include Code/codeu.html line1="theme &lt;THEME&gt;" %} where `<THEME>` is, of course, the theme's name (how they appear in their respective GitHub repo's URL).
 
-## Useful Functions for Sabayon Users
+### Useful Functions for Sabayon Users
 The following are some functions that, depending on how you operate on Sabayon, may be helpful.
 
-###Chroots
+#### Chroots
 `chroot` is a Unix command-line program that allows you to change the apparent root directory for the current running process and all processes started by said process (that is, its "children"). Most commonly `chroot` is used to run Bash as from within Bash one can perform several tasks. `chroot` also makes all other files on a system, outside the chroot directory (and its subdirectories) inaccessible to processes run within the chroot. This can be handy, when one is running processes that could potentially cause unwanted, even damaging changes, to one's system, as if it blows up in your face, the damage will be confined to the chroot directory. On Gentoo and Sabayon chroots are usually, in my fairly minimal experience, used to create a new installation (when for whatever reason the graphical Calamares installer is not suitable), repair an existing installation, build new binary packages and test out ebuilds. The following are taken from [`~/Shell/chroot.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/chroot.sh).
 
 ```bash
@@ -231,7 +231,7 @@ alias schrootn=sabayon-chrootn
 alias schroot2='sabayon-chrootn 2'
 ```
 
-###Entropy
+#### Entropy
 The following are taken from [`~/Shell/equo.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/equo.sh) and they are functions (with aliases for said functions) that essentially automate some common actions one may perform with Entropy. They are not all the lines of code in `equo.sh`, they merely represent some of the more commonly-used codes. It is important to note some of these functions need not be defined as functions, they could instead be defined as aliases (using `alias NAME='CODE'` where NAME is the function's name and `CODE` is what is between the curly brackets).
 ```bash
 # Inflate Portage binary into SPM binary.
@@ -287,7 +287,7 @@ function spm {
 }
 ```
 
-###Gentoo Documentation
+#### Gentoo Documentation
 I wrote a Bash script ([`~/Shell/gentoo-doc.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/gentoo-doc.sh)) to generate a PDF of the complete Gentoo Handbook. Sadly, the final document does not include the CSS styling of the original handbook, but still it is better than no PDF at all. To get the complete PDF handbook for a specific architecture merely run:
 {% include Code/codeu.html line1="unit &lt;ARCHITECTURE&gt;"%}
 where `<ARCHITECTURE>` is, of course, the architecture of the system. For example for AMD64 run:
@@ -376,7 +376,7 @@ else
 fi
 ```
 
-###Layman/Portage
+#### Layman/Portage
 Here are some lines from my [`~/Shell/emerge.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/emerge.sh) script.
 ```bash
 # Install a package, but ask first

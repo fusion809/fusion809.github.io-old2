@@ -1,7 +1,7 @@
-# Basic Bash Syntax
+## Basic Bash Syntax
 The Bash syntax has several distinct components, which can be classed as <a href="#keywords-and-special-characters">keywords and special characters</a>, <a href="#basic-unix-commands">external commands</a>, <a href="#builtins">builtins</a>, <a href="#variables">variables</a>, <a href="#functions">functions</a>, <a href="#loops">loops</a>, <a href="#selectors">selectors</a>, <a href="#tests">tests</a> and <a href="#conditionals">conditionals</a>. Many of these are shared by other Unix shells.
 
-## Basic Unix Commands
+### Basic Unix Commands
 **Table 1** lists some basic Unix commands that are provided by the GNU Core Utilities package. Not all are listed, as I do not even understand them all.
 <table style="width: 100%;" class="green">
 <caption>Table 1: Basic Unix Commands, provided by the GNU Core Utilities Package</caption>
@@ -384,16 +384,16 @@ popd #moving back out of the ~/Shell directory
 </table>
 `until`, `while` and `time` are some other keywords that are not mentioned there, as I do not know enough about them to really comment on them. Keywords can be used as variables but I would not advise this, as this can quite easily become confusing.
 
-## Loops
+### Loops
 Loops (which involve the `for` keyword), in Bash scripts, are used to automate the performing of tedious tasks that are sufficiently similar to one another.
 
-## Selectors
+### Selectors
 Selectors (marked by the `select` keyword) gives users choices as to which input(s) the rest of the selector block uses.
 
-## Tests
+### Tests
 Tests are essential for conditionals. As their name suggests, they test to see whether or not a condition is satisfied. If the condition is satisfied they return 0, while if the condition is unsatisfied they return 1. Square brackets (which are a builtin, by-the-way), `[...]`, are used for tests, although double square brackets (`[[...]]`) can also be used for this purpose since Bash 2.02. The difference, from what I can tell, between single and double square brackets is that double square brackets allow one to perform more advanced tests than single square brackets. Single square brackets are also POSIX compliant and are found on all Unix shells.[^5]
 
-## Variables
+### Variables
 Bash **variables** are defined using equal signs. They can be made global (making them available for all processes) or local (making them available just for the script at hand). Local variables are defined by just using an equal sign, for example:
 {% include Code/codeu.html line1="PYTHONPATH=/usr/bin/python" %}
 while to define this variable globally, one would run:
