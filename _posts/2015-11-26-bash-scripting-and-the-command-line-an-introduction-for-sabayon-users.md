@@ -1,8 +1,9 @@
 ---
-layout: post2
-title:  "Bash Scripting and the Command-Line: an Introduction for Sabayon Users"
-date:   2015-11-26
-categories: sabayon, bash, shell-scripting, command-line
+layout:           post2
+title:            "Bash Scripting and the Command-Line: an Introduction for Sabayon Users"
+date:             2015-11-26 +1000
+categories:       sabayon, bash, shell-scripting, command-line
+last_modified_at: 16:00 2016-01-22 +1000
 redirect_from:
   - /2015/10/31/an-introduction-to-the-command-line-and-bash-scripting-for-sabayon-users/
   - /2015/10/31/an-introduction-to-bash-scripting/
