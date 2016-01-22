@@ -12,7 +12,7 @@ bundle install
 then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard, non-root user).
 
 # Installing Rubygems
-Installing Rubygems is usually easy when done using your distribution's package manager. For example, at the time of writing this post I am running on Arch Linux, so to install Rubygems (and this should be applicable to all distributions that use the pacman package manager) I ran: `sudo pacman -S rubygems`. For other distributions run the commands listed below, note that as on The Hornery itself, `$` denotes standard user console while `#` denotes root console.
+Installing Rubygems is usually easy when done using your distribution's package manager. For example, at the time of writing this post I am operating on Arch Linux, so to install Rubygems (and this should be applicable to all distributions that use the pacman package manager) I ran: `sudo pacman -S rubygems`. For other distributions run the commands listed below, note that as on The Hornery itself, `$` denotes standard user console while `#` denotes root console.
 
 ## APT: Debian, PCLinuxOS, Ubuntu, *etc.*
 `$ sudo apt-get install ruby`<br/>
