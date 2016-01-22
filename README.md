@@ -45,9 +45,9 @@ or:<br/>
 `# yum install rubygems`
 
 ## ZYpp: openSUSE, SLE, *etc.*
-`$ sudo zypper install rubygems`<br/>
+`$ sudo zypper in rubygems`<br/>
 or:<br/>
-`# zypper install rubygems`
+`# zypper in rubygems`
 
 # Vendor Folder
 Running `bundle exec jekyll serve` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by Rubygems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, do this before making any commits, however, as otherwise your site will still be larger than it would be without the vendor folder.
