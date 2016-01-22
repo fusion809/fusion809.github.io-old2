@@ -52,7 +52,7 @@ The following section will involve me comparing the various graphical terminal e
 
 ### Xfce Terminal
 {% include Links/image.html image="Xfce-terminal.png" width="1000px" float="none" description="Xfce4 Terminal 0.6.3 running under Moksha" %}
-{% include Links/links.html package="x11-terms/xfce4-terminal" program="Xfce Terminal" link="http://docs.xfce.org/apps/terminal/start" wp="Terminal_(Xfce)" %} is the terminal emulator of Xfce. I have personally found it, despite using more RAM than LXTerminal, less customizable and feature-packed. It is based on the GTK+3 toolkit.
+{% include Links/links.html package="x11-terms/xfce4-terminal" program="Xfce Terminal" link="http://docs.xfce.org/apps/terminal/start" wp="Terminal_(Xfce)" %} is the terminal emulator of Xfce. I have personally found it, despite using more RAM than LXTerminal, less customizable and feature-packed. It is based on the GTK+3 toolkit. It does have one feature I like that LXTerminal lacks: it provides tab highlighting on unseen output.
 
 #### Rating(s)
 {% include_relative BS/TE-ratings.html availability="10. Comes pre-installed on the Xfce edition of Sabayon" customizability="7. The keyboard shortcuts are not even customizable." features="7." sru="9." gist="f250f470f12f08613b54" overall="8" %}
