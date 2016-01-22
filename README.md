@@ -8,11 +8,13 @@ bundle install
 ```
 then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard, non-root user). If this returns errors then my guess is that your `Gemfile` and `_config.yml` files, which should both be in the top-level directory of your Jekyll site, are incorrectly written or you have made some syntactic error in the Liquid tags on your website. Including Liquid tags that are not defined is known to return errors like:
 ```bash
-Regenerating: 1 file(s) changed at 2016-01-22 15:57:55   Liquid Exception: Unknown tag 'last_modified_at' in _posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt
+Regenerating: 1 file(s) changed at 2016-01-22 15:57:55
+   Liquid Exception: Unknown tag 'last_modified_at' in _posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt
 ```
 where in this example, `'last_modified_at'` is the name of the undefined tag in this case and `_posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt` is where the undefined tag is included in the website. Likewise if Liquid tags (like `{% include %}`) are not properly ended (in this example they may not be correctly ended with a `%}`, giving `{% include }`) it can return errors like:
 ```bash
-Regenerating: 1 file(s) changed at 2016-01-22 16:50:24   Liquid Exception: Tag '{%' was not properly terminated with regexp: /\%\}/ in _posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt
+Regenerating: 1 file(s) changed at 2016-01-22 16:50:24
+   Liquid Exception: Tag '{%' was not properly terminated with regexp: /\%\}/ in _posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt
 ...error:
        Error: Tag '{%' was not properly terminated with regexp: /\%\}/
        Error: Run jekyll build --trace for more information.
