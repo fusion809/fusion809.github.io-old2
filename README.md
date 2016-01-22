@@ -14,35 +14,40 @@ then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard,
 # Installing Rubygems
 Installing Rubygems is usually easy when done using your distribution's package manager. For example, at the time of writing this post I am running on Arch Linux, so to install Rubygems (and this should be applicable to all distributions that use the pacman package manager) I ran: `sudo pacman -S rubygems`. For other distributions run the commands listed below, note that as on The Hornery itself, `$` denotes standard user console while `#` denotes root console.
 
-## APT distributions: Debian, Ubuntu, *etc.*
+## APT: Debian, PCLinuxOS, Ubuntu, *etc.*
 `$ sudo apt-get install ruby`<br/>
 or:<br/>
 `# apt-get install ruby`
 
-## DNF distributions: Fedora, Korora, *etc.*
+## DNF: Fedora, Korora, *etc.*
 `$ sudo dnf install ruby`<br/>
 or:<br/>
 `# dnf install ruby`
 
-## Entropy distributions: Sabayon, Spike
+## Entropy: Sabayon, Spike
 `$ sudo equo i -av dev-ruby/rubygems`<br/>
 or:<br/>
 `# equo i -av dev-ruby/rubygems`
 
-## Portage distributions: Calculate, Gentoo, Sabayon, *etc.*
+## Portage: Calculate, Gentoo, Sabayon, *etc.*
 `$ sudo emerge -av dev-ruby/rubygems`<br/>
 or:<br/>
 `# emerge -av dev-ruby/rubygems`
 
-## urpmi distributions: Mageia, OpenMandriva, *etc.*
+## urpmi: Mageia, OpenMandriva, *etc.*
 `$ sudo urpmi ruby-RubyGems`<br/>
 or:<br/>
 `# urpmi ruby-RubyGems`
 
-## yum distributions: CentOS, Oracle Linux, RHEL, Scientific Linux
+## yum: CentOS, Oracle, RHEL, *etc.*
 `$ sudo yum install rubygems`<br/>
 or:<br/>
 `# yum install rubygems`
+
+## ZYpp: openSUSE, SLE, *etc.*
+`$ sudo zypper install rubygems`<br/>
+or:<br/>
+`# zypper install rubygems`
 
 # Vendor Folder
 Running `bundle exec jekyll serve` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by Rubygems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, do this before making any commits, however, as otherwise your site will still be larger than it would be without the vendor folder.
