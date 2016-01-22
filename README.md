@@ -66,3 +66,11 @@ Regenerating: 1 file(s) changed at 2016-01-22 16:50:24
        Error: Tag '{%' was not properly terminated with regexp: /\%\}/
        Error: Run jekyll build --trace for more information.
 ```
+. While if you include a file that does not exist you will get this error:
+```bash
+Regenerating: 1 file(s) changed at 2016-01-22 19:26:44   Liquid Exception: Included file './SS/table2-builtins.html' not found in ./SS/syntax.md, included in _posts/2016-01-30-shell-scripting-and-the-command-line-an-introduction.md
+...error:
+       Error: Included file './SS/table2-builtins.html' not found
+       Error: Run jekyll build --trace for more information.
+```
+where `{% include_relative SS/table2-builtins.html %}` appeared in the `_post/SS/syntax.md`, which in turn was included (by use of the line `{% include_relative SS/syntax.md %}` in `_posts/2016-01-30-shell-scripting-and-the-command-line-an-introduction.md` and the file `_post/SS/table2-builtins.html` does not exist.
