@@ -21,25 +21,14 @@ then move onto this next step I speak of, by running:
 this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory ({% include Code/codeus.html line1="cd /home/username/username.github.io" %}) and run {% include Code/codeus.html line1="git init" %} (to install Git see the [Getting the Dependencies](#getting-the-dependencies) below). Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
 {% include Code/codeu.html line1="git remote add origin https://github.com/username/username.github.io" %}
 after this you will likely wish to edit your site's `_config.yml` file, adding information about your site, to do this I recommend you follow [this guide](http://jekyllrb.com/docs/configuration/) which contains available settings specified in `_config.yml` and their corresponding allowed values. After you think you are finished editing `_config.yml` I would recommend you run Jekyll locally by following the Bundle instructions outlined in the [next section](#running-jekyll-locally), as this will tell you if there are any issues you need to fix with your Jekyll site and give you some hints as to where and what they might be. If no errors turn up then I would recommend you start making commits to your site's Git repository with:
-```bash
-$ git add --all
-$ git commit -m 'Commit message'
-$ git push origin master
-```
+{% include Code/codeu.html line1="git add --all" line2="git commit -m 'Commit message'" line3="git push origin master" %}
 where, of course, `"Commit message"` is to be replaced with your actual commit message. Typing this out everytime one wishes to make a commit can get a little tedious and irritating so I would recommend adding this function to your `~/.bashrc` file:
-```bash
-function push {
-  git add --all && git commit -m "$1" && git push origin master
-}
-```
+{% include Code/gist.html id="239ff3639cb9930b444d" %}
 and then sourcing this file with `source ~/.bashrc`. This way whenever you want to make a commit merely type `push "Commit message"` inside a terminal window running Bash.
 
 ## Running Jekyll Locally
 If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that RubyGems has already been installed on your Linux system (for instructions on installing RubyGems see the [section below](#installing-rubygems)):
-```bash
-gem install bundler
-bundle install
-```
+{% include Code/codeu.html line1="gem install bundler" line2="bundle install" %}
 then to start Jekyll locally run: {% include Code/codeus.html line1="bundle exec jekyll serve" %}.
 
 ## Getting the Dependencies
