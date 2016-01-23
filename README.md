@@ -4,7 +4,7 @@ This repository contains the Jekyll-powered GitHub Pages-hosted website, [The Ho
 This website is predominantly on Linux-related topics and includes howtos and comparisons of free and open-source software.  
 
 # Running Jekyll Locally
-**Note**: This little howto can also be found on [*The Hornery*](https://fusion809.github.io/2016/01/23/how-to-create-your-own-jekyll-site-with-github-pages) itself.
+**Note**: This little howto can also be found, in greater detail, on [*The Hornery*](https://fusion809.github.io/2016/01/23/how-to-create-your-own-jekyll-site-with-github-pages) itself.
 
 If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that Rubygems has already been installed on your Linux system (for instructions on installing Rubygems see the [section below](#installing-rubygems)):
 ```bash
