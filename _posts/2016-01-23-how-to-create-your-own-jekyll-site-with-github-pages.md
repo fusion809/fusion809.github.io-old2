@@ -18,14 +18,21 @@ The way I created *The Hornery* was by creating a GitHub repository with the nam
 `$ gem install jekyll`
 then move onto this next step I speak of, by running:
 `$ jekyll new username.github.io`
-this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory (`$ cd /home/username/username.github.io`) and run `$ git init`. Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
+this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory (`$ cd /home/username/username.github.io`) and run `$ git init` (to install Git see the [Getting the Dependencies](#getting-the-dependencies) below). Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
 `$ git remote add origin https://github.com/username/username.github.io`
-after this you will likely wish to edit your site's `_config.yml` file, adding information about your site, to do this I recommend you follow [this guide](http://jekyllrb.com/docs/configuration/) which contains available settings specified in `_config.yml` and their corresponding allowed values. After you think you are finished editing `_config.yml` I would recommend you run Jekyll locally by following the Bundle instructions outlined in the [next section](#running-jekyll-locally), as this will tell you if there are any issues you need to fix with your Jekyll site. If no errors turn up then I would recommend you start making commits to your site's Git repository with:
+after this you will likely wish to edit your site's `_config.yml` file, adding information about your site, to do this I recommend you follow [this guide](http://jekyllrb.com/docs/configuration/) which contains available settings specified in `_config.yml` and their corresponding allowed values. After you think you are finished editing `_config.yml` I would recommend you run Jekyll locally by following the Bundle instructions outlined in the [next section](#running-jekyll-locally), as this will tell you if there are any issues you need to fix with your Jekyll site and give you some hints as to where and what they might be. If no errors turn up then I would recommend you start making commits to your site's Git repository with:
 ```bash
 $ git add --all
 $ git commit -m 'Commit message'
 $ git push origin master
 ```
+where, of course, `"Commit message"` is to be replaced with your actual commit message. Typing this out everytime one wishes to make a commit can get a little tedious and irritating so I would recommend adding this function to your `~/.bashrc` file:
+```bash
+function push {
+  git add --all && git commit -m "$1" && git push origin master
+}
+```
+and then sourcing this file with `source ~/.bashrc`. This way whenever you want to make a commit merely type `push "Commit message"` inside a terminal window running Bash.
 
 ## Running Jekyll Locally
 If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that RubyGems has already been installed on your Linux system (for instructions on installing RubyGems see the [section below](#installing-rubygems)):
@@ -84,7 +91,6 @@ where in this example, `'last_modified_at'` is the name of the undefined tag in 
 . While if you include a file that does not exist you will get this error:
 <script src="/js/6e73a98b03d0cdcf530b.js"></script>
 where <code>&#123;&#37; include_relative SS/table2-builtins.html &#37;&#125;</code> appeared in the `_post/SS/syntax.md`, which in turn was included (by use of the line <code>&#123;&#37; include_relative SS/syntax.md &#37;&#125;</code> in `_posts/2016-01-30-shell-scripting-and-the-command-line-an-introduction.md` and the error shown is because the file `_post/SS/table2-builtins.html` does not exist.
-
 
 ## External Resources
 * [Configuration](http://jekyllrb.com/docs/configuration/)
