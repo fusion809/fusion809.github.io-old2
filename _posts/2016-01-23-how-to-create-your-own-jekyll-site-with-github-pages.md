@@ -35,13 +35,13 @@ then to start Jekyll locally run: {% include Code/codeus.html line1="bundle exec
 There are two package dependencies for Jekyll that should be installed with one's package manager, Git and RubyGems. This section covers how to install them with the most popular Linux package managers.
 
 ### APT
-{% include Layouts/used-by.html distro1="Debian" distro2="PCLinuxOS" distro3="Ubuntu" %}
+{% include Layouts/used-by.html distro1="antiX" distro2="Debian" distro3="Linux Mint" distro4="PCLinuxOS" distro5="Ubuntu" %}
 {% include Code/codeu.html line1="sudo apt-get install git ruby" %}
 or:
 {% include Code/coder.html line1="apt-get install git ruby" %}
 
 ### DNF
-{% include Layouts/used-by.html distro1="Fedora" distro2="Korora" %}
+{% include Layouts/used-by.html distro1="Chapeau" distro2="Fedora" distro3="Korora" %}
 {% include Code/codeu.html line1="sudo dnf install git ruby" %}
 or:
 {% include Code/coder.html line1="dnf install git ruby" %}
@@ -64,14 +64,20 @@ or:
 or:
 {% include Code/coder.html line1="urpmi git ruby-RubyGems" %}
 
+### pacman
+{% include Layouts/used-by.html distro1="Arch Linux" distro2="Antergos" distro3="ArchBang" distro4="Chakra GNU/Linux" distro5="Manjaro Linux" distro6="Parabola GNU/Linux-libre" %}
+{% include Code/codeu.html line1="sudo pacman -S git rubygems" %}
+or:
+{% include Code/coder.html line1="pacman -S git rubygems" %}
+
 ### yum
-{% include Layouts/used-by.html distro1="CentOS" distro2="Oracle" distro3="RHEL" %}
+{% include Layouts/used-by.html distro1="CentOS" distro2="Oracle Linux" distro3="Red Hat Enterprise Linux" distro4="Scientific Linux" %}
 {% include Code/codeu.html line1="sudo yum install git ruby" %}
 or:
 {% include Code/coder.html line1="yum install git ruby" %}
 
 ### ZYpp
-{% include Layouts/used-by.html distro1="openSUSE" distro2="SLE" %}
+{% include Layouts/used-by.html distro1="openSUSE" distro2="SUSE Linux Enterprise" %}
 {% include Code/codeu.html line1="sudo zypper in git ruby" %}
 or:<br/>
 {% include Code/coder.html line1="zypper in git ruby" %}
