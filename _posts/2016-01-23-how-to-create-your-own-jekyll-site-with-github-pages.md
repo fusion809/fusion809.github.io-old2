@@ -35,43 +35,43 @@ then to start Jekyll locally run: {% include Code/codeus.html line1="bundle exec
 There are two package dependencies for Jekyll that should be installed with one's package manager, Git and RubyGems. This section covers how to install them with the most popular Linux package managers.
 
 ### APT
-{% include Layouts/used-by.md note1="Debian, PCLinuxOS, Ubuntu, *etc.*" %}
+{% include Layouts/used-by.html distro1="Debian" distro2="PCLinuxOS" distro3="Ubuntu" %}
 {% include Code/codeu.html line1="sudo apt-get install git ruby" %}
 or:
 {% include Code/coder.html line1="apt-get install git ruby" %}
 
 ### DNF
-{% include Layouts/used-by.md note1="Fedora, Korora, *etc.*" %}
+{% include Layouts/used-by.html distro1="Fedora" distro2="Korora" %}
 {% include Code/codeu.html line1="sudo dnf install git ruby" %}
 or:
 {% include Code/coder.html line1="dnf install git ruby" %}
 
 ### Entropy
-{% include Layouts/used-by.md note1="Sabayon, Spike" %}
+{% include Layouts/used-by.html distro1="Sabayon" distro2="Spike" %}
 {% include Code/codeu.html line1="sudo equo i -av dev-vcs/git dev-ruby/rubygems" %}
 or:
 {% include Code/coder.html line1="equo i -av dev-vcs/git dev-ruby/rubygems" %}
 
 ### Portage
-{% include Layouts/used-by.md note1="Calculate Linux, Gentoo Linux, Sabayon, *etc.*" %}
+{% include Layouts/used-by.html distro1="Calculate Linux" distro2="Gentoo Linux" distro3="Sabayon" %}
 {% include Code/codeu.html line1="sudo emerge -av dev-vcs/git dev-ruby/rubygems" %}
 or:
 {% include Code/coder.html line1="emerge -av dev-vcs/git dev-ruby/rubygems" %}
 
 ### urpmi
-{% include Layouts/used-by.md note1="Mageia, OpenMandriva, *etc.*" %}
+{% include Layouts/used-by.html distro1="Mageia" distro2="OpenMandriva" %}
 {% include Code/codeu.html line1="sudo urpmi git ruby-RubyGems" %}
 or:
 {% include Code/coder.html line1="urpmi git ruby-RubyGems" %}
 
 ### yum
-{% include Layouts/used-by.md note1="CentOS, Oracle, RHEL, *etc.*" %}
+{% include Layouts/used-by.html distro1="CentOS" distro2="Oracle" distro3="RHEL" %}
 {% include Code/codeu.html line1="sudo yum install git ruby" %}
 or:
 {% include Code/coder.html line1="yum install git ruby" %}
 
 ### ZYpp
-{% include Layouts/used-by.md note1="openSUSE, SLE, *etc.*" %}
+{% include Layouts/used-by.html distro1="openSUSE" distro2="SLE" %}
 {% include Code/codeu.html line1="sudo zypper in git ruby" %}
 or:<br/>
 {% include Code/coder.html line1="zypper in git ruby" %}
