@@ -14,7 +14,7 @@ This post leaves out some advanced options mentioned in the [official Jekyll doc
 ## Setting up a Jekyll site with GitHub Pages
 *The Hornery* like most Jekyll-powered sites is hosted by [GitHub Pages](https://pages.github.com/), this section covers how to set up your website with GitHub pages and assumes you already have a GitHub account. If you do not have a GitHub account merely go to the [Home Page](https://github.com/) and fill out the form there.
 
-The way I created *The Hornery* was by creating a GitHub repository with the name: `username.github.io`, where `username` was replaced by my username, fusion809. The next step requires that Jekyll be installed with Rubygems itself (even if Jekyll has already been installed with Bundle) on your computer. To do this run:
+The way I created *The Hornery* was by creating a GitHub repository with the name: `username.github.io`, where `username` was replaced by my username, fusion809. The next step requires that Jekyll be installed with RubyGems itself (even if Jekyll has already been installed with Bundle) on your computer. To do this run:
 `$ gem install jekyll`
 then move onto this next step I speak of, by running:
 `$ jekyll new username.github.io`
@@ -28,53 +28,53 @@ $ git push origin master
 ```
 
 ## Running Jekyll Locally
-If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that Rubygems has already been installed on your Linux system (for instructions on installing Rubygems see the [section below](#installing-rubygems)):
+If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that RubyGems has already been installed on your Linux system (for instructions on installing RubyGems see the [section below](#installing-rubygems)):
 ```bash
 gem install bundler
 bundle install
 ```
 then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard, non-root user).
 
-## Installing Rubygems
-Installing Rubygems is usually easy when done using your distribution's package manager. For example, at the time of writing this post I am operating on Arch Linux, so to install Rubygems (and this should be applicable to all distributions that use the pacman package manager) I ran: `sudo pacman -S rubygems`. For other distributions run the commands listed below, note that as on The Hornery itself, `$` denotes standard user console while `#` denotes root console.
+## Getting the Dependencies
+There are two package dependencies for Jekyll that should be installed with one's package manager, Git and RubyGems.
 
 ### APT: Debian, PCLinuxOS, Ubuntu, *etc.*
-`$ sudo apt-get install ruby`<br/>
+`$ sudo apt-get install git ruby`<br/>
 or:<br/>
-`# apt-get install ruby`
+`# apt-get install git ruby`
 
 ### DNF: Fedora, Korora, *etc.*
-`$ sudo dnf install ruby`<br/>
+`$ sudo dnf install git ruby`<br/>
 or:<br/>
-`# dnf install ruby`
+`# dnf install git ruby`
 
 ### Entropy: Sabayon, Spike
-`$ sudo equo i -av dev-ruby/rubygems`<br/>
+`$ sudo equo i -av dev-vcs/git dev-ruby/rubygems`<br/>
 or:<br/>
-`# equo i -av dev-ruby/rubygems`
+`# equo i -av dev-vcs/git dev-ruby/rubygems`
 
 ### Portage: Calculate, Gentoo, Sabayon, *etc.*
-`$ sudo emerge -av dev-ruby/rubygems`<br/>
+`$ sudo emerge -av dev-vcs/git dev-ruby/rubygems`<br/>
 or:<br/>
-`# emerge -av dev-ruby/rubygems`
+`# emerge -av dev-vcs/git dev-ruby/rubygems`
 
 ### urpmi: Mageia, OpenMandriva, *etc.*
-`$ sudo urpmi ruby-RubyGems`<br/>
+`$ sudo urpmi git ruby-RubyGems`<br/>
 or:<br/>
-`# urpmi ruby-RubyGems`
+`# urpmi git ruby-RubyGems`
 
 ### yum: CentOS, Oracle, RHEL, *etc.*
-`$ sudo yum install ruby`<br/>
+`$ sudo yum install git ruby`<br/>
 or:<br/>
-`# yum install ruby`
+`# yum install git ruby`
 
 ### ZYpp: openSUSE, SLE, *etc.*
-`$ sudo zypper in ruby`<br/>
+`$ sudo zypper in git ruby`<br/>
 or:<br/>
-`# zypper in ruby`
+`# zypper in git ruby`
 
 ## Vendor Folder
-Running `bundle install` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by Rubygems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, do this before making any commits, however, as otherwise your site will still be larger than it would be without the vendor folder.
+Running `bundle install` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by RubyGems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, it is important to do this **before** making any commits.
 
 ## Handling Jekyll Errors
 If this returns errors then my guess is that your `Gemfile` and `_config.yml` files, which should both be in the top-level directory of your Jekyll site, are incorrectly written or you have made some syntactic error in the Liquid tags on your website. Including Liquid tags that are not defined is known to return errors like:
