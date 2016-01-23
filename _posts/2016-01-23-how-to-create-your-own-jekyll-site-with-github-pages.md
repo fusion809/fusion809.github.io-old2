@@ -52,6 +52,12 @@ or:
 or:
 {% include Code/coder.html line1="equo i -av dev-vcs/git dev-ruby/rubygems" %}
 
+### pacman
+{% include Layouts/used-by.html distro1="Arch Linux" distro2="Antergos" distro3="ArchBang" distro4="Chakra GNU/Linux" distro5="Manjaro Linux" distro6="Parabola GNU/Linux-libre" %}
+{% include Code/codeu.html line1="sudo pacman -S git rubygems" %}
+or:
+{% include Code/coder.html line1="pacman -S git rubygems" %}
+
 ### Portage
 {% include Layouts/used-by.html distro1="Calculate Linux" distro2="Gentoo Linux" distro3="Sabayon" %}
 {% include Code/codeu.html line1="sudo emerge -av dev-vcs/git dev-ruby/rubygems" %}
@@ -63,12 +69,6 @@ or:
 {% include Code/codeu.html line1="sudo urpmi git ruby-RubyGems" %}
 or:
 {% include Code/coder.html line1="urpmi git ruby-RubyGems" %}
-
-### pacman
-{% include Layouts/used-by.html distro1="Arch Linux" distro2="Antergos" distro3="ArchBang" distro4="Chakra GNU/Linux" distro5="Manjaro Linux" distro6="Parabola GNU/Linux-libre" %}
-{% include Code/codeu.html line1="sudo pacman -S git rubygems" %}
-or:
-{% include Code/coder.html line1="pacman -S git rubygems" %}
 
 ### yum
 {% include Layouts/used-by.html distro1="CentOS" distro2="Oracle Linux" distro3="Red Hat Enterprise Linux" distro4="Scientific Linux" %}
