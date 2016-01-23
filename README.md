@@ -42,15 +42,14 @@ or:<br/>
 `# urpmi ruby-RubyGems`
 
 ### yum: CentOS, Oracle, RHEL, *etc.*
-`$ sudo yum install rubygems`<br/>
+`$ sudo yum install ruby`<br/>
 or:<br/>
-`# yum install rubygems`
+`# yum install ruby`
 
 ### ZYpp: openSUSE, SLE, *etc.*
-`$ sudo zypper in rubygems`<br/>
+`$ sudo zypper in ruby`<br/>
 or:<br/>
-`# zypper in rubygems`
-
+`# zypper in ruby`
 ## Vendor Folder
 Running `bundle install` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by Rubygems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, do this before making any commits, however, as otherwise your site will still be larger than it would be without the vendor folder.
 
