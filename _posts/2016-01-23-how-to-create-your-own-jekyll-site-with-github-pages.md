@@ -15,11 +15,11 @@ This post leaves out some advanced options mentioned in the [official Jekyll doc
 *The Hornery* like most Jekyll-powered sites is hosted by [GitHub Pages](https://pages.github.com/), this section covers how to set up your website with GitHub pages and assumes you already have a GitHub account. If you do not have a GitHub account merely go to the [Home Page](https://github.com/) and fill out the form there.
 
 The way I created *The Hornery* was by creating a GitHub repository with the name: `username.github.io`, where `username` was replaced by my username, fusion809. The next step requires that Jekyll be installed with RubyGems itself (even if Jekyll has already been installed with Bundle) on your computer. To do this run:
-`$ gem install jekyll`
+{% include Code/codeu.html line1="gem install jekyll" %}
 then move onto this next step I speak of, by running:
-`$ jekyll new username.github.io`
-this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory (`$ cd /home/username/username.github.io`) and run `$ git init` (to install Git see the [Getting the Dependencies](#getting-the-dependencies) below). Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
-`$ git remote add origin https://github.com/username/username.github.io`
+{% include Code/codeu.html line1="jekyll new username.github.io" %}
+this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory ({% include Code/codeus.html line1="cd /home/username/username.github.io" %}) and run {% include Code/codeus.html line1="git init" %} (to install Git see the [Getting the Dependencies](#getting-the-dependencies) below). Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
+{% include Code/codeu.html line1="git remote add origin https://github.com/username/username.github.io" %}
 after this you will likely wish to edit your site's `_config.yml` file, adding information about your site, to do this I recommend you follow [this guide](http://jekyllrb.com/docs/configuration/) which contains available settings specified in `_config.yml` and their corresponding allowed values. After you think you are finished editing `_config.yml` I would recommend you run Jekyll locally by following the Bundle instructions outlined in the [next section](#running-jekyll-locally), as this will tell you if there are any issues you need to fix with your Jekyll site and give you some hints as to where and what they might be. If no errors turn up then I would recommend you start making commits to your site's Git repository with:
 ```bash
 $ git add --all
@@ -40,56 +40,56 @@ If you are interested in setting up Jekyll locally on your Linux machine here is
 gem install bundler
 bundle install
 ```
-then to start Jekyll locally run: `bundle exec jekyll serve` (again as standard, non-root user).
+then to start Jekyll locally run: {% include Code/codeus.html line1="bundle exec jekyll serve" %}.
 
 ## Getting the Dependencies
 There are two package dependencies for Jekyll that should be installed with one's package manager, Git and RubyGems.
 
 ### APT: Debian, PCLinuxOS, Ubuntu, *etc.*
-`$ sudo apt-get install git ruby`<br/>
-or:<br/>
-`# apt-get install git ruby`
+{% include Code/codeu.html line1="sudo apt-get install git ruby" %}
+or:
+{% include Code/coder.html line1="apt-get install git ruby" %}
 
 ### DNF: Fedora, Korora, *etc.*
-`$ sudo dnf install git ruby`<br/>
-or:<br/>
-`# dnf install git ruby`
+{% include Code/codeu.html line1="sudo dnf install git ruby" %}
+or:
+{% include Code/coder.html line1="dnf install git ruby" %}
 
 ### Entropy: Sabayon, Spike
-`$ sudo equo i -av dev-vcs/git dev-ruby/rubygems`<br/>
-or:<br/>
-`# equo i -av dev-vcs/git dev-ruby/rubygems`
+{% include Code/codeu.html line1="sudo equo i -av dev-vcs/git dev-ruby/rubygems" %}
+or:
+{% include Code/coder.html line1="equo i -av dev-vcs/git dev-ruby/rubygems" %}
 
 ### Portage: Calculate, Gentoo, Sabayon, *etc.*
-`$ sudo emerge -av dev-vcs/git dev-ruby/rubygems`<br/>
-or:<br/>
-`# emerge -av dev-vcs/git dev-ruby/rubygems`
+{% include Code/codeu.html line1="sudo emerge -av dev-vcs/git dev-ruby/rubygems" %}
+or:
+{% include Code/coder.html line1="emerge -av dev-vcs/git dev-ruby/rubygems" %}
 
 ### urpmi: Mageia, OpenMandriva, *etc.*
-`$ sudo urpmi git ruby-RubyGems`<br/>
-or:<br/>
-`# urpmi git ruby-RubyGems`
+{% include Code/codeu.html line1="sudo urpmi git ruby-RubyGems" %}
+or:
+{% include Code/coder.html line1="urpmi git ruby-RubyGems" %}
 
 ### yum: CentOS, Oracle, RHEL, *etc.*
-`$ sudo yum install git ruby`<br/>
-or:<br/>
-`# yum install git ruby`
+{% include Code/codeu.html line1="sudo yum install git ruby" %}
+or:
+{% include Code/coder.html line1="yum install git ruby" %}
 
 ### ZYpp: openSUSE, SLE, *etc.*
-`$ sudo zypper in git ruby`<br/>
+{% include Code/codeu.html line1="sudo zypper in git ruby" %}
 or:<br/>
-`# zypper in git ruby`
+{% include Code/coder.html line1="zypper in git ruby" %}
 
 ## Vendor Folder
 Running `bundle install` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by RubyGems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, it is important to do this **before** making any commits.
 
 ## Handling Jekyll Errors
 If this returns errors then my guess is that your `Gemfile` and `_config.yml` files, which should both be in the top-level directory of your Jekyll site, are incorrectly written or you have made some syntactic error in the Liquid tags on your website. Including Liquid tags that are not defined is known to return errors like:
-<script src="/js/d6e9ab458439c86ffc37.js"></script>
+{% include Code/gist.html id="d6e9ab458439c86ffc37" %}
 where in this example, `'last_modified_at'` is the name of the undefined tag in this case and `_posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt` is where the undefined tag is included in the website. Likewise if Liquid tags (like <code>&#123;&#37; include &#37;&#125;</code>) are not properly ended (in this example they may not be correctly ended with a <code>&#37;&#125;</code>, giving <code>&#123;&#37; include &#125;</code>) it can return errors like:
-<script src="/js/4258ee4ad2495ad5c62c.js"></script>
+{% include Code/gist.html id="4258ee4ad2495ad5c62c" %}
 . While if you include a file that does not exist you will get this error:
-<script src="/js/6e73a98b03d0cdcf530b.js"></script>
+{% include Code/gist.html id="6e73a98b03d0cdcf530b" %}
 where <code>&#123;&#37; include_relative SS/table2-builtins.html &#37;&#125;</code> appeared in the `_post/SS/syntax.md`, which in turn was included (by use of the line <code>&#123;&#37; include_relative SS/syntax.md &#37;&#125;</code> in `_posts/2016-01-30-shell-scripting-and-the-command-line-an-introduction.md` and the error shown is because the file `_post/SS/table2-builtins.html` does not exist.
 
 ## External Resources

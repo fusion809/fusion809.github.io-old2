@@ -15,7 +15,7 @@ On 19 January 2016 I installed Arch Linux on a removable drive, using my Lenovo 
 
 ## Hardware Specs
 For anyone that is interested, this laptop I used to install Arch Linux on the removable drive, had the following specs:
-<script src="/js/b44fa06f1ed0075af0cc.js"></script>
+{% include Code/gist.html id="b44fa06f1ed0075af0cc" %}
 
 ## Creating the ISO
 {% include Layouts/note.md note1="I do not have perfect memory &mdash; I may have missed the odd command or mixed up when I ran the command, whether it be from the live session or from my Manjaro session, <i>etc.</i>" %}
