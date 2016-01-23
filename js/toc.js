@@ -111,7 +111,8 @@ $.fn.toc = function(options) {
     var ul = $(opts.listType);
 
     headings.each(function(i, heading) {
-      var $h = $(heading);
+      var $h = $(heading)
+
       headingOffsets.push($h.offset().top - opts.highlightOffset);
 
       var anchorName = opts.anchorName(i, heading, opts.prefix);
@@ -193,7 +194,7 @@ jQuery.fn.toc.defaults = {
 
 $(document).ready(function() {
   $('#toc').toc({
-      'selectors': 'h2,h3', //elements to use as headings
+      'selectors': 'h1,h2,h3', //elements to use as headings
       'container': 'body', //element to find all selectors in
       'listType': '<ul/>', //use unordered list. If you need ordered one instead pass: '<ol/>'
       'smoothScrolling': true, //enable or disable smooth scrolling on click
