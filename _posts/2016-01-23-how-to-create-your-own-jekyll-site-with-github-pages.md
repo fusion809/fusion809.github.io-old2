@@ -65,7 +65,7 @@ or:
 {% include Code/coder.html line1="emerge -av dev-vcs/git dev-ruby/rubygems" %}
 
 ### urpmi
-{% include Layouts/used-by.html distro1="Mageia" distro2="OpenMandriva" %}
+{% include Layouts/used-by.html distro1="Mageia" distro2="OpenMandriva LX" %}
 {% include Code/codeu.html line1="sudo urpmi git ruby-RubyGems" %}
 or:
 {% include Code/coder.html line1="urpmi git ruby-RubyGems" %}
