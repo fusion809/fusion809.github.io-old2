@@ -11,14 +11,14 @@ categories: linux, jekyll, blogging
 
 This post leaves out some advanced options mentioned in the [official Jekyll documentation](http://jekyllrb.com/docs/home/), partly because some of them I do not even understand, but also partly because I want this post to be simple enough to follow that even a twelve year old could follow these instructions without a problem.
 
-# Setting up a Jekyll site with GitHub Pages
+## Setting up a Jekyll site with GitHub Pages
 *The Hornery* like most Jekyll-powered sites is hosted by [GitHub Pages](https://pages.github.com/), this section covers how to set up your website with GitHub pages and assumes you already have a GitHub account. If you do not have a GitHub account merely go to the [Home Page](https://github.com/) and fill out the form there.
 
 The way I created *The Hornery* was by creating a GitHub repository with the name: `username.github.io`, where `username` was replaced by my username, fusion809. The next step requires that Jekyll be installed with Rubygems itself (even if Jekyll has already been installed with Bundle) on your computer. To do this run:
 `$ gem install jekyll`
 then move onto this next step I speak of, by running:
 `$ jekyll new username.github.io`
-this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory (`$ cd /home/username/username.github.io`) and run `$ git init` (assuming git is installed, installing git is just as simple as installing Rubygems with your package manager, just follow the procedure outlined in the [Installing Rubygems](#installing-rubyges) section, except with `ruby` or `rubygems` or whatever the package that provides Rubygems is called, replaced with `git`). Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
+this should create a new folder with the default layout of a Jekyll site in `/home/username/username.github.io` (assuming you ran this from your home directory and your PC username is the same as your GitHub username). Then change into this directory (`$ cd /home/username/username.github.io`) and run `$ git init`. Then configure your git remote to point to your GitHub repo. This means, for me at least, running something like:
 `$ git remote add origin https://github.com/username/username.github.io`
 after this you will likely wish to edit your site's `_config.yml` file, adding information about your site, to do this I recommend you follow [this guide](http://jekyllrb.com/docs/configuration/) which contains available settings specified in `_config.yml` and their corresponding allowed values. After you think you are finished editing `_config.yml` I would recommend you run Jekyll locally by following the Bundle instructions outlined in the [next section](#running-jekyll-locally), as this will tell you if there are any issues you need to fix with your Jekyll site. If no errors turn up then I would recommend you start making commits to your site's Git repository with:
 ```bash
@@ -27,7 +27,7 @@ $ git commit -m 'Commit message'
 $ git push origin master
 ```
 
-# Running Jekyll Locally
+## Running Jekyll Locally
 If you are interested in setting up Jekyll locally on your Linux machine here is a Bash script that can do this for you (run this as standard, non-root user, from the top-level directory of the local copy of your Jekyll site), provided that Rubygems has already been installed on your Linux system (for instructions on installing Rubygems see the [section below](#installing-rubygems)):
 ```bash
 gem install bundler
@@ -76,7 +76,7 @@ or:<br/>
 ## Vendor Folder
 Running `bundle install` will create a folder called `vendor` inside your Jekyll site. This directory contains gems (the package format used by Rubygems) and they can take up a large amount of space in your Jekyll site. Consequently you may wish to edit your `.gitignore` file to include this vendor folder (to see how to do this you are welcome to look at this repository's [`.gitignore`](https://github.com/fusion809/fusion809.github.io/blob/master/.gitignore) file) so as to save space on your Jekyll site, do this before making any commits, however, as otherwise your site will still be larger than it would be without the vendor folder.
 
-# Handling Jekyll Errors
+## Handling Jekyll Errors
 If this returns errors then my guess is that your `Gemfile` and `_config.yml` files, which should both be in the top-level directory of your Jekyll site, are incorrectly written or you have made some syntactic error in the Liquid tags on your website. Including Liquid tags that are not defined is known to return errors like:
 <script src="/js/d6e9ab458439c86ffc37.js"></script>
 where in this example, `'last_modified_at'` is the name of the undefined tag in this case and `_posts/2015-11-26-bash-scripting-and-the-command-line-an-introduction-for-sabayon-users.md/#excerpt` is where the undefined tag is included in the website. Likewise if Liquid tags (like <code>&#123;&#37; include &#37;&#125;</code>) are not properly ended (in this example they may not be correctly ended with a <code>&#37;&#125;</code>, giving <code>&#123;&#37; include &#125;</code>) it can return errors like:
