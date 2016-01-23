@@ -1,5 +1,5 @@
 {% capture my_content %}
-<div class="note-title"><i>Used by</i>:</div>
+<div class="note-title">Used by:</div>
 * {{ include.note1 }}
 {% if include.note2 %}
 * {{ include.note2 }}
