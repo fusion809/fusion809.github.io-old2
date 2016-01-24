@@ -109,7 +109,8 @@ posts (both completed and drafts) can be written in markdown or HTML, by default
 All posts should include the YAML front matter, which is explained in greater detail [here](http://jekyllrb.com/docs/frontmatter/). It is essentially all the metadata for your post, like the date it is published, its title, its layout (which must appear in the `_layouts`) folder, *etc.* and appears at the start of the post. As previously mentioned if they conflict with the date the post was published and its title as provided by the post's file name, the values in the YAML front matter will be used instead.
 
 ## Editing your Jekyll Site
-Jekyll sites are essentially just GitHub repositories that contain several markup and source code files that can be edited in any text editor or through GitHub's web-based interface. The way I edit *The Hornery* is by git cloning its repository, editing it with Atom and then committing any changes upstream with git. 
+{% include Links/image.html image="Using-Atom-1.4.0-to-edit-Jekyll-site.png" width="1130px" float="none" description="<i>The Hornery</i> opened in Atom 1.4.0" %}
+Jekyll sites are essentially just GitHub repositories that contain several markup and source code files that can be edited in any text editor or through GitHub's web-based interface. The way I edit *The Hornery* is by Git cloning its repository, editing its markup and source code files with Atom and then committing any changes upstream with Git, after first testing for errors by [running Jekyll locally](#running-jekyll-locally). Jekyll can also be edited from the command-line with GNU nano or Vim and then commit upstream with Git.
 
 ## External Resources
 * [Creating pages](http://jekyllrb.com/docs/pages/)
