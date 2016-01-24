@@ -35,7 +35,7 @@ then to start Jekyll locally run: {% include Code/codeus.html line1="bundle exec
 There are two package dependencies for Jekyll that should be installed with one's package manager, Git and RubyGems. This section covers how to install them with the most popular Linux package managers.
 
 ### APT
-{% include Layouts/used-by.html distro1="antiX" distro2="Bodhi Linux" distro3="Debian" distro4="Deepin" distro5="elementary OS" distro6="Kali Linux" distro7="Linux Lite" distro8="Linux Mint" distro9="LXLE" distro10="PCLinuxOS" distro11="Ubuntu" distro12="Zorin OS" %}
+{% include Layouts/used-by.html distro1="antiX" distro2="Bodhi Linux" distro3="Debian" distro4="Deepin" distro5="elementary OS" distro6="Kali Linux" distro7="Linux Lite" distro8="Linux Mint" distro9="LXLE" distro10="PCLinuxOS" distro11="Tails" distro12="Ubuntu" distro13="Zorin OS" %}
 {% include Code/codeu.html line1="sudo apt-get install git ruby" %}
 or:
 {% include Code/coder.html line1="apt-get install git ruby" %}
