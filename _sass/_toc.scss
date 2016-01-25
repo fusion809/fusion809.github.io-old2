@@ -22,12 +22,14 @@
 }
 
 #toc li.h1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  text-decoration: underline;
   width: auto;
   padding-left: 5px;
-  padding-bottom: 1px;
-  padding-top: 1px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 4px;
 }
 
 #toc li.h2 {
