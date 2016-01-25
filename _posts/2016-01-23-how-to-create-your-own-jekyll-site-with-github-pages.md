@@ -12,18 +12,20 @@ redirect_from:
 
 {% include_relative JK/02-setting-up.md %}
 
-{% include_relative JK/03-running-locally.md %}
+{% include_relative JK/03-configuration.md %}
 
-{% include_relative JK/04-getting-the-dependencies.md %}
+{% include_relative JK/04-running-locally.md %}
 
-{% include_relative JK/05-vendor.md %}
+{% include_relative JK/05-getting-the-dependencies.md %}
 
-{% include_relative JK/06-handling-errors.md %}
+{% include_relative JK/06-vendor.md %}
 
-{% include_relative JK/07-directory-structure.md %}
+{% include_relative JK/07-handling-errors.md %}
 
-{% include_relative JK/08-writing-posts.md %}
+{% include_relative JK/08-directory-structure.md %}
 
-{% include_relative JK/09-editing-jekyll-site.md %}
+{% include_relative JK/09-writing-posts.md %}
 
-{% include_relative JK/10-external-sources.md %}
+{% include_relative JK/10-editing-jekyll-site.md %}
+
+{% include_relative JK/11-external-sources.md %}

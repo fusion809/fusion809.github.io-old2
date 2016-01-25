@@ -1,4 +1,4 @@
-## Getting the Dependencies
+## Dependencies
 There are two package dependencies for Jekyll that should be installed with one's package manager, Git and RubyGems. This section covers how to install them with the most popular Linux package managers.
 
 ### APT
