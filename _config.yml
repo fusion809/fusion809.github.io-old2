@@ -21,9 +21,11 @@ highlighter:        pygments
 timezone:           Australia/Brisbane
 locale:             en_AU
 permalink:          /:year/:month/:day/:title/
-exclude:            [vendor]
+exclude:            [
+                      "vendor"
+                      ,"hugo"
+                      ]
 gems:
-  - jekyll-last-modified-at
   - jekyll-redirect-from
   - jekyll-docs
 # Build settings
