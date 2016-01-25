@@ -1,6 +1,6 @@
 ---
 layout:           post
-title:            "A Comparison of Text Editors and IDEs for Manjaro and Sabayon Linux"
+title:            "A Comparison of Free and Open-Source Text Editors and IDEs for Manjaro and Sabayon Linux"
 date:             2016-01-18 +1000
 last_modified_at: 2016-01-25 08:00 +1000
 categories:       comparisons, text-editors, integrated-development-environment, manjaro-linux, sabayon-linux
@@ -10,8 +10,6 @@ redirect_from:
       - /comparison-of-text-editors/
 ---
 {% include Links/image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
-
-{% include Layouts/note.md note1="While not stated in the title of this post, for the sake of brevity, this post is only about free and open-source text editors and IDEs" %}
 
 **Text editors** are essential programs for software developers and programmers in general, as they enable users to write and edit source code or markup files. They are popular tools used by both experienced and novice Linux users. In this post I will compare the various *free and open-source* text editors available for Manjaro and Sabayon, with regard to several features and properties of each. It is important to note that I am not a programmer, my experience with programming is limited to mostly MATLAB/GNU Octave scripts, a small handful of Python scripts I wrote for technical computing (that is, numerical analysis) and a few Bash scripts I have written to make my life easier, when I use Linux systems.
 
