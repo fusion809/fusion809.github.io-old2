@@ -23,7 +23,6 @@ locale:             en_AU
 permalink:          /:year/:month/:day/:title/
 exclude:            [vendor]
 gems:
-  - jekyll-last-modified-at
   - jekyll-redirect-from
   - jekyll-docs
 # Build settings
