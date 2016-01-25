@@ -6,27 +6,27 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: The Hornery
-email: brentonhorne77@gmail.com
-description: Where fusion809 stores his thoughts and news relating to technology
-baseurl: ""
-url: "https://fusion809.github.io"
-twitter_username: fusion809
-github_username: fusion809
-facebook_username: brenton.horne.7
-facebook_name: Brenton Horne
+title:              The Hornery
+email:              brentonhorne77@gmail.com
+description:        Where fusion809 stores his thoughts and news relating to technology
+baseurl:            ""
+url:                "https://fusion809.github.io"
+twitter_username:   fusion809
+github_username:    fusion809
+facebook_username:  brenton.horne.7
+facebook_name:      Brenton Horne
 facebook_username2: sabayon.blog.77
-facebook_name2: The Hornery
-highlighter: pygments
-timezone: Australia/Brisbane
-locale: en_AU
-permalink: /:year/:month/:day/:title/
-exclude: [vendor]
+facebook_name2:     The Hornery
+highlighter:        pygments
+timezone:           Australia/Brisbane
+locale:             en_AU
+permalink:          /:year/:month/:day/:title/
+exclude:            [vendor]
 gems:
   - jekyll-last-modified-at
   - jekyll-redirect-from
 # Build settings
-markdown: redcarpet
+markdown:           redcarpet
 redcarpet:
   extensions: [
    "no_intra_emphasis"
