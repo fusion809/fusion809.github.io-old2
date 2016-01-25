@@ -182,11 +182,7 @@ jQuery.fn.toc.defaults = {
     return prefix + '-' + candidateId;
   },
   headerText: function(i, heading, $heading) {
-    if(i==1) {
-      return "Introduction";
-    } else {
       return $heading.text();
-    }
   },
   itemClass: function(i, heading, $heading, prefix) {
     return prefix + '-' + $heading[0].tagName.toLowerCase();
@@ -198,7 +194,7 @@ jQuery.fn.toc.defaults = {
 
 $(document).ready(function() {
   $('#toc').toc({
-      'selectors': 'h1,h2,h3', //elements to use as headings
+      'selectors': 'h1,h2,h3,h4', //elements to use as headings
       'container': 'body', //element to find all selectors in
       'listType': '<ul/>', //use unordered list. If you need ordered one instead pass: '<ol/>'
       'smoothScrolling': true, //enable or disable smooth scrolling on click
@@ -210,8 +206,10 @@ $(document).ready(function() {
           return prefix+i;
       },
       'headerText': function(i, heading, $heading) { //custom function building the header-item text
-          if(i==0) {
-            return "Introduction"
+          if (i == 0) {
+            return "Introduction";
+          } else if ($heading[0].tagName.toLowerCase()=='h4') {
+            return '- ' + $heading.text();
           } else {
             return $heading.data('toc-title') || $heading.text();
           }

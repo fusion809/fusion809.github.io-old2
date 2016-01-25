@@ -25,6 +25,7 @@ exclude:            [vendor]
 gems:
   - jekyll-last-modified-at
   - jekyll-redirect-from
+  - jekyll-docs
 # Build settings
 markdown:           redcarpet
 redcarpet:
