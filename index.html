@@ -1,105 +1,24 @@
-<html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>My New Hugo Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <link href="https://fusion809.github.io/hugo-website/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-  <link href="https://fusion809.github.io/hugo-website/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fusion809.github.io/hugo-website/css/hc.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
-    
-    </head>
-	<body>
-	
-		<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>My New Hugo Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.15" />
-  <link href="https://fusion809.github.io/hugo-website/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-  <link href="https://fusion809.github.io/hugo-website/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fusion809.github.io/hugo-website/css/hc.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  
-    
-    </head>
-    <body>
-<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
-      <div id = "wrapper">
+---
+layout: default2
+---
 
+<div class="home">
 
-<div class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="https://fusion809.github.io/hugo-website/"><p class="navbar-brand">My New Hugo Site</p></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-					
-					
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div style="font-size:18px;">
+    {% capture my_capture %}Welcome to the Hornery, where fusion809 stores his thoughts and news relating to technology. This website is powered by Jekyll, if you would like to create your own Jekyll-powered website on a Linux platform, I have written a guide on how to do this [here](/2016/01/25/how-to-create-your-own-jekyll-site-with-github-pages/).{% endcapture %}{{ my_capture | markdownify }}
+  </div><br/>
 
+  <h1>Posts</h1>
 
-
-       
-       <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-					<img src="" />
-          <li class="sidebar-brand"><a href="https://fusion809.github.io/hugo-website/"><h1 class="brand">My New Hugo Site</h1></a><h3></h3></li>
-          <hr />
-					
-          <hr />
-          <div id="social-wrapper">
-           
-           
-           
-           
-         </div>
-       </ul>
-     </div>
-
-
-
-     <div class="container">
-
-
-  <div id="article">
-      <h1>My New Hugo Site</h1>
-  <ul class="posts">
-      
-      <li><span><a href="https://fusion809.github.io/hugo-website/about/">about</a><time class="pull-right post-list">Mon, Jan 25, 2016</h4></time></span></span></li>
-      
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%A, %-d %B %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
-	    <footer>
 
-        <p class="text-muted credit">&copy; . All rights reserved. </p>
-    </footer>
- 
-    <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/js/hc.js"></script>
-</body>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</html>
-	
-	
-
-	</body>
-</html>
+</div>
