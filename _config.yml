@@ -27,7 +27,7 @@ exclude:            [
                       ]
 gems:
   - jekyll-redirect-from
-
+  - jekyll-docs
 # Build settings
 markdown:           redcarpet
 redcarpet:
