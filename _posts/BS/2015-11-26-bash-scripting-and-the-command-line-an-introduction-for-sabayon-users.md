@@ -21,13 +21,13 @@ On **Sabayon Linux** and other [Linux distributions](https://en.wikipedia.org/wi
 
 In this post I will give provide an introduction to the &#42;nix command-line, including some available terminal emulators, Unix shells, with some focus on Bash and how all this relates to Sabayon users. It is important to remember I am not an expert on Bash, Bash scripting or programming in general, I have even had doubts I could even write this blog post. It is important to note too that this post is nowhere near *comprehensive* on this topic, as the only type of text I, or anyone, could write that would be comprehensive on this topic would be an entire several-hundred page book, not a dozen-or-so-page blog post. This post just gives you some of the tools to do many of the basic things a novice or intermediate user of Sabayon would like to be able to do with Bash.
 
-# Background on Unix Shells
+## Background
 {% include Links/image.html image="BrianJFox.png" width="300px" height="401px" description="Brian J. Fox (1959-), the original developer of Bash" %}
 
 The development of Bash began in January 1988, when [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman), the founder of the GNU Project and the [Free Software Foundation](http://www.fsf.org/) (FSF), became dissatisfied with the previous author of the GNU shell's failure to meet the required deadlines and decided, instead, to get FSF staff member, Brian J. Fox to write a free imitation of the Bourne Shell.[^2] Later in June 1989, the first public release of Bash was made, 0.99 (which was a beta release) and until mid 1992 (when Bash 1.12 was released), Fox remained the lead developer of Bash.[^3] When Fox left the FSF in mid 1992, [Chet Ramey](http://tiswww.case.edu/php/chet/) took over responsibility for Bash's development, which he has kept to this very day.[^4] Bash was and still is written entirely in C, as was its predecessor, the Bourne Shell.
 {% include Layouts/clear.html %}
 
-## Other Unix Shells
+### Other Unix Shells
 The [Bourne Shell](https://en.wikipedia.org/wiki/Bourne_shell) was one of the first official Unix shells to be developed and was first developed in 1977. I am using the phrasing "official Unix shells", to draw attention to the fact that the Bourne Shell was developed at Bell Labs for use by Research Unix, which was the original Unix system. The Bourne Shell is named after [Stephen Bourne](https://en.wikipedia.org/wiki/Stephen_R._Bourne), its original developer.
 
 {% include Links/image.html image="Bill_Joy.jpg" width="300px" height="375px" description="Bill Joy (1954-), the original developer of Csh and Vi" float="left" %}
@@ -38,12 +38,12 @@ Along with these shells, another free Unix shell that has gained notoriety, that
 All free Unix shells that are available for Gentoo or Sabayon systems are located in the category of app-shells within the [Entropy Store](https://packages.sabayon.org/quicksearch?q=app-shells&amp;filter=category_startswith&amp;filter_data=app-shells), [Portage Tree](https://packages.gentoo.org/categories/app-shells) and [Gentoo Portage Overlays](http://gpo.zugaina.org/app-shells). To show them all from the command-line run:
 {% include Code/coder.html line1='eix -C -c "app-shells"' %}
 
-## Changing Unix Shells
+### Changing Unix Shells
 On Unix/Unix-like platforms it is possible to change your login shell using the [`chsh`](/man/chsh.1.html) command. For example, to change your login shell to Zsh (assuming it is installed), run:
 {% include Code/codeu.html line1="chsh -s /bin/zsh" %}
 and then reboot.
 
-## Definitions
+### Definitions
 On most Linux systems, Unix shells are stored in the file directory `/bin`. You can list them all by issuing the command:
 {% include Code/coder.html line1="cat /etc/shells" %}
 for me, for example, on my Sabayon machine this gives the output:
@@ -64,13 +64,13 @@ Bash and other Unix shells, have their own unique syntax or language (that is, h
 
 Another important concept, for one to understand in order for the rest of this post to make any sort of sense, is that of a **script**. Scripts are programs that can be interpreted from within a **run-time environment** (**RTE**) and they automate the execution of tasks that would otherwise have to be performed manually, one-by-one, by a human operator. In the case of shell scripts, including Bash scripts, the RTE in which the script is interpreted is the Unix shell.
 
-## Bash and Files
+### Bash and Files
 Bash scripts usually have the file extension of `.sh`, although some have no file extension. When Bash is started as an interactive, non-login shell (for example, from within a terminal emulator) it first reads `~/.bashrc`. When it is started as an interactive, login shell (like when it is started within tty1) it first reads `/etc/profile`, `~/.bash_profile`, `~/.bash_login` and `~/.profile`. Commands executed in Bash are also recorded in `~/.bash_history`. Commands interpreted by Bash are case-sensitive, that is, `mv` is not the same as `Mv`, `mV` or `MV`.
 
-# Basic Bash Syntax
+## Basic Syntax
 The Bash syntax has several distinct components, which can be classed as <a href="#keywords-and-special-characters">keywords and special characters</a>, <a href="#basic-unix-commands">external commands</a>, <a href="#builtins">builtins</a>, <a href="#variables">variables</a>, <a href="#functions">functions</a>, <a href="#loops">loops</a>, <a href="#selectors">selectors</a>, <a href="#tests">tests</a> and <a href="#conditionals">conditionals</a>. Many of these are shared by other Unix shells.
 
-## Basic Unix Commands
+### Unix Commands
 **Table 1** lists some basic Unix commands that are provided by the GNU Core Utilities package. Not all are listed, as I do not even understand them all.
 <table style="width: 100%;" class="green">
 <caption>Table 1: Basic Unix Commands, provided by the GNU Core Utilities Package</caption>
@@ -162,7 +162,7 @@ The Bash syntax has several distinct components, which can be classed as <a href
 </tbody>
 </table><br/>
 {% include Layouts/clear.html %}
-## Builtins
+### Builtins
 Several Bash commands (or **builtins**) exist and some (but by no stretch of the imagination all &mdash; I do not even understand them all!) basic ones are explained in **Table 2**. It is worthwhile noting that all these commands are purely Bash commands, by this I mean, they do not call any command-line programs to do their work for them. See many commands you will see in Bash scripts are not Bash commands, *per se*, rather they are commands that use another command-line program such as `mv` or `pwd` to do the work, but they can be run from within Bash.
 
 <table style="width: 100%;">
@@ -225,13 +225,13 @@ runs the <code>~/.bashrc</code> script.
 </tbody>
 </table>
 
-## Conditionals
+### Conditionals
 In Bash scripts conditionals use the output of a test and perform an action accordingly. Conditionals usually involve at least one of the following keywords: `case`, `if`, `else`, `elseif` and `fi`.
 
-## Functions
+### Functions
 Functions are essentially convenient ways we can group pieces of code together, so as to give them order and make them more logical. Quite often functions are designed to take input and use it to generate an output, or to perform a task, although some functions require no input. All Bash functions share two main things in common: the use of the word "function" and the fact the function's contents are contained within curly braces `{...}`.
 
-## Keywords and Special Characters
+### Keywords and Special Characters
 **Keywords and special characters** (**KSCs**) are an important concept to understand, they are words, or symbols, that have a special, set meaning when scripting in Bash. Examples are listed in **Table 3**.
 <table style="width: 100%;"><caption>Table 3: Some Keywords and Special Characters Permitted in Bash</caption>
 <tbody>
@@ -453,22 +453,22 @@ popd #moving back out of the ~/Shell directory
 </table>
 `until`, `while` and `time` are some other keywords that are not mentioned there, as I do not know enough about them to really comment on them. Keywords can be used as variables but I would not advise this, as this can quite easily become confusing.
 
-## Loops
+### Loops
 Loops (which involve the `for` keyword), in Bash scripts, are used to automate the performing of tedious tasks that are sufficiently similar to one another.
 
-## Selectors
+### Selectors
 Selectors (marked by the `select` keyword) gives users choices as to which input(s) the rest of the selector block uses.
 
-## Tests
+### Tests
 Tests are essential for conditionals. As their name suggests, they test to see whether or not a condition is satisfied. If the condition is satisfied they return 0, while if the condition is unsatisfied they return 1. Square brackets (which are a builtin, by-the-way), `[...]`, are used for tests, although double square brackets (`[[...]]`) can also be used for this purpose since Bash 2.02. The difference, from what I can tell, between single and double square brackets is that double square brackets allow one to perform more advanced tests than single square brackets. Single square brackets are also POSIX compliant and are found on all Unix shells.[^5]
 
-## Variables
+### Variables
 Bash **variables** are defined using equal signs. They can be made global (making them available for all processes) or local (making them available just for the script at hand). Local variables are defined by just using an equal sign, for example:
 {% include Code/codeu.html line1="PYTHONPATH=/usr/bin/python" %}
 while to define this variable globally, one would run:
 {% include Code/codeu.html line1="export PYTHONPATH=/usr/bin/python" %}
 
-# Bash Scripting Applications
+## Applications
 The primary value of Bash scripts is to automate tasks that would otherwise have to be done, over a longer time-frame by a human operator. I personally use shell scripts to make my life, when I am at the command-line, easier.
 
 In my `~/.bashrc` file I have links to several shell scripts stored in my `~/Shell` directory. Both my `~/.bashrc` and the shell scripts in my `~/Shell` directory can be found at [this GitHub repository](https://github.com/fusion809/sabayon-scripts). Here is my current `~/.bashrc` file:[^6]
@@ -496,7 +496,7 @@ done
 ```
 I have at least three dozen functions I have defined in shell scripts located in the `~/Shell` directory, but here I will mention some of the more interesting, or useful ones for Sabayon users, in general.
 
-## Interesting Scripts
+### Interesting Scripts
 *Whether these scripts are interesting, is, of course, in the eye of the beholder, you may not find these interesting at all.*
 
 You may have noticed that I am hosting HTML versions of several Linux man pages within the `/man` subdomain of this blog. I generate them using a function contained within `~/Shell/man.sh` called `manhtml`. For example, to generate [emerge.1.html](/man/emerge.1.html) I ran:
@@ -550,10 +550,10 @@ function theme {
 to install a new Moksha theme you would run:
 {% include Code/codeu.html line1="theme &lt;THEME&gt;" %} where `<THEME>` is, of course, the theme's name (how they appear in their respective GitHub repo's URL).
 
-## Useful Functions for Sabayon Users
+### Useful Functions
 The following are some functions that, depending on how you operate on Sabayon, may be helpful.
 
-###Chroots
+#### Chroots
 `chroot` is a Unix command-line program that allows you to change the apparent root directory for the current running process and all processes started by said process (that is, its "children"). Most commonly `chroot` is used to run Bash as from within Bash one can perform several tasks. `chroot` also makes all other files on a system, outside the chroot directory (and its subdirectories) inaccessible to processes run within the chroot. This can be handy, when one is running processes that could potentially cause unwanted, even damaging changes, to one's system, as if it blows up in your face, the damage will be confined to the chroot directory. On Gentoo and Sabayon chroots are usually, in my fairly minimal experience, used to create a new installation (when for whatever reason the graphical Calamares installer is not suitable), repair an existing installation, build new binary packages and test out ebuilds. The following are taken from [`~/Shell/chroot.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/chroot.sh).
 
 ```bash
@@ -701,7 +701,7 @@ alias schrootn=sabayon-chrootn
 alias schroot2='sabayon-chrootn 2'
 ```
 
-###Entropy
+#### Entropy
 The following are taken from [`~/Shell/equo.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/equo.sh) and they are functions (with aliases for said functions) that essentially automate some common actions one may perform with Entropy. They are not all the lines of code in `equo.sh`, they merely represent some of the more commonly-used codes. It is important to note some of these functions need not be defined as functions, they could instead be defined as aliases (using `alias NAME='CODE'` where NAME is the function's name and `CODE` is what is between the curly brackets).
 ```bash
 # Inflate Portage binary into SPM binary.
@@ -757,7 +757,7 @@ function spm {
 }
 ```
 
-###Gentoo Documentation
+#### Gentoo Documentation
 I wrote a Bash script ([`~/Shell/gentoo-doc.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/gentoo-doc.sh)) to generate a PDF of the complete Gentoo Handbook. Sadly, the final document does not include the CSS styling of the original handbook, but still it is better than no PDF at all. To get the complete PDF handbook for a specific architecture merely run:
 {% include Code/codeu.html line1="unit &lt;ARCHITECTURE&gt;"%}
 where `<ARCHITECTURE>` is, of course, the architecture of the system. For example for AMD64 run:
@@ -794,7 +794,7 @@ function unit {
 }
 ```
 
-###Git Tools
+#### Git Tools
 The following script (taken from [`~/Shell/git.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/git.sh)) makes my life simpler when I am working with Git repositories.
 
 ```bash
@@ -846,7 +846,7 @@ else
 fi
 ```
 
-###Layman/Portage
+#### Layman/Portage
 Here are some lines from my [`~/Shell/emerge.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/emerge.sh) script.
 ```bash
 # Install a package, but ask first
@@ -883,74 +883,74 @@ function tailf {
 }
 ```
 
-# Terminal Emulators
+## Terminal Emulators
 Terminal emulators (TEs) for Sabayon include tty1-tty6, the whole-screen virtual terminals managed by the getty Unix command[^7] and various graphical TEs (<abbr title="Graphical Terminal Emulators">GTEs</abbr>; that is, TE windows running within a graphical user interface) including GNOME Terminal, Konsole and LXTerminal. Most of these graphical TEs are found in the "x11-terms" category in the [Portage Tree](https://packages.gentoo.org/categories/x11-terms), [Gentoo Portage Overlays](http://gpo.zugaina.org/x11-terms/) and [Entropy Store](https://packages.sabayon.org/category/x11-terms), although there are exceptions, the most notable one being Konsole (which is in the kde-apps category). You can list all programs in this category by issuing the command:
 {% include Code/coder.html line1='eix -C -c "x11-terms"' %}
 
 The following section will involve me comparing the various graphical terminal emulators I have any real experience with.
 
-## GNOME Terminal
+### GNOME Terminal
 {% include Links/image.html image="GNOME-Terminal-3.16.2.png" width="743px" description="GNOME Terminal 3.16.2 running under Moksha" float="none" %}
 {% include Links/links.html package="x11-terms/gnome-terminal" program="GNOME Terminal" link="https://wiki.gnome.org/Apps/Terminal" wp="GNOME Terminal" %} is a GTE that is part of the GNOME Core Applications suite. It is written in C and licensed under GNU GPLv2. I find it, like most GNOME Core Applications fairly feature-packed, with several customization options being available for the terminal window. These include custom keyboard shortcuts, colour schemes, fonts and behaviours.
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="10. Comes pre-installed on GNOME edition of Sabayon. Also available from the Entropy Store." customizability="8" features="8" sru="8." gist="d0e2ea07a2def192cacc" overall="9" %}
 
-## Konsole
+### Konsole
 {% include Links/image.html image="Konsole-15.08.2.png" width="1000px" description="Konsole 15.08.2 running under Moksha" float="none" %}
 {% include Links/links.html package="kde-apps/konsole" program="Konsole" link="https://konsole.kde.org/" wp="Konsole" %} is a GTE based on the Qt widget toolkit that is part of the KDE Core Applications (or KDE Frameworks 5). I would probably say that Konsole and Terminator are the most feature-packed GTEs, with custom keyboard shortcuts, colour schemes, fonts and behaviours possible. Konsole does have an advantage, in my opinion, over Terminator, though. See Konsole highlights tabs (in purple/pink, see the screenshot below) that have pushed out extra output since they were last viewed, which can be handy at times.
 
 {% include Links/image.html image="Konsole-purple-tab-colour.png" width="1000px" float="none" description="Konsole showing the purple/pink tab highlighting. Note, how the first tab with its title starting with <code>...09@brenton-pc</code> is coloured purple/pink, this indicates that it has unread output" %}
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="10. Comes preinstalled on the KDE edition of Sabayon and available from the Entropy Store." customizability="9." sru="8." features="9." overall="9" gist="b03ca0f3e5e6b961ed19" %}
 
-## LXTerminal
+### LXTerminal
 {% include Links/image.html image="LXTerminal-0.2.0.png" description="LXTerminal 0.2.0 running under Moksha" width="1000px" float="none" %}
 {% include Links/links.html package="lxde-base/lxterminal" program="LXTerminal" link="http://wiki.lxde.org/en/LXTerminal" %} is a terminal emulator that is part of the core applications suite of LXDE. It uses the GTK+2 toolkit and while lightweight still has a few of the features that more advanced terminal emulators like Konsole boast. These include: ability to customize keyboard shortcuts and fonts (although a custom colour scheme is not permitted).
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="8, available in the Entropy Store but not preinstalled on any official Sabayon edition." customizability="8" features="8" sru="9." gist="74f4c3c54450760623d2" overall="8" %}
 
-## MATE Terminal
+### MATE Terminal
 {% include Links/image.html image="MATE-Terminal-1.8.1.png" description="MATE Terminal 1.8.1 running under MATE" width="1000px" float="none" %}
 {% include Links/links.html package="x11-terms/mate-terminal" program="MATE Terminal" link="https://github.com/mate-desktop/mate-terminal" %} is a terminal emulator that is part of the core application suite of MATE, a fork of GNOME 2. Consequently the MATE Terminal is based on the GTK+2 toolkit. Unlike most terminal emulators (in fact all of them mentioned in this post) I have found it does not work under Moksha. See whenever I run `mate-terminal` I get segmentation fault messages.
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="10. Installed, by default, on Sabayon MATE edition." customizability="8. Shares many of the same customizability options of GNOME Terminal." features="8. Same features as GNOME Terminal." sru="9. Like most MATE components it is fairly lightweight." gist="b345c67359307ff5bc17" overall="9. To me the fact that it does not work on Moksha is a big drawback, if for you it launches fine on your desktop of choice, it would probably be a better option than GNOME Terminal as it shares the same features but is lighter on SRU." %}
 
-## Terminator
+### Terminator
 {% include Links/image.html image="Terminator-0.98.png" width="1000px" float="none" description="Terminator 0.98 running under Moksha" %}
 {% include Links/links.html package="x11-terms/terminator" program="Terminator" link="https://launchpad.net/terminator" wp="Terminator_(terminal_emulator)" %} is a terminal emulator that uses the GTK toolkit and is written in Python. Compared to other terminal emulators its major advantage is that of window splitting. See, in most terminal emulators the only way you can open another terminal within the same window is by creating another tab (which is something Terminator can do to), which can be annoying if what you want to type into the other terminal is found in the one you are currently working in (as you cannot see what is in the current terminal when you open a new tab and start working in it), while with terminator you can show two terminals side-by-side in the same window, making it easier to work on two or more related things at a time. For example, here is a screenshot of Terminator with two windows in the one tab, with me working on my blog. In the first window I am running `bundle exec jekyll serve` and in the other I am doing the git side of managing my blog.
 
 {% include Links/image.html image="Terminator-0.98-window-splitting.png" float="none" width="1000px" description="Terminator 0.98 running under Moksha, while I work on my blog in both windows" %}
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, extra features can be added using plugins." sru="5." gist="24dd1c1a4fd65acfe2a9" overall="8" %}
 
-## Terminology
+### Terminology
 {% include Links/image.html image="Terminology-0.9.1.png" width="1000px" float="none" description="Terminology 0.9.1 running under Moksha" %}
 {% include Links/links.html package="x11-terms/terminology" program="Terminology" link="https://www.enlightenment.org/about-terminology" wp="Terminology_(software)" %} is the terminal emulator of the Enlightenment desktop environment. Compared to other GTEs it is less intuitive and can be irritating to get the ropes of, because of how different it is to other GTEs. My experience is fairly limited with it, due to the fact I find it frustrating and hence have usually opted for less irritating alternatives like Konsole and LXTerminal. Despite this it does seem quite customizable and feature-packed, in fact, on their [about page](https://www.enlightenment.org/about-terminology) at enlightenment.org, it even says you can view image files (including bitmap and vector images) in Terminology.  
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, can even view image files in it" sru="8." gist="cc49c4322790078ae7e0" overall="8" %}
 
-## Xfce Terminal
+### Xfce Terminal
 {% include Links/image.html image="Xfce-terminal.png" width="1000px" float="none" description="Xfce4 Terminal 0.6.3 running under Moksha" %}
 {% include Links/links.html package="x11-terms/xfce4-terminal" program="Xfce Terminal" link="http://docs.xfce.org/apps/terminal/start" wp="Terminal_(Xfce)" %} is the terminal emulator of Xfce. I have personally found it, despite using more RAM than LXTerminal, less customizable and feature-packed. It is based on the GTK+3 toolkit.
 
-### Rating(s)
+#### Rating(s)
 {% include_relative TE-ratings.html availability="10. Comes pre-installed on the Xfce edition of Sabayon" customizability="7. The keyboard shortcuts are not even customizable." features="7." sru="9." gist="f250f470f12f08613b54" overall="8" %}
 
-## Other Terminal Emulators
+### Other Terminal Emulators
 I have limited experience with drop-down terminals and X terminals like UXTerm and XTerm, hence I cannot really comment on anything but their system resource usage (SRU) and ease of installation. Here is a graph comparing RAM usage amongst GTEs, note that each of these GTEs are installable using Entropy:
 {% include Links/image.html image="RAM-usage-TEs.png" width="1000px" float="none" description="RAM usage of GTEs" %}
 
-# Free Help Resources
+## Free Help Resources
 * [Stack Overflow](http://stackoverflow.com/)[^8]
 * [Unix & Linux StackExchange](http://unix.stackexchange.com)[^9]
 
-# Further Reading
+## Further Reading
 {% include Layouts/note.html note1="All the following links are to free PDFs" %}
 * [Advanced Bash-Scripting Guide (2014) @ www.tldp.org](http://www.tldp.org/LDP/aBS/abs-guide.pdf)
 * [Bash Guide for Beginners (2008) @ www.tldp.org](http://www.tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
@@ -958,7 +958,7 @@ I have limited experience with drop-down terminals and X terminals like UXTerm a
 * [GNU/Linux Tools Summary (2006) @ www.tldp.org](http://www.tldp.org/LDP/GNU-Linux-Tools-Summary/GNU-Linux-Tools-Summary.pdf)
 * [GNU Core Utilities Manual (2015) @ www.gnu.org](http://www.gnu.org/software/coreutils/manual/coreutils.pdf) (helpful in explaining what GNU Core Utilities you can call from within your Bash scripts)
 
-# Footnotes
+## Footnotes
 [^1]: Henceforth I will refer to Unix/Unix-like systems, collectively, as &#42;nix systems.
 [^2]: Source: [email from 1987](https://groups.google.com/forum/#!original/comp.unix.questions/iNjWwkyroR8/yedr9yDWSuQJ)
 [^3]: Source: [Chet Ramey's Scribd document](http://www.scribd.com/doc/40556434/2010-10-31-Chet-Ramey-Early-Bash-Dates)
