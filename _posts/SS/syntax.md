@@ -3,12 +3,12 @@ The standard Unix shell syntax has several distinct components, which can be cla
 
 ### Unix Commands
 **Table 1** lists some basic Unix commands that are provided by the GNU Core Utilities package. Not all are listed, as I do not even understand them all.
-{% include_relative SS/table1-unix-commands.html %}
+{% include_relative table1-unix-commands.html %}
 <br/>
 
 ### Builtins
 Several Bash commands (or **builtins**) exist and some (but by no stretch of the imagination all &mdash; I do not even understand them all!) basic ones are explained in **Table 2**. It is worthwhile noting that all these commands are purely Bash commands, by this I mean, they do not call any command-line programs to do their work for them. See many commands you will see in Bash scripts are not Bash commands, *per se*, rather they are commands that use another command-line program such as `mv` or `pwd` to do the work, but they can be run from within Bash.
-{% include_relative SS/table2-builtins.html %}
+{% include_relative table2-builtins.html %}
 <br/>
 ### Conditionals
 In Bash scripts **conditionals** use the output of a test and perform an action accordingly. Conditionals usually involve at least one of the following keywords: `case`, `if`, `else`, `elseif` and `fi`.
@@ -18,7 +18,7 @@ In Bash scripts **conditionals** use the output of a test and perform an action 
 
 ### Keywords and Special Characters
 **Keywords and special characters** (**KSCs**) are an important concept to understand, they are words, or symbols, that have a special, set meaning when scripting in Bash. Examples are listed in **Table 3**.
-{% include_relative SS/table3-keywords-sc.html %}
+{% include_relative table3-keywords-sc.html %}
 `until`, `while` and `time` are some other keywords that are not mentioned there, as I do not know enough about them to really comment on them. Keywords can be used as variables but I would not advise this, as this can quite easily become confusing.
 
 ### Loops

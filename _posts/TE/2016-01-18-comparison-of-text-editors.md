@@ -30,31 +30,31 @@ to search all overlays (including the Portage Tree) run:
 On Manjaro Linux many, if not all of these text editors/IDEs, are also available from the [Arch User Repository](https://aur.archlinux.org) (AUR) or the Manjaro repositories. Unfortunately, pacman, does not use categories for its packages, so one cannot use this to search for TEs/IDEs. One can, however, use the graphical PkgBrowser program, which can be installed using the command:
 {% include Code/coder.html line1="pacman -S pkgbrowser" %}
 to show the text editors in the pacman repositories go to the `Categories` menu, press the `app` submenu and then the `editor` submenu under there.
-{% include_relative TE/glossary.md %}
-{% include_relative TE/comparisons.md %}
-{% include_relative TE/atom.md %}
-{% include_relative TE/bluefish.md %}
-{% include_relative TE/codeblocks.md %}
-{% include_relative TE/codelite.md %}
-{% include_relative TE/eclipse.md %}
-{% include_relative TE/emacs.md %}
-{% include_relative TE/eric.md %}
-{% include_relative TE/geany.md %}
-{% include_relative TE/gedit.md %}
-{% include_relative TE/intellijidea.md %}
-{% include_relative TE/jedit.md %}
-{% include_relative TE/kate.md %}
-{% include_relative TE/kdevelop.md %}
-{% include_relative TE/komodoedit.md %}
-{% include_relative TE/leafpad.md %}
-{% include_relative TE/mousepad.md %}
-{% include_relative TE/nano.md %}
-{% include_relative TE/netbeans.md %}
-{% include_relative TE/ninjaide.md %}
-{% include_relative TE/pluma.md %}
-{% include_relative TE/pycharm.md %}
-{% include_relative TE/scite.md %}
-{% include_relative TE/vim.md %}
+{% include_relative glossary.md %}
+{% include_relative comparisons.md %}
+{% include_relative atom.md %}
+{% include_relative bluefish.md %}
+{% include_relative codeblocks.md %}
+{% include_relative codelite.md %}
+{% include_relative eclipse.md %}
+{% include_relative emacs.md %}
+{% include_relative eric.md %}
+{% include_relative geany.md %}
+{% include_relative gedit.md %}
+{% include_relative intellijidea.md %}
+{% include_relative jedit.md %}
+{% include_relative kate.md %}
+{% include_relative kdevelop.md %}
+{% include_relative komodoedit.md %}
+{% include_relative leafpad.md %}
+{% include_relative mousepad.md %}
+{% include_relative nano.md %}
+{% include_relative netbeans.md %}
+{% include_relative ninjaide.md %}
+{% include_relative pluma.md %}
+{% include_relative pycharm.md %}
+{% include_relative scite.md %}
+{% include_relative vim.md %}
 
 ## Poll
 <div id="debate_1_2324434"></div>

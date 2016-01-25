@@ -2,7 +2,7 @@
 {% include Links/image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under DDE" %}
 
 ### Background
-{% include_relative TE/links.md link="https://atom.io" gr="https://github.com/atom/atom" forum="https://discuss.atom.io" program="Atom" package="app-editors/atom" aw="Atom" wp="Atom_(text_editor)" irc="#atom" aurs="atom-editor" sw="Atom" ml="https://atom.io/docs/latest/" %} is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unique amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
+{% include_relative links.md link="https://atom.io" gr="https://github.com/atom/atom" forum="https://discuss.atom.io" program="Atom" package="app-editors/atom" aw="Atom" wp="Atom_(text_editor)" irc="#atom" aurs="atom-editor" sw="Atom" ml="https://atom.io/docs/latest/" %} is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unique amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
 
 ### Customizability
 {% include Links/image.html image="atom-packages-homepage-20160108.png" width="1130px" float="none" description="[Atom Packages Repository Homepage](https://atom.io/packages), note the current count of packages (themes and plugins included) is 3,433." %}
@@ -81,4 +81,4 @@ If you are using some other platform, or for whatever reason none of the methods
 * Slow to start, although with the release of version 1.3.0 the start time has been supposedly cut by 20-30%.[^1] I personally have not noticed any such improvement, although I cannot say for certain I would even if there was such an improvement.
 
 ### Summary
-{% include_relative TE/atom-summary.html %}
+{% include_relative atom-summary.html %}

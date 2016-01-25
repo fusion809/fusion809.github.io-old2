@@ -2,7 +2,7 @@
 {% include Links/image.html image="jEdit-screenshot.png" description="jEdit 5.2.0 running under Moksha" width="1130px" float="none" %}
 
 ### Background
-{% include_relative TE/links.md program="jEdit" package="app-editors/jedit" link="http://www.jedit.org/" sf="jedit" ml="http://www.jedit.org/users-guide/" sr="http://sourceforge.net/p/jedit/svn/HEAD/tree/" wp="jEdit" pacman="community/x86_64/jedit/" %} is a Java-based text editor that began life in 1998, when Slava Pestov started developing it. Pestov later left the project in 2006, when he handed the reigns to the free software community. jEdit provides syntax highlighting for dozens of computer languages so far, and can be customized using scripts written in a variety of different programming languages such as JavaScript and Jython. As it is written in Java it can run on any Java-capable platform, including Manjaro and Sabayon.
+{% include_relative links.md program="jEdit" package="app-editors/jedit" link="http://www.jedit.org/" sf="jedit" ml="http://www.jedit.org/users-guide/" sr="http://sourceforge.net/p/jedit/svn/HEAD/tree/" wp="jEdit" pacman="community/x86_64/jedit/" %} is a Java-based text editor that began life in 1998, when Slava Pestov started developing it. Pestov later left the project in 2006, when he handed the reigns to the free software community. jEdit provides syntax highlighting for dozens of computer languages so far, and can be customized using scripts written in a variety of different programming languages such as JavaScript and Jython. As it is written in Java it can run on any Java-capable platform, including Manjaro and Sabayon.
 
 ### Customizability
 It is extensively customizable, via scripts in supported languages. Several plugins, that provide extra functionality, are available via a built-in plugin installer (under the "Plugins" menu).
@@ -32,4 +32,4 @@ while to install it using Portage run:
 * Heavy on system resources.
 
 ### Summary
-{% include_relative TE/jedit-summary.html %}
+{% include_relative jedit-summary.html %}

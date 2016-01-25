@@ -2,7 +2,7 @@
 {% include Links/image.html image="GNU-Emacs.png" description="GNU Emacs running under Moksha" float="none" width="1130px" %}
 
 ### Background
-{% include_relative TE/links.md program="GNU Emacs" package="app-editors/emacs" wp="GNU_Emacs" gw="GNU_Emacs" aw="Emacs" pacman="extra/x86_64/emacs/" ml="https://www.gnu.org/software/emacs/manual/" wiki="http://www.emacswiki.org/" link="https://www.gnu.org/software/emacs" gr="http://git.savannah.gnu.org/cgit/emacs.git" %} is an extensively-customizable text editor that is developed as part of the GNU Project. Its original developer was Richard Stallman, the founder of the GNU Project and its first release was in 1985. It belongs to a family of text editors called Emacs, which are text editors that are extensively customizable for users with sufficient programming knowledge. Emacs is abbreviated from <b>E</b>ditor <b>Mac</b>ro<b>s</b>, which refers to its origin as editor macros for the TECO text editor, that were developed, in part, by Richard Stallman. GE is written in C and Emacs Lisp (ELisp), a dialect of the Lisp programming language devised just for GE. ELisp is used to write extensions and provide extra functionalities for GE and related text editors like XEmacs.
+{% include_relative links.md program="GNU Emacs" package="app-editors/emacs" wp="GNU_Emacs" gw="GNU_Emacs" aw="Emacs" pacman="extra/x86_64/emacs/" ml="https://www.gnu.org/software/emacs/manual/" wiki="http://www.emacswiki.org/" link="https://www.gnu.org/software/emacs" gr="http://git.savannah.gnu.org/cgit/emacs.git" %} is an extensively-customizable text editor that is developed as part of the GNU Project. Its original developer was Richard Stallman, the founder of the GNU Project and its first release was in 1985. It belongs to a family of text editors called Emacs, which are text editors that are extensively customizable for users with sufficient programming knowledge. Emacs is abbreviated from <b>E</b>ditor <b>Mac</b>ro<b>s</b>, which refers to its origin as editor macros for the TECO text editor, that were developed, in part, by Richard Stallman. GE is written in C and Emacs Lisp (ELisp), a dialect of the Lisp programming language devised just for GE. ELisp is used to write extensions and provide extra functionalities for GE and related text editors like XEmacs.
 
 ### Customizability
 GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only.
@@ -33,4 +33,4 @@ while to install it with Portage run:
 * Has an unconventional keymap, which can take some time to learn. For example, to cut text you use <kbd>Ctrl+W</kbd>, as opposed to the usual <kbd>Ctrl+X</kbd>, while to paste text you use <kbd>Ctrl+Y</kbd>.
 
 ### Summary
-{% include_relative TE/emacs-summary.html %}
+{% include_relative emacs-summary.html %}

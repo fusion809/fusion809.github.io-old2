@@ -5,11 +5,11 @@
 ### Assembly Language
 **Assembly language** is a low-level programming language that has a very strong correspondence to machine code. Due to this, it is very hardware-specific &mdash; an assembly language for one processor may not work for another. The only  program that I am aware of that is written, even partly, in assembly language is the Linux kernel. Although, I know other programs written in Assembly do exist, after all it is listed in the [TIOBE top 20 programming language (by popularity) list][1], I just cannot personally name them.
 
-{% include_relative PL/bash.md %}
+{% include_relative bash.md %}
 
-{% include_relative PL/c.md %}
+{% include_relative c.md %}
 
-{% include_relative PL/cpp.md %}
+{% include_relative cpp.md %}
 
 ### C Sharp
 {% include Layouts/note.md note1="The use of the name <b>C Sharp</b>, is because of technical restrictions, the correct name is C#" %}
@@ -27,7 +27,7 @@
 ### Groovy
 {% include Links/links.html program="Groovy" package="dev-java/groovy" %} is a programming language that is specifically designed to work on the Java platform, wherein it serves predominantly as a scripting language, that interfaces with Java to modify program behaviour, extract data, *etc.*
 
-{% include_relative PL/java.md %}
+{% include_relative java.md %}
 
 ### JavaScript
 **JavaScript** (**JS**) is a cross-platform web-oriented programming language that is used primarily for the purpose of controlling the behaviour of web pages. Despite this it can be used for non-web applications. For example, the text editor I am using to write this blog post, [Atom](https://atom.io), is written predominantly in JavaScript and its close lesser-used relative, CoffeeScript. JavaScript was also used to write extensions for the Deepin Desktop Environment. Despite being an interpreted language it is usually rated as one of the fastest high-level programming languages around.
@@ -38,7 +38,7 @@
 ### Lua
 {% include Links/links.html program="Lua" package="dev-lang/lua" category="dev-lua" %} is a lightweight programming language that is primarily used for scripting in web development applications. The two examples of its use that I have come across, personally (out of the hundreds out there), are its use to improve the efficiency of MediaWiki templates using the [Scribunto extension](https://www.mediawiki.org/wiki/Extension:Scribunto) and its use by the [Awesome Window Manager](https://en.wikipedia.org/wiki/Awesome_(window_manager)) (where it is used to extend functionality).
 
-{% include_relative PL/matlab.md %}
+{% include_relative matlab.md %}
 
 ### Objective-C
 {% include Links/links.html program="Objective-C" wp="Objective-C" link="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" %} is a programming language that belongs to the C family of programming language and is primarily object-oriented in its paradigm. It is one of the main languages that Apple's OS X is written in. The most popular free Objective-C compiler is probably GCC.
@@ -55,7 +55,7 @@ Very few are written, predominantly, in Pascal itself, the only program I recogn
 ### PHP
 {% include Links/links.html program="PHP" package="dev-lang/php" category="dev-php" %} is a server-side scripting language that is primarily intended for web development. Most web applications will use PHP to some extent, prominent examples of such applications include: [MediaWiki](https://www.mediawiki.org), a software application that powers several Wiki websites including all the Wikimedia Foundation websites (such as Wikipedia, for example) and [WordPress](https://wordpress.org), an application that powers many blogs and personal websites on the web. It is a copyleft licensed under the PHP License.
 
-{% include_relative PL/python.md %}
+{% include_relative python.md %}
 
 ### R
 {% include Links/links.html program="R" package="dev-lang/R" %} is an interpreted programming language designed for statistical computing, that was first developed in 1993 by two New Zealand programmers and statisticians and is now developed as part of the GNU Project. It is licensed under the GNU GPL.

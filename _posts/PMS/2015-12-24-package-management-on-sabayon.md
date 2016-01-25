@@ -13,35 +13,35 @@ Often, on this blog, I write posts regarding installing software with Sabayon's 
 
 This post will cover some of the basics of using Entropy and Portage individually and how to use them together, in the safest way possible. It will also cover other related topics like using Layman to add overlays and the basics on how to write ebuilds. You will probably notice that the command-line is featured heavily in this article, with little mention (usually all they will get is about a sentence mention each, if they are really notable) of graphical user interface (GUI) front-ends for these programs, this is because I tend to find command-line front-ends for package managers are more stable than their graphical counterparts.
 
-{% include_relative PMS/Glossary.md %}
+{% include_relative Glossary.md %}
 
 ## Preliminaries
 Entropy, Layman and Portage are all written in Python, Bash script and to smaller extents other programming languages like C. [Entropy](#entropy) is maintained by Fabio Erculiani and other developers of Sabayon, while [Layman](#layman) and [Portage](#portage) are both maintained by the Gentoo community. This section will cover some of the preliminary information for each of these programs, including their command-line syntax, so as to make the rest of this post easier to understand.
 
-{% include_relative PMS/Portage.md %}
+{% include_relative Portage.md %}
 
-{% include_relative PMS/ebuilds.md %}
+{% include_relative ebuilds.md %}
 
-{% include_relative PMS/Layman.md %}
+{% include_relative Layman.md %}
 <br/>
-{% include_relative PMS/Entropy.md %}
+{% include_relative Entropy.md %}
 <br/>
-{% include_relative PMS/gentoolkit.md %}
-{% include_relative PMS/q-applets.md %}
-{% include_relative PMS/mixing-entropy-and-portage.md %}
+{% include_relative gentoolkit.md %}
+{% include_relative q-applets.md %}
+{% include_relative mixing-entropy-and-portage.md %}
 
-{% include_relative PMS/ebuild-writing.md %}
+{% include_relative ebuild-writing.md %}
 
 {% capture my_capture %}
 ## The Algorithm
 If you come across a program you want to install on your Sabayon machine (and you know it is compatible with Linux systems) the following is an algorithm I would suggest you follow to install it.
 {% endcapture %}{{ my_capture | markdownify }}
-{% include_relative PMS/algorithm.html %}
+{% include_relative algorithm.html %}
 
 ### Examples
-{% include_relative PMS/openra.md %}
-{% include_relative PMS/supertux.md %}
-{% include_relative PMS/enlightenment.md %}
+{% include_relative openra.md %}
+{% include_relative supertux.md %}
+{% include_relative enlightenment.md %}
 
 ## Acknowledgements
 I would like to thank pontiki from the {% include Links/irc.html channel="jekyll" %} channel for some help with the formatting of this post and floppym from the {% include Links/irc.html channel="gentoo-dev-help" %} channel for providing the Bash script for use searching the Portage Tree for specific examples.

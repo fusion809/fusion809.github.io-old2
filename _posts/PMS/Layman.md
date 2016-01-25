@@ -25,6 +25,6 @@ For example, for my overlay [`sabayon-tools`](https://github.com/fusion809/sabay
 {% include Code/coder.html line1="layman -o https://raw.githubusercontent.com/fusion809/sabayon-tools/master/overlays.xml -f -a sabayon-tools "%}
 or as it is now in the Layman remote list (per {% include Links/genbug.md punc=")" id="566188" %} you could add it with:
 {% include Code/coder.html line1="layman -a sabayon-tools" %}
-{% include_relative PMS/table4-options-for-layman.html %}
+{% include_relative table4-options-for-layman.html %}
 <br/>
-{% include_relative PMS/table5-actions-for-layman.html %}
+{% include_relative table5-actions-for-layman.html %}

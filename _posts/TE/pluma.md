@@ -2,7 +2,7 @@
 {% include Links/image.html image="Pluma-1.8.1-running-under-Mokhsa.png" description="pluma 1.8.1 running under Moksha" float="none" width="1130px" %}
 
 ### Background
-{% include_relative TE/links.md program="pluma" package="app-editors/pluma" pacman="extra/x86_64/pluma/" gr="https://github.com/mate-desktop/pluma" wp="Pluma_(editor)" %} is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.
+{% include_relative links.md program="pluma" package="app-editors/pluma" pacman="extra/x86_64/pluma/" gr="https://github.com/mate-desktop/pluma" wp="Pluma_(editor)" %} is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.
 
 ### Customizability
 Some customization (to the theme or adding some plugins) can be done by going to Edit→Preferences.
@@ -31,4 +31,4 @@ or with Portage by running:
 * Customization options are fairly limited
 
 ### Summary
-{% include_relative TE/pluma-summary.html %}
+{% include_relative pluma-summary.html %}

@@ -894,7 +894,7 @@ The following section will involve me comparing the various graphical terminal e
 {% include Links/links.html package="x11-terms/gnome-terminal" program="GNOME Terminal" link="https://wiki.gnome.org/Apps/Terminal" wp="GNOME Terminal" %} is a GTE that is part of the GNOME Core Applications suite. It is written in C and licensed under GNU GPLv2. I find it, like most GNOME Core Applications fairly feature-packed, with several customization options being available for the terminal window. These include custom keyboard shortcuts, colour schemes, fonts and behaviours.
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="10. Comes pre-installed on GNOME edition of Sabayon. Also available from the Entropy Store." customizability="8" features="8" sru="8." gist="d0e2ea07a2def192cacc" overall="9" %}
+{% include_relative TE-ratings.html availability="10. Comes pre-installed on GNOME edition of Sabayon. Also available from the Entropy Store." customizability="8" features="8" sru="8." gist="d0e2ea07a2def192cacc" overall="9" %}
 
 ## Konsole
 {% include Links/image.html image="Konsole-15.08.2.png" width="1000px" description="Konsole 15.08.2 running under Moksha" float="none" %}
@@ -903,21 +903,21 @@ The following section will involve me comparing the various graphical terminal e
 {% include Links/image.html image="Konsole-purple-tab-colour.png" width="1000px" float="none" description="Konsole showing the purple/pink tab highlighting. Note, how the first tab with its title starting with <code>...09@brenton-pc</code> is coloured purple/pink, this indicates that it has unread output" %}
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="10. Comes preinstalled on the KDE edition of Sabayon and available from the Entropy Store." customizability="9." sru="8." features="9." overall="9" gist="b03ca0f3e5e6b961ed19" %}
+{% include_relative TE-ratings.html availability="10. Comes preinstalled on the KDE edition of Sabayon and available from the Entropy Store." customizability="9." sru="8." features="9." overall="9" gist="b03ca0f3e5e6b961ed19" %}
 
 ## LXTerminal
 {% include Links/image.html image="LXTerminal-0.2.0.png" description="LXTerminal 0.2.0 running under Moksha" width="1000px" float="none" %}
 {% include Links/links.html package="lxde-base/lxterminal" program="LXTerminal" link="http://wiki.lxde.org/en/LXTerminal" %} is a terminal emulator that is part of the core applications suite of LXDE. It uses the GTK+2 toolkit and while lightweight still has a few of the features that more advanced terminal emulators like Konsole boast. These include: ability to customize keyboard shortcuts and fonts (although a custom colour scheme is not permitted).
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="8, available in the Entropy Store but not preinstalled on any official Sabayon edition." customizability="8" features="8" sru="9." gist="74f4c3c54450760623d2" overall="8" %}
+{% include_relative TE-ratings.html availability="8, available in the Entropy Store but not preinstalled on any official Sabayon edition." customizability="8" features="8" sru="9." gist="74f4c3c54450760623d2" overall="8" %}
 
 ## MATE Terminal
 {% include Links/image.html image="MATE-Terminal-1.8.1.png" description="MATE Terminal 1.8.1 running under MATE" width="1000px" float="none" %}
 {% include Links/links.html package="x11-terms/mate-terminal" program="MATE Terminal" link="https://github.com/mate-desktop/mate-terminal" %} is a terminal emulator that is part of the core application suite of MATE, a fork of GNOME 2. Consequently the MATE Terminal is based on the GTK+2 toolkit. Unlike most terminal emulators (in fact all of them mentioned in this post) I have found it does not work under Moksha. See whenever I run `mate-terminal` I get segmentation fault messages.
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="10. Installed, by default, on Sabayon MATE edition." customizability="8. Shares many of the same customizability options of GNOME Terminal." features="8. Same features as GNOME Terminal." sru="9. Like most MATE components it is fairly lightweight." gist="b345c67359307ff5bc17" overall="9. To me the fact that it does not work on Moksha is a big drawback, if for you it launches fine on your desktop of choice, it would probably be a better option than GNOME Terminal as it shares the same features but is lighter on SRU." %}
+{% include_relative TE-ratings.html availability="10. Installed, by default, on Sabayon MATE edition." customizability="8. Shares many of the same customizability options of GNOME Terminal." features="8. Same features as GNOME Terminal." sru="9. Like most MATE components it is fairly lightweight." gist="b345c67359307ff5bc17" overall="9. To me the fact that it does not work on Moksha is a big drawback, if for you it launches fine on your desktop of choice, it would probably be a better option than GNOME Terminal as it shares the same features but is lighter on SRU." %}
 
 ## Terminator
 {% include Links/image.html image="Terminator-0.98.png" width="1000px" float="none" description="Terminator 0.98 running under Moksha" %}
@@ -926,21 +926,21 @@ The following section will involve me comparing the various graphical terminal e
 {% include Links/image.html image="Terminator-0.98-window-splitting.png" float="none" width="1000px" description="Terminator 0.98 running under Moksha, while I work on my blog in both windows" %}
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, extra features can be added using plugins." sru="5." gist="24dd1c1a4fd65acfe2a9" overall="8" %}
+{% include_relative TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, extra features can be added using plugins." sru="5." gist="24dd1c1a4fd65acfe2a9" overall="8" %}
 
 ## Terminology
 {% include Links/image.html image="Terminology-0.9.1.png" width="1000px" float="none" description="Terminology 0.9.1 running under Moksha" %}
 {% include Links/links.html package="x11-terms/terminology" program="Terminology" link="https://www.enlightenment.org/about-terminology" wp="Terminology_(software)" %} is the terminal emulator of the Enlightenment desktop environment. Compared to other GTEs it is less intuitive and can be irritating to get the ropes of, because of how different it is to other GTEs. My experience is fairly limited with it, due to the fact I find it frustrating and hence have usually opted for less irritating alternatives like Konsole and LXTerminal. Despite this it does seem quite customizable and feature-packed, in fact, on their [about page](https://www.enlightenment.org/about-terminology) at enlightenment.org, it even says you can view image files (including bitmap and vector images) in Terminology.  
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, can even view image files in it" sru="8." gist="cc49c4322790078ae7e0" overall="8" %}
+{% include_relative TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, can even view image files in it" sru="8." gist="cc49c4322790078ae7e0" overall="8" %}
 
 ## Xfce Terminal
 {% include Links/image.html image="Xfce-terminal.png" width="1000px" float="none" description="Xfce4 Terminal 0.6.3 running under Moksha" %}
 {% include Links/links.html package="x11-terms/xfce4-terminal" program="Xfce Terminal" link="http://docs.xfce.org/apps/terminal/start" wp="Terminal_(Xfce)" %} is the terminal emulator of Xfce. I have personally found it, despite using more RAM than LXTerminal, less customizable and feature-packed. It is based on the GTK+3 toolkit.
 
 ### Rating(s)
-{% include_relative BS/TE-ratings.html availability="10. Comes pre-installed on the Xfce edition of Sabayon" customizability="7. The keyboard shortcuts are not even customizable." features="7." sru="9." gist="f250f470f12f08613b54" overall="8" %}
+{% include_relative TE-ratings.html availability="10. Comes pre-installed on the Xfce edition of Sabayon" customizability="7. The keyboard shortcuts are not even customizable." features="7." sru="9." gist="f250f470f12f08613b54" overall="8" %}
 
 ## Other Terminal Emulators
 I have limited experience with drop-down terminals and X terminals like UXTerm and XTerm, hence I cannot really comment on anything but their system resource usage (SRU) and ease of installation. Here is a graph comparing RAM usage amongst GTEs, note that each of these GTEs are installable using Entropy:
@@ -952,7 +952,7 @@ I have limited experience with drop-down terminals and X terminals like UXTerm a
 
 # Further Reading
 {% include Layouts/note.html note1="All the following links are to free PDFs" %}
-* [Advanced Bash-Scripting Guide (2014) @ www.tldp.org](http://www.tldp.org/LDP/abs/abs-guide.pdf)
+* [Advanced Bash-Scripting Guide (2014) @ www.tldp.org](http://www.tldp.org/LDP/aBS/abs-guide.pdf)
 * [Bash Guide for Beginners (2008) @ www.tldp.org](http://www.tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
 * [Bash Official Manual (2014) @ www.gnu.org](http://www.gnu.org/software/bash/manual/bash.pdf)
 * [GNU/Linux Tools Summary (2006) @ www.tldp.org](http://www.tldp.org/LDP/GNU-Linux-Tools-Summary/GNU-Linux-Tools-Summary.pdf)
