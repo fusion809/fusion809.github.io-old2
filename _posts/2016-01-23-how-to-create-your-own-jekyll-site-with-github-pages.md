@@ -110,7 +110,7 @@ All posts should include the YAML front matter, which is explained in greater de
 
 ## Editing your Jekyll Site
 {% include Links/image.html image="Using-Atom-1.4.0-to-edit-Jekyll-site.png" width="1130px" float="none" description="<i>The Hornery</i> opened in Atom 1.4.0" %}
-Jekyll sites are essentially just GitHub repositories that contain several markup and source code files that can be edited in any text editor or through GitHub's web-based interface. The way I edit *The Hornery* is by Git cloning its repository, editing its markup and source code files with Atom and then committing any changes upstream with Git, after first testing for errors by [running Jekyll locally](#running-jekyll-locally). Jekyll can also be edited from the command-line with GNU nano or Vim and then commit upstream with Git.
+Jekyll sites are essentially just GitHub repositories that contain several markup and source code files that can be edited in any text editor or through GitHub's web-based interface. The way I edit *The Hornery* is by Git cloning its repository, editing its markup and source code files with Atom and then committing any changes upstream with Git, after first testing for errors by [running Jekyll locally](#running-jekyll-locally). Jekyll can also be edited from the command-line with GNU nano or Vim, although one would still need commit any changes upstream with Git. I use the `push` function to push these changes upstream. 
 
 ## External Resources
 * [Creating pages](http://jekyllrb.com/docs/pages/)
