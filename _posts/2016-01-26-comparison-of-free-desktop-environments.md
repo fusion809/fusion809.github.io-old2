@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "A Comparison of Free Desktop Environments"
-date:       2016-01-26 +1000
+date:       2016-01-30 +1000
 categories: linux, desktop-environments, comparisons
 redirect_from:
   - /comparison-of-free-desktop-environments/
