@@ -16,6 +16,7 @@ Almost all frequently-encountered modern **Linux distributions** (LDs) come with
 * [**Budgie Desktop**](#budgie-desktop) &mdash; a desktop environment used by Solus OS, which resembles the user interface of Chrome OS. It is built on a GNOME 3 base.
 * [**Cinnamon**](#cinnamon) &mdash; a GNOME 3 fork with a more traditional user interface that is developed for use as Linux Mint's default desktop.
 * [**Deepin Desktop Environment**](#deepin-desktop-environment) (**DDE**) &mdash; a desktop environment developed for Deepin, a Debian and formerly Ubuntu-based Linux distribution originating from China.
-* [**Enlightenment**](#enlightenment) &mdash; a feature-packed eye-candy stacking window manager originally developed in the mid 1990s.
+* [**Enlightenment**](#enlightenment) &mdash; a feature-packed eye-candy stacking window manager originally developed in the mid 1990s. It is the most popular standalone window manager (not associated with any particular desktop environment) that has become Wayland-compatible.
 * [**Fluxbox**](#fluxbox) &mdash; a lightweight and simple window manager.
-* [**GNOME**](#gnome) &mdash; a more complete desktop environment. 
+* [**GNOME**](#gnome) &mdash; a DE that is developed as part of the GNU Project, it and KDE are two of the "main" Linux DEs. It is built using the GTK+ toolkit. It has mad
+* [**KDE**](#kde) &mdash; a DE based on the Qt toolkit
