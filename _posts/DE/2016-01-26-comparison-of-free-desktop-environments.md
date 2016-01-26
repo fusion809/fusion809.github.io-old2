@@ -23,10 +23,13 @@ Almost all frequently-encountered modern **Linux distributions** (LDs) come with
 * [**i3**](#i3) &mdash; a dynamic tiling WM that is oriented towards advanced users that is lightweight and extensively configurable.
 * [**KDE**](#kde) &mdash; a DE based on the Qt widget toolkit that is extensively customizable and beginner-friendly. Its Wayland compatibility is still in its infancy.
 * [**Lumina**](#lumina) &mdash; a DE originally developed for use by FreeBSD and its derivatives like PC-BSD. It is based on the Qt toolkit and Fluxbox window manager.
-* [**LXDE**](#lxde) &mdash; a lightweight DE based on the GTK+2 toolkit with energy-saving features.
+* [**LXDE**](#lxde) &mdash; a lightweight DE based on the GTK+2 toolkit with energy-saving features. An experimental GTK+3 based version is available on Arch Linux.
 * [**LXQt**](#lxqt) &mdash; a lightweight DE based on the Qt toolkit, that was developed when the chief developer of LXDE frustrated with issues relating to the new GTK+3 toolkit, decided to switch the DE to Qt4 and then Qt5.
 * [**MATE**](#mate) &mdash; a lightweight DE forked from GNOME 2. It was developed due to frustrations over the untraditional user interface of GNOME 3.
 * [**Moksha**](#moksha) &mdash; an E17 fork used by the Ubuntu derivative, Bodhi Linux.
-* [**Pantheon**](#pantheon) &mdash; the default desktop environment of elementary OS, written in Vala and using the GTK+3 toolkit.
+* [**Pantheon**](#pantheon) &mdash; the default desktop environment of elementary OS, written in Vala and uses the GTK+3 toolkit.
 * [**Trinity Desktop Environment**](#trinity-desktop-environment) (**TDE**) &mdash; a KDE 3.5 fork maintained by a small team of developers.
-* [**Unity**](#unity) &mdash; a desktop environment based on GNOME.
+* [**Unity**](#unity) &mdash; a desktop environment based on GNOME that is used by Ubuntu.
+* [**Xfce**](#xfce) &mdash; a lightweight desktop environment based on GTK+.
+
+{% include_relative glossary.md %}
