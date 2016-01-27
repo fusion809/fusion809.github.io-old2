@@ -11,4 +11,5 @@ All configuration must be done by editing files in the `~/.config/awesome` folde
 
 ### Obtaining It
 awesome is found in the official repositories of the vast majority of Linux distributions, including:
-* Arch Linux / Manjaro Linux (its name is {% include ArchLinux/search.md package="awesome" %} so run {% include Code/coders.html line1="pacman -S awesome --noconfirm" %} to install it)
+* {% include ArchLinux/search.md package="awesome" %}
+* Debian (its name is {% include Debian/search.md package="awesome" %})
