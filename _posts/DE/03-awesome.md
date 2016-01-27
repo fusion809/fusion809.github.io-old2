@@ -19,3 +19,4 @@ awesome is found in the official repositories of the vast majority of Linux dist
 * {% include Search/fedora.md package="awesome" %}
 * {% include Search/opensuse.md package="awesome" %}
 * {% include Search/sabayon.md package="x11-wm/awesome" %}
+oddly it does not seem that Mageia has an awesome package, look at [this search](http://madb.mageia.org/package/list/t_search/awesome).
