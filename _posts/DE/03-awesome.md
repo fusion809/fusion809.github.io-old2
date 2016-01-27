@@ -14,7 +14,8 @@ awesome is found in the official repositories of the vast majority of Linux dist
 * {% include Search/debian.md package="awesome" %}
 * {% include Search/arch.md package="awesome" %}
 * {% include Search/ubuntu.md package="awesome" %}
+* {% include Search/gentoo.md package="x11-wm/awesome" %}
 * {% include Search/centos.md package="awesome" %}
 * {% include Search/fedora.md package="awesome" %}
-* {% include Search/gentoo.md package="x11-wm/awesome" %}
 * {% include Search/opensuse.md package="awesome" %}
+* {% include Search/sabayon.md package="x11-wm/awesome" %}
