@@ -1,4 +1,5 @@
 ## Glossary
+### [Desktop Environment](https://en.wikipedia.org/wiki/Desktop_environment)
 The definition of a desktop environment (DE) varies according to whom you ask, but I will define a DE as a GUI consisting of at least three base components:
 
 * **Display server**/**Windowing system** (**DS**/**WS**): which create and maintain windows within a GUI. The most popular examples on Linux platforms are Wayland and the X Window System.
