@@ -1,0 +1,7 @@
+## Ratings
+Each section (each focusing on a separate DE/WM) has a subsection wherein I give numerical ratings to give a summary as to the various properties of the DE/WM, and often I will also include a comment as to why I gave such a rating. These ratings are from 0 to 10 and each, except for the *overall* rating, are independent of one another. For example, *customizability* refers to the DE/WM's customizability, without taking into account how easy it would be for a newcomer to customize it, just how customizable it is to an experienced user that knows what they are doing. These properties are:
+* **Availability**: how easy is it to get this DE/WM on the more popular Linux distros.
+* **Beginner-friendliness**: how easy is it for a Linux newcomer to get the "hang" of this DE/WM without any prior knowledge or experience with technology.
+* **Customizability**: how extensively, can this DE/WM be customized?
+* **Features**: how feature-packed is this DE/WM? If it has a core applications suite this would count in its favour here.
+* <abbr title="My Experience With It">**MEWI**</abbr>: how much experience do I have with it, personally. This is included to give one a gage on how much weight should be attached to my opinion and comments of the DE/WM. If I have hardly even used the DE/WM there is a greater chance that some of my comments or my opinion, may not be quite as accurate as it would be if I had more experience with it.

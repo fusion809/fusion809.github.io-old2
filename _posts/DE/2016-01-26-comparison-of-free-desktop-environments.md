@@ -15,4 +15,6 @@ redirect_from:
 
 {% include_relative 02-glossary.md %}
 
-{% include_relative 03-awesome.md %}
+{% include_relative 03-ratings.md %}
+
+{% include_relative 04-awesome.md %}
