@@ -27,5 +27,5 @@ oddly it does not seem that Mageia has an awesome package, look at [this search]
 * **Customizability**: 9. Very customizable.
 * **Features**: &gt;8. Additional features are added via editing `rc.lua`.
 * <abbr title="My Experience With It">**MEWI**</abbr>: 1.
-* **System Resource Usage**: 8. Very lightweight, when installed it takes up no more than 3 MB and is no bigger than a 1 MB download on most platforms. Its `ps_mem` table on an Arch VM, using its default config file is: {% include Code/gist.html id="" %}
+* **System Resource Usage**: 8. Very lightweight, when installed it takes up no more than 3 MB and is no bigger than a 1 MB download on most platforms. Its `ps_mem` table on an Arch VM, using its default config file is: {% include Code/gist.html id="d97092ccf6baf11e5016" %}
 * **Overall**: 4. My rating is so low as I put a premium on beginner-friendliness.
