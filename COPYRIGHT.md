@@ -7,3 +7,5 @@ Original content, provided by this repository's author, fusion809 (Brenton Horne
 [Gentoo-Linux-12.0.jpg](/images/Gentoo-Linux-12.0.jpg) was taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gentoo12.0.jpg) and is licensed under the [the Creative Commons Attribution-Share Alike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/deed.en), with its original author being [Sam Benny M](https://commons.wikimedia.org/wiki/User:Msambenny).
 
 [Supertux-checkpoint.png](/images/Supertux-checkpoint.png) was also taken from [Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/4/4a/Supertux-checkpoint.png) and is licensed under the GNU Free Documentation License, Version 1.2 with the copyright holder being the SuperTux development team.
+
+[Pengw-awesome-screenshot-20150215.png](http://awesome.naquadah.org/w/images/Pengw-awesome-screenshot-20150215.png) was taken from the awesome wiki and is licensed under [CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/).
