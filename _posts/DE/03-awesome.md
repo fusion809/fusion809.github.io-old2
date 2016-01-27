@@ -1,2 +1,10 @@
 ## awesome
-The [**awesome window manager**](http://awesome.naquadah.org/) is a [dynamic window manager](https://en.wikipedia.org/wiki/Dynamic_window_manager) developed by Julien Danjou and others, that is oriented towards more advanced users. See unlike more beginner-friendly WMs, which can be configured graphically, awesome must be configured using Lua scripts. Now my knowledge of Lua is in its infancy, so needless to say my experience with awesome is also fairly limited. What I do know about Lua is that it is easier to learn than lower-level languages like C, C++ or Java.
+{% include Links/image.html image="Pengw-awesome-screenshot-20150215.png" width="1130px" float="none" %}
+
+### Background
+The [**awesome window manager**](http://awesome.naquadah.org/) is a [dynamic window manager](https://en.wikipedia.org/wiki/Dynamic_window_manager) for the X Window System that is developed by Julien Danjou and others, that is oriented towards more advanced users. See unlike more beginner-friendly WMs, which can be configured graphically, awesome must be configured using Lua scripts. Now my knowledge of Lua is in its infancy, so needless to say my experience with awesome is also fairly limited. What I do know about Lua is that it is easier to learn than lower-level languages like C, C++ or Java, so while awesome is not the best choice for programming-nohopers it may be possible for someone that does not understand Lua, that has the time and willingness to learn, to pick it up while using awesome. A tutorials for newcomers to awesome can be found [here](http://awesome.naquadah.org/wiki/My_first_awesome).
+
+awesome was originally forked from [dwm](https://en.wikipedia.org/wiki/Dwm), a very basic dynamic window manager, in 2007 and named jdwm with the "jd" in its name coming from Danjou's initials. Later that year it was renamed awesome after the catchphrase of the *How I Met Your Mother* character, Barney Stinson.
+
+### Customizability
+All configuration must be done by editing files in the `~/.config/awesome` folder. In this folder is a Lua script called `rc.lua`, which is the Lua script awesome will run whenever it is started, by default. It is also called the &ldquo;config&rdquo; file. awesome comes with a default config file usually found in the `/etc/xdg/awesome/` folder, which can be customized to one's liking.
