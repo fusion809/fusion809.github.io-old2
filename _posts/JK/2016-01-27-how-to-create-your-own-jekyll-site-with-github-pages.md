@@ -1,10 +1,11 @@
 ---
 layout:        post
 title:         "How to create your own Jekyll site with GitHub Pages"
-date:          2016-01-25 +1000
+date:          2016-01-27 +1000
 categories:    linux, jekyll, blogging
 redirect_from:
   - /2016/01/23/how-to-create-your-own-jekyll-site-with-github-pages/
+  - /2016/01/25/how-to-create-your-own-jekyll-site-with-github-pages/
   - /how-to-create-your-own-jekyll-site-with-github-pages/
 ---
 
