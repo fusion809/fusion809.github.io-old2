@@ -32,4 +32,6 @@ Almost all frequently-encountered modern **Linux distributions** (LDs) come with
 * [**Unity**](#unity) &mdash; a desktop environment based on GNOME that is used by Ubuntu.
 * [**Xfce**](#xfce) &mdash; a lightweight desktop environment based on GTK+.
 
-{% include_relative glossary.md %}
+{% include_relative 02-glossary.md %}
+
+{% include_relative 03-awesome.md %}
