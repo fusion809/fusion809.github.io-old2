@@ -8,3 +8,7 @@ awesome was originally forked from [dwm](https://en.wikipedia.org/wiki/Dwm), a v
 
 ### Customizability
 All configuration must be done by editing files in the `~/.config/awesome` folder. In this folder is a Lua script called `rc.lua`, which is the Lua script awesome will run whenever it is started, by default. It is also called the &ldquo;config&rdquo; file. awesome comes with a default config file usually found in the `/etc/xdg/awesome/` folder, which can be customized to one's liking.
+
+### Obtaining It
+awesome is found in the official repositories of the vast majority of Linux distributions, including:
+* Arch Linux / Manjaro Linux (its name is {% include ArchLinux/search.md package="awesome" %} so run {% include Code/coders.html line1="pacman -S awesome --noconfirm" %} to install it)
