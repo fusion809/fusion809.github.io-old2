@@ -12,4 +12,5 @@ All configuration must be done by editing files in the `~/.config/awesome` folde
 ### Obtaining It
 awesome is found in the official repositories of the vast majority of Linux distributions, including:
 * {% include ArchLinux/search.md package="awesome" %}
-* Debian (its name is {% include Debian/search.md package="awesome" %})
+* {% include Debian/search.md package="awesome" %}
+* {% include Fedora/search.md package="awesome" %}
