@@ -23,4 +23,14 @@ Cinnamon is in the package repositories of the vast majority of Linux distributi
 * {% include Search/mageia.md package="cinnamon" %}
 * {% include Search/opensuse.md package="cinnamon" %}
 * {% include Search/sabayon.md package="gnome-extra/cinnamon" %}
-gist id 20fac68c45f06e00b257
+
+### Ratings
+* **Availability**: 8. It is in the software repositories of almost every major Linux distribution.
+* **Beginner-friendliness**: 9. It is very beginner-friendly.
+* **Customizability**: 8-9. Very customizable.
+* **Features**: 9. It is tied with KDE Plasma 5 for the position of the most feature-packed graphically-configured DE I have used.
+* <abbr title="My Experience With It">**MEWI**</abbr>: 8. I have used it quite extensively.
+* **Stability**: 7. On Arch and Manjaro it is stable enough for everyday use without too many problems. Although I have noticed that Nemo, its file manager, frequently crashes on me. On Sabayon I have found it more buggy, especially with respect to its keyboard shortcuts settings window, which fails to even launch for me under Sabayon. On Linux Mint it is very stable.
+* **Support**: 2. Distribution-independent support for it is virtually non-existent, I have attempted to get support in the Linux Mint forums but they informed me that they merely support the use of Cinnamon under Linux Mint. Its associated IRC Channels are also distribution-specific.
+* **System Resource Usage**: 3. its various components are fairly heavy overall, for example, under Arch on 28 January 2016 I have Cinnamon installed and running `sudo pacman -Rsc cinnamon` to remove its components says its total removed size would be 53.71 MB. Here is its Arch VM `ps_mem` table: {% include Code/gist.html id="20fac68c45f06e00b257" %}
+* **Overall**: 8. Its stability and lack of DIS are its major let-downs.

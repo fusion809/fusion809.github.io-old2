@@ -21,7 +21,7 @@ awesome is found in the official repositories of the vast majority of Linux dist
 * {% include Search/sabayon.md package="x11-wm/awesome" %}
 oddly it does not seem that Mageia has an awesome package, look at [this search](http://madb.mageia.org/package/list/t_search/awesome) for confirmation. At least one of the its dependencies, xproto, is not in the Mageia repositories either, so building from source is not as straight-forward an option as one may hope.
 
-### Rating(s)
+### Ratings
 * **Availability**: 7. The majority of Linux distributions have it in their official repositories.
 * **Beginner-friendliness**: 3. At least Lua is a fairly simple programming language.
 * **Customizability**: 9. Very customizable.
