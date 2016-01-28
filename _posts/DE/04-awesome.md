@@ -7,7 +7,7 @@ The [**awesome window manager**](http://awesome.naquadah.org/) is a [dynamic win
 awesome was originally forked from [dwm](https://en.wikipedia.org/wiki/Dwm), a very basic dynamic window manager, in 2007 and named jdwm with the "jd" in its name coming from Danjou's initials. Later that year it was renamed awesome after the catchphrase of the *How I Met Your Mother* character, Barney Stinson.
 
 ### Components
-* **Display server/Window system**: X11.
+* **Display server/window system**: X11.
 * **File manager**: None.
 * **Widget toolkit**: None. 
 * **Window manager**: awesome.
