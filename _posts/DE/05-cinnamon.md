@@ -8,9 +8,9 @@
 * **Display server/window system**: X11.
 * **File manager**: Nemo.
 * **Widget toolkit**: GTK+ 3.
-* **Window manager**: Muffin.
+* **Window manager**: Muffin, a fork of Mutter.
 
-it has its own core application suite, which are forked from the corresponding GNOME Core Applications. 
+it has its own core application suite, which are forked from the corresponding GNOME Core Applications.
 
 ### Customizability
 Most things can be customized in Cinnamon, for one it has a digital clock that can be configured to a custom format. I usually use the format (for details on how to create your own custom date and time format see https://help.gnome.org/users/gthumb/unstable/gthumb-date-formats.html.en):
