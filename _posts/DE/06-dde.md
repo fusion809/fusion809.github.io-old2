@@ -28,5 +28,6 @@ It comes pre-installed on deepin, while on Arch Linux (and its derivatives that 
 * **Features**: 4. Not particularly feature-packed.
 * <abbr title="My Experience With It">**MEWI**</abbr>: 4. I have some experience with it, but I usually end up abandoning it due to SRU/stability/lack of customizability issues.
 * **Stability**: 5. Stability is an issue with DDE, I have found it not uncommon for applications to take >3 times as long to launch under DDE than they would under say GNOME, I have also found it not uncommon for DDE to freeze or for its control center to have bugs.
+* **Support**: 2-3. Fairly minimal DIS.
 * **System Resource Usage**: 2. It is fairly heavy on SRU, its download size is >100 MB (including core applications) on Arch Linux, while its installed size is >300 MB. Its `ps_mem` table on Arch Linux is {% include Code/gist.html id="794e887916c257f72c67" %}
 * **Overall**: 7. I find it an ambitious desktop environment, especially when it was based on HTML5 and WebKit, but ambition and reality have not come together in a nice and consistent way, just yet.

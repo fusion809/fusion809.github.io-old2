@@ -22,3 +22,5 @@ redirect_from:
 {% include_relative 05-cinnamon.md %}
 
 {% include_relative 06-dde.md %}
+
+{% include_relative 07-enlightenment.md %}
