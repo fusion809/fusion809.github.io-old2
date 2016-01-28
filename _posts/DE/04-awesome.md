@@ -12,7 +12,7 @@ All configuration must be done by editing files in the `~/.config/awesome` folde
 ### Obtaining It
 awesome is found in the official repositories of the vast majority of Linux distributions, including:
 * {% include Search/debian.md package="awesome" %}
-* {% include Search/arch.md package="awesome" %}
+* {% include Search/arch.md package="awesome" %} I would also recommend you install the optional dependency of xterm, as without it it will be fairly difficult to customize Awesome from a running session.
 * {% include Search/ubuntu.md package="awesome" %}
 * {% include Search/gentoo.md package="x11-wm/awesome" %}
 * {% include Search/centos.md package="awesome" %}
@@ -27,5 +27,7 @@ oddly it does not seem that Mageia has an awesome package, look at [this search]
 * **Customizability**: 9. Very customizable.
 * **Features**: &gt;8. Additional features are added via editing `rc.lua`.
 * <abbr title="My Experience With It">**MEWI**</abbr>: 1.
+* **Stability**: 7. On Arch and Manjaro it seems very stable, but I have found it nigh impossible to run on Sabayon Linux, oddly enough.
+* **Support**: 8. Support for people with the required knowledge in Lua scripting, seems high-quality. It has its own Wiki, IRC channel and mailing list.
 * **System Resource Usage**: 8. Very lightweight, when installed it takes up no more than 3 MB and is no bigger than a 1 MB download on most platforms. Its `ps_mem` table on an Arch VM, using its default config file is: {% include Code/gist.html id="d97092ccf6baf11e5016" %}
 * **Overall**: 4. My rating is so low as I put a premium on beginner-friendliness.
