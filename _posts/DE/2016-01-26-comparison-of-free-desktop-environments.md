@@ -20,3 +20,5 @@ redirect_from:
 {% include_relative 04-awesome.md %}
 
 {% include_relative 05-cinnamon.md %}
+
+{% include_relative 06-dde.md %}
