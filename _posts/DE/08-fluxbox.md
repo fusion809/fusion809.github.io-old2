@@ -29,11 +29,11 @@ Fluxbox is easy to obtain on most Linux distributions, to install it run:
 
 ### Ratings
 * **Availability**: 8.
-* **Beginner-friendliness**: 9. It is very beginner-friendly.
-* **Customizability**: 7-8. Very customizable.
-* **Features**: 7.
-* <abbr title="My Experience With It">**MEWI**</abbr>: 2. I have minimal experience with it. 
+* **Beginner-friendliness**: 8. It is fairly beginner-friendly.
+* **Customizability**: 7-8. Fairly customizable.
+* **Features**: 5.
+* <abbr title="My Experience With It">**MEWI**</abbr>: 2. I have some experience with it, not an awful lot.
 * **Stability**: 8. Never had stability issues with it myself.
 * **Support**: 7-8. Its DIS is fairly high-quality.
 * **System Resource Usage**: 8. Its download and installed size is fairly little. Here is my `ps_mem` table on my Arch VM: {% include Code/gist.html id="ad73369715f128c197a5" %}
-* **Overall**: 8. I personally seldom
+* **Overall**: 8.
