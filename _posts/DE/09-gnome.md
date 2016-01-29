@@ -49,4 +49,8 @@ GNOME's feature set can be extended using extensions/plugins, although it is imp
 * **Overall**: 8.
 
 ### External Links
+* [GNOME](https://wiki.archlinux.org/index.php/GNOME) at *The ArchWiki*.
+* [GNOME](https://en.wikipedia.org/wiki/GNOME) at *The English Wikipedia*.
+* [GNOME](https://wiki.gentoo.org/wiki/GNOME) at *The Gentoo Wiki*.
 * [GNOME Extensions Repository](https://extensions.gnome.org/) &mdash; you can install extra extensions from within the Firefox web browser.
+* [GNOME Look](http://gnome-look.org/) &mdash; where you can get some themes, wallpapers, *etc.* for GNOME.
