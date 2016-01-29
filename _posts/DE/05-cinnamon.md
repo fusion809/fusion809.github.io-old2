@@ -2,7 +2,9 @@
 {% include Links/image.html image="operating-systems/Linux-Mint-17.3.png" width="1130px" float="none" description="Cinnamon running on Linux Mint 17.3" %}
 
 ### Background
-**Cinnamon** is a GNOME 3 fork developed for Linux Mint that is similarly heavy on SRU. It provides a more traditional user interface than GNOME 3, with its appearance more closely resembling that of GNOME 2 than GNOME 3. Compared to the GNOME 2 fork, MATE, that was originally released roughly the same time as it (in 2011 &mdash; the year that GNOME 3 was released), it is significantly more configurable but also heavier on SRU. In fact, I would argue it is even more configurable than its parent, GNOME 3. Like its parent, however, this configuration is done via the use of extensions/plugins, themes and its system settings GUI. Its major disadvantages are mostly related to its SRU, instability, lack of Wayland support and lack of distribution-independent support.
+[**Cinnamon**](http://cinnamon.linuxmint.com/) is a GNOME 3 fork developed for Linux Mint that is similarly heavy on SRU. It provides a more traditional user interface than GNOME 3, with its appearance more closely resembling that of GNOME 2 than GNOME 3. Compared to the GNOME 2 fork, MATE, that was originally released roughly the same time as it (in 2011 &mdash; the year that GNOME 3 was released), it is significantly more configurable but also heavier on SRU. In fact, I would argue it is even more configurable than its parent, GNOME 3. Like its parent, however, this configuration is done via the use of extensions/plugins, themes and its system settings GUI. Its major disadvantages are mostly related to its SRU, instability, lack of Wayland support and lack of distribution-independent support.
+
+It is written in C++, JavaScript and Python (source: [its GitHub repository](https://github.com/linuxmint/Cinnamon)).
 
 ### Components
 * **Display server/window system**: X11.
@@ -42,3 +44,10 @@ Cinnamon is in the package repositories of the vast majority of Linux distributi
 * **Support**: 2. Distribution-independent support for it is virtually non-existent, I have attempted to get support in the Linux Mint forums but they informed me that they merely support the use of Cinnamon under Linux Mint. Its associated IRC Channels are also distribution-specific.
 * **System Resource Usage**: 3. its various components are fairly heavy overall, for example, under Arch on 28 January 2016 I have Cinnamon installed and running `sudo pacman -Rsc cinnamon` to remove its components says its total removed size would be 53.71 MB. Here is its Arch VM `ps_mem` table: {% include Code/gist.html id="20fac68c45f06e00b257" %}
 * **Overall**: 8. Its stability and lack of DIS are its major let-downs.
+
+### External Resources
+* [Cinnamon](https://wiki.archlinux.org/index.php/Cinnamon) at *The ArchWiki*.
+* [Cinnamon](https://wiki.gentoo.org/wiki/Cinnamon) at *The Gentoo Wiki*.
+* {% include Links/wp.md name="Cinnamon_(software)" %} at *The English Wikipedia*.
+* [GitHub Repository](https://github.com/linuxmint/Cinnamon).
+* [GitHub Repository Wiki](https://github.com/linuxmint/Cinnamon/wiki).

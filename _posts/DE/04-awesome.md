@@ -43,3 +43,4 @@ oddly it does not seem that Mageia has an awesome package, look at [this search]
 * [awesome](https://wiki.gentoo.org/wiki/Awesome) at *The Gentoo Wiki*.
 * {% include Links/wp.md name="awesome_(window_manager)" %} at *The English Wikipedia*.
 * [awesome wiki](http://awesome.naquadah.org/wiki/Main_Page).
+* {% include Links/irc.html channel="awesome" %}

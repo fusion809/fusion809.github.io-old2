@@ -2,7 +2,9 @@
 {% include Links/image.html image="Deepin-Desktop-Environment-Arch-20160128.png" width="1130px" float="none" description="Deepin Desktop Environment running on Arch Linux" %}
 
 ### Backgrounds
-The **Deepin Desktop Environment** (**DDE**) is a desktop environment that uses the Qt5 widget toolkit, although it was once (only a few months ago) based on HTML5 and WebKit with JavaScript extensions. It now also uses the Mutter window manager, which is from GNOME 3. DDE was originally developed for the Chinese Debian (Unstable) and previously Ubuntu-based Linux distribution, deepin. DDE is only available for two Linux distributions that I am aware of &mdash; Arch Linux (thanks to the efforts of Xu Fasheng and Felix Yan) and deepin. I am aware of efforts to port it to Gentoo-based distributions, via the [`gentoo-zh`](https://github.com/gentoo-mirror/gentoo-zh) overlay, but these efforts have since been abandoned.
+The **Deepin Desktop Environment** (**DDE**) is a desktop environment that uses the Qt 5 widget toolkit, although it was once (only a few months ago) based on HTML5 and WebKit with JavaScript extensions. It now also uses the Mutter window manager, which is from GNOME 3. DDE was originally developed for the Chinese Debian (Unstable) and previously Ubuntu-based Linux distribution, deepin. DDE is only available for two Linux distributions that I am aware of &mdash; Arch Linux (thanks to the efforts of Xu Fasheng and Felix Yan) and deepin. I am aware of efforts to port it to Gentoo-based distributions, via the [`gentoo-zh`](https://github.com/gentoo-mirror/gentoo-zh) overlay, but these efforts have since been abandoned.
+
+It is now written in C, C++, CoffeeScript, Go, JavaScript, Objective-C, Python, QML, *etc.* according to the various GitHub repositories of its components.
 
 ### Components
 * **Display server/window system**: X11.
@@ -31,3 +33,6 @@ It comes pre-installed on deepin, while on Arch Linux (and its derivatives that 
 * **Support**: 2-3. Fairly minimal DIS.
 * **System Resource Usage**: 2. It is fairly heavy on SRU, its download size is >100 MB (including core applications) on Arch Linux, while its installed size is >300 MB. Its `ps_mem` table on Arch Linux is {% include Code/gist.html id="794e887916c257f72c67" %}
 * **Overall**: 7. I find it an ambitious desktop environment, especially when it was based on HTML5 and WebKit, but ambition and reality have not come together in a nice and consistent way, just yet.
+
+### External Resources
+* [Deepin Desktop Environment](https://wiki.archlinux.org/index.php/Deepin_Desktop_Environment) at *The ArchWiki*.
