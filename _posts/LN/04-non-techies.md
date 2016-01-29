@@ -1,0 +1,2 @@
+## Non-Techies
+If you are not so technologically-talented I would suggest you use a beginner distribution like Manjaro Linux, openSUSE or Ubuntu (or one of its derivatives like Linux Mint). If you are ambitious you may try a slightly more challenging distribution like Sabayon, which is fairly beginner-friendly but its documentation and online support is poorer than all three distributions previously mentioned in this section. 
