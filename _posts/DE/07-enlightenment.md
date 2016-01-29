@@ -4,6 +4,14 @@
 ### Background
 **Enlightenment** is a free, BSD-licensed, eye-candy stacking window manager, that was originally developed in the mid 1990s by Carsten Haitzler, also known as Rasterman, whom is still its lead developer. When it was originally released there was only one version of Enlightenment which is now known as E16, but later in December 2012 E17 had its first stable release. E16 is very lightweight in terms of memory footprint and installed size, but it is also very basic. E17, on the other hand, and later releases in its series E18, E19 and E20, are heavier on memory footprint and installed size but also heavier on features.
 
+### Components
+* **Display server/window system**: X11, Wayland compatibility with E20.
+* **File manager**: Enlightenment File Manager.
+* **Widget toolkit**: EFL.
+* **Window manager**: Enlightenment.
+
+it has some core applications including Rage (a media player) and Terminology (a terminal emulator).
+
 ### Customizability
 Enlightenment must be customized through its GUI. This may be via going to `Settings` in its menu. Its appearance, keyboard shortcuts, menus, loaded modules, gadgets (found on its shelf), shelf contents, wallpaper, *etc.* can be customized via going to `Settings`. Its appearance can be customized via several themes, but the themes available for Enlightenment are often compatible only with specific versions, most of which are not current.
 
