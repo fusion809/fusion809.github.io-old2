@@ -14,6 +14,8 @@ Most DEs that have all of these components also come with their own set of core 
 * **Terminal emulator** &mdash; examples include GNOME Terminal, Konsole, LXTerminal, MATE Terminal, Xfce Terminal, *etc.*
 * **Text editor** &mdash; examples include gedit, KWrite, Leafpad, Mousepad and Pluma.
 
+The name **desktop environment** derives from the fact that most DEs keep to the traditional "[desktop metaphor](https://en.wikipedia.org/Desktop_metaphor)", which is a metaphor of a writing desktop where people do their paper work. 
+
 ### [Window Manager](https://en.wikipedia.org/wiki/Window_manager)
 {% include Layouts/note.md note1="Much of this information is taken from the [ArchWiki](https://wiki.archlinux.org/index.php/Window_manager) or Wikipedia" %}
 As previously mentioned **window managers** (**WMs**) are programs that control the appearance, behaviour, placement, *etc.* of windows within a display server/windowing system. The vast majority of free &#42;nix WMs are designed to work with the X Window System (XWS) alone, although in recent years some WMs originally developed to work under XWS alone have been rewritten so that they can also run under Wayland without a problem. They can be further categorized based on their properties, as:
