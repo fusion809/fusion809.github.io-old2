@@ -7,7 +7,6 @@ Almost all frequently-encountered modern **Linux distributions** (LDs) come with
 * [**Enlightenment**](#enlightenment) &mdash; a feature-packed eye-candy stacking window manager originally developed in the mid 1990s. It is the most popular standalone window manager (not associated with any particular desktop environment) that has become Wayland-compatible.
 * [**Fluxbox**](#fluxbox) &mdash; a lightweight and simple window manager.
 * [**GNOME**](#gnome) &mdash; a DE that is developed as part of the GNU Project, it and KDE are two of the "main" Linux DEs. It is built using the GTK+ toolkit. It has Wayland compatibility.
-
 * **Hawaii** &mdash; a Qt5, Qt Quick and Wayland based desktop environment that is still in beta development. It is so unstable that I am going to skip reviewing it.
 {% include Links/image.html image="Hawaii-Shell-0.5.91.png" width="1100px" float="none" description="Hawaii desktop" %}
 {% include Layouts/clear.html %}
