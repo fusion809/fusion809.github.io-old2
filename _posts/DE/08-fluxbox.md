@@ -2,7 +2,7 @@
 {% include Links/image.html image="Fluxbox-1.3.7-Arch.png" width="1130px" float="none" description="Fluxbox 1.3.7 running on Arch Linux" %}
 
 ### Background
-**Fluxbox** is a stacking window manager originally forked from Blackbox 0.61 in 2001. It is primarily designed to be lightweight.
+[**Fluxbox**](http://fluxbox.org/) is a stacking window manager originally forked from Blackbox 0.61 in 2001. It is primarily designed to be lightweight.
 
 ### Components
 * **Display server/window system**: X11.
@@ -37,3 +37,9 @@ Fluxbox is easy to obtain on most Linux distributions, to install it run:
 * **Support**: 7-8. Its DIS is fairly high-quality.
 * **System Resource Usage**: 9. Its download and installed size is fairly little. Here is my `ps_mem` table on my Arch VM: {% include Code/gist.html id="ad73369715f128c197a5" %}
 * **Overall**: 8.
+
+### External Resources
+* [Fluxbox](https://wiki.archlinux.org/index.php/Fluxbox) at *The ArchWiki*.
+* {% include Links/wp.md name="Fluxbox" %} at *The English Wikipedia*.
+* [Fluxbox](https://wiki.gentoo.org/wiki/Fluxbox) at *The Gentoo Wiki*.
+* {% include Links/irc.html channel="fluxbox" %}
