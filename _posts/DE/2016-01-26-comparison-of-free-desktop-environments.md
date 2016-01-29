@@ -24,3 +24,5 @@ redirect_from:
 {% include_relative 06-dde.md %}
 
 {% include_relative 07-enlightenment.md %}
+
+{% include_relative 08-fluxbox.md %}

@@ -19,6 +19,8 @@ Enlightenment is found in the software repositories of the vast majority of Linu
 * {% include Search/opensuse.md package="enlightenment" %}
 * {% include Search/sabayon.md package="x11-wm/enlightenment" %}
 
+on Gentoo and Sabayon the E16 package is installed by default, when Enlightenment is installed. So to install E17 you must replaced `x11-wm/enlightenment` in the above commands with `x11-wm/enlightenment:0.17`.
+
 ### Ratings
 * **Availability**: 8. Very easy to obtain on most distributions.
 * **Beginner-friendliness**: 8.
