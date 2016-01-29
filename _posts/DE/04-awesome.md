@@ -37,3 +37,9 @@ oddly it does not seem that Mageia has an awesome package, look at [this search]
 * **Support**: 8. Support for people with the required knowledge in Lua scripting, seems high-quality. It has its own Wiki, IRC channel and mailing list.
 * **System Resource Usage**: 8. Very lightweight, when installed it takes up no more than 3 MB and is no bigger than a 1 MB download on most platforms. Its `ps_mem` table on an Arch VM, using its default config file is: {% include Code/gist.html id="d97092ccf6baf11e5016" %}
 * **Overall**: 4. My rating is so low as I put a premium on beginner-friendliness.
+
+### External Resources
+* [awesome](https://wiki.archlinux.org/index.php/Awesome) at *The ArchWiki*.
+* [awesome](https://wiki.gentoo.org/wiki/Awesome) at *The Gentoo Wiki*.
+* {% include Links/wp.md name="awesome_(window_manager)" %} at *The English Wikipedia*.
+* [awesome wiki](http://awesome.naquadah.org/wiki/Main_Page).
