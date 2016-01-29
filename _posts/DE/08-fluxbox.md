@@ -42,4 +42,5 @@ Fluxbox is easy to obtain on most Linux distributions, to install it run:
 * [Fluxbox](https://wiki.archlinux.org/index.php/Fluxbox) at *The ArchWiki*.
 * {% include Links/wp.md name="Fluxbox" %} at *The English Wikipedia*.
 * [Fluxbox](https://wiki.gentoo.org/wiki/Fluxbox) at *The Gentoo Wiki*.
+* [GitHub Repository](https://github.com/fluxbox/fluxbox)
 * {% include Links/irc.html channel="fluxbox" %}

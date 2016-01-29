@@ -49,5 +49,6 @@ Cinnamon is in the package repositories of the vast majority of Linux distributi
 * [Cinnamon](https://wiki.archlinux.org/index.php/Cinnamon) at *The ArchWiki*.
 * [Cinnamon](https://wiki.gentoo.org/wiki/Cinnamon) at *The Gentoo Wiki*.
 * {% include Links/wp.md name="Cinnamon_(software)" %} at *The English Wikipedia*.
+* [Cinnamon Spices](http://cinnamon-spices.linuxmint.com/), which are desktop themes for Cinnamon.
 * [GitHub Repository](https://github.com/linuxmint/Cinnamon).
 * [GitHub Repository Wiki](https://github.com/linuxmint/Cinnamon/wiki).
