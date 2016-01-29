@@ -26,3 +26,5 @@ redirect_from:
 {% include_relative 07-enlightenment.md %}
 
 {% include_relative 08-fluxbox.md %}
+
+{% include_relative 09-gnome.md %}
