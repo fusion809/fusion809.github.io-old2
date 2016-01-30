@@ -11,6 +11,7 @@ Like Arch Linux, Manjaro also follows a rolling release model. It only supports 
 #### Useful Resources
 * [Download Page](http://manjaro.github.io/download/)
 * [Forums](https://forum.manjaro.org/)
+* {% include Links/irc.html channel="manjaro" %}
 * [Manjaro SourceForge Site](http://sourceforge.net/projects/manjarolinux/)
 * [Manjaro Wiki Home Page](https://wiki.manjaro.org/index.php?title=Main_Page)
 
