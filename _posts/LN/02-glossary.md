@@ -1,0 +1,3 @@
+## Glossary
+### BSD Ports System
+On BSD derivatives like FreeBSD a common form of package management is the so called "Ports" system. These ports are a series of subdirectories in the `/usr/ports` folder, each containing the source code of available packages that can be installed via this ports system. To install a package the user merely changes into the port of the package they want (this must be done as root, by-the-way, otherwise permission issues will be encountered later on in this process), configures the source code so that the package will be built with the features they want, and runs `make install`.
