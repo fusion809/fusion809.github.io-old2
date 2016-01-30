@@ -20,21 +20,7 @@ Portage builds software using instructions set forth in a specialized type of Ba
 The Portage Tree, along with the other available overlays maintained by layman, also contain several different release versions of the same software package, which is something that distinguishes them from the vast majority of binary distributions, which usually only have a single version of each software in their repositories. For example, see [here](https://packages.gentoo.org/packages/sys-kernel/gentoo-sources) for the different versions of the package `sys-kernel/gentoo-sources` available from the Portage Tree, this package if you are wondering as to its significance, is the kernel for Gentoo Linux. These different available software versions also adds to the freedom of Gentoo.
 
 The fact that Portage builds software from source code also allows Gentoo to run on a large number of different computer architectures. The number of different CPU architectures supported by Gentoo is, to my knowledge, second only to Debian in the Linux world. The list of supported processor architectures, according to *DistroWatch*, are:
-<div class="div-col columns column-count column-count-4" style="-moz-column-count: 4; -webkit-column-count: 4; column-count: 4;">
-  <ul>
-    <li>i486</li>
-    <li>i586</li>
-    <li>i686</li>
-    <li>x86_64</li>
-    <li>alpha</li>
-    <li>arm</li>
-    <li>hppa</li>
-    <li>mips</li>
-    <li>powerpc</li>
-    <li>ppc64</li>
-    <li>sparc64</li>
-  </ul>
-</div>
+{% include_relative 03-gentoo-architecture.html %}
 Portage has even been ported to a few different non-Linux Unix/Unix-like operating systems including the &#42;BSDs (especially FreeBSD). Portage is also written in Python, which allows advanced users to script with Portage more freely.
 
 Something else that distinguishes Gentoo from most, but not all, binary distributions is its **release model**. See Gentoo follows the rolling release model, which means there is never any need to upgrade one's Gentoo system by deleting the old version of the operating system and installing the new version over it. Rather updates are performed via running one's package manager.
