@@ -26,9 +26,10 @@ It only supports armhf, i586 and x86_64 architectures.
 
 #### Useful Resources
 * [Download Page for the Latest Standard Release of openSUSE](https://software.opensuse.org)
-* [Documentation for openSUSE](http://doc.opensuse.org/)
+* [Documentation for openSUSE](http://doc.opensuse.org/) &mdash; I have heard good things about this documentation from other sources but I have never really found the documentation of good quality, partly because of how up-to-date much of it is (as it refers to older release of openSUSE).
 * [English openSUSE Forums](https://forums.opensuse.org/forum.php)
 * [English openSUSE Wiki](https://en.opensuse.org/Main_Page)
+* [openSUSE Package Search Site](https://software.opensuse.org/search)
 * {% include Links/irc.html channel="opensuse" %}
 * [Tumbleweed Installation Guide](https://en.opensuse.org/openSUSE:Tumbleweed_installation)
 
