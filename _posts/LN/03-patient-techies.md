@@ -22,8 +22,13 @@ The fact that Portage builds software from source code also allows Gentoo to run
 
 Something else that distinguishes Gentoo from most, but not all, binary distributions is its **release model**. See Gentoo follows the rolling release model, which means there is never any need to upgrade one's Gentoo system by deleting the old version of the operating system and installing the new version over it. Rather updates are performed via running one's package manager.
 
-I personally would give Portage two or three stars out of five, as a package manager, as while it is designed to automate processes like installing software and upgrading software, for me it just gives me headaches as a lot of this stuff I am forced to do myself. 
+I personally would give Portage two or three stars out of five, as a package manager, as while it is designed to automate processes like installing software and upgrading software, for me it just gives me headaches as a lot of this stuff I am forced to do myself.
 
 ### Helpful Links and Resources
+* [DistroWatch Article on Gentoo](http://distrowatch.com/table.php?distribution=gentoo)
+* [Download Page](https://www.gentoo.org/downloads/), from which you can get a live ISO for Gentoo.
+* [Gentoo Forums](https://forums.gentoo.org/)
+* [gpo.zugaina.org](http://gpo.zugaina.org/), a website from which you can search for ebuilds in the Portage Tree and the Portage overlays found in the Layman remote list.
 * [Installation Handbook for X86 Systems](https://wiki.gentoo.org/wiki/Handbook:X86/Installation/About) (note, the architecture of this guide is irrelevant, that is, you should be able to install Gentoo on say an AMD64 system while still following this X86 installation guide)
 * {% include Links/irc.html channel="gentoo" %} &mdash; Gentoo IRC support channel.
+* [packages.gentoo.org](https://packages.gentoo.org/), a web interface from which you can browse packages in the Portage Tree.
