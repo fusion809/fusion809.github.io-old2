@@ -8,8 +8,14 @@ Due to these similarities with Arch Linux, it is possible for people to learn so
 
 Like Arch Linux, Manjaro also follows a rolling release model. It only supports i686 and x86_64 architectures.
 
+#### Useful Resources
+* [Download Page](http://manjaro.github.io/download/)
+* [Forums](https://forum.manjaro.org/)
+* [Manjaro SourceForge Site](http://sourceforge.net/projects/manjarolinux/)
+* [Manjaro Wiki Home Page](https://wiki.manjaro.org/index.php?title=Main_Page)
+
 ### openSUSE
-**openSUSE** is an originally German Linux distribution that uses RPM binary packages (with the `.rpm` file extension) and the ZYpp package manager (along with a graphical front end for ZYpp &mdash; YaST2). It features an automated installer (also YaST2), during installation one is given choice of several different desktop environments, with the two major choices being GNOME and KDE Plasma. Since 2015 openSUSE has two editions &mdash; the standard edition following a standard release model and a tumbleweed edition which follows a rolling release model. I personally prefer the tumbleweed edition, but if you prefer system stability over having the very latest software I would recommend you use the standard release model edition.
+**openSUSE** is an originally German Linux distribution that uses RPM binary packages (with the `.rpm` file extension) and the **ZYpp** package manager (along with a graphical front end for ZYpp &mdash; **YaST2**). It features an automated installer (also YaST2), during installation one is given choice of several different desktop environments, with the two major choices being GNOME and KDE Plasma. Since 2015 openSUSE has two editions &mdash; the standard edition following a standard release model and a tumbleweed edition which follows a rolling release model. I personally prefer the tumbleweed edition, but if you prefer system stability over having the very latest software I would recommend you use the standard release model edition.
 
 #### Package Management
 As far as package managers go I would give ZYpp four stars out of five, it is a little slower than pacman and one feature (or lack of a feature rather) I dislike about it is that you cannot pass a flag (e.g., for pacman this flag is `--noconfirm`, while for APT, DNF and yum this flag is `-y`) to ZYpp to get it to skip asking you for confirmation before performing the action it is about to do. Apparently this feature used to exist, but it was removed. I like this feature in a package manager because it makes writing Bash scripts for package management easier.
@@ -18,6 +24,14 @@ RPM packages are created using spec files (that is, files with the file extensio
 
 It only supports armhf, i586 and x86_64 architectures.
 
+#### Useful Resources
+* [Download Page for the Latest Standard Release of openSUSE](https://software.opensuse.org)
+* [Documentation for openSUSE](http://doc.opensuse.org/)
+* [English openSUSE Forums](https://forums.opensuse.org/forum.php)
+* [English openSUSE Wiki](https://en.opensuse.org/Main_Page)
+* {% include Links/irc.html channel="opensuse" %}
+* [Tumbleweed Installation Guide](https://en.opensuse.org/openSUSE:Tumbleweed_installation)
+
 ### Ubuntu
 **Ubuntu** has a reputation for being the beginner's distribution, and for me this was most certainly the case. It was the first distribution I even tried and it was the only distribution I used for three straight years. If you cannot make the transition from OS X/Windows to Ubuntu without running back to mummy (that is, your first OS) due to difficulties adjusting, then you probably will not be able to make the transition to any Linux distribution. Ubuntu has two types of releases, Long-Term Support (LTS) releases which come in April of even-numbered years (e.g., April 2014, April 2016, April 2018, *etc.*) and standard releases which come out every six months. LTS releases are supported for up to five years, so if you stick to them you will need to perform a system upgrade (where you install the new version of Ubuntu over the old version, which is a time-consuming, error-prone and generally unpleasant process) far less frequently, although the price you will pay for this is you will be using outdated software.
 
@@ -25,7 +39,7 @@ It only supports armhf, i586 and x86_64 architectures.
 [**Linux Mint**](http://linuxmint.com/) and [**Zorin OS**](http://zorinos.com/) (although Zorin comes with both a free and paid edition) are two distributions based on Ubuntu (otherwise I find them basically the same, Linux Mint is based on the LTS releases, however) that may feel more like home to Windows users, as they look similar to Windows 7 and 10. [**elementary OS**](http://elementary.io/) is a distribution that is derived from Ubuntu (LTS) and it has a vaguely OS X-like look, namely it has a dock at the bottom of the screen. If you like an OS X-like dock, though, I would personally recommend the [deepin](http://www.deepin.org/?lang=en) distribution that was previously a Ubuntu (LTS) derivative, but is now a Debian (Unstable branch) derivative.
 
 #### Package Management
-As far as package management goes, well Ubuntu is a Debian derivative, so it uses the same package manager, APT and the same package format, Deb (file extension: `.deb`). Although graphical front-ends for APT (in other words they run APT in the background, but you install the packages without ever touching the command-line) are available for Ubuntu users, such as Synaptic and the Ubuntu Software Center. I would give APT three to four stars out of five, it is not as fast as pacman, but still performance is not too big an issue. Creating Debian packages, however, is something I tried in my Ubuntu days and it gave me headaches. See Debian packages unlike pacman and RPM packages are not created using a text file, rather you create a directory with several files in it which you must edit into the correct format for your package.
+As far as package management goes, well Ubuntu is a Debian derivative, so it uses the same package manager, **APT** and the same package format, Deb (file extension: `.deb`). Although graphical front-ends for APT (in other words they run APT in the background, but you install the packages without ever touching the command-line) are available for Ubuntu users, such as **Synaptic** and the **Ubuntu Software Center**. I would give APT three to four stars out of five, it is not as fast as pacman, but still performance is not too big an issue. Creating Debian packages, however, is something I tried in my Ubuntu days and it gave me headaches. See Debian packages unlike pacman and RPM packages are not created using a text file, rather you create a directory with several files in it which you must edit into the correct format for your package.
 
 Paid support is available for Ubuntu from the company behind its development, Canonical Ltd. This paid support is best for businesses using Ubuntu. If you are using Ubuntu merely for individual use odds are the free support detailed below will more than suffice.
 
