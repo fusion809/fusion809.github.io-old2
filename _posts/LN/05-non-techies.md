@@ -20,6 +20,14 @@ It only supports armhf, i586 and x86_64 architectures.
 
 As far as package management goes, well Ubuntu is a Debian derivative, so it uses the same package manager, APT and the same package format, Deb (file extension: `.deb`). Although graphical front-ends for APT (in other words they run APT in the background, but you install the packages without ever touching the command-line) are available for Ubuntu users, such as Synaptic and the Ubuntu Software Center. I would give APT three to four stars out of five, it is not as fast as pacman, but still performance is not too big an issue. Creating Debian packages, however, is something I tried in my Ubuntu days and it gave me headaches. See Debian packages unlike pacman and RPM packages are not created using a text file, rather you create a directory with several files in it which you must edit into the correct format for your package.
 
-Paid support is available for Ubuntu from the company behind its development, Canonical Ltd. This paid support is best for businesses using Ubuntu. If you are using Ubuntu merely for individual use odds are the free support available at [askubuntu.com](http://askubuntu.com/) will more than suffice.
+Paid support is available for Ubuntu from the company behind its development, Canonical Ltd. This paid support is best for businesses using Ubuntu. If you are using Ubuntu merely for individual use odds are the free support detailed below will more than suffice.
 
-It supports only armhf, i686, powerpc, ppc64el and x86_64 architectures. 
+It supports only armhf, i686, powerpc, ppc64el and x86_64 architectures.
+
+#### Useful Resources
+* [AskUbuntu](http://askubuntu.com/) &mdash; a StackExchange (the family of websites to which StackOverflow belongs) website focused on Ubuntu. When I used Ubuntu it was my first port of call and I would say 9 times out of 10 I would either find an answer there before even asking a question, or get an answer within hours of asking a question there.
+* [Community Help Wiki](https://help.ubuntu.com/community/CommunityHelpWiki)
+* [Download Page](http://www.ubuntu.com/download/desktop)
+* {% include Links/irc.html channel="ubuntu" %}
+* [Ubuntu Documentation Centre](https://help.ubuntu.com/)
+* [Ubuntu Forums](http://ubuntuforums.org/)
