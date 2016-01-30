@@ -15,17 +15,33 @@ step 3 is where Portage really distinguishes itself from other package managers,
 
 Portage building software from source code is also key to Gentoo's name. See Gentoo Linux is named after Gentoo penguins &mdash; the fastest species of penguin, to refer to the fact that by installing all its software from source code, instead of relying on binary packages, it is hoped that Gentoo systems will be the faster than their binary counterparts. I have set up VirtualBox VMs with Gentoo installed on them and never have I noticed any striking improvement in speed or performance of software running under Gentoo, as opposed to it running under binary distributions like Arch Linux. Then again, any speed improvement between Gentoo and binary distribution is likely to be modest &mdash; less than I can even notice. The only speed-related issue I have noticed on these VMs is the increased time it takes to install software with Portage, as opposed to the time it takes with binary package managers like pacman.
 
-Portage builds software using instructions set forth in a specialized type of Bash script called an **ebuild**, which are a feat in themselves to learn, even with some prior Bash knowledge. Each individual ebuild has instructions telling Portage how to build a specific software package, and by a specific package I mean a specific program with a specific version number, for example, one ebuild may tell Portage how to build the 1.4.0 release of the Atom text editor, while another may tell it how to build the 1.4.1 release of Atom. Portage uses its own type of repository, called an overlay, to contain its ebuilds. The default Portage overlay is called the Portage Tree and is found in `/usr/portage`. In here are ebuilds developed and maintained by the Gentoo Foundation. Gentoo also has a tool for adding extra Portage overlays called layman, which adds new overlays to `/var/lib/layman`, some of these extra Portage overlays are maintained by members of the Gentoo Foundation, but the vast majority are not and are instead maintained by Gentoo users with no affiliation with the Gentoo Foundation. For example, I have my own Portage overlay called [`sabayon-tools`](https://github.com/fusion809/sabayon-tools).
+Portage builds software using instructions set forth in a specialized type of Bash script called an **ebuild**, which are a feat in themselves to learn, even with some prior Bash knowledge. Each individual ebuild has instructions telling Portage how to build a specific software package, and by a specific package I mean a specific program with a specific version number, for example, one ebuild may tell Portage how to build the 1.4.0 release of the Atom text editor, while another may tell it how to build the 1.4.1 release of Atom. Portage uses its own type of repository, called an overlay, to contain its ebuilds. The default Portage overlay is called the Portage Tree and is found in `/usr/portage`. In here are ebuilds developed and maintained by the Gentoo Foundation. Gentoo also has a tool for adding extra Portage overlays called layman, which adds new overlays to `/var/lib/layman`, some of these extra Portage overlays are maintained by members of the Gentoo Foundation, but the vast majority are not and are instead maintained by Gentoo users with no affiliation with the Gentoo Foundation. For example, I have my own Portage overlay called [`sabayon-tools`](https://github.com/fusion809/sabayon-tools). Both the Portage Tree and the overlays managed by layman have a hierarchial directory structure of the form <code>.../<i>CAT</i>/<i>PACKAGE</i></code> where `...` denotes the parent directory in question (either `/usr/portage` or <code>/var/lib/layman/<i>OVERLAY</i></code>, where <code><i>OVERLAY</i></code> is the overlay's name) and as for the BSD ports system <code><i>CAT</i></code> and <code><i>PACKAGE</i></code> refer to the package's category and name, respectively. The <code><i>CAT</i></code>s used by Portage are distinct (more detailed in my opinion) from the the <code><i>CAT</i></code>s used by the BSD Ports system.
 
 The Portage Tree, along with the other available overlays maintained by layman, also contain several different release versions of the same software package, which is something that distinguishes them from the vast majority of binary distributions, which usually only have a single version of each software in their repositories. For example, see [here](https://packages.gentoo.org/packages/sys-kernel/gentoo-sources) for the different versions of the package `sys-kernel/gentoo-sources` available from the Portage Tree, this package if you are wondering as to its significance, is the kernel for Gentoo Linux. These different available software versions also adds to the freedom of Gentoo.
 
-The fact that Portage builds software from source code also allows Gentoo to run on a large number of different computer architectures. The number of different CPU architectures supported by Gentoo is, to my knowledge, second only to Debian in the Linux world. Portage has even been ported to a few different non-Linux Unix/Unix-like operating systems including the &#42;BSDs (especially FreeBSD). Portage is also written in Python, which allows advanced users to script with Portage more freely.
+The fact that Portage builds software from source code also allows Gentoo to run on a large number of different computer architectures. The number of different CPU architectures supported by Gentoo is, to my knowledge, second only to Debian in the Linux world. The list of supported processor architectures, according to *DistroWatch*, are:
+<div class="div-col columns column-count column-count-4" style="-moz-column-count: 4; -webkit-column-count: 4; column-count: 4;">
+  <ul>
+    <li>i486</li>
+    <li>i586</li>
+    <li>i686</li>
+    <li>x86_64</li>
+    <li>alpha</li>
+    <li>arm</li>
+    <li>hppa</li>
+    <li>mips</li>
+    <li>powerpc</li>
+    <li>ppc64</li>
+    <li>sparc64</li>
+  </ul>
+</div>
+Portage has even been ported to a few different non-Linux Unix/Unix-like operating systems including the &#42;BSDs (especially FreeBSD). Portage is also written in Python, which allows advanced users to script with Portage more freely.
 
 Something else that distinguishes Gentoo from most, but not all, binary distributions is its **release model**. See Gentoo follows the rolling release model, which means there is never any need to upgrade one's Gentoo system by deleting the old version of the operating system and installing the new version over it. Rather updates are performed via running one's package manager.
 
 I personally would give Portage two or three stars out of five, as a package manager, as while it is designed to automate processes like installing software and upgrading software, for me it just gives me headaches as a lot of this stuff I am forced to do myself.
 
-### Helpful Links and Resources
+#### Helpful Links and Resources
 * [DistroWatch Article on Gentoo](http://distrowatch.com/table.php?distribution=gentoo)
 * [Download Page](https://www.gentoo.org/downloads/), from which you can get a live ISO for Gentoo.
 * [Gentoo Forums](https://forums.gentoo.org/)
