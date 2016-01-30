@@ -35,3 +35,4 @@ I have heard of Arch Linux, Fedora and Gentoo Linux being used by servers, altho
 * [Download Page](https://www.mageia.org/en-gb/downloads/)
 * [English Mageia Wiki](https://wiki.mageia.org/en/Main_Page)
 * [Forums](https://forums.mageia.org/en/)
+* {% include Links/irc.html channel="mageia" %}
