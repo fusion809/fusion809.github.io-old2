@@ -10,7 +10,7 @@ I usually find the software in Arch's official repositories tends to be a little
 pacman is, in my opinion, by far the fastest package manager in terms of how quickly it installs software. It is written predominantly in C and its binary packages are xz-compressed, with the file extension `.pkg.tar.xz`. I personally would give pacman five stars out of five, in terms of how much I like it as a package manager. There are also several community-provided (not officially supported by the Arch Linux development team) programs available to automate the process of installing packages from the AUR and to search the AUR. See [here](https://wiki.archlinux.org/index.php/AUR_helpers) for an article on these AUR tools (or "AUR helpers" as they are referred to in this article) at *The ArchWiki*. I personally prefer the AUR helpers:
 * **pacaur** &mdash; a command-line tool with a similar syntax to pacman itself, it is written in Bash and C. It can be used to do everything with AUR packages that pacman can be used to do with packages in the pacman repositories.
 * **trizen** &mdash; a command-line tool written in Perl that also shares a similar syntax to pacman. It is fairly similar to pacaur.
-* **yaourt** &mdash; a Bash wrapper for pacman that shares most of its syntax with pacman. It was the only AUR helper I used until pacman 5.0.0 came out. See yaourt depends on the `package-query` package, which is imcompatible with pacman 5.0.0. pacaur and trizen are compatible with pacman 5.0.0, however. 
+* **yaourt** &mdash; a Bash wrapper for pacman that shares most of its syntax with pacman. It was the only AUR helper I used until pacman 5.0.0 came out. See yaourt depends on the `package-query` package, which is imcompatible with pacman 5.0.0. pacaur and trizen are compatible with pacman 5.0.0, however.
 
 #### Useful Resources
 * [**Arch User Repository**](https://aur.archlinux.org/) &mdash; where you can search the AUR for packages.
@@ -25,7 +25,7 @@ pacman is, in my opinion, by far the fastest package manager in terms of how qui
 I would probably give DNF three to four stars out of five, as it is fairly slow, despite it being an improvement over yum. One feature I like about it are package groups, which can be used to install a whole set of required packages. Like to install the KDE desktop one would run:
 {% include Code/coder.html line1="dnf install -y @kde-desktop" %}
 
-Fedora presently only supports armhfp, i686 and x86_64 architectures.
+Fedora presently only supports armhfp, i686 and x86_64 architectures. It does have several different official editions which vary mostly in their pre-installed desktop environment. So if your PC does not have much CPU power/RAM to work with, you may wish to use the LXDE edition. A netinstall edition also exists, which you can install and customize to your liking. 
 
 #### Useful Resources
 * [Ask Fedora](https://ask.fedoraproject.org/) &mdash; an AskBot-powered Q&A website for Fedora that is similar, but not quite as swift and high-quality in its responses, in my opinion at least, as Ask Ubuntu is for Ubuntu-related queries.
