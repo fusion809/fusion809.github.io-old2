@@ -32,6 +32,12 @@ div.clear {
   all: initial;
 }
 
+div.copyright {
+  background-color: rgb(223, 233, 245);
+  border-radius: 4px solid rgb(223, 233, 245);
+  padding: 4px;
+}
+
 div.highlight.highlight-source-shell pre {
   background-color: white;
   color: #222;
