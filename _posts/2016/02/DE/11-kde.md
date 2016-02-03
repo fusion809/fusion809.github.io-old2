@@ -2,6 +2,7 @@
 {% include Links/image.html image="Arch-Linux-Plasma-5.5.3-El-General-maia-icons.png" width="1130px" float="none" description="KDE Plasma 5.5.3 with El General shell theme and Maia icon theme" %}
 
 ### Background
+{% include Links/image.html image="TU-plasma5.png" width="54px" float="right" description="Plasma 5 icon" %}
 [**KDE**](https://www.kde.org/) is a Qt-based desktop environment that is one of the most popular desktop environments available for Linux. KDE is both the name of the desktop environment itself and the international FOSS community behind its development and the development of its associated application software. KDE, the project, was first founded in 1996 by Matthias Ettrich, who at the time was a German university student. In July 1998 the first release of KDE, the desktop environment, was made which was dubbed, "K Desktop Environment 1". Later releases were dubbed K Desktop Environment 2 and 3, made in October 2000 and April 2002, respectively and KDE Plasma 4 and 5 released in January 2008 and July 2014, respectively. The numbers given to each KDE release refers to the version of Qt used, for example, K Desktop Environment 1 used Qt 1, while KDE Plasma 4 used Qt 4.
 
 The name KDE is a play on the acronym, CDE, which was used by the then popular proprietary Unix desktop environment, the Common Desktop Environment. CDE was based on the then proprietary widget toolkit, Motif, so as KDE developers intended to create an entirely FOS desktop environment they chose to use the free (or rather dual-licensed under the free QPL license and its own proprietary license) widget toolkit, Qt. KDE was originally abbreviated from **Kool Desktop Environment**, although this meaning was later dropped in favour of **K Desktop Environment** until all use of KDE as an acronym was abandoned.
@@ -24,3 +25,7 @@ KDE has its own core application suite, which includes:
 * [**KTorrent**](https://www.kde.org/applications/internet/ktorrent/), a BitTorrent client.
 
 and countless others.
+
+### Customizability
+{% include Links/image.html image="KDE-Plasma-5.5.4-Settings.png" width="1130px" float="none" description="KDE Plasma 5.5.4 System Settings and showing the interface for editing the plasma panel, the mouse pointer is down at the Plasma 5 icon that opens this interface" %}
+KDE is extensively customizable via the system settings interface, the plasma panel is also extensively-customizable via right-clicking it, while widgets can be moved or removed by clicking the Plasma 5 icon in the bottom-right corner in the screenshot shown above.
