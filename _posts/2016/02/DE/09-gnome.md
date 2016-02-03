@@ -6,6 +6,10 @@
 
 GNOME 3 featured a new look (GNOME Shell) that broke with the traditional desktop metaphor and was met with much controversy and criticism in the FOSS community. Because of this around the time that GNOME 3 was released several unofficial forks of GNOME were also developed that were designed to keep with the traditional desktop metaphor that GNOME 3 broke with, the most notable of these are Cinnamon (forked from GNOME 3) and MATE (forked from GNOME 2).
 
+GNOME is fairly customizable, its keyboard shortcuts and theme can be customized, it can be extended by use of plugins (although I personally find that most of these extensions or plugins are not compatible with the current release of GNOME, though, which can be irritating), startup applications can be customized, *etc.* These are all customized via GNOME Settings or the GNOME Tweak Tool. Most of its extensions/plugins are also fairly limited in how much they can be customized.
+
+GNOME's feature set can be extended using extensions/plugins, although it is important to note that many such extensions are only compatible with older releases of GNOME. These extensions can be installed from within one's web browser, although this method of installing extensions is only compatible with select few web browsers such as Firefox. It is one of the most feature-packed DEs and, in fact, I have found its Wayland session to be the most stable of all the Wayland sessions I have tried (which includes Hawaii, GNOME on Wayland and Plasma on Wayland). It is stable enough for me to use it long-term without too much of a stability problem. Hawaii always crashes soon after it is started for me, while Plasma on Wayland usually crashes soon after starting, although I have managed to boot a Kubuntu live USB running on Wayland without it crashing immediately, although it did not take much to make it crash after it started.
+
 ### Components
 * **Display server/window system**: X11 and Wayland (GNOME &geq;3.10).
 * **File manager**: GNOME Files (previously called Nautilus).
@@ -20,12 +24,6 @@ it also has one of the most comprehensive core applications suites, and includes
 * GIMP (image editing program, similar to Adobe Photoshop).
 * GNOME Terminal.
 * GParted (partition editing program).
-
-### Customizability
-GNOME is fairly customizable, its keyboard shortcuts and theme can be customized, it can be extended by use of plugins (although I personally find that most of these extensions or plugins are not compatible with the current release of GNOME), startup applications can be customized, *etc.* These are all customized via GNOME Settings or the GNOME Tweak Tool. Most of its extensions/plugins are also fairly limited in how much they can be customized.
-
-### Features
-GNOME's feature set can be extended using extensions/plugins, although it is important to note that many such extensions are only compatible with older releases of GNOME. These extensions can be installed from within one's web browser, although this method of installing extensions is only compatible with select few web browsers such as Firefox. It is one of the most feature-packed DEs and, in fact, I have found its Wayland session to be the most stable of all the Wayland sessions I have tried (which includes Hawaii, GNOME on Wayland and Plasma on Wayland). It is stable enough for me to use it long-term without too much of a stability problem. Hawaii always crashes soon after it is started for me, while Plasma on Wayland usually crashes soon after starting, although I have managed to boot a Kubuntu live USB running on Wayland without it crashing immediately, although it did not take much to make it crash after it started.
 
 ### Obtaining It
 * {% include Search/debian.md package="gnome" %}

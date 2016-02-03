@@ -7,6 +7,11 @@
 
 The name KDE is a play on the acronym, CDE, which was used by the then popular proprietary Unix desktop environment, the Common Desktop Environment. CDE was based on the then proprietary widget toolkit, Motif, so as KDE developers intended to create an entirely FOS desktop environment they chose to use the free (or rather dual-licensed under the free QPL license and its own proprietary license) widget toolkit, Qt. KDE was originally abbreviated from **Kool Desktop Environment**, although this meaning was later dropped in favour of **K Desktop Environment** until all use of KDE as an acronym was abandoned.
 
+{% include Links/image.html image="KDE-Plasma-5.5.4-Settings.png" width="1130px" float="none" description="KDE Plasma 5.5.4 System Settings and showing the interface for editing the plasma panel, the mouse pointer is down at the Plasma 5 icon that opens this interface" %}
+KDE is extensively customizable via the system settings interface, the plasma panel is also extensively-customizable via right-clicking it, while widgets can be moved or removed by clicking the Plasma 5 icon in the bottom-right corner in the screenshot shown above.
+
+KDE's feature set is the greatest of any desktop environment I am aware of. Even its system settings has a built-in installer for themes, panel widgets, wallpapers, *etc.*
+
 ### Components
 * **Display server/window system**: X11, Wayland (experimental, as of Plasma 5.4).
 * **File manager**: [Dolphin](https://www.kde.org/applications/system/dolphin/).
@@ -26,6 +31,12 @@ KDE has its own core application suite, which includes:
 
 and countless others.
 
-### Customizability
-{% include Links/image.html image="KDE-Plasma-5.5.4-Settings.png" width="1130px" float="none" description="KDE Plasma 5.5.4 System Settings and showing the interface for editing the plasma panel, the mouse pointer is down at the Plasma 5 icon that opens this interface" %}
-KDE is extensively customizable via the system settings interface, the plasma panel is also extensively-customizable via right-clicking it, while widgets can be moved or removed by clicking the Plasma 5 icon in the bottom-right corner in the screenshot shown above.
+### Obtaining It
+* {% include Search/debian.md task="kde-desktop" %}
+* {% include Search/arch.md package="plasma-meta" %}
+* {% include Search/ubuntu.md package="kubuntu-desktop" %}
+* {% include Search/gentoo.md package="kde-plasma/plasma-meta" %}
+* {% include Search/centos.md category="kde-desktop" %}
+* {% include Search/fedora.md category="kde-desktop" %}
+* {% include Search/opensuse.md package="kde-desktop" %}
+* {% include Search/sabayon.md package="kde-plasma/plasma-meta" %}
