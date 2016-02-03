@@ -35,24 +35,6 @@ redirect_from:
 {% include_relative 24-pycharm.md %}
 {% include_relative 25-scite.md %}
 {% include_relative 26-vim.md %}
-
-## Poll
-<div id="debate_1_2324434"></div>
-<script>
-  (function () {
-    var opst = document.createElement('script');
-    opst.type = 'text/javascript';
-    opst.async = true;
-    opst.src = '/js/embed-2324434.js';
-    (document.getElementsByTagName('head')[0] ||
-      document.getElementsByTagName('body')[0]).appendChild(opst);
-  }());
-</script>
-
-## SRU Comparison
-{% include Links/image.html image="ISRAM-usage-TEs-Sab.svg" width="1130px" float="none" %}
-{% include Links/image.html image="ISRAM-usage-TEs-Man.svg" width="1130px" float="none" %}
-
-[^1]: Ben Ogle (11 November 2015). [*Atom 1.3*](http://blog.atom.io/2015/12/11/atom-1-3.html). *blog.atom.io*: Atom.
-[^2]: [Releases &middot; jenslody/codeblocks](https://github.com/jenslody/codeblocks/releases?after=CODEBLOCKS_1_0_BETA5). Retrieved 12 January 2016.
-[^3]: [Plugins](http://codeblocks.org/cbplugins). Retrieved 12 January 2016.
+{% include_relative 27-poll.md %}
+{% include_relative 28-sru.md %}
+{% include_relative 29-footnotes.md %}
