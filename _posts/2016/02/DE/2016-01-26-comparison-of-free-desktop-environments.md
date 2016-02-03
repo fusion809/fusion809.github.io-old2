@@ -28,3 +28,7 @@ redirect_from:
 {% include_relative 08-fluxbox.md %}
 
 {% include_relative 09-gnome.md %}
+
+{% include_relative 10-i3.md %}
+
+{% include_relative 11-kde.md %}

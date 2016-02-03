@@ -11,6 +11,7 @@ The definition of a **desktop environment** (**DE**) varies according to whom yo
 * **Window manager** (**WM**). These are programs that control the appearance, placement and other details of windows within a windowing system. Most DEs use their own WM, although some share.
 
 Most DEs that have all of these components also come with their own set of core applications, which usually include a:
+
 * **Picture viewer** &mdash; examples include Eye of MATE Image Viewer, Gwenview, Ristretto, *etc.*
 * **Terminal emulator** &mdash; examples include GNOME Terminal, Konsole, LXTerminal, MATE Terminal, Xfce Terminal, *etc.*
 * **Text editor** &mdash; examples include gedit, KWrite, Leafpad, Mousepad and Pluma.
