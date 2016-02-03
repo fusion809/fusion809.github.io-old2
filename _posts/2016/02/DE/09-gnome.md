@@ -7,7 +7,7 @@
 GNOME 3 featured a new look (GNOME Shell) that broke with the traditional desktop metaphor and was met with much controversy and criticism in the FOSS community. Because of this around the time that GNOME 3 was released several unofficial forks of GNOME were also developed that were designed to keep with the traditional desktop metaphor that GNOME 3 broke with, the most notable of these are Cinnamon (forked from GNOME 3) and MATE (forked from GNOME 2).
 
 ### Components
-* **Display server/window system**: X11, Wayland.
+* **Display server/window system**: X11 and Wayland (GNOME &geq;3.10).
 * **File manager**: GNOME Files (previously called Nautilus).
 * **Widget toolkit**: GTK+.
 * **Window manager**: Mutter.
