@@ -10,7 +10,6 @@ redirect_from:
 ---
 {% include Layouts/draft.html %}
 {% include Links/image.html image="optipng2.png" description="OptiPNG 0.7.5 running under Bash 4.3.39 in LXTerminal 0.2.0" width = "1130px" float = "none" %}
-{% include Layouts/draft.html %}
 {% include_relative introduction.md %}
 
 {% include_relative unix-shells.md %}
