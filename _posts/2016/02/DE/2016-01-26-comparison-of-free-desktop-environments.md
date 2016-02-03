@@ -7,8 +7,6 @@ redirect_from:
   - /comparison-of-free-desktop-environments/
 ---
 
-{% include Links/image.html image="Arch-Linux-Plasma-5.5.3-El-General-maia-icons.png" width="1130px" float="none" description="KDE Plasma 5.5.3 running under Arch Linux with El General shell theme and Maia icon theme" %}
-
 {% include Layouts/draft.html %}
 
 {% include_relative 01-introduction.md %}
@@ -32,3 +30,5 @@ redirect_from:
 {% include_relative 10-i3.md %}
 
 {% include_relative 11-kde.md %}
+
+{% include_relative 12-lumina.md %}
