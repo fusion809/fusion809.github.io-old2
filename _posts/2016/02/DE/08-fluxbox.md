@@ -2,19 +2,13 @@
 {% include Links/image.html image="Fluxbox-1.3.7-Arch.png" width="1130px" float="none" description="Fluxbox 1.3.7 running on Arch Linux" %}
 
 ### Background
-[**Fluxbox**](http://fluxbox.org/) is a stacking window manager originally forked from Blackbox 0.61 in 2001. It is primarily designed to be lightweight.
+[**Fluxbox**](http://fluxbox.org/) is a stacking window manager originally forked from Blackbox 0.61 in 2001. It is primarily designed to be lightweight. Fluxbox can be customized by editing files in the `~/.fluxbox` directory. Customizations that are possible are of its keyboard shortcuts, application menu and startup applications. Fluxbox is fairly minimalistic, with fairly minimal features.
 
 ### Components
 * **Display server/window system**: X11.
 * **File manager**: None.
 * **Widget toolkit**: None.
 * **Window manager**: Fluxbox.
-
-### Customizability
-Fluxbox can be customized by editing files in the `~/.fluxbox` directory. Customizations that are possible are of its keyboard shortcuts, application menu and startup applications.
-
-### Features
-Fluxbox is fairly minimalistic, with fairly minimal features.
 
 ### Obtaining It
 Fluxbox is easy to obtain on most Linux distributions, to install it run:

@@ -4,7 +4,7 @@
 ### Backgrounds
 The **Deepin Desktop Environment** (**DDE**) is a desktop environment that uses the Qt 5 widget toolkit, although it was once (only a few months ago) based on HTML5 and WebKit with JavaScript extensions. It now also uses the Mutter window manager, which is from GNOME 3. DDE was originally developed for the Chinese Debian (Unstable) and previously Ubuntu-based Linux distribution, deepin. DDE is only available for two Linux distributions that I am aware of &mdash; Arch Linux (thanks to the efforts of Xu Fasheng and Felix Yan) and deepin. I am aware of efforts to port it to Gentoo-based distributions, via the [`gentoo-zh`](https://github.com/gentoo-mirror/gentoo-zh) overlay, but these efforts have since been abandoned.
 
-It is now written in C, C++, CoffeeScript, Go, JavaScript, Objective-C, Python, QML, *etc.* according to the various GitHub repositories of its components.
+It is now written in C, C++, CoffeeScript, Go, JavaScript, Objective-C, Python, QML, *etc.* according to the various GitHub repositories of its components. DDE is a DE with limited customizability. Most of the available customizations are done via the control centre program, and pertain to the aesthetics of the DE. Its features include an OS X like dock, a few unique core applications, *etc.* The only one of its core applications I have used enough to review is its terminal emulator, Deepin Terminal, which I must say is my least favourite terminal emulator.
 
 ### Components
 * **Display server/window system**: X11.
@@ -13,12 +13,6 @@ It is now written in C, C++, CoffeeScript, Go, JavaScript, Objective-C, Python, 
 * **Window manager**: Mutter.
 
 Its core applications suite includes a game centre, music player, video player and terminal emulator.
-
-### Customizability
-DDE is a DE with limited customizability. Most of the available customizations are done via the control centre program, and pertain to the aesthetics of the DE.
-
-### Features
-Its features include an OS X like dock, a few unique core applications, *etc.* The only one of its core applications I have used enough to review is its terminal emulator, Deepin Terminal, which I must say is my least favourite terminal emulator.
 
 ### Obtaining It
 It comes pre-installed on deepin, while on Arch Linux (and its derivatives that use similar repositories) running {% include Code/coders.html line1="pacman -S deepin" %} will install just the DDE, while {% include Code/coder.html line1="pacman -S deepin-extra" %} will install its core applications suite.

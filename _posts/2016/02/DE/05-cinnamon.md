@@ -6,6 +6,12 @@
 
 It is written in C++, JavaScript and Python (source: [its GitHub repository](https://github.com/linuxmint/Cinnamon)).
 
+Most things can be customized in Cinnamon, for one it has a digital clock that can be configured to a custom format. I usually use the format (for details on how to create your own custom date and time format see https://help.gnome.org/users/gthumb/unstable/gthumb-date-formats.html.en):
+`%l:%M:%S %P, %A %e %B %Y`
+for example as I am typing this post this would be rendered as: `1:26:00 pm, Thursday 28 January 2016`. This custom format is not available under GNOME or MATE, by the way. Additionally, one can modify one's keyboard shortcuts, one's theme and several other details about one's system.
+
+Cinnamon has several extensions available for it, which can be installed via a built-in installer. I have found more extensions available for it, that are compatible with the latest release of the desktop, than are available for GNOME and MATE. For example, I have found a weather desklet which can be handy.
+
 ### Components
 * **Display server/window system**: X11.
 * **File manager**: Nemo.
@@ -13,14 +19,6 @@ It is written in C++, JavaScript and Python (source: [its GitHub repository](htt
 * **Window manager**: Muffin, a fork of Mutter.
 
 it has its own core application suite, which are forked from the corresponding GNOME Core Applications.
-
-### Customizability
-Most things can be customized in Cinnamon, for one it has a digital clock that can be configured to a custom format. I usually use the format (for details on how to create your own custom date and time format see https://help.gnome.org/users/gthumb/unstable/gthumb-date-formats.html.en):
-`%l:%M:%S %P, %A %e %B %Y`
-for example as I am typing this post this would be rendered as: `1:26:00 pm, Thursday 28 January 2016`. This custom format is not available under GNOME or MATE, by the way. Additionally, one can modify one's keyboard shortcuts, one's theme and several other details about one's system.
-
-### Features
-Cinnamon has several extensions available for it, which can be installed via a built-in installer. I have found more extensions available for it, that are compatible with the latest release of the desktop, than are available for GNOME and MATE. For example, I have found a weather desklet which can be handy.
 
 ### Obtaining It
 Cinnamon is in the package repositories of the vast majority of Linux distributions, including (note, these instructions should install the Cinnamon meta-package, which should draw in all core components of the desktop for installation):

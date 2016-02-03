@@ -6,14 +6,13 @@ The [**awesome window manager**](http://awesome.naquadah.org/) is a [dynamic win
 
 awesome was originally forked from [dwm](https://en.wikipedia.org/wiki/Dwm), a very basic dynamic window manager, in 2007 and named jdwm with the "jd" in its name coming from Danjou's initials. Later that year it was renamed awesome after the catchphrase of the *How I Met Your Mother* character, Barney Stinson.
 
+All configuration must be done by editing files in the `~/.config/awesome` folder. In this folder is a Lua script called `rc.lua`, which is the Lua script awesome will run whenever it is started, by default. It is also called the &ldquo;config&rdquo; file. awesome comes with a default config file usually found in the `/etc/xdg/awesome/` folder, which can be customized to one's liking.
+
 ### Components
 * **Display server/window system**: X11.
 * **File manager**: None.
 * **Widget toolkit**: None.
 * **Window manager**: awesome.
-
-### Customizability
-All configuration must be done by editing files in the `~/.config/awesome` folder. In this folder is a Lua script called `rc.lua`, which is the Lua script awesome will run whenever it is started, by default. It is also called the &ldquo;config&rdquo; file. awesome comes with a default config file usually found in the `/etc/xdg/awesome/` folder, which can be customized to one's liking.
 
 ### Obtaining It
 awesome is found in the official repositories of the vast majority of Linux distributions, including:
