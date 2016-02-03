@@ -32,4 +32,4 @@ or:
 * Does not support many programming languages
 
 ### Summary
-{% include_relative ninjaide-summary.html %}
+{% include_relative 22a-ninjaide-summary.html %}

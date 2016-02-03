@@ -38,4 +38,4 @@ whereas to install it with Portage run:
 * Steep learning curve, making it difficult to learn. If you run `vimtutor` from the command-line after installing it, you will be taken through a tutorial of how to use it, which can be helpful.
 
 ### Summary
-{% include_relative vim-summary.html %}
+{% include_relative 26a-vim-summary.html %}

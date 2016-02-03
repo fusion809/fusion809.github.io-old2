@@ -32,4 +32,4 @@ while to install it using Portage run:
 * Heavy on system resources.
 
 ### Summary
-{% include_relative jedit-summary.html %}
+{% include_relative 14a-jedit-summary.html %}

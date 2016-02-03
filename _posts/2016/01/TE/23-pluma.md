@@ -31,4 +31,4 @@ or with Portage by running:
 * Customization options are fairly limited
 
 ### Summary
-{% include_relative pluma-summary.html %}
+{% include_relative 23a-pluma-summary.html %}

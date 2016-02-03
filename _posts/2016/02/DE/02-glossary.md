@@ -1,6 +1,7 @@
 ## Glossary
 {% include Layouts/note.md note1="Unless otherwise specified all links are to the English Wikipedia" %}
 <br/>
+
 ### [Desktop Environment](https://en.wikipedia.org/wiki/Desktop_environment)
 The definition of a **desktop environment** (**DE**) varies according to whom you ask, but I will define a DE as a GUI consisting of at least three of the following, with the optional component (that is, the component that can be left out, with the DE still fitting my definition of a DE) being the FM:
 
@@ -14,7 +15,7 @@ Most DEs that have all of these components also come with their own set of core 
 * **Terminal emulator** &mdash; examples include GNOME Terminal, Konsole, LXTerminal, MATE Terminal, Xfce Terminal, *etc.*
 * **Text editor** &mdash; examples include gedit, KWrite, Leafpad, Mousepad and Pluma.
 
-The name **desktop environment** derives from the fact that most DEs keep to the traditional "[desktop metaphor](https://en.wikipedia.org/Desktop_metaphor)", which is a metaphor of a writing desktop where people do their paper work. 
+The name **desktop environment** derives from the fact that most DEs keep to the traditional "[desktop metaphor](https://en.wikipedia.org/Desktop_metaphor)", which is a metaphor of a writing desktop where people do their paper work.
 
 ### [Window Manager](https://en.wikipedia.org/wiki/Window_manager)
 {% include Layouts/note.md note1="Much of this information is taken from the [ArchWiki](https://wiki.archlinux.org/index.php/Window_manager) or Wikipedia" %}

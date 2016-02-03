@@ -32,4 +32,4 @@ alternatively, to install it with Portage, run:
 * Unintuitive keymap, can take a little getting used to.
 
 ### Summary
-{% include_relative nano-summary.html %}
+{% include_relative 20a-nano-summary.html %}

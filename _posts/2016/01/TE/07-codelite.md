@@ -36,4 +36,4 @@ I have tried building CodeLite using the `kaa` overlay's ebuild and it failed du
 * Not in the official binary package repositories for either Manjaro or Sabayon.
 
 ### Summary
-{% include_relative codelite-summary.html %}
+{% include_relative 07a-codelite-summary.html %}

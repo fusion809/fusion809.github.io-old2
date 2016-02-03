@@ -32,4 +32,4 @@ On Manjaro an experimental version of IJCE is also installable from the AUR by r
 * Limited set of features and supported languages
 
 ### Summary
-{% include_relative intellijidea-summary.html %}
+{% include_relative 13a-intellijidea-summary.html %}

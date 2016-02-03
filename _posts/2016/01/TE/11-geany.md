@@ -35,4 +35,4 @@ The latest version of Geany in the [Entropy Store](https://packages.sabayon.org/
 * The version of Geany in the Entropy Store is not the latest available
 
 ### Summary
-{% include_relative geany-summary.html %}
+{% include_relative 11a-geany-summary.html %}

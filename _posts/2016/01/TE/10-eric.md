@@ -45,4 +45,4 @@ To install the latest release of Eric on Sabayon, via following the general inst
 * The latest version is not available via the usual channels on Sabayon
 
 ### Summary
-{% include_relative eric-summary.html %}
+{% include_relative 10a-eric-summary.html %}

@@ -30,4 +30,4 @@ Alternatively to install it using Portage run:
 * Fairly light on features, beyond syntax highlighting.
 
 ### Summary
-{% include_relative gedit-summary.html %}
+{% include_relative 12a-gedit-summary.html %}

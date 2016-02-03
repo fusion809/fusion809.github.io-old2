@@ -45,4 +45,4 @@ cd eclipse-installer
 * Extra plugins are required in order to program in other programming languages.
 
 ### Summary
-{% include_relative eclipse-summary.html %}
+{% include_relative 08a-eclipse-summary.html %}

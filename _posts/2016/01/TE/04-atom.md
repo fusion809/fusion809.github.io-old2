@@ -81,4 +81,4 @@ If you are using some other platform, or for whatever reason none of the methods
 * Slow to start, although with the release of version 1.3.0 the start time has been supposedly cut by 20-30%.[^1] I personally have not noticed any such improvement, although I cannot say for certain I would even if there was such an improvement.
 
 ### Summary
-{% include_relative atom-summary.html %}
+{% include_relative 04a-atom-summary.html %}

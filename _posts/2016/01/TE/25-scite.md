@@ -32,4 +32,4 @@ To install it with Portage, run:
 * Easy to get on Sabayon and other Linux distributions like Manjaro.
 
 ### Summary
-{% include_relative scite-summary.html %}
+{% include_relative 25a-scite-summary.html %}

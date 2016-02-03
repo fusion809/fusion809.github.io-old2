@@ -29,4 +29,4 @@ Komodo Edit can be installed from the [`spike`](https://github.com/Spike-Pentest
 * Not in the pacman repos for Manjaro. Komodo Edit 9.3.2 cannot be installed from any ebuilds in the Layman remote list.
 
 ### Ratings
-{% include_relative komodoedit-summary.html %}
+{% include_relative 17a-komodoedit-summary.html %}

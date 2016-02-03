@@ -29,4 +29,4 @@ PyCharm CE can be installed from the Tree using Portage, although it is not in t
 * Heavy on system resource usage
 
 ### Summary
-{% include_relative pycharm-summary.html %}
+{% include_relative 24a-pycharm-summary.html %}

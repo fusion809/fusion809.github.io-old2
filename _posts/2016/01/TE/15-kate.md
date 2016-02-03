@@ -42,4 +42,4 @@ while to install KWrite with Portage run (no need to add any overlays, it is in 
 * Due to it being part of KDE SC it cannot be too easily ported to Microsoft Windows or OS X, although it is readily available on most Linux distributions.
 
 ### Summary
-{% include_relative kate-summary.html %}
+{% include_relative 15a-kate-summary.html %}

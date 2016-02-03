@@ -29,4 +29,4 @@ or:
 * Not very customizable.
 
 ### Ratings
-{% include_relative kdevelop-summary.html %}
+{% include_relative 16a-kdevelop-summary.html %}

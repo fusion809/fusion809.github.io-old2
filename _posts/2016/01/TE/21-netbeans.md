@@ -30,4 +30,4 @@ while to install it with Portage run:
 * Fairly limited set of supported languages
 
 ### Summary
-{% include_relative netbeans-summary.html %}
+{% include_relative 21a-netbeans-summary.html %}

@@ -29,4 +29,4 @@ While to install it with Portage run:
 * Support for non-web markup/programming languages is less than adequate.
 
 ### Summary
-{% include_relative bluefish-summary.html %}
+{% include_relative 05a-bluefish-summary.html %}
