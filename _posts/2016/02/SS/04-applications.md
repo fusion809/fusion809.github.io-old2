@@ -2,6 +2,7 @@
 The primary value of Bash scripts is to automate tasks that would otherwise have to be done, over a longer time-frame by a human operator. I personally use shell scripts to make my life, when I am at the command-line, easier.
 
 In my `~/.bashrc` file I have links to several shell scripts stored in my `~/Shell` directory. Both my `~/.bashrc` and the shell scripts in my `~/Shell` directory can be found at [this GitHub repository](https://github.com/fusion809/sabayon-scripts). Here is my current `~/.bashrc` file:[^6]
+
 ~~~ bash
 # /etc/skel/.bashrc
 #
@@ -33,6 +34,7 @@ You may have noticed that I am hosting HTML versions of several Linux man pages 
 {% include Code/codeu.html line1="manhtml 1 emerge" %}
 
 Here are the contents of `~/Shell/man.sh` (showing all the contents as `manhtml` depends on other functions to work):
+
 ~~~ bash
 # Copy man page from /usr/share/man/... to ~/Documents/Manpages
 function cpman {
@@ -57,6 +59,7 @@ function manhtml {
 }
 ~~~
 while here is a function I created to help me install Moksha themes (it appears differently in my <code>~/Shell/other.sh</code> file, as this form is mostly to walk you through how it works):
+
 ~~~ bash
 function theme {
   #clone repo
@@ -233,6 +236,7 @@ alias schroot2='sabayon-chrootn 2'
 
 #### Entropy
 The following are taken from [`~/Shell/equo.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/equo.sh) and they are functions (with aliases for said functions) that essentially automate some common actions one may perform with Entropy. They are not all the lines of code in `equo.sh`, they merely represent some of the more commonly-used codes. It is important to note some of these functions need not be defined as functions, they could instead be defined as aliases (using `alias NAME='CODE'` where NAME is the function's name and `CODE` is what is between the curly brackets).
+
 ~~~ bash
 # Inflate Portage binary into SPM binary.
 function sepi {
@@ -378,6 +382,7 @@ fi
 
 #### Layman/Portage
 Here are some lines from my [`~/Shell/emerge.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/emerge.sh) script.
+
 ~~~ bash
 # Install a package, but ask first
 function ema {

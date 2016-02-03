@@ -11,14 +11,14 @@ redirect_from:
 {% include Layouts/draft.html %}
 {% include_relative 01-introduction.md %}
 
-{% include_relative unix-shells.md %}
+{% include_relative 02-unix-shells.md %}
 
-{% include_relative syntax.md %}
+{% include_relative 03-syntax.md %}
 
-{% include_relative applications.md %}
+{% include_relative 04-applications.md %}
 
-{% include_relative terminals.md %}
+{% include_relative 05-terminals.md %}
 
-{% include_relative external-links.md %}
+{% include_relative 06-external-links.md %}
 
-{% include_relative footnotes.md %}
+{% include_relative 07-footnotes.md %}
