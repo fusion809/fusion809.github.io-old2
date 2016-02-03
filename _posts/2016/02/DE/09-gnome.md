@@ -26,7 +26,7 @@ it also has one of the most comprehensive core applications suites, and includes
 * GParted (partition editing program).
 
 ### Obtaining It
-* {% include Search/debian.md package="gnome" %}
+* {% include Search/debian.md task="gnome-desktop" %}
 * {% include Search/arch.md package="gnome" %}
 * {% include Search/ubuntu.md package="gnome" %}
 * {% include Search/gentoo.md package="gnome-base/gnome" %}

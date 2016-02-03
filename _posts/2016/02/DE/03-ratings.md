@@ -1,5 +1,6 @@
 ## Ratings
 Each section (each focusing on a separate DE/WM) has a subsection wherein I give numerical ratings to give a summary as to the various properties of the DE/WM, and often I will also include a comment as to why I gave such a rating. These ratings are from 0 to 10 and each, except for the *overall* rating, are independent of one another. For example, *customizability* refers to the DE/WM's customizability, without taking into account how easy it would be for a newcomer to customize it, just how customizable it is to an experienced user that knows what they are doing. These properties are:
+
 * **Availability**: how easy is it to get this DE/WM on the more popular Linux distros.
 * **Beginner-friendliness**: how easy is it for a Linux newcomer to get the "hang" of this DE/WM without any prior knowledge or experience with technology.
 * **Customizability**: how extensively, can this DE/WM be customized?
