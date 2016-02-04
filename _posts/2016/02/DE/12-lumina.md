@@ -19,5 +19,10 @@ Lumina has no core application suite that I am aware of.
 ### Ratings
 * **Availability**: 4. For most distributions it can only be obtain from unofficial repositories.
 * **Beginner-friendliness**: 7?
-* **Customizability**: 6-8? Not enough experience with Lumina to be able to accurately rate this feature. 
-*
+* **Customizability**: 6-8? Not enough experience with Lumina to be able to accurately rate this feature.
+* **Features**: 5?
+* <abbr title="My Experience With It">**MEWI**</abbr>: 2. Not an awful lot of experience, mostly because of how buggy it is on my favourite distributions, but some.
+* **Stability**: 3. On Linux distributions its stability is not its strongest point.
+* **Support**: ? Never used their support forums or Wiki.
+* **System resource usage**: 5. Not as heavy as some desktops but certainly not what I would call "lightweight". Here is my `ps_mem` table: {% include Code/gist.html id="d411a35caab31d05084b" %}
+* **Overall**: 4.
