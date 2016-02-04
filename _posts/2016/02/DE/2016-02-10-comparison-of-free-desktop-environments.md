@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "A Comparison of Free Desktop Environments and Window Managers"
-date:       2016-01-30 +1000
+date:       2016-02-10 +1000
 categories: linux, desktop-environments, comparisons
 redirect_from:
   - /comparison-of-free-desktop-environments/

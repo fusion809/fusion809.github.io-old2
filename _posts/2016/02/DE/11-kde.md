@@ -12,6 +12,8 @@ KDE is extensively customizable via the system settings interface, the plasma pa
 
 KDE's feature set is the greatest of any desktop environment I am aware of. Even its system settings has a built-in installer for themes, panel widgets, wallpapers, *etc.*
 
+KDE is written in C++ and QML, with QML being the user-interface markup language of the Qt toolkit.
+
 ### Components
 * **Display server/window system**: X11, Wayland (experimental, as of Plasma 5.4).
 * **File manager**: [Dolphin](https://www.kde.org/applications/system/dolphin/).
@@ -52,3 +54,9 @@ and countless others.
 * **Support**: 6? It has its own forums and family of Wikis, although my experience with either is in its infancy.
 * **System resource usage**: 2. Very heavy on RAM and installed size (on Arch this size is ~ 800 MB). Here is my `ps_mem` table: {% include Code/gist.html id="434a4aa6655f51929317" %}
 * **Overall**: 9.
+
+### Useful Resources
+* [KDE](https://wiki.archlinux.org/index.php/KDE) at *The ArchWiki*
+* [KDE](https://wiki.gentoo.org/wiki/KDE) at *Gentoo Wiki*
+* [KDE](https://en.wikipedia.org/wiki/KDE) at *The English Wikipedia*
+* [KDE Plasma 5](https://en.wikipedia.org/wiki/KDE_Plasma 5) at *The English Wikipedia*
