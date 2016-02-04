@@ -8,7 +8,7 @@
 * **Display server/window system**: X11.
 * **File manager**: [Insight](http://lumina-desktop.org/development-preview-0-8-7-insight-file-manager/).
 * **Widget toolkit**: Qt.
-* **Window manager**: Fluxbox.
+* **Window manager**: Fluxbox, although in the future it is planned to use its own window manager.[^1]
 
 Lumina has no core application suite that I am aware of.
 
@@ -26,3 +26,6 @@ Lumina has no core application suite that I am aware of.
 * **Support**: ? Never used their support forums or Wiki.
 * **System resource usage**: 5. Not as heavy as some desktops but certainly not what I would call "lightweight". Here is my `ps_mem` table: {% include Code/gist.html id="d411a35caab31d05084b" %}
 * **Overall**: 4.
+
+### Useful Resources
+* [GitHub Repository](https://github.com/pcbsd/lumina/)

@@ -32,3 +32,5 @@ redirect_from:
 {% include_relative 11-kde.md %}
 
 {% include_relative 12-lumina.md %}
+
+{% include_relative footnotes.md %}
