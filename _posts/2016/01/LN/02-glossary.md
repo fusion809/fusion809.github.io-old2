@@ -1,4 +1,5 @@
 ## Glossary
+
 ### BSD Ports System
 On BSD derivatives, especially FreeBSD, a common form of package management is the so called "Ports" system. These ports are a series of subdirectories in the `/usr/ports` folder, each containing the source code of available packages that can be installed via this ports system. To install a package the user merely changes into the port of the package they want (this must be done as root, by-the-way, otherwise permission issues will be encountered later on in this process), configures the source code so that the package will be built with the features they want, and runs `make install`. The `/usr/ports` folder has a characteristic directory hierarchy inside it. See each individual package's build directory (which contains the source code) is found at <code>/usr/ports/<i>CAT</i>/<i>PACKAGE</i></code>, where <code><i>CAT</i></code> refers to the category the package belongs to (e.g., `www` for the Firefox web browser) and <code><i>PACKAGE</i></code> refers to the package's name (in the example of Firefox this would be simply `firefox`).
 
@@ -10,4 +11,4 @@ where what is *italicized*, needs to be substituted with the corresponding value
 For a guide on creating live USBs I would recommend the [ArchWiki article on this topic](https://wiki.archlinux.org/index.php/USB_flash_installation_media), although keep in mind this guide is primarily written with creating a live USB for Arch Linux in mind and hence some methods described in it may not be applicable to all Linux distributions.
 
 ### Long-Term Support (LTS)
-**Long-term support** (**LTS**), refers to software releases that have a longer than normal support lifetime (that is, the time period over which the program is still supported by its developer). Examples include Ubuntu (LTS) releases and Linux kernel (LTS) releases, which are supported for longer periods of time than standard releases. 
+**Long-term support** (**LTS**), refers to software releases that have a longer than normal support lifetime (that is, the time period over which the program is still supported by its developer). Examples include Ubuntu (LTS) releases and Linux kernel (LTS) releases, which are supported for longer periods of time than standard releases.
