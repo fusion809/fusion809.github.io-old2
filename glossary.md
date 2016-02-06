@@ -16,6 +16,9 @@ A computer's **hardware** comprises the physical components of the computer, lik
 ## Fork
 In the field of software development, a **fork** or **project fork**, is when developers take a copy of the source code from one software project and start independently working on it (or developing it) themselves. In the FOSS world this is commonplace due to the lack of restrictions imposed by FOSS licenses.
 
+## Downstream / Upstream
+In software development, **downstream** and **upstream** refers to the direction from and toward the original authors or maintainers of software that is distributed as source code, respectively.
+
 ## Operating System
 An **operating system** (**OS**) is the base set of system software that forms the foundation for other programs to run on top of. It manages all communication between the computer's hardware and the application software that run on top of it. At its heart, each OS has what is known as a kernel, which manages all communication with the computer's hardware.
 
@@ -38,4 +41,10 @@ The **GNU Project** is a FOSS project that was first founded in the 1980s by Ric
 The **Free Software Foundation** (**FSF**) non-profit organization set up by Stallman that advocates the widespread use of FOSS and was originally set up to hire people to develop software for the GNU Project. The FSF also provides its own set of predominantly copyleft licenses which includes the GNU GPL mentioned earlier.
 
 ## Linux-libre
-The **Linux-libre kernel** is essentially the Linux kernel with its binary blobs removed. A comparatively small number of Linux distributions use the libre kernel, these distributions are often called GNU/Linux-libre distributions and are those used by the FSF.
+The **Linux-libre kernel** is essentially the Linux kernel with its binary blobs removed. A comparatively small number of Linux distributions use the libre kernel, these distributions are often called GNU/Linux-libre distributions and are fairly unpopular compared to their non-libre counterparts.
+
+## Berkeley Software Distribution
+The **Berkeley Software Distribution** (**BSD**) is a Unix operating system that was developed at the University of California, Berkeley between 1977 and 1995. It was originally closed-source (that is, not open-source), but later releases were licensed under permissive BSD licenses. Since then several descendants of BSD have emerged with the most notable and popular one being FreeBSD. I use the terminology &#42;BSD to collectively refer to BSD and its descendants.
+
+## Package Management System
+A **package management system** (**PMS**, plural form **PMSs**) is a collection of system software that automates the process of installing, configuring, removing and upgrading computer programs. Traditionally Linux PMSs were operated solely from the command-line but nowadays several graphical PMSs also exist. 
