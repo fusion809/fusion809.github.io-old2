@@ -8,3 +8,9 @@ best done textually via editing configuration files.
 The vast majority of Linux distributions have LXDE in their software repositories.  
 
 ### Components
+* **Display server/window manager**: X11. 
+* **File manager**: PCManFM.
+* **Widget toolkit**: GTK+ 2.
+* **Window manager**: Openbox.
+
+LXDE has its own core application suite, which is not as comprehensive as GNOME's or KDE's. The most notable component, in my opinion, is LXTerminal, a terminal emulator. 
