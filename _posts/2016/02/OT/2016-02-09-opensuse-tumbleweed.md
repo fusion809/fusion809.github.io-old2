@@ -7,6 +7,7 @@ redirect_from:
   - /opensuse-tumbleweed/
 ---
 
+{% include Links/image.html image="openSUSE-Tumbleweed-KDE.png" width="1130px" float="none" description="openSUSE Tumbleweed with the KDE Plasma 5 desktop" %}
 Yesterday, 8 February 2016, I experienced an issue with Xorg / my graphics card on my Arch Linux installation after rebooting that prevented me from accessing SDDM, LightDM and the desktop environments I had set up (the exact time this was, would have been roughly 3-4 am, Australian Eastern Standard Time [AEST, or UTC+10]). I spent about an hour trying to fix it myself, guided by the ArchWiki documentation,  but then I asked for help at the [Arch Linux forums](https://bbs.archlinux.org/viewtopic.php?pid=1602691) and instead of receiving the help I was looking for, I received rude treatment from one of the forum's admins and a series of failed solutions from others in the forum. If all I was getting was failed solutions, with no abuse, odds are I would have stuck it out for a while longer, as obviously no one is God, we all make mistakes as we do not know everything, so I was prepared for several failed attempts to fix my problem before an actual successful solution would come along, but I have had to deal with this sort of abuse or rudeness before on other Linux forums and I was sick of it, so I decided to jump ship to **openSUSE Tumbleweed** (**OT**).
 
 ## Why openSUSE Tumbleweed?
