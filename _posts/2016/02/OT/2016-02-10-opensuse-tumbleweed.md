@@ -15,7 +15,7 @@ On 8 February 2016, I experienced an issue with Xorg / my graphics card on my Ar
 ## Why openSUSE Tumbleweed?
 The natural question is "Why openSUSE Tumbleweed? Why not *distribution X*?" Well, there were several factors guiding my decision. What I was looking for in a distribution included:
 
-1. A rolling release model, as I loath having to upgrade systems that use a standard release model (e.g., for three years, as I have previously stated on this blog, I used Ubuntu and only Ubuntu, as my Linux distribution and it has to be upgraded like this every six months), as it always seems something gets broken in the process.
+1. A rolling release model, as I loathe having to upgrade systems that use a standard release model (e.g., for three years, as I have previously stated on this blog, I used Ubuntu and only Ubuntu, as my Linux distribution and it has to be upgraded like this every six months), as it always seems something gets broken in the process.
 2. Decently-sized (at least 20) team of developers maintaining its packages, repositories and other components, as I had past experience with a distribution with a small development team, Sabayon, and I knew from this distribution that no matter how "bleeding edge" they claim their system is, some packages inevitably slip through the cracks and become out-of-date.
 3. A fairly popular distribution as more popular distributions tend to have better free support, like online forums and IRC channels.
 4. An intuitive and easy-to-use automated installer, as while I had managed to install Arch without one, it made the process a little less straight-forward.
