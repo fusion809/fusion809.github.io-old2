@@ -7,6 +7,7 @@
 
 # Site settings
 title:              The Hornery
+source:             https://fusion809.github.io
 email:              brentonhorne77@gmail.com
 description:        Where fusion809 stores his thoughts and news relating to technology
 baseurl:            ""
