@@ -5,6 +5,7 @@ date:             2016-02-10 +1000
 categories:       opensuse, linux, arch-linux
 redirect_from:
   - /opensuse-tumbleweed/
+  - /2016/02/09/opensuse-tumbleweed/
 ---
 
 {% include Links/image.html image="openSUSE-Tumbleweed-KDE.png" width="1130px" float="none" description="openSUSE Tumbleweed with the KDE Plasma 5 desktop" %}
