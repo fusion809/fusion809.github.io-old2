@@ -2,7 +2,7 @@
 layout:           post
 title:            "How I switched from Arch Linux to openSUSE Tumbleweed"
 date:             2016-02-10 +1000
-categories:       opensuse, linux, arch-linux
+categories:       opensuse-tumbleweed, linux, arch-linux
 redirect_from:
   - /opensuse-tumbleweed/
   - /2016/02/09/opensuse-tumbleweed/
@@ -41,8 +41,81 @@ spec files are quite different from PKGBUILDs in both their syntax and how they 
 Fortunately, however, for openSUSE there is an extra method for building RPM packages without having to login to a mock account, it is done via the **Open Build Service** (**OBS**). It is a system by which you can write a spec file, submit it to your own unofficial repository (which you can create and maintain for free) that is hosted by build.opensuse.org, along with required source files, patch files and build.opensuse.org will build a RPM package, which you can install yourself (including via the one-click install system), and others are also allowed to install these packages.
 
 Here is the spec file I originally used to create this RPM file for Atom:
-{% include Code/gist.html id="fe4579e60641830d6a98" %}
-you can find other spec files I have written [here](https://build.opensuse.org/project/repositories/home:fusion809) at build.opensuse.org.
+
+~~~
+Name:           atom
+Version:        1.4.3
+Release:        0
+Summary:        A hackable text editor for the 21st century
+License:        MIT
+Group:          Productivity/Publishing/Other
+Url:            https://atom.io/
+Source0:        %{name}-%{version}.tar.gz
+BuildRequires:  git-core
+BuildRequires:  hicolor-icon-theme
+BuildRequires:  npm
+BuildRequires:  nodejs-packaging
+BuildRequires:  libgnome-keyring-devel
+BuildRequires:  python-setuptools
+BuildRequires:  update-desktop-files
+# MANUAL BEGIN
+Requires:       nodejs
+Requires:       python-http-parser
+# MANUAL END
+BuildRoot:      %{_tmppath}/%{name}-%{version}-build
+
+%description
+Atom is a text editor that is modern, approachable, yet hackable to the core
+- a tool you can customize to do anything but also use productively without
+ever touching a config file.
+
+%prep
+%setup -q
+sed -i -e 's/<%= installDir %>/\/usr/g' \
+      -e 's/<%= iconPath %>/atom/g' \
+      -e 's|text/plain;|application/javascript;application/json;application/postscript;application/x-csh;application/x-desktop;application/x-httpd-eruby;application/x-httpd-php;application/x-httpd-php3;application/x-httpd-php4;application/x-httpd-php5;application/x-latex;application/x-msdos-program;application/x-ruby;application/x-sh;application/x-shellscript;application/x-sql;application/x-tcl;application/x-tex;application/xhtml+xml;application/xml;application/xml-dtd;application/xslt+xml;text/css;text/csv;text/html;text/plain;text/xml;text/xml-dtd;text/x-asm;text/x-bibtex;text/x-boo;text/x-c++;text/x-c++hdr;text/x-c++src;text/x-c;text/x-chdr;text/x-csh;text/x-csrc;text/x-dsrc;text/x-diff;text/x-eiffel;text/x-fortran;text/x-go;text/x-haskell;text/x-java;text/x-java-source;text/x-lua;text/x-makefile;text/x-markdown;text/x-objc;text/x-pascal;text/x-perl;text/x-php;text/x-python;text/x-ruby;text/x-scala;text/x-scheme;text/x-sh;text/x-tcl;text/x-tex;text/x-vala;text/yaml;|g' \
+      resources/linux/atom.desktop.in
+
+%build
+# Hardened package
+export CFLAGS="%{optflags} -fPIC -pie"
+export CXXFLAGS="%{optflags} -fPIC -pie"
+until ./script/build 2>&1; do :; done
+
+%install
+script/grunt install --install-dir "%{buildroot}%{_prefix}"
+# copy over icons in sizes that most desktop environments like
+for i in 1024 512 256 128 64 48 32 24 16; do
+    install -Dm 0644 /tmp/atom-build/icons/${i}.png \
+      %{buildroot}%{_datadir}/icons/hicolor/${i}x${i}/apps/%{name}.png
+done
+%suse_update_desktop_file %{name}
+
+%post
+%desktop_database_post
+%icon_theme_cache_post
+
+%postun
+%desktop_database_postun
+%icon_theme_cache_postun
+
+%files
+%defattr(-,root,root,-)
+%doc README.md docs/
+%{license} LICENSE.md
+%{_bindir}/atom
+%{_bindir}/apm
+%dir %{_datadir}/atom
+%{_datadir}/atom/*
+%{_datadir}/applications/atom.desktop
+%{_datadir}/icons/hicolor/*/apps/%{name}.png
+%exclude %{_datadir}/%{name}/libgcrypt.so.*
+%exclude %{_datadir}/%{name}/libnotify.so.*
+
+%changelog
+~~~
+
+you can find other spec files I have written [here](https://build.opensuse.org/project/show/home:fusion809) at build.opensuse.org.
 
 ## Further Comments
 I consider openSUSE a fairly bloated operating system in terms of how large its DVD installation media is and in my case, since I used the netinstall medium, the total size of the downloads required to install openSUSE. Despite this I found it had several missing packages including the GNU nano text editor, the multimedia codecs required to play most media files in VLC and the driver required to use my Broadcom Wi-Fi chipset. Quite frankly I have found it the least out-of-the-box Linux distribution out there that has an automated installer. Even VirtualBox would not work after I installed it using ZYpp, rather I also had to install the virtualbox-host-source package, run:
