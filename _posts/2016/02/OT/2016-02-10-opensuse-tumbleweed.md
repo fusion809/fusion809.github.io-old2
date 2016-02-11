@@ -40,7 +40,7 @@ spec files are quite different from PKGBUILDs in both their syntax and how they 
 
 Fortunately, however, for openSUSE there is an extra method for building RPM packages without having to login to a mock account, it is done via the **Open Build Service** (**OBS**). It is a system by which you can write a spec file, submit it to your own unofficial repository (which you can create and maintain for free) that is hosted by build.opensuse.org, along with required source files, patch files and build.opensuse.org will build a RPM package, which you can install yourself (including via the one-click install system), and others are also allowed to install these packages.
 
-Here is the spec file I used to create this RPM file for Atom:
+Here is the spec file I originally used to create this RPM file for Atom:
 {% include Code/gist.html id="fe4579e60641830d6a98" %}
 you can find other spec files I have written [here](https://build.opensuse.org/project/repositories/home:fusion809) at build.opensuse.org.
 
