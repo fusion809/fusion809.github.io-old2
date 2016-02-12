@@ -3,6 +3,36 @@ The [**Advanced Packaging Tool**](https://wiki.debian.org/Apt) (**APT**) is the 
 
 APT was the first Linux package manager I ever used and I started using it on Ubuntu, so I may be biased towards saying it is beginner-friendly, although I will admit I think there are more beginner-friendly package managers out there, like [DNF](#dnf), [yum](#yum) and [zypper](#zypp). See APT has a somewhat confusing syntax, as you do not just run {% include Code/coders.html line1="apt [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" %} rather there are five distinct commands for APT, each with their own options, actions and permissible targets: [`add-apt-repository`](/man/add-apt-repository.1.html), [`apt`](/man/apt.8.html), [`apt-cache`](/man/apt-cache.8.html), [`apt-config`](/man/apt-config.8.html) and [`apt-get`](/man/apt-get.8.html). `apt-get` is used to install, remove and upgrade packages and update local index files for enabled repositories. `apt-cache` is for searching and dealing with the cache and metadata in it. `add-apt-repository` is used for managing repositories, while `apt-config` is for editing configuration files from the command-line. `apt` itself, on the other hand, seems to be capable of performing select actions from `apt-cache`, `apt-get` and `apt-config`.
 
-APT, by default, installs binary packages, with the file extension `.deb`, although an RPM rewrite for APT exists called APT-RPM that uses binary packages with the `.rpm` file extension. APT-RPM is only used by one Linux distribution I have personal experience with, PCLinuxOS and I have personally noticed no syntactic, performance or other difference between it and APT, based on my limited experience with it. APT can also be used to build and install software from source code packages. 
+APT, by default, installs binary packages, with the file extension `.deb`, although an RPM rewrite for APT exists called APT-RPM that uses binary packages with the `.rpm` file extension. APT-RPM is only used by one Linux distribution I have personal experience with, PCLinuxOS and I have personally noticed no syntactic, performance or other difference between it and APT, based on my limited experience with it. APT can also be used to build and install software from source code packages (which are provided by the APT src repositories). Its enabled repositories are listed in `/etc/apt/sources.list`, here is an example one taken from my Debian 8 VM:
+
+Running {% include Code/coders.html line1="time apt-get install -y --reinstall vim" %} gives:
+
+~~~
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+0 upgraded, 0 newly installed, 1 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 0 B/953 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Can't set locale; make sure $LC_* and $LANG are correct!
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = "en_AU:en",
+        LC_ALL = (unset),
+        LANG = "en_AU.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_MESSAGES to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+(Reading database ... 229043 files and directories currently installed.)
+Preparing to unpack .../vim_2%3a7.4.488-7_amd64.deb ...
+Unpacking vim (2:7.4.488-7) over (2:7.4.488-7) ...
+Setting up vim (2:7.4.488-7) ...
+
+real    0m2.783s
+user    0m1.076s
+sys     0m0.392s
+~~~
 
 {% include_relative APT/table-1-basic-usage-examples.html %}
