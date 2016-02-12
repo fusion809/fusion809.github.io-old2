@@ -29,6 +29,8 @@ with respect to the following areas:
 
 {% include_relative APT/apt.md %}
 
+{% include_relative Entropy/entropy.md %}
+
 {% include_relative pacman/pacman.md %}
 
 {% include_relative ZYpp/zypp.md %}
