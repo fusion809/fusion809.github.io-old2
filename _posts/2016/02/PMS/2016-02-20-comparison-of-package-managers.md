@@ -65,6 +65,7 @@ sys	0m0.067s
 
 ## ZYpp
 `time zypper in -y --force vim`
+
 ~~~
 Warning: Legacy commandline option -y/--no-confirm detected. Please use global option -n/--non-interactive instead.
 Loading repository data...
