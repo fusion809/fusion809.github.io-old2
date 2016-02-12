@@ -1,4 +1,6 @@
+## Entropy
 `time equo i vim`
+
 ~~~
 ╠  @@ Calculating dependencies...
 ╠ ::  (100.0%) Sorting dependencies ::

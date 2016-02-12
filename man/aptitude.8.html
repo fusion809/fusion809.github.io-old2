@@ -1,0 +1,2052 @@
+<!-- Creator     : groff version 1.22.2 -->
+<!-- CreationDate: Fri Feb 12 18:43:09 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>APTITUDE</title>
+
+</head>
+<body>
+
+<h1 align="center">APTITUDE</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#COMMAND-LINE ACTIONS">COMMAND-LINE ACTIONS</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#ENVIRONMENT">ENVIRONMENT</a><br>
+<a href="#FILES">FILES</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+<a href="#COPYRIGHT">COPYRIGHT</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">aptitude
+&minus; high&minus;level interface to the package
+manager</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&lt;<i>options</i>&gt;...] {autoclean | clean |
+forget&minus;new | keep&minus;all | update}</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&lt;<i>options</i>&gt;...] {full&minus;upgrade |
+safe&minus;upgrade} [&lt;<i>packages</i>&gt;...]</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&lt;<i>options</i>&gt;...] {build&minus;dep |
+build&minus;depends | changelog | download |
+forbid&minus;version | hold | install | markauto | purge |
+reinstall | remove | show | unhold | unmarkauto | versions}
+&lt;<i>packages</i>&gt;...</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+extract&minus;cache&minus;subset
+&lt;<i>output&minus;directory</i>&gt;
+&lt;<i>packages</i>&gt;...</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&lt;<i>options</i>&gt;...] search
+&lt;<i>patterns</i>&gt;...</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&lt;<i>options</i>&gt;...] {add&minus;user&minus;tag |
+remove&minus;user&minus;tag} &lt;<i>tag</i>&gt;
+&lt;<i>packages</i>&gt;...</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&lt;<i>options</i>&gt;...] {why | why&minus;not}
+[&lt;<i>patterns</i>&gt;...] &lt;<i>package</i>&gt;</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b>
+[&minus;S&nbsp;&lt;<i>fname</i>&gt;]
+[&minus;&minus;autoclean&minus;on&minus;startup |
+&minus;&minus;clean&minus;on&minus;startup | &minus;i |
+&minus;u]</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="89%">
+
+
+<p style="margin-top: 1em"><b>aptitude</b> help</p></td></tr>
+</table>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>aptitude</b>
+is a text&minus;based interface to the Debian GNU/Linux
+package system.</p>
+
+<p style="margin-left:11%; margin-top: 1em">It allows the
+user to view the list of packages and to perform package
+management tasks such as installing, upgrading, and removing
+packages. Actions may be performed from a visual interface
+or from the command&minus;line.</p>
+
+<h2>COMMAND-LINE ACTIONS
+<a name="COMMAND-LINE ACTIONS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The first
+argument which does not begin with a hyphen
+(&ldquo;<b>&minus;</b>&rdquo;) is considered to be an action
+that the program should perform. If an action is not
+specified on the command&minus;line, <b>aptitude</b> will
+start up in visual mode.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The following
+actions are available:</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>install</b></p>
+
+<p style="margin-left:17%;">Install one or more packages.
+The packages should be listed after the
+&ldquo;install&rdquo; command; if a package name contains a
+tilde character (&ldquo;<b>~</b>&rdquo;) or a question mark
+(&ldquo;<b>?</b>&rdquo;), it will be treated as a search
+pattern and every package matching the pattern will be
+installed (see the section &ldquo;Search Patterns&rdquo; in
+the <b>aptitude</b> reference manual).</p>
+
+<p style="margin-left:17%; margin-top: 1em">To select a
+particular version of the package, append
+&ldquo;<b>=&lt;</b><i>version</i>&gt;&rdquo; to the package
+name: for instance, &ldquo;<b>aptitude install
+apt=0.3.1</b>&rdquo;. Similarly, to select a package from a
+particular archive, append
+&ldquo;<b>/&lt;</b><i>archive</i>&gt;&rdquo; to the package
+name: for instance, &ldquo;<b>aptitude install
+apt/experimental</b>&rdquo;. You cannot specify both an
+archive and a version for a package.</p>
+
+<p style="margin-left:17%; margin-top: 1em">Not every
+package listed on the command line has to be installed; you
+can tell <b>aptitude</b> to do something different with a
+package by appending an &ldquo;override specifier&rdquo; to
+the name of the package. For example, <b>aptitude remove
+wesnoth+</b> will install <b>wesnoth</b>, not remove it. The
+following override specifiers are available:</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>+</b></p>
+
+<p style="margin-left:23%;">Install
+&lt;<i>package</i>&gt;.</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>+M</b></p>
+
+<p style="margin-left:23%;">Install &lt;<i>package</i>&gt;
+and immediately mark it as automatically installed (note
+that if nothing depends on &lt;<i>package</i>&gt;, this will
+cause it to be immediately removed).</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>&minus;</b></p>
+
+<p style="margin-left:23%;">Remove
+&lt;<i>package</i>&gt;.</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>_</b></p>
+
+<p style="margin-left:23%;">Purge &lt;<i>package</i>&gt;:
+remove it and all its associated configuration and data
+files.</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>=</b></p>
+
+<p style="margin-left:23%;">Place &lt;<i>package</i>&gt; on
+hold: cancel any active installation, upgrade, or removal,
+and prevent this package from being automatically upgraded
+in the future.</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>:</b></p>
+
+<p style="margin-left:23%;">Keep &lt;<i>package</i>&gt; at
+its current version: cancel any installation, removal, or
+upgrade. Unlike &ldquo;hold&rdquo; (above) this does not
+prevent automatic upgrades in the future.</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>&amp;M</b></p>
+
+<p style="margin-left:23%;">Mark &lt;<i>package</i>&gt; as
+having been automatically installed.</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">&lt;<i>package</i>&gt;<b>&amp;m</b></p>
+
+<p style="margin-left:23%;">Mark &lt;<i>package</i>&gt; as
+having been manually installed.</p>
+
+<p style="margin-left:17%; margin-top: 1em">As a special
+case, &ldquo;<b>install</b>&rdquo; with no arguments will
+act on any stored/pending actions.</p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><b><big>Note</big></b>
+<br>
+Once you enter <b>Y</b> at the final confirmation prompt,
+the &ldquo;<b>install</b>&rdquo; command will modify
+<b>aptitude</b>'s stored information about what actions to
+perform. Therefore, if you issue (e.g.) the command
+&ldquo;<b>aptitude install foo bar</b>&rdquo; and then abort
+the installation once <b>aptitude</b> has started
+downloading and installing packages, you will need to run
+&ldquo;<b>aptitude remove foo bar</b>&rdquo; to cancel that
+order.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b><big>remove</big></b><big>,
+<b>purge</b>, <b>hold</b>, <b>unhold</b>, <b>keep</b>,
+<b>reinstall</b></big></p>
+
+<p style="margin-left:17%;"><big>These commands are the
+same as &ldquo;<b>install</b>&rdquo;, but apply the named
+action to all packages given on the command line for which
+it is not overridden. The difference between <b>hold</b> and
+<b>keep</b> is that <b>hold</b> will cause a package to be
+ignored by future <b>safe&minus;upgrade</b> or
+<b>full&minus;upgrade</b> commands, while <b>keep</b> merely
+cancels any scheduled actions on the package. <b>unhold</b>
+will allow a package to be upgraded by future
+<b>safe&minus;upgrade</b> or <b>full&minus;upgrade</b>
+commands, without otherwise altering its state.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>For
+instance, &ldquo;<b>aptitude remove '~ndeity'</b>&rdquo;
+will remove all packages whose name contains
+&ldquo;<b>deity</b>&rdquo;.</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b>markauto</b>,
+<b>unmarkauto</b></big></p>
+
+<p style="margin-left:17%;"><big>Mark packages as
+automatically installed or manually installed, respectively.
+Packages are specified in exactly the same way as for the
+&ldquo;<b>install</b>&rdquo; command. For instance,
+&ldquo;<b>aptitude markauto '~slibs'</b>&rdquo; will mark
+all packages in the &ldquo;<b>libs</b>&rdquo; section as
+having been automatically installed.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>For more
+information on automatically installed packages, see the
+section &ldquo;Managing Automatically Installed
+Packages&rdquo; in the <b>aptitude</b> reference
+manual.</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b>build&minus;depends</b>,
+<b>build&minus;dep</b></big></p>
+
+<p style="margin-left:17%;"><big>Satisfy the
+build&minus;dependencies of a package. Each package name may
+be a source package, in which case the build dependencies of
+that source package are installed; otherwise, binary
+packages are found in the same way as for the
+&ldquo;<b>install</b>&rdquo; command, and the
+build&minus;dependencies of the source packages that build
+those binary packages are satisfied.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>If the
+command&minus;line parameter
+<b>&minus;&minus;arch&minus;only</b> is present, only
+architecture&minus;dependent build dependencies (i.e., not
+<b>Build&minus;Depends&minus;Indep</b> or
+<b>Build&minus;Conflicts&minus;Indep</b>) will be
+obeyed.</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b>forbid&minus;version</b></big></p>
+
+<p style="margin-left:17%;"><big>Forbid a package from
+being upgraded to a particular version. This will prevent
+<b>aptitude</b> from automatically upgrading to this
+version, but will allow automatic upgrades to future
+versions. By default, <b>aptitude</b> will select the
+version to which the package would normally be upgraded; you
+may override this selection by appending
+&ldquo;<b>=&lt;</b><i>version</i>&gt;&rdquo; to the package
+name: for instance, &ldquo;<b>aptitude forbid&minus;version
+vim=1.2.3.broken&minus;4</b>&rdquo;.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>This
+command is useful for avoiding broken versions of packages
+without having to set and clear manual holds. If you decide
+you really want the forbidden version after all,
+&ldquo;<b>aptitude install &lt;</b><i>package</i>&gt;&rdquo;
+will remove the ban.</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b>update</b></big></p>
+
+<p style="margin-left:17%;"><big>Updates the list of
+available packages from the apt sources (this is equivalent
+to &ldquo;<b>apt&minus;get update</b>&rdquo;)</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b>safe&minus;upgrade</b></big></p>
+
+<p style="margin-left:17%;"><big>Upgrades installed
+packages to their most recent version. Installed packages
+will not be removed unless they are unused (see the section
+&ldquo;Managing Automatically Installed Packages&rdquo; in
+the <b>aptitude</b> reference manual). Packages which are
+not currently installed may be installed to resolve
+dependencies unless the
+<b>&minus;&minus;no&minus;new&minus;installs</b>
+command&minus;line option is supplied.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>If no
+&lt;<i>package</i>&gt;s are listed on the command line,
+<b>aptitude</b> will attempt to upgrade every package that
+can be upgraded. Otherwise, <b>aptitude</b> will attempt to
+upgrade only the packages which it is instructed to upgrade.
+The &lt;<i>package</i>&gt;s can be extended with suffixes in
+the same manner as arguments to <b>aptitude install</b>, so
+you can also give additional instructions to <b>aptitude</b>
+here; for instance, <b>aptitude safe&minus;upgrade bash
+dash&minus;</b> will attempt to upgrade the bash package and
+remove the dash package.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>It is
+sometimes necessary to remove one package in order to
+upgrade another; this command is not able to upgrade
+packages in such situations. Use the
+<b>full&minus;upgrade</b> command to upgrade as many
+packages as possible.</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b>full&minus;upgrade</b></big></p>
+
+<p style="margin-left:17%;"><big>Upgrades installed
+packages to their most recent version, removing or
+installing packages as necessary. This command is less
+conservative than <b>safe&minus;upgrade</b> and thus more
+likely to perform unwanted actions. However, it is capable
+of upgrading packages that <b>safe&minus;upgrade</b> cannot
+upgrade.</big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big>If no
+&lt;<i>package</i>&gt;s are listed on the command line,
+<b>aptitude</b> will attempt to upgrade every package that
+can be upgraded. Otherwise, <b>aptitude</b> will attempt to
+upgrade only the packages which it is instructed to upgrade.
+The &lt;<i>package</i>&gt;s can be extended with suffixes in
+the same manner as arguments to <b>aptitude install</b>, so
+you can also give additional instructions to <b>aptitude</b>
+here; for instance, <b>aptitude full&minus;upgrade bash
+dash&minus;</b> will attempt to upgrade the bash package and
+remove the dash package.</big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><b><big>Note</big></b>
+<br>
+This command was originally named <b>dist&minus;upgrade</b>
+for historical reasons, and <b>aptitude</b> still recognizes
+<b>dist&minus;upgrade</b> as a synonym for
+<b>full&minus;upgrade</b>.</big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><b><big>keep&minus;all</big></b></big></p>
+
+<p style="margin-left:17%;"><big><big>Cancels all scheduled
+actions on all packages; any packages whose sticky state
+indicates an installation, removal, or upgrade will have
+this sticky state cleared.</big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><b>forget&minus;new</b></big></big></p>
+
+<p style="margin-left:17%;"><big><big>Forgets all internal
+information about what packages are &ldquo;new&rdquo;
+(equivalent to pressing &ldquo;f&rdquo; when in visual
+mode).</big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><b>search</b></big></big></p>
+
+<p style="margin-left:17%;"><big><big>Searches for packages
+matching one of the patterns supplied on the command line.
+All packages which match any of the given patterns will be
+displayed; for instance, &ldquo;<b>aptitude search '~N'
+edit</b>&rdquo; will list all &ldquo;new&rdquo; packages and
+all packages whose name contains &ldquo;edit&rdquo;. For
+more information on search patterns, see the section
+&ldquo;Search Patterns&rdquo; in the <b>aptitude</b>
+reference manual.</big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><b><big>Note</big></b>
+<br>
+In the example above, &ldquo;<b>aptitude search '~N'
+edit</b>&rdquo; has two arguments after <b>search</b> and
+thus is searching for <i>two</i> patterns:
+&ldquo;<b>~N</b>&rdquo; and &ldquo;<b>edit</b>&rdquo;. As
+described in the search pattern reference, a <i>single</i>
+pattern composed of two sub&minus;patterns separated by a
+space (such as &ldquo;<b>~N edit</b>&rdquo;) matches only if
+<i>both</i> patterns match. Thus, the command
+&ldquo;<b>aptitude search '~N edit'</b>&rdquo; will only
+show &ldquo;new&rdquo; packages whose name contains
+&ldquo;edit&rdquo;.</big></big></p>
+
+<p style="margin-left:17%;"><big><big>Unless you pass the
+<b>&minus;F</b> option, the output of <b>aptitude search</b>
+will look something like this:</big></big></p>
+
+<p style="margin-left:23%; margin-top: 1em"><big><big>i apt
+&minus; Advanced front&minus;end for dpkg <br>
+pi apt&minus;build &minus; frontend to apt to build,
+optimize and in <br>
+cp apt&minus;file &minus; APT package searching utility
+&minus;&minus; command&minus; <br>
+ihA raptor&minus;utils &minus; Raptor RDF Parser
+utilities</big></big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big><big>Each
+search result is listed on a separate line. The first
+character of each line indicates the current state of the
+package: the most common states are <b>p</b>, meaning that
+no trace of the package exists on the system, <b>c</b>,
+meaning that the package was deleted but its configuration
+files remain on the system, <b>i</b>, meaning that the
+package is installed, and <b>v</b>, meaning that the package
+is virtual. The second character indicates the stored action
+(if any; otherwise a blank space is displayed) to be
+performed on the package, with the most common actions being
+<b>i</b>, meaning that the package will be installed,
+<b>d</b>, meaning that the package will be deleted, and
+<b>p</b>, meaning that the package and its configuration
+files will be removed. If the third character is <b>A</b>,
+the package was automatically installed.</big></big></p>
+
+<p style="margin-left:17%; margin-top: 1em"><big><big>For a
+complete list of the possible state and action flags, see
+the section &ldquo;Accessing Package Information&rdquo; in
+the <b>aptitude</b> reference guide. To customize the output
+of <b>search</b>, see the command&minus;line options
+<b>&minus;F</b> and
+<b>&minus;&minus;sort</b>.</big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><b><big>show</big></b></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big>Displays
+detailed information about one or more packages. If a
+package name contains a tilde character
+(&ldquo;<b>~</b>&rdquo;) or a question mark
+(&ldquo;<b>?</b>&rdquo;), it will be treated as a search
+pattern and all matching packages will be displayed (see the
+section &ldquo;Search Patterns&rdquo; in the <b>aptitude</b>
+reference manual).</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+the verbosity level is 1 or greater (i.e., at least one
+<b>&minus;v</b> is present on the command&minus;line),
+information about all versions of the package is displayed.
+Otherwise, information about the &ldquo;candidate
+version&rdquo; (the version that &ldquo;<b>aptitude
+install</b>&rdquo; would download) is
+displayed.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>You
+can display information about a different version of the
+package by appending <b>=&lt;</b><i>version</i>&gt; to the
+package name; you can display the version from a particular
+archive or release by appending
+<b>/&lt;</b><i>archive</i>&gt; or
+<b>/&lt;</b><i>release</i>&gt; to the package name: for
+instance, <b>/unstable</b> or <b>/sid</b>. If either of
+these is present, then only the version you request will be
+displayed, regardless of the verbosity
+level.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+the verbosity level is 1 or greater, the package's
+architecture, compressed size, filename, and md5sum fields
+will be displayed. If the verbosity level is 2 or greater,
+the select version or versions will be displayed once for
+each archive in which they are found.</big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><b>versions</b></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big>Displays the
+versions of the packages listed on the
+command&minus;line.</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>$
+aptitude versions wesnoth <br>
+p 1:1.4.5&minus;1 100 <br>
+p 1:1.6.5&minus;1 unstable 500 <br>
+p 1:1.7.14&minus;1 experimental 1</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>Each
+version is listed on a separate line. The leftmost three
+characters indicate the current state, planned state (if
+any), and whether the package was automatically installed;
+for more information on their meanings, see the
+documentation of <b>aptitude search</b>. To the right of the
+version number you can find the releases from which the
+version is available, and the pin priority of the
+version.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+a package name contains a tilde character
+(&ldquo;<b>~</b>&rdquo;) or a question mark
+(&ldquo;<b>?</b>&rdquo;), it will be treated as a search
+pattern and all matching <i>versions</i> will be displayed
+(see the section &ldquo;Search Patterns&rdquo; in the
+<b>aptitude</b> reference manual). This means that, for
+instance, <b>aptitude versions '~i'</b> will display all the
+versions that are currently installed on the system and
+nothing else, not even other versions of the same
+packages.</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>$
+aptitude versions '~nexim4&minus;daemon&minus;light' <br>
+Package exim4&minus;daemon&minus;light: <br>
+i 4.71&minus;3 100 <br>
+p 4.71&minus;4 unstable 500</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>Package
+exim4&minus;daemon&minus;light&minus;dbg: <br>
+p 4.71&minus;4 unstable 500</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+the input is a search pattern, or if more than one package's
+versions are to be displayed, <b>aptitude</b> will
+automatically group the output by package, as shown above.
+You can disable this via <b>--group-by=none</b>, in which
+case <b>aptitude</b> will display a single list of all the
+versions that were found and automatically include the
+package name in each output line:</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>$
+aptitude versions &minus;&minus;group&minus;by=none
+'~nexim4&minus;daemon&minus;light' <br>
+i exim4&minus;daemon&minus;light 4.71&minus;3 100 <br>
+p exim4&minus;daemon&minus;light 4.71&minus;4 unstable 500
+<br>
+p exim4&minus;daemon&minus;light&minus;dbg 4.71&minus;4
+unstable 500</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>To
+disable the package name, pass
+<b>--show-package-names=never</b>:</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>$
+aptitude versions
+&minus;&minus;show&minus;package&minus;names=never
+&minus;&minus;group&minus;by=none
+'~nexim4&minus;daemon&minus;light' <br>
+i 4.71&minus;3 100 <br>
+p 4.71&minus;4 unstable 500 <br>
+p 4.71&minus;4 unstable 500</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>In
+addition to the above options, the information printed for
+each version can be controlled by the command&minus;line
+option <b>&minus;F</b>. The order in which versions are
+displayed can be controlled by the command&minus;line option
+<b>&minus;&minus;sort</b>. To prevent <b>aptitude</b> from
+formatting the output into columns, use
+<b>&minus;&minus;disable&minus;columns</b>.</big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><b>add&minus;user&minus;tag</b>,
+<b>remove&minus;user&minus;tag</b></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big>Adds a user tag
+to or removes a user tag from the selected group of
+packages. If a package name contains a tilde
+(&ldquo;<b>~</b>&rdquo;) or question mark
+(&ldquo;<b>?</b>&rdquo;), it is treated as a search pattern
+and the tag is added to or removed from all the packages
+that match the pattern (see the section &ldquo;Search
+Patterns&rdquo; in the <b>aptitude</b> reference
+manual).</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>User
+tags are arbitrary strings associated with a package. They
+can be used with the
+<b>?user&minus;tag(&lt;</b><i>tag</i>&gt;<b>)</b> search
+term, which will select all the packages that have a user
+tag matching &lt;<i>tag</i>&gt;.</big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><b>why</b>,
+<b>why&minus;not</b></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big>Explains the
+reason that a particular package should or cannot be
+installed on the system.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>This
+command searches for packages that require or conflict with
+the given package. It displays a sequence of dependencies
+leading to the target package, along with a note indicating
+the installed state of each package in the dependency
+chain:</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>$
+aptitude why kdepim <br>
+i nautilus&minus;data Recommends nautilus <br>
+i A nautilus Recommends desktop&minus;base (&gt;= 0.2) <br>
+i A desktop&minus;base Suggests gnome | kde | xfce4 | wmaker
+<br>
+p kde Depends kdepim (&gt;= 4:3.4.3)</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>The
+command <b>why</b> finds a dependency chain that installs
+the package named on the command line, as above. Note that
+the dependency that <b>aptitude</b> produced in this case is
+only a suggestion. This is because no package currently
+installed on this computer depends on or recommends the
+kdepim package; if a stronger dependency were available,
+<b>aptitude</b> would have displayed
+it.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>In
+contrast, <b>why&minus;not</b> finds a dependency chain
+leading to a conflict with the target
+package:</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big>$
+aptitude why&minus;not textopo <br>
+i ocaml&minus;core Depends ocamlweb <br>
+i A ocamlweb Depends tetex&minus;extra |
+texlive&minus;latex&minus;extra <br>
+i A texlive&minus;latex&minus;extra Conflicts
+textopo</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+one or more &lt;<i>pattern</i>&gt;s are present, then
+<b>aptitude</b> will begin its search at these patterns;
+that is, the first package in the chain it prints will be a
+package matching the pattern in question. The patterns are
+considered to be package names unless they contain a tilde
+character (&ldquo;<b>~</b>&rdquo;) or a question mark
+(&ldquo;<b>?</b>&rdquo;), in which case they are treated as
+search patterns (see the section &ldquo;Search
+Patterns&rdquo; in the <b>aptitude</b> reference
+manual).</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+no patterns are present, then <b>aptitude</b> will search
+for dependency chains beginning at manually installed
+packages. This effectively shows the packages that have
+caused or would cause a given package to be
+installed.</big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><b><big>Note</big>
+<br>
+aptitude why</b> does not perform full dependency
+resolution; it only displays direct relationships between
+packages. For instance, if A requires B, C requires D, and B
+and C conflict, &ldquo;<b>aptitude why&minus;not
+D</b>&rdquo; will not produce the answer &ldquo;A depends on
+B, B conflicts with C, and D depends on
+C&rdquo;.</big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big>By default
+<b>aptitude</b> outputs only the &ldquo;most installed,
+strongest, tightest, shortest&rdquo; dependency chain. That
+is, it looks for a chain that only contains packages which
+are installed or will be installed; it looks for the
+strongest possible dependencies under that restriction; it
+looks for chains that avoid ORed dependencies and Provides;
+and it looks for the shortest dependency chain meeting those
+criteria. These rules are progressively weakened until a
+match is found.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>If
+the verbosity level is 1 or more, then <i>all</i> the
+explanations <b>aptitude</b> can find will be displayed, in
+inverse order of relevance. If the verbosity level is 2 or
+more, a truly excessive amount of debugging information will
+be printed to standard output.</big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big>This
+command returns 0 if successful, 1 if no explanation could
+be constructed, and &minus;1 if an error
+occurred.</big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><b><big>clean</big></b></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Removes all
+previously downloaded <b>.deb</b> files from the package
+cache directory (usually
+/var/cache/apt/archives).</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>autoclean</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Removes any
+cached packages which can no longer be downloaded. This
+allows you to prevent a cache from growing out of control
+over time without completely emptying
+it.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>changelog</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Downloads
+and displays the Debian changelog for each of the given
+source or binary packages.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>By
+default, the changelog for the version which would be
+installed with &ldquo;<b>aptitude install</b>&rdquo; is
+downloaded. You can select a particular version of a package
+by appending <b>=&lt;</b><i>version</i>&gt; to the package
+name; you can select the version from a particular archive
+or release by appending <b>/&lt;</b><i>archive</i>&gt; or
+<b>/&lt;</b><i>release</i>&gt; to the package name (for
+instance, <b>/unstable</b> or
+<b>/sid</b>).</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>download</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Downloads
+the <b>.deb</b> file for the given package to the current
+directory. If a package name contains a tilde character
+(&ldquo;<b>~</b>&rdquo;) or a question mark
+(&ldquo;<b>?</b>&rdquo;), it will be treated as a search
+pattern and all the matching packages will be downloaded
+(see the section &ldquo;Search Patterns&rdquo; in the
+<b>aptitude</b> reference
+manual).</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>By
+default, the version which would be installed with
+&ldquo;<b>aptitude install</b>&rdquo; is downloaded. You can
+select a particular version of a package by appending
+<b>=&lt;</b><i>version</i>&gt; to the package name; you can
+select the version from a particular archive or release by
+appending <b>/&lt;</b><i>archive</i>&gt; or
+<b>/&lt;</b><i>release</i>&gt; to the package name (for
+instance: <b>/unstable</b> or
+<b>/sid</b>).</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>extract&minus;cache&minus;subset</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Copy the
+apt configuration directory (<b>/etc/apt</b>) and a subset
+of the package database to the specified directory. If no
+packages are listed, the entire package database is copied;
+otherwise only the entries corresponding to the named
+packages are copied. Each package name may be a search
+pattern, and all the packages matching that pattern will be
+selected (see the section &ldquo;Search Patterns&rdquo; in
+the <b>aptitude</b> reference manual). Any existing package
+database files in the output directory will be
+overwritten.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>Dependencies
+in binary package stanzas will be rewritten to remove
+references to packages not in the selected
+set.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>help</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Displays a
+brief summary of the available commands and
+options.</big></big></big></big></p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>The
+following options may be used to modify the behavior of the
+actions described above. Note that while all options will be
+accepted for all commands, some options don't apply to
+particular commands and will be ignored by those
+commands.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;add&minus;user&minus;tag
+&lt;</b><i>tag</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>For
+<b>full&minus;upgrade</b>, <b>safe&minus;upgrade</b>,
+<b>forbid&minus;version</b>, <b>hold</b>, <b>install</b>,
+<b>keep&minus;all</b>, <b>markauto</b>, <b>unmarkauto</b>,
+<b>purge</b>, <b>reinstall</b>, <b>remove</b>,
+<b>unhold</b>, and <b>unmarkauto</b>: add the user tag
+&lt;<i>tag</i>&gt; to all packages that are installed,
+removed, or upgraded by this command as if with the
+<b>add&minus;user&minus;tag</b>
+command.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;add&minus;user&minus;tag&minus;to
+&lt;</b><i>tag</i>&gt;<b>,&lt;</b><i>pattern</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>For
+<b>full&minus;upgrade</b>,
+<b>safe&minus;upgradeforbid&minus;version</b>, <b>hold</b>,
+<b>install</b>, <b>keep&minus;all</b>, <b>markauto</b>,
+<b>unmarkauto</b>, <b>purge</b>, <b>reinstall</b>,
+<b>remove</b>, <b>unhold</b>, and <b>unmarkauto</b>: add the
+user tag &lt;<i>tag</i>&gt; to all packages that match
+&lt;<i>pattern</i>&gt; as if with the
+<b>add&minus;user&minus;tag</b> command. The pattern is a
+search pattern as described in the section &ldquo;Search
+Patterns&rdquo; in the <b>aptitude</b> reference
+manual.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>For
+instance, <b>aptitude safe&minus;upgrade
+&minus;&minus;add&minus;user&minus;tag&minus;to
+&quot;new&minus;installs,?action(install)&quot;</b> will add
+the tag <b>new&minus;installs</b> to all the packages
+installed by the <b>safe&minus;upgrade</b>
+command.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;allow&minus;new&minus;upgrades</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>When the
+safe resolver is being used (i.e.,
+<b>&minus;&minus;safe&minus;resolver</b> was passed, the
+action is <b>safe&minus;upgrade</b>, or
+<b>Aptitude::Always&minus;Use&minus;Safe&minus;Resolver</b>
+is set to <b>true</b>), allow the dependency resolver to
+install upgrades for packages regardless of the value of
+<b>Aptitude::Safe&minus;Resolver::No&minus;New&minus;Upgrades</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;allow&minus;new&minus;installs</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Allow the
+<b>safe&minus;upgrade</b> command to install new packages;
+when the safe resolver is being used (i.e.,
+<b>&minus;&minus;safe&minus;resolver</b> was passed, the
+action is <b>safe&minus;upgrade</b>, or
+<b>Aptitude::Always&minus;Use&minus;Safe&minus;Resolver</b>
+is set to <b>true</b>), allow the dependency resolver to
+install new packages. This option takes effect regardless of
+the value of
+<b>Aptitude::Safe&minus;Resolver::No&minus;New&minus;Installs</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;allow&minus;untrusted</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Install
+packages from untrusted sources without prompting. You
+should only use this if you know what you are doing, as it
+could easily compromise your system's
+security.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;disable&minus;columns</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>This option
+causes <b>aptitude search</b> and <b>aptitude versions</b>
+to output their results without any special formatting. In
+particular: normally <b>aptitude</b> will add whitespace or
+truncate search results in an attempt to fit its results
+into vertical &ldquo;columns&rdquo;. With this flag, each
+line will be formed by replacing any format escapes in the
+format string with the corresponding text; column widths
+will be ignored.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>For
+instance, the first few lines of output from
+&ldquo;<b>aptitude search &minus;F '%p %V'
+&minus;&minus;disable&minus;columns
+libedataserver</b>&rdquo; might
+be:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>disksearch
+1.2.1&minus;3 <br>
+hp&minus;search&minus;mac 0.1.3 <br>
+libbsearch&minus;ruby 1.5&minus;5 <br>
+libbsearch&minus;ruby1.8 1.5&minus;5 <br>
+libclass&minus;dbi&minus;abstractsearch&minus;perl
+0.07&minus;2 <br>
+libdbix&minus;fulltextsearch&minus;perl
+0.73&minus;10</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>As
+in the above example,
+<b>&minus;&minus;disable&minus;columns</b> is often useful
+in combination with a custom display format set using the
+command&minus;line option
+<b>&minus;F</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Disable-Columns</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;D</b>,
+<b>&minus;&minus;show&minus;deps</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>For
+commands that will install or remove packages
+(<b>install</b>, <b>full&minus;upgrade</b>, etc), show brief
+explanations of automatic installations and
+removals.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Show-Deps</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;d</b>,
+<b>&minus;&minus;download&minus;only</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Download
+packages to the package cache as necessary, but do not
+install or remove anything. By default, the package cache is
+stored in
+/var/cache/apt/archives.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Download-Only</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;F</b>
+&lt;<i>format</i>&gt;,
+<b>&minus;&minus;display&minus;format</b>
+&lt;<i>format</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Specify the
+format which should be used to display output from the
+<b>search</b> and <b>versions</b> commands. For instance,
+passing &ldquo;<b>%p %V %v</b>&rdquo; for
+&lt;<i>format</i>&gt; will display a package's name,
+followed by its currently installed version and its
+available version (see the section &ldquo;Customizing how
+packages are displayed&rdquo; in the <b>aptitude</b>
+reference manual for more
+information).</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>The
+command&minus;line option
+<b>&minus;&minus;disable&minus;columns</b> is often useful
+in combination with
+<b>&minus;F</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>For
+<b>search</b>, this corresponds to the configuration option
+<b>Aptitude::CmdLine::Package-Display-Format</b>; for
+<b>versions</b>, this corresponds to the configuration
+option
+<b>Aptitude::CmdLine::Version-Display-Format</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;f</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Try hard to
+fix the dependencies of broken packages, even if it means
+ignoring the actions requested on the command
+line.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration item
+<b>Aptitude::CmdLine::Fix-Broken</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;full&minus;resolver</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>When
+package dependency problems are encountered, use the default
+&ldquo;full&rdquo; resolver to solve them. Unlike the
+&ldquo;safe&rdquo; resolver activated by
+<b>&minus;&minus;safe&minus;resolver</b>, the full resolver
+will happily remove packages to fulfill dependencies. It can
+resolve more situations than the safe algorithm, but its
+solutions are more likely to be
+undesirable.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+option can be used to force the use of the full resolver
+even when
+<b>Aptitude::Always&minus;Use&minus;Safe&minus;Resolver</b>
+is true. The <b>safe&minus;upgrade</b> command never uses
+the full resolver and does not accept the
+<b>&minus;&minus;full&minus;resolver</b>
+option.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;group&minus;by</b>
+&lt;<i>grouping&minus;mode</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Control how
+the <b>versions</b> command groups its output. The following
+values are recognized:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>archive</b> to group packages by the archive they occur
+in (&ldquo;<b>stable</b>&rdquo;,
+&ldquo;<b>unstable</b>&rdquo;, etc). If a package occurs in
+several archives, it will be displayed in each of
+them.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>auto</b> to group versions by their package unless there
+is exactly one argument and it is not a search
+pattern.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>none</b> to display all the versions in a single list
+without any grouping.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>package</b> to group versions by their
+package.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>source&minus;package</b> to group versions by their
+source package.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>source&minus;version</b> to group versions by their
+source package and source
+version.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Versions-Group-By</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;h</b>,
+<b>&minus;&minus;help</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Display a
+brief help message. Identical to the <b>help</b>
+action.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;log&minus;file=&lt;</b><i>file</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>If
+&lt;<i>file</i>&gt; is a nonempty string, log messages will
+be written to it, except that if &lt;<i>file</i>&gt; is
+&ldquo;<b>&minus;</b>&rdquo;, the messages will be written
+to standard output instead. If this option appears multiple
+times, the last occurrence is the one that will take
+effect.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+does not affect the log of installations that
+<b>aptitude</b> has performed (/var/log/aptitude); the log
+messages written using this configuration include internal
+program events, errors, and debugging messages. See the
+command&minus;line option
+<b>&minus;&minus;log&minus;level</b> to get more control
+over what gets logged.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::Logging::File</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;log&minus;level=&lt;</b><i>level</i>&gt;,
+<b>&minus;&minus;log&minus;level=&lt;</b><i>category</i>&gt;<b>:&lt;</b><i>level</i>&gt;</big></big></big></big></p>
+
+
+<p style="margin-left:17%;"><big><big><big><big><b>&minus;&minus;log&minus;level=&lt;</b><i>level</i>&gt;
+causes <b>aptitude</b> to only log messages whose level is
+&lt;<i>level</i>&gt; or higher. For instance, setting the
+log level to <b>error</b> will cause only messages at the
+log levels <b>error</b> and <b>fatal</b> to be displayed;
+all others will be hidden. Valid log levels (in descending
+order) are <b>off</b>, <b>fatal</b>, <b>error</b>,
+<b>warn</b>, <b>info</b>, <b>debug</b>, and <b>trace</b>.
+The default log level is
+<b>warn</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;log&minus;level=&lt;</b><i>category</i>&gt;<b>:&lt;</b><i>level</i>&gt;
+causes messages in &lt;<i>category</i>&gt; to only be logged
+if their level is &lt;<i>level</i>&gt; or
+higher.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;log&minus;level</b>
+may appear multiple times on the command line; the most
+specific setting is the one that takes effect, so if you
+pass
+<b>&minus;&minus;log&minus;level=aptitude.resolver:fatal</b>
+and
+<b>&minus;&minus;log&minus;level=aptitude.resolver.hints.match:trace</b>,
+then messages in <b>aptitude.resolver.hints.parse</b> will
+only be printed if their level is <b>fatal</b>, but all
+messages in <b>aptitude.resolver.hints.match</b> will be
+printed. If you set the level of the same category two or
+more times, the last setting is the one that will take
+effect.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+does not affect the log of installations that
+<b>aptitude</b> has performed (/var/log/aptitude); the log
+messages written using this configuration include internal
+program events, errors, and debugging messages. See the
+command&minus;line option
+<b>&minus;&minus;log&minus;file</b> to change where log
+messages go.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration group
+<b>Aptitude::Logging::Levels</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;log&minus;resolver</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Set some
+standard log levels related to the resolver, to produce
+logging output suitable for processing with automated tools.
+This is equivalent to the command&minus;line options
+<b>&minus;&minus;log&minus;level=aptitude.resolver.search:trace
+&minus;&minus;log&minus;level=aptitude.resolver.search.tiers:info</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;no&minus;new&minus;installs</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Prevent
+<b>safe&minus;upgrade</b> from installing any new packages;
+when the safe resolver is being used (i.e.,
+<b>&minus;&minus;safe&minus;resolver</b> was passed or
+<b>Aptitude::Always&minus;Use&minus;Safe&minus;Resolver</b>
+is set to <b>true</b>), forbid the dependency resolver from
+installing new packages. This option takes effect regardless
+of the value of
+<b>Aptitude::Safe&minus;Resolver::No&minus;New&minus;Installs</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+mimics the historical behavior of <b>apt&minus;get
+upgrade</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;no&minus;new&minus;upgrades</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>When the
+safe resolver is being used (i.e.,
+<b>&minus;&minus;safe&minus;resolver</b> was passed or
+<b>Aptitude::Always&minus;Use&minus;Safe&minus;Resolver</b>
+is set to <b>true</b>), forbid the dependency resolver from
+installing upgrades for packages regardless of the value of
+<b>Aptitude::Safe&minus;Resolver::No&minus;New&minus;Upgrades</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;no&minus;show&minus;resolver&minus;actions</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Do not
+display the actions performed by the &ldquo;safe&rdquo;
+resolver, overriding any configuration option or earlier
+<b>&minus;&minus;show&minus;resolver&minus;actions</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;O</b>
+&lt;<i>order</i>&gt;, <b>&minus;&minus;sort</b>
+&lt;<i>order</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Specify the
+order in which output from the <b>search</b> and
+<b>versions</b> commands should be displayed. For instance,
+passing &ldquo;<b>installsize</b>&rdquo; for
+&lt;<i>order</i>&gt; will list packages in order according
+to their size when installed (see the section
+&ldquo;Customizing how packages are sorted&rdquo; in the
+<b>aptitude</b> reference manual for more
+information).</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>The
+default sort order is
+<b>name,version</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;o</b>
+&lt;<i>key</i>&gt;<b>=</b>&lt;<i>value</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Set a
+configuration file option directly; for instance, use
+<b>&minus;o Aptitude::Log=/tmp/my&minus;log</b> to log
+<b>aptitude</b>'s actions to /tmp/my&minus;log. For more
+information on configuration file options, see the section
+&ldquo;Configuration file reference&rdquo; in the
+<b>aptitude</b> reference
+manual.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;P</b>,
+<b>&minus;&minus;prompt</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Always
+display a prompt before downloading, installing or removing
+packages, even when no actions other than those explicitly
+requested will be performed.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Always-Prompt</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;purge&minus;unused</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>If
+<b>Aptitude::Delete-Unused</b> is set to
+&ldquo;<b>true</b>&rdquo; (its default), then in addition to
+removing each package that is no longer required by any
+installed package, <b>aptitude</b> will also purge them,
+removing their configuration files and perhaps other
+important data. For more information about which packages
+are considered to be &ldquo;unused&rdquo;, see the section
+&ldquo;Managing Automatically Installed Packages&rdquo; in
+the <b>aptitude</b> reference manual. <i>THIS OPTION CAN
+CAUSE DATA LOSS! DO NOT USE IT UNLESS YOU KNOW WHAT YOU ARE
+DOING!</i></big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::Purge-Unused</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;q[=&lt;</b><i>n</i>&gt;],
+<b>&minus;&minus;quiet[=&lt;</b><i>n</i>&gt;]</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Suppress
+all incremental progress indicators, thus making the output
+loggable. This may be supplied multiple times to make the
+program quieter, but unlike <b>apt&minus;get</b>,
+<b>aptitude</b> does not enable <b>&minus;y</b> when
+<b>&minus;q</b> is supplied more than
+once.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>The
+optional <b>=&lt;</b><i>n</i>&gt; may be used to directly
+set the amount of quietness (for instance, to override a
+setting in /etc/apt/apt.conf); it causes the program to
+behave as if <b>&minus;q</b> had been passed exactly
+&lt;<i>n</i>&gt; times.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;R</b>,
+<b>&minus;&minus;without&minus;recommends</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Do
+<i>not</i> treat recommendations as dependencies when
+installing new packages (this overrides settings in
+/etc/apt/apt.conf and ~/.aptitude/config). Packages
+previously installed due to recommendations will not be
+removed.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the pair of configuration options
+<b>Apt::Install-Recommends</b> and
+<b>Apt::AutoRemove::RecommendsImportant</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;r</b>,
+<b>&minus;&minus;with&minus;recommends</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Treat
+recommendations as dependencies when installing new packages
+(this overrides settings in /etc/apt/apt.conf and
+~/.aptitude/config).</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Apt::Install-Recommends</b></big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;remove&minus;user&minus;tag
+&lt;</b><i>tag</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>For
+<b>full&minus;upgrade</b>,
+<b>safe&minus;upgradeforbid&minus;version</b>, <b>hold</b>,
+<b>install</b>, <b>keep&minus;all</b>, <b>markauto</b>,
+<b>unmarkauto</b>, <b>purge</b>, <b>reinstall</b>,
+<b>remove</b>, <b>unhold</b>, and <b>unmarkauto</b>: remove
+the user tag &lt;<i>tag</i>&gt; from all packages that are
+installed, removed, or upgraded by this command as if with
+the <b>add&minus;user&minus;tag</b>
+command.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;remove&minus;user&minus;tag&minus;from
+&lt;</b><i>tag</i>&gt;<b>,&lt;</b><i>pattern</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>For
+<b>full&minus;upgrade</b>,
+<b>safe&minus;upgradeforbid&minus;version</b>, <b>hold</b>,
+<b>install</b>, <b>keep&minus;all</b>, <b>markauto</b>,
+<b>unmarkauto</b>, <b>purge</b>, <b>reinstall</b>,
+<b>remove</b>, <b>unhold</b>, and <b>unmarkauto</b>: remove
+the user tag &lt;<i>tag</i>&gt; from all packages that match
+&lt;<i>pattern</i>&gt; as if with the
+<b>remove&minus;user&minus;tag</b> command. The pattern is a
+search pattern as described in the section &ldquo;Search
+Patterns&rdquo; in the <b>aptitude</b> reference
+manual.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>For
+instance, <b>aptitude safe&minus;upgrade
+&minus;&minus;remove&minus;user&minus;tag&minus;from
+&quot;not&minus;upgraded,?action(upgrade)&quot;</b> will
+remove the <b>not&minus;upgraded</b> tag from all packages
+that the <b>safe&minus;upgrade</b> command is able to
+upgrade.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;s</b>,
+<b>&minus;&minus;simulate</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>In
+command&minus;line mode, print the actions that would
+normally be performed, but don't actually perform them. This
+does not require root privileges. In the visual interface,
+always open the cache in read&minus;only mode regardless of
+whether you are root.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::Simulate</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;safe&minus;resolver</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>When
+package dependency problems are encountered, use a
+&ldquo;safe&rdquo; algorithm to solve them. This resolver
+attempts to preserve as many of your choices as possible; it
+will never remove a package or install a version of a
+package other than the package's default candidate version.
+It is the same algorithm used in <b>safe&minus;upgrade</b>;
+indeed, <b>aptitude &minus;&minus;safe&minus;resolver
+full&minus;upgrade</b> is equivalent to <b>aptitude
+safe&minus;upgrade</b>. Because <b>safe&minus;upgrade</b>
+always uses the safe resolver, it does not accept the
+<b>&minus;&minus;safe&minus;resolver</b>
+flag.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+option is equivalent to setting the configuration variable
+<b>Aptitude::Always&minus;Use&minus;Safe&minus;Resolver</b>
+to <b>true</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;schedule&minus;only</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>For
+commands that modify package states, schedule operations to
+be performed in the future, but don't perform them. You can
+execute scheduled actions by running <b>aptitude install</b>
+with no arguments. This is equivalent to making the
+corresponding selections in visual mode, then exiting the
+program normally.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>For
+instance, <b>aptitude &minus;&minus;schedule&minus;only
+install evolution</b> will schedule the <b>evolution</b>
+package for later installation.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;show&minus;package&minus;names</b>
+&lt;<i>when</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Controls
+when the <b>versions</b> command shows package names. The
+following settings are allowed:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>always</b>: display package names every time that
+<b>aptitude versions</b> runs.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>auto</b>: display package names when <b>aptitude
+versions</b> runs if the output is not grouped by package,
+and either there is a pattern&minus;matching argument or
+there is more than one argument.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>&bull;
+<b>never</b>: never display package names in the output of
+<b>aptitude versions</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+option corresponds to the configuration item
+<b>Aptitude::CmdLine::Versions&minus;Show&minus;Package&minus;Names</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;show&minus;resolver&minus;actions</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Display the
+actions performed by the &ldquo;safe&rdquo; resolver and by
+<b>safe&minus;upgrade</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>When
+executing the command <b>safe&minus;upgrade</b> or when the
+option --safe-resolver is present, <b>aptitude</b> will
+display a summary of the actions performed by the resolver
+before printing the installation preview. This is equivalent
+to the configuration option
+<b>Aptitude::Safe&minus;Resolver::Show&minus;Resolver&minus;Actions</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;show&minus;summary[=&lt;</b><i>MODE</i>&gt;]</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Changes the
+behavior of &ldquo;<b>aptitude why</b>&rdquo; to summarize
+each dependency chain that it outputs, rather than
+displaying it in long form. If this option is present and
+&lt;<i>MODE</i>&gt; is not
+&ldquo;<b>no&minus;summary</b>&rdquo;, chains that contain
+Suggests dependencies will not be displayed: combine
+<b>&minus;&minus;show&minus;summary</b> with <b>&minus;v</b>
+to see a summary of all the reasons for the target package
+to be installed.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>&lt;<i>MODE</i>&gt;
+can be any one of the following:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>1.
+<b>no&minus;summary</b>: don't show a summary (the default
+behavior if <b>&minus;&minus;show&minus;summary</b> is not
+present).</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>2.
+<b>first&minus;package</b>: display the first package in
+each chain. This is the default value of &lt;<i>MODE</i>&gt;
+if it is not present.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>3.
+<b>first&minus;package&minus;and&minus;type</b>: display the
+first package in each chain, along with the strength of the
+weakest dependency in the chain.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>4.
+<b>all&minus;packages</b>: briefly display each chain of
+dependencies leading to the target
+package.</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>5.
+<b>all&minus;packages&minus;with&minus;dep&minus;versions</b>:
+briefly display each chain of dependencies leading to the
+target package, including the target version of each
+dependency.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+option corresponds to the configuration item
+<b>Aptitude::CmdLine::Show&minus;Summary</b>; if
+<b>&minus;&minus;show&minus;summary</b> is present on the
+command&minus;line, it will override
+<b>Aptitude::CmdLine::Show&minus;Summary</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big><b>Example&nbsp;10.&nbsp;Usage
+of &minus;&minus;show&minus;summary
+&minus;&minus;show&minus;summary</b> used with
+<b>&minus;v</b> to display all the reasons a package is
+installed:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;v &minus;&minus;show&minus;summary why
+foomatic&minus;db <br>
+Packages requiring foomatic&minus;db: <br>
+cupsys&minus;driver&minus;gutenprint <br>
+foomatic&minus;db&minus;engine <br>
+foomatic&minus;db&minus;gutenprint <br>
+foomatic&minus;db&minus;hpijs <br>
+foomatic&minus;filters&minus;ppds <br>
+foomatic&minus;gui <br>
+kde <br>
+printconf <br>
+wine</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;v
+&minus;&minus;show&minus;summary=first&minus;package&minus;and&minus;type
+why foomatic&minus;db <br>
+Packages requiring foomatic&minus;db: <br>
+[Depends] cupsys&minus;driver&minus;gutenprint <br>
+[Depends] foomatic&minus;db&minus;engine <br>
+[Depends] foomatic&minus;db&minus;gutenprint <br>
+[Depends] foomatic&minus;db&minus;hpijs <br>
+[Depends] foomatic&minus;filters&minus;ppds <br>
+[Depends] foomatic&minus;gui <br>
+[Depends] kde <br>
+[Depends] printconf <br>
+[Depends] wine</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;v
+&minus;&minus;show&minus;summary=all&minus;packages why
+foomatic&minus;db <br>
+Packages requiring foomatic&minus;db: <br>
+cupsys&minus;driver&minus;gutenprint D:
+cups&minus;driver&minus;gutenprint D: cups R:
+foomatic&minus;filters R: foomatic&minus;db&minus;engine D:
+foomatic&minus;db <br>
+foomatic&minus;filters&minus;ppds D: foomatic&minus;filters
+R: foomatic&minus;db&minus;engine D: foomatic&minus;db <br>
+kde D: kdeadmin R:
+system&minus;config&minus;printer&minus;kde D:
+system&minus;config&minus;printer R:
+hal&minus;cups&minus;utils D: cups R: foomatic&minus;filters
+R: foomatic&minus;db&minus;engine D: foomatic&minus;db <br>
+wine D: libwine&minus;print D: cups&minus;bsd R: cups R:
+foomatic&minus;filters R: foomatic&minus;db&minus;engine D:
+foomatic&minus;db <br>
+foomatic&minus;db&minus;engine D: foomatic&minus;db <br>
+foomatic&minus;db&minus;gutenprint D: foomatic&minus;db <br>
+foomatic&minus;db&minus;hpijs D: foomatic&minus;db <br>
+foomatic&minus;gui D: python&minus;foomatic D:
+foomatic&minus;db&minus;engine D: foomatic&minus;db <br>
+printconf D: foomatic&minus;db</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;v
+&minus;&minus;show&minus;summary=all&minus;packages&minus;with&minus;dep&minus;versions
+why foomatic&minus;db <br>
+Packages requiring foomatic&minus;db: <br>
+cupsys&minus;driver&minus;gutenprint D:
+cups&minus;driver&minus;gutenprint (&gt;= 5.0.2&minus;4) D:
+cups (&gt;= 1.3.0) R: foomatic&minus;filters (&gt;= 4.0) R:
+foomatic&minus;db&minus;engine (&gt;= 4.0) D:
+foomatic&minus;db (&gt;= 20090301) <br>
+foomatic&minus;filters&minus;ppds D: foomatic&minus;filters
+R: foomatic&minus;db&minus;engine (&gt;= 4.0) D:
+foomatic&minus;db (&gt;= 20090301) <br>
+kde D: kdeadmin (&gt;= 4:3.5.5) R:
+system&minus;config&minus;printer&minus;kde (&gt;=
+4:4.2.2&minus;1) D: system&minus;config&minus;printer (&gt;=
+1.0.0) R: hal&minus;cups&minus;utils D: cups R:
+foomatic&minus;filters (&gt;= 4.0) R:
+foomatic&minus;db&minus;engine (&gt;= 4.0) D:
+foomatic&minus;db (&gt;= 20090301) <br>
+wine D: libwine&minus;print (= 1.1.15&minus;1) D:
+cups&minus;bsd R: cups R: foomatic&minus;filters (&gt;= 4.0)
+R: foomatic&minus;db&minus;engine (&gt;= 4.0) D:
+foomatic&minus;db (&gt;= 20090301) <br>
+foomatic&minus;db&minus;engine D: foomatic&minus;db <br>
+foomatic&minus;db&minus;gutenprint D: foomatic&minus;db <br>
+foomatic&minus;db&minus;hpijs D: foomatic&minus;db <br>
+foomatic&minus;gui D: python&minus;foomatic (&gt;= 0.7.9.2)
+D: foomatic&minus;db&minus;engine D: foomatic&minus;db
+(&gt;= 20090301) <br>
+printconf D: foomatic&minus;db</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;show&minus;summary</b>
+used to list a chain on one
+line:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;&minus;show&minus;summary=all&minus;packages
+why aptitude&minus;gtk libglib2.0&minus;data <br>
+Packages requiring libglib2.0&minus;data: <br>
+aptitude&minus;gtk D: libglib2.0&minus;0 R:
+libglib2.0&minus;data</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;t</b>
+&lt;<i>release</i>&gt;,
+<b>&minus;&minus;target&minus;release</b>
+&lt;<i>release</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Set the
+release from which packages should be installed. For
+instance, &ldquo;<b>aptitude &minus;t experimental
+...</b>&rdquo; will install packages from the experimental
+distribution unless you specify otherwise. For the
+command&minus;line actions &ldquo;changelog&rdquo;,
+&ldquo;download&rdquo;, and &ldquo;show&rdquo;, this is
+equivalent to appending <b>/&lt;</b><i>release</i>&gt; to
+each package named on the command&minus;line; for other
+commands, this will affect the default candidate version of
+packages according to the rules described in
+<b>apt_preferences</b>(5).</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration item
+<b>APT::Default&minus;Release</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;V</b>,
+<b>&minus;&minus;show&minus;versions</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Show which
+versions of packages will be
+installed.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Show-Versions</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;v</b>,
+<b>&minus;&minus;verbose</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Causes some
+commands (for instance, <b>show</b>) to display extra
+information. This may be supplied multiple times to get more
+and more information.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Verbose</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;version</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Display the
+version of <b>aptitude</b> and some information about how it
+was compiled.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;visual&minus;preview</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>When
+installing or removing packages from the command line,
+instead of displaying the usual prompt, start up the visual
+interface and display its preview
+screen.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;W</b>,
+<b>&minus;&minus;show&minus;why</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>In the
+preview displayed before packages are installed or removed,
+show which manually installed package requires each
+automatically installed package. For
+instance:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;&minus;show&minus;why install mediawiki <br>
+... <br>
+The following NEW packages will be installed: <br>
+libapache2&minus;mod&minus;php5{a} (for mediawiki) mediawiki
+php5{a} (for mediawiki) <br>
+php5&minus;cli{a} (for mediawiki) php5&minus;common{a} (for
+mediawiki) <br>
+php5&minus;mysql{a} (for
+mediawiki)</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>When
+combined with <b>&minus;v</b> or a non&minus;zero value for
+<b>Aptitude::CmdLine::Verbose</b>, this displays the entire
+chain of dependencies that lead each package to be
+installed. For instance:</big></big></big></big></p>
+
+
+<p style="margin-left:23%; margin-top: 1em"><big><big><big><big>$
+aptitude &minus;v &minus;&minus;show&minus;why install
+libdb4.2&minus;dev <br>
+The following NEW packages will be installed: <br>
+libdb4.2{a} (libdb4.2&minus;dev D: libdb4.2)
+libdb4.2&minus;dev <br>
+The following packages will be REMOVED: <br>
+libdb4.4&minus;dev{a} (libdb4.2&minus;dev C: libdb&minus;dev
+P&lt;&minus; libdb&minus;dev)</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+option will also describe why packages are being removed, as
+shown above. In this example, libdb4.2&minus;dev conflicts
+with libdb&minus;dev, which is provided by
+libdb&minus;dev.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+argument corresponds to the configuration option
+<b>Aptitude::CmdLine::Show-Why</b> and displays the same
+information that is computed by <b>aptitude why</b> and
+<b>aptitude why&minus;not</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;w</b>
+&lt;<i>width</i>&gt;, <b>&minus;&minus;width</b>
+&lt;<i>width</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Specify the
+display width which should be used for output from the
+<b>search</b> command (by default, the terminal width is
+used).</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Package-Display-Width</b></big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;y</b>,
+<b>&minus;&minus;assume&minus;yes</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>When a
+yes/no prompt would be presented, assume that the user
+entered &ldquo;yes&rdquo;. In particular, suppresses the
+prompt that appears when installing, upgrading, or removing
+packages. Prompts for &ldquo;dangerous&rdquo; actions, such
+as removing essential packages, will still be displayed.
+This option overrides
+<b>&minus;P</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Assume-Yes</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;Z</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Show how
+much disk space will be used or freed by the individual
+packages being installed, upgraded, or
+removed.</big></big></big></big></p>
+
+
+<p style="margin-left:17%; margin-top: 1em"><big><big><big><big>This
+corresponds to the configuration option
+<b>Aptitude::CmdLine::Show-Size-Changes</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>The
+following options apply to the visual mode of the program,
+but are primarily for internal use; you generally won't need
+to use them yourself.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;autoclean&minus;on&minus;startup</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Deletes old
+downloaded files when the program starts (equivalent to
+starting the program and immediately selecting Actions
+&rarr; Clean obsolete files). You cannot use this option and
+&ldquo;<b>&minus;&minus;autoclean&minus;on&minus;startup</b>&rdquo;,
+&ldquo;<b>&minus;i</b>&rdquo;, or
+&ldquo;<b>&minus;u</b>&rdquo; at the same
+time.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;&minus;clean&minus;on&minus;startup</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Cleans the
+package cache when the program starts (equivalent to
+starting the program and immediately selecting Actions
+&rarr; Clean package cache). You cannot use this option and
+&ldquo;<b>&minus;&minus;autoclean&minus;on&minus;startup</b>&rdquo;,
+&ldquo;<b>&minus;i</b>&rdquo;, or
+&ldquo;<b>&minus;u</b>&rdquo; at the same
+time.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;i</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Displays a
+download preview when the program starts (equivalent to
+starting the program and immediately pressing
+&ldquo;g&rdquo;). You cannot use this option and
+&ldquo;<b>&minus;&minus;autoclean&minus;on&minus;startup</b>&rdquo;,
+&ldquo;<b>&minus;&minus;clean&minus;on&minus;startup</b>&rdquo;,
+or &ldquo;<b>&minus;u</b>&rdquo; at the same
+time.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;S</b>
+&lt;<i>fname</i>&gt;</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Loads the
+extended state information from &lt;<i>fname</i>&gt; instead
+of the standard state file.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>&minus;u</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>Begins
+updating the package lists as soon as the program starts.
+You cannot use this option and
+&ldquo;<b>&minus;&minus;autoclean&minus;on&minus;startup</b>&rdquo;,
+&ldquo;<b>&minus;&minus;clean&minus;on&minus;startup</b>&rdquo;,
+or &ldquo;<b>&minus;i</b>&rdquo; at the same
+time.</big></big></big></big></p>
+
+<h2>ENVIRONMENT
+<a name="ENVIRONMENT"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>HOME</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>If
+$HOME/.aptitude exists, <b>aptitude</b> will store its
+configuration file in $HOME/.aptitude/config. Otherwise, it
+will look up the current user's home directory using
+<b>getpwuid</b>(2) and place its configuration file
+there.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>PAGER</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>If this
+environment variable is set, <b>aptitude</b> will use it to
+display changelogs when &ldquo;<b>aptitude
+changelog</b>&rdquo; is invoked. If not set, it defaults to
+<b>more</b>.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>TMP</b></big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>If
+<b>TMPDIR</b> is unset, <b>aptitude</b> will store its
+temporary files in <b>TMP</b> if that variable is set.
+Otherwise, it will store them in
+/tmp.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>TMPDIR</b></big></big></big></big></p>
+
+
+<p style="margin-left:17%;"><big><big><big><big><b>aptitude</b>
+will store its temporary files in the directory indicated by
+this environment variable. If <b>TMPDIR</b> is not set, then
+<b>TMP</b> will be used; if <b>TMP</b> is also unset, then
+<b>aptitude</b> will use /tmp.</big></big></big></big></p>
+
+<h2>FILES
+<a name="FILES"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>/var/lib/aptitude/pkgstates</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>The file in
+which stored package states and some package flags are
+stored.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>/etc/apt/apt.conf,
+/etc/apt/apt.conf.d/*,
+~/.aptitude/config</big></big></big></big></p>
+
+<p style="margin-left:17%;"><big><big><big><big>The
+configuration files for <b>aptitude</b>. ~/.aptitude/config
+overrides /etc/apt/apt.conf. See <b>apt.conf</b>(5) for
+documentation of the format and contents of these
+files.</big></big></big></big></p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>apt-get</b>(8),
+<b>apt</b>(8),
+/usr/share/doc/aptitude/html/&lt;<i>lang</i>&gt;/index.html
+from the package
+aptitude&minus;doc&minus;&lt;<i>lang</i>&gt;</big></big></big></big></p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big><b>Daniel
+Burrows</b>
+&lt;dburrows@debian.org&gt;</big></big></big></big></p>
+
+
+<p style="margin-left:17%;"><big><big><big><big>Author.</big></big></big></big></p>
+
+<h2>COPYRIGHT
+<a name="COPYRIGHT"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>Copyright
+2004&minus;2011 Daniel Burrows.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>This
+manual page is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version
+2 of the License, or (at your option) any later
+version.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>This
+manual page is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the GNU General Public License for more
+details.</big></big></big></big></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><big><big><big><big>You
+should have received a copy of the GNU General Public
+License along with this program; if not, write to the Free
+Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110&minus;1301 USA.</big></big></big></big></p>
+<hr>
+</body>
+</html>

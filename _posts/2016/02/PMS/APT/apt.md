@@ -1,11 +1,28 @@
 ## APT
 The [**Advanced Packaging Tool**](https://wiki.debian.org/Apt) (**APT**) is the default front-end for the dpkg package manager used by Debian-based systems. See what APT does is it performs dependency resolution, repository management, and assorted other higher-level functions while dpkg is what actually installs and removes packages. So in essence what APT does for dpkg is it gives it some intelligence; package management with dpkg by itself is not an experience I would like to have as you would have to do just about everything yourself. It is the eldest package manager mentioned in this review and was first developed in 1998, while dpkg was first developed in 1994. APT is written in Bash script and C++, while dpkg is written in C, C++ and Perl.
 
+### Beginner-Friendliness
 APT was the first Linux package manager I ever used and I started using it on Ubuntu, so I may be biased towards saying it is beginner-friendly, although I will admit I think there are more beginner-friendly package managers out there, like [DNF](#dnf), [yum](#yum) and [zypper](#zypp). See APT has a somewhat confusing syntax, as you do not just run {% include Code/coders.html line1="apt [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" %} rather there are five distinct commands for APT, each with their own options, actions and permissible targets: [`add-apt-repository`](/man/add-apt-repository.1.html), [`apt`](/man/apt.8.html), [`apt-cache`](/man/apt-cache.8.html), [`apt-config`](/man/apt-config.8.html) and [`apt-get`](/man/apt-get.8.html). `apt-get` is used to install, remove and upgrade packages and update local index files for enabled repositories. `apt-cache` is for searching and dealing with the cache and metadata in it. `add-apt-repository` is used for managing repositories, while `apt-config` is for editing configuration files from the command-line. `apt` itself, on the other hand, seems to be capable of performing select actions from `apt-cache`, `apt-get` and `apt-config`.
 
-Despite this APT has several more beginner-friendly front-ends such as the ncurses textual program, aptitude, that is run from within a terminal and the graphical front-end Synaptic. My experience with both is fairly limited as I was willing to just stick to APT and the Ubuntu Software Center during my three years using Ubuntu as my distro. Overall I would rate APT as 5-7 out of 10 for beginner-friendliness as while its syntax can get confusing when you are just beginning to use it, there are two perfectly adequate, more beginner-friendly front-ends for it available. 
+Despite this APT has several more beginner-friendly front-ends such as the ncurses-based textual program, aptitude, that is run from within a terminal and the graphical front-end Synaptic. Here is [`aptitude`](/man/aptitude.8.html) My experience with both is fairly limited as I was willing to just stick to APT and the Ubuntu Software Center during my three years using Ubuntu as my distro. Overall I would rate APT as **5-7/10** for **beginner-friendliness** as while its syntax can get confusing when you are just beginning to use it, there are two perfectly adequate, more beginner-friendly front-ends for it available.
 
-APT, by default, installs binary packages, with the file extension `.deb`, although an RPM rewrite for APT exists called APT-RPM that uses binary packages with the `.rpm` file extension. APT-RPM is only used by one Linux distribution I have personal experience with, PCLinuxOS and I have personally noticed no syntactic, performance or other difference between it and APT, based on my limited experience with it. APT can also be used to build and install software from source code packages (which are provided by the APT src repositories). Its enabled repositories are listed in `/etc/apt/sources.list`, here is an example one taken from my Debian 8 VM:
+### Customizability
+APT being a binary package manager, has limited customizability when it comes to the packages it installs.
+
+### Features
+APT, by default, installs binary packages, with the file extension `.deb`, although an RPM rewrite for APT exists called APT-RPM that uses binary packages with the `.rpm` file extension. APT-RPM is only used by one Linux distribution I have personal experience with, PCLinuxOS and I have personally noticed no syntactic, performance or other difference between it and APT, based on my limited experience with it. APT can also be used to build and install software from source code packages (which are provided by the APT src repositories). Its enabled repositories are listed in `/etc/apt/sources.list`, here is an example one taken from my Debian 8.3 VM:
+
+~~~
+deb http://debian.mirror.digitalpacific.com.au/debian/ jessie main
+deb-src http://debian.mirror.digitalpacific.com.au/debian/ jessie main
+
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+
+# jessie-updates, previously known as 'volatile'
+deb http://debian.mirror.digitalpacific.com.au/debian/ jessie-updates main
+deb-src http://debian.mirror.digitalpacific.com.au/debian/ jessie-updates main
+~~~
 
 Running {% include Code/coders.html line1="time apt-get install -y --reinstall vim" %} gives:
 
