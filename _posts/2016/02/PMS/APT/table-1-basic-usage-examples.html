@@ -30,7 +30,12 @@
     <tr class="green">
       <td class="title1">Search package</td>
       <td class="green">{% include Code/coder.html line1="apt-cache search $package" %}</td>
-      <td class="green">Search for package(s).</td>
+      <td class="green">Search package name and description for provided regex. Pass option <code>--names-only</code> to search only package names for regex.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Upgrade package</td>
+      <td class="green">{% include Code/coder.html line1="apt-get update && apt-get upgrade" %}</td>
+      <td class="green">Update index lists and upgrade all install packages.</td>
     </tr>
   </tbody>
   <tfoot>
