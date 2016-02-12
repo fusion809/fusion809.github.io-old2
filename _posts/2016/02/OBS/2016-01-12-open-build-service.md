@@ -7,4 +7,4 @@ redirect_from:
   - /open-build-service/
 ---
 
-The **Open Build Service** (**OBS**) is a unique and powerful feature of openSUSE that enables users to create and maintain their own custom repositories for free, with the repositories being hosted by build.opensuse.org. 
+The **Open Build Service** (**OBS**) is a unique and powerful feature of openSUSE that enables users to create and maintain their own custom repositories for free, with the repositories being hosted by [build.opensuse.org](https://build.opensuse.org). 

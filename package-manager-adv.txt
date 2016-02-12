@@ -1,0 +1,7 @@
+APT:
+* Fast
+* Several available commands
+* Poor informational
+
+DNF:
+* Slow
