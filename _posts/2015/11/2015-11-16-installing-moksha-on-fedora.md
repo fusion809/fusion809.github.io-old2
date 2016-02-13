@@ -12,7 +12,7 @@ redirect_from:
 
 The following Bash script should install Moksha for you, provided you are a member of the user group `wheel` and hence can run the `sudo` command.
 
-```bash
+~~~ bash
 RAW=https://raw.githubusercontent.com/fusion809/moksha-scripts/master
 wget -c $RAW/list.txt $RAW/MokshaRadiance.edj
 
@@ -51,4 +51,4 @@ pushd moksha-0.1.0
 popd
 
 cp -a MokshaRadiance.edj ~/.e/e/themes
-```
+~~~

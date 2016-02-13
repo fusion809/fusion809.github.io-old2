@@ -47,7 +47,8 @@ and then reboot.
 On most Linux systems, Unix shells are stored in the file directory `/bin`. You can list them all by issuing the command:
 {% include Code/coder.html line1="cat /etc/shells" %}
 for me, for example, on my Sabayon machine this gives the output:
-```sh
+
+~~~ sh
 /bin/bash
 /bin/csh
 /bin/esh
@@ -59,7 +60,8 @@ for me, for example, on my Sabayon machine this gives the output:
 /bin/zsh
 /bin/rcsh
 /bin/mksh
-```
+~~~
+
 Bash and other Unix shells, have their own unique syntax or language (that is, how commands are passed onto Bash and other Unix shells), although most text editors (TEs) group all shell scripting languages together and call their collective syntax or language, "Shell script" or even just "sh". Examples of such TEs include: Atom, gedit and SciTE. They can do this without a problem in most cases because Unix shells share quite a lot of their syntax with one another.
 
 Another important concept, for one to understand in order for the rest of this post to make any sort of sense, is that of a **script**. Scripts are programs that can be interpreted from within a **run-time environment** (**RTE**) and they automate the execution of tasks that would otherwise have to be performed manually, one-by-one, by a human operator. In the case of shell scripts, including Bash scripts, the RTE in which the script is interpreted is the Unix shell.
@@ -472,7 +474,8 @@ while to define this variable globally, one would run:
 The primary value of Bash scripts is to automate tasks that would otherwise have to be done, over a longer time-frame by a human operator. I personally use shell scripts to make my life, when I am at the command-line, easier.
 
 In my `~/.bashrc` file I have links to several shell scripts stored in my `~/Shell` directory. Both my `~/.bashrc` and the shell scripts in my `~/Shell` directory can be found at [this GitHub repository](https://github.com/fusion809/sabayon-scripts). Here is my current `~/.bashrc` file:[^6]
-```bash
+
+~~~ bash
 # /etc/skel/.bashrc
 #
 # This file is sourced by all *interactive* bash shells on startup,
@@ -493,7 +496,8 @@ for i in ~/Shell/*.sh
 do
 	. $i
 done
-```
+~~~
+
 I have at least three dozen functions I have defined in shell scripts located in the `~/Shell` directory, but here I will mention some of the more interesting, or useful ones for Sabayon users, in general.
 
 ### Interesting Scripts
@@ -503,7 +507,8 @@ You may have noticed that I am hosting HTML versions of several Linux man pages 
 {% include Code/codeu.html line1="manhtml 1 emerge" %}
 
 Here are the contents of `~/Shell/man.sh` (showing all the contents as `manhtml` depends on other functions to work):
-```bash
+
+~~~ bash
 # Copy man page from /usr/share/man/... to ~/Documents/Manpages
 function cpman {
   sudo cp -a /usr/share/man/man$1/$2.$1.bz2 ~/Documents/Manpages
@@ -525,9 +530,11 @@ function manconv {
 function manhtml {
   cpman $1 $2 && manconv $1 $2 && cp -a * $HOME/GitHub/fusion809.github.io/man
 }
-```
+~~~
+
 while here is a function I created to help me install Moksha themes (it appears differently in my <code>~/Shell/other.sh</code> file, as this form is mostly to walk you through how it works):
-```bash
+
+~~~ bash
 function theme {
   #clone repo
   git clone https://github.com/JeffHoogland/$1
@@ -546,7 +553,8 @@ function theme {
   #cd out of repo
   cd ..
 }
-```
+~~~
+
 to install a new Moksha theme you would run:
 {% include Code/codeu.html line1="theme &lt;THEME&gt;" %} where `<THEME>` is, of course, the theme's name (how they appear in their respective GitHub repo's URL).
 
@@ -556,7 +564,7 @@ The following are some functions that, depending on how you operate on Sabayon, 
 #### Chroots
 `chroot` is a Unix command-line program that allows you to change the apparent root directory for the current running process and all processes started by said process (that is, its "children"). Most commonly `chroot` is used to run Bash as from within Bash one can perform several tasks. `chroot` also makes all other files on a system, outside the chroot directory (and its subdirectories) inaccessible to processes run within the chroot. This can be handy, when one is running processes that could potentially cause unwanted, even damaging changes, to one's system, as if it blows up in your face, the damage will be confined to the chroot directory. On Gentoo and Sabayon chroots are usually, in my fairly minimal experience, used to create a new installation (when for whatever reason the graphical Calamares installer is not suitable), repair an existing installation, build new binary packages and test out ebuilds. The following are taken from [`~/Shell/chroot.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/chroot.sh).
 
-```bash
+~~~ bash
 # root2 enters a chroot in the /root2 directory. To generate such a chroot
 # (which is necessary before entering it) use gentoo-chrootn or sabayon-chrootn
 # Upon rebooting, however, you may wish to run chrootb, as otherwise your chroot
@@ -699,11 +707,12 @@ function sabayon-chrootn {
 
 alias schrootn=sabayon-chrootn
 alias schroot2='sabayon-chrootn 2'
-```
+~~~
 
 #### Entropy
 The following are taken from [`~/Shell/equo.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/equo.sh) and they are functions (with aliases for said functions) that essentially automate some common actions one may perform with Entropy. They are not all the lines of code in `equo.sh`, they merely represent some of the more commonly-used codes. It is important to note some of these functions need not be defined as functions, they could instead be defined as aliases (using `alias NAME='CODE'` where NAME is the function's name and `CODE` is what is between the curly brackets).
-```bash
+
+~~~ bash
 # Inflate Portage binary into SPM binary.
 function sepi {
 	pushd /usr/portage/packages/$1
@@ -755,7 +764,7 @@ alias update=sequ
 function spm {
 	sudo equo rescue spmsync
 }
-```
+~~~
 
 #### Gentoo Documentation
 I wrote a Bash script ([`~/Shell/gentoo-doc.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/gentoo-doc.sh)) to generate a PDF of the complete Gentoo Handbook. Sadly, the final document does not include the CSS styling of the original handbook, but still it is better than no PDF at all. To get the complete PDF handbook for a specific architecture merely run:
@@ -765,7 +774,7 @@ where `<ARCHITECTURE>` is, of course, the architecture of the system. For exampl
 
 gentoo-doc.sh is shown below.
 
-```bash
+~~~ bash
 # Requires wkhtmltopdf, which was recently added to the Entropy Store.
 # To install it run: sudo equo i wkhtmltopdf
 function ghand {
@@ -792,12 +801,12 @@ function unit {
   ghandall "$1"
   pdfunite Installation.pdf Working.pdf Portage.pdf Networking.pdf ""$1"-Handbook".pdf
 }
-```
+~~~
 
 #### Git Tools
 The following script (taken from [`~/Shell/git.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/git.sh)) makes my life simpler when I am working with Git repositories.
 
-```bash
+~~~ bash
 # Switch to SSH. Allows for contributing without having to constantly provide
 # one's username and password.
 function gitsw {
@@ -844,11 +853,12 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
-```
+~~~
 
 #### Layman/Portage
 Here are some lines from my [`~/Shell/emerge.sh`](https://github.com/fusion809/sabayon-scripts/blob/master/Shell/emerge.sh) script.
-```bash
+
+~~~ bash
 # Install a package, but ask first
 function ema {
   sudo emerge -av $@
@@ -881,7 +891,7 @@ function sync {
 function tailf {
   tail -f /var/log/emerge-fetch.log
 }
-```
+~~~
 
 ## Terminal Emulators
 Terminal emulators (TEs) for Sabayon include tty1-tty6, the whole-screen virtual terminals managed by the getty Unix command[^7] and various graphical TEs (<abbr title="Graphical Terminal Emulators">GTEs</abbr>; that is, TE windows running within a graphical user interface) including GNOME Terminal, Konsole and LXTerminal. Most of these graphical TEs are found in the "x11-terms" category in the [Portage Tree](https://packages.gentoo.org/categories/x11-terms), [Gentoo Portage Overlays](http://gpo.zugaina.org/x11-terms/) and [Entropy Store](https://packages.sabayon.org/category/x11-terms), although there are exceptions, the most notable one being Konsole (which is in the kde-apps category). You can list all programs in this category by issuing the command:

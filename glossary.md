@@ -1,8 +1,9 @@
 ---
-layout:    page
-title:     "Glossary"
-date:      2016-02-06 +1000
-permalink: /glossary/
+layout:           page
+title:            "Glossary"
+date:             2016-02-06 +1000
+last_modified_at: 2016-02-13 18:47:09 +1000
+permalink:        /glossary/
 ---
 
 In this website I frequently discuss topics that require some degree of pre-existing knowledge on computing topics. In this page I define some basic terminology used elsewhere in this blog. This page has a structure, such that the most basic terminology that is required to understand later sections is contained in earlier sections. So in order to best understand this page, it is advised you read it the old fashion way, form start to finish.
