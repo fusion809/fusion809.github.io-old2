@@ -8,6 +8,9 @@ language and an IDE) available that are licensed under FOSS Licenses like the GN
 Both MATLAB and GNU Octave are themselves implemented in C, C++, Fortran and to a lesser extent other programming languages, with C making up the majority for GNU Octave (at 44.7% according to GitHub), C++ being a close second at 32.1% and Fortran making up 4.6% of the source code.[^3] GNU Octave provides its own graphical IDE too, for version 3.8.x up (e.g. 3.8.0). In fact, since version 4.0.0, the graphical IDE is the default user interface of GNU Octave.
 
 Below is an example pair of scripts I have written in it, for the purpose of plotting a Lorenz attractor. Note, in order to execute these yourself, you need to have GNU Octave (because of the use of the `lsode` function in the second of these two scripts, it is not compatible with MATLAB) installed and these two m files need to be stored in the SAME directory.
-{% include Code/gist.html id="21a43c7199d64d86255f" %}
-{% include Code/gist.html id="458fb365ea109af5a201" %}
+
+{% gist 21a43c7199d64d86255f %}
+
+{% gist 458fb365ea109af5a201 %}
+
 If you want to see some extra scripts I have written see [this repository](https://github.com/fusion809/GNU_Octave).

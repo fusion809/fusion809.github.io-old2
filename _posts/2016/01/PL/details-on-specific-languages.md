@@ -1,4 +1,6 @@
+{% capture my_capture %}
 ## Specifics on Common Languages
+
 ### Ada
 {% include Links/links.html program="Ada" category="dev-ada" %} is a high-level programming language that supports multiple paradigms and is descended from Pascal. The most popular free compiler for Ada is {% include Links/links.html program="GNAT" package="dev-lang/gnat-gcc" wp="GNAT" puncr="," %} a front-end of the **GNU Compiler Collection** (**GCC**).
 
@@ -79,3 +81,4 @@ Very few are written, predominantly, in Pascal itself, the only program I recogn
 [^5]: [MariaDB/server](https://github.com/mariadb/server) (7 Jan 2016)
 [^6]: [mysql/mysql-server](https://github.com/mysql/mysql-server) (7 Jan 2016)
 [^7]: [openSUSE/zypper](https://github.com/openSUSE/zypper) (7 Jan 2016)
+{% endcapture %}{{ my_capture | markdownify }}

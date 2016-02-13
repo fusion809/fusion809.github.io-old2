@@ -2,6 +2,7 @@
 **C** was originally developed for use by Research Unix, by Dennis Ritchie (1941-2011), while he was working at Bell Labs. Since then it has become one of the most widely-used programming languages in the world. The reason for this is several fold, *firstly*, it is cross-platform and able to run on most, if not all, computing platforms, *secondly*, it is fast and *thirdly*, it is powerful, giving developers complete control over their program. It was originally considered high-level, but it has since become considered low-level, and its low-level nature is best illustrated by the fact that developers have to allocate memory to their program manually. The most popular free compiler of C is the GCC.
 
 Programs written, predominantly, in it, that I have experience with, include:
+
 * {% include Links/wp.md name="Bash" %} &mdash; the Unix shell is predominantly written in C.
 * {% include Links/wp.md name="dpkg" %} (dpkg)[^1], the default package manager of Debian and its derivatives like Ubuntu.
 * {% include Links/wp.md name="FreeBSD" %} &mdash; the Unix-like operating system, is predominantly written in C.

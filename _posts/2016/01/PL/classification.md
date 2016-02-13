@@ -1,5 +1,6 @@
 ## An Introduction to Classification
 Programming languages can be [**implemented**](https://en.wikipedia.org/wiki/Programming_language_implementation) (or executed, that is, run) via one of two methods:
+
 * **Interpretation**. This method is basically what it sounds like: it is when the program's source code is translated into a series of actions implemented by the computer's hardware.
 * **Compilation**. [**Compilers**](https://en.wikipedia.org/wiki/Compiler) essentially serve as translators between languages &mdash; transforming one programming language into another computer language, which can then be compiled further into another language or fed into an interpreter. Some compilers (**native code compilers** [**NCCs**]) compile programming languages directly into machine code (which as its name suggests is a set of instructions that can be directly interpreted by a computer's Central Processing Unit). Assembly languages (explained later) are usually compiled using NCCs. The most popular type of compiler, overall, however, is one that compiles source code into object code (which is machine-readable, hence readily executed).
 As a general rule of thumb, compiled languages are faster than interpreted languages, although interpreted languages tend to be more convenient and human-readable.
