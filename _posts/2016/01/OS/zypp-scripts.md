@@ -1,5 +1,6 @@
 #### ZYpp Scripts
-```bash
+
+~~~ bash
 # Install software from binary packages in available repos
 # Alternatively a URL to the RPM binary can be used as an input
 function zypin {
@@ -35,4 +36,4 @@ function update {
 
 alias zypup=update
 alias szpu=update
-```
+~~~

@@ -17,12 +17,12 @@ Like its parent it uses pacman and Yaourt for command-line package management, a
 {% include_relative mhwd-scripts.md %}
 
 Manjaro Linux has the following pacman repositories enabled by default (note that while their names are the same as their Arch Linux counterparts these repositories are all distinct from their Arch counterparts):
-```bash
+~~~ bash
 core
 extra
 community
 multilib
-```
+~~~
 
 {% include_relative specs.md arch="i686, x86_64." origin="Austria, France, Germany." date="2013." ui="KDE, Xfce." im="Graphical (Calamares or Thus installer), using live media." type="Linux." pm="pacman, Yaourt." rm="Rolling." base="Arch Linux." tm="Users that prefer to have the latest software but also prefer a graphical installation process." %}
 

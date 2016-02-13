@@ -1,5 +1,6 @@
 #### DNF Scripts
-```bash
+
+~~~ bash
 # Install software without asking first and then clean repos and caches
 function sdyi {
   sudo dnf install -y $@ && sudo dnf clean all
@@ -19,4 +20,4 @@ function update {
 function sdyb {
   sudo dnf builddep -y $@
 }
-```
+~~~

@@ -24,7 +24,8 @@ pacman and Yaourt both have a very unusual syntax, see most command-line BSD/Lin
 Here is an example `~/.bashrc` file one can use on Arch VMs.
 
 #### pacman/Yaourt Scripts
-```bash
+
+~~~ bash
 # A less powerful replacement for Yaourt, I use when Yaourt is somehow inappropriate
 function aurin {
   for i in "$@"
@@ -87,17 +88,20 @@ function yalin {
 function yarm {
   yaourt -Rsc $@ --noconfirm
 }
-```
+~~~
+
 By default Arch has the following pacman repositories enabled:
-```bash
+
+~~~ bash
 core
 community
 extra
-```
+~~~
 
 ### Derivatives
 {% include_relative derivatives.md os="Arch" %}
 Several derivatives of Arch Linux exist, most of them are designed to be more user-friendly and less minimalistic than Arch, although some differ in other respects instead. Examples of user-friendly Arch derivatives include (all of which feature graphical installers):
+
 * [Antergos](http://distrowatch.com/table.php?distribution=antergos) &mdash; a Spanish distribution that used to be called Cinnarch due to its default Cinnamon desktop. Since then, extra live media has become available that feature different desktop environments. It supports both 32-bit and 64-bit processors and presently ranks 38th for popularity, according to *DistroWatch*. I have attempted to install this on a VirtualBox VM but failed due to bugs in the graphical installer.
 * [ArchBang](http://distrowatch.com/table.php?distribution=archbang) &mdash; a Canadian distribution that uses Openbox as its default user interface. It is currently ranked 49th according to the *DistroWatch* website for popularity and supports both 32-bit and 64-bit processors. I have attempted to install this on a VirtualBox VM but failed due to bugs in the graphical installer.
 * [Chakra](http://chakraos.org/) &mdash; a German distribution that uses the KDE Plasma 5 desktop by default. I have managed to install it on a VirtualBox VM, after I disabled 3D acceleration (which may have caused my inability to install Antergos and ArchBang), did not use it very long as I was more interested in Arch and Manjaro. It is presently ranked 60th according to the *DistroWatch* website for popularity and supports only 64-bit processors.

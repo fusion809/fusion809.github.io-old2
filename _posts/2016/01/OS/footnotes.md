@@ -1,4 +1,5 @@
-## Footnotes
+<h2>Footnotes</h2>
+
 [^1]: Source: [Arch Linux - Packages Search](https://www.archlinux.org/packages/)
 [^2]: Source: [AUR (en) - Packages](https://aur.archlinux.org/packages)
 [^3]: Source: [Index of /releases](https://download.enlightenment.org/releases/)

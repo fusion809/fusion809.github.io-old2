@@ -10,6 +10,7 @@ Unlike most package managers Portage installs software primarily (although binar
 The non-profit foundation that supports the development of Gentoo Linux, the Gentoo Foundation, was founded in 1999 by Robbins. The first stable release of Gentoo Linux was made in 2002. Daniel Robbins later left the project in 2004 to create a new Linux distribution called Funtoo Linux (which is derived from Gentoo) which is free too (contrary to my previous belief that it was not). In its early days Gentoo was actually one of the most popular Linux distributions around, at least according to *DistroWatch*, but with time its popularity fell (presently it is ranked 41st according to *DistroWatch*, for popularity) as fewer and fewer people had the skill, inclination and the time to build their system from the ground up with Portage. In fact, I do not even have the skill to install Gentoo manually, instead I took the easy way out and used [Packer](https://github.com/d11wtq/gentoo-packer) to build a virtual machine with it installed. Even with the assistance of Packer I am struggling to use Gentoo Linux because of Portage-related difficulties (see the package management section for details).
 
 The power and versatility of Portage is best illustrated by the mere fact that Gentoo is second only to Debian in the number of architecture types it has been ported to. Portage has even been ported to non-Linux &#42;nix operating systems, including:
+
 * The &#42;BSDs including FreeBSD, NetBSD and OpenBSD.
 * Darwin
 * GNU (with the Hurd kernel)
@@ -31,6 +32,7 @@ Running the `emup` function is what gives the issues I previously mentioned in t
 ### Derivatives
 {% include_relative derivatives.md os="Gentoo" %}
 Gentoo has a few different derivatives, the most notable one is probably [Sabayon Linux](#sabayon-linux) which is covered later in this post, other notable Gentoo derivatives include:
+
 * [Calculate Linux](http://www.calculate-linux.org/), which I have managed to install on a VM, although I did not use it much as I was turned off by Portage. It is currently ranked 77th by the *DistroWatch* website for popularity and is compatible with both i686 and x86_64 processors.
 * [Chrome OS/Chromium OS](https://www.chromium.org/chromium-os), which I have never used. It is not ranked by *DistroWatch*.
 * [Funtoo Linux](http://www.funtoo.org/Welcome), which I have also never used. It is ranked 152nd for popularity according to *DistroWatch* and supports i486, i686, x86_64 and sparc64 architectures.

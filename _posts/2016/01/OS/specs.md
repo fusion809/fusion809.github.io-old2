@@ -1,4 +1,5 @@
 ### Specifications
+
 * **Architecture support**: {{ include.arch }}{{ include.ARCH }}{{ include.architecture }}
 * **Country of origin**: {{ include.country }}{{ include.origin }}
 * **Date of establishment**: {{ include.date }}{{ include.DATE }}

@@ -1,5 +1,6 @@
 #### equo Scripts
-```bash
+
+~~~ bash
 # Test for missing dependencies and then install them
 function seqd {
 	sudo equo deptest
@@ -121,4 +122,4 @@ function sabl {
 function sabw {
 	sudo equo query list available --quiet sabayon-weekly | sort | uniq | wc -l
 }
-```
+~~~

@@ -1,5 +1,6 @@
 #### Layman and Portage Scripts
-```bash
+
+~~~ bash
 ##############################################
               # cd functions #
 ##############################################
@@ -121,4 +122,4 @@ function nuse {
 function tailf {
   tail -f /var/log/emerge-fetch.log
 }
-```
+~~~

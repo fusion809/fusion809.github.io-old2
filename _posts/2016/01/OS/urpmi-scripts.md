@@ -1,5 +1,6 @@
 #### urpmi Scripts
-```bash
+
+~~~ bash
 # Update all installed software
 function update {
 	sudo urpmi.update -a && sudo urpmi --auto-select
@@ -14,4 +15,4 @@ function urm {
 function uin {
   sudo urpmi $@
 }
-```
+~~~
