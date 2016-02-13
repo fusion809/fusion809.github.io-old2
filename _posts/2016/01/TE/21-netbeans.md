@@ -13,7 +13,8 @@ NetBeans has the usual features of IDEs, including those of TEs like syntax high
 ### Obtaining It
 
 #### Manjaro
-On Manjaro installing NetBeans is as simple as running: {% include Code/coder.html line1="pacman -S netbeans" %}
+On Manjaro installing NetBeans is as simple as running:
+{% include Code/coder.html line1="pacman -S netbeans" %}
 
 #### Sabayon
 On Sabayon installing NetBeans can be done using Entropy or Portage. To install NetBeans using Entropy run:
