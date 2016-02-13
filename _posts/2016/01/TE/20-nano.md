@@ -11,6 +11,7 @@ I am unaware of any possible customization of nano, if you know some please do t
 It offers syntax-highlighting, auto-indenting and miscellaneous other support for several computer languages. It also auto-detects the computer language using file extensions. It also has search functions (accessable via pressing <kbd>Ctrl</kbd>+<kbd>W</kbd>).
 
 ### Obtaining It
+
 #### Manjaro
 It is simple to install it on Manjaro, to do so merely run:
 {% include Code/coder.html line1="pacman -S nano" %}

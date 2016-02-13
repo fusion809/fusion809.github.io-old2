@@ -11,6 +11,7 @@ I do not have enough experience with Eclipse to make any comment on its customiz
 Eclipse features a text editor with syntax-highlighting, debugging and auto-complete support for most programming languages, in-built support for several compilers and interpreters, it also supports the use of project views, *etc.*
 
 ### Obtaining It
+
 #### Manjaro
 Eclipse comes in several different versions. To install what is common to every version available in the Manjaro repositories one would simply issue the command:
 {% include Code/coder.html line1="pacman -S eclipse-common" %}
@@ -19,18 +20,18 @@ while, if you would like to list all Eclipse-related programs in the AUR and pac
 
 #### Sabayon
 On Sabayon, Eclipse should not be installed via the default package managers: Entropy and Portage, due to the fact that it is not in the Entropy repositories and the versions found in the official and unofficial Portage overlays are fairly out-of-date and present security risks. Instead I would recommend you go to the download page, https://eclipse.org/downloads/, find the version you want (which will depend on the specifics of the programming you would like to perform) and download the respective tarball. This tarball should contain the executable script for launching the program. Alternatively, you can install it using the new installer, assuming you have all the dependencies already installed. I cannot find a comprehensive list of dependencies for Eclipse, but based on [this](http://gpo.zugaina.org/AJAX/Ebuild/13519201/View) ebuild I would hazard a guess that they are:
-```bash
+~~~ bash
 >=virtual/jdk-1.6
 x11-libs/gtk+:2
-```
+~~~
 
-```bash
+~~~ bash
 # Set this mirror variable, according to whichever mirror is closest and best for you
 MIRROR=http://mirror.internode.on.net
 wget -cqO- $MIRROR/pub/eclipse/oomph/epp/mars/R1a/eclipse-inst-linux64.tar.gz | tar -xz
 cd eclipse-installer
 ./eclipse-inst
-```
+~~~
 
 **Update**: Soon after I posted this, Francesco Ferro added [`dev-util/eclipse-sdk-bin`](https://packages.sabayon.org/quicksearch?q=dev-util%2Feclipse-sdk-bin&x=0&y=0) (version 4.4.2, not quite the latest but it is fairly recent) to the [`sabayon`](https://github.com/Sabayon/for-gentoo/commit/38234bc122094ca4cc818d92e2e42bd32fe749d9) overlay and then to the sabayon-limbo repository. To install it run: {% include Code/coder.html line1="equo i -av dev-util/eclipse-sdk-bin" %}
 

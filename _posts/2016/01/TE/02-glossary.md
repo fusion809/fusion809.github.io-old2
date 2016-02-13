@@ -1,4 +1,5 @@
 ## Glossary
+
 ### Acronyms
 * **CE**: **Community Edition**. Some programs have both community (usually indicated they are licensed under a GPL-compatible FOSS license) and proprietary (sometimes alternatively named like Ultimate Edition in the case of IntelliJ IDEA) editions.
 

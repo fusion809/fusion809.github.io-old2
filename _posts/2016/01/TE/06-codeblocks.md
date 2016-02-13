@@ -11,6 +11,7 @@ It is extensible through plugins[^3], although I have limited experience with th
 It provides many of the advanced features of text editors like syntax highlighting, code folding, code completion, *etc.* for C, C++, Fortran and XML files.
 
 ### Obtaining It
+
 #### Manjaro
 On Manjaro Code::Blocks can be very easily installed using pacman:
 {% include Code/coder.html line1="pacman -S codeblocks" %}

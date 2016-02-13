@@ -11,6 +11,7 @@ NetBeans is extensible via plugins provided at its [website](http://plugins.netb
 NetBeans has the usual features of IDEs, including those of TEs like syntax highlighting, autocompletion and auto-indentation for its programming languages and the ability to compile programs written in it.
 
 ### Obtaining It
+
 #### Manjaro
 On Manjaro installing NetBeans is as simple as running: {% include Code/coder.html line1="pacman -S netbeans" %}
 

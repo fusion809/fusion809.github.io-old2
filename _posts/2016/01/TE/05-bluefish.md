@@ -11,10 +11,12 @@ I have limited experience with Bluefish but from what I can gather, it is custom
 Syntax highlighting is available for almost (if not all) all computer languages used in web development.
 
 ### Obtaining It
+
 #### Manjaro
 Bluefish is in the official pacman repositories for Manjaro so merely running:
 {% include Code/coder.html line1="pacman -S bluefish" %}
 should install it.
+
 #### Sabayon
 It can be installed with Entropy or Portage (and is available in the Portage Tree). With Entropy run:
 {% include Code/coder.html line1="equo i -av app-editors/bluefish" %}

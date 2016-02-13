@@ -16,6 +16,7 @@ Vim is extensively customizable, for people with the required level of finesse i
 It has syntax-highlighting support for almost (if not every) every computer language. It also has several IDE-type features, like compiling source code from within it. Several other features can be added to it, for example, I wrote some of this post in Vim when my blog was powered by WordPress, using the [Vimpress plugin](https://github.com/PotHix/Vimpress). Several plugins are available in the [app-vim](http://gpo.zugaina.org/app-vim/) Portage category and in PkgBrowser they can be found under the app&rarr;vim category.
 
 ### Obtaining It
+
 #### Manjaro
 It is easy to install Vim on Manjaro using pacman. To do this run:
 {% include Code/coder.html line1="pacman -S vim" %}

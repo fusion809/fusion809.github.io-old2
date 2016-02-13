@@ -11,6 +11,7 @@ Some customization (to the theme or adding some plugins) can be done by going to
 pluma has a few plugins that can be used to add features (mostly IDE-like features) to the text editor. It also has syntax-highlighting and auto-indenting support for several computer languages.
 
 ### Obtaining It
+
 #### Manjaro
 pluma can be installed from the pacman extra repository by running:
 {% include Code/coder.html line1="pacman -S pluma" %}

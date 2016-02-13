@@ -15,6 +15,7 @@ Some customization (such as of keyboard shortcuts, the toolbar and a few other f
 It has syntax-highlighting and auto-indentation support for over 180 different computer languages, including MediaWiki and shell script, but excluding PyMOL. It also has embedded terminal support.
 
 ### Obtaining It
+
 #### Manjaro
 Kate/KWrite can be installed using pacman, via running:
 {% include Code/coder.html line1="pacman -S kate" %}

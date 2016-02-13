@@ -11,6 +11,7 @@ KDevelop is a program I have little experience with, but if you go to the "Setti
 KDevelop features source code editor support (including syntax highlighting, autocompletion, autoindentation, *etc.*) for its four programming languages, it also has in-built support for git and compilers/interpreters for C, C++, PHP and Python.
 
 ### Obtaining It
+
 #### Manjaro
 KDevelop is in Manjaro's pacman repositories and can be installed by running the command:
 {% include Code/coder.html line1="pacman -S kdevelop" %}

@@ -11,6 +11,7 @@ I have limited experience with CodeLite, so I cannot really comment with confide
 It is fairly feature-packed (including git, subversion, GUI-building, *etc.* support) for the programming languages it supports.
 
 ### Obtaining It
+
 #### Manjaro
 On Manjaro CodeLite must be installed from the AUR, by running:
 {% include Code/codeu.html line1="yaourt -S codelite" %}
