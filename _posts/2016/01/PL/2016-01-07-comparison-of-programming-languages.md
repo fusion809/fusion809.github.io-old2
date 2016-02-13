@@ -13,8 +13,6 @@ redirect_from:
 
 {% include_relative classification.md %}
 
-{% include_relative table1-comparison-of-common-programming-languages.html %}
-
 {% include_relative details-on-specific-languages.md %}
 
 {% if post.comments %}
@@ -41,3 +39,5 @@ redirect_from:
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}
+
+{% include_relative table1-comparison-of-common-programming-languages.html %}
