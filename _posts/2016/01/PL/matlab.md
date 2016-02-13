@@ -9,8 +9,39 @@ Both MATLAB and GNU Octave are themselves implemented in C, C++, Fortran and to 
 
 Below is an example pair of scripts I have written in it, for the purpose of plotting a Lorenz attractor. Note, in order to execute these yourself, you need to have GNU Octave (because of the use of the `lsode` function in the second of these two scripts, it is not compatible with MATLAB) installed and these two m files need to be stored in the SAME directory.
 
-{% gist 21a43c7199d64d86255f %}
+~~~ matlab
+function dy = lorenz(y,t)
+dy = zeros(3,1);
+P = 10;
+r = 28;
+b = 8/3;
+dy(1) = P*(y(2) - y(1));
+dy(2) = -y(1)*y(3) + r*y(1) - y(2);
+dy(3) = y(1)*y(2) - b*y(3);
+~~~
 
-{% gist 458fb365ea109af5a201 %}
+~~~ matlab
+clear all
+t = linspace(0,350,100001);
+lsode_options("relative tolerance", 1e-15);
+y = lsode("lorenz",[ 1.0; 1.0; 1.0]',t);
+
+figure(1)
+
+subplot(221)
+plot(y(:,1),y(:,2),'-');
+xlabel('x(t)','FontSize',16);
+ylabel('y(t)','FontSize',16);
+
+subplot(222)
+plot(y(:,1),y(:,3),'-');
+xlabel('x(t)','FontSize',16);
+ylabel('z(t)','FontSize',16);
+
+subplot(223)
+plot(y(:,2),y(:,3),'-');
+xlabel('y(t)','FontSize',16);
+ylabel('z(t)','FontSize',16);
+~~~
 
 If you want to see some extra scripts I have written see [this repository](https://github.com/fusion809/GNU_Octave).
