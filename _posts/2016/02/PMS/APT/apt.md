@@ -10,7 +10,18 @@ Despite this APT has several more beginner-friendly front-ends such as the ncurs
 APT being a binary package manager, has limited customizability when it comes to the binary packages it installs. By this I mean these binary packages have already been compiled so it is impossible for users to specify desired features for the package to have. There is one way one can customize installed packages that I know of: by downloading the corresponding source code package for each installed package one wishes to customize and editing the files used to build the package. A [guide](https://wiki.debian.org/BuildingTutorial) on how to do this can be found at the *Debian Wiki*. It essentially consists of running {% include Code/codeus.html line1="apt-get source $package" %} changing into the package's directory, modifying the required files, getting the build dependencies with {% include Code/coders-fs.html line1="apt-get build-dep $package" %}, then building the package with {% include Code/codeus-fs.html line1="debuild -b -uc -us" %} and finally installing it with {% include Code/coders.html line1="dpkg -i ../$package-$version.deb" %} The most important file for one to customize, in terms of changing the features the package is built with, is the `rules` file in the `debian/` folder.
 
 ### Development
-Debian package development is more complicated than developing Arch and RPM packages and writing ebuilds for Gentoo packages, in my opinion. See first of all, Debian packages are not built based on the contents of a single file plus files referred to by said single file, as is the case for ebuilds and PKGBUILDs, rather Debian packages are built based on the contents of an entire directory. In the top-level of the directory there is the package's upstream source along with a `debian/` subfolder, which contains several components that are specific to the Debian package being built. 
+Debian package development is more complicated than developing Arch and RPM packages and writing ebuilds for Gentoo packages, in my opinion. See first of all, Debian packages are not built based on the contents of a single file plus files referred to by said single file, as is the case for ebuilds and PKGBUILDs, rather Debian packages are built based on the contents of an entire directory. In the top-level of the directory there is the package's upstream source along with a `debian/` subfolder, which contains several components that are specific to the Debian package being built. Its structure is as follows:
+
+~~~
+- debian/
+-- changelog
+-- compat
+-- control
+-- copyright
+-- rules
+-- source/
+--- format
+~~~
 
 ### Features
 APT, by default, installs binary packages, with the file extension `.deb`, although an RPM rewrite for APT exists called APT-RPM that uses binary packages with the `.rpm` file extension. APT-RPM is only used by one Linux distribution I have personal experience with, PCLinuxOS and I have personally noticed no syntactic, performance or other difference between it and APT, based on my limited experience with it. APT can also be used to build and install software from source code packages (which are provided by the APT src repositories). Its enabled repositories are listed in `/etc/apt/sources.list`, here is an example one taken from my Debian 8.3 VM:
