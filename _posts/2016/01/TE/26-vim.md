@@ -6,6 +6,7 @@
 
 ### Customizability
 Vim is extensively customizable, for people with the required level of finesse in programming. There are also several extensions and other plugins available for it, from the Internet. [Here](http://vimawesome.com/) is a centralized database of Vim plugins, with search tools to help you find the plugin you want. There are several plugin managers available for Vim, some of the more popular ones include:
+
 * [apt-vim](https://github.com/egalpin/apt-vim), a cross-platform package manager that is written in Python. It is fairly easy to install, just go to the GitHub repository I just linked and follow the instructions.
 * [vim-addon-manager](https://github.com/MarcWeber/vim-addon-manager), a plugin manager written almost entirely in VimL (the scripting language of Vim).
 * [vim-update-bundles](https://github.com/bronson/vim-update-bundles), a plugin manager written in Ruby, its development has ceased but it still seems to work fine.
@@ -31,11 +32,13 @@ whereas to install it with Portage run:
 {% include Code/coder.html line1="emerge -av app-editors/vim app-editors/gvim" %}
 
 ### Advantages (Pros)
+
 * Easy to obtain it on Manjaro, Sabayon and virtually every &#42;nix system.
 * Extremely customizable
 * Fairly light on system resources
 
 ### Disadvantages (Cons)
+
 * Steep learning curve, making it difficult to learn. If you run `vimtutor` from the command-line after installing it, you will be taken through a tutorial of how to use it, which can be helpful.
 
 ### Summary

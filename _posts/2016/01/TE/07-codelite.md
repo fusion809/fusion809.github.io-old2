@@ -21,6 +21,7 @@ for example. At the time of writing this version of the latest (9.0).
 An old (from February 2013) version of CodeLite (4.1.5770) is presently in the Entropy repositories, to install it run:
 {% include Code/coder.html line1="equo i -av dev-util/codelite" %}
 alternatively, one can install it from an unofficial Portage overlay. At the time of writing the following overlays have the latest version of CodeLite:
+
 * [`kaa`](http://gpo.zugaina.org/Overlays/kaa)
 * [`lif`](https://github.com/killer2tester/gentoo-overlay-lif)
 * [`sabayon-tools`](https://github.com/fusion809/sabayon-tools)

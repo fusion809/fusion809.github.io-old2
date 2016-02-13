@@ -17,6 +17,7 @@ An {% include Links/wpb.md name="Integrated Development Environment" %} (**IDE**
 
 ### IDE Features
 IDEs possess several features that are supposed to distinguish them from standard TEs, these features include:
+
 * **In-built implementation support**: in other words, the ability to implement (compile or interpret, depending on the programming language) the files being edited or created in the IDE.
 * **Project Views**: this is my way of saying that usually in IDEs you can navigate the contents of a project folder, editing each file therein without having to open up a new IDE window.
 
