@@ -2,6 +2,7 @@
 {% include Links/image.html image="GTK-based-Portage-front-end-Porthole.png" description="Screenshot of Porthole running under KDE Plasma 5" width="1100px" float="none" %}
 
 {% include Links/links.html sw="En:Portage" wp="Portage_(software)" package="sys-apps/portage" program="Portage" gw="Portage" %} is a package management system that is arguably the most powerful Linux PMS available today. It is written in [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) and [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) script, so as to afford users the ability to script with Portage. Portage installs, removes and upgrades software using the instructions contained in a specialized type of Bash script known as an [**ebuild**](#ebuild). The `sys-apps/portage` package provides the executable commands listed below. Each are hyperlinked to their respective manpage, if they have one. You can replicate this list using {% include Code/codeus-fs.html line1="equery files sys-apps/portage | grep /usr/bin" %} You can show all the manpages associated with `sys-apps/portage` with (assuming the [Gentoolkit](#gentoolkit) is installed): {% include Code/codeus-fs.html line1="equery files sys-apps/portage | grep /usr/share/man" %}
+
 * [`ebuild`](/man/ebuild.1.html)
 * [`egencache`](/man/egencache.1.html)
 * [`emerge`](/man/emerge.1.html)
@@ -35,9 +36,11 @@ As previously mentioned `.tbz2` is the binary package format used by Portage. It
 {% include Code/codeu.html line1="qtbz2 -s &lt;PACKAGE&gt;" %}
 
 #### Links
-##### Handbook
+<h5>Handbook</h5>
+
 * [AMD64 Handbook](https://wiki.gentoo.org/wiki/Handbook:AMD64/Working/Portage)
 
-##### Manpages
+<h5>Manpages</h5>
+
 * [EMERGE(1) Manpage](/man/emerge.1.html)
 * [PORTAGE(5) Manpage](/man/portage.5.html)

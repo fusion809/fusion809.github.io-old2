@@ -13,5 +13,6 @@ While I would not consider myself a programmer *per se*, I do develop and mainta
 * **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages [here at my Open Build Service project](https://build.opensuse.org/project/show/home:fusion809/).
 
 I also maintain several GitHub repositories of shell scripts which I use on a variety of different Linux distributions to automate package management and other tasks. They are:
+
 * [`arch-scripts`](https://github.com/fusion809/arch-scripts) &mdash; scripts for Arch-based distributions.
-* [`centos-scripts`](https://github.com/fusion809/centos-scripts) &mdash; scripts for CentOS-based distributions. 
+* [`centos-scripts`](https://github.com/fusion809/centos-scripts) &mdash; scripts for CentOS-based distributions.
