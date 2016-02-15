@@ -11,6 +11,9 @@ As previously mentioned pacman has a syntax that is non-intuitive to newcomers, 
 ### Customizability
 pacman's settings (like a list of enabled repositories) are stored in `/etc/pacman.conf`, but as pacman is a binary package manager some freedom is taken away from the user, in terms of customizing their system. Despite this, Arch Linux has the [Arch Build System](https://wiki.archlinux.org/index.php/Arch_Build_System) (ABS), a Portage Tree-like set of subdirectories found in `/var/abs/` that contain the PKGBUILDs and associated other files used to build the software in the pacman repositories. The ABS is not included, by default, on Arch Linux, however, it has to be installed by the user and setup. Once installed, it is possible that the user can use it to customize all packages installed on their system to their liking and any extra packages they would like to install.
 
+### Features
+pacman's feature set is fairly limited compared to other package managers mentioned in this post. It does not have an `autoremove` (it is possible to do an autoremove though, by using some clever shell scripting) or `builddep` action (although the `makepkg` command can be passed the `-s` option to get it to install all required build dependencies, prior to making a package), nor does it support the use of wildcards. It also provides fewer details in its output than DNF or Entropy.
+
 ### Speed
 From {% include Code/coders.html line1="time pacman -S vim --noconfirm" directory="/home/fusion809" %} I received the output:
 
