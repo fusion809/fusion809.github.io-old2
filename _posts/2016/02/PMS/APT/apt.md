@@ -23,7 +23,7 @@ Debian package development (an introduction to Debian packaging can be found [he
 --- format
 ~~~
 
-the contents of the `changelog` and `copyright` files I think are pretty obvious, so I will skip them and just mention what is in the `compat`, `control` and `rules` files. The `compat` file is a file that contains nothing but the number nine (9) in it, as it is supposedly a "magic number". The `control` file contains most of the package's metadata like its description, name, version, dependencies, *etc.* while the `rules` file contains the build instructions for the `debuild` command to follow, in order to build the Debian binary package. Frequently, a single upstream package will be split up into over three different Debian packages, each with different suffixes (most commonly `debug`, `dev` and `doc`) and/or prefixes (most commonly `lib`). This package splitting, from my understanding, is designed to give users greater freedom over their installed packages. If they want debugging symbols, development features, documentation or the package's installed libraries they can install them separately, while if they just want basic functionality for the package in question they can install the base package and not install these extras, hence saving space. 
+the contents of the `changelog` and `copyright` files I think are pretty obvious, so I will skip them and just mention what is in the `compat`, `control` and `rules` files. The `compat` file is a file that contains nothing but the number nine (9) in it, as it is supposedly a "magic number". The `control` file contains most of the package's metadata like its description, name, version, dependencies, *etc.* while the `rules` file contains the build instructions for the `debuild` command to follow, in order to build the Debian binary package. Frequently, a single upstream package will be split up into over three different Debian packages, each with different suffixes (most commonly `debug`, `dev` and `doc`) and/or prefixes (most commonly `lib`). This package splitting, from my understanding, is designed to give users greater freedom over their installed packages. If they want debugging symbols, development features, documentation or the package's installed libraries they can install them separately, while if they just want basic functionality for the package in question they can install the base package and not install these extras, hence saving space.
 
 ### Features
 APT, by default, installs binary packages, with the file extension `.deb`, although an RPM rewrite for APT exists called APT-RPM that uses binary packages with the `.rpm` file extension. APT-RPM is only used by one Linux distribution I have personal experience with, PCLinuxOS and I have personally noticed no syntactic, performance or other difference between it and APT, based on my limited experience with it. APT can also be used to build and install software from source code packages (which are provided by the APT src repositories). Its enabled repositories are listed in `/etc/apt/sources.list`, here is an example one taken from my Debian 8.3 VM:
@@ -39,6 +39,14 @@ deb-src http://security.debian.org/ jessie/updates main
 deb http://debian.mirror.digitalpacific.com.au/debian/ jessie-updates main
 deb-src http://debian.mirror.digitalpacific.com.au/debian/ jessie-updates main
 ~~~
+
+. One disadvantage of APT, as opposed to DNF, yum or ZYpp, is that it cannot be used to download a package and install it from a specified URL. Instead, if one wishes to install a `.deb` package from a URL one has to run something like:
+
+{% include Code/codeu.html line1="wget $URL" line2="sudo dpkg -i $package.deb" line3="sudo apt-get -f install" %}
+
+where `$URL` is the URL you wish to install the Debian package from, while `$package` is the package's name, without its `.deb` file extension. The third of these lines installs any missing dependencies that are available from enabled repositories (listed in `/etc/apt/sources.list`) and then will install the `$package.deb` file, if line 2 failed to, due to missing dependencies. I have heard that later releases of APT may be able to install local packages and do dependency management without `dpkg` having to be explicitly called. In other words, these later releases of APT may be able to install a package from URL with just two commands, namely:
+
+{% include Code/codeu.html line1="wget $URL" line1="sudo apt-get install $package.deb" %}
 
 ### Speed
 Running {% include Code/coders.html line1="time apt-get install -y --reinstall vim" %} gives:
