@@ -7,13 +7,14 @@ It is a fairly beginner-friendly package manager, its command-line syntax is int
 Several abbreviated actions exist, for example, `i` for `install`, `rm` for `remove`, `up` for `update` and `u` for `upgrade`. It has a graphical user interface which is always a nice beginner-friendly touch, I would rate its beginner-friendliness at 8/10.
 
 ### Customizability
-As Entropy installs software from binary packages, there is no real freedom to customize the packages to your liking. Except by, of course, writing your own ebuild, or modifying existing ebuilds, to your liking and building and installing them. Or building/installing existing ebuilds in the Portage Tree or unofficial overlays with custom USE flags enabled. As far as customizing Entropy itself, there are several files in the `/etc/entropy` directory that can be used to customize Entropy's options. 
+As Entropy installs software from binary packages, there is no real freedom to customize the packages to your liking. Except by, of course, writing your own ebuild, or modifying existing ebuilds, to your liking and building and installing them. Or building/installing existing ebuilds in the Portage Tree or unofficial overlays with custom USE flags enabled. As far as customizing Entropy itself, there are several files in the `/etc/entropy` directory that can be used to customize Entropy's options.
 
 ### Development
 Entropy package development is done in three major steps:
+
 * The creation or selection of a suitable ebuild.
-* The building of a Portage binary package from the ebuild by issuing the command {% include Code/coders.html line1="ebuild $package.ebuild package" %}. Or, if the ebuild is in a presently-enabled Portage overlay, run {% include Code/coders.html line1="emerge -b $package" %}. Where `$package.ebuild` is the name of the ebuild, including its file extensions, relative to the present working directory.
-*  {% include Code/coders.html line1="equo pkg inflate $package.tbz2" %}. Where `$package.tbz2` is the binary package built by Portage, including its relative path to the present working directory. It is likely in the `/usr/portage/packages` directory.
+* The building of a Portage binary package from the ebuild by issuing the command {% include Code/coders-fs.html line1="ebuild $package.ebuild package" %} Or, if the ebuild is in a presently-enabled Portage overlay, run {% include Code/coders-fs.html line1="emerge -b $package" %} Where `$package.ebuild` is the name of the ebuild, including its file extensions, relative to the present working directory.
+*  {% include Code/coders-fs.html line1="equo pkg inflate $package.tbz2" %} Where `$package.tbz2` is the binary package built by Portage, including its relative path to the present working directory. It is likely in the `/usr/portage/packages` directory.
 
 ### Features
 Syntactically it is similar to both APT and Portage. See its options (e.g., `-a/--ask` for ask for confirmation before performing changes) are similar to Portage, but its actions are largely borrowed from APT. It cannot install packages from a URL, although it can install software from local packages. If you install a local package, that is also present (even if the version present there is different) in the Entropy repositories, then perform an upgrade odds are the package version in the Entropy repositories will be installed over it.
