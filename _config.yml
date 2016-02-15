@@ -29,7 +29,7 @@ exclude:            [vendor]
 gems:
   - jekyll-gist
   - jekyll-redirect-from
-  - jekyll-rss
+  - jekyll-feed
 # Build settings
 markdown:           kramdown
 author:             Brenton Horne
