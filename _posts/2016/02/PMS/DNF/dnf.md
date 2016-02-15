@@ -89,4 +89,4 @@ user	0m2.064s
 sys	0m3.964s
 ~~~
 
-{% include_relative table-2-basic-usage-examples.html %}
+{% include_relative DNF/table-2-basic-usage-examples.html %}

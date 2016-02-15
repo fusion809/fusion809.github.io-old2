@@ -10,11 +10,12 @@
     <tr class="green">
       <td class="title1">Add a repository</td>
       <td class="green">{% include Code/coder.html line1="dnf config-manager --add-repo $URL" %}</td>
+      <td class="green">Add a DNF repository, the $URL must be to the repository's <code>.repo</code> file.</td>
     </tr>
   </tbody>
   <tfoot>
     <tr class="green">
-      <td colspan="3" style="padding:5px;"><sup>1</sup>: <u>Note:</u> in this table I use the short-hand notations <code>$package</code> and <code>$repository</code> to refer to the target package(s) or repository, respectively, that the user wishes to perform the mentioned action on.</td>
+      <td colspan="3" style="padding:5px;"><sup>1</sup>: <u>Note:</u> in this table I use the short-hand notations <code>$package</code> and <code>$URL</code> to refer to the target package(s) or repository URL, respectively, that the user wishes to perform the mentioned action on.</td>
     </tr>
   </tfoot>
 </table><br/>
