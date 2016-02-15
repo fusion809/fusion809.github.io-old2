@@ -32,3 +32,4 @@ gems:
   - jekyll-rss
 # Build settings
 markdown:           kramdown
+author:             Brenton Horne
