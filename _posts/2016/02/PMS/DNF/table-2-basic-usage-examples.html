@@ -12,6 +12,16 @@
       <td class="green">{% include Code/coder.html line1="dnf config-manager --add-repo $URL" %}</td>
       <td class="green">Add a DNF repository, the $URL must be to the repository's <code>.repo</code> file.</td>
     </tr>
+    <tr class="green">
+      <td class="title1">Build package from source</td>
+      <td class="green">N/A</td>
+      <td class="green">Building a package from source has to be done over several lines and involves using tools not provided by DNF.</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Install build dependencies</td>
+      <td class="green">{% include Code/coder.html line1="dnf builddep $package" %}</td>
+      <td class="green">Install the required build dependencies for <code>$package</code>.</td>
+    </tr>
   </tbody>
   <tfoot>
     <tr class="green">
