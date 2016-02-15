@@ -36,3 +36,6 @@ with respect to the following areas:
 {% include_relative pacman/pacman.md %}
 
 {% include_relative ZYpp/zypp.md %}
+
+## Footnotes
+[^1]: [pacman Home Page](https://www.archlinux.org/pacman/) (2 March 2015). Retrieved 15 February 2016. 
