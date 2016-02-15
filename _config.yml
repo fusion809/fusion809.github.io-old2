@@ -29,5 +29,6 @@ exclude:            [vendor]
 gems:
   - jekyll-gist
   - jekyll-redirect-from
+  - jekyll-rss
 # Build settings
 markdown:           kramdown
