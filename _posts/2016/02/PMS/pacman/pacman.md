@@ -1,4 +1,6 @@
 ## pacman
+[**pacman**](https://www.archlinux.org/pacman/) is the default package manager of Arch Linux and its various derivatives as well as at least two supposedly independent distributions, Frugalware and KaOS.
+
 From {% include Code/coders.html line1="time pacman -S vim --noconfirm" directory="/home/fusion809" %} I got the output:
 
 ~~~
@@ -25,4 +27,4 @@ user	0m0.227s
 sys	0m0.067s
 ~~~
 
-so it took **0.464s** total to reinstall this package. 
+so it took **0.464s** total to reinstall this package.
