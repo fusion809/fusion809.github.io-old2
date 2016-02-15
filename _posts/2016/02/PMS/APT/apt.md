@@ -48,6 +48,8 @@ where `$URL` is the URL you wish to install the Debian package from, while `$pac
 
 {% include Code/codeu.html line1="wget $URL" line1="sudo apt-get install $package.deb" %}
 
+. One feature of APT that can be handy is that it supports the use of wildcards, e.g., {% include Code/coders.html line1="apt-get install lua5.2*" %} should install all packages with the `lua5.2` prefix.
+
 ### Speed
 Running {% include Code/coders.html line1="time apt-get install -y --reinstall vim" %} gives:
 
