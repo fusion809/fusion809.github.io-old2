@@ -79,4 +79,6 @@ user    0m1.076s
 sys     0m0.392s
 ~~~
 
+so it took **2.783s** to reinstall Vim.
+
 {% include_relative APT/table-1-basic-usage-examples.html %}

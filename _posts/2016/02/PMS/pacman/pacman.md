@@ -24,3 +24,5 @@ real	0m0.464s
 user	0m0.227s
 sys	0m0.067s
 ~~~
+
+so it took **0.464s** total to reinstall this package. 

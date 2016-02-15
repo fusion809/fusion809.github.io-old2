@@ -16,8 +16,10 @@ Entropy package development is done in three major steps:
 * The building of a Portage binary package from the ebuild by issuing the command {% include Code/coders-fs.html line1="ebuild $package.ebuild package" %} Or, if the ebuild is in a presently-enabled Portage overlay, run {% include Code/coders-fs.html line1="emerge -b $package" %} Where `$package.ebuild` is the name of the ebuild, including its file extensions, relative to the present working directory.
 *  {% include Code/coders-fs.html line1="equo pkg inflate $package.tbz2" %} Where `$package.tbz2` is the binary package built by Portage, including its relative path to the present working directory. It is likely in the `/usr/portage/packages` directory.
 
+If you wish to distribute your package (like in a repository), I am afraid you are left to your own devices. That is, the Open Build Service (OBS) does not store Entropy packages and there are no other free alternatives for hosting your package repositories that I am aware of, at least.
+
 ### Features
-Syntactically it is similar to both APT and Portage. See its options (e.g., `-a/--ask` for ask for confirmation before performing changes) are similar to Portage, but its actions are largely borrowed from APT. It cannot install packages from a URL, although it can install software from local packages. If you install a local package, that is also present (even if the version present there is different) in the Entropy repositories, then perform an upgrade odds are the package version in the Entropy repositories will be installed over it.
+Syntactically it is similar to both APT and Portage. See its options (e.g., `-a/--ask` for ask for confirmation before performing changes) are similar to Portage, but its actions are largely borrowed from APT. It cannot install packages from a URL, although it can install software from local packages. If you install a local package, that is also present (even if the version present there is different) in the Entropy repositories, then perform an upgrade odds are the package version in the Entropy repositories will be installed over it. I found its output more detailed and descriptive than APT, however, and similar in quality to that of DNF/yum.
 
 ### Speed
 Running {% include Code/coders.html line1="time equo i vim" %} returned:
@@ -60,3 +62,5 @@ real	0m7.621s
 user	0m5.287s
 sys	0m1.467s
 ~~~
+
+So it took **7.621s** total to reinstall this package.

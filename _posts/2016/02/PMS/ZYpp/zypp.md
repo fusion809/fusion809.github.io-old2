@@ -24,3 +24,5 @@ real	0m20.312s
 user	0m1.652s
 sys	0m0.544s
 ~~~
+
+This seems to give a total time for reinstallation of 20.312s, which unfortunately includes the download time (and as this output does not say the download time, it is impossible to discount it manually from this figure).

@@ -42,3 +42,5 @@ real    0m14.461s
 user    0m3.574s
 sys     0m1.619s
 ~~~
+
+discounting the time taken to perform the download (6 seconds) this give a real time to reinstall `vim-common` of **8.461s**.
