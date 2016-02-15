@@ -4,7 +4,7 @@
 ### Beginner-Friendliness
 DNF is more intuitive than APT as there is just a single command that calls it, [`dnf`](/man/dnf.8.html). Its syntax is simple, for example {% include Code/coders.html line1="dnf install octave" %} should install GNU Octave, while {% include Code/coders.html line1="dnf remove octave" %} should uninstall it. Fedora and most of its derivatives use PackageKit front-ends such as Apper (for Qt-based desktop environments such as KDE) and GNOME Software, for graphical package management, both of which run DNF in the background. Overall I would rate DNF as **8/10** for beginner-friendliness. Its basic syntax is:
 
-{% include Code/coder.html line1="dnf [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="1" %}
+{% include Code/coder.html line1="dnf [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="1" space="65" %}
 
 for more details see its [man page](/man/dnf.8.html).
 
@@ -14,7 +14,7 @@ As with APT, DNF is primarily a binary package manager, so by default there are 
 DNF, however, is capable of downloading `.src.rpm` packages, which can be extracted, modified and rebuilt if the user really wants to customize the package, like adjust its configure options. I would personally recommend that if you wish to do this and you are not familiar with the process of building RPM packages that you read [this](http://fedoraproject.org/wiki/How_to_create_an_RPM_package) *Fedora Wiki* article on it.
 
 ### Development
-As DNF is just a command-line front-end for the [RPM package manager](http://rpm.org/), 
+As DNF is just a command-line front-end for the [RPM package manager](http://rpm.org/),
 
 ### Features
 DNF can be used to download and then install RPM packages from a specified URL too, which is a feature it has inherited from yum. For example, to install Atom 1.5.3 on a 64-bit Fedora system from the official RPM binary one would run (this command will **not** prompt the user before downloading and installing this package):

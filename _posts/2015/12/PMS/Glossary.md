@@ -14,6 +14,7 @@ The acronyms used in this post include:
 Angle brackets `<` and `>` with a word between them denotes user-provided variables. For example, `<PACKAGE>` denotes the name of a software package, `<OVERLAY>` denotes the name of a software overlay, `<FILE>` is the name of a file, including its extension (e.g., it may equal `atom-1.3.2.ebuild`, when are referring to ebuild files), *etc.* `This` formatting denotes pieces of code, file paths or file extensions, while [`this`](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) formatting denotes pieces of code/file paths for which I have provided a hyperlink. <code><span class="codeu">user $</span></code> means that code that follows, that is on the same line, are to be run as standard user (as opposed to superuser, or root). <code><span class="coder">root #</span></code> indicates that the code that follows, that is on the same line, is to entered into a instance of Bash with root privileges.
 
 ### Terminology
+
 #### Bandwidth
 This is a term I am using to mean data transferred via a network, such as the Internet. Although this definition may not be strictly correct, see for example its [Wikipedia article](https://en.wikipedia.org/wiki/Bandwidth_(computing)).
 
