@@ -4,7 +4,7 @@
 ### Beginner-Friendliness
 DNF is more intuitive than APT as there is just a single command that calls it, [`dnf`](/man/dnf.8.html). Its syntax is simple, for example {% include Code/coders.html line1="dnf install octave" %} should install GNU Octave, while {% include Code/coders.html line1="dnf remove octave" %} should uninstall it. Fedora and most of its derivatives use PackageKit front-ends such as Apper (for Qt-based desktop environments such as KDE) and GNOME Software, for graphical package management, both of which run DNF in the background. Overall I would rate DNF as **8/10** for beginner-friendliness. Its basic syntax is:
 
-{% include Code/coder.html line1="dnf [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="1" space="65" %}
+{% include Code/coder.html line1="dnf [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="1" space="66" %}
 
 for more details see its [man page](/man/dnf.8.html).
 
@@ -99,5 +99,7 @@ real	0m33.853s
 user	0m2.064s
 sys	0m3.964s
 ~~~
+
+as you can see, when I reinstalled `vim-common` the package was re-downloaded (even though I had just installed the package when I ran this command, so I knew it was in the DNF cache), which adds some time to the `real` time. To get a better estimate as to the actual installation time, let us take 17 seconds (the time recorded in this message as the total time taken to download the package) from the real time, getting **16.853 seconds**. 
 
 {% include_relative DNF/table-2-basic-usage-examples.html %}
