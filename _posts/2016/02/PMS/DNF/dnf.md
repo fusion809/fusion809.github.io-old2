@@ -14,7 +14,7 @@ As with APT, DNF is primarily a binary package manager, so by default there are 
 DNF, however, is capable of downloading `.src.rpm` packages, which can be extracted, modified and rebuilt if the user really wants to customize the package, like adjust its configure options. I would personally recommend that if you wish to do this and you are not familiar with the process of building RPM packages that you read [this](http://fedoraproject.org/wiki/How_to_create_an_RPM_package) *Fedora Wiki* article on it.
 
 ### Development
-As DNF is just a command-line front-end for the [RPM package manager](http://rpm.org/),
+As DNF is just a command-line front-end for the [RPM package manager](http://rpm.org/), package development is the same as it is on other Linux distributions that use RPM packages. Follow [this](http://fedoraproject.org/wiki/How_to_create_an_RPM_package) *Fedora Wiki* guide on building RPM packages. Alternatively, you can use the **Open Build Service** (**OBS**) to build the package, which affords one the ability to more easily distribute the packages to others should you wish to. 
 
 ### Features
 DNF can be used to download and then install RPM packages from a specified URL too, which is a feature it has inherited from yum. For example, to install Atom 1.5.3 on a 64-bit Fedora system from the official RPM binary one would run (this command will **not** prompt the user before downloading and installing this package):
@@ -100,6 +100,6 @@ user	0m2.064s
 sys	0m3.964s
 ~~~
 
-as you can see, when I reinstalled `vim-common` the package was re-downloaded (even though I had just installed the package when I ran this command, so I knew it was in the DNF cache), which adds some time to the `real` time. To get a better estimate as to the actual installation time, let us take 17 seconds (the time recorded in this message as the total time taken to download the package) from the real time, getting **16.853 seconds**. 
+as you can see, when I reinstalled `vim-common` the package was re-downloaded (even though I had just installed the package when I ran this command, so I knew it was in the DNF cache), which adds some time to the `real` time. To get a better estimate as to the actual installation time, let us take 17 seconds (the time recorded in this message as the total time taken to download the package) from the real time, getting **16.853 seconds**.
 
 {% include_relative DNF/table-2-basic-usage-examples.html %}
