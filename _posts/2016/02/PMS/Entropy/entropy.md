@@ -1,5 +1,19 @@
 ## Entropy
-`time equo i vim`
+**Entropy** is the default package manager of Sabayon, although Sabayon also comes with the [Portage](#portage) package manager pre-installed, but only the use of Entropy is supported by the Sabayon community. Entropy has similarities to Portage, along with several key differences. It is written in Python and shell script, like Portage, but unlike Portage which by default installs software from source code following instructions found in ebuilds, Entropy installs software from binary packages. These binary packages are originally built using Portage, however, then they are converted to binary packages suitable for Entropy. Entropy has both an official command-line and graphical user interface; from the command-line it is called by the [`equo`](/man/equo.1.html) command, while Rigo is its GUI. Entropy is the second-youngest package manager mentioned in this post, after DNF, with its first public releases being in 2007 and its first stable releases becoming available in 2012.
+
+### Customizability
+As Entropy installs software from binary packages, there is no real freedom to customize the packages to your liking. Except by, of course, writing your own ebuild, or modifying existing ebuilds, to your liking and building and installing them. Or building/installing existing ebuilds in the Portage Tree or unofficial overlays with custom USE flags enabled.
+
+### Development
+Entropy package development comes in three major stages:
+* The creation or selection of a suitable ebuild.
+* The building of a Portage binary package from the ebuild by issuing the command {% include Code/coders.html line1="ebuild $package.ebuild package" %}. Or, if the ebuild is in a presently-enabled Portage overlay, run {% include Code/coders.html line1="emerge -b $package" %}. Where `$package.ebuild` is the name of the ebuild, including its file extensions, relative to the present working directory.
+*  {% include Code/coders.html line1="equo pkg inflate $package.tbz2" %}. Where `$package.tbz2` is the binary package built by Portage, including its relative path to the present working directory.
+
+### Features
+
+### Speed
+Running {% include Code/coders.html line1="time equo i vim" %} returned:
 
 ~~~
 ╠  @@ Calculating dependencies...
