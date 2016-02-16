@@ -1,5 +1,9 @@
+## yum
+[**Yellowdog Updater, Modified**](http://yum.baseurl.org/) (**yum**) is a front-end for the RPM package manager that is written in Python. Prior to 
+
+### Speed
+The output of {% include Code/coders.html line1="time yum reinstall -y vim-common" %} was:
 ~~~
-[root@localhost Shell]# time yum reinstall -y vim-common
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
  * base: mirror.overthewire.com.au
