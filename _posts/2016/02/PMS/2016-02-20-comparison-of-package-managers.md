@@ -35,6 +35,8 @@ with respect to the following areas:
 
 {% include_relative pacman/pacman.md %}
 
+{% include_relative Portage/portage.md %}
+
 {% include_relative yum/yum.md %}
 
 {% include_relative ZYpp/zypp.md %}
