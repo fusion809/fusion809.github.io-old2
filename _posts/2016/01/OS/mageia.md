@@ -19,4 +19,4 @@ As previously mentioned Mageia uses the command-line urpmi ([`urpmi`](/man/urpmi
 
 {% include_relative os-min.md cpu="i586." ram="512 MB, 2048 MB preferred." hdd="5 GB minimum, 20 GB preferred." ims="39 MB (NET), 3.6 GB (DVD)." %}
 
-{% include_relative os-ratings.md bf="8." cmb="<6." ob="6. Not enough experience with it to know, but I suspect it lacks support for [Broadcom chipsets](https://wiki.mageia.org/en/Setup_wireless_networking)." doc="5? Documentation seems to be in its infancy." sup="? Never had to use their forums." pm="8." sru="4." sb="&geq;7. Never experienced any bugs myself." mewi="&leq;4." oa="7." %}
+{% include_relative os-ratings.md bf="8." cmb="<6." ob="6. Not enough experience with it to know, but I suspect it lacks support for [Broadcom chipsets](https://wiki.mageia.org/en/Setup_wireless_networking)." doc="5? Documentation seems to be in its infancy." sup="? Never had to use their forums." pm="8." sru="4." sb="≥7. Never experienced any bugs myself." mewi="≤4." oa="7." %}

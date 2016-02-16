@@ -8,7 +8,7 @@ greater support for Python 2 than for Python 3. Python also has its own command-
 {% include Links/wp.md name="Anaconda" cat="installer" %} &mdash; an operating system installer used by Fedora and most of its derivatives, see the [Fedora](#fedora) section for details.
 {% endcapture %}
 {% capture point2 %}
-{% include Links/wp.md name="DNF" cat="software" %} &mdash; the default package manager of Fedora &geq;22.
+{% include Links/wp.md name="DNF" cat="software" %} &mdash; the default package manager of Fedora ≥22.
 {% endcapture %}
 {% capture point3 %}
 {% include Links/gr.md owner="Sabayon" repo="entropy" name="Entropy" %} &mdash; the default binary package manager of Sabayon Linux.

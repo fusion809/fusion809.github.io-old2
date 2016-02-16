@@ -18,7 +18,7 @@ and:
 {% include Code/coder.html line1="dpkg -i https://github.com/atom/atom/releases/download/v1.3.2/atom-amd64.deb" %}
 will **not** install Atom on 64-bit Debian systems. While:
 {% include Code/coder.html line1="dnf install https://github.com/atom/atom/releases/download/v1.3.2/atom.x86_64.rpm" %}
-will install Atom on Fedora &geq;22.
+will install Atom on Fedora ≥22.
 
 APT is a command-line front-end for dpkg. dpkg is what does the actual software installation, while APT manages repositories and software dependencies. APT is written in [C++](https://en.wikipedia.org/wiki/C++) and [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) script, while dpkg is written in [C](https://en.wikipedia.org/wiki/C_(programming_language)), C++ and [Perl](https://en.wikipedia.org/wiki/Perl_(programming_language)). APT by default installs software from binary packages found in the repositories specified in the text file `/etc/apt/sources.list`, although it can be used to install software from source code too. From the command-line APT is called by a variety of slightly different commands, including [`add-apt-repository`](/man/add-apt-repository.1.html), [`apt-cache`](/man/apt-cache.8.html), [`apt-config`](/man/apt-config.8.html) and [`apt-get`](/man/apt-get.8.html). APT is fairly unique amongst the major Linux package managers in that it can work with Debian and RPM packages, although when it works with RPM packages it is usually referred to as **[APT-RPM](https://en.wikipedia.org/wiki/APT-RPM)**.
 
