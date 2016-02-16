@@ -25,6 +25,6 @@ user	0m1.652s
 sys	0m0.544s
 ~~~
 
-This seems to give a total time for reinstallation of 20.312s, which unfortunately includes the download time (and as this output does not say the download time, it is impossible to discount it manually from this figure).
+This seems to give a total time for reinstallation of **20.312s**, which unfortunately includes the download time (and as this output does not say the download time, it is impossible to discount it manually from this figure).
 
 {% include_relative ZYpp/table-7-basic-usage-examples.html %}
