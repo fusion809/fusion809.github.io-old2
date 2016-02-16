@@ -11,12 +11,12 @@ redirect_from:
 As I am sure many of you are aware I have tried over twenty different Linux distributions, many of which use different **package managers** to one another. Each package manager has several different characteristics, all of which influence my decision to use them and hence also my decision to use the respective Linux distribution on which they are used for package management. In this comparison I will compare the following package managers (note, each package manager's long name is hyperlinked to their respective section):
 
 * [**Advanced Packaging Tool**](#apt) (**APT**), the default package manager of Debian and its various derivatives. I will also discuss the related package managers aptitude and Synaptic in this section.
-* [**Dandified Yum**](#dnf) (**DNF**), the default package manager of Fedora &geq;22 and its up-to-date derivatives (e.g., Chapeau and Korora) and the successor to yum.
+* [**Dandified Yum**](#dnf) (**DNF**), the default package manager of Fedora ≥22 and its up-to-date derivatives (e.g., Chapeau and Korora) and the successor to yum.
 * [**Entropy**](#entropy), the default package manager of Sabayon Linux.
 * [**pacman**](#pacman), the default package manager of Arch Linux and its derivatives.
 * [**Portage**](#portage), the package manager of Gentoo Linux and its derivatives such as Calculate and Sabayon.
 * [**urpmi**](#urpmi), the default package manager of Mageia and other Mandriva derivatives.
-* [**Yellowdog Updater, Modified**](#yum) (**yum**), the default package manager of CentOS, Fedora &leq;21 and the predecessor of yum.
+* [**Yellowdog Updater, Modified**](#yum) (**yum**), the default package manager of CentOS, Fedora ≤21 and the predecessor of yum.
 * [**ZYpp**](#zypp) (**zypper**), the default package manager of openSUSE and its derivatives.
 
 with respect to the following areas:
@@ -40,4 +40,5 @@ with respect to the following areas:
 {% include_relative ZYpp/zypp.md %}
 
 ## Footnotes
+[1]: http://fedoraproject.org/wiki/How_to_create_an_RPM_package
 [^1]: [pacman Home Page](https://www.archlinux.org/pacman/) (2 March 2015). Retrieved 15 February 2016.

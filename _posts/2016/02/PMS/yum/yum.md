@@ -5,7 +5,10 @@
 Like DNF [`yum`](/man/yum.8.html)'s syntax is fairly intuitive with {% include Code/coders.html line1="yum install $package" %} to install a package and {% include Code/coders.html line1="yum remove $package" %} to uninstall it. It also has the Apper and GNOME Software graphical front-ends available. I would personally rate it at **7/10** for beginner-friendliness.
 
 ### Customizability
-As yum is a binary package manager its packages cannot be as easily customized as source code packages would be. Source code packages can be downloaded though (with the command {% include Code/codeus.html line1="yumdownloader --source $package" %}), modified, rebuilt and installed as described in the DNF section of this post. 
+As yum is a binary package manager its packages cannot be as easily customized as source code packages would be. Source code packages can be downloaded though (with the command {% include Code/codeus.html line1="yumdownloader --source $package" %}), modified, rebuilt and installed as described in the DNF section of this post.
+
+### Development
+Developing packages for yum is the same as developing DNF packages as they are both RPM packages. You can use the [method][1] outlined at the *Fedora Wiki* or using the Open Build Service. 
 
 ### Speed
 The output of {% include Code/coders.html line1="time yum reinstall -y vim-common" %} was:
@@ -55,3 +58,5 @@ sys     0m1.619s
 ~~~
 
 discounting the time taken to perform the download (6 seconds) this give a real time to reinstall `vim-common` of **8.461s**. Must admit this seems wrong as it is less time than DNF took to install the same package.
+
+{% include_relative yum/table-6-basic-usage-examples.html %}
