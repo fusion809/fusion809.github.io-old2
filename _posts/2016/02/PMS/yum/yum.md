@@ -2,10 +2,11 @@
 [**Yellowdog Updater, Modified**](http://yum.baseurl.org/) (**yum**) is a front-end for the RPM package manager that is written in Python. Prior to the release of Fedora 22 in May 2015 it was the default package manager of Fedora, and it is still the default package manager of CentOS, Oracle Linux, Red Hat Enterprise Linux (RHEL) and Scientific Linux. yum, as its name suggests, started off as a modified version of the Yellowdog Updater (YUP) used by the Yellow Dog Linux distribution, that was developed for use by the Red Hat Linux systems at Duke University in the early 2000s. RHL at the time used the up2date package manager. Later yum was adopted by CentOS, Fedora and their descendants, along with Yellow Dog Linux itself. Its development has since been ceased in favour of its supposedly faster successor, [DNF](#dnf).
 
 ### Beginner-Friendliness
-Like DNF [`yum`](/man/yum.8.html)'s syntax is fairly intuitive with {% include Code/coders.html line1="yum install $package" %} to install a package and {% include Code/coders.html line1="yum remove $package" %} to uninstall it. It also has the Apper and GNOME Software graphical front-ends available. 
+Like DNF [`yum`](/man/yum.8.html)'s syntax is fairly intuitive with {% include Code/coders.html line1="yum install $package" %} to install a package and {% include Code/coders.html line1="yum remove $package" %} to uninstall it. It also has the Apper and GNOME Software graphical front-ends available.
 
 ### Speed
 The output of {% include Code/coders.html line1="time yum reinstall -y vim-common" %} was:
+
 ~~~
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
