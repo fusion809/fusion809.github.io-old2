@@ -9,7 +9,7 @@ body:
   - Variable: "`DESCRIPTION`"
     Meaning:  "A one-line description of the package. This field is **mandatory**."
   - Variable: "`DOCS`"
-    Meaning:  "An array or space-separated list of documentation files to be installed using the `dodoc` function (requires **EAPI&geq;4.**)."
+    Meaning:  "An array or space-separated list of documentation files to be installed using the `dodoc` function (requires **EAPI&#8805;4.**)."
   - Variable: "[`EAPI`](https://devmanual.gentoo.org/ebuild-writing/variables/index.html#eapi)"
     Meaning:  "Portage API version. Allowed values are integers between 0 and 6. Default value is 0."
   - Variable: "`HOMEPAGE`"
@@ -35,5 +35,5 @@ body:
     Meaning:  "The package's `SLOT`. This is used to install multiple different versions of the same package simultaneously on the same
     system and is **mandatory**."
   - Variable: "`SRC_URI`"
-    Meaning:  "URL of the source code (usually in archive format like `.tar.gz`). Can be in the form of a list. With **EAPI&geq;2** the output
+    Meaning:  "URL of the source code (usually in archive format like `.tar.gz`). Can be in the form of a list. With **EAPI&#8805;2** the output
     file name of a given URI can be customized using the -> operator."

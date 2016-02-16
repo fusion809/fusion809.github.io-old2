@@ -11,7 +11,7 @@ GNOME is fairly customizable, its keyboard shortcuts and theme can be customized
 GNOME's feature set can be extended using extensions/plugins, although it is important to note that many such extensions are only compatible with older releases of GNOME. These extensions can be installed from within one's web browser, although this method of installing extensions is only compatible with select few web browsers such as Firefox. It is one of the most feature-packed DEs and, in fact, I have found its Wayland session to be the most stable of all the Wayland sessions I have tried (which includes Hawaii, GNOME on Wayland and Plasma on Wayland). It is stable enough for me to use it long-term without too much of a stability problem. Hawaii always crashes soon after it is started for me, while Plasma on Wayland usually crashes soon after starting, although I have managed to boot a Kubuntu live USB running on Wayland without it crashing immediately, although it did not take much to make it crash after it started.
 
 ### Components
-* **Display server/window system**: X11 and Wayland (GNOME &geq;3.10).
+* **Display server/window system**: X11 and Wayland (GNOME &#8805;3.10).
 * **File manager**: GNOME Files (previously called Nautilus).
 * **Widget toolkit**: GTK+.
 * **Window manager**: Mutter.
