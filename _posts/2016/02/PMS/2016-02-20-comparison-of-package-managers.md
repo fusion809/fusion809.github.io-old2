@@ -43,4 +43,6 @@ with respect to the following areas:
 
 ## Footnotes
 [1]: http://fedoraproject.org/wiki/How_to_create_an_RPM_package
+[2]: https://en.opensuse.org/openSUSE:Build_Service_Tutorial
 [^1]: [pacman Home Page](https://www.archlinux.org/pacman/) (2 March 2015). Retrieved 15 February 2016.
+[^2]: If you wish to offer me a solution to this issue, that does not involve me creating new OBS packages for all of Atom's many node module dependencies and electron, feel free to leave me a reply [here](https://forums.opensuse.org/showthread.php/513540-How-to-create-a-spec-file-for-Atom-that-is-suitable-for-the-OBS) at the thread in which I asked how to build Atom using the OBS at the openSUSE Forums
