@@ -1,4 +1,6 @@
 ## ZYpp
+[**ZYpp**](https://en.opensuse.org/Portal:Zypper)
+
 `time zypper in -y --force vim`
 
 ~~~

@@ -14,7 +14,7 @@ Developing packages for yum is the same as developing DNF packages as they are b
 Like its descendant, DNF, yum has in-built support for downloading and then installing software packages from a specified URL, via running:
 {% include Code/coder.html line1="yum install $URL" %}
 
-all features mentioned for DNF also exist for yum. 
+all features mentioned for DNF also exist for yum, including group installs. 
 
 ### Speed
 The output of {% include Code/coders.html line1="time yum reinstall -y vim-common" %} was:
