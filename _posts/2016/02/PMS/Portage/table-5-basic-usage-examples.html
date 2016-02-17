@@ -34,7 +34,7 @@
     </tr>
     <tr class="green">
       <td class="title1">Upgrade all packages</td>
-      <td class="green">{% include Code/coder.html line1="emerge --sync && layman -S && semerge -uDU --with-bdeps=y @world" %}</td>
+      <td class="green">{% include Code/coder.html line1="emerge --sync" line2="layman -S" line3="emerge -uDU --with-bdeps=y @world" %}</td>
       <td class="green">Upgrade all installed packages, after synchronizing (with their respective version control system) the Portage Tree and all locally-installed overlays.</td>
     </tr>
   </tbody>

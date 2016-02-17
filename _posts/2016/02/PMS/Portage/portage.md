@@ -30,6 +30,12 @@ Package development with Portage is easier than developing Debian packages, abou
 Portage is one of the most feature-packed package managers out there. Its output can be made more detailed (or verbose) by passing the `--verbose/-v` flag to it. The `--buildpkgonly/-B` option can be passed to get it to only build a binary package and not install the program into the live file system. It does not do installs from a specified URL, although it can be used to install local binary packages, although they have to be in a specific location in the root file system.
 
 ### Speed
-Portage is, by far, the slowest package manager compared in this comparison, as it builds software packages from source code, by default.
+Portage is, by far, the slowest package manager compared in this comparison, as it builds software packages from source code, by default. To test its speed I ran {% include Code/coders.html line1="time emerge app-editors/vim::sabayon-tools" %} when the latest version of Vim (and the version in my `sabayon-tools` overlay) was 7.4.1342, the full output it gave was very long so I have placed it [here](https://gist.github.com/c32ec431120dd5b90947) and rather I will just give the time it took to reinstall `app-editors/vim` (none of the related packages like `vim-core` or `gvim`):
+
+~~~
+real	3m18.828s
+user	2m6.109s
+sys	0m20.541s
+~~~
 
 {% include_relative Portage/table-5-basic-usage-examples.html %}
