@@ -50,4 +50,4 @@ with respect to the following areas:
 [2]: https://en.opensuse.org/openSUSE:Build_Service_Tutorial
 [^1]: RPM was originally abbreviated from **Red Hat Package Manager**, but now it is a recursive acronym for RPM Package Manager.
 [^2]: [pacman Home Page](https://www.archlinux.org/pacman/) (2 March 2015). Retrieved 15 February 2016.
-[^3]: If you wish to offer me a solution to this issue, that does not involve me creating new OBS packages for all of Atom's many node module dependencies and electron, feel free to leave me a reply [here](https://forums.opensuse.org/showthread.php/513540-How-to-create-a-spec-file-for-Atom-that-is-suitable-for-the-OBS) at the thread in which I asked how to build Atom using the OBS at the openSUSE Forums
+[^3]: If you wish to offer me a solution to this issue, that does not involve me creating new OBS packages for all of Atom's many node module dependencies and Electron, feel free to leave me a reply [here](https://forums.opensuse.org/showthread.php/513540-How-to-create-a-spec-file-for-Atom-that-is-suitable-for-the-OBS) at the thread in which I asked how to build Atom using the OBS at the openSUSE Forums
