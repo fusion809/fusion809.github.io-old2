@@ -10,6 +10,8 @@ The most popular AUR helper, which is also the one I have the greatest experienc
 ### Beginner-Friendliness
 As previously mentioned pacman has a syntax that is non-intuitive to newcomers, for example, to install a package one runs {% include Code/coders.html line1="pacman -S $package" %} while to remove it one runs {% include Code/coders-fs.html line1="pacman -Rsc $package" %} If you are interested in making the transition from another package manager to pacman, I suggest you read the [Pacman/Rosetta](https://wiki.archlinux.org/index.php/Pacman/Rosetta) article at *The ArchWiki*, along with the [`pacman`](/man/pacman.8.html) man page. pacman has no officially-supported graphical front-end, although unofficial front-ends (such as Octopi and Pamac) exist and are included, by default, in the Arch derivative, Manjaro Linux.
 
+{% include Code/coder.html line1="pacman [<em>options</em>] [action] [<b>target</b>(<b>s</b>)]" no="3" space="67" %}
+
 ### Customizability
 pacman's settings (like a list of enabled repositories) are stored in `/etc/pacman.conf`, but as pacman is a binary package manager some freedom is taken away from the user, in terms of customizing their system. Despite this, Arch Linux has the [Arch Build System](https://wiki.archlinux.org/index.php/Arch_Build_System) (ABS), a Portage Tree-like set of subdirectories found in `/var/abs/` that contain the PKGBUILDs and associated other files used to build the software in the pacman repositories. The ABS is not included, by default, on Arch Linux, however, it has to be installed by the user and setup. Once installed, it is possible that the user can use it to customize all packages installed on their system to their liking and any extra packages they would like to install.
 
@@ -46,6 +48,6 @@ user	0m0.227s
 sys	0m0.067s
 ~~~
 
-so it took **0.464s** total to reinstall this package. I think this time is very fair, as in my experience pacman is the fastest Linux package manager I have ever used. 
+so it took **0.464s** total to reinstall this package. I think this time is very fair, as in my experience pacman is the fastest Linux package manager I have ever used.
 
 {% include_relative pacman/table-4-basic-usage-examples.html %}
