@@ -16,7 +16,7 @@ As I am sure many of you are aware I have tried over twenty different Linux dist
 * [**Entropy**](#entropy), the default package manager of Sabayon Linux.
 * [**pacman**](#pacman), the default package manager of Arch Linux and its derivatives.
 * [**Portage**](#portage), the package manager of Gentoo Linux and its derivatives such as Calculate and Sabayon.
-* [**Yellowdog Updater, Modified**](#yum) (**yum**), the default package manager of CentOS, Fedora ≤21 and the predecessor of yum.
+* [**Yellowdog Updater, Modified**](#yum) (**yum**), the default package manager of CentOS, Fedora ≤21 and the predecessor of DNF.
 * [**ZYpp**](#zypp) (**zypper**), the default package manager of openSUSE and its derivatives.
 
 with respect to the following areas:
