@@ -9,7 +9,7 @@ redirect_from:
   - /comparison-of-package-management-systems/
 ---
 
-As I am sure many of you are aware I have tried over twenty different Linux distributions, many of which use different **package managers** to one another. Each package manager has several different characteristics, all of which influence my decision to use them and hence also my decision to use the respective Linux distribution on which they are used for package management. In this comparison I will compare the following package managers (note, each package manager's long name is hyperlinked to their respective section):
+As I am sure many of you are aware I have tried over twenty different Linux distributions, many of which use different **package managers** to one another. Each package manager has several different characteristics, all of which influence my decision to use them and hence also my decision to use the respective Linux distribution(s) on which they are used for package management. In this comparison I will compare the following package managers (note, each package manager's long name is hyperlinked to their respective section):
 
 * [**Advanced Packaging Tool**](#apt) (**APT**), the default package manager of Debian and its various derivatives. I will also discuss the related package managers aptitude and Synaptic in this section.
 * [**Dandified Yum**](#dnf) (**DNF**), the default package manager of Fedora ≥22 and its up-to-date derivatives (e.g., Chapeau and Korora) and the successor to yum.
