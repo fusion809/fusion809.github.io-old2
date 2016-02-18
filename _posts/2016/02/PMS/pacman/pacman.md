@@ -46,6 +46,6 @@ user	0m0.227s
 sys	0m0.067s
 ~~~
 
-so it took **0.464s** total to reinstall this package.
+so it took **0.464s** total to reinstall this package. I think this time is very fair, as in my experience pacman is the fastest Linux package manager I have ever used. 
 
 {% include_relative pacman/table-4-basic-usage-examples.html %}

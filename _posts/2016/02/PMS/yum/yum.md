@@ -14,7 +14,7 @@ Developing packages for yum is the same as developing DNF packages as they are b
 Like its descendant, DNF, yum has in-built support for downloading and then installing software packages from a specified URL, via running:
 {% include Code/coder.html line1="yum install $URL" %}
 
-all features mentioned for DNF also exist for yum, including group installs. 
+all features mentioned for DNF also exist for yum, including group installs.
 
 ### Speed
 The output of {% include Code/coders.html line1="time yum reinstall -y vim-common" %} was:
@@ -63,6 +63,6 @@ user    0m3.574s
 sys     0m1.619s
 ~~~
 
-discounting the time taken to perform the download (6 seconds) this give a real time to reinstall `vim-common` of **8.461s**. Must admit this seems wrong as it is less time than DNF took to install the same package.
+discounting the time taken to perform the download (6 seconds) this give a real time to reinstall `vim-common` of **8.461s**. Must admit this seems wrong as it is less time than DNF took to install the same package. I think the time measured is unfair and not really representative of its speed, I believe it is slower than all package managers I have used except Entropy and Portage. 
 
 {% include_relative yum/table-6-basic-usage-examples.html %}

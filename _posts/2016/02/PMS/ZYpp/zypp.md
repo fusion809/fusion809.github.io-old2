@@ -43,6 +43,6 @@ user    0m2.272s
 sys     0m0.488s
 ~~~
 
-On my openSUSE Tumbleweed VM I received longer reinstall times, of (the hyperlinks are to where the full output can be found) [19.604s](https://gist.github.com/fusion809/4101245256b3bdb9eb46) and [20.312s](https://gist.github.com/fusion809/37d917ada854db67dec8), respectively. I decided to show the smallest time as I believe from using ZYpp on my non-virtual installation of openSUSE Tumbleweed that these figures may not have been an accurate representation of the speed of ZYpp, under normal working conditions. Despite this from this test it seems like as though ZYpp is third only to DNF and Portage for being the slowest package manager compared in this comparison.
+On my openSUSE Tumbleweed VM I received longer reinstall times, of (the hyperlinks are to where the full output can be found) [19.604s](https://gist.github.com/fusion809/4101245256b3bdb9eb46) and [20.312s](https://gist.github.com/fusion809/37d917ada854db67dec8), respectively. I decided to show the smallest time as I believe from using ZYpp on my non-virtual installation of openSUSE Tumbleweed that these figures may not have been an accurate representation of the speed of ZYpp, under normal working conditions. Despite this from this test it seems like as though ZYpp is third only to DNF and Portage for being the slowest package manager compared in this comparison. I personally think it is faster than all other package managers I have ever used, besides pacman and perhaps APT. 
 
 {% include_relative ZYpp/table-7-basic-usage-examples.html %}

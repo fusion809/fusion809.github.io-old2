@@ -65,6 +65,6 @@ user	0m5.287s
 sys	0m1.467s
 ~~~
 
-So it took **7.621s** total to reinstall this package.
+So it took **7.621s** total to reinstall this package. I personally think that this figure is not representative of its speed in practice, I think it is slower than all package managers except Portage and perhaps DNF and/or yum. 
 
 {% include_relative Entropy/table-3-basic-usage-examples.html %}
