@@ -11,7 +11,7 @@ for more details see its [man page](/man/dnf.8.html).
 ### Customizability
 As with APT, DNF is primarily a binary package manager, so by default there are not many customizations that can be done to existing packages. Like with Debian packages for APT, however, a single upstream software package is often split into multiple smaller RPM packages, with each RPM package providing different functionalities of the upstream package. So this allows for some customization of installed packages, as users that just want basic core functionalities of the upstream package can just install the base package, while those that want to do development or debugging with the package can install the respective package providing said features.
 
-DNF, however, is capable of downloading `.src.rpm` packages, which can be extracted (several ways this can be done, my personal preference as it works on any Linux platform is {% include Code/codeus.html line1="bsdtar -xf $package.src.rpm" %}), modified and rebuilt if the user really wants to customize the package, like adjust its configure options. I would personally recommend that if you wish to do this and you are not familiar with the process of building RPM packages that you read [this][1] *Fedora Wiki* article on it.
+DNF, however, is capable of downloading `.src.rpm` packages, which can be extracted (several ways this can be done, my personal preference as it works on any Linux platform is {% include Code/codeus-rbc.html line1="bsdtar -xf $package.src.rpm" %} modified and rebuilt if the user really wants to customize the package, like adjust its configure options. I would personally recommend that if you wish to do this and you are not familiar with the process of building RPM packages that you read [this][1] *Fedora Wiki* article on it.
 
 ### Development
 As DNF is just a command-line front-end for the RPM package manager, package development is the same as it is on other Linux distributions that use RPM packages. Follow [this][1] *Fedora Wiki* guide on building RPM packages. Alternatively for most packages, you can also use the **Open Build Service** (**OBS**) to build the package, which affords one the ability to more easily distribute the packages to others should you wish to. [Here][2] is an OBS tutorial, further details on the OBS and its limitations can be found in the [ZYpp Development section](#toc51).
@@ -60,7 +60,7 @@ I find it gives better, more detailed, output than APT, pacman or ZYpp. Addition
 * builddep &mdash; install the required build-dependencies of a package.
 * URL installs.
 
-it also has support for use of wildcard operators. For example, {% include Code/coders.html line1="dnf install kernel*" %}, will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
+it also has support for use of wildcard operators. For example, {% include Code/coders-rc.html line1="dnf install kernel*" %} will attempt (not necessarily succeeding though, in the case of package conflicts) all packages that's name begins with the word "kernel". This can be helpful and time-saving when one wishes to install all subpackages of a package (e.g., the `-devel`, `-doc`, *etc.* subpackages).
 
 ### Speed
 Running {% include Code/coders.html line1="time dnf install -y vim-common" %} returns:
