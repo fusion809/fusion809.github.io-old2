@@ -42,7 +42,7 @@ with respect to the following areas:
 
 {% include_relative ZYpp/zypp.md %}
 
-{% include_relative table-8-comparison-of-pms.html %}
+{% include_relative table-8/table-8-comparison-of-pms.html %}
 
 ## Footnotes
 [1]: http://fedoraproject.org/wiki/How_to_create_an_RPM_package
