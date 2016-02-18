@@ -2,7 +2,7 @@
 [**Yellowdog Updater, Modified**](http://yum.baseurl.org/) (**yum**) is a front-end for the RPM package manager that is written in Python. Prior to the release of Fedora 22 in May 2015 it was the default package manager of Fedora, and it is still the default package manager of CentOS, Oracle Linux, Red Hat Enterprise Linux (RHEL) and Scientific Linux. yum, as its name suggests, started off as a modified version of the Yellowdog Updater (YUP) used by the Yellow Dog Linux distribution, that was developed for use by the Red Hat Linux systems at Duke University in the early 2000s. RHL at the time used the up2date package manager. Later yum was adopted by CentOS, Fedora and their descendants, along with Yellow Dog Linux itself. Its development has since been ceased in favour of its supposedly faster successor, [DNF](#dnf).
 
 ### Beginner-Friendliness
-Like DNF [`yum`](/man/yum.8.html)'s syntax is fairly intuitive with {% include Code/coders.html line1="yum install $package" %} to install a package and {% include Code/coders.html line1="yum remove $package" %} to uninstall it. It also has the Apper and GNOME Software graphical front-ends available. I would personally rate it at **7/10** for beginner-friendlines.
+Like DNF [`yum`](/man/yum.8.html)'s syntax is fairly intuitive with {% include Code/coders.html line1="yum install $package" %} to install a package and {% include Code/coders.html line1="yum remove $package" %} to uninstall it. It also has the Qt-based Apper and GTK+ based GNOME Software graphical front-ends available. I would personally rate it at **7-8/10** for beginner-friendliness.
 
 ### Customizability
 As yum is a binary package manager its packages cannot be as easily customized as source code packages would be. Source code packages can be downloaded though (with the command {% include Code/codeus.html line1="yumdownloader --source $package" %}), modified, rebuilt and installed as described in the DNF section of this post.
@@ -63,6 +63,6 @@ user    0m3.574s
 sys     0m1.619s
 ~~~
 
-discounting the time taken to perform the download (6 seconds) this give a real time to reinstall `vim-common` of **8.461s**. Must admit this seems wrong as it is less time than DNF took to install the same package. I think the time measured is unfair and not really representative of its speed, I believe it is slower than all package managers I have used except Entropy and Portage. 
+discounting the time taken to perform the download (6 seconds) this give a real time to reinstall `vim-common` of **8.461s**. Must admit this seems wrong as it is less time than DNF took to install the same package. I think the time measured is unfair and not really representative of its speed, I believe it is slower than all package managers I have used except Entropy and Portage.
 
 {% include_relative yum/table-6-basic-usage-examples.html %}
