@@ -26,6 +26,8 @@ with respect to the following areas:
 * **Features**. Does this package manager allow users to abbreviate commands? Does it allow users to skip confirmation checks? Does it include search functions? Does it show users detailed information about the packages when asked? Does it support local installs? Finally can it install packages from a specified URL? Does it support installing the dependencies of a target package only? (e.g., `apt-get build-dep`) Does it support installation from source code and binary packages? Does it support wildcards?
 * **Speed**. This is something that will be based on research, along with one test. The test is I will reinstall the vim package (reinstalling so to ensure the time measured is only the time taken to install the package and not the time to download the package, download and install its dependencies, *etc.*) on a Virtual machine. This process I will time using the `time` command. For example, for pacman I ran: {% include Code/coders.html line1="time pacman -S vim --noconfirm" %}. If you can think of a more reliable test as to their speed (that ignores download times), that can be used for each of these package managers (that is, if it requires a command other than `time`, it is probably best to check whether I can install the program that provides said command on all the relevant distributions) and that does not take a giant chunk of time to do (that is, if you suggest I reinstall several packages on each platform, time them and average the result out, I probably will not be sold as it sounds tedious), I am more than willing to hear it. See the [Contributing](/contributing/) page for details on how to contact me with this information.
 
+{% include_relative glossary.md %}
+
 {% include_relative APT/apt.md %}
 
 {% include_relative DNF/dnf.md %}
@@ -43,5 +45,6 @@ with respect to the following areas:
 ## Footnotes
 [1]: http://fedoraproject.org/wiki/How_to_create_an_RPM_package
 [2]: https://en.opensuse.org/openSUSE:Build_Service_Tutorial
-[^1]: [pacman Home Page](https://www.archlinux.org/pacman/) (2 March 2015). Retrieved 15 February 2016.
-[^2]: If you wish to offer me a solution to this issue, that does not involve me creating new OBS packages for all of Atom's many node module dependencies and electron, feel free to leave me a reply [here](https://forums.opensuse.org/showthread.php/513540-How-to-create-a-spec-file-for-Atom-that-is-suitable-for-the-OBS) at the thread in which I asked how to build Atom using the OBS at the openSUSE Forums
+[^1]: RPM was originally abbreviated from **Red Hat Package Manager**, but now it is a recursive acronym for RPM Package Manager.
+[^2]: [pacman Home Page](https://www.archlinux.org/pacman/) (2 March 2015). Retrieved 15 February 2016.
+[^3]: If you wish to offer me a solution to this issue, that does not involve me creating new OBS packages for all of Atom's many node module dependencies and electron, feel free to leave me a reply [here](https://forums.opensuse.org/showthread.php/513540-How-to-create-a-spec-file-for-Atom-that-is-suitable-for-the-OBS) at the thread in which I asked how to build Atom using the OBS at the openSUSE Forums
