@@ -21,7 +21,7 @@ As I am sure many of you are aware I have tried over twenty different Linux dist
 
 with respect to the following areas:
 
-* **Beginner-friendliness**. Does it have an easy to understand and remember syntax? Does it have a high-quality of documentation? Does it have an officially-supported graphical user interface? If so, is this GUI intuitive and easy to use?
+* **Beginner-friendliness**. Does it have an easy to understand and remember syntax? Does it have a high-quality of free documentation? Does it have an officially-supported graphical user interface? If so, is this GUI intuitive and easy to use?
 * **Customizability**. How much customization of installed packages and the options for this package manager are allowed?
 * **Development**: How easy is developing packages for this package manager?
 * **Features**. Does this package manager allow users to abbreviate commands? Does it allow users to skip confirmation checks? Does it include search functions? Does it show users detailed information about the packages when asked? Does it support local installs? Finally can it install packages from a specified URL? Does it support installing the dependencies of a target package only? (e.g., `apt-get build-dep`) Does it support installation from source code and binary packages? Does it support wildcards?
