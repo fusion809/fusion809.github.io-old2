@@ -102,6 +102,6 @@ user	0m2.064s
 sys	0m3.964s
 ~~~
 
-as you can see, when I reinstalled `vim-common` the package was re-downloaded (even though I had just installed the package when I ran this command, so I knew it was in the DNF cache), which adds some time to the `real` time. To get a better estimate as to the actual installation time, let us take 17 seconds (the time recorded in this message as the total time taken to download the package) from the real time, getting **16.853s**. This figure I think may be an accurate representation of its speed as DNF is supposed to be faster than yum.
+as you can see, when I reinstalled `vim-common` the package was re-downloaded (even though I had just installed the package when I ran this command, so I knew it was in the DNF cache), which adds some time to the `real` time. To get a better estimate as to the actual installation time, let us take 17 seconds (the time recorded in this message as the total time taken to download the package) from the real time, getting **16.853s**. This figure I think may be an inaccurate representation of its speed as DNF is supposed to be faster than yum.
 
 {% include_relative DNF/table-2-basic-usage-examples.html %}
