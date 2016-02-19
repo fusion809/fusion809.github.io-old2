@@ -26,7 +26,7 @@ Being a source code package manager, Portage affords users almost infinite contr
 * 1.0.11
 * 1.0.17
 
-These packages also differ in their allowed USE flags, the 0.20.2 has the `wayland` USE flag, for example, which if enabled will build the package with Wayland support. Additionally one is free to set up one's own overlay, like I have, and install one's own custom packages using it.
+These packages also differ in their allowed USE flags, the 0.20.2 package has the `wayland` USE flag, for example, which if enabled will build the package with Wayland support. Additionally one is free to set up one's own overlay, like I have, and install one's own custom packages using it.
 
 ### Development
 Package development with Portage is easier than developing Debian packages, about as difficult as developing RPM packages and more difficult than writing PKGBUILDs and developing pacman packages, in my opinion. By package development I mean both writing working ebuilds and building binary packages from them. Writing ebuilds is a skill that comes slowly and only by doing several examples, and having a good knowledge of Bash syntax is a prerequisite for doing it well. Those interested in writing ebuilds may wish to read the [`ebuild`](/man/ebuild.1.html) command man page and the [`ebuild`](/man/ebuild.5.html) file format man page, both of which are hosted on this site.
