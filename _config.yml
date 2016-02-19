@@ -27,9 +27,10 @@ copyright:          "&copy; 2015-2016 Brenton Horne.<br/>
 permalink:          /:year/:month/:day/:title/
 exclude:            [vendor]
 gems:
+  - jekyll-feed
   - jekyll-gist
   - jekyll-redirect-from
-  - jekyll-feed
+
 # Build settings
 markdown:           kramdown
 author:             Brenton Horne

@@ -6,8 +6,9 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><b>First published</b>: {{ page.date | date: "%A, %-d %B %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-      {% if page.last_modified_at %}<time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y %Z" }}" itemprop="dateModified"><br/><b>Last modified</b>: {{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }}</time>{% endif %}
+      {% if page.revision %}<b>Revision</b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ page.revision }}.{% endif %}<br/>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><b>First published</b>: {{ page.date | date: "%A, %-d %B %Y" }}.</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+      {% if page.last_modified_at %}<time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y %Z" }}" itemprop="dateModified"><br/><b>Last modified</b>: &nbsp;&nbsp;&nbsp;{{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }}.</time>{% endif %}
       <!--<time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y" }}" itemprop="dateModified"><br/><b>Last modified</b>: <script>var date = new Date(document.lastModified);</script></time>-->
     </p>
   </header>
