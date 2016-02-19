@@ -54,7 +54,7 @@ Upgraded:
 Complete!
 ~~~
 
-I find it gives better, more detailed, output than APT, pacman or ZYpp. Additionally it supports group installs, which can save one a lot of time installing several different pieces of software that belong to the one group. For example, to install the KDE desktop one would run {% include Code/coders-fs.html line1="dnf install @kde-desktop" %} It also includes some actions (and yes these that are not included by basic or "simple" package managers like pacman. These include:
+I find it gives better, more detailed, output than APT, pacman or ZYpp. Additionally it supports group installs, which can save one a lot of time installing several different pieces of software that belong to the one group. For example, to install the KDE desktop one would run {% include Code/coders-fs.html line1="dnf install @kde-desktop" %} It also includes some actions (and yes these that are not included by basic or "simple" package managers like pacman). These include:
 
 * autoremove &mdash; remove no longer needed packages. For example, packages that were once required for a package to run but are no longer.
 * builddep &mdash; install the required build-dependencies of a package.
