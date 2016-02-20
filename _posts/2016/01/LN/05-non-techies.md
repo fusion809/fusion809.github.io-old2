@@ -50,7 +50,7 @@ Paid support is available for Ubuntu from the company behind its development, Ca
 It supports only armhf, i686, powerpc, ppc64el and x86_64 architectures.
 
 #### Useful Resources
-* [AskUbuntu](http://askubuntu.com/) &mdash; a StackExchange (the family of websites to which StackOverflow belongs) website focused on Ubuntu. When I used Ubuntu it was my first port of call and I would say 9 times out of 10 I would either find an answer there before even asking a question, or get an answer within hours of asking a question there.
+* [AskUbuntu](http://askubuntu.com/) &mdash; a StackExchange (the family of websites for which the original and most popular member is StackOverflow) website focused on Ubuntu. When I used Ubuntu it was my first port of call and I would say 9 times out of 10 I would either find an answer there before even asking a question, or get an answer within hours of asking a question there.
 * [Community Help Wiki](https://help.ubuntu.com/community/CommunityHelpWiki)
 * [Download Page](http://www.ubuntu.com/download/desktop)
 * {% include Links/irc.html channel="ubuntu" %}
