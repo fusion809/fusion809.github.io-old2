@@ -11,4 +11,6 @@ A few days ago, I was asked by a long-time Windows user, how steep the learning 
 
 {% include_relative 01-what-is-linux.md %}
 
+{% include_relative 02-running-windows-applications-under-linux.md %}
+
 {% include_relative footnotes.md %}
