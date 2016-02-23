@@ -17,4 +17,6 @@ A few days ago, I was asked by a long-time Windows user, how steep the learning 
 
 {% include_relative 04-which-pc.md %}
 
+{% include_relative 05-testing-out-linux.md %}
+
 {% include_relative footnotes.md %}
