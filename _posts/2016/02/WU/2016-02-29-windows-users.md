@@ -22,7 +22,4 @@ A few days ago, I was asked by a long-time Windows user, how steep the learning 
 
 {% endcapture %}{{ my_capture | markdownify }}
 
-## Footnotes
-
-[^1]: That is, users that just want a functioning PC, they are not software developers, programmers, or otherwise advanced users.
-[^2]: That is, you pay nothing to obtain them legally.
+{% include_relative footnotes.html %}

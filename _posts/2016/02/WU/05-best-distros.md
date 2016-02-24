@@ -1,4 +1,4 @@
-## Which Distro is Best for me?
+## Which Distro is Best?
 The best distribution for you to start out with, greatly depends on several variables. So many, that I cannot give you a straight answer, rather you will have to find out which distribution is best for you via experience. The easiest distribution for Windows users to use as a first distribution would have the following characteristics:
 
 1. A graphical and easy-to-use package manager. Most Windows users are not particularly comfortable with using the command-line for installing software packages and this is why a graphical package manager is probably best.
@@ -22,7 +22,14 @@ Most distributions fulfill at most four of these requirements. Examples of such 
 
 * [Ubuntu](http://ubuntu.com) (1, 2, 4, 6), a distribution that is well-known for its beginner-friendliness. It is developed by a Linux company called Canonical Ltd. Its software is usually more out-of-date than all other distributions mentioned in this post, except for openSUSE Leap. It has got the best support community, in terms of response times, in my opinion. Specifically it has a StackExchange website called [AskUbuntu](http://askubuntu.com) that I find quite good. Its official repositories contain mostly FOSS, along with some proprietary drivers. Several unofficial Personal Package Repositories (PPAs) exist, however, although I am yet to find one containing Spotify, probably because a Spotify repository is provided and maintained Spotify AB (the company that develops Spotify).
 
-If you have a fairly old computer, with an older CPU, little RAM and hard drive space to spare then odds are you will be best to stick to Fedora (namely, the LXDE edition), openSUSE Tumbleweed (in the automated installer you will need to choose the LXDE desktop, however) or Ubuntu (namely, the Lubuntu spin).
+If you have a **fairly old computer**, with an older CPU, little RAM (say &lt;2 GB) and hard drive space to spare then odds are you will be best to stick to one of the following:
+
+* Fedora (namely, the LXDE edition).
+* openSUSE Tumbleweed (in the automated installer you will need to choose the LXDE desktop, however).
+* [Puppy Linux](http://www.puppylinux.com/), an Australian distro that is designed to run from a live USB. I personally find it a buggy distro, so buggy I have not even managed to install it on a VirtualBox VM.
+* Ubuntu (namely, the official Lubuntu spin; the unofficial spins called [Bodhi Linux](http://www.bodhilinux.com/) and [LXLE](http://lxle.net/) may also be suitable in these cases).
+
+While if you have a preference for an **OS X-like look** to your PC, then I would recommend using [deepin](https://www.deepin.org/?language=en) or [elementary OS](http://elementary.io/). It is possible to get such a look on other systems but the OS X-like look is not the default for these other systems, rather you need to customize their look to get them this way. 
 
 ### Testing Out
 In order to pick the best distribution for you, I would recommend trying out whichever distribution you think would be best for you in VirtualBox ([here](https://www.virtualbox.org/wiki/Downloads) is the Download page), before installing it on your hard drive. A nice video tutorial on installing VirtualBox on Windows 7 and then installing Ubuntu 14.04 in VirtualBox can be found [here](https://www.youtube.com/watch?v=QkJmahizwO4) on YouTube. VirtualBox is best run on a PC with at least 4 GB RAM, 4 CPUs, and 20 GB hard drive space free.
