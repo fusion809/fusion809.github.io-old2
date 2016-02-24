@@ -11,12 +11,12 @@ A few days ago, I was asked by a long-time Windows user, how steep the learning 
 
 {% include_relative 01-what-is-linux.md %}
 
-{% include_relative 02-running-windows-applications-under-linux.md %}
+{% include_relative 02-common-applications.md %}
 
-{% include_relative 03-best-distros.md %}
+{% include_relative 03-running-windows-applications-under-linux.md %}
 
 {% include_relative 04-which-pc.md %}
 
-{% include_relative 05-testing-out-linux.md %}
+{% include_relative 05-best-distros.md %}
 
 {% include_relative footnotes.md %}
