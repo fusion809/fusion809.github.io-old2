@@ -13,10 +13,16 @@ A few days ago, I was asked by a long-time Windows user, how steep the learning 
 
 {% include_relative 02-common-applications.md %}
 
+{% capture my_capture %}
 {% include_relative 03-running-windows-applications-under-linux.md %}
 
 {% include_relative 04-which-pc.md %}
 
 {% include_relative 05-best-distros.md %}
 
-{% include_relative footnotes.md %}
+{% endcapture %}{{ my_capture | markdownify }}
+
+## Footnotes
+
+[^1]: That is, users that just want a functioning PC, they are not software developers, programmers, or otherwise advanced users.
+[^2]: That is, you pay nothing to obtain them legally.
