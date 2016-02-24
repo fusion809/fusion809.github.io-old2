@@ -1,4 +1,4 @@
-## Which Distribution is best for me to start out with?
+## Which Distro is Best for me?
 The best distribution for you to start out with, greatly depends on several variables. So many, that I cannot give you a straight answer, rather you will have to find out which distribution is best for you via experience. The easiest distribution for Windows users to use as a first distribution would have the following characteristics:
 
 1. A graphical and easy-to-use package manager. Most Windows users are not particularly comfortable with using the command-line for installing software packages and this is why a graphical package manager is probably best.
