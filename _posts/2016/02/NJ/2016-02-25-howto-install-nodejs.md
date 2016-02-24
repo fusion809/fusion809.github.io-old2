@@ -27,9 +27,17 @@ OT is my present platform, however, and in order to build Atom myself (so that I
 1. Build and install Node.js from source code. This method does work as I have tried it, but it is tedious and takes up a lot of CPU when it is being done.
 2. Use the pre-build Node.js Linux 64-bit binary tarball.
 
-I opted for option 2 as it is faster and easier. It entailed running:
+## Option 1: From Source Code
+Option 1 takes probably roughly an hour and involves running:
 
-{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/latest/node-v5.7.0.tar.xz | tar -xJ" line2="sudo cp -a node-v5.7.0/{bin,include,lib,share} /usr/" %}
+{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/latest/node-v5.7.0.tar.xz | tar -xJ" line2="cd node-v5.7.0" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
+
+The forth of these lines (`make`) should take by far the longest. Several build dependencies will need to be installed before installing Node.js via this method. Most package managers have an option to install build dependencies without installing the actual Node.js package in the official repositories (odds are it will not matter if the version in the official repositories is vastly out-of-date, if you get errors at the configure or make stages refer to [this article](https://github.com/nodejs/node/wiki/Installing-and-Building-Node.js#installing-via-package-manager) for possible missing dependencies). For example, to install them on Debian run {% include Code/coders.html line1="sudo apt-get build-dep nodejs" %}.
+
+## Option 2: From the Binary
+I personally opted for option 2 as it is faster and easier. It entailed running:
+
+{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/latest/node-v5.7.0-linux-x64.tar.xz | tar -xJ" line2="sudo cp -a node-v5.7.0-linux-x64/{bin,include,lib,share} /usr/" %}
 
 and it worked perfectly. This method should, as far as I know, work on Debian, CentOS, Fedora, Mageia and Ubuntu. The only caveat is that this does not give one the latest npm, presently it gives npm 3.6.0 while 3.7.3 is the latest. To upgrade to the latest npm run:
 
