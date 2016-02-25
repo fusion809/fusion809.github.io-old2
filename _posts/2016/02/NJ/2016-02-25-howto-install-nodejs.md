@@ -56,6 +56,8 @@ and it worked perfectly. This method should, as far as I know, work on Debian, C
 {% include Layouts/note-comp.html method="xz" %}
 To install different versions of Node.js via option 1, run:
 
-{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.xz | tar -xJ" line2="cd node-v5.7.0" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
+{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.xz | tar -xJ" line2="cd node-v$ver" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
 
-for `$ver`&ge;4.0.0.
+while to install different versions of Node.js via option 2, run:
+
+{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver-linux-x64.tar.xz | tar -xJ" line2="sudo cp -a node-v$ver-linux-x64/{bin,include,lib,share} /usr/" %}
