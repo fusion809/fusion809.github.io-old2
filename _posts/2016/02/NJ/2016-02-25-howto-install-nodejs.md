@@ -48,6 +48,14 @@ I personally opted for option 2 as it is faster and easier. It entailed running:
 
 {% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/latest/node-v5.7.0-linux-x64.tar.xz | tar -xJ" line2="sudo cp -a node-v5.7.0-linux-x64/{bin,include,lib,share} /usr/" %}
 
-and it worked perfectly. This method should, as far as I know, work on Debian, CentOS, Fedora, Mageia and Ubuntu. The only caveat is that this does not give one the latest npm, presently it gives npm 3.6.0 while 3.7.3 is the latest. To upgrade to the latest npm run:
+and it worked perfectly. This method should, as far as I know, work on Debian, CentOS, Fedora, Mageia and Ubuntu and the best thing is that you do not need to install any build dependencies as you are not **building** Node.js, you are installing it from a pre-compiled binary. The only caveat is that this does not give one the latest npm, presently it gives npm 3.6.0 while 3.7.3 is the latest. To upgrade to the latest npm run:
 
 {% include Code/coder.html line1="npm install -g npm" %}
+
+## Installing Different Versions of Node.js
+{% include Layouts/note-comp.html method="xz" %}
+To install different versions of Node.js via option 1, run:
+
+{% include Code/codeu.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.xz | tar -xJ" line2="cd node-v5.7.0" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
+
+for `$ver`&ge;4.0.0.

@@ -1,0 +1,9 @@
+<div class="note">
+
+  <b>NOTE:</b>
+  <ul>
+    <li>
+      <em>In this example I used the xz-compressed tar archive of Node.js. This was used to save bandwidth, if your computer is older or if this type of archive is unavailable, I would suggest using the gz-compressed tar archive instead. This would entail changing the line: </em> {% include Code/codeus.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.xz | tar -xJ" %}<br/> <em>to</em> <br/>{% include Code/codeus.html line1="wget -cqO- http://nodejs.org/dist/v$ver/node-v$ver.tar.gz | tar -xz" %}
+    </li>
+  </ul>
+</div>
