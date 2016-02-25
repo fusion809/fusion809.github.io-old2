@@ -31,9 +31,9 @@ SyntaxError: Unexpected identifier
     at node.js:1001:3
 ~~~
 
-In order to build Atom myself (so that I can customize the package to my liking, more than I could if I stuck to the official releases at atom.io) I have to find a way around this bug. As my ability to fix spec file errors (i.e., the errors that are causing this bug to begin with) is in its infancy I really have to options at my disposal:
+In order to build Atom myself (so that I can customize the package to my liking, more than I could if I stuck to the official releases at atom.io) I have to find a way around this bug. As my ability to fix spec file errors (i.e., the errors that are causing this bug to begin with) is in its infancy I really have two options at my disposal:
 
-1. Build and install Node.js from source code. This method does work for me, as I have tried it, but it is tedious and takes up a lot of CPU when it is being done. This method is more error prone than option 2, so if this method fails for you I would use option 2 instead. Error reports for this option should be made as issues (or if you know the solution as pull requests) at Node's GitHub repository https://github.com/nodejs/node. I am afraid odds are, unless it is a dependency issue, I personally will not be able to help you with any such errors. 
+1. Build and install Node.js from source code. This method does work for me, as I have tried it, but it is tedious and takes up a lot of CPU when it is being done. This method is more error prone than option 2, so if this method fails for you I would use option 2 instead. Error reports for this option should be made as issues (or if you know the solution as pull requests) at Node's GitHub repository https://github.com/nodejs/node. I am afraid odds are, unless it is a dependency issue, I personally will not be able to help you with any such errors, hence you will need to report the error at said GitHub repository.
 2. Use the pre-build Node.js Linux 64-bit binary tarball.
 
 ## Option 1: From Source Code
