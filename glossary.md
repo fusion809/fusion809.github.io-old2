@@ -20,7 +20,7 @@ A computer's **hardware** comprises the physical components of the computer, lik
 **Free and open-source software** (**FOSS**) refers to software who's source code is licensed such that it can freely shared, distributed, studied and even modified and re-released by anyone. FOSS licenses usually require that anyone that modifies and re-releases the source code gives some recognition to the original authors of the source code and some licenses (which are called **copyleft** licenses) even require that the modified source code be released under a similar (if not identical) license to the original source code. The most popular copyleft license is the GNU General Public License (GPL), while the most popular non-copyleft (or **permissive**) FOSS licenses include the BSD licenses and the MIT License.
 
 ### Proprietary Software
-**Proprietary software** (**PS**) refers to software who's source code is licensed such that it cannot be freely and legally shared. PS is usually, for charge, that is you have to pay to use them. Although some PS is so called &ldquo;freeware&rdquo;, in other words, you can use it for free, but you cannot freely and legally access the program's source code. 
+**Proprietary software** (**PS**) refers to software who's source code is licensed such that it cannot be freely and legally shared. PS is usually, for charge, that is you have to pay to use them. Although some PS is so called &ldquo;freeware&rdquo;, in other words, you can use it for free, but you cannot freely and legally access the program's source code.
 
 ### Fork
 In the field of software development, a **fork** or **project fork**, is when developers take a copy of the source code from one software project and start independently working on it (or developing it) themselves. In the FOSS world this is commonplace due to the lack of restrictions imposed by FOSS licenses.
@@ -57,6 +57,9 @@ The **Berkeley Software Distribution** (**BSD**) is a Unix operating system that
 
 ### Package Management System
 A **package management system** (**PMS**, plural form: **PMSs**) or **package manager** is a collection of system software that automates the process of installing, configuring, removing and upgrading computer programs. Traditionally Linux PMSs were operated solely from the command-line but nowadays several graphical PMSs also exist.
+
+### Software Repository
+A **software repository** is essentially an archive of software packages from which package managers can download said packages and then install them.
 
 ## Acronyms
 {% include Layouts/note.md note1="Acronyms covered in the previous sections are not repeated in this list." note2="Hyperlinks are to sources that explain, in greater detail, the term." %}
