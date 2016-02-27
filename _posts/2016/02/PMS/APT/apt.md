@@ -46,7 +46,7 @@ deb-src http://debian.mirror.digitalpacific.com.au/debian/ jessie-updates main
 
 where `$URL` is the URL you wish to install the Debian package from, while `$package` is the package's name, without its `.deb` file extension. The third of these lines installs any missing dependencies that are available from enabled repositories (listed in `/etc/apt/sources.list`) and then will install the `$package.deb` file, if line 2 failed to, due to missing dependencies. I have heard that later releases of APT may be able to install local packages and do dependency management without `dpkg` having to be explicitly called. In other words, these later releases of APT may be able to install a package from URL with just two commands, namely:
 
-{% include Code/codeu.html line1="wget $URL" line1="sudo apt-get install $package.deb" %}
+{% include Code/codeu.html line1="wget $URL" line2="sudo apt-get install $package.deb" %}
 
 . One feature of APT that can be handy is that it supports the use of wildcards, e.g., {% include Code/coders.html line1="apt-get install lua5.2*" %} should install all packages with the `lua5.2` prefix. It supports the installation of package groups too. To list available package groups I suggest you install the `tasksel` if it is not presently installed (via issuing {% include Code/coders-rb.html line1="apt-get install tasksel" %} and run {% include Code/codeus-fs.html line1="tasksel --list-tasks" %} Then to install the package group you run {% include Code/coders-rc.html line1="apt-get install $group^" %} where `$group` is the package group in question. One-click installs are supported by APT, on Ubuntu at least.
 
