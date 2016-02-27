@@ -9,7 +9,7 @@ Additional Portage repositories (which are more commonly referred to as *overlay
 Portage is probably the least beginner-friendly package management system mentioned in this post, its syntax is less than intuitive and quite frequently installing, removing and upgrading software is not as simple as running a single command. This is due to USE flag constraints, package conflicts, *etc.*, that the user sometimes has to deal with. It has no official graphical front-ends, although an unofficial GTK-based one called Porthole ([`app-portage/porthole`](https://packages.gentoo.org/packages/app-portage/porthole)) is available from the Portage Tree. Despite this it does have pretty high-quality documentation for a Linux package manager, so the really motivated and persistent beginners could probably learn how to use it without needing help from others. Overall I would rank it at **2-3/10** for beginner-friendliness.
 
 Its basic syntax is:
-{% include Code/coder.html line1="emerge [<em>options</em>] [<em>action</em>] [<em>ebuild</em> | <em>tbz2file</em> | <em>file</em> | <em>@set</em> | <em>atom</em>]" no="4" %}
+{% include Code/coder.html line1="emerge [<em>options</em>] [<em>action</em>] [<em>ebuild</em> | <em>tbz2file</em> | <em>file</em> | <em>@set</em> | <em>atom</em>]" no="4" space="32" %}
 
 For further details on its syntax go [here](/2015/12/24/package-management-on-sabayon#emerge-syntax).
 

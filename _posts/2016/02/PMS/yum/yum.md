@@ -5,7 +5,7 @@
 Like DNF [`yum`](/man/yum.8.html)'s syntax is fairly intuitive with {% include Code/coders.html line1="yum install $package" %} to install a package and {% include Code/coders.html line1="yum remove $package" %} to uninstall it. It also has the Qt-based Apper and GTK+ based GNOME Software graphical front-ends available. I would personally rate it at **7-8/10** for beginner-friendliness.
 
 Its basic syntax is:
-{% include Code/coder.html line1="yum [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="5" space="66" %}
+{% include Code/coder.html line1="yum [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="5" space="62" %}
 
 ### Customizability
 As yum is a binary package manager its packages cannot be as easily customized as source code packages would be. Source code packages can be downloaded though (with the command {% include Code/codeus-rbc.html line1="yumdownloader --source $package" %} modified, rebuilt and installed as described in the DNF section of this post.

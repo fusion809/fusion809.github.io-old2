@@ -5,8 +5,9 @@
 {% include Links/image.html image="YaST2-control-centre.png" width="600px" float="right" description="The YaST2 Control Center" %}
 ZYpp is a fairly beginner-friendly package manager. Zypper has an intuitive syntax, which includes abbreviated commands such as `zypper in` for `zypper install`, `zypper rm` for `zypper remove` and `zypper up` for `zypper update`. YaST2 is probably the most powerful graphical package management system I have ever used, in that it gives users the greatest number of options, with which to configure their system. YaST2 is also the default installer of openSUSE, that is, it is used to install the openSUSE operating system. Overall I would rate it as **9/10** for beginner-friendliness.
 
+{% include Layouts/clear.html %}
 Its basic syntax is:
-{% include Code/coder.html line1="zypper [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="6" space="1" %}
+{% include Code/coder.html line1="zypper [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="6" space="59" %}
 {% include Layouts/clear.html %}
 
 ### Customizability

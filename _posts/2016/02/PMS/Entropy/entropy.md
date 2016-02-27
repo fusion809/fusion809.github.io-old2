@@ -5,7 +5,7 @@ Entropy is not a front-end for any lower-level package managers, unlike APT whic
 
 ### Beginner-Friendliness
 It is a fairly beginner-friendly package manager, its command-line syntax is intuitive, for example, {% include Code/coders.html line1="equo install octave" %} should install GNU Octave, without prompting, while {% include Code/coders.html line1="equo remove octave" %} should uninstall it without prompting. The only prompting that Entropy does, unless you, the user, specify that it should by passing it the `--ask` or `-a` options to it, is asking if you accept any relevant package licenses that are not accepted by default. Its basic syntax is:
-{% include Code/coder.html line1="equo [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="2" space="65" %}
+{% include Code/coder.html line1="equo [<i>action</i>] [option(s)] [<b>target</b>(<b>s</b>)]" no="2" space="61" %}
 Several abbreviated actions exist, for example, `i` for `install`, `rm` for `remove`, `up` for `update` and `u` for `upgrade`. It has a graphical user interface which is always a nice beginner-friendly touch. Overall I would rate its beginner-friendliness at **8/10**.
 
 ### Customizability
