@@ -35,5 +35,4 @@ body:
     Meaning:  "The package's `SLOT`. This is used to install multiple different versions of the same package simultaneously on the same
     system and is **mandatory**."
   - Variable: "`SRC_URI`"
-    Meaning:  "URL of the source code (usually in archive format like `.tar.gz`). Can be in the form of a list. With **EAPI&#8805;2** the output
-    file name of a given URI can be customized using the -> operator."
+    Meaning:  "URL of the source code (usually in archive format like `.tar.gz`). Can be in the form of a list. With **EAPI&#8805;2** the output file name of a given URI can be customized using the -> operator."

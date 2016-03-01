@@ -1,0 +1,31 @@
+caption: "Table 1: Transferring from Windows Applications to Linux Applications"
+head:
+  - Category
+  - Windows
+  - Linux
+  - Notes
+body:
+  - Category: "BitTorrent client"
+    Windows:  "&#956;Torrent, Tixati."
+    Linux:    "Deluge, KTorrent, qBittorrent, Vuze."
+    Notes:    "qBittorrent will likely be the most intuitive to &#956;Torrent users. A browser-based version of &#956;Torrent is available in Debian-based distros like Ubuntu, but I would not recommend it personally as it can be more trouble than it is worth."
+  - Category: "Document viewer"
+    Windows:  "Adobe Acrobat/Reader, Foxit Reader, Nitro PDF, SumatraPDF."
+    Linux:    "Adobe Reader, Atril, Evince, MuPDF, Okular."
+    Notes:    "Okular in my opinion, is the best FOSS document viewer as it is compatible with the greatest number of document formats."
+  - Category: "Email client"
+    Windows:  "Microsoft Outlook."
+    Linux:    "KMail, Mozilla Thunderbird."
+    Notes:    "KMail is the default KDE Mail Client, while Thunderbird is developed by the *Mozilla Foundation*, the same foundation that provides the Firefox web browser. You can use Thunderbird on Windows, but it is not particularly popular on Windows."
+  - Category: "Multimedia player"
+    Windows:  "Media Player Classic, MPlayer, SMPlayer, VLC, Windows Media Player."
+    Linux:    "GNOME Videos (Totem), Kodi, MPlayer, Rage, SMPlayer, VLC."
+    Notes:    "SMPlayer and VLC are the most feature-packed (including the greatest support for a variety of media files) of these, in my experience. VLC can be buggy on Gentoo and Sabayon, however, in my experience."
+  - Category: "Office suite"
+    Windows:  "Apache OpenOffice, LibreOffice, Microsoft Office."
+    Linux:    "Apache OpenOffice, Calligra Suite, LibreOffice."
+    Notes:    "In my opinion (IMO), the best Linux-compatible office suite is LibreOffice, although IMO it is not as good as Microsoft Office (MS Office) for my purposes (although, fair warning, this may be because quite often I type up mathematical equations in my Word documents which is easier in MS Word than LibreOffice Writer)."
+  - Category: "Statistics software"
+    Windows:  "PSPP, R, SPSS (proprietary)."
+    Linux:    "PSPP, R, SPSS (proprietary)."
+    Notes:    "PSPP and R are GNU Projects, with R being primarily a programming language intended for statistical analysis. SPSS is a proprietary statistical analysis program, developed by IBM and written in Java."
