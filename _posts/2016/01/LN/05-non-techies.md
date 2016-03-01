@@ -18,7 +18,7 @@ Like Arch Linux, Manjaro also follows a rolling release model. It only supports 
 ### openSUSE
 **openSUSE** is an originally German Linux distribution that uses RPM binary packages (with the `.rpm` file extension) and the **ZYpp** package manager (along with a graphical front end for ZYpp &mdash; **YaST2**). It features an automated installer (also YaST2), during installation one is given choice of several different desktop environments, with the two major choices being GNOME and KDE Plasma, although the lightweight desktop (which uses less CPU and RAM), LXDE. Since 2015 openSUSE has two editions &mdash; the standard edition following a standard release model and a tumbleweed edition which follows a rolling release model. I personally prefer the tumbleweed edition, but if you prefer system stability (which means you will have to deal with fewer bugs) over having the very latest software I would recommend you use the standard release model edition.
 
-Its out-of-the-box support for proprietary multimedia codecs (required for playing some media files, especially video files) and device drivers (including for Broadcom chips) is virtually non-existent, so this may stump some non-techies. It may be possible to install some proprietary programs from the [PackMan repositories](http://packman.links2linux.org/), or from repositories in the [Open Build Service](https://build.opensuse.org). 
+Its out-of-the-box support for proprietary multimedia codecs (required for playing some media files, especially video files) and device drivers (including for Broadcom chips) is virtually non-existent, so this may stump some non-techies. It may be possible to install some proprietary programs from the [PackMan repositories](http://packman.links2linux.org/), or from repositories in the [Open Build Service](https://build.opensuse.org).
 
 #### Package Management
 As far as package managers go I would give ZYpp four stars out of five, it is a little slower than pacman and one feature (or lack of a feature rather) I dislike about it is that you cannot pass a flag (e.g., for pacman this flag is `--noconfirm`, while for APT, DNF and yum this flag is `-y`) to ZYpp to get it to skip asking you for confirmation before performing the action it is about to do. Apparently this feature used to exist, but it was removed. I like this feature in a package manager because it makes writing Bash scripts for package management easier.
@@ -29,7 +29,7 @@ It only supports armhf, i586 and x86_64 architectures.
 
 #### Useful Resources
 * [Download Page for the Latest Standard Release of openSUSE](https://software.opensuse.org)
-* [Documentation for openSUSE](http://doc.opensuse.org/) &mdash; I have heard good things about this documentation from other sources but I have never really found the documentation of good quality, partly because of how up-to-date much of it is (as it refers to older release of openSUSE).
+* [Documentation for openSUSE](http://doc.opensuse.org/) &mdash; I have heard good things about this documentation from other sources but I have never really found the documentation of good quality, partly because of how up-to-date much of it is (as it refers to older releases of openSUSE, instead of the latest, at times) and it is not really extensive like *The ArchWiki* is.
 * [English openSUSE Forums](https://forums.opensuse.org/forum.php)
 * [English openSUSE Wiki](https://en.opensuse.org/Main_Page)
 * [openSUSE Package Search Site](https://software.opensuse.org/search)
