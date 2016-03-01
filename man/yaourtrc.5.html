@@ -1,0 +1,425 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Tue Mar  1 18:35:12 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>YAOURTRC</title>
+
+</head>
+<body>
+
+<h1 align="center">YAOURTRC</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#GENERAL OPTIONS">GENERAL OPTIONS</a><br>
+<a href="#SUDO OPTIONS">SUDO OPTIONS</a><br>
+<a href="#AUR OPTIONS">AUR OPTIONS</a><br>
+<a href="#BUILD OPTIONS">BUILD OPTIONS</a><br>
+<a href="#PROMPT OPTIONS">PROMPT OPTIONS</a><br>
+<a href="#OUTPUT OPTIONS">OUTPUT OPTIONS</a><br>
+<a href="#ENVIRONMENT VARIABLES">ENVIRONMENT VARIABLES</a><br>
+<a href="#COMMAND OPTIONS">COMMAND OPTIONS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#AUTHORS">AUTHORS</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">yaourtrc
+&minus; yaourt configuration file</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">/etc/yaourtrc</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>$XDG_CONFIG_HOME</b>/yaourt/yaourtrc</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>$HOME</b>/.yaourtrc</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>yaourt</b>(8)
+obtains configuration data from the following sources in the
+following order:</p>
+
+<p style="margin-left:17%; margin-top: 1em">1.
+command&minus;line options</p>
+
+<p style="margin-left:17%; margin-top: 1em">2. environment
+variables</p>
+
+<p style="margin-left:17%; margin-top: 1em">3. user&rsquo;s
+configuration file ($XDG_CONFIG_HOME/yaourt/yaourtrc takes
+precedence)</p>
+
+<p style="margin-left:17%; margin-top: 1em">4.
+system&minus;wide configuration file (/etc/yaourtrc)</p>
+
+<h2>GENERAL OPTIONS
+<a name="GENERAL OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>REPOS=()</b></p>
+
+<p style="margin-left:17%;">List of repositories where
+PKGBUILD can be retrieved by rsync. (see /etc/abs.conf)</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AUTOSAVEBACKUPFILE=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, yaourt will search
+for config files to back up (.pacnew files) after each
+install. All backed up files are stored in /var/lib/yaourt/.
+These files will be used later with yaourt &minus;C to
+automerge current config files with new config files
+(.pacnew). This option requires root password or sudo
+configured to allow running /usr/bin/pacdiffviewer without
+password.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>DEVELSRCDIR=&quot;&quot;</b></p>
+
+<p style="margin-left:17%;">Specify directory where to keep
+sources for devel packages.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>DEVEL=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, always search for
+new version of development (CVS/SVN/Git/Mercurial/other VCS)
+packages when upgrading (yaourt &minus;Su).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>VISUAL=&quot;$VISUAL&quot;</b></p>
+
+<p style="margin-left:17%;">Define the editor to use (if
+the environment variable $VISUAL is not set) for PKGBUILD
+editing. Editor should not fork, for gvim: VISUAL=&quot;gvim
+&minus;&minus;nofork&quot;. Preferred over EDITOR.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>EDITOR=&quot;$EDITOR&quot;</b></p>
+
+<p style="margin-left:17%;">Define the editor to use (if
+the environment variables $VISUAL and $EDITOR and the
+yaourtrc option $VISUAL are not set) for PKGBUILD editing.
+Editor should not fork, for gvim: EDITOR=&quot;gvim
+&minus;&minus;nofork&quot;. Fallback option for VISUAL.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>FORCE=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, always bypass file
+conflict checks and overwrite conflicting files.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>TMPDIR=&quot;/tmp&quot;</b></p>
+
+<p style="margin-left:17%;">Specify the folder to save
+temporary files (default is /tmp).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>NO_TESTDB=0</b></p>
+
+<p style="margin-left:17%;">Set to 1 to bypass the local
+database test.</p>
+
+<h2>SUDO OPTIONS
+<a name="SUDO OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>SUDONOVERIF=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, yaourt
+doesn&rsquo;t do sudo checks. (For users with
+timestamp_timeout=0 in sudoers)</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>SUDOREDIRECT=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, yaourt
+doesn&rsquo;t redirect <i>sudo</i> standard output. (For
+users with fingerprint authentication)</p>
+
+<h2>AUR OPTIONS
+<a name="AUR OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURCOMMENT=5</b></p>
+
+<p style="margin-left:17%;">Show X last comments for
+packages built from AUR Unsupported. 0 to disable comments
+display, default to 5.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURDEVELONLY=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, search only for
+new version of development (CVS/SVN/Git/Mercurial/other VCS)
+packages when upgrading (yaourt &minus;Su
+&minus;&minus;devel).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURSEARCH=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, don&rsquo;t search
+for packages on AUR Unsupported.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURUPGRADE=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, always search for
+new version of packages installed from AUR Unsupported when
+upgrading (yaourt &minus;Su).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURURL=&quot;https://aur.archlinux.org&quot;</b></p>
+
+<p style="margin-left:17%;">Specify a custom AUR url.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURVOTE=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, don&rsquo;t check
+the vote status for inclusion/keeping in [community], and it
+is unable to vote.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>AURUSEGIT=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, clone the AUR git
+repository instead of using snapshot tarballs.</p>
+
+<h2>BUILD OPTIONS
+<a name="BUILD OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>EXPORT=0</b></p>
+
+<p style="margin-left:17%;">Export built package to
+$EXPORTDIR or, if not defined to $PKGDEST (see
+<b>makepkg.conf</b>(5)). <i>EXPORT=2</i> exports all built
+packages to pacman cache directory (see
+<b>pacman.conf</b>(5)).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>EXPORTSRC=0</b></p>
+
+<p style="margin-left:17%;">Export sources to $EXPORTDIR
+or, if not defined to $SRCPKGDEST or $PKGDEST (see
+<b>makepkg.conf</b>(5)).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>EXPORTDIR=&quot;&quot;</b></p>
+
+<p style="margin-left:17%;">Specify the folder where yaourt
+exports built packages + sources.</p>
+
+<h2>PROMPT OPTIONS
+<a name="PROMPT OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>NOCONFIRM=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, always use the
+default choice without confirmation.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>UP_NOCONFIRM=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, do not prompt for
+AUR or build upgrades.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>BUILD_NOCONFIRM=0</b></p>
+
+<p style="margin-left:17%;">If set to 1, do not prompt
+while building.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>EDITFILES=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, don&rsquo;t
+propose to edit files (from AUR or from ABS).</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>NOENTER=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, user needs to
+press Enter for each &quot;yes/no&quot; question.</p>
+
+<h2>OUTPUT OPTIONS
+<a name="OUTPUT OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>USECOLOR=1</b></p>
+
+<p style="margin-left:17%;">0 : disable colors</p>
+
+<p style="margin-left:17%; margin-top: 1em">1 : enable
+colors (disabled if output is not a tty)</p>
+
+<p style="margin-left:17%; margin-top: 1em">2 : force
+colored output</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>USEPAGER=0</b></p>
+
+<p style="margin-left:17%;">1 : enable pager (use
+<i>$PAGER</i> variable)</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>DETAILUPGRADE=1</b></p>
+
+<p style="margin-left:17%;">0 : no detailed ouput and no
+update classification</p>
+
+<p style="margin-left:17%; margin-top: 1em">1 : no detailed
+ouput but updates classified</p>
+
+<p style="margin-left:17%; margin-top: 1em">2 : show
+packages not found on aur / version mismatch / up to date /
+and those marked as out of date</p>
+
+<p style="margin-left:17%; margin-top: 1em">4 : same as 2
+except for up to date packages</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>SHOWORPHANS=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, search for
+orphans.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>TERMINALTITLE=1</b></p>
+
+<p style="margin-left:17%;">If set to 0, don&rsquo;t show
+the current yaourt&rsquo;s action in terminal title. By
+default, yaourt show messages like &quot;Installing xxx from
+AUR&quot;.</p>
+
+<h2>ENVIRONMENT VARIABLES
+<a name="ENVIRONMENT VARIABLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Environment
+variables take precedence over any options in yaourtrc
+files.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>VISUAL</b></p>
+
+<p style="margin-left:17%;">Define the editor to use (if
+the environment variable $VISUAL is not set) for PKGBUILD
+editing. Editor should not fork, for gvim: VISUAL=&quot;gvim
+--nofork&quot;. Preferred over EDITOR.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>EDITOR</b></p>
+
+<p style="margin-left:17%;">Define the editor to use (if
+the environment variable $VISUAL and the yaourtrc option
+$VISUAL are not set) for PKGBUILD editing. Editor should not
+fork, for gvim: EDITOR=&quot;gvim --nofork&quot;. Fallback
+option for VISUAL.</p>
+
+<h2>COMMAND OPTIONS
+<a name="COMMAND OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>PACMAN=&quot;pacman&quot;</b></p>
+
+<p style="margin-left:17%;">Specify the pacman binary to
+use with yaourt</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>MAKEPKG=&quot;makepkg&quot;</b></p>
+
+<p style="margin-left:17%;">Specify the makepkg binary to
+use with yaourt</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>DIFFEDITCMD=&quot;vimdiff&quot;</b></p>
+
+<p style="margin-left:17%;">Define the diff editor to use
+($DIFFEDITCMD file1 file2).</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>yaourt</b>(8)</p>
+
+<p style="margin-left:11%; margin-top: 1em">See the yaourt
+website at http://archlinux.fr/yaourt&minus;en/ for more
+info.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">https://github.com/archlinuxfr/yaourt</p>
+
+<h2>AUTHORS
+<a name="AUTHORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Julien
+MISCHKOWITZ &lt;wain@archlinux.fr&gt;</p>
+
+<p style="margin-left:11%; margin-top: 1em">Current
+maintainers:</p>
+
+<p style="margin-left:11%; margin-top: 1em">Tuxce
+&lt;tuxce.net@gmail.com&gt;</p>
+<hr>
+</body>
+</html>
