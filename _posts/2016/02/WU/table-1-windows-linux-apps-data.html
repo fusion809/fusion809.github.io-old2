@@ -15,5 +15,10 @@
       <td class="green">{{ row.Notes | markdownify }}</td>
     </tr>
     {% endfor %}
+    {% for row in site.data.windows_linux.foot %}
+    <tr class="green">
+      <td class="green" colspan="4" style="padding:5px;">{{ row.Note | markdownify }}</td>
+    </tr>
+    {% endfor %}
   </tbody>
 </table><br/>
