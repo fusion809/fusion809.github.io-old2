@@ -33,17 +33,17 @@ body:
   - Category: "Office suite"
     Windows:  "Apache OpenOffice, LibreOffice, Microsoft Office&#42;."
     Linux:    "Apache OpenOffice, Calligra Suite, LibreOffice."
-    Notes:    "IMO, the best Linux-compatible office suite is LibreOffice (LO), although IMO it is not as good as MS Office for my purposes (although, fair warning, I write a lot of equations in my word documents, and doing this in MS Word is easier than doing the same in LO Writer)."
+    Notes:    "IMO, the best Linux-compatible office suite is LibreOffice (LO), although IMO it is not as good as MS Office for my purposes (although, fair warning, I write a lot of equations in my word documents, and doing this in MS Word is easier than doing the same in LO Writer, due to the availability of keyboard-shortcuts for this in MS Word)."
 
   - Category: "Statistical analysis <br/>software"
     Windows:  "PSPP, R, SPSS&#42;."
     Linux:    "PSPP, R, SPSS&#42;."
-    Notes:    "PSPP and R are GNU Projects, with R being primarily a programming language intended for statistical analysis. SPSS is a proprietary statistical analysis program, developed by IBM and written in Java. PSPP is a free clone of SPSS still in beta testing (i.e., a 1.0 release has not been made yet)."
+    Notes:    "PSPP and R are GNU Projects, with R being primarily a programming language intended for statistical analysis. SPSS is a proprietary statistical analysis program, developed by IBM and written in Java. PSPP is a free clone of SPSS still in beta testing (i.e., a 1.0 release has not been made yet), that is written in C."
 
   - Category: "Text editor"
     Windows:  "Atom, GNU Emacs, gVim, Notepad&#8224;, Notepad++, Sublime Text&#42;, Vim."
     Linux:    "Atom, Geany, gedit, GNU Emacs, GNU nano, gVim, jEdit, Kate, KWrite, Leafpad, SciTE, Sublime Text&#42;, Vim."
-    Notes:    "As you can see most Linux-compatible text editors will also run on Windows and while the reverse is mostly true there are exceptions. Atom is my favourite text editor, as it is extensively customizable, yet free and simple enough for my grandmother, who I think has probably never even used a computer, to use. GNU Emacs and gVim/Vim are the most popular text editors amongst seasoned programmers, however."
+    Notes:    "As you can see most Linux-compatible text editors will also run on Windows and while the reverse is mostly true there are exceptions. Atom is my favourite text editor, as it is extensively customizable, yet free and simple enough for my grandmother, who I think has probably never even used a computer, to use. Atom is heavy on memory footprint (heavier than all other text editors mentioned in this table, actually), download and installed size (~50-60 MB and ~200-250 MB, respectively) and takes comparatively long to startup, however. GNU Emacs and gVim/Vim are the most popular text editors amongst seasoned programmers, however. GNU Emacs is the most customizable and extensible, thanks to the Emacs Lisp programming language, while Vim is more portable, uses less RAM and CPU, is faster and, for those with enough experience with it, it may have productivity advantages over GNU Emacs, as it relies less on a mouse and keyboard-shortcuts than GNU Emacs. Vim's programming language, VimL (or Vim script), is simpler and easier to learn, IMO, than Emacs Lisp and Vim also has better package management, IMO, than GNU Emacs."
 
   - Category: "Web browser"
     Windows:  "Google Chrome&#8224;, Internet Explorer&#8224;, Mozilla Firefox, Opera&#8224;, Safari&#8224;."
