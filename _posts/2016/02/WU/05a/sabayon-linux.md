@@ -5,11 +5,12 @@
 
 Its official repositories (that is, the ones you can access and install packages from using its main package manager, Entropy) may be missing some packages you would like to use, most of these packages you can get via more challenging methods (most notably by using Gentoo's package manager, Portage, which also comes pre-installed on Sabayon), which for the most part have to be done from the command-line. For example, when I first started using this distribution, I wanted to install SageMath, a mathematics program not in the official Entropy repositories, to do this I needed to use Portage and the [`sage-on-gentoo`](https://github.com/cschwan/sage-on-gentoo) overlay (which is an unofficial Gentoo repository). Its forums are [here](https://forum.sabayon.org/) and its main support IRC channel is [here](irc://irc.freenode.net/sabayon).
 
-It has six main editions:
+It has seven main editions:
 
 * GNOME
 * KDE
 * MATE
+* Minimal (which uses the Fluxbox window manager, sort of like a lighter weight desktop environment than LXDE or Xfce)
 * Server (useful for servers, I would not recommend using this edition as it has no desktop environment, by default)
 * Spinbase (pretty useless since the Anaconda installer was ditched. See it just has the command-line and its new installer cannot be run from the command-line)
 * Xfce
