@@ -10,6 +10,11 @@ body:
     Linux:    "Deluge, KTorrent, qBittorrent, Vuze."
     Notes:    "qBittorrent will likely be the most intuitive to &#956;Torrent users. A browser-based version of &#956;Torrent is available in Debian-based distros like Ubuntu, but I would not recommend it personally as it can be more trouble than it is worth."
 
+  - Category: "Computer algebra <br/>system"
+    Windows:  "Maple&#42;, Mathematica&#42;, MATLAB&#42; (with the symbolic toolbox)."
+    Linux:    "Maple&#42;, Mathematica&#42;, MATLAB&#42; (with the symbolic toolbox), Maxima, SageMath."
+    Notes:    "SageMath is my personal preference, as it integrates over a hundred different free mathematics programs in a single command-line or notebook (browser-based) interface. It has numerical analysis and statistical analysis capabilities too."
+
   - Category: "Document viewer"
     Windows:  "Adobe Acrobat&#42;/Reader&#8224;, Foxit Reader&#8224;, Nitro PDF&#8224;, SumatraPDF."
     Linux:    "Adobe Reader&#8224;, Atril, Evince, MuPDF, Okular."
