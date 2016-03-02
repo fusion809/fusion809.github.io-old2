@@ -28,7 +28,7 @@ body:
   - Category: "Numerical analysis <br/>software"
     Windows:  "MATLAB&#42;, Scilab."
     Linux:    "GNU Octave, MATLAB&#42;, Scilab."
-    Notes:    "MATLAB is the gold (or benchmark) standard piece of application software for numerical analysis and is extensively used in academia and industry. GNU Octave and Scilab are free clones of MATLAB. GNU Octave is the most compatible, of these, in terms of its syntax. GNU Octave is easier to install on most Linux distributions than Scilab too."
+    Notes:    "MATLAB is the gold (or benchmark) standard piece of application software for numerical analysis and is extensively used in academia and industry. GNU Octave and Scilab are free clones of MATLAB. GNU Octave is the most compatible, of these, in terms of its syntax and is easier to install on most Linux distributions."
 
   - Category: "Office suite"
     Windows:  "Apache OpenOffice, LibreOffice, Microsoft Office&#42;."
