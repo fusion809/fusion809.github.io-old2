@@ -12,9 +12,9 @@ The best distribution for you to start out with, greatly depends on several vari
 Most distributions fulfill at most four of these requirements.
 
 ### Specific Distributions
-Examples of distributions that fulfill at least four of the aforementioned requirements, include, with the requirements they fulfill listed in brackets:
+Examples of distributions that fulfill at least four of the aforementioned requirements, are mentioned in the sections below, with the requirements they fulfill listed in brackets.
 
-{% include_relative 05a-distrolist.html %}
+{% include_relative 05a-distrolist.md %}
 
 If you have a **fairly old computer**, with an older CPU, little RAM (say &lt;2 GB) and hard drive space to spare then odds are you will be best to stick to one of the following:
 
