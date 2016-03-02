@@ -52,8 +52,8 @@ Manjaro users must install Atom via the Arch User Repository (AUR), or via using
 
 * {% include ArchLinux/aurb.md package="atom-editor" %} which builds a package for the **latest stable release** of Atom from **source code**. As it builds Atom from source code any momentary glitches in Internet connectivity can cause the build to fail, which would require one to start building the package again from scratch. My PKGBUILD is a more resilient version of this one, it will not fail due to momentary Internet connectivity issues.
 * {% include ArchLinux/aurb.md package="atom-editor-bin" %} which builds a package for the **latest stable release** of Atom from a **precompiled Debian binary**. This PKGBUILD tends to lag behind its source code counterpart, in terms of how soon it is updated after a new version of Atom comes out.
-* {% include ArchLinux/aurb.md package="atom-editor-beta" %} which builds a package for the **latest beta release** of Atom from **source code**.
-* {% include ArchLinux/aurb.md package="atom-editor-beta-bin" %} which builds a package for the **latest beta release** of Atom from its **Debian binary package**.
+* {% include ArchLinux/aurb.md package="atom-editor-beta" %} which builds a package for the **latest beta release** of Atom from **source code**. This package **cannot** be installed simultaneously, on the same machine, as the `atom-editor` package. If you would like to install the latest beta release of Atom and the latest stable release of Atom, simultaneously, on the same machine I suggest you use the `atom-editor` PKGBUILD in the AUR, or my GitHub repository, and the `atom-editor-beta` PKGBUILD in my GitHub repository. My `atom-editor-beta` PKGBUILD is specifically designed so that its installed files do **not** conflict with the installed files of `atom-editor`. 
+* {% include ArchLinux/aurb.md package="atom-editor-beta-bin" %} which builds a package for the **latest beta release** of Atom from its **Debian binary package**. This package **can** be installed simultaneously, on the same machine, as the `atom-editor` or `atom-editor-bin` package.
 * {% include ArchLinux/aurb.md package="atom-editor-git" %} which builds a package for the **latest git snapshot** of Atom from **source code**.
 
 #### Sabayon
@@ -74,7 +74,7 @@ If you are using some other platform, or for whatever reason none of the methods
 </ul>
 
 ### Advantages (Pros)
-* Easily and extensively customizable.
+* Easily and extensively customizable. Customization beyond that afforded by plugins provided by the Atom community must be done via writing plugins or scripts in CoffeeScript or JavaScript.
 * Intuitive and easy to learn.
 * Support for a wide range of different computer languages.
 * Displays directory structure in (left) side panel.
