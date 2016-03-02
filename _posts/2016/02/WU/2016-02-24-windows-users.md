@@ -22,6 +22,8 @@ A few days ago, I was asked by a long-time Windows user, how steep the learning 
 
 {% include_relative 05-best-distros.md %}
 
+{% include_relative 06-conclusions.md %}
+
 {% endcapture %}{{ my_capture | markdownify }}
 
 {% include_relative footnotes.html %}
