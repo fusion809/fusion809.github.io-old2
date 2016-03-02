@@ -16,7 +16,7 @@ Examples of distributions that fulfill at least four of the aforementioned requi
 
 {% include_relative 05a-distrolist.md %}
 
-#### Older Computers
+### Distros for Older Computers
 If you have a **fairly old computer**, with an older CPU, little RAM (say &lt;2 GB) and hard drive space to spare then odds are you will be best to stick to one of the following:
 
 * Fedora (namely, the LXDE edition).
@@ -24,6 +24,7 @@ If you have a **fairly old computer**, with an older CPU, little RAM (say &lt;2 
 * [Puppy Linux](http://www.puppylinux.com/), an Australian distro that is designed to run from a live USB. I personally find it a buggy distro, so buggy I have not even managed to install it on a VirtualBox VM.
 * Ubuntu (namely, the official Lubuntu spin; the unofficial spins called [Bodhi Linux](http://www.bodhilinux.com/) and [LXLE](http://lxle.net/) may also be suitable in these cases. Note, if you use an unofficial spin, you cannot get support in the #ubuntu IRC channel or askubuntu.com website).
 
+### Other Distros
 While if you have a preference for an **OS X-like look** to your PC, then I would recommend using [deepin](https://www.deepin.org/?language=en) or [elementary OS](http://elementary.io/). deepin is a Chinese distribution based on Debian's unstable branch, while elementary OS is an American distribution based on Ubuntu's LTS releases. It is possible to get such a look on other systems but the OS X-like look is not the default for these other systems, rather you need to customize their look to get them this way.
 
 ### Testing Out
