@@ -1,0 +1,46 @@
+{% capture item1 %}
+[Fedora](https://getfedora.org/) (1, 2, 4, 6), a distribution developed by its own FOSS community, but sponsored by Red Hat, the largest Linux company in the world. It has strict licensing requirements for all software in its official repositories, which means that many proprietary multimedia codecs, graphics drivers and Wi-Fi drivers will need to be installed from third-party sources like [RPM Fusion](http://rpmfusion.org/). Fortunately, I have found one method that manages to install the drivers for my BCM43228 chip is running: {% include Code/codeus.html line1="wget http://git.io/vuLC7 -v -O fedora23_broadcom_wl_install.sh && sh ./fedora23_broadcom_wl_install.sh" %}<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup> (although this designed for Fedora 23 specifically, future releases may not be compatible with this command). I personally have found it more difficult to pick up than Ubuntu, but it uses, generally more up-to-date software than Ubuntu. It has inferior community support, in my opinion, to Ubuntu, however. The main support site for it that I have used is [Ask Fedora](https://ask.fedoraproject.org/). There is also an IRC channel for support questions, called {% include Links/irc.html channel="fedora" puncr="." %} It has a less popular derivative with more liberal software licensing requirements and out-of-the-box support for Broadcom chips, [Chapeau](http://chapeaulinux.org/).
+
+It is recommended that if you use Fedora, you upgrade your system to the latest release of Fedora (this upgrade process is called a &ldquo;*distribution upgrade*&rdquo;) at least once every nine-months. This process can be quite unpleasant, as software breakage is not unheard of after doing a distribution upgrade. Plus, there will be times when your computer will be practically unusable. If you would prefer to upgrade less frequently, but otherwise would like to have a Fedora-like system, I would recommend using [CentOS](https://centos.org). Distribution upgrades are only required for this distribution as infrequently as once every seven years. The main disadvantage of using CentOS as opposed to Fedora, is that CentOS's system software is usually fairly outdated. Additionally the latest release of CentOS (CentOS 7), has support for only the x86_64 processor instruction set (while Fedora also supports processors with armhfp and i686 instruction sets), so older computers may be incompatible with CentOS.
+{% endcapture %}
+
+{% capture item2 %}
+[Linux Mint](http://linuxmint.com/) (1-6), a Ubuntu-based distribution developed by a community of unpaid volunteers. It is built on the Long-Term Support (LTS) releases of Ubuntu which come out in April of even-numbered years (e.g., the last one was in April 2014) and are designed to be especially stable, although their software tends to lag behind that of newer Ubuntu releases. Its chief advantage, in my opinion, over Ubuntu is that it has better out-of-the-box support for several proprietary multimedia codecs (codecs are programs required to play certain multimedia files) and graphics drivers. It does **not** have out-of-the-box support for Broadcom chips with proprietary firmware like mine. I have not used its community support, personally, so I cannot comment on its quality. It has a Windows-like look, though, with a task bar (or panel) across the bottom of the screen. If you need free support with Linux Mint I would recommend using their [forums](https://forums.linuxmint.com/) or IRC channel {% include Links/irc.html channel="linuxmint-help" puncl="(" puncr=")." %}
+{% endcapture %}
+
+{% capture item3 %}
+[Manjaro Linux](https://manjaro.github.io/) (1-6), an Arch Linux-based distribution that unlike Arch Linux itself is very beginner-friendly. It too is developed by its own FOSS community. It has out-of-the-box support for most graphics cards, multimedia codecs and Broadcom chips like mine. It has even more up-to-date software than Fedora, so if you want the latest software I would recommend using Manjaro. I find some members of its online support community seem to require evidence that you are working three times as hard as they are to solve the issue you are requesting them to help you with. You can install just about any Linux-compatible program (including proprietary programs) on Manjaro, either from its own repositories or from the [Arch User Repository](https://aur.archlinux.org) (AUR) of Arch Linux, which I am afraid is best accessed from the command-line. I would personally say that Manjaro has the greatest number of software packages available for easy installation of all distributions mentioned in this post. If you need free support for Manjaro I recommend you use either [their forums](https://forum.manjaro.org) or their IRC channel {% include Links/irc.html channel="manjaro" puncl="(" puncr=")." %} Their forums has at least one person, I have come across, that believes that Manjaro should be DIY and refuses to change his mind.
+{% endcapture %}
+
+{% capture item4 %}
+[openSUSE](https://www.opensuse.org/) (1, 2, 4, 6), a distribution developed by its own FOSS community and sponsored by Novell, another Linux company. It has the largest installation ISOs (that is, the files you use to install it) of any distribution mentioned here, with its live DVD ISO being 4.3 GB. Despite this, it has similarly poor out-of-the-box support for most proprietary codecs and drivers. openSUSE comes in two main flavours: Leap and Tumbleweed. Leap is more stable and popular, yet uses older software. Tumbleweed uses later software (usually a little less up-to-date than Manjaro Linux, though) but is maybe a little less stable (although I am presently using it and have never noticed any stability issues). On the plus side its online support community is amongst the friendliest I have come across. I have asked roughly ten questions on their forums and I have not yet encountered anyone forcing the DIY philosophy on others. openSUSE's official repositories are, at least, mostly FOSS, but several user-maintained unofficial repositories housed by the [Open Build Service](https://build.opensuse.org) (OBS) contain proprietary software, including Spotify. Its main support IRC channel is [here](irc://irc.freenode.net/suse).
+{% endcapture %}
+
+{% capture item5 %}
+[Sabayon Linux](http://sabayon.org/) (1-5), a distribution with similarly extensive, out-of-the-box support to Manjaro. Like Manjaro, however, it is also based on a non-beginner-friendly distro, except in Sabayon's case this distro is Gentoo Linux and not Arch Linux. Most of Sabayon's software is as up-to-date as the corresponding Manjaro software, although some programs may lag behind. Its chief disadvantage is its small online support community, which I have found can be a little more testy than that of openSUSE. Its official software repositories contain some freeware packages like Spotify too. Its official repositories (that is, the ones you can access and install packages from using its main package manager, Entropy) may be missing some packages you would like to use, most of these packages you can get via more challenging methods (most notably by using Gentoo's package manager, Portage, which also comes pre-installed on Sabayon), which for the most part have to be done from the command-line. For example, when I first started using this distribution, I wanted to install SageMath, a mathematics program not in the official Entropy repositories, to do this I needed to use Portage and the `sage-on-gentoo` overlay (which is an unofficial Gentoo repository). Its forums are [here](https://forum.sabayon.org/) and its main support IRC channel is [here](irc://irc.freenode.net/sabayon).
+{% endcapture %}
+
+{% capture item6 %}
+[Ubuntu](http://ubuntu.com) (1, 2, 4, 6), a distribution that is well-known for its beginner-friendliness. It is developed by a Linux company called Canonical Ltd. Its software is usually more out-of-date than all other distributions mentioned in this post, except for openSUSE Leap. It has got the best support community, in terms of response times, in my opinion. Specifically it has a StackExchange website called [AskUbuntu](http://askubuntu.com) that I find quite good. Its official repositories contain mostly FOSS, along with some proprietary drivers. Several unofficial Personal Package Repositories (PPAs) exist, however, although I am yet to find one containing Spotify, probably because a Spotify repository is provided and maintained Spotify AB (the company that develops Spotify), to find details go [here](https://www.spotify.com/uk/download/). Its main support IRC channel is [#ubuntu](irc://irc.freenode.net/ubuntu).
+{% endcapture %}
+
+<ul>
+  <li>
+    {{ item1 | markdownify }}
+  </li>
+  <li>
+    {{ item2 | markdownify }}
+  </li>
+  <li>
+    {{ item3 | markdownify }}
+  </li>
+  <li>
+    {{ item4 | markdownify }}
+  </li>
+  <li>
+    {{ item5 | markdownify }}
+  </li>
+  <li>
+    {{ item6 | markdownify }}
+  </li>
+</ul>
