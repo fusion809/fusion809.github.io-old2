@@ -1,0 +1,1 @@
+**How software is installed**. Windows software is usually installed via downloading and installing files with the `.exe` or `.msi` file extensions. Installing Linux software is usually a little more complex. Most software is installed via the specific distro's package manager.
