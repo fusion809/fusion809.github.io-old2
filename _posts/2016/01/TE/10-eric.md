@@ -12,6 +12,7 @@ Its features include support for managing Mercurial, Subversion and Git reposito
 
 ### Obtaining It
 The platform-independent method of installing the latest Eric Python IDE release, is three-step:
+
 1. Download the latest tarball release of the Eric Python IDE from [here at SourceForge](http://sourceforge.net/projects/eric-ide/files/latest/download)
 2. Extract the contents of said tarball
 3. `cd` into the extracted directory of Eric
