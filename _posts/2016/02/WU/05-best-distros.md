@@ -11,7 +11,7 @@ The best distribution for you to start out with, greatly depends on several vari
 
 Most distributions fulfill at most four of these requirements. Examples of such distributions include, with the requirements they fulfill listed in brackets:
 
-{% include_relative distrolist.html %}
+{% include_relative 05a-distrolist.html %}
 
 
 If you have a **fairly old computer**, with an older CPU, little RAM (say &lt;2 GB) and hard drive space to spare then odds are you will be best to stick to one of the following:

@@ -1,0 +1,44 @@
+{% capture item1 %}
+{% include_relative 05a-fedora.md %}
+{% endcapture %}
+
+{% capture item2 %}
+{% include_relative 05a-linux-mint.md %}
+{% endcapture %}
+
+{% capture item3 %}
+{% include_relative 05a-manjaro-linux.md %}
+{% endcapture %}
+
+{% capture item4 %}
+{% include_relative 05a-opensuse.md %}
+{% endcapture %}
+
+{% capture item5 %}
+{% include_relative 05a-sabayon-linux.md %}
+{% endcapture %}
+
+{% capture item6 %}
+{% include_relative 05a-ubuntu.md %}
+{% endcapture %}
+
+<ul>
+  <li>
+    {{ item1 | markdownify }}
+  </li>
+  <li>
+    {{ item2 | markdownify }}
+  </li>
+  <li>
+    {{ item3 | markdownify }}
+  </li>
+  <li>
+    {{ item4 | markdownify }}
+  </li>
+  <li>
+    {{ item5 | markdownify }}
+  </li>
+  <li>
+    {{ item6 | markdownify }}
+  </li>
+</ul>
