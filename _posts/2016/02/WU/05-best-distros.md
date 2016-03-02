@@ -16,6 +16,7 @@ Examples of distributions that fulfill at least four of the aforementioned requi
 
 {% include_relative 05a-distrolist.md %}
 
+#### Older Computers
 If you have a **fairly old computer**, with an older CPU, little RAM (say &lt;2 GB) and hard drive space to spare then odds are you will be best to stick to one of the following:
 
 * Fedora (namely, the LXDE edition).
