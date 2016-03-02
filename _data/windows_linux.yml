@@ -43,7 +43,7 @@ body:
   - Category: "Text editor"
     Windows:  "Atom, GNU Emacs, gVim, Notepad&#8224;, Notepad++, Sublime Text&#42;, Vim."
     Linux:    "Atom, Geany, gedit, GNU Emacs, GNU nano, gVim, jEdit, Kate, KWrite, Leafpad, SciTE, Sublime Text&#42;, Vim."
-    Notes:    "As you can see most Linux-compatible text editors will also run on Windows and while the reverse is mostly true there are exceptions. Atom is my favourite text editor, as it is extensively customizable, yet free and simple enough for my grandmother, who I think has probably never even used a computer, to use. [Truncated, press [here](#fn:5) for further details]"
+    Notes:    "As you can see most Linux-compatible text editors will also run on Windows and while the reverse is mostly true there are exceptions. Atom is my favourite text editor, as it is extensively customizable, yet free and simple enough for my grandmother, who I think has probably never even used a computer, to use. [Truncated, press [here](#fn:5) for the full note]"
 
   - Category: "Web browser"
     Windows:  "Google Chrome&#8224;, Internet Explorer&#8224;, Mozilla Firefox, Opera&#8224;, Safari&#8224;."
