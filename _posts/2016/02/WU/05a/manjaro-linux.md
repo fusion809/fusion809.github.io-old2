@@ -7,7 +7,7 @@ You can install just about any Linux-compatible program (including proprietary p
 
 If you need free support for Manjaro I recommend you use either [their forums](https://forum.manjaro.org) or their IRC channel {% include Links/irc.html channel="manjaro" puncl="(" puncr=")." %} Their forums has at least one person, I have come across, that believes that Manjaro should be DIY, and hence requires anyone looking for support to show extensive attempts to fix their own problem before he will help.
 
-Linux Mint uses the pacman (and yes, I got the case right, it is stylized such that lower case letters are appropriate) command-line package manager of Arch Linux, by default, although Yaourt is also pre-installed, on at least most, Manjaro Linux installations. As previously mentioned one would run:
+Manjaro Linux uses the pacman (and yes, I got the case right, it is stylized such that lower case letters are appropriate) command-line package manager of Arch Linux, by default, although Yaourt is also pre-installed, on at least most, Manjaro Linux installations. The graphical pacman front-ends, Octopi and Pamac also come pre-installed on Manjaro. As previously mentioned one would run:
 
 {% include Code/codeu.html line1="yaourt -S $package" %}
 
@@ -19,4 +19,4 @@ to remove a package (beware, due to dependency issues, sometimes `yaourt -Rsc $p
 
 {% include Code/codeu.html line1="yaourt -Syua" %}
 
-to upgrade all installed packages, after first synchronizing the local pacman repository databases. 
+to upgrade all installed packages, after first synchronizing the local pacman repository databases checking for AUR package updates.

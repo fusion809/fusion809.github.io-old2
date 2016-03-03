@@ -23,10 +23,13 @@ A computer's **hardware** comprises the physical components of the computer, lik
 **Proprietary software** (**PS**) refers to software who's source code is licensed such that it cannot be freely and legally shared. PS is usually, for charge, that is you have to pay to use them. Although some PS is so called &ldquo;freeware&rdquo;, in other words, you can use it for free, but you cannot freely and legally access the program's source code.
 
 ### Fork
-In the field of software development, a **fork** or **project fork**, is when developers take a copy of the source code from one software project and start independently working on it (or developing it) themselves. In the FOSS world this is commonplace due to the lack of restrictions imposed by FOSS licenses.
+In the field of software development, a **fork** or **project fork**, is when developers take a copy of the source code from one software project and start independently working on it (or developing it) themselves. In the FOSS world this is commonplace due to the relative lack of restrictions imposed by FOSS licenses.
 
 ### Downstream / Upstream
 In software development, **downstream** and **upstream** refers to the direction from and toward the original authors or maintainers of software that is distributed as source code, respectively.
+
+### Back-End / Front-End
+In computing, the terms **back-end** and **front-end** are used together to refer to a relationship between two programs. The front-end program runs the back-end program in the background (often without the user noticing), to perform a specified action (usually package management on this site), but usually the front-end has some higher-level features that it brings to the table, that the back-end program lacks. Quite often, on this site, I will refer to graphical package managers as being front-ends for a command-line package manager, which the graphical package manager will run in the background. What the graphical package manager brings to the table is a more intuitive user interface.
 
 ### Operating System
 An **operating system** (**OS**) is the base set of system software that forms the foundation for other programs to run on top of. It manages all communication between the computer's hardware and the application software that run on top of it. At its heart, each OS has what is known as a kernel, which manages all communication with the computer's hardware.
