@@ -6,4 +6,8 @@ where `$CONTAINER` is the Docker container's ID, `$SRC_PATH` is the path of the 
 
 {% include Code/codeu.html line1="docker ps -a" %}
 
-When I am working with ebuilds or PKGBUILDs, however, I usually prefer to cut the middle-man out and push the changes I made locally to the file's respective git repository. 
+which for me, for example, returns:
+
+{% include Links/image.html image="docker-psa.png" float="right" %}
+
+When I am working with ebuilds or PKGBUILDs, however, I usually prefer to cut the middle-man out and push the changes I made locally to the file's respective git repository.
