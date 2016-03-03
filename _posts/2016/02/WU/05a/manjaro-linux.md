@@ -6,3 +6,17 @@
 You can install just about any Linux-compatible program (including proprietary programs) on Manjaro, either from its own repositories or from the [Arch User Repository](https://aur.archlinux.org) (AUR) of Arch Linux, which I am afraid is best accessed from the command-line. Fortunately, the most popular and arguably best tool for installing packages from the AUR, Yaourt (`yaourt` from the command-line) comes pre-installed on Manjaro Linux. If you find a package in the AUR you wish to install you simply need to run {% include Code/coders-rc.html line1="yaourt -S $package" %} where `$package` is to be replaced with the package's name. I would personally say that Manjaro has the greatest number of software packages available for easy installation of all distributions mentioned in this post. Manjaro Linux, like its parent Arch Linux, follows a rolling release model. What this means is that you never need to perform a distribution upgrade (that is, the type of upgrade mentioned in the Fedora section). Simply run your package manager (Octopi, Pamac or Yaourt) regularly to ensure your software is up-to-date.
 
 If you need free support for Manjaro I recommend you use either [their forums](https://forum.manjaro.org) or their IRC channel {% include Links/irc.html channel="manjaro" puncl="(" puncr=")." %} Their forums has at least one person, I have come across, that believes that Manjaro should be DIY, and hence requires anyone looking for support to show extensive attempts to fix their own problem before he will help.
+
+Linux Mint uses the pacman (and yes, I got the case right, it is stylized such that lower case letters are appropriate) command-line package manager of Arch Linux, by default, although Yaourt is also pre-installed, on at least most, Manjaro Linux installations. As previously mentioned one would run:
+
+{% include Code/codeu.html line1="yaourt -S $package" %}
+
+to install a package.
+
+{% include Code/codeu.html line1="yaourt -Rs $package" %}
+
+to remove a package (beware, due to dependency issues, sometimes `yaourt -Rsc $package` may be necessary) and:
+
+{% include Code/codeu.html line1="yaourt -Syua" %}
+
+to upgrade all installed packages, after first synchronizing the local pacman repository databases. 
