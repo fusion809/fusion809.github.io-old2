@@ -29,3 +29,9 @@ in order to perform actions within my `/dev/sda1` partition as root, including, 
 {% include Code/coder.html line1="equo update && equo upgrade" %}
 
 to update all the software on my Sabayon partition. This, if my understanding serves me correctly, is an example of virtualization using `chroot`.
+
+## Building Packages with Docker
+Docker can be used to build any Linux binary or source code package (if I am wrong, correct me, but every binary package I have attempted to build using it has succeeded) and to maintain ebuilds and PKGBUILDs for Gentoo and Arch Linux, respectively. The basic procedure boils down to:
+
+{% include_relative docker/procedure.html %}
+2.

@@ -1,0 +1,19 @@
+{% capture item1 %}
+{% include_relative docker/01-create-pull.md %}
+{% endcapture %}
+{% capture item2 %}
+{% include_relative docker/02-run.md %}
+{% endcapture %}
+{% capture item3 %}
+{% include_relative docker/03-copying-packages.md %}
+{% endcapture %}
+{% capture item4 %}
+{% include_relative docker/04-committing-changes.md %}
+{% endcapture %}
+{% include Layouts/note.md note1="Remember, however, that in some distributions you will need to be a member of the `docker` user group, in order to run Docker, a temporary workaround for users with `sudo` privileges is to add `sudo` to the start of the following Docker commands" %}
+<ol>
+  <li>{{ item1 | markdownify }}</li>
+  <li>{{ item2 | markdownify }}</li>
+  <li>{{ item3 | markdownify }}</li>
+  <li>{{ item4 | markdownify }}</li>
+</ol>
