@@ -5,3 +5,5 @@ Once you have built a package in your Docker container, the logical next step wo
 where `$CONTAINER` is the Docker container's ID, `$SRC_PATH` is the path of the package in the Docker container and `$DEST_PATH` is the destination path on one's local machine. The container ID can be determined by running:
 
 {% include Code/codeu.html line1="docker ps -a" %}
+
+When I am working with ebuilds or PKGBUILDs, however, I usually prefer to cut the middle-man out and push the changes I made locally to the file's respective git repository. 
