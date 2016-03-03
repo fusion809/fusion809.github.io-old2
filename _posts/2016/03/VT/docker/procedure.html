@@ -10,7 +10,7 @@
 {% capture item4 %}
 {% include_relative docker/04-committing-changes.md %}
 {% endcapture %}
-{% include Layouts/note.md note1="Remember, however, that in some distributions you will need to be a member of the `docker` user group, in order to run Docker, a temporary workaround for users with `sudo` privileges is to add `sudo` to the start of the following Docker commands" %}
+{% include Layouts/note.md note1="Remember, however, that in some distributions you will need to be a member of the `docker` user group (running `gpasswd -a $USER docker` as root should do the trick), in order to run Docker, a temporary workaround for users with `sudo` privileges is to add `sudo` to the start of each of the following Docker commands." %}
 <ol>
   <li>{{ item1 | markdownify }}</li>
   <li>{{ item2 | markdownify }}</li>
