@@ -17,6 +17,6 @@ and to update one's local software repository indexes, one would run:
 
 {% include Code/codeu.html line1="sudo apt-get update" %}
 
-Finally, to install all software upgrades that are available from enabled repositories (which should be done **after** running the aforementioned `sudo apt-get update` command, to update local repository indexes), one would run:
+Finally, to install all available software upgrades from enabled repositories (which should be done **after** running the aforementioned `sudo apt-get update` command, to update local repository indexes), one would run:
 
 {% include Code/codeu.html line1="sudo apt-get upgrade" %}
