@@ -14,3 +14,19 @@ It has seven main editions:
 * Server (useful for servers, I would not recommend using this edition as it has no desktop environment, by default)
 * Spinbase (pretty useless since the Anaconda installer was ditched. See it just has the command-line and its new installer cannot be run from the command-line)
 * Xfce
+
+Its officially supported package manager is Entropy, which installs packages with the `.tbz2` file extension. It has a command-line interface invoked by the command `equo` and a graphical user interface (GUI) called Rigo. To install a program with equo one would run:
+
+{% include Code/codeu.html line1="sudo equo install $package" %}
+
+while to uninstall (or remove) a program with Entropy, one simply runs:
+
+{% include Code/codeu.html line1="sudo equo remove $package" %}
+
+to update one's local package repositories, one runs:
+
+{% include Code/codeu.html line1="sudo equo update" %}
+
+to upgrade all software packages (which is best done after updating the local repositories, with the aforementioned command), one runs:
+
+{% include Code/codeu.html line1="sudo equo upgrade" %}
