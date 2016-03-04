@@ -3,7 +3,7 @@ layout:           post
 title:            "An Introduction to Linux for Windows Users"
 categories:       linux, newcomers, simplified
 date:             2016-02-24 +1000
-last_modified_at: 2016-03-03 12:44:32 +1000
+last_modified_at: 2016-03-04 12:26:53 +1000
 redirect_from:
   - /linux-newcomers/
   - /windows-users/
