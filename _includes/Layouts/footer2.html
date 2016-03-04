@@ -5,7 +5,12 @@
     <div style="font-size:20px;"><b>{{ site.title }}</b> <span style="font-size:12px;">(<a href="https://github.com/{{ site.github_repo }}" link="_blank">source</a>)</span></div>
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1" style="width:550px">
+
+      <div class="footer-col footer-col-1" style="width:500px;">
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="footer-col footer-col-2" style="width:550px">
         <ul class="contact-list">
           <li>Like reading <i>The Hornery</i>? Star us on <a href="https://github.com/fusion809/fusion809.github.io">GitHub</a>!</li>
           <li>Got corrections or improvement ideas? Great, <a href="/contributing/">Tell me!</a></li>
@@ -13,7 +18,7 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="footer-col footer-col-3" style="width:150px;">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -40,10 +45,6 @@
           {% endif %}
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-3" style="width:350px;">
-        <p>{{ site.description }}</p>
       </div>
 
       <div class="copyright footer-col">
