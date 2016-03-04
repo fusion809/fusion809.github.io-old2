@@ -5,10 +5,11 @@
     <div style="font-size:20px;"><b>{{ site.title }}</b> <span style="font-size:12px;">(<a href="https://github.com/{{ site.github_repo }}" link="_blank">source</a>)</span></div>
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col footer-col-1" style="width:550px">
         <ul class="contact-list">
-          <li>Got corrections or improvement ideas? <a href="/contributing/">Tell me!</a></li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>Like reading <i>The Hornery</i>? Star us on <a href="https://github.com/fusion809/fusion809.github.io">GitHub</a>!</li>
+          <li>Got corrections or improvement ideas? Great, <a href="/contributing/">Tell me!</a></li>
+          <li>Want notifications on new posts? Like us on <a href="https://www.facebook.com/sabayon.blog.77/">Facebook</a> or use our <a href="/feed">Atom feed</a>.</li>
         </ul>
       </div>
 
@@ -37,6 +38,7 @@
             {% include Layouts/icon-facebook.html username=site.facebook_name2 username2=site.facebook_username2 %}
           </li>
           {% endif %}
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
 
