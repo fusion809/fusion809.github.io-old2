@@ -34,11 +34,18 @@ In computing, the terms **back-end** and **front-end** are used together to refe
 ### Operating System
 An **operating system** (**OS**) is the base set of system software that forms the foundation for other programs to run on top of. It manages all communication between the computer's hardware and the application software that run on top of it. At its heart, each OS has what is known as a kernel, which manages all communication with the computer's hardware.
 
+### Kernel
+An operating system **kernel** is the piece of system software that manages all communication between a computer's hardware and its software. Most kernels also perform virtual memory allocation. Some of this virtual memory is allocated to the kernel (which is called **kernel mode**), the rest is allocated to the user's processes (or **user mode**, application software run in user mode). It is in many ways the operating system's brain, without it the OS will not work. There are three main types of operating system kernel, based on their respective design:
+
+* **Hybrid kernel** &mdash; as its name suggest it is mid-way between the below designs. Examples include the kernels of OS X and Windows NT.
+* **Microkernel** (or **&mu;kernel**) &mdash; kernels that keep as few processes running in kernel mode as possible. They, as their name suggest, usually do the bare minimum needed of a kernel. Consequently, the number of lines of code in their source code is usually substantially less than their monolithic counterparts. Extreme variants of microkernels include nanokernels and picokernels, which have even fewer lines of source code. The most notable example is MINIX. 
+* **Monolithic kernel** &mdash; these are kernels that perform all operating system functions in kernel mode. They usually consist of far greater lines of code than their microkernel counterparts. The most notable examples are the FreeBSD, Linux, NetBSD and OpenBSD kernels.
+
 ### Unix
 **Unix** (or **UNIX** for the trademark) is a family of operating systems that share several common characteristics and are certified as being compliant to at least one version of the **Single UNIX Specification** (**SUS**). These common characteristics are best summarized with what is sometimes called the "**Unix philosophy**". The Unix philosophy is that the operating system provides a set of simple command-line tools or utilities (which I will sometimes refer to as Unix utilities) that perform a limited, well-defined function, which usually involves manipulating components (like files) in the unified file system that is also characteristic of Unix systems. Additionally Unix systems also have what is known as a command language or shell scripting language, called a **Unix shell**, with which users can call on these simple tools. Unix is also notable in that it is designed to be easily portable to a variety of different computers (distinguished from one another, mostly by the details of their CPU).
 
 ### Unix-like
-A **unix-like** operating system is one that behaves and to all the world seems like a Unix system, despite not being certified to any version of the SUS. These systems can also be referred to as Unix clones.
+A **unix-like** operating system is one that behaves and to all the world seems like a Unix system, despite not being certified compliant to any version of the SUS. These systems can also be referred to as Unix clones. The only real practical difference between Unix and Unix-like systems are that Unix systems are usually developed by a commercial entity with the funds required to get their system SUS-certified.
 
 ### &#42;nix
 **&#42;nix** is my shorthand way of referring collectively to both Unix and Unix-like systems. Despite this, you will also see other authors, including those that know far more than I about Linux, using &#42;nix to refer to just Unix-like systems.
