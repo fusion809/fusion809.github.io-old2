@@ -2,7 +2,7 @@
 layout:           page
 title:            "Glossary"
 date:             2016-02-06 +1000
-last_modified_at: 2016-02-13 18:47:09 +1000
+last_modified_at: 2016-03-04 17:25:52 +1000
 permalink:        /glossary/
 ---
 
@@ -10,8 +10,11 @@ In this website I frequently discuss topics that require some degree of pre-exis
 
 ## Basic Definitions
 
-### Hardware / Software
-A computer's **hardware** comprises the physical components of the computer, like its hard drive on which information is stored (analogous to a person's long-term memory), random-access memory (RAM) devices (analogous to someone's working memory) and central processing unit (CPU) or processor (which is where information processing is done, this processing is analogous to a person's thoughts). The term "computer architecture" refers to the specific details of the computer's CPU. While a computer's **software** is the non-physical components to the computer, which are stored in the computer's hard drive. It includes the data stored on the hard drive like one's files as well as the computer programs, which are more or less just instructions for the computer's processor. For example, as I am writing this post I am using the Atom text editor, which is a computer program.
+### Hardware
+A computer's **hardware** comprises the physical components of the computer, like its hard drive on which information is stored (analogous to a person's long-term memory), random-access memory (RAM) devices (analogous to someone's working memory) and central processing unit (CPU) or processor (which is where information processing is done, this processing is analogous to a person's thoughts). The term "computer architecture" refers to the specific details of the computer's CPU.
+
+### Software
+A computer's **software** are the non-physical components to the computer, which are stored in the computer's hard drive. It includes the data stored on the hard drive like one's files as well as the computer programs, which are more or less just instructions for the computer's processor. For example, as I am writing this post I am using the Atom text editor, which is a computer program.
 
 ### Source Code
 **Source code** is a collection of computer instructions written in at least one human-readable computer language. The type of computer language most frequently-used to write computer programs are so called &ldquo;programming languages&rdquo; such as C, C++, Python, *etc.* Other common computer languages sometimes used to write computer programs (usually alongside programming languages) include markup languages (like HTML and Markdown) and style sheet languages (like CSS). For example, the Atom text editor is written in CoffeeScript, HTML, JavaScript and CSS, where CoffeeScript and JavaScript are programming languages.
@@ -37,7 +40,9 @@ An **operating system** (**OS**) is the base set of system software that forms t
 * FreeBSD
 * Linux
 * Mac OS
+* MS-DOS
 * OS X
+* Windows 1.0 to Windows ME (including Windows 95 and 98)
 * Windows NT (including Windows XP, Vista, 7, 8, 10, *etc*)
 
 ### Kernel
@@ -91,4 +96,6 @@ A **Linux distribution** (**LD** or **distro**) is an individual, specific, oper
 
 * **ABS**: [**Arch Build System**](https://wiki.archlinux.org/index.php/Arch_Build_System), a system whereby all the PKGBUILDs, patch files and assorted other files used to build packages in the pacman repositories are stored in subdirectories of `/var/abs`. It is essentially Arch's equivalent to the Portage Tree.
 * **AUR**: [**Arch User Repository**](https://wiki.archlinux.org/index.php/Arch_User_Repository), a repository of Arch user-supplied PKGBUILDs, patch files and assorted other files that, while they are not used to build any packages in the pacman repositories, can (provided they do not have any bugs preventing them from building successfully, that is) be used to build Arch packages locally (on their own Arch machine) by users.
+* **Deb**: the package format used by Debian's dpkg package manager.
 * **PC**: **Personal computer**. Can be a desktop or laptop, does not matter if it once ran OS X or Windows, still to me it is a PC.
+* **RPM**: [**RPM Package Manager**](http://rpm.org/), originally **Red Hat Package Manager**. This is the name of both a package manager and the package format used by this package manager.
