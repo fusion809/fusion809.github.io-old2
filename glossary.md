@@ -11,7 +11,7 @@ In this website I frequently discuss topics that require some degree of pre-exis
 ## Basic Definitions
 
 ### Hardware
-A computer's **hardware** comprises the physical components of the computer, like its **hard drive** (or **hard disk drive** [**HDD**]) on which information is stored (analogous to a person's long-term memory), **random-access memory** (**RAM**) devices (analogous to someone's working memory) and **central processing unit** (**CPU**) or processor (which is where information processing is done, this processing is analogous to a person's thoughts). The term "computer architecture" refers to the specific details of the computer's CPU.
+A computer's **hardware** comprises the physical components of the computer, like its **hard drive** (or **hard disk drive** [**HDD**]) on which information is stored (analogous to a person's long-term memory), **random-access memory** (**RAM**) devices (analogous to someone's working memory) and **central processing unit** (**CPU**) or processor (which is where information processing is done, this processing is analogous to a person's thoughts). The term "computer architecture" or "**instruction set architecture**" (**ISA**) refers to the set of instructions that the CPU, in question, can understand. 
 
 ### Software
 A computer's **software** are the non-physical components to the computer, which are stored in the computer's hard drive. It includes the data stored on the hard drive like one's files as well as the computer programs, which are more or less just instructions for the computer's processor. For example, as I am writing this post I am using the Atom text editor, which is a computer program.
