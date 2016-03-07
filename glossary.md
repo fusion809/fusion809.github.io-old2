@@ -11,7 +11,7 @@ In this website I frequently discuss topics that require some degree of pre-exis
 ## Basic Definitions
 
 ### Hardware
-A computer's **hardware** comprises the physical components of the computer, like its **hard drive** (or **hard disk drive** [**HDD**]) on which information is stored (analogous to a person's long-term memory), **random-access memory** (**RAM**) devices (analogous to someone's working memory) and **central processing unit** (**CPU**) or processor (which is where information processing is done, this processing is analogous to a person's thoughts). The term "computer architecture" or "**instruction set architecture**" (**ISA**) refers to the set of instructions that the CPU, in question, can understand. 
+A computer's **hardware** comprises the physical components of the computer, like its **hard drive** (or **hard disk drive** [**HDD**]) on which information is stored (analogous to a person's long-term memory), **random-access memory** (**RAM**) devices (analogous to someone's working memory) and **central processing unit** (**CPU**) or processor (which is where information processing is done, this processing is analogous to a person's thoughts). The term "computer architecture" or "**instruction set architecture**" (**ISA**) refers to the set of instructions that the CPU, in question, can understand.
 
 ### Software
 A computer's **software** are the non-physical components to the computer, which are stored in the computer's hard drive. It includes the data stored on the hard drive like one's files as well as the computer programs, which are more or less just instructions for the computer's processor. For example, as I am writing this post I am using the Atom text editor, which is a computer program.
@@ -26,13 +26,13 @@ A computer's **software** are the non-physical components to the computer, which
 **Proprietary software** (**PS**) refers to software who's source code is licensed such that it cannot be freely and legally shared. PS is usually, for charge, that is you have to pay to use them. Although some PS is so called &ldquo;freeware&rdquo;, in other words, you can use it for free, but you cannot freely and legally access the program's source code.
 
 ### Fork
-In the field of software development, a **fork** or **project fork**, is when developers take a copy of the source code from one software project and start independently working on it (or developing it) themselves. In the FOSS world this is commonplace due to the relative lack of restrictions imposed by FOSS licenses.
+A **fork** or **project fork**, is when developers take a copy of the source code from one software project and start independently working on it (or developing it) themselves. In the FOSS world this is commonplace due to the relative lack of restrictions imposed by FOSS licenses.
 
 ### Downstream / Upstream
-In software development, **downstream** and **upstream** refers to the direction from and toward the original authors or maintainers of software that is distributed as source code, respectively.
+The terms **downstream** and **upstream** refers to the direction from and toward the original authors or maintainers of software that is distributed as source code, respectively.
 
 ### Back-End / Front-End
-In computing, the terms **back-end** and **front-end** are used together to refer to a relationship between two programs. The front-end program runs the back-end program in the background (often without the user noticing), to perform a specified action (usually package management on this site), but usually the front-end has some higher-level features that it brings to the table, that the back-end program lacks. Quite often, on this site, I will refer to graphical package managers as being front-ends for a command-line package manager, which the graphical package manager will run in the background. What the graphical package manager brings to the table is a more intuitive user interface.
+The terms **back-end** and **front-end** are used together to refer to a relationship between two programs. The front-end program runs the back-end program in the background (often without the user noticing), to perform a specified action (usually package management on this site), but usually the front-end has some higher-level features that it brings to the table, that the back-end program lacks. Quite often, on this site, I will refer to graphical package managers as being front-ends for a command-line package manager, which the graphical package manager will run in the background. What the graphical package manager brings to the table is a more intuitive user interface.
 
 ### Operating System
 An **operating system** (**OS**) is the base set of system software that forms the foundation for other programs to run on top of. It manages all communication between the computer's hardware and the application software that run on top of it. At its heart, each OS has what is known as a kernel, which manages all communication with the computer's hardware. Notable examples of operating systems, include:

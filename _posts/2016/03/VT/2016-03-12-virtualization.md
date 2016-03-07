@@ -34,3 +34,5 @@ to update all the software on my Sabayon partition. This, if my understanding se
 Docker can be used to build any Linux binary or source code package (if I am wrong, correct me, but every binary package I have attempted to build using it has succeeded) and to maintain ebuilds and PKGBUILDs for Gentoo and Arch Linux, respectively. The basic procedure boils down to:
 
 {% include_relative docker/procedure.html %}
+
+## Installing Operating Systems in VirtualBox
