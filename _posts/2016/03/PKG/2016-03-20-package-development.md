@@ -3,9 +3,9 @@ layout:           post
 title:            "An Introduction to Building Packages for Linux"
 date:             2016-03-20 +1000
 categories:       package-development, linux
-last_modified_at: 2016-03-07
+last_modified_at: 2016-03-07 17:25:00 +1000
 permalink:
-  - /package-development/
+  - /2016/03/20/package-development/
 ---
 
 Something I frequently do on whichever Linux distribution I find myself on, is I build packages. It is infinitesimally rare, in fact so rare that I have not ever come across such a case, for a distribution to have every exact package (including package version) I want. Package development, for me, is done via one of four major methods:
