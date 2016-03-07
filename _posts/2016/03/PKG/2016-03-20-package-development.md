@@ -17,9 +17,9 @@ Something I frequently do on whichever Linux distribution I find myself on (incl
 Fedora users also have another method available to them for building packages, [**Copr**](https://copr.fedorainfracloud.org/). **Copr** is similar to the OBS in that it builds packages and creates package repositories in which to store them, but unlike the OBS Copr can optionally provide packages with Internet access during the build and can only be used to build Fedora packages.
 
 ## Package Formats: The Basics
-There are four major types of Linux package format that I worked with:
+In order to effectively build packages one must understand the basics of the format. There are four major types of Linux package format that I worked with:
 
 * **Arch Linux packages** (**ALP**, file extension: `.pkg.tar.xz`; built from PKGBUILD files), the package format used by Arch Linux, its derivatives and select "independent" distributions such as Frugalware and KaOS.
 * **Debian packages** (or **Deb packages**, file extension: `.deb`), the package format used by Debian and its derivatives such as Ubuntu and its derivative, Linux Mint.
-* **RPM packages** (file extensions: `.rpm`, `.src.rpm`), the package format used by select distributions such as CentOS, Fedora, Mageia and openSUSE.
-* **tbz2 packages** (file extension: `.tbz2`; built from ebuild files), the package format used by Gentoo Linux and its derivatives like Sabayon Linux. 
+* **RPM packages** (file extensions: `.rpm`, `.src.rpm`), a package format used by select distributions such as CentOS, Fedora, Mageia and openSUSE.
+* **tbz2 packages** (file extension: `.tbz2`; built from ebuild files), the package format used by Gentoo Linux and its derivatives like Sabayon Linux.
