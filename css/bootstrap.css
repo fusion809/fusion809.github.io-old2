@@ -235,7 +235,7 @@ table {
   }
   a[href^="javascript:"]:after,
 
-  
+
   a[href^="#"]:after {
     content: "";
   }
