@@ -1,0 +1,3339 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Tue Mar  8 20:40:15 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>OSC</title>
+
+</head>
+<body>
+
+<h1 align="center">OSC</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">osc &minus;
+openSUSE build service command-line tool.</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>osc</b>
+[<i>GLOBALOPTS</i>] <i>SUBCOMMAND</i> [<i>OPTS</i>]
+[<i>ARGS</i>...] <b><br>
+osc</b> <i>help SUBCOMMAND</i></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">openSUSE build
+service command-line tool.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>COMMANDS</b></p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>add</b></p></td>
+<td width="7%"></td>
+<td width="66%">
+
+
+<p>Mark files to be added upon the next commit</p></td>
+<td width="12%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">In case a URL
+is given the file will get downloaded and registered to be
+downloaded by the server as well via the download_url source
+service.</p>
+
+<p style="margin-left:22%; margin-top: 1em">This is
+recommended for release tar balls to track their source and
+to help others to review your changes esp. on version
+upgrades.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc add URL [URL...] <br>
+osc add FILE [FILE...]</p>
+
+<p style="margin-left:11%;"><b>addchannels</b></p>
+
+<p style="margin-left:22%;">Add channels to project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The command
+adds all channels which are defined to be used for a given
+source package. The source link target is used to lookup the
+channels. The command can be used for a certain package or
+for all in the specified project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">In case no
+channel is defined the operation is just returning.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc addchannels [PROJECT [PACKAGE]] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;e, &minus;&minus;enable&minus;all <br>
+Enable all added channels including the ones disabled <br>
+by default. <br>
+&minus;s, &minus;&minus;skip&minus;disabled <br>
+Skip disabled channels. Otherwise the source gets <br>
+added, but not the repositories.</p>
+
+<p style="margin-left:11%;"><b>addremove (ar)</b></p>
+
+<p style="margin-left:22%;">Adds new files, removes
+disappeared files</p>
+
+<p style="margin-left:22%; margin-top: 1em">Adds all files
+new in the local copy, and removes all disappeared
+files.</p>
+
+<p style="margin-left:22%; margin-top: 1em">ARG, if
+specified, is a package working copy.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc addremove [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;r, &minus;&minus;recursive <br>
+If CWD is a project dir then scan all package dirs as <br>
+well</p>
+
+<p style="margin-left:11%;"><b>aggregatepac</b></p>
+
+<p style="margin-left:22%;">&quot;Aggregate&quot; a package
+to another package</p>
+
+<p style="margin-left:22%; margin-top: 1em">Aggregation of
+a package means that the build results (binaries) of a
+package are basically copied into another project. This can
+be used to make packages available from building that are
+needed in a project but available only in a different
+project. Note that this is done at the expense of disk
+space. See
+http://en.opensuse.org/openSUSE:Build_Service_Tips_and_Tricks#link_and_aggregate
+for more information.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The DESTPAC
+name is optional; the source packages&rsquo; name will be
+used if DESTPAC is omitted.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc aggregatepac SOURCEPRJ SOURCEPAC DESTPRJ [DESTPAC]
+Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;d, &minus;&minus;disable&minus;publish <br>
+disable publishing of the aggregated package <br>
+&minus;m SRC=TARGET[,SRC=TARGET],
+&minus;&minus;map&minus;repo=SRC=TARGET[,SRC=TARGET] <br>
+Allows repository mapping(s) to be given as <br>
+SRC=TARGET[,SRC=TARGET] <br>
+&minus;&minus;nosources <br>
+ignore source packages when copying build results to <br>
+destination project</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>api</b></p></td>
+<td width="7%"></td>
+<td width="56%">
+
+
+<p>Issue an arbitrary request to the API</p></td>
+<td width="22%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Useful for
+testing.</p>
+
+<p style="margin-left:22%; margin-top: 1em">URL can be
+specified either partially (only the path component), or
+fully with URL scheme and hostname
+(&rsquo;http://...&rsquo;).</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note the global
+&minus;A and &minus;H options (see osc help).</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc api /source/home:user <br>
+osc api &minus;X PUT &minus;T /etc/fstab
+source/home:user/test5/myfstab <br>
+osc api &minus;e /configuration</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc api URL</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;a NAME STRING, &minus;&minus;add&minus;header=NAME
+STRING <br>
+add the specified header to the request <br>
+&minus;T FILE, &minus;f FILE, &minus;&minus;file=FILE <br>
+specify filename to upload, uses PUT mode by default <br>
+&minus;d STRING, &minus;&minus;data=STRING <br>
+specify string data for e.g. POST <br>
+&minus;e, &minus;&minus;edit GET, edit and PUT the location
+<br>
+&minus;X HTTP_METHOD, &minus;m HTTP_METHOD,
+&minus;&minus;method=HTTP_METHOD <br>
+specify HTTP method to use (GET|PUT|DELETE|POST)</p>
+
+<p style="margin-left:11%;"><b>branch (bco, branchco,
+getpac)</b></p>
+
+<p style="margin-left:22%;">Branch a package</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://en.opensuse.org/openSUSE:Build_Service_Collaboration
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Create a source
+link from a package of an existing project to a new
+subproject of the requesters home project
+(home:branches:)</p>
+
+<p style="margin-left:22%; margin-top: 1em">The branched
+package will live in <br>
+home:USERNAME:branches:PROJECT/PACKAGE if nothing else
+specified.</p>
+
+<p style="margin-left:22%; margin-top: 1em">With getpac or
+bco, the branched package will come from one of <br>
+openSUSE:Factory (list of projects from
+oscrc:getpac_default_project) if nothing else is specfied on
+the command line.</p>
+
+<p style="margin-left:22%; margin-top: 1em">In case of
+branch errors, where the source has currently merge
+conflicts use &minus;&minus;linkrev=base option.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc branch <br>
+osc branch SOURCEPROJECT SOURCEPACKAGE <br>
+osc branch SOURCEPROJECT SOURCEPACKAGE TARGETPROJECT <br>
+osc branch SOURCEPROJECT SOURCEPACKAGE TARGETPROJECT
+TARGETPACKAGE <br>
+osc getpac SOURCEPACKAGE <br>
+osc bco ... Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+
+&minus;&minus;add&minus;repositories&minus;rebuild=add_repositories_rebuild
+<br>
+specify the used rebuild strategy for new repositories <br>
+
+&minus;&minus;add&minus;repositories&minus;block=add_repositories_block
+<br>
+specify the used block strategy for new repositories <br>
+&minus;&minus;linkrev=linkrev <br>
+specify the used revision in the link target. <br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+branch against a specific revision <br>
+&minus;N, &minus;&minus;new&minus;package <br>
+create a branch pointing to a not yet existing package <br>
+&minus;M, &minus;&minus;maintenance <br>
+Create project and package in maintenance mode <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT <br>
+&minus;&minus;noaccess Create a hidden project <br>
+&minus;&minus;extend&minus;package&minus;names <br>
+Extend packages names with project name as suffix <br>
+&minus;&minus;add&minus;repositories <br>
+Add repositories to target project (happens by default <br>
+when project is new) <br>
+&minus;f, &minus;&minus;force <br>
+force branch, overwrite target <br>
+&minus;c, &minus;&minus;checkout <br>
+Checkout branched package afterwards using &quot;co &minus;e
+<br>
+&minus;S&quot;(&rsquo;osc bco&rsquo; is a shorthand for this
+option) <br>
+&minus;&minus;nodevelproject <br>
+do not follow a defined devel project (primary project <br>
+where a package is developed)</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>build</b></p></td>
+<td width="4%"></td>
+<td width="56%">
+
+
+<p>Build a package on your local machine</p></td>
+<td width="22%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">You need to
+call the command inside a package directory, which should be
+a buildsystem checkout. (Local modifications are fine.)</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH can be taken from the first two columns
+of the &rsquo;osc repos&rsquo; output. BUILD_DESCR is either
+a RPM spec file, or a Debian dsc file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The command
+honours packagecachedir, build-root and build-uid settings
+in .oscrc, if present. You may want to set su-wrapper =
+&rsquo;sudo&rsquo; in .oscrc, and configure sudo with option
+NOPASSWD for /usr/bin/build.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If neither
+&minus;&minus;clean nor &minus;&minus;noinit is given, build
+will reuse an existing build-root again, removing unneeded
+packages and add missing ones. This is usually the fastest
+option.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If the package
+doesn&rsquo;t exist on the server please use the
+&minus;&minus;local&minus;package option. If the project of
+the package doesn&rsquo;t exist on the server please use the
+&minus;&minus;alternative&minus;project
+&lt;alternative-project&gt; option: Example: <br>
+osc build [OPTS] &minus;&minus;alternative&minus;project
+openSUSE:10.3 standard i586 BUILD_DESCR</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc build [OPTS] REPOSITORY ARCH BUILD_DESCR <br>
+osc build [OPTS] REPOSITORY ARCH <br>
+osc build [OPTS] REPOSITORY (ARCH = hostarch, BUILD_DESCR is
+detected automatically) <br>
+osc build [OPTS] ARCH (REPOSITORY = build_repository (config
+option), BUILD_DESCR is detected automatically) <br>
+osc build [OPTS] BUILD_DESCR (REPOSITORY = build_repository
+(config option), ARCH = hostarch) <br>
+osc build [OPTS] (REPOSITORY = build_repository (config
+option), ARCH = hostarch, BUILD_DESCR is detected
+automatically)</p>
+
+<p style="margin-left:22%; margin-top: 1em"># Note: #
+Configuration can be overridden by envvars, e.g. #
+OSC_SU_WRAPPER overrides the setting of su-wrapper. #
+OSC_BUILD_ROOT overrides the setting of build-root. #
+OSC_PACKAGECACHEDIR overrides the setting of
+packagecachedir.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;trust&minus;all&minus;projects <br>
+trust packages from all projects <br>
+&minus;&minus;host=HOST <br>
+perform the build on a remote server &minus; <br>
+user@server:~/remote/directory <br>
+&minus;&minus;oldpackages=DIR <br>
+take previous build from DIR (special values: _self, <br>
+_link) <br>
+&minus;&minus;download&minus;api&minus;only <br>
+only fetch packages from the api <br>
+&minus;&minus;disable&minus;cpio&minus;bulk&minus;download
+<br>
+disable downloading packages as cpio archive from api <br>
+&minus;&minus;release=N <br>
+set release number of the package to N <br>
+&minus;b, &minus;&minus;baselibs <br>
+Create &minus;32bit/-64bit/-x86 rpms for other architectures
+<br>
+&minus;&minus;disable&minus;debuginfo <br>
+disable build of debuginfo packages <br>
+&minus;d, &minus;&minus;debuginfo <br>
+also build debuginfo sub-packages <br>
+&minus;&minus;alternative&minus;project=PROJECT <br>
+specify the build target project <br>
+&minus;&minus;target=TARGET <br>
+define target platform <br>
+&minus;&minus;vm&minus;telnet=TELNET <br>
+Launch a telnet server inside of VM build <br>
+&minus;&minus;vm&minus;type=TYPE <br>
+use VM type TYPE (e.g. kvm) <br>
+&minus;&minus;linksources <br>
+use hard links instead of a deep copied source <br>
+&minus;&minus;local&minus;package <br>
+build a package which does not exist on the server <br>
+&minus;&minus;build&minus;uid=uid:gid|&quot;caller&quot;
+<br>
+specify the numeric uid:gid pair to assign to the <br>
+unprivileged &quot;abuild&quot; user or use
+&quot;caller&quot; to use the <br>
+current user uid:gid <br>
+&minus;&minus;userootforbuild <br>
+Run build as root. The default is to build as <br>
+unprivileged user. Note that a line &quot;#
+norootforbuild&quot; <br>
+in the spec file will invalidate this option. <br>
+&minus;&minus;define=&rsquo;X Y&rsquo; <br>
+define macro X with value Y <br>
+&minus;&minus;without=X <br>
+disable feature X for build <br>
+&minus;&minus;with=X enable feature X for build <br>
+&minus;&minus;ccache use ccache to speed up rebuilds <br>
+&minus;&minus;icecream=N <br>
+use N parallel build jobs with icecream <br>
+&minus;t N, &minus;&minus;threads=N <br>
+Compile with N threads <br>
+&minus;j N, &minus;&minus;jobs=N <br>
+Compile with N jobs <br>
+&minus;&minus;root=ROOT <br>
+Build in specified directory <br>
+&minus;x PAC, &minus;&minus;extra&minus;pkgs=PAC <br>
+Add this package when installing the build-root <br>
+&minus;k DIR, &minus;&minus;keep&minus;pkgs=DIR <br>
+Save built packages into this directory <br>
+&minus;p DIR, &minus;&minus;prefer&minus;pkgs=DIR <br>
+Prefer packages from this directory when installing <br>
+the build-root <br>
+&minus;&minus;noservice, &minus;&minus;no&minus;service <br>
+Skip run of local source services as specified in <br>
+_service file. <br>
+&minus;&minus;no&minus;verify, &minus;&minus;noverify <br>
+Skip signature verification of packages used for <br>
+build. (Global config in .oscrc: no_verify) <br>
+&minus;&minus;nochecks, &minus;&minus;no&minus;checks <br>
+Do not run build checks on the resulting packages. <br>
+&minus;&minus;noinit, &minus;&minus;no&minus;init <br>
+Skip initialization of build root and start with build <br>
+immediately. <br>
+&minus;&minus;overlay=OVERLAY <br>
+Copy overlay filesystem to buildroot after installing <br>
+all RPMs . <br>
+&minus;&minus;rsync&minus;dest=RSYNCDESTPATH <br>
+Copy folder to buildroot after installing all RPMs. <br>
+Use together with &minus;&minus;rsync&minus;src. This is the
+path on the <br>
+TARGET filesystem e.g. <br>
+/usr/src/packages/BUILD/linux-2.6 . <br>
+&minus;&minus;rsync&minus;src=RSYNCSRCPATH <br>
+Copy folder to buildroot after installing all RPMs. <br>
+Use together with &minus;&minus;rsync&minus;dest. This is
+the path on <br>
+the HOST filesystem e.g. /tmp/linux-kernel-tree. It <br>
+defines RSYNCDONE 1 . <br>
+&minus;&minus;no&minus;changelog <br>
+don&rsquo;t update the package changelog from a changes file
+<br>
+&minus;l, &minus;&minus;preload <br>
+Preload all files into the cache for offline operation <br>
+&minus;o, &minus;&minus;offline <br>
+Start with cached prjconf and packages without <br>
+contacting the api server <br>
+&minus;&minus;clean Delete old build root before
+initializing it</p>
+
+<p style="margin-left:11%;"><b>buildconfig</b></p>
+
+<p style="margin-left:22%;">Shows the build config</p>
+
+<p style="margin-left:22%; margin-top: 1em">Shows the build
+configuration which is used in building a package. This
+command is mostly used internally by the &rsquo;build&rsquo;
+command.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The returned
+data is the project-wide build configuration in a format
+which is directly readable by the build script. It contains
+RPM macros and BuildRequires expansions, for example.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The argument
+REPOSITORY an be taken from the first column of the <br>
+&rsquo;osc repos&rsquo; output.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc buildconfig REPOSITORY (in pkg or prj dir) <br>
+osc buildconfig PROJECT REPOSITORY</p>
+
+<p style="margin-left:11%;"><b>buildhistory
+(buildhist)</b></p>
+
+<p style="margin-left:22%;">Shows the build history of a
+package</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH can be taken from the first two columns
+of the &rsquo;osc repos&rsquo; output.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc buildhist REPOSITORY ARCHITECTURE <br>
+osc buildhist PROJECT PACKAGE REPOSITORY ARCHITECTURE
+Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;l limit, &minus;&minus;limit=limit <br>
+for setting the number of results <br>
+&minus;&minus;csv generate output in CSV (separated by
+|)</p>
+
+<p style="margin-left:11%;"><b>buildinfo</b></p>
+
+<p style="margin-left:22%;">Shows the build info</p>
+
+<p style="margin-left:22%; margin-top: 1em">Shows the build
+&quot;info&quot; which is used in building a package. This
+command is mostly used internally by the &rsquo;build&rsquo;
+subcommand. It needs to be called from within a package
+directory.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The BUILD_DESCR
+argument is optional. BUILD_DESCR is a local RPM specfile or
+Debian &quot;dsc&quot; file. If specified, it is sent to the
+server, and the buildinfo will be based on it. If the
+argument is not supplied, the buildinfo is derived from the
+specfile which is currently on the source repository
+server.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The returned
+data is XML and contains a list of the packages used in
+building, their source, and the expanded BuildRequires.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH are optional. They can be taken from the
+first two columns of the &rsquo;osc repos&rsquo; output. If
+not specified, REPOSITORY defaults to the
+&rsquo;build_repositoy&rsquo; config entry in your
+&rsquo;.oscrc&rsquo; and ARCH defaults to your host
+architecture.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+in a package working copy: <br>
+osc buildinfo [OPTS] REPOSITORY ARCH BUILD_DESCR <br>
+osc buildinfo [OPTS] REPOSITORY (ARCH = hostarch,
+BUILD_DESCR is detected automatically) <br>
+osc buildinfo [OPTS] ARCH (REPOSITORY = build_repository
+(config option), BUILD_DESCR is detected automatically) <br>
+osc buildinfo [OPTS] BUILD_DESCR (REPOSITORY =
+build_repository (config option), ARCH = hostarch) <br>
+osc buildinfo [OPTS] (REPOSITORY = build_repository (config
+option), ARCH = hostarch, BUILD_DESCR is detected
+automatically) <br>
+Note: if BUILD_DESCR does not exist locally the remote
+BUILD_DESCR is used</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc buildinfo
+[OPTS] PROJECT PACKAGE REPOSITORY ARCH [BUILD_DESCR]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;p DIR, &minus;&minus;prefer&minus;pkgs=DIR <br>
+Prefer packages from this directory when installing <br>
+the build-root <br>
+&minus;x PAC, &minus;&minus;extra&minus;pkgs=PAC <br>
+Add this package when computing the buildinfo <br>
+&minus;d, &minus;&minus;debug <br>
+verbose output of build dependencies</p>
+
+<p style="margin-left:11%;"><b>buildlog (bl, blt,
+buildlogtail)</b></p>
+
+<p style="margin-left:22%;">Shows the build log of a
+package</p>
+
+<p style="margin-left:22%; margin-top: 1em">Shows the log
+file of the build of a package. Can be used to follow the
+log while it is being written. Needs to be called from
+within a package directory.</p>
+
+<p style="margin-left:22%; margin-top: 1em">When called as
+buildlogtail (or blt) it just shows the end of the logfile.
+This is useful to see just a build failure reasons.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH are the first two columns in the
+&rsquo;osc results&rsquo; output. If the buildlog url is
+used buildlog command has the same behavior as
+remotebuildlog.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc buildlog [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">[REPOSITORY
+ARCH | BUILDLOGURL] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;s, &minus;&minus;strip&minus;time <br>
+strip leading build time from the log <br>
+&minus;o OFFSET, &minus;&minus;offset=OFFSET <br>
+get log start or end from the offset <br>
+&minus;l, &minus;&minus;last Show the last finished log
+file</p>
+
+<p style="margin-left:11%;"><b>cat (less)</b></p>
+
+<p style="margin-left:22%;">Output the content of a file to
+standard output</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc cat project package file <br>
+osc cat project/package/file <br>
+osc cat http://api.opensuse.org/build/.../_log <br>
+osc cat http://api.opensuse.org/source/../_link</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc cat [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;M, &minus;&minus;meta list meta data files <br>
+&minus;u, &minus;&minus;unexpand <br>
+always work with unexpanded packages. <br>
+&minus;e, &minus;&minus;expand <br>
+force expansion of linked packages. <br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+print out the specified revision</p>
+
+<p style="margin-left:11%;"><b>changedevelrequest
+(changedevelreq, cr)</b></p>
+
+<p style="margin-left:22%;">Create request to change the
+devel package definition.</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://en.opensuse.org/openSUSE:Build_Service_Collaboration
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">See the
+&quot;request&quot; command for showing and modifing
+existing requests.</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc
+changedevelrequest PROJECT PACKAGE DEVEL_PROJECT
+[DEVEL_PACKAGE]</p>
+
+<p style="margin-left:11%;"><b>checkout (co)</b></p>
+
+<p style="margin-left:22%;">Check out content from the
+repository</p>
+
+<p style="margin-left:22%; margin-top: 1em">Check out
+content from the repository server, creating a local working
+copy.</p>
+
+<p style="margin-left:22%; margin-top: 1em">When checking
+out a single package, the option &minus;&minus;revision can
+be used to specify a revision of the package to be checked
+out.</p>
+
+<p style="margin-left:22%; margin-top: 1em">When a package
+is a source link, then it will be checked out in expanded
+form. If &minus;&minus;unexpand&minus;link option is used,
+the checkout will instead produce the raw _link file plus
+patches.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc co PROJECT [PACKAGE] [FILE] <br>
+osc co PROJECT # entire project <br>
+osc co PROJECT PACKAGE # a package <br>
+osc co PROJECT PACKAGE FILE # single file &minus;&gt; to
+current dir</p>
+
+<p style="margin-left:22%; margin-top: 1em">while inside a
+project directory: <br>
+osc co PACKAGE # check out PACKAGE from project</p>
+
+<p style="margin-left:22%; margin-top: 1em">with the result
+of rpm &minus;q &minus;&minus;qf &rsquo;%{DISTURL}0 PACKAGE
+<br>
+osc co obs://API/PROJECT/PLATFORM/REVISION-PACKAGE</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;l limit_size,
+&minus;&minus;limit&minus;size=limit_size <br>
+Skip all files with a given size <br>
+&minus;S,
+&minus;&minus;server&minus;side&minus;source&minus;service&minus;files
+<br>
+Use server side generated sources instead of local <br>
+generation. <br>
+&minus;s, &minus;&minus;source&minus;service&minus;files
+<br>
+Run source services. <br>
+&minus;o outdir, &minus;&minus;output&minus;dir=outdir <br>
+place package in the specified directoryinstead of a <br>
+PROJECT/PACKAGE directory <br>
+&minus;c, &minus;&minus;current&minus;dir <br>
+place PACKAGE folder in the current directoryinstead <br>
+of a PROJECT/PACKAGE directory <br>
+&minus;M, &minus;&minus;meta checkout out meta data instead
+of sources <br>
+&minus;u, &minus;&minus;unexpand&minus;link <br>
+if a package is a link, check out the _link file <br>
+instead of the expanded sources <br>
+&minus;e, &minus;&minus;expand&minus;link <br>
+if a package is a link, check out the expanded sources <br>
+(no-op, since this became the default) <br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+checkout the specified revision. NOTE: if you checkout <br>
+the complete project this option is ignored!</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p><b>chroot</b></p></td>
+<td width="2%"></td>
+<td width="58%">
+
+
+<p>opens a shell inside of the build root</p></td>
+<td width="20%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">chroot into the
+build root for the given repository, arch and build
+description (NOTE: this command does not work if a VM is
+used)</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc chroot [OPTS] REPOSITORY ARCH BUILD_DESCR <br>
+osc chroot [OPTS] REPOSITORY (ARCH = hostarch, BUILD_DESCR
+is detected automatically) <br>
+osc chroot [OPTS] ARCH (REPOSITORY = build_repository
+(config option), BUILD_DESCR is detected automatically) <br>
+osc chroot [OPTS] BUILD_DESCR (REPOSITORY = build_repository
+(config option), ARCH = hostarch) <br>
+osc chroot [OPTS] (REPOSITORY = build_repository (config
+option), ARCH = hostarch, BUILD_DESCR is detected
+automatically) Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;o, &minus;&minus;offline <br>
+Use cached data without contacting the api server <br>
+&minus;&minus;root=ROOT <br>
+Path to the buildroot <br>
+&minus;r, &minus;&minus;login&minus;as&minus;root <br>
+login as root instead of abuild <br>
+&minus;&minus;noinit, &minus;&minus;no&minus;init <br>
+do not guess/verify specified repository <br>
+&minus;&minus;alternative&minus;project=PROJECT <br>
+specify the used build target project <br>
+&minus;&minus;local&minus;package <br>
+package doesn&rsquo;t exist on the server</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em"><b>clean</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em">removes all untracked files from
+the package working copy</p></td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc clean &lt;path&gt;</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note: if
+&lt;path&gt; is omitted it defaults to &rsquo;.&rsquo;
+(&lt;path&gt; has to <br>
+be a package working copy)</p>
+
+<p style="margin-left:22%; margin-top: 1em">Warning: This
+command removes all files with status &rsquo;?&rsquo;.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc clean [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;n, &minus;&minus;dry&minus;run <br>
+print the results without actually removing a file</p>
+
+<p style="margin-left:11%;"><b>commit (checkin, ci)</b></p>
+
+<p style="margin-left:22%;">Upload content to the
+repository server</p>
+
+<p style="margin-left:22%; margin-top: 1em">Upload content
+which is changed in your working copy, to the repository
+server.</p>
+
+<p style="margin-left:22%; margin-top: 1em">examples: <br>
+osc ci # current dir <br>
+osc ci &lt;dir&gt; <br>
+osc ci file1 file2 ...</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc commit [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;skip&minus;local&minus;service&minus;run,
+&minus;&minus;noservice <br>
+Skip service run of configured source services for <br>
+local run <br>
+&minus;v, &minus;&minus;verbose <br>
+Run the source services with verbose information <br>
+&minus;&minus;skip&minus;validation <br>
+deprecated, don&rsquo;t use it <br>
+&minus;f, &minus;&minus;force <br>
+force commit, even if there were no changes <br>
+&minus;F FILE, &minus;&minus;file=FILE <br>
+read log message from FILE, &rsquo;&minus;&rsquo; denotes
+standard <br>
+input. <br>
+&minus;n, &minus;&minus;no&minus;message <br>
+do not specify a log message <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify log message TEXT</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p><b>config</b></p></td>
+<td width="2%"></td>
+<td width="35%">
+
+
+<p>get/set a config option</p></td>
+<td width="43%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc config section option (get current value) <br>
+osc config section option value (set to value) <br>
+osc config section option &minus;&minus;delete (delete
+option/reset to the default) <br>
+(section is either an apiurl or an alias or
+&rsquo;general&rsquo;) <br>
+osc config &minus;&minus;dump (dump the complete
+configuration)</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc config [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;dump&minus;full <br>
+dump the complete configuration (including
+&rsquo;pass&rsquo; and <br>
+&rsquo;passx&rsquo; options) <br>
+&minus;&minus;dump dump the complete configuration (without
+&rsquo;pass&rsquo; and <br>
+&rsquo;passx&rsquo; options) <br>
+&minus;&minus;no&minus;echo prompt for a value but do not
+echo entered characters <br>
+&minus;p, &minus;&minus;prompt <br>
+prompt for a value <br>
+&minus;s, &minus;&minus;stdin <br>
+indicates that the config value should be read from <br>
+stdin <br>
+&minus;d, &minus;&minus;delete <br>
+delete option from config or reset option to the <br>
+default)</p>
+
+<p style="margin-left:11%;"><b>copypac</b></p>
+
+<p style="margin-left:22%;">Copy a package</p>
+
+<p style="margin-left:22%; margin-top: 1em">A way to copy
+package to somewhere else.</p>
+
+<p style="margin-left:22%; margin-top: 1em">It can be done
+across buildservice instances, if the &minus;t option is
+used. In that case, a client-side copy and link expansion
+are implied.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Using
+&minus;&minus;client&minus;side&minus;copy always involves
+downloading all files, and uploading them to the target.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The DESTPAC
+name is optional; the source packages&rsquo; name will be
+used if DESTPAC is omitted.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc copypac SOURCEPRJ SOURCEPAC DESTPRJ [DESTPAC] Options:
+<br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;e, &minus;&minus;expand <br>
+if the source package is a link then copy the expanded <br>
+version of the link <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT <br>
+&minus;t URL, &minus;&minus;to&minus;apiurl=URL <br>
+URL of destination api server. Default is the source <br>
+api server. <br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+copy the specified revision. <br>
+&minus;d, &minus;&minus;keep&minus;develproject <br>
+keep develproject tag in the package metadata <br>
+&minus;K, &minus;&minus;keep&minus;link <br>
+keep the source link in target, this also expands the <br>
+source <br>
+&minus;k, &minus;&minus;keep&minus;maintainers <br>
+keep original maintainers. Default is remove all and <br>
+replace with the one calling the script. <br>
+&minus;c, &minus;&minus;client&minus;side&minus;copy <br>
+do a (slower) client-side copy</p>
+
+<p style="margin-left:11%;"><b>createincident</b></p>
+
+<p style="margin-left:22%;">Create a maintenance
+incident</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://doc.opensuse.org/products/draft/OBS/obs-reference-guide_draft/cha.obs.maintenance_setup.html
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command is
+asking to open an empty maintence incident. This can usually
+only be done by a responsible maintenance team. Please see
+the &quot;mbranch&quot; command on how to full such a
+project content and the &quot;patchinfo&quot; command how
+add the required maintenance update information.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc createincident [ MAINTENANCEPROJECT ] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT <br>
+&minus;&minus;noaccess Create a hidden project <br>
+&minus;a ATTRIBUTE, &minus;&minus;attribute=ATTRIBUTE <br>
+Use this attribute to find default maintenance project <br>
+(default is OBS:MaintenanceProject)</p>
+
+<p style="margin-left:11%;"><b>createrequest (creq)</b></p>
+
+<p style="margin-left:22%;">create multiple requests with a
+single command</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc creq [OPTIONS] [ <br>
+&minus;a submit SOURCEPRJ SOURCEPKG DESTPRJ [DESTPKG] <br>
+&minus;a delete PROJECT [PACKAGE] <br>
+&minus;a change_devel PROJECT PACKAGE DEVEL_PROJECT
+[DEVEL_PACKAGE] <br>
+&minus;a add_me ROLE PROJECT [PACKAGE] <br>
+&minus;a add_group GROUP ROLE PROJECT [PACKAGE] <br>
+&minus;a add_role USER ROLE PROJECT [PACKAGE] <br>
+&minus;a set_bugowner USER PROJECT [PACKAGE] <br>
+]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Option &minus;m
+works for all types of request, the rest work only for
+submit. example: <br>
+osc creq &minus;a submit &minus;a delete
+home:someone:branches:openSUSE:Tools &minus;a change_devel
+openSUSE:Tools osc home:someone:branches:openSUSE:Tools
+&minus;m ok</p>
+
+<p style="margin-left:22%; margin-top: 1em">This will
+submit all modified packages under current directory, delete
+project home:someone:branches:openSUSE:Tools and change the
+devel project to home:someone:branches:openSUSE:Tools for
+package osc in project openSUSE:Tools. Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;yes proceed without asking. <br>
+&minus;&minus;no&minus;update <br>
+never touch source package on accept (will break <br>
+source links) <br>
+&minus;&minus;no&minus;cleanup <br>
+never remove source package on accept, but update its <br>
+content <br>
+&minus;&minus;cleanup remove package if submission gets
+accepted (default <br>
+for home:&lt;id&gt;:branch projects) <br>
+&minus;&minus;nodevelproject <br>
+do not follow a defined devel project (primary project <br>
+where a package is developed) <br>
+&minus;s SUPERSEDE, &minus;&minus;supersede=SUPERSEDE <br>
+Superseding another request by this one <br>
+&minus;r REV, &minus;&minus;revision=REV <br>
+for &quot;create&quot;, specify a certain source revision ID
+<br>
+(the md5 sum) <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT <br>
+&minus;a, &minus;&minus;action <br>
+specify action type of a request, can be : <br>
+submit/delete/change_devel/add_role/set_bugowner</p>
+
+<p style="margin-left:11%;"><b>delete (del, remove,
+rm)</b></p>
+
+<p style="margin-left:22%;">Mark files or package
+directories to be deleted upon the next
+&rsquo;checkin&rsquo;</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+cd .../PROJECT/PACKAGE <br>
+osc delete FILE [...] <br>
+cd .../PROJECT <br>
+osc delete PACKAGE [...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+works on check out copies. Use &quot;rdelete&quot; for
+working on server side only. This is needed for removing the
+entire project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">As a safety
+measure, projects must be empty (i.e., you need to delete
+all packages first).</p>
+
+<p style="margin-left:22%; margin-top: 1em">If you are sure
+that you want to remove a package and all its files use
+&rsquo;&minus;&minus;force&rsquo; switch. Sometimes this
+also works without &minus;&minus;force.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;f, &minus;&minus;force <br>
+forces removal of entire package and its files</p>
+
+<p style="margin-left:11%;"><b>deleterequest (deletereq,
+dr, dropreq, droprequest)</b></p>
+
+<p style="margin-left:22%;">Request to delete (or
+&rsquo;drop&rsquo;) a package or project</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc deletereq [&minus;m TEXT] # works in checked out
+project/package <br>
+osc deletereq [&minus;m TEXT] PROJECT [PACKAGE] <br>
+osc deletereq [&minus;m TEXT] PROJECT
+[&minus;&minus;repository REPOSITORY] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;accept&minus;in&minus;hours=HOURS <br>
+specify time when request shall get accepted <br>
+automatically. Only works with write permissions in <br>
+target. <br>
+&minus;r REPOSITORY, &minus;&minus;repository=REPOSITORY
+<br>
+specify repository <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT</p>
+
+<p style="margin-left:11%;"><b>dependson
+(whatdependson)</b></p>
+
+<p style="margin-left:22%;">Show the build dependencies</p>
+
+<p style="margin-left:22%; margin-top: 1em">The command
+dependson and whatdependson can be used to find out what
+will be triggered when a certain package changes. This is no
+guarantee, since the new build might have changed
+dependencies.</p>
+
+<p style="margin-left:22%; margin-top: 1em">dependson shows
+the build dependencies inside of a project, valid for a
+given repository and architecture. NOTE: to see all binary
+packages, which can trigger a build you need to <br>
+refer the buildinfo, since this command shows only the
+dependencies <br>
+inside of a project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH can be taken from the first two columns
+of the &rsquo;osc repos&rsquo; output.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage in
+package or project directory: <br>
+osc dependson REPOSITORY ARCH <br>
+osc whatdependson REPOSITORY ARCH</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc dependson PROJECT [PACKAGE] REPOSITORY ARCH <br>
+osc whatdependson PROJECT [PACKAGE] REPOSITORY ARCH</p>
+
+<p style="margin-left:11%;"><b>detachbranch</b></p>
+
+<p style="margin-left:22%;">replace a link with its
+expanded sources</p>
+
+<p style="margin-left:22%; margin-top: 1em">If a package is
+a link it is replaced with its expanded sources. The link
+does not exist anymore.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc detachbranch # can be used in package working copy <br>
+osc detachbranch PROJECT PACKAGE Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT</p>
+
+<p style="margin-left:11%;"><b>develproject
+(bsdevelproject, dp)</b></p>
+
+<p style="margin-left:22%;">print the devel project /
+package of a package</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc develproject PRJ PKG <br>
+osc develproject Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;r, &minus;&minus;raw deprecated option</p>
+
+<p style="margin-left:11%;"><b>diff (di, ldiff,
+linkdiff)</b></p>
+
+<p style="margin-left:22%;">Generates a diff</p>
+
+<p style="margin-left:22%; margin-top: 1em">Generates a
+diff, comparing local changes against the repository
+server.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc diff [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">ARG, if
+specified, is a filename to include in the diff. <br>
+Default: all files.</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc diff
+&minus;&minus;link <br>
+osc linkdiff <br>
+Compare current checkout directory against the link
+base.</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc diff
+&minus;&minus;link PROJ PACK <br>
+osc linkdiff PROJ PACK <br>
+Compare a package against the link base (ignoring working
+copy changes).</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;missingok <br>
+do not fail if the source or target project/package <br>
+does not exist on the server <br>
+&minus;l, &minus;&minus;link (osc linkdiff): compare against
+the base revision of <br>
+the link <br>
+&minus;p, &minus;&minus;plain <br>
+output the diff in plain (not unified) diff format <br>
+&minus;r rev1[:rev2], &minus;&minus;revision=rev1[:rev2]
+<br>
+If rev1 is specified it will compare your working copy <br>
+against the revision (rev1) on the server. If rev1 and <br>
+rev2 are specified it will compare rev1 against rev2 <br>
+(NOTE: changes in your working copy are ignored in <br>
+this case) <br>
+&minus;c rev, &minus;&minus;change=rev <br>
+the change made by revision rev (like &minus;r rev-1:rev).If
+<br>
+rev is negative this is like &minus;r rev:rev-1.</p>
+
+<p style="margin-left:11%;"><b>distributions
+(dists)</b></p>
+
+<p style="margin-left:22%;">Shows all available
+distributions</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+shows the available distributions. For active distributions
+it shows the name, project and name of the repository and a
+suggested default repository name.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc distributions</p>
+
+<p style="margin-left:11%;"><b>enablechannels
+(enablechannel)</b></p>
+
+<p style="margin-left:22%;">Enables channels</p>
+
+<p style="margin-left:22%; margin-top: 1em">Enables
+existing channel packages in a project. Enabling means
+adding the needed repositories for building. The command can
+be used to enable a specific one or all channels of a
+project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc enablechannels [PROJECT [CHANNEL_PACKAGE]]</p>
+
+<p style="margin-left:11%;"><b>getbinaries</b></p>
+
+<p style="margin-left:22%;">Download binaries to a local
+directory</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+downloads packages directly from the api server. Thus, it
+directly accesses the packages that are used for building
+others even when they are not &quot;published&quot; yet.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc getbinaries REPOSITORY # works in checked out
+project/package (check out all archs in subdirs) <br>
+osc getbinaries REPOSITORY ARCHITECTURE # works in checked
+out project/package <br>
+osc getbinaries PROJECT PACKAGE REPOSITORY ARCHITECTURE <br>
+osc getbinaries PROJECT PACKAGE REPOSITORY ARCHITECTURE FILE
+Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;debug also fetch debug packages <br>
+&minus;&minus;sources also fetch source packages <br>
+&minus;d DIR, &minus;&minus;destdir=DIR <br>
+destination directory <br>
+&minus;q, &minus;&minus;quiet <br>
+do not show downloading progress</p>
+
+<p style="margin-left:11%;"><b>help (?, h)</b></p>
+
+<p style="margin-left:22%;">give detailed help on a
+specific sub-command</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc help [SUBCOMMAND]</p>
+
+<p style="margin-left:11%;"><b>importsrcpkg</b></p>
+
+<p style="margin-left:22%;">Import a new package from a
+src.rpm</p>
+
+<p style="margin-left:22%; margin-top: 1em">A new package
+dir will be created inside the project dir (if no project is
+specified and the current working dir is a project dir the
+package will be created in this project). If the package
+does not exist on the server it will be created too
+otherwise the meta data of the existing package will be
+updated (&lt;title /&gt; and &lt;description /&gt;). The
+src.rpm will be extracted into the package dir. The files
+won&rsquo;t be committed unless you explicitly pass the
+&minus;&minus;commit switch.</p>
+
+<p style="margin-left:22%; margin-top: 1em">SRPM is the
+path of the src.rpm in the local filesystem, or an URL.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc importsrcpkg SRPM</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;c, &minus;&minus;commit <br>
+commit the new files <br>
+&minus;&minus;delete&minus;old&minus;files <br>
+delete existing files from the server <br>
+&minus;d description, &minus;&minus;description=description
+<br>
+set the description of the package <br>
+&minus;t title, &minus;&minus;title=title <br>
+set a title <br>
+&minus;n name, &minus;&minus;name=name <br>
+specify a package name <br>
+&minus;p project, &minus;&minus;project=project <br>
+specify the path to a project</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p><b>info</b></p></td>
+<td width="5%"></td>
+<td width="58%">
+
+
+<p>Print information about a working copy</p></td>
+<td width="20%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Print
+information about each ARG (default: &rsquo;.&rsquo;) ARG is
+a working-copy path.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc info [ARGS...]</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p style="margin-top: 1em"><b>init</b></p></td>
+<td width="5%"></td>
+<td width="58%">
+
+
+<p style="margin-top: 1em">Initialize a directory as
+working copy</p></td>
+<td width="20%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Initialize an
+existing directory to be a working copy of an (already
+existing) buildservice project/package.</p>
+
+<p style="margin-left:22%; margin-top: 1em">(This is the
+same as checking out a package and then copying sources into
+the directory. It does NOT create a new package. To create a
+package, use &rsquo;osc meta pkg ... ...&rsquo;)</p>
+
+<p style="margin-left:22%; margin-top: 1em">You
+wouldn&rsquo;t normally use this command.</p>
+
+<p style="margin-left:22%; margin-top: 1em">To get a
+working copy of a package (e.g. for building it or working
+on it, you would normally use the checkout command. Use
+&quot;osc help checkout&quot; to get help for it.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc init PRJ <br>
+osc init PRJ PAC</p>
+
+<p style="margin-left:11%;"><b>jobhistory (jobhist)</b></p>
+
+<p style="margin-left:22%;">Shows the job history of a
+project</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH can be taken from the first two columns
+of the &rsquo;osc repos&rsquo; output.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc jobhist REPOSITORY ARCHITECTURE (in project dir) <br>
+osc jobhist PROJECT [PACKAGE] REPOSITORY ARCHITECTURE
+Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;l limit, &minus;&minus;limit=limit <br>
+for setting the number of results <br>
+&minus;&minus;csv generate output in CSV (separated by
+|)</p>
+
+<p style="margin-left:11%;"><b>linkpac</b></p>
+
+<p style="margin-left:22%;">&quot;Link&quot; a package to
+another package</p>
+
+<p style="margin-left:22%; margin-top: 1em">A linked
+package is a clone of another package, but plus local
+modifications. It can be cross-project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The DESTPAC
+name is optional; the source packages&rsquo; name will be
+used if DESTPAC is omitted.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Afterwards, you
+will want to &rsquo;checkout DESTPRJ DESTPAC&rsquo;.</p>
+
+<p style="margin-left:22%; margin-top: 1em">To add a patch,
+add the patch as file and add it to the _link file. You can
+also specify text which will be inserted at the top of the
+spec file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">See the
+examples in the _link file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">NOTE: In case
+you want to fix or update another package, you should use
+the &rsquo;branch&rsquo; <br>
+command. A branch has correct repositories (and a link)
+setup up by default and <br>
+will be cleaned up automatically after it was submitted
+back.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc linkpac SOURCEPRJ SOURCEPAC DESTPRJ [DESTPAC] Options:
+<br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;N, &minus;&minus;new&minus;package <br>
+create a link to a not yet existing package <br>
+&minus;d, &minus;&minus;disable&minus;publish <br>
+disable publishing of the linked package <br>
+&minus;f, &minus;&minus;force <br>
+overwrite an existing link file if it is there. <br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+link the specified revision. <br>
+&minus;c, &minus;&minus;current <br>
+link fixed against current revision. <br>
+&minus;C CICOUNT, &minus;&minus;cicount=CICOUNT <br>
+cicount attribute in the link, known values are add, <br>
+copy, and local, default in buildservice is currently <br>
+add.</p>
+
+<p style="margin-left:11%;"><b>linktobranch</b></p>
+
+<p style="margin-left:22%;">Convert a package containing a
+classic link with patch to a branch</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+tells the server to convert a _link with or without a
+project.diff to a branch. This is a full copy with a _link
+file pointing to the branched place.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc linktobranch # can be used in checked out package <br>
+osc linktobranch PROJECT PACKAGE</p>
+
+<p style="margin-left:11%;"><b>list (LL, lL, ll,
+ls)</b></p>
+
+<p style="margin-left:22%;">List sources or binaries on the
+server</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples for
+listing sources: <br>
+ls # list all projects (deprecated) <br>
+ls / # list all projects <br>
+ls . # take PROJECT/PACKAGE from current dir. <br>
+ls PROJECT # list packages in a project <br>
+ls PROJECT PACKAGE # list source files of package of a
+project <br>
+ls PROJECT PACKAGE &lt;file&gt; # list &lt;file&gt; if this
+file exists <br>
+ls &minus;v PROJECT PACKAGE # verbosely list source files of
+package <br>
+ls &minus;l PROJECT PACKAGE # verbosely list source files of
+package <br>
+ll PROJECT PACKAGE # verbosely list source files of package
+<br>
+LL PROJECT PACKAGE # verbosely list source files of expanded
+link</p>
+
+<p style="margin-left:22%; margin-top: 1em">With
+&minus;&minus;verbose, the following fields will be shown
+for each item: <br>
+MD5 hash of file <br>
+Revision number of the last commit <br>
+Size (in bytes) <br>
+Date and time of the last commit</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples for
+listing binaries: <br>
+ls &minus;b PROJECT # list all binaries of a project <br>
+ls &minus;b PROJECT &minus;a ARCH # list ARCH binaries of a
+project <br>
+ls &minus;b PROJECT &minus;r REPO # list binaries in REPO
+<br>
+ls &minus;b PROJECT PACKAGE REPO ARCH</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+list (LL, lL, ll, ls) [PROJECT [PACKAGE]] <br>
+list (LL, lL, ll, ls) &minus;b [PROJECT [PACKAGE [REPO
+[ARCH]]]] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;R REVISION, &minus;&minus;revision=REVISION <br>
+specify revision (only for sources) <br>
+&minus;M, &minus;&minus;meta list meta data files <br>
+&minus;D, &minus;&minus;deleted <br>
+show only the former deleted projects or packages <br>
+&minus;l, &minus;&minus;long print extra information <br>
+&minus;v, &minus;&minus;verbose <br>
+print extra information <br>
+&minus;u, &minus;&minus;unexpand <br>
+always work with unexpanded (source) packages <br>
+&minus;e, &minus;&minus;expand <br>
+expand linked package (only for sources) <br>
+&minus;b, &minus;&minus;binaries <br>
+list built binaries instead of sources <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+specify repository (only for binaries) <br>
+&minus;a ARCH, &minus;&minus;arch=ARCH <br>
+specify architecture (only for binaries)</p>
+
+<p style="margin-left:11%;"><b>localbuildlog (lbl)</b></p>
+
+<p style="margin-left:22%;">Shows the build log of a local
+buildchroot</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc lbl [REPOSITORY [ARCH]] <br>
+osc lbl # show log of newest last local build</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;s, &minus;&minus;strip&minus;time <br>
+strip leading build time from the log <br>
+&minus;o OFFSET, &minus;&minus;offset=OFFSET <br>
+get log starting from offset</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p><b>lock</b></p></td>
+<td width="5%"></td>
+<td width="41%">
+
+
+<p>Locks a project or package.</p></td>
+<td width="37%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc lock PROJECT [PACKAGE]</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p style="margin-top: 1em"><b>log</b></p></td>
+<td width="7%"></td>
+<td width="50%">
+
+
+<p style="margin-top: 1em">Shows the commit log of a
+package</p> </td>
+<td width="28%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc log (inside working copy) <br>
+osc log remote_project [remote_package]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;M, &minus;&minus;meta checkout out meta data instead
+of sources <br>
+&minus;D, &minus;&minus;deleted <br>
+work on deleted package <br>
+&minus;&minus;xml generate output in XML <br>
+&minus;&minus;csv generate output in CSV (separated by |)
+<br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+show log of the specified revision</p>
+
+<p style="margin-left:11%;"><b>maintainer
+(bugowner)</b></p>
+
+<p style="margin-left:22%;">Show maintainers according to
+server side configuration</p>
+
+<p style="margin-left:22%; margin-top: 1em"># Search for
+official maintained sources in OBS instance <br>
+osc maintainer BINARY &lt;options&gt; <br>
+osc maintainer &minus;U &lt;user&gt; &lt;options&gt; <br>
+osc maintainer &minus;G &lt;group&gt; &lt;options&gt;</p>
+
+<p style="margin-left:22%; margin-top: 1em"># Lookup via
+containers <br>
+osc maintainer &lt;options&gt; <br>
+osc maintainer PRJ &lt;options&gt; <br>
+osc maintainer PRJ PKG &lt;options&gt;</p>
+
+<p style="margin-left:22%; margin-top: 1em">The tool looks
+up the default responsible person for a certain project or
+package. When using with an OBS 2.4 (or later) server it is
+doing the lookup for a given binary according to the server
+side configuration of default owners.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The tool is
+also looking into devel packages and supports to fallback to
+the project in case a package has no defined maintainer.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Please use
+&quot;osc meta pkg&quot; in case you need to know the
+definition in a specific container.</p>
+
+<p style="margin-left:22%; margin-top: 1em">PRJ and PKG
+default to current working-copy path.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc maintainer [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m MESSAGE, &minus;&minus;message=MESSAGE <br>
+Define message as commit entry or request description <br>
+&minus;r role, &minus;&minus;role=role <br>
+Specify user role <br>
+&minus;d user, &minus;&minus;delete=user <br>
+delete a maintainer/bugowner (can be specified via <br>
+&minus;&minus;role) <br>
+&minus;G GROUP, &minus;&minus;group=GROUP <br>
+All official maintained instances for the specified <br>
+GROUP <br>
+&minus;U USER, &minus;&minus;user=USER <br>
+All official maintained instances for the specified <br>
+USER <br>
+&minus;S user,
+&minus;&minus;set&minus;bugowner&minus;request=user <br>
+Set the bugowner to specified person via a request (or <br>
+group via group: prefix) <br>
+&minus;s user, &minus;&minus;set&minus;bugowner=user <br>
+Set the bugowner to specified person (or group via <br>
+group: prefix) <br>
+&minus;A, &minus;&minus;all list all found entries not just
+the first one <br>
+&minus;a user, &minus;&minus;add=user <br>
+add a new person for given role (&quot;maintainer&quot; by
+<br>
+default) <br>
+&minus;D devel_project,
+&minus;&minus;devel&minus;project=devel_project <br>
+define the project where this package is primarily <br>
+developed <br>
+&minus;v, &minus;&minus;verbose <br>
+show more information <br>
+&minus;&minus;nodevelproject <br>
+do not follow a defined devel project (primary project <br>
+where a package is developed) <br>
+&minus;e, &minus;&minus;email <br>
+show email addresses instead of user names <br>
+&minus;B, &minus;&minus;bugowner <br>
+Show only the bugowner if defined, or maintainer <br>
+otherwise <br>
+&minus;b, &minus;&minus;bugowner&minus;only <br>
+Show only the bugowner</p>
+
+<p style="margin-left:11%;"><b>maintenancerequest
+(mr)</b></p>
+
+<p style="margin-left:22%;">Create a request for starting a
+maintenance incident.</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://doc.opensuse.org/products/draft/OBS/obs-reference-guide_draft/cha.obs.maintenance_setup.html
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command is
+asking the maintence team to start a maintence incident
+based on a created maintenance update. Please see the
+&quot;mbranch&quot; command on how to create such a project
+and the &quot;patchinfo&quot; command how add the required
+maintenance update information.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc maintenancerequest [ SOURCEPROJECT [ SOURCEPACKAGES
+RELEASEPROJECT ] ] <br>
+osc maintenancerequest .</p>
+
+<p style="margin-left:22%; margin-top: 1em">The 2nd line
+when issued within a package directory provides a short cut
+to submit a single package (the one in the current
+directory) from the project of this package to be submitted
+to the release project this package links to. This syntax is
+only valid when specified from a package subdirectory.
+Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;s SUPERSEDE, &minus;&minus;supersede=SUPERSEDE <br>
+Superseding another request by this one <br>
+&minus;&minus;incident&minus;project=INCIDENT_PROJECT <br>
+specify incident project to merge in <br>
+&minus;&minus;incident=INCIDENT <br>
+specify incident number to merge in <br>
+&minus;&minus;cleanup do remove source project on accept
+<br>
+&minus;&minus;no&minus;cleanup <br>
+do not remove source project on accept <br>
+&minus;&minus;release&minus;project=RELEASEPROJECT <br>
+Specify the release project <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT <br>
+&minus;a ATTRIBUTE, &minus;&minus;attribute=ATTRIBUTE <br>
+Use this attribute to find default maintenance project <br>
+(default is OBS:MaintenanceProject)</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>man</b></p></td>
+<td width="7%"></td>
+<td width="30%">
+
+
+<p>generates a man page</p></td>
+<td width="48%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc man</p>
+
+<p style="margin-left:11%;"><b>mbranch (maintained,
+sm)</b></p>
+
+<p style="margin-left:22%;">Search or banch multiple
+instances of a package</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command is
+used for searching all relevant instances of packages and
+creating links of them in one project. This is esp. used for
+maintenance updates. It can also be used to branch all
+packages marked before with a given attribute.</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://en.opensuse.org/openSUSE:Build_Service_Concept_Maintenance
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">The branched
+package will live in <br>
+home:USERNAME:branches:ATTRIBUTE:PACKAGE if nothing else
+specified.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc sm [SOURCEPACKAGE] [&minus;a ATTRIBUTE] <br>
+osc mbranch [ SOURCEPACKAGE [ TARGETPROJECT ] ] Options:
+<br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;nodevelproject <br>
+do not follow a defined devel project (primary project <br>
+where a package is developed) <br>
+&minus;&minus;noaccess Create a hidden project <br>
+&minus;&minus;dryrun Just simulate the action and report
+back the result. <br>
+&minus;u UPDATE_ATTRIBUTE,
+&minus;&minus;update&minus;project&minus;attribute=UPDATE_ATTRIBUTE
+<br>
+Use this attribute to find update projects (default is <br>
+OBS:UpdateProject) <br>
+&minus;a ATTRIBUTE, &minus;&minus;attribute=ATTRIBUTE <br>
+Use this attribute to find affected packages (default <br>
+is OBS:Maintained) <br>
+&minus;c, &minus;&minus;checkout <br>
+Checkout branched package afterwards (&rsquo;osc bco&rsquo;
+is a <br>
+shorthand for this option)</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p><b>meta</b></p></td>
+<td width="5%"></td>
+<td width="50%">
+
+
+<p>Show meta information, or edit it</p></td>
+<td width="28%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Show or edit
+build service metadata of type
+&lt;prj|pkg|prjconf|user|pattern&gt;.</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+displays metadata on buildservice objects like projects,
+packages, or users. The type of metadata is specified by the
+word after &quot;meta&quot;, like e.g. &quot;meta
+prj&quot;.</p>
+
+<p style="margin-left:22%; margin-top: 1em">prj denotes
+metadata of a buildservice project. prjconf denotes the
+(build) configuration of a project. pkg denotes metadata of
+a buildservice package. user denotes the metadata of a user.
+pattern denotes installation patterns defined for a
+project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">To list
+patterns, use &rsquo;osc meta pattern PRJ&rsquo;. An
+additional argument will be the pattern file to view or
+edit.</p>
+
+<p style="margin-left:22%; margin-top: 1em">With the
+&minus;&minus;edit switch, the metadata can be edited. Per
+default, osc opens the program specified by the
+environmental variable EDITOR with a temporary file.
+Alternatively, content to be saved can be supplied via the
+&minus;&minus;file switch. If the argument is
+&rsquo;&minus;&rsquo;, input is taken from stdin: osc meta
+prjconf home:user | sed ... | osc meta prjconf home:user
+&minus;F &minus;</p>
+
+<p style="margin-left:22%; margin-top: 1em">When trying to
+edit a non-existing resource, it is created implicitly.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc meta prj PRJ <br>
+osc meta pkg PRJ PKG <br>
+osc meta pkg PRJ PKG &minus;e</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc meta &lt;prj|pkg|prjconf|user|pattern&gt; ARGS... <br>
+osc meta &lt;prj|pkg|prjconf|user|pattern&gt;
+&minus;e|&minus;&minus;edit ARGS... <br>
+osc meta &lt;prj|pkg|prjconf|user|pattern&gt;
+&minus;F|&minus;&minus;file ARGS... <br>
+osc meta pattern &minus;&minus;delete PRJ PATTERN <br>
+osc meta attribute PRJ [PKG [SUBPACKAGE]]
+[&minus;&minus;attribute ATTRIBUTE]
+[&minus;&minus;create|&minus;&minus;delete|&minus;&minus;set
+[value_list]] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;delete delete a pattern or attribute <br>
+&minus;s ATTRIBUTE_VALUES,
+&minus;&minus;set=ATTRIBUTE_VALUES <br>
+set attribute values <br>
+&minus;R,
+&minus;&minus;remove&minus;linking&minus;repositories <br>
+Try to remove also all repositories building against <br>
+remove ones. <br>
+&minus;c, &minus;&minus;create <br>
+create attribute without values <br>
+&minus;e, &minus;&minus;edit edit metadata <br>
+&minus;F FILE, &minus;&minus;file=FILE <br>
+read metadata from FILE, instead of opening an editor. <br>
+&rsquo;&minus;&rsquo; denotes standard input. <br>
+&minus;f, &minus;&minus;force <br>
+force the save operation, allows one to ignores some <br>
+errors like depending repositories. For prj meta only. <br>
+&minus;&minus;attribute&minus;project <br>
+include project values, if missing in packages <br>
+&minus;&minus;attribute&minus;defaults <br>
+include defined attribute defaults <br>
+&minus;a ATTRIBUTE, &minus;&minus;attribute=ATTRIBUTE <br>
+affect only a given attribute</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p style="margin-top: 1em"><b>mkpac</b></p></td>
+<td width="4%"></td>
+<td width="64%">
+
+
+<p style="margin-top: 1em">Create a new package under
+version control</p></td>
+<td width="14%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc mkpac new_package</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>mv</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em">Move SOURCE file to DEST and
+keep it under version control</p></td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc mv SOURCE DEST</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;f, &minus;&minus;force <br>
+forces removal of entire package and its files</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>my</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em">show waiting work, packages,
+projects or requests involving yourself</p></td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+# list all open tasks for me <br>
+osc my [work] <br>
+# list packages where I am bugowner <br>
+osc my pkg &minus;b <br>
+# list projects where I am maintainer <br>
+osc my prj &minus;m <br>
+# list request for all my projects and packages <br>
+osc my rq <br>
+# list requests, excluding project &rsquo;foo&rsquo; and
+&rsquo;bar&rsquo; <br>
+osc my rq &minus;&minus;exclude&minus;project foo,bar <br>
+# list requests I made <br>
+osc my sr</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc my [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">where TYPE is
+one of requests, submitrequests, <br>
+projects or packages (rq, sr, prj or pkg)</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help <br>
+show this help message and exit <br>
+&minus;&minus;maintained <br>
+limit search results to packages with maintained <br>
+attribute set. <br>
+&minus;v, &minus;&minus;verbose <br>
+verbose listing <br>
+&minus;&minus;exclude&minus;project=EXCLUDE_PROJECT <br>
+exclude requests for specified project <br>
+&minus;U USER, &minus;&minus;user=USER <br>
+search for USER instead of yourself <br>
+&minus;a, &minus;&minus;all <br>
+all involvements <br>
+&minus;m, &minus;&minus;maintainer <br>
+restrict listing to items where the user is maintainer <br>
+&minus;b, &minus;&minus;bugowner <br>
+restrict listing to items where the user is bugowner</p>
+
+<p style="margin-left:11%;"><b>patchinfo</b></p>
+
+<p style="margin-left:22%;">Generate and edit a patchinfo
+file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">A patchinfo
+file describes the packages for an update and the kind of
+problem it solves.</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+either creates a new _patchinfo or updates an existing
+one.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc patchinfo <br>
+osc patchinfo [PROJECT [PATCH_NAME]] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;f, &minus;&minus;force <br>
+force generation of new patchinfo file, do not update <br>
+existing one.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>pdiff</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p>Quick alias to diff the content of a package with its
+parent.</p> </td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc pdiff [&minus;&minus;plain|&minus;p]
+[&minus;&minus;nomissing&minus;ok|&minus;n] <br>
+osc pdiff [&minus;&minus;plain|&minus;p]
+[&minus;&minus;nomissing&minus;ok|&minus;n] PKG <br>
+osc pdiff [&minus;&minus;plain|&minus;p]
+[&minus;&minus;nomissing&minus;ok|&minus;n] PRJ PKG</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;n, &minus;&minus;nomissingok <br>
+fail if the parent package does not exist on the <br>
+server <br>
+&minus;p, &minus;&minus;plain <br>
+output the diff in plain (not unified) diff format</p>
+
+<p style="margin-left:11%;"><b>prdiff (projdiff,
+projectdiff)</b></p>
+
+<p style="margin-left:22%;">Server-side diff of two
+projects</p>
+
+<p style="margin-left:22%; margin-top: 1em">Compares two
+projects and either summarises or outputs the differences in
+full. In the second form, a project is compared with one of
+its branches inside a home:$USER project (the branch is
+treated as NEWPRJ). The home branch is optional if the
+current working directory is a checked out copy of it.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc prdiff [OPTIONS] OLDPRJ NEWPRJ <br>
+osc prdiff [OPTIONS] [home:$USER:branch:$PRJ]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;d, &minus;&minus;diffstat <br>
+show diffstat of differences <br>
+&minus;u, &minus;&minus;unified <br>
+show full unified diffs of differences <br>
+&minus;o, &minus;&minus;show&minus;not&minus;in&minus;new
+<br>
+show packages only in the old project <br>
+&minus;n, &minus;&minus;show&minus;not&minus;in&minus;old
+<br>
+show packages only in the new project <br>
+&minus;i REGEXP, &minus;&minus;include=REGEXP <br>
+only consider packages matching REGEXP <br>
+&minus;e REGEXP, &minus;&minus;exclude=REGEXP <br>
+skip packages matching REGEXP <br>
+&minus;r, &minus;&minus;requests <br>
+show open requests for any packages with differences</p>
+
+<p style="margin-left:11%;"><b>prjresults (pr)</b></p>
+
+<p style="margin-left:22%;">Shows project-wide build
+results</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc prjresults (inside working copy) <br>
+osc prjresults PROJECT</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;show&minus;excluded <br>
+show packages that are excluded in all repos, also <br>
+hide repos that have only excluded packages <br>
+&minus;V, &minus;&minus;vertical <br>
+list packages vertically instead horizontally <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+show results only for specified repo(s) <br>
+&minus;a ARCH, &minus;&minus;arch=ARCH <br>
+show results only for specified architecture(s) <br>
+&minus;n EXPR, &minus;&minus;name&minus;filter=EXPR <br>
+show only packages whose names match EXPR <br>
+&minus;s STATUS, &minus;&minus;status&minus;filter=STATUS
+<br>
+show only packages with buildstatus STATUS (see <br>
+legend) <br>
+&minus;&minus;xml generate output in XML <br>
+&minus;c, &minus;&minus;csv csv output <br>
+&minus;q, &minus;&minus;hide&minus;legend <br>
+hide the legend</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="6%">
+
+
+<p><b>pull</b></p></td>
+<td width="5%"></td>
+<td width="78%">
+
+
+<p>merge the changes of the link target into your working
+copy.</p> </td></tr>
+</table>
+
+<p style="margin-left:11%;"><b>rdelete</b></p>
+
+<p style="margin-left:22%;">Delete a project or packages on
+the server.</p>
+
+<p style="margin-left:22%; margin-top: 1em">As a safety
+measure, project must be empty (i.e., you need to delete all
+packages first). Also, packages must have no requests
+pending (i.e., you need to accept/revoke such requests
+first). If you are sure that you want to remove this project
+and all its packages use
+&rsquo;&minus;&minus;recursive&rsquo; switch. It may still
+not work because other depends on it. If you want to ignore
+this as well use &rsquo;&minus;&minus;force&rsquo;
+switch.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc rdelete [&minus;r] [&minus;f] PROJECT [PACKAGE]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify log message TEXT <br>
+&minus;f, &minus;&minus;force <br>
+deletes a project where other depends on <br>
+&minus;r, &minus;&minus;recursive <br>
+deletes a project with packages inside</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>rdiff</b></p></td>
+<td width="4%"></td>
+<td width="63%">
+
+
+<p>Server-side &quot;pretty&quot; diff of two packages</p></td>
+<td width="15%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Compares two
+packages (three or four arguments) or shows the changes of a
+specified revision of a package (two arguments)</p>
+
+<p style="margin-left:22%; margin-top: 1em">If no revision
+is specified the latest revision is used.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note that this
+command doesn&rsquo;t return a normal diff (which could be
+applied as patch), but a &quot;pretty&quot; diff, which also
+compares the content of tarballs.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc rdiff OLDPRJ OLDPAC NEWPRJ [NEWPAC] <br>
+osc rdiff PROJECT PACKAGE Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;u, &minus;&minus;unexpand <br>
+diff unexpanded version if sources are linked <br>
+&minus;&minus;missingok <br>
+do not fail if the source or target project/package <br>
+does not exist on the server <br>
+&minus;c rev, &minus;&minus;change=rev <br>
+the change made by revision rev (like &minus;r rev-1:rev).
+<br>
+If rev is negative this is like &minus;r rev:rev-1. <br>
+&minus;p, &minus;&minus;plain <br>
+output the diff in plain (not unified) diff format <br>
+&minus;r N[:M], &minus;&minus;revision=N[:M] <br>
+revision id, where N = old revision and M = new <br>
+revision <br>
+&minus;M, &minus;&minus;meta diff meta data <br>
+&minus;&minus;oldpkg=OLDPKG <br>
+package to compare against (deprecated, use 3 argument <br>
+form) <br>
+&minus;&minus;oldprj=OLDPRJ <br>
+project to compare against (deprecated, use 3 argument <br>
+form)</p>
+
+<p style="margin-left:11%;"><b>rebuild (rebuildpac)</b></p>
+
+<p style="margin-left:22%;">Trigger package rebuilds</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note that it is
+normally NOT needed to kick off rebuilds like this, because
+they principally happen in a fully automatic way, triggered
+by source check-ins. In particular, the order in which
+packages are built is handled by the build service.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The arguments
+REPOSITORY and ARCH can be taken from the first two columns
+of the &rsquo;osc repos&rsquo; output.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc rebuild [PROJECT [PACKAGE [REPOSITORY [ARCH]]]] Options:
+<br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;all Rebuild all packages of entire project
+<br>
+&minus;f, &minus;&minus;failed <br>
+rebuild all failed packages <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+trigger rebuilds for a specific repository <br>
+&minus;a ARCH, &minus;&minus;arch=ARCH <br>
+trigger rebuilds for a specific architecture</p>
+
+<p style="margin-left:11%;"><b>release</b></p>
+
+<p style="margin-left:22%;">Release sources and
+binaries</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command is
+used to transfer sources and binaries without rebuilding
+them. It requires defined release targets set to
+trigger=&quot;manual&quot;. Please refer the release
+management chapter in the OBS book for details.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc release [ SOURCEPROJECT [ SOURCEPACKAGE ] ]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;set&minus;release=RELEASETAG <br>
+rename binaries during release using this release tag <br>
+&minus;&minus;target&minus;repository=TARGETREPOSITORY <br>
+Release only to specified repository <br>
+&minus;&minus;target&minus;project=TARGETPROJECT <br>
+Release only to specified project <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+Release only binaries from the specified repository</p>
+
+<p style="margin-left:11%;"><b>releaserequest</b></p>
+
+<p style="margin-left:22%;">Create a request for releasing
+a maintenance update.</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://doc.opensuse.org/products/draft/OBS/obs-reference-guide_draft/cha.obs.maintenance_setup.html
+<br>
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command is
+used by the maintence team to start the release process of a
+maintenance update. This includes usually testing based on
+the defined reviewers of the update project.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc releaserequest [ SOURCEPROJECT ]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT</p>
+
+<p style="margin-left:11%;"><b>remotebuildlog (rbl, rblt,
+rbuildlog, rbuildlogtail, <br>
+remotebuildlogtail)</b></p>
+
+<p style="margin-left:22%;">Shows the build log of a
+package</p>
+
+<p style="margin-left:22%; margin-top: 1em">Shows the log
+file of the build of a package. Can be used to follow the
+log while it is being written.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">remotebuildlogtail
+shows just the tail of the log file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc remotebuildlog project package repository arch <br>
+or <br>
+osc remotebuildlog project/package/repository/arch <br>
+or <br>
+osc remotebuildlog buildlogurl Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;s, &minus;&minus;strip&minus;time <br>
+strip leading build time from the log <br>
+&minus;o OFFSET, &minus;&minus;offset=OFFSET <br>
+get log starting or ending from the offset <br>
+&minus;l, &minus;&minus;last Show the last finished log
+file</p>
+
+<p style="margin-left:11%;"><b>repairlink</b></p>
+
+<p style="margin-left:22%;">Repair a broken source link</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+checks out a package with merged source changes. It uses a
+3-way merge to resolve file conflicts. After
+reviewing/repairing the merge, use &rsquo;osc resolved
+...&rsquo; and &rsquo;osc ci&rsquo; to re-create a working
+source link.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: * For
+merging conflicting changes of a checkout package: <br>
+osc repairlink</p>
+
+<p style="margin-left:22%; margin-top: 1em">* Check out a
+package and merge changes: <br>
+osc repairlink PROJECT PACKAGE</p>
+
+<p style="margin-left:22%; margin-top: 1em">* Pull
+conflicting changes from one project into another one: <br>
+osc repairlink PROJECT PACKAGE INTO_PROJECT
+[INTO_PACKAGE]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;d DIR, &minus;&minus;destdir=DIR <br>
+destination directory</p>
+
+<p style="margin-left:11%;"><b>repairwc</b></p>
+
+<p style="margin-left:22%;">try to repair an inconsistent
+working copy</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc repairwc &lt;path&gt;</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note: if
+&lt;path&gt; is omitted it defaults to &rsquo;.&rsquo;
+(&lt;path&gt; can be <br>
+a project or package working copy)</p>
+
+<p style="margin-left:22%; margin-top: 1em">Warning: This
+command might delete some files in the storedir (.osc).
+Please check the state of the wc afterwards (via &rsquo;osc
+status&rsquo;).</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc repairwc [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;force&minus;apiurl <br>
+ask once for an apiurl and force this apiurl for all <br>
+inconsistent projects/packages</p>
+
+<p style="margin-left:11%;"><b>repositories (platforms,
+repos)</b></p>
+
+<p style="margin-left:22%;">shows repositories configured
+for a project. <br>
+It skips repositories by default which are disabled for a
+given package.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc repos <br>
+osc repos [PROJECT] [PACKAGE]</p>
+
+<p style="margin-left:11%;"><b>repourls</b></p>
+
+<p style="margin-left:22%;">Shows URLs of .repo files</p>
+
+<p style="margin-left:22%; margin-top: 1em">Shows URLs on
+which to access the project .repos files (yum-style
+metadata) on download.opensuse.org.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc repourls [PROJECT]</p>
+
+<p style="margin-left:11%;"><b>request (review, rq)</b></p>
+
+<p style="margin-left:22%;">Show or modify requests and
+reviews</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://en.opensuse.org/openSUSE:Build_Service_Collaboration
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">The
+&rsquo;request&rsquo; command has the following sub
+commands:</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;list&quot;
+lists open requests attached to a project or package or
+person. Uses the project/package of the current directory if
+none of &minus;M, &minus;U USER, project/package are
+given.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;log&quot;
+will show the history of the given ID</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;show&quot;
+will show the request itself, and generate a diff for
+review, if used with the &minus;&minus;diff option. The
+keyword show can be omitted if the ID is numeric.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;decline&quot;
+will change the request state to &quot;declined&quot;</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;reopen&quot;
+will set the request back to new or review.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;setincident&quot;
+will direct &quot;maintenance&quot; requests into specific
+incidents</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;supersede&quot;
+will supersede one request with another existing one.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;revoke&quot;
+will set the request state to &quot;revoked&quot;</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;accept&quot;
+will change the request state to &quot;accepted&quot; and
+will trigger the actual submit process. That would normally
+be a server-side copy of the source package to the target
+package.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;checkout&quot;
+will checkout the request&rsquo;s source package
+(&quot;submit&quot; requests only).</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;priorize&quot;
+change the prioritity of a request to either
+&quot;critical&quot;, &quot;important&quot;,
+&quot;moderate&quot; or &quot;low&quot;</p>
+
+<p style="margin-left:22%; margin-top: 1em">The
+&rsquo;review&rsquo; command has the following sub
+commands:</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;list&quot;
+lists open requests that need to be reviewed by the
+specified user or group</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;add&quot;
+adds a person or group as reviewer to a request</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;accept&quot;
+mark the review positive</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">&quot;decline&quot;
+mark the review negative. A negative review will decline the
+request.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc request list [&minus;M] [&minus;U USER] [&minus;s state]
+[&minus;D DAYS] [&minus;t type] [&minus;B] [PRJ [PKG]] <br>
+osc request log ID <br>
+osc request [show] [&minus;d] [&minus;b] ID</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc request
+accept [&minus;m TEXT] ID <br>
+osc request decline [&minus;m TEXT] ID <br>
+osc request revoke [&minus;m TEXT] ID <br>
+osc request reopen [&minus;m TEXT] ID <br>
+osc request setincident [&minus;m TEXT] ID INCIDENT <br>
+osc request supersede [&minus;m TEXT] ID SUPERSEDING_ID <br>
+osc request approvenew [&minus;m TEXT] PROJECT <br>
+osc request priorize [&minus;m TEXT] ID PRIORITY</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc request
+checkout/co ID <br>
+osc request clone [&minus;m TEXT] ID</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc review show
+[&minus;d] [&minus;b] ID <br>
+osc review list [&minus;U USER] [&minus;G GROUP] [&minus;P
+PROJECT [&minus;p PACKAGE]] [&minus;s state] <br>
+osc review add [&minus;m TEXT] [&minus;U USER] [&minus;G
+GROUP] [&minus;P PROJECT [&minus;p PACKAGE]] ID <br>
+osc review accept [&minus;m TEXT] [&minus;U USER] [&minus;G
+GROUP] [&minus;P PROJECT [&minus;p PACKAGE]] ID <br>
+osc review decline [&minus;m TEXT] [&minus;U USER] [&minus;G
+GROUP] [&minus;P PROJECT [&minus;p PACKAGE]] ID <br>
+osc review reopen [&minus;m TEXT] [&minus;U USER] [&minus;G
+GROUP] [&minus;P PROJECT [&minus;p PACKAGE]] ID <br>
+osc review supersede [&minus;m TEXT] [&minus;U USER]
+[&minus;G GROUP] [&minus;P PROJECT [&minus;p PACKAGE]] ID
+SUPERSEDING_ID</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;source&minus;buildstatus <br>
+print the buildstatus of the source package (only <br>
+works with &quot;show&quot; and the interactive review) <br>
+&minus;&minus;involved&minus;projects <br>
+show all requests for project/packages where USER is <br>
+involved <br>
+
+&minus;&minus;exclude&minus;target&minus;project=EXCLUDE_TARGET_PROJECT
+<br>
+exclude target project from request list <br>
+&minus;&minus;non&minus;interactive <br>
+non-interactive review of request <br>
+&minus;&minus;or&minus;revoke <br>
+For automatisation scripts: accepts (if using with <br>
+accept argument) a request when it is in new or review <br>
+state. Or revoke it when it got declined. Otherwise <br>
+just do nothing. <br>
+&minus;i, &minus;&minus;interactive <br>
+interactive review of request <br>
+&minus;e, &minus;&minus;edit edit a submit action <br>
+&minus;B, &minus;&minus;bugowner <br>
+also show requests about packages where I am bugowner <br>
+&minus;M, &minus;&minus;mine only show requests created by
+yourself <br>
+&minus;b, &minus;&minus;brief <br>
+print output in list view as list subcommand <br>
+&minus;p PACKAGE, &minus;&minus;package=PACKAGE <br>
+requests or reviews limited for the specified PACKAGE, <br>
+requires also a PROJECT <br>
+&minus;P PROJECT, &minus;&minus;project=PROJECT <br>
+requests or reviews limited for the specified PROJECT <br>
+&minus;G GROUP, &minus;&minus;group=GROUP <br>
+requests or reviews limited for the specified GROUP <br>
+&minus;U USER, &minus;&minus;user=USER <br>
+requests or reviews limited for the specified USER <br>
+&minus;D DAYS, &minus;&minus;days=DAYS <br>
+only list requests in state &quot;new&quot; or changed in
+the <br>
+last DAYS. [default=0] <br>
+&minus;s STATE, &minus;&minus;state=STATE <br>
+only list requests in one of the comma separated given <br>
+states (new/review/accepted/revoked/declined) or
+&quot;all&quot; <br>
+[default=&quot;declined,new,review&quot;, or
+&quot;all&quot;, if no args <br>
+given] <br>
+&minus;f, &minus;&minus;force <br>
+enforce state change, can be used to ignore open <br>
+reviews <br>
+&minus;a, &minus;&minus;all all states. Same
+as&rsquo;&minus;s all&rsquo; <br>
+&minus;t TYPE, &minus;&minus;type=TYPE <br>
+limit to requests which contain a given action type <br>
+(submit/delete/change_devel) <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT <br>
+&minus;&minus;no&minus;devel Do not attempt to forward to
+devel project <br>
+&minus;u, &minus;&minus;unified <br>
+output the diff in the unified diff format <br>
+&minus;d, &minus;&minus;diff generate a diff</p>
+
+<p style="margin-left:11%;"><b>requestmaintainership
+(reqbs, reqbugownership, reqmaintainership, <br>
+reqms, requestbugownership)</b></p>
+
+<p style="margin-left:22%;">requests to add user as
+maintainer or bugowner</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc requestmaintainership # for current user in checked out
+package <br>
+osc requestmaintainership USER # for specified user in
+checked out package <br>
+osc requestmaintainership PROJECT # for current user if cwd
+is not a checked out package <br>
+osc requestmaintainership PROJECT PACKAGE # for current user
+<br>
+osc requestmaintainership PROJECT PACKAGE USER # request for
+specified user <br>
+osc requestmaintainership PROJECT PACKAGE group:NAME #
+request for specified group</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc
+requestbugownership ... # accepts same parameters but uses
+bugowner role</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;r role, &minus;&minus;role=role <br>
+specify user role (default: maintainer) <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT</p>
+
+<p style="margin-left:11%;"><b>resolved</b></p>
+
+<p style="margin-left:22%;">Remove &rsquo;conflicted&rsquo;
+state on working copy files</p>
+
+<p style="margin-left:22%; margin-top: 1em">If an upstream
+change can&rsquo;t be merged automatically, a file is put
+into in &rsquo;conflicted&rsquo; (&rsquo;C&rsquo;) state.
+Within the file, conflicts are marked with special
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; as well as ======== and
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; lines.</p>
+
+<p style="margin-left:22%; margin-top: 1em">After manually
+resolving all conflicting parts, use this command to remove
+the &rsquo;conflicted&rsquo; state.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note: this
+subcommand does not semantically resolve conflicts or remove
+conflict markers; it merely removes the conflict-related
+artifact files and allows PATH to be committed again.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc resolved FILE [FILE...]</p>
+
+<p style="margin-left:11%;"><b>restartbuild
+(abortbuild)</b></p>
+
+<p style="margin-left:22%;">Restart the build of a certain
+project or package</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc restartbuild [PROJECT [PACKAGE [REPOSITORY [ARCH]]]]
+Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;all Restart all running builds of entire
+project <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+Restart builds for a specific repository <br>
+&minus;a ARCH, &minus;&minus;arch=ARCH <br>
+Restart builds for a specific architecture</p>
+
+<p style="margin-left:11%;"><b>results (r)</b></p>
+
+<p style="margin-left:22%;">Shows the build results of a
+package or project</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc results # (inside working copy of PRJ or PKG) <br>
+osc results PROJECT [PACKAGE]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;format=FORMAT <br>
+format string for csv output <br>
+&minus;&minus;csv generate output in CSV format <br>
+&minus;&minus;xml generate output in XML (former
+results_meta) <br>
+&minus;w, &minus;&minus;watch <br>
+watch the results until all finished building <br>
+&minus;v, &minus;&minus;verbose <br>
+more verbose output <br>
+&minus;a ARCH, &minus;&minus;arch=ARCH <br>
+Show results only for specified architecture(s) <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+Show results only for specified repo(s) <br>
+&minus;l, &minus;&minus;last&minus;build <br>
+show last build results (succeeded/failed/unknown)</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p><b>revert</b></p></td>
+<td width="2%"></td>
+<td width="75%">
+
+
+<p>Restore changed files or the entire working copy.</p></td>
+<td width="3%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc revert &lt;modified file(s)&gt; <br>
+ose revert . Note: this only works for package working
+copies</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc revert [FILES...]</p>
+
+<p style="margin-left:11%;"><b>rremove</b></p>
+
+<p style="margin-left:22%;">Remove source files from
+selected package</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc rremove PROJECT PACKAGE [FILES...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;f, &minus;&minus;force <br>
+Don&rsquo;t ask and delete files</p>
+
+<p style="margin-left:11%;"><b>search (bse, se)</b></p>
+
+<p style="margin-left:22%;">Search for a project and/or
+package.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If no option is
+specified osc will search for projects and packages which
+contains the &rsquo;search term&rsquo; in their name, title
+or description.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc search &rsquo;search term&rsquo; &lt;options&gt; <br>
+osc bse ... (&rsquo;osc search &minus;&minus;binary&rsquo;)
+<br>
+osc se &rsquo;perl(Foo::Bar)&rsquo; (&rsquo;osc
+&minus;&minus;package perl-Foo-Bar&rsquo;) Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;binaryversion=VERSION <br>
+search for binary with specified version (implies <br>
+&minus;&minus;binary) <br>
+&minus;B PROJECT, &minus;&minus;baseproject=PROJECT <br>
+search packages built for PROJECT (implies
+&minus;&minus;binary) <br>
+&minus;&minus;binary search binary packages <br>
+&minus;&minus;csv generate output in CSV (separated by |)
+<br>
+&minus;M, &minus;&minus;mine shorthand for
+&minus;&minus;bugowner &minus;&minus;package <br>
+&minus;&minus;maintained <br>
+OBSOLETE: please use maintained command instead. <br>
+&minus;m, &minus;&minus;maintainer <br>
+as &minus;i, but only maintainer <br>
+&minus;b, &minus;&minus;bugowner <br>
+as &minus;i, but only bugowner <br>
+&minus;i, &minus;&minus;involved <br>
+show projects/packages where given person (or myself) <br>
+is involved as bugowner or maintainer <br>
+[[{group|person}/]&lt;name&gt;] default: person <br>
+&minus;V, &minus;&minus;version <br>
+show package version, revision, and srcmd5. CAUTION: <br>
+This is slow and unreliable <br>
+&minus;v, &minus;&minus;verbose <br>
+show more information <br>
+&minus;a ATTRIBUTE,
+&minus;&minus;limit&minus;to&minus;attribute=ATTRIBUTE <br>
+match only when given attribute exists in meta data <br>
+&minus;&minus;description <br>
+search for matches in the &rsquo;description&rsquo; element
+<br>
+&minus;&minus;title search for matches in the
+&rsquo;title&rsquo; element <br>
+&minus;&minus;project search for a project <br>
+&minus;&minus;package search for a package <br>
+&minus;s, &minus;&minus;substring <br>
+Show also results where the search term is a sub <br>
+string, slower search <br>
+&minus;e, &minus;&minus;exact <br>
+show only exact matches, this is default now <br>
+&minus;&minus;repos&minus;baseurl <br>
+show base URLs of download repositories</p>
+
+<p style="margin-left:11%;"><b>service</b></p>
+
+<p style="margin-left:22%;">Handle source services</p>
+
+<p style="margin-left:22%; margin-top: 1em">Source services
+can be used to modify sources like downloading files, verify
+files, generating files or modify existing files.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc service COMMAND (inside working copy) <br>
+osc service run [SOURCE_SERVICE] <br>
+osc service localrun <br>
+osc service disabledrun <br>
+osc service remoterun [PROJECT PACKAGE] <br>
+osc service merge [PROJECT PACKAGE] <br>
+osc service wait [PROJECT PACKAGE]</p>
+
+<p style="margin-left:22%; margin-top: 1em">COMMAND can be:
+<br>
+run r run defined services locally, it takes an optional
+parameter to run only a <br>
+specified source service. In case parameters exist for this
+one in _service file <br>
+they are used. <br>
+localrun lr run services locally and store files as local
+created <br>
+disabledrun dr run disabled or server side only services
+locally and store files as local created <br>
+remoterun rr trigger a re-run on the server side <br>
+merge commits all server side generated files and drops the
+_service definition <br>
+wait waits until the service finishes and returns with an
+error if it failed</p>
+
+<p style="margin-left:11%;"><b>setdevelproject
+(sdp)</b></p>
+
+<p style="margin-left:22%;">Set the devel project / package
+of a package</p>
+
+<p style="margin-left:22%; margin-top: 1em">Examples: <br>
+osc setdevelproject [PRJ PKG] DEVPRJ [DEVPKG] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;u, &minus;&minus;unset <br>
+remove devel project</p>
+
+<p style="margin-left:11%;"><b>setlinkrev</b></p>
+
+<p style="margin-left:22%;">Updates a revision number in a
+source link.</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command
+adds or updates a specified revision number in a source
+link. The current revision of the source is used, if no
+revision number is specified.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc setlinkrev <br>
+osc setlinkrev PROJECT [PACKAGE] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;u, &minus;&minus;unset <br>
+remove revision in link, it will point always to <br>
+latest revision <br>
+&minus;R, &minus;&minus;use&minus;plain&minus;revision <br>
+Do not expand revision the specified or latest rev <br>
+&minus;r rev, &minus;&minus;revision=rev <br>
+use the specified revision.</p>
+
+<p style="margin-left:11%;"><b>signkey</b></p>
+
+<p style="margin-left:22%;">Manage Project Signing Key</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc signkey
+[&minus;&minus;create|&minus;&minus;delete|&minus;&minus;extend]
+&lt;PROJECT&gt; osc signkey [&minus;&minus;notraverse]
+&lt;PROJECT&gt;</p>
+
+<p style="margin-left:22%; margin-top: 1em">This command is
+for managing gpg keys. It shows the public key by default.
+There is no way to download or upload the private part of a
+key by design.</p>
+
+<p style="margin-left:22%; margin-top: 1em">However you can
+create a new own key. You may want to consider to sign the
+public key with your own existing key.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If a project
+has no key, the key from upper level project will be used
+(eg. when dropping &quot;KDE:KDE4:Community&quot; key, the
+one from &quot;KDE:KDE4&quot; will be used).</p>
+
+<p style="margin-left:22%; margin-top: 1em">WARNING: THE
+OLD KEY WILL NOT BE RESTORABLE WHEN USING DELETE OR
+CREATE</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc signkey [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;sslcert fetch SSL certificate instead of GPG
+key <br>
+&minus;&minus;notraverse <br>
+don&rsquo; traverse projects upwards to find key <br>
+&minus;&minus;delete delete the gpg signing key in this
+project <br>
+&minus;&minus;extend extend expiration date of the gpg
+public key for this <br>
+project <br>
+&minus;&minus;create create new gpg signing key for this
+project</p>
+
+<p style="margin-left:11%;"><b>status (st)</b></p>
+
+<p style="margin-left:22%;">Show status of files in working
+copy</p>
+
+<p style="margin-left:22%; margin-top: 1em">Show the status
+of files in a local working copy, indicating whether files
+have been changed locally, deleted, added, ...</p>
+
+<p style="margin-left:22%; margin-top: 1em">The first
+column in the output specifies the status and is one of the
+following characters: <br>
+&rsquo; &rsquo; no modifications <br>
+&rsquo;A&rsquo; Added <br>
+&rsquo;C&rsquo; Conflicted <br>
+&rsquo;D&rsquo; Deleted <br>
+&rsquo;M&rsquo; Modified <br>
+&rsquo;?&rsquo; item is not under version control <br>
+&rsquo;!&rsquo; item is missing (removed by non-osc command)
+or incomplete <br>
+&rsquo;S&rsquo; item is skipped (item exceeds a file size
+limit or is _service:* file) <br>
+&rsquo;F&rsquo; Frozen (use &quot;osc pull&quot; to merge
+conflicts) (package-only state)</p>
+
+<p style="margin-left:22%; margin-top: 1em">examples: <br>
+osc st <br>
+osc st &lt;directory&gt; <br>
+osc st file1 file2 ...</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc status [OPTS] [PATH...] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;e, &minus;&minus;show&minus;excluded <br>
+also show files which are excluded by the <br>
+&quot;exclude_glob&quot; config option <br>
+&minus;v, &minus;&minus;verbose <br>
+print extra information <br>
+&minus;q, &minus;&minus;quiet <br>
+print as little as possible</p>
+
+<p style="margin-left:11%;"><b>submitrequest (sr,
+submitpac, submitreq)</b></p>
+
+<p style="margin-left:22%;">Create request to submit source
+into another Project</p>
+
+<p style="margin-left:22%; margin-top: 1em">[See
+http://en.opensuse.org/openSUSE:Build_Service_Collaboration
+for information on this topic.]</p>
+
+<p style="margin-left:22%; margin-top: 1em">See the
+&quot;request&quot; command for showing and modifing
+existing requests.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc submitreq [OPTIONS] <br>
+osc submitreq [OPTIONS] DESTPRJ [DESTPKG] <br>
+osc submitreq [OPTIONS] SOURCEPRJ SOURCEPKG DESTPRJ
+[DESTPKG]</p>
+
+<p style="margin-left:22%; margin-top: 1em">osc submitpac
+... is a shorthand for osc submitreq &minus;&minus;cleanup
+...</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;yes proceed without asking. <br>
+&minus;d, &minus;&minus;diff show diff only instead of
+creating the actual request <br>
+&minus;&minus;update&minus;link <br>
+This transfers the source including the _link file. <br>
+&minus;&minus;no&minus;update <br>
+never touch source package on accept (will break <br>
+source links) <br>
+&minus;&minus;no&minus;cleanup <br>
+never remove source package on accept, but update its <br>
+content <br>
+&minus;&minus;cleanup remove package if submission gets
+accepted (default <br>
+for home:&lt;id&gt;:branch projects) <br>
+&minus;&minus;seperate&minus;requests <br>
+Create multiple request instead of a single one (when <br>
+command is used for entire project) <br>
+&minus;&minus;nodevelproject <br>
+do not follow a defined devel project (primary project <br>
+where a package is developed) <br>
+&minus;s SUPERSEDE, &minus;&minus;supersede=SUPERSEDE <br>
+Superseding another request by this one <br>
+&minus;r REV, &minus;&minus;revision=REV <br>
+specify a certain source revision ID (the md5 sum) for <br>
+the source package <br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify message TEXT</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>token</b></p></td>
+<td width="4%"></td>
+<td width="55%">
+
+
+<p>Show and manage authentication token</p></td>
+<td width="23%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Authentication
+token can be used to run specific commands without sending
+credentials.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc token <br>
+osc token &minus;&minus;create [&lt;PROJECT&gt;
+&lt;PACKAGE&gt;] <br>
+osc token &minus;&minus;delete &lt;TOKENID&gt; <br>
+osc token &minus;&minus;trigger &lt;TOKENID&gt; Options:
+<br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;t TOKENID, &minus;&minus;trigger=TOKENID <br>
+Trigger the action of a token <br>
+&minus;d TOKENID, &minus;&minus;delete=TOKENID <br>
+Create a new token <br>
+&minus;c, &minus;&minus;create <br>
+Create a new token</p>
+
+<p style="margin-left:11%;"><b>triggerreason (tr)</b></p>
+
+<p style="margin-left:22%;">Show reason why a package got
+triggered to build</p>
+
+<p style="margin-left:22%; margin-top: 1em">The server
+decides when a package needs to get rebuild, this command
+shows the detailed reason for a package. A brief reason is
+also stored in the jobhistory, which can be accessed via
+&quot;osc jobhistory&quot;.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Trigger reasons
+might be: <br>
+&minus; new build (never build yet or rebuild manually
+forced) <br>
+&minus; source change (eg. on updating sources) <br>
+&minus; meta change (packages which are used for building
+have changed) <br>
+&minus; rebuild count sync (In case that it is configured to
+sync release numbers)</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage in
+package or project directory: <br>
+osc reason REPOSITORY ARCH <br>
+osc reason PROJECT PACKAGE REPOSITORY ARCH</p>
+
+<p style="margin-left:11%;"><b>undelete</b></p>
+
+<p style="margin-left:22%;">Restores a deleted project or
+package on the server.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The server
+restores a package including the sources and meta
+configuration. Binaries remain to be lost and will be
+rebuild.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc undelete PROJECT <br>
+osc undelete PROJECT PACKAGE [PACKAGE ...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify log message TEXT</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p><b>unlock</b></p></td>
+<td width="2%"></td>
+<td width="43%">
+
+
+<p>Unlocks a project or package</p></td>
+<td width="35%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">Unlocks a
+locked project or package. A comment is required.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc unlock PROJECT [PACKAGE]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;m TEXT, &minus;&minus;message=TEXT <br>
+specify log message TEXT</p>
+
+<p style="margin-left:11%;"><b>update (up)</b></p>
+
+<p style="margin-left:22%;">Update a working copy</p>
+
+<p style="margin-left:22%; margin-top: 1em">examples:</p>
+
+<p style="margin-left:22%; margin-top: 1em">1. osc up <br>
+If the current working directory is a package, update it.
+<br>
+If the directory is a project directory, update all
+contained <br>
+packages, AND check out newly added packages.</p>
+
+<p style="margin-left:22%; margin-top: 1em">To update only
+checked out packages, without checking out new <br>
+ones, you might want to use &quot;osc up *&quot; from within
+the project <br>
+dir.</p>
+
+<p style="margin-left:22%; margin-top: 1em">2. osc up PAC
+<br>
+Update the packages specified by the path argument(s)</p>
+
+<p style="margin-left:22%; margin-top: 1em">When
+&minus;&minus;expand&minus;link is used with source link
+packages, the expanded sources will be checked out. Without
+this option, the _link file and patches will be checked out.
+The option &minus;&minus;unexpand&minus;link can be used to
+switch back to the &quot;raw&quot; source with a _link file
+plus patch(es).</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc update [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;l limit_size,
+&minus;&minus;limit&minus;size=limit_size <br>
+Skip all files with a given size <br>
+&minus;S,
+&minus;&minus;server&minus;side&minus;source&minus;service&minus;files
+<br>
+Use server side generated sources instead of local <br>
+generation. <br>
+&minus;s, &minus;&minus;source&minus;service&minus;files
+<br>
+Run local source services after update. <br>
+&minus;e, &minus;&minus;expand&minus;link <br>
+if a package is a link, update to the expanded sources <br>
+&minus;u, &minus;&minus;unexpand&minus;link <br>
+if a package is an expanded link, update to the raw <br>
+_link file <br>
+&minus;r REV, &minus;&minus;revision=REV <br>
+update to specified revision (this option will be <br>
+ignored if you are going to update the complete <br>
+project or more than one package)</p>
+
+<p style="margin-left:11%;"><b>updatepacmetafromspec
+(metafromspec, updatepkgmetafromspec)</b></p>
+
+<p style="margin-left:22%;">Update package meta information
+from a specfile</p>
+
+<p style="margin-left:22%; margin-top: 1em">ARG, if
+specified, is a package working copy.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc updatepacmetafromspec [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;specfile=FILE <br>
+Path to specfile. (if you pass more than working copy <br>
+this option is ignored)</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>vc</b></p></td>
+<td width="8%"></td>
+<td width="32%">
+
+
+<p>Edit the changes file</p></td>
+<td width="46%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%; margin-top: 1em">osc vc
+[&minus;m MESSAGE|&minus;e] [filename[.changes]|path
+[file_with_comment]] If no &lt;filename&gt; is given,
+exactly one *.changes or *.spec file has to be in the cwd or
+in path.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The email
+address used in .changes file is read from BuildService
+instance, or should be defined in ~/.oscrc
+[https://api.opensuse.org/] user = login pass = password
+email = user@defined.email</p>
+
+<p style="margin-left:22%; margin-top: 1em">or can be
+specified via mailaddr environment variable.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc vc [ARGS...]</p>
+
+<p style="margin-left:22%; margin-top: 1em">Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;e, &minus;&minus;just&minus;edit <br>
+just open changes (cannot be used with &minus;m) <br>
+&minus;F FILE, &minus;&minus;file=FILE <br>
+read changes message from FILE (do not open an editor) <br>
+&minus;m MESSAGE, &minus;&minus;message=MESSAGE <br>
+add MESSAGE to changes (do not open an editor)</p>
+
+<p style="margin-left:11%;"><b>whois (user, who)</b></p>
+
+<p style="margin-left:22%;">Show fullname and email of a
+buildservice user</p>
+
+<p style="margin-left:22%; margin-top: 1em">Usage: <br>
+osc whois [USERNAMES...]</p>
+
+<p style="margin-left:11%;"><b>wipebinaries</b></p>
+
+<p style="margin-left:22%;">Delete all binary packages of a
+certain project/package</p>
+
+<p style="margin-left:22%; margin-top: 1em">With the
+optional argument &lt;package&gt; you can specify a certain
+package otherwise all binary packages in the project will be
+deleted.</p>
+
+<p style="margin-left:22%; margin-top: 1em">usage: <br>
+osc wipebinaries OPTS # works in checked out project dir
+<br>
+osc wipebinaries OPTS PROJECT [PACKAGE] Options: <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;all Delete all binaries regardless of the
+package status <br>
+(previously default) <br>
+&minus;&minus;unresolvable <br>
+Delete all binaries of packages which have dependency <br>
+errors <br>
+&minus;&minus;broken Delete all binaries of packages for
+which the package <br>
+source is bad <br>
+&minus;&minus;build&minus;failed <br>
+Delete all binaries of packages for which the build <br>
+failed <br>
+&minus;&minus;build&minus;disabled <br>
+Delete all binaries of packages for which the build is <br>
+disabled <br>
+&minus;r REPO, &minus;&minus;repo=REPO <br>
+Delete all binary packages for a specific repository <br>
+&minus;a ARCH, &minus;&minus;arch=ARCH <br>
+Delete all binary packages for a specific architecture</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>GLOBAL
+OPTIONS</b> <br>
+Options: <br>
+&minus;&minus;version show program&rsquo;s version number
+and exit <br>
+&minus;h, &minus;&minus;help show this help message and exit
+<br>
+&minus;&minus;debugger jump into the debugger before
+executing anything <br>
+&minus;&minus;post&minus;mortem jump into the debugger in
+case of errors <br>
+&minus;t, &minus;&minus;traceback print call trace in case
+of errors <br>
+&minus;H, &minus;&minus;http&minus;debug debug HTTP traffic
+(filters some headers) <br>
+&minus;&minus;http&minus;full&minus;debug debug HTTP traffic
+(filters no headers) <br>
+&minus;d, &minus;&minus;debug print info useful for
+debugging <br>
+&minus;A URL/alias, &minus;&minus;apiurl=URL/alias <br>
+specify URL to access API server at or an alias <br>
+&minus;c FILE, &minus;&minus;config=FILE <br>
+specify alternate configuration file <br>
+&minus;&minus;no&minus;keyring disable usage of desktop
+keyring system <br>
+&minus;&minus;no&minus;gnome&minus;keyring disable usage of
+GNOME Keyring <br>
+&minus;v, &minus;&minus;verbose increase verbosity <br>
+&minus;q, &minus;&minus;quiet be quiet, not verbose</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Type &rsquo;osc
+help &lt;subcommand&gt;&rsquo; for more detailed help on a
+specific subcommand.</p>
+
+<p style="margin-left:11%; margin-top: 1em">For additional
+information, see <br>
+* http://en.opensuse.org/openSUSE:Build_Service_Tutorial
+<br>
+* http://en.opensuse.org/openSUSE:OSC</p>
+
+<p style="margin-left:11%; margin-top: 1em">You can modify
+osc commands, or roll your own, via the plugin API: <br>
+* http://en.opensuse.org/openSUSE:OSC_plugins</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">osc was written
+by several authors. This man page is automatically
+generated.</p>
+<hr>
+</body>
+</html>
