@@ -25,7 +25,7 @@ usr/
        - LICENSE
 ~~~
 
-are built from PKGBUILDs using the `makepkg` command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page):
+The package metadata (which is used by pacman when it installs new packages to check for file conflicts and such) is stored in the four hidden files (that is, those with `.` in their filename) in the package's top-level directory. ALPs are built from PKGBUILDs using the `makepkg` command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page):
 
 ~~~ bash
 # ~ Maintainer/Contributor name and email ~
@@ -56,4 +56,4 @@ package() {   # This will actually build the package. If more than one package i
 }             # built from the one PKGBUILD then more than one package() function is provided.
 ~~~
 
-the `sha256sums` can be replaced with `sha512sums` and sometimes GPG signatures are used also. For example, the Linux kernel PKGBUILD, in the core pacman repository, uses GPG and sha256sums to check package integrity and validity. The variable definition lines (that is, the `pkgname` line through to `install` line) provide mostly the package's metadata and security checks, while the `prepare()`, `build()` and `package()` functions are responsible for the actual building of the package. 
+the `sha256sums` can be replaced with `sha512sums` and sometimes GPG signatures are used also. For example, the Linux kernel PKGBUILD, in the core pacman repository, uses GPG and sha256sums to check package integrity and validity. The variable definition lines (that is, the `pkgname` line through to `install` line) provide mostly the package's metadata and security checks, while the `prepare()`, `build()` and `package()` functions are responsible for the actual building of the package.
