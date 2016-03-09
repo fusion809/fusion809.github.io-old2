@@ -1,5 +1,5 @@
 ### Arch Linux Packages
-**Arch Linux packages** are xz-compressed tar archives that are built and installed using commands provided by the `pacman` package on Arch Linux. ALPs are the package format used by Arch Linux derivatives along with the "independent" distributions, Frugalware Linux and KaOS.
+**Arch Linux packages** are xz-compressed tar archives that are built and installed using commands provided by the `pacman` package on Arch Linux. ALPs are the package format used by Arch Linux derivatives along with the "independent" distributions, Frugalware Linux and KaOS, which also use the pacman package manager.
 
 #### ALP Contents
 ALPs have the following contents:
@@ -13,7 +13,7 @@ where `$INSTALLED_FILES` are, of course, the installed files of the package with
 The package metadata (which is used by pacman when it installs new packages to check for file conflicts and such) is stored in the four hidden files (that is, those with `.` in their filename) in the package's top-level directory.
 
 #### PKGBUILD Structure
-ALPs are built from PKGBUILDs using the `makepkg` command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page):
+ALPs are built from PKGBUILDs using the [`makepkg`](/man/makepkg.8.html) command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page):
 
 {% include_relative 03-package-formats/02-archlinux/04-general-format.md %}
 
