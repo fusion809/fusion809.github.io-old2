@@ -1,5 +1,5 @@
 ## Terminology
-In this post I will use several terms that are not explained in [the glossary](/glossary/), this section will (hopefully) explain them so that everyone knows what I mean when I use each of them. If this section, or any other section of this post, is confusing please [contact me](/contributing/) and tell me. I am afraid I am not a mind-reader, so I need you to tell me if something is wrong.
+In this post I will use several terms that are not explained in [the glossary](/glossary/), this section will (hopefully) explain them so that everyone knows what I mean when I use each of them. If this section, or any other section of this post, is confusing please [contact me](/contributing/) and tell me. I am afraid I am not perfect, or a mind-reader, so I need you to tell me if something is wrong or if I omitted some important information. 
 
 ### Package Building
 **Building a package** will be used to refer to the process of compiling, or otherwise making a package's source code executable, usually so that some file inside (usually a shell script or file written in object code) can be executed in order to start the program the package is for.
