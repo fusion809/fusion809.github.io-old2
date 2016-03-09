@@ -3,6 +3,7 @@ layout:           post
 title:            "How I switched from Arch Linux to openSUSE Tumbleweed"
 date:             2016-02-10 +1000
 categories:       opensuse-tumbleweed, linux, arch-linux
+permalink:        /arch-linux-to-opensuse-tumbleweed/
 redirect_from:
   - /opensuse-tumbleweed/
   - /2016/02/09/opensuse-tumbleweed/

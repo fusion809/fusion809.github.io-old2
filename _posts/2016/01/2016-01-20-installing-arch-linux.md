@@ -2,10 +2,9 @@
 layout:     post
 title:      "How I managed to install Arch Linux and set it up"
 categories: arch-linux, installation-guide
-permalink:  /2016/01/20/installing-archlinux/
 date:       2016-01-20 +1000
+permalink:  /how-to-install-arch-linux/
 redirect_from:
-  - /how-to-install-arch-linux/
   - /installing-arch-linux/
   - /2016/01/20/installing-arch-linux
 ---

@@ -4,8 +4,8 @@ title:            "A Comparison of Popular Linux Package Managers"
 date:             2016-02-18 +1000
 last_modified_at: 2016-02-19 19:27:00 +1000
 categories:       linux, package-management
+permalink:        /comparison-of-package-managers/
 redirect_from:  
-  - /comparison-of-package-managers/
   - /2016/02/20/comparison-of-package-managers/
   - /comparison-of-package-management-systems/
 ---

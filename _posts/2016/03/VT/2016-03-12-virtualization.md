@@ -3,7 +3,7 @@ layout:     post
 title:      "Virtualization and Linux"
 date:       2016-03-12 +1000
 categories: linux, virtualization, docker, virtualbox
-permalink:  /2016/03/12/virtualization/
+permalink:  /virtualization-and-linux/
 ---
 
 Two programs, that I have been using on a daily, or at least, weekly basis are the free and open-source virtualization programs **Docker** and **Oracle VM VirtualBox** (or VirtualBox for short). These two programs are quite distinct from one another. There are several other virtualization programs available that are free and open-source and Linux-compatible, but these are the two that I have the greatest experience with and will hence be the main focus of this article. Before I describe them, I will need to clear up some terminology. The **host** operating system, or host machine, is the operating system or physical machine, on which the virtualization program is being run. The operating system, or machine, running inside the virtualization program, is called the **guest** operating system. The virtualized system, or machine, being run through the virtualization program, is also called a virtual machine (VM). The host machine can also be called the actual machine.

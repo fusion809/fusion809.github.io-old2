@@ -3,6 +3,7 @@ layout: post
 title:  "A Comparison of Free Operating Systems"
 date:   2016-01-07 +1000
 categories: bsd, linux, comparisons
+permalink:  /comparison-of-free-operating-systems/
 redirect_from:
   - /2015/11/10/comparison-of-linux-distros/
   - /2015/11/29/comparison-of-linux-distros-and-bsd-derivatives/
@@ -11,7 +12,6 @@ redirect_from:
   - /2015/12/10/comparison-of-free-operating-systems/
   - /2015/12/27/comparison-of-free-operating-systems/
   - /2016/01/02/comparison-of-free-operating-systems/
-  - /comparison-of-free-operating-systems/
 ---
 
 {% include_relative os-shot.html image="Oracle-VM-VirtualBox-5.0.10-29-11-2015.png" width="1130px" float="none" description="Oracle VM VirtualBox 5.0.10" %}

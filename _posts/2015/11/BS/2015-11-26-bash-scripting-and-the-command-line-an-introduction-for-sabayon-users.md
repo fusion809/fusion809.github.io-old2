@@ -4,12 +4,12 @@ title:            "Bash Scripting and the Command-Line: an Introduction for Saba
 date:             2015-11-26 +1000
 categories:       sabayon, bash, shell-scripting, command-line
 last_modified_at: 16:00 2016-01-22 +1000
+permalink:        /bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/
 redirect_from:
   - /2015/10/31/an-introduction-to-the-command-line-and-bash-scripting-for-sabayon-users/
   - /2015/10/31/an-introduction-to-bash-scripting/
   - /2015/11/24/an-introduction-to-the-command-line-and-bash-scripting-for-sabayon-users/
   - /2015/11/24/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/
-  - /bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/
 ---
 
 {% include Links/image.html image="optipng2.png" description="OptiPNG 0.7.5 running under Bash 4.3.39 in LXTerminal 0.2.0" width = "1130px" float = "none" %}

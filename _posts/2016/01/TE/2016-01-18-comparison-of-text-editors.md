@@ -5,10 +5,10 @@ date:             2016-01-18 +1000
 last_modified_at: 2016-03-03 07:48:37 +1000
 categories:       comparisons, text-editors, integrated-development-environment, manjaro-linux, sabayon-linux
 revision:         3
+permalink:        /comparison-of-text-editors/
 redirect_from:
       - /2016/01/12/comparison-of-text-editors/
       - /2016/01/20/comparison-of-text-editors/
-      - /comparison-of-text-editors/
 ---
 {% include_relative 01-introduction.md %}
 {% include_relative 02-glossary.md %}

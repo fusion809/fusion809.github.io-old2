@@ -1,8 +1,9 @@
 ---
-layout:       post
-title:        "How to Install Node.js on Linux"
-date:         2016-02-25 +1000
-categories:   linux, nodejs, installation-guides
+layout:        post
+title:         "How to Install Node.js on Linux"
+date:          2016-02-25 +1000
+categories:    linux, nodejs, installation-guides
+permalink:     /howto-install-nodejs-on-linux/
 redirect_from:
   - /howto-install-nodejs/
 ---

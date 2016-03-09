@@ -28,7 +28,7 @@ usr/
 are built from PKGBUILDs using the `makepkg` command that comes bundled with the pacman package manager. They are the easiest packages to build, in my opinion. PKGBUILDs have the following general format (for more details see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page):
 
 ~~~ bash
-# ~ COPYRIGHT info, and the email of maintainer(s) and/or contributor(s) ~
+# ~ Maintainer/Contributor name and email ~
 pkgname=      # The package's name.
 pkgver=       # The upstream package version, e.g., 1.5.0 for Atom 1.5.0.
 pkgrel=       # The PKGBUILD revision number.
@@ -53,8 +53,7 @@ build() {     # Perform any compiling of the source code that may be necessary.
 }             # You may also see configure scripts being run here.
 
 package() {   # This will actually build the package. If more than one package is
-}             # built from the one PKGBUILD then more than one package() function
-              # is provided.
+}             # built from the one PKGBUILD then more than one package() function is provided.
 ~~~
 
-the `sha256sums` can be replaced with `sha512sums` and sometimes GPG signatures are used also. For example, the Linux kernel PKGBUILD, in the core pacman repository, uses GPG and sha256sums to check package integrity and validity. The variable definition lines (that is, the `pkgname` line through to `install` line) provide mostly the package's metadata and security checks, while the `prepare()`, `build()` and `package()` functions are responsible for the actual building of the package.
+the `sha256sums` can be replaced with `sha512sums` and sometimes GPG signatures are used also. For example, the Linux kernel PKGBUILD, in the core pacman repository, uses GPG and sha256sums to check package integrity and validity. The variable definition lines (that is, the `pkgname` line through to `install` line) provide mostly the package's metadata and security checks, while the `prepare()`, `build()` and `package()` functions are responsible for the actual building of the package. 
