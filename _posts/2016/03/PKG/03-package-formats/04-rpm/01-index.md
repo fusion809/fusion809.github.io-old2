@@ -19,8 +19,4 @@ rpmbuild/
 
 The `BUILD` and `BUILDROOT` subdirectories are used for compiling the source code and collecting the necessary installed files for packaging, respectively. The `SOURCES` subdirectory contains the source files, including any patches, and `SPECS` contains the all-important spec files, which instruct the `rpmbuild` utility how to build the package and what metadata the RPM should contain. The RPM is stored in the `RPMS` subdirectory and the SRPM is stored in the `SRPMS` subdirectory.
 
-spec files look much like PKGBUILDs, except they use macros instead of many of the variables and functions found in PKGBUILDs. Here is a spec file for gVim 7.4.1525:
-
-{% include_relative 03-package-formats/04-rpm/02-gvim.md %}
-
-I personally find writing spec files significantly more complicated than writing PKGBUILDs, as PKGBUILDs are written more like as if you are writing a shell script to install the software package locally on your machine.
+spec files look much like PKGBUILDs, except they use macros instead of many of the variables and functions found in PKGBUILDs. I would provide an example here in this post of Vim's spec file (the one I use to build Vim in the Open Build Service) but it is over 520 lines long (as opposed to ~72 lines for the gVim PKGBUILD shown earlier). So to view it see [here](/spec/gvim.md). I personally find writing spec files significantly more complicated than writing PKGBUILDs, as PKGBUILDs are written more like as if you are writing a shell script to install the software package locally on your machine.
