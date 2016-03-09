@@ -9,4 +9,6 @@ permalink:        /package-development/
 
 {% include_relative 01-introduction.md %}
 
-{% include_relative 02-package-formats/01-index.md %}
+{% include_relative 02-terminology.md %}
+
+{% include_relative 03-package-formats/01-index.md %}
