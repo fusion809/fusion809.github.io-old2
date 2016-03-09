@@ -9,4 +9,4 @@ permalink:        /package-development/
 
 {% include_relative 01-introduction.md %}
 
-{% include_relative 02-package-formats/index.md %}
+{% include_relative 02-package-formats/01-index.md %}
