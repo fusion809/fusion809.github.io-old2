@@ -25,6 +25,6 @@ Now, the way you should interpret this basic syntax, is that what appears in squ
 
 {% include Code/coder.html line1="chroot /root2 /bin/bash" %}
 
-to enter the chroot. Note no `[ARG]...` is specified, I seldom ever specify an `[ARG]...` for `[COMMAND]`.
+to enter the chroot. Note no `[ARG]...` is specified in this line, I seldom ever specify an `[ARG]...` for `[COMMAND]`.
 
 Once you have entered the chroot, you can build packages the same way you would normally. For example, in a Gentoo / Sabayon chroot one would likely build tbz2 binaries by running `ebuild $package.ebuild package`.
