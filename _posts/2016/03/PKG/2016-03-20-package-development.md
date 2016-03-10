@@ -14,3 +14,5 @@ permalink:        /package-development/
 {% include_relative 03-package-formats/01-index.md %}
 
 {% include_relative 04-build-methods/01-index.md %}
+
+{% include_relative 06-footnotes.md %}

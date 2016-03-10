@@ -1,2 +1,2 @@
-### Using Docker
-**Docker** is an open-source Virtualization program written in Go, that is enables the automated deployment of software containers that can be used for a variety of different processes. 
+### Docker
+[**Docker**](https://www.docker.com/) is an open-source virtualization program that is written in Go, that enables the automated deployment of software containers (which usually contain miniature operating systems) that can be used for a variety of different purposes. One such purpose is the building of software packages. Building packages using Docker is much like building packages in a chroot, as it involves using the standard tools for building the package in question (e.g., `makepkg` for ALPs and `ebuild` for Gentoo / Sabayon packages), but it is done in an environment (in this case, a software container) that you can muck up as much as you want, without it damaging your host system. 
