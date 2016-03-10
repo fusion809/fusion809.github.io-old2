@@ -8,7 +8,7 @@ permalink:        /projects/
 
 While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. These distributions include:
 
-* **Arch Linux** / **Manjaro Linux** &mdash; you can find these packages [here at the AUR](https://aur.archlinux.org/packages/?SeB=m&K=fusion809) and [here at the fusion809/PKGBUILDs repository](https://github.com/fusion809/PKGBUILDs). I also maintain some in my [Open Build Service project](https://build.opensuse.org/project/show/home:fusion809/). 
+* **Arch Linux** / **Manjaro Linux** &mdash; you can find these packages [here at the AUR](https://aur.archlinux.org/packages/?SeB=m&K=fusion809) and [here at the fusion809/PKGBUILDs repository](https://github.com/fusion809/PKGBUILDs). I also maintain some in my [Open Build Service project](https://build.opensuse.org/project/show/home:fusion809/).
 * **Gentoo Linux** / **Sabayon Linux** &mdash; you can find these packages [here in my overlay, `sabayon-tools`](https://github.com/fusion809/sabayon-tools).
 * **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages [here at my Open Build Service project](https://build.opensuse.org/project/show/home:fusion809/).
 
@@ -21,3 +21,10 @@ I also maintain several GitHub repositories of shell scripts which I use on a va
 * [`mageia-scripts`](https://github.com/fusion809/mageia-scripts) &mdash; scripts for distributions that use the urpmi package manager, including Mageia and OpenMandriva.
 * [`opensuse-scripts`](https://github.com/fusion809/opensuse-scripts) &mdash; scripts for distributions that use the ZYpp package manager like openSUSE.
 * [`sabayon-scripts`](https://github.com/fusion809/sabayon-scripts) &mdash; scripts for distributions that use the Entropy and/or Portage managers, such as Gentoo Linux and Sabayon Linux.
+
+## Arch Linux Packages
+The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three locations, although some packages can be found in more than one of these locations. These locations are:
+
+* [Arch User Repository](https://aur.archlinux.org/packages/?SeB=m&K=fusion809)
+* [GitHub PKGBUILDs Repository](https://github.com/fusion809/PKGBUILDs)
+* [My Open Build Service Project](https://build.opensuse.org/project/show/home:fusion809/)
