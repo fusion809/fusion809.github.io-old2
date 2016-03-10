@@ -28,3 +28,12 @@ The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three 
 * [Arch User Repository](https://aur.archlinux.org/packages/?SeB=m&K=fusion809)
 * [GitHub PKGBUILDs Repository](https://github.com/fusion809/PKGBUILDs)
 * [My Open Build Service Project](https://build.opensuse.org/project/show/home:fusion809/)
+
+## Gentoo / Sabayon Packages
+They are stored in [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) and are not regularly maintained.
+
+## openSUSE
+They are stored in one of two locations:
+
+* [GitHub rpmbuild Repository](https://github.com/fusion809/) &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package. 
+* [My Open Build Service Project](https://build.opensuse.org/project/show/home:fusion809/)
