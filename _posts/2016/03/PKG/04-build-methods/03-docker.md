@@ -24,10 +24,18 @@ While to get the Docker daemon to automatically start on startup one would run:
 {% include Code/coder.html line1="systemctl enable docker" %}
 
 #### Use
-To find pre-existing containers that you can use, search the [Docker Hub](https://hub.docker.com/). To build Debian packages you will probably be better off using the Debian container. To pull it (which makes it available for use on your current PC) run:
+To find pre-existing containers that you can use, search the [Docker Hub](https://hub.docker.com/).
+
+To build Arch Linux packages you are probably better off pull the [`base/archlinux`](https://hub.docker.com/r/base/archlinux/) container, with:
+
+{% include Code/codeu.html line1="docker pull base/archlinux" %}
+
+To build Debian packages you will probably be better off using the Debian container. To pull it (which makes it available for use on your current PC) run:
 
 {% include Code/codeu.html line1="docker pull debian:latest" %}
 
-To build a RPM package one would probably be best using the latest official Fedora container, run:
+To build Gentoo packages you can use either a Gentoo or Sabayon container, out of these I would personally recommend the [`sabayon/base-amd64`](https://hub.docker.com/r/sabayon/base-amd64/) container. This is because Sabayon containers have the Entropy package manager, available in them, which can be helpful in helping one more quickly install required build dependencies for any ebuilds you wish to build. This makes installing the build dependencies faster than if one was using a Gentoo container, as the Gentoo containers have only the Portage package manager available for installing the required build dependencies which is quite often a tedious process. 
+
+To build a RPM package one would probably be best using the latest official Fedora container, to pull it run:
 
 {% include Code/codeu.html line1="docker pull fedora:latest" %}
