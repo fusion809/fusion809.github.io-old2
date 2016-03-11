@@ -11,11 +11,11 @@ Docker can only be run on 64-bit Linux systems and is available from the officia
 * openSUSE / SUSE Linux Enterprise
 * Sabayon Linux
 
-Docker can be installed on [CentOS](https://docs.docker.com/engine/installation/linux/centos/), [Debian](https://docs.docker.com/engine/installation/linux/debian/), [Red Hat Enterprise Linux](https://docs.docker.com/engine/installation/linux/rhel/) and [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/), from unofficial repositories via methods outlined at the links provided. On most distributions after installing Docker you will need to add your user to the `docker` group, log out and log back in to this user account and start the Docker daemon using systemd. To add your user to the `docker` group one would run:
+Docker can be installed on [CentOS](https://docs.docker.com/engine/installation/linux/centos/), [Debian](https://docs.docker.com/engine/installation/linux/debian/), [Red Hat Enterprise Linux](https://docs.docker.com/engine/installation/linux/rhel/) and [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntulinux/), from unofficial repositories via methods outlined at the links provided. On most distributions after installing Docker you will need to add your user to the `docker` group, log out and log back in to this user account and start the Docker daemon using systemd. To add your user to the `docker` group run:
 
-{% include Code/coder.html line1="gpasswd -a &lt;USER&gt; docker" %}
+{% include Code/coder.html line1="gpasswd -a $USER docker" %}
 
-and to start the Docker daemon with systemd one would run:
+where `$USER` is the name of your user. And to start the Docker daemon with systemd one would run:
 
 {% include Code/coder.html line1="systemctl start docker" %}
 
