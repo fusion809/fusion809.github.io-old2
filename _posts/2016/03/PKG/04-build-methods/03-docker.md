@@ -34,7 +34,9 @@ To build Debian packages you will probably be better off using the Debian contai
 
 {% include Code/codeu.html line1="docker pull debian:latest" %}
 
-To build Gentoo packages you can use either a Gentoo or Sabayon container, out of these I would personally recommend the [`sabayon/base-amd64`](https://hub.docker.com/r/sabayon/base-amd64/) container. This is because Sabayon containers have the Entropy package manager, available in them, which can be helpful in helping one more quickly install required build dependencies for any ebuilds you wish to build. This makes installing the build dependencies faster than if one was using a Gentoo container, as the Gentoo containers have only the Portage package manager available for installing the required build dependencies which is quite often a tedious process. 
+To build Gentoo packages you can use either a Gentoo or Sabayon container, out of these I would personally recommend the [`sabayon/base-amd64`](https://hub.docker.com/r/sabayon/base-amd64/) container. This is because Sabayon containers have the Entropy package manager, available in them, which can be helpful in helping one more quickly install required build dependencies for any ebuilds you wish to build. This makes installing the build dependencies faster than if one was using a Gentoo container, as Gentoo containers have only the Portage package manager available for installing the required build dependencies which is quite often a tedious process. To pull the `sabayon/base-amd64` container run:
+
+{% include Code/codeu.html line1="docker pull sabayon/base-amd64:latest" %}
 
 To build a RPM package one would probably be best using the latest official Fedora container, to pull it run:
 
