@@ -27,3 +27,7 @@ While to get the Docker daemon to automatically start on startup one would run:
 To find pre-existing containers that you can use, search the [Docker Hub](https://hub.docker.com/). To build Debian packages you will probably be better off using the Debian container. To pull it (which makes it available for use on your current PC) run:
 
 {% include Code/codeu.html line1="docker pull debian:latest" %}
+
+To build a RPM package one would probably be best using the latest official Fedora container, run:
+
+{% include Code/codeu.html line1="docker pull fedora:latest" %}
