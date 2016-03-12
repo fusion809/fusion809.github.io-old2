@@ -10,6 +10,6 @@ In order to effectively build packages one must understand the basics of the **p
 
 {% include_relative 03-package-formats/03-debian/01-index.md %}
 
-{% include_relative 03-package-formats/04-rpm/01-index.md %}
+{% include_relative 03-package-formats/04-ebuilds/01-index.md %}
 
-{% include_relative 03-package-formats/05-ebuilds/01-index.md %}
+{% include_relative 03-package-formats/05-rpm/01-index.md %}
