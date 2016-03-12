@@ -1,0 +1,4 @@
+#### Creating Packages
+{% include Layouts/notei.md note1="An excellent Open Build Service tutorial can be found [here](https://en.opensuse.org/openSUSE:Build_Service_Tutorial) at the *openSUSE Wiki*. While this tutorial is hosted by the openSUSE Wiki, it should work regardless of your platform. I recommend you read it as this post section **is not** designed to replace it!" %}
+
+Creating packages in the OBS, modifying their characteristics, *etc.* can be the done from either the command-line or from within a web browser. I personally recommend you have access to both methods, as they both compliment each other. Both require an Internet connection; the command-line means of accessing the OBS also requires you have `osc` installed, while the browser method merely requires that you have a functioning web browser available to you.
