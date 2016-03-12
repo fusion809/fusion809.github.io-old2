@@ -1,12 +1,12 @@
 ### Arch Linux Packages
-**Arch Linux packages** are xz-compressed tar archives that are built and installed using commands provided by the `pacman` package on Arch Linux. ALPs are the package format used by Arch Linux derivatives (like Manjaro Linux) along with the "independent" distributions, Frugalware Linux and KaOS, which also use the pacman package manager, so this information should be applicable to packaging on these distributions too. 
+**Arch Linux packages** are xz-compressed tar archives that are built and installed using commands provided by the `pacman` package on Arch Linux. ALPs are the package format used by Arch Linux derivatives (like Manjaro Linux) along with the "independent" distributions, Frugalware Linux and KaOS, which also use the pacman package manager, so this information should be applicable to packaging on these distributions too.
 
 #### ALP Contents
 ALPs have the following contents:
 
 {% include_relative 03-package-formats/02-archlinux/02-general-contents.md %}
 
-where `$INSTALLED_FILES` are, of course, the installed files of the package with its respective file structure. For example, for the `broadcom-wl` package the `$INSTALLED_FILES` have the file structure:
+where `$INSTALLED_FILES` are, of course, the installed files of the package with its respective file structure. For example, for the `broadcom-wl` package the `$INSTALLED_FILES` have the directory structure:
 
 {% include_relative 03-package-formats/02-archlinux/03-broadcom-wl-contents.md %}
 
