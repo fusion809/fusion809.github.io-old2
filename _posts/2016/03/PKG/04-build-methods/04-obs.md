@@ -13,6 +13,7 @@ and it is installed! One way, that one can install `osc` and all its dependencie
 * `bash`
 * `diffutils`
 * `libxml2`
+* `make`
 * `perl`
 * `perl-uri`
 * `python-keyring`
@@ -32,3 +33,5 @@ The following is the procedure I recommend you follow to install each OBS-specif
 {% include_relative 04-build-methods/obs/obs.html package="obs-service-download_files" %}
 {% include_relative 04-build-methods/obs/obs.html package="osc" %}
 </ul>
+
+These are the bare minimum you need in order to run the `osc` command, but you may wish to install a few extra packages, in order for `osc` to gain some extra functionalities. To see all available officially-supported OBS-related packages see [this GitHub search](https://github.com/openSUSE?utf8=%E2%9C%93&query=obs-). Now, I have not installed each of these packages of myself, so all I can say is that based on the contents of their respective GitHub repositories (most importantly, that they contain a `Makefile`) I think, you should be able to install them via following the same procedure used to install the packages above. That is, `git clone` their GitHub repository, `cd` into your local copy of their repository, and run {% include Code/codeus-fs.html line1="sudo make install" %}
