@@ -14,7 +14,7 @@ and it is installed! One way, that one can install `osc` and all its dependencie
 * `python-keyring`
 * `python2`
 * `python2-m2crypto`
-* `rpm` (if you are using a RPM-based distribution like CentOS, Fedora, Mageia, Red Hat Enterprise Linux, Scientific Linux, *etc.* this shold be pre-installed)
+* `rpm` (if you are using a RPM-based distribution like CentOS, Fedora, Mageia, Red Hat Enterprise Linux, Scientific Linux, *etc.* this program should be pre-installed)
 * `urlgrabber`
 * `wget`
 * `xz`
