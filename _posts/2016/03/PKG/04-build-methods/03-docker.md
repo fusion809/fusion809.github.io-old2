@@ -45,8 +45,32 @@ To build a RPM package one would probably be best using the latest official [Fed
 alternatively, you can use the [`opensuse`](https://hub.docker.com/r/opensuse) container. If you cannot find a suitable container for the distribution you wish to package for, you can write your own Dockerfile and build a container based on it. I have never written one so I am afraid I cannot give you any pointers on how to do this, besides directing you to the [official documentation on writing Dockerfiles](https://docs.docker.com/engine/reference/builder/).
 
 #### Running
-Once you have chosen a Docker container to build your packages in and have pulled it to make it available for local use, then the next command you will need to run is `docker run`. It has the following general syntax:
+Once you have chosen a Docker container to build your packages in and have pulled it to make it available for local use, then the next command you will need to run is `docker run`. It has the following general syntax (for further details see its [official documentation](https://docs.docker.com/engine/reference/commandline/run/)):
 
 {% include Code/codeu.html line1="docker run [OPTION] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]" %}
 
-as with the chroot command, square brackets (`[...]`) are used to denote optional arguments, with all remaining arguments being mandatory. The `IMAGE` argument as you can see is mandatory and refers to the Docker container's image ID. The `[COMMAND]` argument, as with the `chroot` command, refers to an optional command you wish to start your container off with. Any extra commands or programs you wish to run in this container, will have to be started by this first command. This is why most people will choose the `/bin/bash` (or some other Unix shell) command as this argument. 
+as with the chroot command, square brackets (`[...]`) are used to denote optional arguments, with all remaining arguments being mandatory. The `IMAGE` argument as you can see is mandatory and refers to the Docker container's image ID. The `[COMMAND]` argument, as with the `chroot` command, refers to an optional command you wish to start your container off with. Any extra commands or programs you wish to run in this container, will have to be started by this first command. This is why most people will choose the `/bin/bash` (or some other Unix shell) command as this argument, as additional commands can be easily started off it.
+
+For example, to start the `sabayon/base-amd64` container I have on my local machine, to build packages in it, I usually run:
+
+{% include Code/codeu.html line1="docker run -i -t 8bdbc44b6570 /bin/bash" %}
+
+#### Copying Files to Host
+Once you have built a package with Docker you will likely want to copy it across to your host machine, using the `docker cp` command. Here is its basic syntax (for further details see its [official documentation](https://docs.docker.com/engine/reference/commandline/cp/))
+
+{% include Code/codeu.html line1="docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH" %}
+
+`CONTAINER` is the container's ID (which is distinct from its image ID, by the way!), `SRC_PATH` is the file's path on the Docker container, while `DEST_PATH` is where on the host machine one wishes to copy the file to. To determine the container ID, I suggest you run:
+
+{% include Code/codeu.html line1="docker ps" %}
+
+which will show you all Docker containers presently running. To show every container, including those that are not running, run:
+
+{% include Code/codeu.html line1="docker ps -a" %}
+
+#### Committing Changes
+If you have made some changes to a Docker container, like upgraded its software, installed some packages you need to build new packages, *etc.* you will probably not want to loose them. You will loose them, however, if you exit the machine normally (which you do by running `exit` inside the container, potentially repeatedly, until you are no longer in it). To save your changes you need to commit them (its official documentation is [here](https://docs.docker.com/engine/reference/commandline/commit/)), by running:
+
+{% include Code/codeu.html line1="docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]" %}
+
+I usually never have to concern myself with `[OPTIONS]` myself. `CONTAINER` is the container ID. 
