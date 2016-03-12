@@ -22,3 +22,13 @@ and it is installed! One way, that one can install `osc` and all its dependencie
 * `urlgrabber`
 * `wget`
 * `xz`
+
+The following is the procedure I recommend you follow to install each OBS-specific package:
+
+<ul>
+{% include_relative 04-build-methods/obs/obs.html package="obs-service-source_validator" %}
+{% include_relative 04-build-methods/obs/obs.html package="obs-service-format_spec_file" %}
+{% include_relative 04-build-methods/obs/obs.html package="obs-build" %}
+{% include_relative 04-build-methods/obs/obs.html package="obs-service-download_files" %}
+{% include_relative 04-build-methods/obs/obs.html package="osc" %}
+</ul>
