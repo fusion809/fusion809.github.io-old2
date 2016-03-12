@@ -1,5 +1,5 @@
 ### Arch Linux Packages
-**Arch Linux packages** are xz-compressed tar archives that are built and installed using commands provided by the `pacman` package on Arch Linux. ALPs are the package format used by Arch Linux derivatives along with the "independent" distributions, Frugalware Linux and KaOS, which also use the pacman package manager.
+**Arch Linux packages** are xz-compressed tar archives that are built and installed using commands provided by the `pacman` package on Arch Linux. ALPs are the package format used by Arch Linux derivatives (like Manjaro Linux) along with the "independent" distributions, Frugalware Linux and KaOS, which also use the pacman package manager, so this information should be applicable to packaging on these distributions too. 
 
 #### ALP Contents
 ALPs have the following contents:
