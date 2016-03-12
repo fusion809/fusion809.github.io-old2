@@ -3,9 +3,10 @@ layout:        post
 title:         "How to Install Node.js on Linux"
 date:          2016-02-25 +1000
 categories:    linux, nodejs, installation-guides
-permalink:     /howto-install-nodejs-on-linux/
+permalink:     /howto-install-nodejs/
 redirect_from:
-  - /howto-install-nodejs/
+  - /howto-install-nodejs-on-linux/
+  - /2016/02/25/howto-install-nodejs/
 ---
 
 One of the first things I do whenever I install a new distribution on my hard drive is I install all the programs I know and love. Usually one of the first such programs is the Atom text editor, and to build Atom from source code I need a fairly recent version of Node.js installed. The majority of distributions have Node.js in their software repositories, the only problem is that many distributions keep fairly old versions of Node.js in their official repositories. Case in point, as of 25 February 2016, Fedora 23 had Node.js 0.10.42 (belonging to the 0.10.x series which while still maintained was first released 19 March 2013) in their software repositories, even though the latest version (released 23 February 2016) is 5.7.0. openSUSE Tumbleweed (OT; a supposedly bleeding edge distro) even lags a little behind in their version of Node.js (presently 5.6.0), not as much as Fedora but still.

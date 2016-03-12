@@ -6,8 +6,9 @@ last_modified_at: 2016-02-19 19:27:00 +1000
 categories:       linux, package-management
 permalink:        /comparison-of-package-managers/
 redirect_from:  
-  - /2016/02/20/comparison-of-package-managers/
   - /comparison-of-package-management-systems/
+  - /2016/02/18/comparison-of-package-managers/
+  - /2016/02/20/comparison-of-package-managers/
 ---
 
 As I am sure many of you are aware I have tried over twenty different Linux distributions, many of which use different **package managers** to one another. Each package manager has several different characteristics, all of which influence my decision to use them and hence also my decision to use the respective Linux distribution(s) on which they are used for package management. In this comparison I will compare the following package managers (note, each package manager's long name is hyperlinked to their respective section):

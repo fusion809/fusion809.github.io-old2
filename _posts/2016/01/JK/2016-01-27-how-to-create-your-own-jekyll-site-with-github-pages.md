@@ -7,6 +7,9 @@ permalink:     /how-to-create-your-own-jekyll-site-with-github-pages/
 redirect_from:
   - /2016/01/23/how-to-create-your-own-jekyll-site-with-github-pages/
   - /2016/01/25/how-to-create-your-own-jekyll-site-with-github-pages/
+  - /2016/01/27/how-to-create-your-own-jekyll-site-with-github-pages/
+  - /jekyll/
+  - /jekyll-github-pages/
 ---
 
 {% include_relative 01-introduction.md %}
