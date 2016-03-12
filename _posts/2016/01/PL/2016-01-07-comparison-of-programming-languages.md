@@ -1,10 +1,10 @@
 ---
-layout:     post
-title:      "A Comparison of Programming Languages"
-date:       2016-01-07 +1000
-comments:   true
-categories: comparisons, programming-languages
-permalink:  /comparison-of-programming-languages/
+layout:        post
+title:         "A Comparison of Programming Languages"
+date:          2016-01-07 +1000
+comments:      true
+categories:    comparisons, programming-languages
+permalink:     /comparison-of-programming-languages/
 redirect_from:
       - /2016/01/08/comparison-of-programming-languages/
 ---
