@@ -1,7 +1,15 @@
 ### Open Build Service
 {% include Layouts/notei.md note1="An openSUSE-focused Open Build Service tutorial can be found [here](https://en.opensuse.org/openSUSE:Build_Service_Tutorial) at the *openSUSE Wiki*." %}
 
-The [**Open Build Service**](http://openbuildservice.org/) (**OBS**) is the only method outlined here that not only builds packages, but also sets up a repository with which you can distribute your packages. It has a command-line client invoked by the [`osc`](/man/osc.1.html) command, which is written in Python, and can be run locally to build packages. The problem with this command is that it is not available from the official repositories of most distributions that the OBS can build packages for. `osc` has several additional dependencies (like `obs-build`) that are not necessarily available from the official repositories of most distributions, too, which adds to the difficulty of obtaining it on these distributions. For details on installing the OBS on non-openSUSE platforms see the [Installing](#toc29) section of this post.
+The [**Open Build Service**](http://openbuildservice.org/) (**OBS**) is the only method outlined here that not only builds packages, but also sets up a repository with which you can distribute your packages. It has a command-line client invoked by the [`osc`](/man/osc.1.html) command, which is written in Python, and can be run locally to build packages. The problem with this command is that it is not available from the official repositories of most distributions that the OBS can build packages for. `osc` has several additional dependencies (like `obs-build`) that are not necessarily available from the official repositories of most distributions, too, which adds to the difficulty of obtaining it on these distributions. For details on installing the OBS on non-openSUSE platforms see the [Installing](#toc29) section of this post. It can only be used to build packages for the following distributions:[^3]
+
+* Arch Linux
+* CentOS / Red Hat Enterprise Linux / Scientific Linux
+* Debian
+* Fedora
+* Mandriva Linux
+* openSUSE / SUSE Linux Enterprise
+* Ubuntu
 
 #### Installing
 On **openSUSE**, installing `osc` and its dependencies is simple, merely run:
@@ -34,4 +42,6 @@ The following is the procedure I recommend you follow to install each OBS-specif
 {% include_relative 04-build-methods/obs/obs.html package="osc" %}
 </ul>
 
-These are the bare minimum you need in order to run the `osc` command, but you may wish to install a few extra packages, in order for `osc` to gain some extra functionalities. To see all available officially-supported OBS-related packages see [this GitHub search](https://github.com/openSUSE?utf8=%E2%9C%93&query=obs-). Now, I have not installed each of these packages of myself, so all I can say is that based on the contents of their respective GitHub repositories (most importantly, that they contain a `Makefile`) I think, you should be able to install them via following the same procedure used to install the packages above. That is, `git clone` their GitHub repository, `cd` into your local copy of their repository, and run {% include Code/codeus-fs.html line1="sudo make install" %}
+These are the bare minimum you need in order to run the `osc` command, but you may wish to install a few extra packages, in order for `osc` to have its full capabilities. To see all available officially-supported OBS-related packages see [this GitHub search](https://github.com/openSUSE?utf8=%E2%9C%93&query=obs-). Now, I have not installed each of these packages of myself, so all I can say is that based on the contents of their respective GitHub repositories (most importantly, that they contain a `Makefile`) I think, you should be able to install them via following the same procedure used to install the packages above. That is, `git clone` their GitHub repository, `cd` into your local copy of their repository, and run {% include Code/codeus-fs.html line1="sudo make install" %}
+
+#### Building
