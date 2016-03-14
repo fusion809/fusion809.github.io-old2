@@ -3,7 +3,7 @@ layout:           post
 title:            "An Introduction to Building Packages for Linux"
 date:             2016-03-12 +1000
 categories:       package-development, linux
-last_modified_at: 2016-03-14 3:25:10 +1000
+last_modified_at: 2016-03-14 18:37:10 +1000
 permalink:        /package-development/
 redirect_from:  
   - /2016/03/12/package-development/  
