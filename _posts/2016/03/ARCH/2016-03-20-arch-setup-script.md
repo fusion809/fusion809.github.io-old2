@@ -13,4 +13,4 @@ To get a tarball snapshot of the `arch-setup` repo, run:
 {% include Code/coder.html line1="wget -cqO- https://git.io/vagB2 | tar -xz" %}
 
 ## Scripts
-The `install-base.sh` script
+The `install-base.sh` script installs the Arch Linux base system, with the necessary packages to connect to the Wi-Fi with a Broadcom chip. The only thing you need to do after booting this base install is run {% include Code/coders.html line1="wifi-menu -o" %} (which will prompt you to select your desired Wi-Fi network, enter its passphrase) and then {% include Code/coders-fs.html line1="netctl start $ID" %} Where `$ID` is the ID of the Wi-Fi network you wish to connect to. To determine available Wi-Fi networks and their IDs run {% include Code/coders-fs.html line1="netctl list" %}
