@@ -45,5 +45,10 @@ They are stored in one of two locations:
 The following repositories contain my application preferences, usually storeed in config files.
 
 * [`atom`](https://github.com/fusion809/atom) &mdash; pretty self-explanatory, this repo contains some of the more important files I have stored in `~/.atom`, which contain my Atom preferences.
-* [`spacemacs`](https://github.com/fusion809/spacemacs) &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences. 
+* [`spacemacs`](https://github.com/fusion809/spacemacs) &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences.
 * [`vim`](https://github.com/fusion809/vim) &mdash; my `.vimrc` file, which contains my Vim preferences.
+
+## ISO Repositories
+In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
+
+* [`archiso`](https://github.com/fusion809/archiso) &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl enable $network` to enable a network. 
