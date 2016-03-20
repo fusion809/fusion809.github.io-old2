@@ -12,6 +12,7 @@ While I would not consider myself a programmer *per se*, I do develop and mainta
 * **Gentoo Linux** / **Sabayon Linux** &mdash; you can find these packages here in my overlay, [`sabayon-tools`](https://github.com/fusion809/sabayon-tools).
 * **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages here at my [OBS Project](https://build.opensuse.org/project/show/home:fusion809/).
 
+## Shell Scripts
 I also maintain several GitHub repositories of shell scripts which I use on a variety of different Linux distributions to automate package management and other tasks. They are listed below; the legend is that a Q superscript denotes that this repo has a quick-install script (for quick deployment), while a Z superscript denotes that this repo also has support for the Zsh Unix shell.
 
 * [`arch-scripts`](https://github.com/fusion809/arch-scripts)<sup>Q,Z</sup> &mdash; scripts for distributions that use the pacman package manager, such as Arch Linux / Frugalware Linux / KaOS / Manjaro Linux.
@@ -23,18 +24,26 @@ I also maintain several GitHub repositories of shell scripts which I use on a va
 * [`opensuse-scripts`](https://github.com/fusion809/opensuse-scripts)<sup>Q,Z</sup> &mdash; scripts for distributions that use the ZYpp package manager like openSUSE.
 * [`sabayon-scripts`](https://github.com/fusion809/sabayon-scripts)<sup>Q,Z</sup> &mdash; scripts for distributions that use the Entropy package manager, such as Sabayon Linux and Spike.
 
-## Arch Linux Packages
+## Package Development
+### Arch Linux
 The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three locations, although some packages can be found in more than one of these locations. These locations are:
 
 * [Arch User Repository](https://aur.archlinux.org/packages/?SeB=m&K=fusion809)
 * [GitHub PKGBUILDs Repository](https://github.com/fusion809/PKGBUILDs)
 * [My Arch_Extra OBS Project](https://build.opensuse.org/project/show/home:fusion809:arch_extra/)
 
-## Gentoo / Sabayon Packages
+### Gentoo / Sabayon Linux
 They are stored in [`sabayon-tools`](https://github.com/fusion809/sabayon-tools), I use Docker to main this overlay, and I am afraid some packages in it inadvertently fall through the cracks.
 
-## openSUSE
+### openSUSE
 They are stored in one of two locations:
 
 * [GitHub rpmbuild Repository](https://github.com/fusion809/) &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package.
 * [My OBS Project](https://build.opensuse.org/project/show/home:fusion809/)
+
+## Preference Repositories
+The following repositories contain my application preferences, usually storeed in config files.
+
+* [`atom`](https://github.com/fusion809/atom) &mdash; pretty self-explanatory, this repo contains some of the more important files I have stored in `~/.atom`, which contain my Atom preferences.
+* [`spacemacs`](https://github.com/fusion809/spacemacs) &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences. 
+* [`vim`](https://github.com/fusion809/vim) &mdash; my `.vimrc` file, which contains my Vim preferences.
