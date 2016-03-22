@@ -6,7 +6,7 @@ last_modified_at: 2016-03-22 16:41:40 +1000
 permalink:        /projects/
 ---
 
-While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. I also use GitHub as a free data storage service for sets of files of a smaller total size than I would use DropBox / Google Drive to store. GitHub also has the advantage of making it easier to share my files and get feedback (like improvement suggestions) on. 
+While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. I also use GitHub as a free data storage service for sets of files of a smaller total size than I would use DropBox / Google Drive to store. GitHub also has the advantage of making it easier to share my files and get feedback (like improvement suggestions) on.
 
 ## ISO Repositories
 In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
