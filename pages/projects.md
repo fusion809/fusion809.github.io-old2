@@ -39,7 +39,7 @@ They are stored in {% include Links/fusgr.md repo="sabayon-tools" puncr="," %} I
 ### openSUSE
 They are stored in one of two locations:
 
-* My {% include Links/fusgr.md name="rpmbuild" repo="rpmbuild" %} GitHub repository &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package.
+* My {% include Links/fusgr.md repo="rpmbuild" %} GitHub repository &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package.
 * [My OBS Project](https://build.opensuse.org/project/show/home:fusion809/)
 
 ## Preference Repositories
