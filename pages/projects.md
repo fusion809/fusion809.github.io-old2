@@ -20,7 +20,7 @@ I also maintain several GitHub repositories of shell scripts which I use on a va
 * {% include Links/fusgr.md repo="debian-scripts" %} &mdash; scripts for distributions that use APT or APT-RPM, such as Debian and PCLinuxOS, respectively.
 * {% include Links/fusgr.md repo="fedora-scripts" sup="Q,Z" %} &mdash; scripts for Fedora-based distributions that have started using the DNF package manager.
 * {% include Links/fusgr.md repo="gentoo-scripts" sup="Q,Z" %} &mdash; scripts for Gentoo-based distributions that use the Portage package manager, including Calculate, Frugalware and Gentoo Linux.
-* {% include Links/fusgr.md repo="mageia-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the urpmi package manager, including Mageia and OpenMandriva.
+* {% include Links/fusgr.md repo="mageia-scripts" %} &mdash; scripts for distributions that use the urpmi package manager, including Mageia and OpenMandriva.
 * {% include Links/fusgr.md repo="opensuse-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the ZYpp package manager like openSUSE.
 * {% include Links/fusgr.md repo="sabayon-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the Entropy package manager, such as Sabayon Linux and Spike.
 
