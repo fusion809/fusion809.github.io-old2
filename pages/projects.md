@@ -2,7 +2,7 @@
 layout:           page
 title:            "Projects"
 date:             2016-02-13 +1000
-last_modified_at: 2016-02-13 20:57:31 +1000
+last_modified_at: 2016-03-22 15:44:57 +1000
 permalink:        /projects/
 ---
 
@@ -36,14 +36,15 @@ The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three 
 ### Gentoo / Sabayon Linux
 They are stored in {% include Links/fusgr.md repo="sabayon-tools" puncr="," %} I use Docker to main this overlay, and I am afraid some packages in it inadvertently fall through the cracks.
 
-### openSUSE
+### Fedora / openSUSE
 They are stored in one of two locations:
 
-* My {% include Links/fusgr.md repo="rpmbuild" %} GitHub repository &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package.
-* [My OBS Project](https://build.opensuse.org/project/show/home:fusion809/)
+* My {% include Links/fusgr.md repo="rpmbuild" %} GitHub repository &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package. The RPMs contained therein are only designed to compatible with openSUSE, so they may not work on Fedora.
+* [My Home OBS Project](https://build.opensuse.org/project/show/home:fusion809/). This contains packages that are built for both Fedora and openSUSE.
+* [My openSUSE OBS Project](https://build.opensuse.org/project/show/home:fusion809:opensuse/). This contains packages that are built for openSUSE only.
 
 ## Preference Repositories
-The following repositories contain my application preferences, usually storeed in config files.
+The following repositories contain my application preferences, usually stored in config files. I store them here, as sort of a more public equivalent to a DropBox or Google Drive, in case of the relatively frequent occurrence of me changing distributions.
 
 * {% include Links/fusgr.md repo="atom" %} &mdash; pretty self-explanatory, this repo contains some of the more important files I have stored in `~/.atom`, which contain my Atom preferences.
 * {% include Links/fusgr.md repo="spacemacs" %} &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences.
@@ -52,5 +53,5 @@ The following repositories contain my application preferences, usually storeed i
 ## ISO Repositories
 In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
 
-* {% include Links/fusgr.md repo="archiso" %} &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl status $network` to connect to a network.
+* {% include Links/fusgr.md repo="archiso" %} &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl status $network` to connect to a network. Last time I built an ISO from it (19 March 2016) it worked as expected with out-of-the-box support for my Broadcom chip. 
 * {% include Links/fusgr.md repo="fedora-ISO" %} &mdash; this is for creating an ISO for Fedora, that I hope will have out-of-the-box Broadcom Wireless support. It is a work in progress and still does not have out-of-the-box Broadcom Wireless support, if you would like to help me with this see [this question](https://ask.fedoraproject.org/en/question/83250/how-do-i-create-a-fedora-23-iso-with-broadcom-wl-preinstalled/) at Ask Fedora.
