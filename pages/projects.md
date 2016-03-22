@@ -30,24 +30,24 @@ I also maintain several GitHub repositories of shell scripts which I use on a va
 The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three locations, although some packages can be found in more than one of these locations. These locations are:
 
 * [Arch User Repository](https://aur.archlinux.org/packages/?SeB=m&K=fusion809)
-* [GitHub PKGBUILDs Repository](https://github.com/fusion809/PKGBUILDs)
-* [My Arch_Extra OBS Project](https://build.opensuse.org/project/show/home:fusion809:arch_extra/)
+* My {% include Links/fusgr.md repo="PKGBUILDs" %} GitHub repository.
+* {% include Links/obs.md project="home:fusion809:arch_extra" name="My Arch_Extra OBS Project" %}
 
 ### Gentoo / Sabayon Linux
-They are stored in [`sabayon-tools`](https://github.com/fusion809/sabayon-tools), I use Docker to main this overlay, and I am afraid some packages in it inadvertently fall through the cracks.
+They are stored in {% include Links/fusgr.md repo="sabayon-tools" puncr="," %} I use Docker to main this overlay, and I am afraid some packages in it inadvertently fall through the cracks.
 
 ### openSUSE
 They are stored in one of two locations:
 
-* [GitHub rpmbuild Repository](https://github.com/fusion809/) &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package.
+* {% include Links/fusgr.md name="GitHub rpmbuild Repository" repo="rpmbuild" %} &mdash; I only store packages here that require an Internet connection during the build. For example, an `atom` and `atom-beta` package.
 * [My OBS Project](https://build.opensuse.org/project/show/home:fusion809/)
 
 ## Preference Repositories
 The following repositories contain my application preferences, usually storeed in config files.
 
-* [`atom`](https://github.com/fusion809/atom) &mdash; pretty self-explanatory, this repo contains some of the more important files I have stored in `~/.atom`, which contain my Atom preferences.
-* [`spacemacs`](https://github.com/fusion809/spacemacs) &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences.
-* [`vim`](https://github.com/fusion809/vim) &mdash; my `.vimrc` file, which contains my Vim preferences.
+* {% include Links/fusgr.md repo="atom" %} &mdash; pretty self-explanatory, this repo contains some of the more important files I have stored in `~/.atom`, which contain my Atom preferences.
+* {% include Links/fusgr.md repo="spacemacs" %} &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences.
+* {% include Links/fusgr.md repo="vim" %} &mdash; my `.vimrc` file, which contains my Vim preferences.
 
 ## ISO Repositories
 In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
