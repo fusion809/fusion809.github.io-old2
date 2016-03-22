@@ -25,6 +25,7 @@ I also maintain several GitHub repositories of shell scripts which I use on a va
 * {% include Links/fusgr.md repo="sabayon-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the Entropy package manager, such as Sabayon Linux and Spike.
 
 ## Package Development
+
 ### Arch Linux
 The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three locations, although some packages can be found in more than one of these locations. These locations are:
 
