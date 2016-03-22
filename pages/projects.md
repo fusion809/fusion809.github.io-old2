@@ -6,11 +6,12 @@ last_modified_at: 2016-03-22 15:44:57 +1000
 permalink:        /projects/
 ---
 
-While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for Open Build Service. These distributions I am particularly fond of, include:
+While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. These distributions I am particularly fond of, include:
 
-* **Arch Linux** / **Manjaro Linux** &mdash; you can find these packages [here at the AUR](https://aur.archlinux.org/packages/?SeB=m&K=fusion809) and here at {% include Links/fusgr.md name="my PKGBUILDs repository" repo="PKGBUILDs" %}. I also maintain some in my [Arch_Extra OBS Project](https://build.opensuse.org/project/show/home:fusion809/).
+* **Arch Linux** / **Manjaro Linux** &mdash; you can find these packages [here at the AUR](https://aur.archlinux.org/packages/?SeB=m&K=fusion809) and here at {% include Links/fusgr.md name="my PKGBUILDs repository" repo="PKGBUILDs" %}. I also maintain some in my {% include Links/obs.md name="Arch_Extra OBS Project" project="home:fusion809:arch_extra" puncr="." %}
+* **Fedora 22** / **Fedora 23** / **openSUSE 13.2** / **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages here at my {% include Links/obs.md name="home OBS Project" project="home:fusion809" puncr="," %} my {% include Links/obs.md name="openSUSE OBS Project" project="home:fusion809:opensuse" %} and my {% include Links/fusgr.md repo="rpmbuild" %} GitHub repository.
 * **Gentoo Linux** / **Sabayon Linux** &mdash; you can find these packages here in my overlay, {% include Links/fusgr.md repo="sabayon-tools" %}.
-* **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages here at my [OBS Project](https://build.opensuse.org/project/show/home:fusion809/).
+
 
 ## Shell Scripts
 I also maintain several GitHub repositories of shell scripts which I use on a variety of different Linux distributions to automate package management and other tasks. They are listed below; the legend is that a Q superscript denotes that this repo has a quick-install script (for quick deployment), while a Z superscript denotes that this repo also has support for the Zsh Unix shell.
@@ -53,5 +54,5 @@ The following repositories contain my application preferences, usually stored in
 ## ISO Repositories
 In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
 
-* {% include Links/fusgr.md repo="archiso" %} &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl status $network` to connect to a network. Last time I built an ISO from it (19 March 2016) it worked as expected with out-of-the-box support for my Broadcom chip. 
+* {% include Links/fusgr.md repo="archiso" %} &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl status $network` to connect to a network. Last time I built an ISO from it (19 March 2016) it worked as expected with out-of-the-box support for my Broadcom chip.
 * {% include Links/fusgr.md repo="fedora-ISO" %} &mdash; this is for creating an ISO for Fedora, that I hope will have out-of-the-box Broadcom Wireless support. It is a work in progress and still does not have out-of-the-box Broadcom Wireless support, if you would like to help me with this see [this question](https://ask.fedoraproject.org/en/question/83250/how-do-i-create-a-fedora-23-iso-with-broadcom-wl-preinstalled/) at Ask Fedora.
