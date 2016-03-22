@@ -12,13 +12,12 @@ While I would not consider myself a programmer *per se*, I do develop and mainta
 * **Fedora 22** / **Fedora 23** / **openSUSE 13.2** / **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages here at my {% include Links/obs.md name="home OBS Project" project="home:fusion809" puncr="," %} my {% include Links/obs.md name="openSUSE OBS Project" project="home:fusion809:opensuse" %} and my {% include Links/fusgr.md repo="rpmbuild" %} GitHub repository.
 * **Gentoo Linux** / **Sabayon Linux** &mdash; you can find these packages here in my overlay, {% include Links/fusgr.md repo="sabayon-tools" %}.
 
-
 ## Shell Scripts
 I also maintain several GitHub repositories of shell scripts which I use on a variety of different Linux distributions to automate package management and other tasks. They are listed below; the legend is that a Q superscript denotes that this repo has a quick-install script (for quick deployment), while a Z superscript denotes that this repo also has support for the Zsh Unix shell.
 
 * {% include Links/fusgr.md repo="arch-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the pacman package manager, such as Arch Linux / Frugalware Linux / KaOS / Manjaro Linux.
 * {% include Links/fusgr.md repo="centos-scripts" %} &mdash; scripts for distributions that use the yum package manager, such as CentOS and Scientific Linux.
-* {% include Links/fusgr.md repo="debian-scripts" %} &mdash; scripts for distributions that use APT or APT-RPM, such as Debian and PCLinuxOS, respectively.
+* {% include Links/fusgr.md repo="debian-scripts" %} &mdash; scripts for distributions that use the APT or APT-RPM package managers, such as Debian and PCLinuxOS, respectively.
 * {% include Links/fusgr.md repo="fedora-scripts" sup="Q,Z" %} &mdash; scripts for Fedora-based distributions that have started using the DNF package manager.
 * {% include Links/fusgr.md repo="gentoo-scripts" sup="Q,Z" %} &mdash; scripts for Gentoo-based distributions that use the Portage package manager, including Calculate, Frugalware and Gentoo Linux.
 * {% include Links/fusgr.md repo="mageia-scripts" %} &mdash; scripts for distributions that use the urpmi package manager, including Mageia and OpenMandriva.
