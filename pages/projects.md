@@ -2,27 +2,17 @@
 layout:           page
 title:            "Projects"
 date:             2016-02-13 +1000
-last_modified_at: 2016-03-22 15:44:57 +1000
+last_modified_at: 2016-03-22 16:41:40 +1000
 permalink:        /projects/
 ---
 
-While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. These distributions I am particularly fond of, include:
+While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. I also use GitHub as a free data storage service for sets of files of a smaller total size than I would use DropBox / Google Drive to store. GitHub also has the advantage of making it easier to share my files and get feedback (like improvement suggestions) on. 
 
-* **Arch Linux** / **Manjaro Linux** &mdash; you can find these packages [here at the AUR](https://aur.archlinux.org/packages/?SeB=m&K=fusion809) and here at {% include Links/fusgr.md name="my PKGBUILDs repository" repo="PKGBUILDs" %}. I also maintain some in my {% include Links/obs.md name="Arch_Extra OBS Project" project="home:fusion809:arch_extra" puncr="." %}
-* **Fedora 22** / **Fedora 23** / **openSUSE 13.2** / **openSUSE Leap 42.1** / **Tumbleweed** &mdash; you can find these packages here at my {% include Links/obs.md name="home OBS Project" project="home:fusion809" puncr="," %} my {% include Links/obs.md name="openSUSE OBS Project" project="home:fusion809:opensuse" %} and my {% include Links/fusgr.md repo="rpmbuild" %} GitHub repository.
-* **Gentoo Linux** / **Sabayon Linux** &mdash; you can find these packages here in my overlay, {% include Links/fusgr.md repo="sabayon-tools" %}.
+## ISO Repositories
+In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
 
-## Shell Scripts
-I also maintain several GitHub repositories of shell scripts which I use on a variety of different Linux distributions to automate package management and other tasks. They are listed below; the legend is that a Q superscript denotes that this repo has a quick-install script (for quick deployment), while a Z superscript denotes that this repo also has support for the Zsh Unix shell.
-
-* {% include Links/fusgr.md repo="arch-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the pacman package manager, such as Arch Linux / Frugalware Linux / KaOS / Manjaro Linux.
-* {% include Links/fusgr.md repo="centos-scripts" %} &mdash; scripts for distributions that use the yum package manager, such as CentOS and Scientific Linux.
-* {% include Links/fusgr.md repo="debian-scripts" %} &mdash; scripts for distributions that use the APT or APT-RPM package managers, such as Debian and PCLinuxOS, respectively.
-* {% include Links/fusgr.md repo="fedora-scripts" sup="Q,Z" %} &mdash; scripts for Fedora-based distributions that have started using the DNF package manager.
-* {% include Links/fusgr.md repo="gentoo-scripts" sup="Q,Z" %} &mdash; scripts for Gentoo-based distributions that use the Portage package manager, including Calculate, Frugalware and Gentoo Linux.
-* {% include Links/fusgr.md repo="mageia-scripts" %} &mdash; scripts for distributions that use the urpmi package manager, including Mageia and OpenMandriva.
-* {% include Links/fusgr.md repo="opensuse-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the ZYpp package manager like openSUSE.
-* {% include Links/fusgr.md repo="sabayon-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the Entropy package manager, such as Sabayon Linux and Spike.
+* {% include Links/fusgr.md repo="archiso" %} &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl status $network` to connect to a network. Last time I built an ISO from it (19 March 2016) it worked as expected with out-of-the-box support for my Broadcom chip.
+* {% include Links/fusgr.md repo="fedora-ISO" %} &mdash; this is for creating an ISO for Fedora, that I hope will have out-of-the-box Broadcom Wireless support. It is a work in progress and still does not have out-of-the-box Broadcom Wireless support, if you would like to help me with this see [this question](https://ask.fedoraproject.org/en/question/83250/how-do-i-create-a-fedora-23-iso-with-broadcom-wl-preinstalled/) at Ask Fedora.
 
 ## Package Development
 
@@ -50,8 +40,14 @@ The following repositories contain my application preferences, usually stored in
 * {% include Links/fusgr.md repo="spacemacs" %} &mdash; my `~/.spacemacs` file, which contains all my [Spacemacs](https://github.com/syl20bnr/spacemacs) preferences.
 * {% include Links/fusgr.md repo="vim" %} &mdash; my `.vimrc` file, which contains my Vim preferences.
 
-## ISO Repositories
-In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
+## Shell Scripts
+I also maintain several GitHub repositories of shell scripts which I use on a variety of different Linux distributions to automate package management and other tasks. They are listed below; the legend is that a Q superscript denotes that this repo has a quick-install script (for quick deployment), while a Z superscript denotes that this repo also has support for the Zsh Unix shell.
 
-* {% include Links/fusgr.md repo="archiso" %} &mdash; as you can probably guess this is for creating an ISO for Arch Linux. This ISO is distinct from the official ISO in that it has out-of-the-box support for Broadcom Wi-Fi chips. To connect to the Wi-Fi in this ISO's live session run `wifi-menu -o`, select your network and enter any necessary information, like its passphrase, run `netctl list` to show available networks and run `netctl status $network` to connect to a network. Last time I built an ISO from it (19 March 2016) it worked as expected with out-of-the-box support for my Broadcom chip.
-* {% include Links/fusgr.md repo="fedora-ISO" %} &mdash; this is for creating an ISO for Fedora, that I hope will have out-of-the-box Broadcom Wireless support. It is a work in progress and still does not have out-of-the-box Broadcom Wireless support, if you would like to help me with this see [this question](https://ask.fedoraproject.org/en/question/83250/how-do-i-create-a-fedora-23-iso-with-broadcom-wl-preinstalled/) at Ask Fedora.
+* {% include Links/fusgr.md repo="arch-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the pacman package manager, such as Arch Linux / Frugalware Linux / KaOS / Manjaro Linux.
+* {% include Links/fusgr.md repo="centos-scripts" %} &mdash; scripts for distributions that use the yum package manager, such as CentOS and Scientific Linux.
+* {% include Links/fusgr.md repo="debian-scripts" %} &mdash; scripts for distributions that use the APT or APT-RPM package managers, such as Debian and PCLinuxOS, respectively.
+* {% include Links/fusgr.md repo="fedora-scripts" sup="Q,Z" %} &mdash; scripts for Fedora-based distributions that have started using the DNF package manager.
+* {% include Links/fusgr.md repo="gentoo-scripts" sup="Q,Z" %} &mdash; scripts for Gentoo-based distributions that use the Portage package manager, including Calculate, Frugalware and Gentoo Linux.
+* {% include Links/fusgr.md repo="mageia-scripts" %} &mdash; scripts for distributions that use the urpmi package manager, including Mageia and OpenMandriva.
+* {% include Links/fusgr.md repo="opensuse-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the ZYpp package manager like openSUSE.
+* {% include Links/fusgr.md repo="sabayon-scripts" sup="Q,Z" %} &mdash; scripts for distributions that use the Entropy package manager, such as Sabayon Linux and Spike.
