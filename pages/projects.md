@@ -2,11 +2,11 @@
 layout:           page
 title:            "Projects"
 date:             2016-02-13 +1000
-last_modified_at: 2016-03-22 16:52:28 +1000
+last_modified_at: 2016-03-22 17:23:30 +1000
 permalink:        /projects/
 ---
 
-While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. I also use GitHub as a free data storage service for sets of files of a smaller total size than I would use DropBox / Google Drive to store. GitHub also has the advantage of making it easier to share my files and get feedback (like improvement suggestions) on.
+While I would not consider myself a programmer *per se*, I do develop and maintain packages for the Linux distributions I am particularly fond of. Before I proceed I will define OBS as an acronym for the Open Build Service. I also use GitHub as a free data storage service for sets of files of a smaller total size than I would use DropBox / Google Drive to store. For example, in the ISO repositories listed below you may note that I stored the files used to generate the ISO in question (i.e., the Arch Linux ISO for `archiso` and Fedora ISO for `fedora-ISO`), but not the ISO themselves. GitHub also has the advantage of making it easier for me to share my files with others and get feedback (like improvement suggestions) on them.
 
 ## ISO Repositories
 In the following repositories I have files used to generate ISO (CD/DVD/USB image) files for the respective distribution mentioned.
