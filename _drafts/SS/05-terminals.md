@@ -1,15 +1,12 @@
 ## Terminal Emulators
-Terminal emulators (TEs) for Sabayon include tty1-tty6, the whole-screen virtual terminals managed by the getty Unix command[^7] and various graphical TEs (<abbr title="Graphical Terminal Emulators">GTEs</abbr>; that is, TE windows running within a graphical user interface) including GNOME Terminal, Konsole and LXTerminal. Most of these graphical TEs are found in the "x11-terms" category in the [Portage Tree](https://packages.gentoo.org/categories/x11-terms), [Gentoo Portage Overlays](http://gpo.zugaina.org/x11-terms/) and [Entropy Store](https://packages.sabayon.org/category/x11-terms), although there are exceptions, the most notable one being Konsole (which is in the kde-apps category). You can list all programs in this category by issuing the command:
-{% include Code/coder.html line1='eix -C -c "x11-terms"' %}
-
-The following section will involve me comparing the various graphical terminal emulators I have any real experience with.
+Terminal emulators (TEs) for Linux include tty1-tty6, the whole-screen virtual terminals managed by the getty Unix command[^7] and various graphical TEs (<abbr title="Graphical Terminal Emulators">GTEs</abbr>; that is, TE windows running within a graphical user interface) including GNOME Terminal, Konsole and LXTerminal. The following section will involve me comparing the various graphical terminal emulators I have any real experience with.
 
 ### GNOME Terminal
 {% include Links/image.html image="GNOME-Terminal-3.16.2.png" width="743px" description="GNOME Terminal 3.16.2 running under Moksha" float="none" %}
 {% include Links/links.html package="x11-terms/gnome-terminal" program="GNOME Terminal" link="https://wiki.gnome.org/Apps/Terminal" wp="GNOME Terminal" %} is a GTE that is part of the GNOME Core Applications suite. It is written in C and licensed under GNU GPLv2. I find it, like most GNOME Core Applications fairly feature-packed, with several customization options being available for the terminal window. These include custom keyboard shortcuts, colour schemes, fonts and behaviours.
 
 #### Rating(s)
-{% include_relative TE-ratings.html availability="10. Comes pre-installed on GNOME edition of Sabayon. Also available from the Entropy Store." customizability="8" features="8" sru="8." gist="d0e2ea07a2def192cacc" overall="9" %}
+{% include_relative TE-ratings.html availability="10. Comes pre-installed on GNOME editions of most major Linux distributions. Also available from the official package repositories of the various Linux distributions." customizability="8" features="8" sru="8." gist="d0e2ea07a2def192cacc" overall="9" %}
 
 ### Konsole
 {% include Links/image.html image="Konsole-15.08.2.png" width="1000px" description="Konsole 15.08.2 running under Moksha" float="none" %}
@@ -18,14 +15,14 @@ The following section will involve me comparing the various graphical terminal e
 {% include Links/image.html image="Konsole-purple-tab-colour.png" width="1000px" float="none" description="Konsole showing the purple/pink tab highlighting. Note, how the first tab with its title starting with <code>...09@brenton-pc</code> is coloured purple/pink, this indicates that it has unread output" %}
 
 #### Rating(s)
-{% include_relative TE-ratings.html availability="10. Comes preinstalled on the KDE edition of Sabayon and available from the Entropy Store." customizability="9." sru="8." features="9." overall="9" gist="b03ca0f3e5e6b961ed19" %}
+{% include_relative TE-ratings.html availability="10. Comes preinstalled on the KDE edition of most major Linux distributions and is available from the official package repositories of the majority of distributions." customizability="9." sru="8." features="9." overall="9" gist="b03ca0f3e5e6b961ed19" %}
 
 ### LXTerminal
 {% include Links/image.html image="LXTerminal-0.2.0.png" description="LXTerminal 0.2.0 running under Moksha" width="1000px" float="none" %}
 {% include Links/links.html package="lxde-base/lxterminal" program="LXTerminal" link="http://wiki.lxde.org/en/LXTerminal" %} is a terminal emulator that is part of the core applications suite of LXDE. It uses the GTK+2 toolkit and while lightweight still has a few of the features that more advanced terminal emulators like Konsole boast. These include: ability to customize keyboard shortcuts and fonts (although a custom colour scheme is not permitted).
 
 #### Rating(s)
-{% include_relative TE-ratings.html availability="8, available in the Entropy Store but not preinstalled on any official Sabayon edition." customizability="8" features="8" sru="9." gist="74f4c3c54450760623d2" overall="8" %}
+{% include_relative TE-ratings.html availability="10. Comes pre-installed ." customizability="8" features="8" sru="9." gist="74f4c3c54450760623d2" overall="8" %}
 
 ### MATE Terminal
 {% include Links/image.html image="MATE-Terminal-1.8.1.png" description="MATE Terminal 1.8.1 running under MATE" width="1000px" float="none" %}
