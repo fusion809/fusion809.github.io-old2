@@ -23,6 +23,17 @@ the `sha256sums` can be replaced with `sha512sums` and sometimes GPG signatures 
 
 `prepare()` is used to *prepare* the source, which means if the source is compressed (like a gz-compressed tar archive) the `prepare()` function will exact its contents so that they are available for the `build()` and `package()` functions. `build()` is used to build, or compile, the source, that is if this needs to be done (for example, some PKGBUILDs actually build ALPs from Debian or RPM packages, so no source code compiling is required). `package()` is what builds a package from either the compiled source (that is, the source after the `build()` function is run) or the prepared pre-compiled sources (that is, the contents of Debian/RPM binaries).
 
+The `package()` function is essentially where the objective of the game is to move all the files you wish to be in the end package from the products (whether it be compiled source code, or unpacked Debian package contents) of the `build()` function into the `$pkgdir` directory. The `$pkgdir` directory is meant to have the same internal file system structure as where the package will place its installed files, if installed on one's file system. For example, GTK themes are usually installed to `/usr/share/themes` so this is an example `package()` function for such cases (this one is specifically taken from the [`osx-el-capitan-theme`](https://build.opensuse.org/package/view_file/home:fusion809:arch_extra/osx-el-capitan-theme/PKGBUILD?expand=1) PKGBUILD):
+
+~~~ bash
+package() {
+  mkdir -p "$pkgdir/usr/share/themes/"
+  cp -a "$srcdir/${_pkgname}-${pkgver}/OS X El Capitan" "$pkgdir/usr/share/themes/"
+}
+~~~
+
+see the package's contents are moved to `${pkgdir}/usr/share/themes/OS X El Capitan`.
+
 #### Building ALPs
 To build an ALP you run:
 
