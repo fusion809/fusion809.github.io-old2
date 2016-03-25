@@ -6,6 +6,6 @@
 [^5]: Ben Ogle (25 June 2015). "[Atom 1.0](blog.atom.io/2015/06/25/atom-1-0.html)". *Atom Blog*: Atom Community. Retrieved 25 March 2016.
 [^6]: Also licensed under the permissive MIT License.
 [^7]: A functionality provided by the [`terminal-plus`](https://atom.io/packages/terminal-plus) package.
-[^8]: A functionality provided by the pre-installed package, [`git-plus`](https://atom.io/packages/git-plus).
+[^8]: A functionality provided by the pre-installed package, [`git-plus`](https://atom.io/packages/git-plus). This functionality is similar to an in-built functionality of GNU Emacs, to also do git commands without a terminal.
 [^9]: Using the [`build`](https://atom.io/packages/build) package.
 [^10]: Such as Python scripts, this functionality is provided by the [`script`](https://atom.io/packages/script) package.
