@@ -11,6 +11,6 @@ redirect_from: /installing-atom-on-linux/
 
 {% include_relative 02-plugins.md %}
 
-{% include_relative 03-pms.md %}
+{% include_relative 03-installing.md %}
 
 {% include_relative footnotes.md %}
