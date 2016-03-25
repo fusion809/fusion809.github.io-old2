@@ -4,7 +4,7 @@ Atom is nowhere near as straight-forward to install as GNU Emacs, Vim or any oth
 ### Package Managers
 The following distribution(s) have Atom in their official software repositories:
 
-* **Sabayon Linux**
+* {% include Links/distros/sabayon.html %}
 
 the following distributions have an Atom package available from unofficial repositories:
 

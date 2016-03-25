@@ -1,5 +1,5 @@
 {% capture item1 %}
-[**Arch Linux**](https://www.archlinux.org). Atom (package name is [`atom-editor`](https://aur.archlinux.org/packages/atom-editor)) is available from the Arch User Repository (AUR). The AUR provides PKGBUILDs with which users can build Atom from source code. To install Atom from the AUR one must run {% include Code/codeus.html line1="yaourt -S atom-editor --noconfirm" %} (provided Yaourt is installed) or:
+{% include Links/distros/archlinux.html puncr="." %} Atom (package name is [`atom-editor`](https://aur.archlinux.org/packages/atom-editor)) is available from the Arch User Repository (AUR). The AUR provides PKGBUILDs with which users can build Atom from source code. To install Atom from the AUR one must run {% include Code/codeus.html line1="yaourt -S atom-editor --noconfirm" %} (provided Yaourt is installed) or:
 
 {% include Code/codeu.html line1="git clone https://aur.archlinux.org/atom-editor.git" line2="cd atom-editor" line3="makepkg -si --noconfirm" %}
 
@@ -12,12 +12,12 @@ this will take the same amount of time, though, but it is less likely to fail on
 {% include Code/codeu.html line1="git clone https://aur.archlinux.org/atom-editor-bin.git" line2="cd atom-editor-bin" line3="makepkg -si --noconfirm" %}
 {% endcapture %}
 {% capture item2 %}
-[**Fedora**](https://getfedora.org/). Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
+{% include Links/distros/fedora.html puncr="." %} Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
 
 {% include Code/coder.html line1="dnf copr enable mosquito/atom" line2="dnf install -y atom" %}
 {% endcapture %}
 {% capture item3 %}
-[**Gentoo Linux**](https://www.gentoo.org/). Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:[^13]
+{% include Links/distros/gentoolinux.html puncr="." %} Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:[^13]
 
 {% include Code/coder.html line1="layman -s sabayon-tools && emerge --sync" line2="emerge -av app-editors/atom::sabayon-tools" %}
 {% endcapture %}
