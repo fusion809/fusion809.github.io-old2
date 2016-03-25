@@ -1,9 +1,9 @@
 ---
 layout:        post
 date:          2016-03-30 +1000
-title:         "Using Atom on Linux"
+title:         "Running Atom on Linux"
 categories:    atom, linux, software-installation
-permalink:     /using-atom-on-linux/
+permalink:     /running-atom-on-linux/
 redirect_from: /installing-atom-on-linux/
 ---
 
