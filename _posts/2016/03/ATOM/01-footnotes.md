@@ -9,3 +9,5 @@
 [^8]: A functionality provided by the pre-installed package, [`git-plus`](https://atom.io/packages/git-plus). This functionality is similar to an in-built functionality of GNU Emacs, to also do git commands without a terminal.
 [^9]: Using the [`build`](https://atom.io/packages/build) package.
 [^10]: Such as Python scripts, this functionality is provided by the [`script`](https://atom.io/packages/script) package.
+[^11]: Which can be done using the [`pigments`](https://atom.io/packages/pigments) package.
+[^12]: Which is done using the [`package-sync`](https://atom.io/packages/package-sync) package.
