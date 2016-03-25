@@ -7,11 +7,11 @@ If your specific distribution is capable of working with 64-bit Deb packages (e.
 {% include Code/coder.html line1="wget -cO- https://atom.io/download/deb > atom-amd64.deb" line2="dpkg -i atom-amd64.deb" line3="apt-get -f install" %}
 
 #### RPM
-On 64-bit RPM distributions several different commands maybe better suited to install Atom, depending on the specific distribution being used. For CentOS / Fedora &leq;21 / Oracle Linux / Red Hat Enterprise Linux / Scientific Linux and other distributions still using the **yum package manager**, running the following should install Atom from the latest official RPM binary:
+On 64-bit RPM distributions several different commands maybe better suited to install Atom, depending on the specific distribution being used. For CentOS / Fedora &le;21 / Oracle Linux / Red Hat Enterprise Linux / Scientific Linux and other distributions still using the **yum package manager**, running the following should install Atom from the latest official RPM binary:
 
 {% include Code/coder.html line1="wget -cqO- https://atom.io/download/rpm > atom.x86_64.rpm" line2="yum install -y atom.x86_64.rpm" %}
 
-while Fedora &geq;22, Korora &geq;22 and other distributions that are now using the **DNF package manager** run:
+while Fedora &ge;22, Korora &ge;22 and other distributions that are now using the **DNF package manager** run:
 
 {% include Code/coder.html line1="wget -cqO- https://atom.io/download/rpm > atom.x86_64.rpm" line2="dnf install -y atom.x86_64.rpm" %}
 
