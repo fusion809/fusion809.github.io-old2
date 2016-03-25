@@ -12,12 +12,17 @@ this will take the same amount of time, though, but it is less likely to fail on
 {% include Code/codeu.html line1="git clone https://aur.archlinux.org/atom-editor-bin.git" line2="cd atom-editor-bin" line3="makepkg -si --noconfirm" %}
 {% endcapture %}
 {% capture item2 %}
-[Fedora](https://getfedora.org/). Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
+[**Fedora**](https://getfedora.org/). Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
 
 {% include Code/coder.html line1="dnf copr enable mosquito/atom" line2="dnf install -y atom" %}
 {% endcapture %}
+{% capture item3 %}
+[**Gentoo Linux**](https://www.gentoo.org/). Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:[^13]
 
+{% include Code/coder.html line1="layman -s sabayon-tools && emerge --sync" line2="emerge -av app-editors/atom::sabayon-tools" %}
+{% endcapture %}
 <ul>
   <li>{{ item1 | markdownify }}</li>
   <li>{{ item2 | markdownify }}</li>
+  <li>{{ item3 | markdownify }}</li>
 </ul>
