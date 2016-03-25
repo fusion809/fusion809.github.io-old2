@@ -1,3 +1,4 @@
+<!-- item1 -->
 {% capture item1 %}
 {% include Links/distros/archlinux.html puncr="." %} Atom (package name is [`atom-editor`](https://aur.archlinux.org/packages/atom-editor)) is available from the Arch User Repository (AUR). The AUR provides PKGBUILDs with which users can build Atom from source code. To install Atom from the AUR one must run {% include Code/codeus.html line1="yaourt -S atom-editor --noconfirm" %} (provided Yaourt is installed) or:
 
@@ -11,18 +12,30 @@ this will take the same amount of time, though, but it is less likely to fail on
 
 {% include Code/codeu.html line1="git clone https://aur.archlinux.org/atom-editor-bin.git" line2="cd atom-editor-bin" line3="makepkg -si --noconfirm" %}
 {% endcapture %}
+
+<!-- item2 -->
 {% capture item2 %}
 {% include Links/distros/fedora.html puncr="." %} Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
 
 {% include Code/coder.html line1="dnf copr enable mosquito/atom" line2="dnf install -y atom" %}
 {% endcapture %}
+
+<!-- item3 -->
 {% capture item3 %}
 {% include Links/distros/gentoolinux.html puncr="." %} Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:[^13]
 
 {% include Code/coder.html line1="layman -s sabayon-tools && emerge --sync" line2="emerge -av app-editors/atom::sabayon-tools" %}
 {% endcapture %}
+
+<!-- item4 -->
+{% capture item4 %}
+{% include Links/distros/ubuntu.html puncr="." %} Atom (package name: [`atom`](https://launchpad.net/~webupd8team/+archive/ubuntu/atom)) is available from the Webupd8team Personal Package Archive (PPA). To install Atom from it run:
+
+{% include Code/coder.html line1="add-apt-repository ppa:webupd8team/atom" line2="apt-get update" line3="apt-get install -y atom" %}
+{% endcapture %}
 <ul>
   <li>{{ item1 | markdownify }}</li>
   <li>{{ item2 | markdownify }}</li>
   <li>{{ item3 | markdownify }}</li>
+  <li>{{ item4 | markdownify }}</li>
 </ul>
