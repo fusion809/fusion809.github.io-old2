@@ -68,6 +68,6 @@ Building Atom from source code involves of the same basic steps on every distrib
   <li>Compiling the source, which is done by running:
   {% include Code/codeu.html line1="script/build" %}
   </li>
-  <li>Installing Atom to one's live file system, which is done by running:
+  <li>Installing Atom to one's live file system, specifically to `/usr` (as opposed to the default location of `/usr/local/`) which is done by running:
   {% include Code/codeu.html line1="sudo script/grunt install --install-dir /usr" %}</li>
 </ol>
