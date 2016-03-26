@@ -15,10 +15,10 @@ while Fedora &ge;22, Korora &ge;22 and other distributions that are now using th
 
 {% include Code/coder.html line1="wget -cqO- https://atom.io/download/rpm > atom.x86_64.rpm" line2="dnf install -y atom.x86_64.rpm" %}
 
-While on Mageia and other distributions using the urpmi package manager one would run:
+While on Mageia and other distributions using the **urpmi package manager** one would run:
 
 {% include Code/coder.html line1="urpme apm # Mageia has a package called apm that is non-essential but conflicts with Atom" line2="wget -cqO- https://atom.io/download/rpm > atom.x86_64.rpm" line3="urpmi atom.x86_64.rpm" %}
 
-On openSUSE and other distributions using the ZYpp package manager, to install Atom, one would run:
+On openSUSE and other distributions using the **ZYpp package manager**, to install Atom, one would run:
 
 {% include Code/coder.html line1="wget -cqO- https://atom.io/download/rpm > atom.x86_64.rpm" line2="zypper in -y atom.x86_64.rpm" %}
