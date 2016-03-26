@@ -11,7 +11,7 @@ As previously mentioned Atom's capabilities and appearance are usually modified 
 * Preview colours described by hexadecimals, RGB combinations and alike in Less or CSS style sheets{% include Links/fn.html no="13" %}
 * Quickly synchronize the Atom plugins you have installed on two or more different machines.{% include Links/fn.html no="14" %}
 
-At the time of writing this post there were 3,866 packages and 1,161 themes for Atom available from [https://atom.io/packages](https://atom.io/packages/) and [https://atom.io/themes](https://atom.io/themes), respectively. These plugins are those that have already been built by the community, or by the Atom developers themselves, but everyone is completely free to develop their own plugins for Atom. Unfortunately, some of these plugins will be for older versions of Atom and may not be compatible with the latest releases.
+At the time of writing this post there were 3,866 packages and 1,161 themes for Atom available from [https://atom.io/packages](https://atom.io/packages/) and [https://atom.io/themes](https://atom.io/themes), respectively. These plugins are those that have already been built by the community, or by the Atom developers themselves, but everyone is completely free to develop their own plugins for Atom. Unfortunately, some of these plugins available from the aforementioned websites will be for older versions of Atom and may not be compatible with the latest releases.
 
 {% include Links/image.html image="Atom/pigments-versions-tab.png" width="full" float="none" description="This is how one checks out the available versions of a package at https://atom.io/packages. Click the &ldquo;Versions&rdquo; tab circled in red" %}
 
