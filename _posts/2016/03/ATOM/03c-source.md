@@ -4,11 +4,11 @@
 The minimum requirements for building Atom on Linux, according to the [official Atom build instructions for Linux platforms](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md), include:
 
 * 32-bit / 64-bit computer architecture. 64-bit is preferable.
-* C/C++ build tools &mdash; the GNU Compiler Collection (GCC; must also have C++ support), the GNU C Library (`glibc`) and GNU Make are usually used to satisfy this requirement on Linux platforms.
-* Git
-* Node.js (officially 0.10.x or above is supported, but Fedora has 0.10.x in their repositories and I have never managed to build Atom using their version of Node.js, so I would recommend using the 0.12.x or later series Node.js)
-* npm (officially v1.4.x or above is supported)
-* Development headers for the GNOME keyring
+* C/C++ build tools &mdash; the GNU Compiler Collection (GCC; must also have C++ support, C++ support is usually provided by a separate package called `g++` or `gcc-c++`, depending on one's distribution), the GNU C Library (`glibc`), including its development headers, `glibc-devel`, and GNU Make (usually called `make`) are usually used to satisfy this requirement on Linux platforms.
+* Git.
+* Node.js (officially 0.10.x or above is supported, but Fedora has 0.10.x in their repositories and I have never managed to build Atom using their version of Node.js, so I would recommend using the 0.12.x or later series Node.js).
+* npm (officially v1.4.x or above is supported).
+* Development headers for the GNOME keyring.
 
 All these requirements can, for most distributions (in fact all of them that I have experience with), be satisfied quite easily by installing packages from official repositories, except for the Node.js / npm requirement.
 
@@ -59,15 +59,24 @@ While to build and install Node.js from source code, assuming you have all the r
 {% include Code/codeu.html line1="curl http://nodejs.org/dist/v5.9.1/node-v5.9.1.tar.xz | tar -xJ" line2="cd node-v5.9.1" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
 
 #### Building Atom
-Building Atom from source code involves of the same basic steps on every distribution. They are:
+Building Atom from source code involves of the same basic steps on every distribution. After installing the required build and runtime dependencies, they are:
 
+{% capture getting %}
+Getting the source code. There are several different ways to do this, including via git cloning Atom's GitHub repository and via downloading the source code tarball of the latest Atom release. Source code tarballs are far smaller downloads (<10 MB) than Atom's GitHub repository (>250 MB), so usually I would recommend building Atom from source code tarballs. To get the source code tarball of version `$ver` of Atom with cURL, extract its contents, and change directory into it, run:
+{% include Code/codeu.html line1="curl https://github.com/atom/atom/archive/v$ver.tar.gz | tar -xz" line2="cd atom-v$ver" %}
+{% endcapture %}
+
+{% capture compiling %}
+Compiling the source, which is done by running:
+{% include Code/codeu.html line1="script/build" %}
+{% endcapture %}
+
+{% capture installing %}
+Installing Atom to one's live file system, specifically to `/usr` (as opposed to the default location of `/usr/local/`) which is done by running:
+{% include Code/codeu.html line1="sudo script/grunt install --install-dir /usr" %}
+{% endcapture %}
 <ol>
-  <li>Getting the source code. There are several different ways to do this, including via git cloning Atom's GitHub repository and via downloading the source code tarball of the latest Atom release. Source code tarballs are far smaller downloads (<10 MB) than Atom's GitHub repository (>250 MB), so usually I would recommend building Atom from source code tarballs. To get the source code tarball of version `$ver` of Atom with cURL, extract its contents, and change directory into it, run:
-  {% include Code/codeu.html line1="curl https://github.com/atom/atom/archive/v$ver.tar.gz | tar -xz" line2="cd atom-v$ver" %}
-  </li>
-  <li>Compiling the source, which is done by running:
-  {% include Code/codeu.html line1="script/build" %}
-  </li>
-  <li>Installing Atom to one's live file system, specifically to `/usr` (as opposed to the default location of `/usr/local/`) which is done by running:
-  {% include Code/codeu.html line1="sudo script/grunt install --install-dir /usr" %}</li>
+  <li>{{ getting | markdownify }}</li>
+  <li>{{ compiling | markdownify }}</li>
+  <li>{{ installing | markdownify }}</li>
 </ol>
