@@ -38,3 +38,15 @@ header nav span.navbar-brand {
 #main #post-navigation { margin-top:40px; }
 #main #post-navigation .next { margin-top:20px; text-align: right; }
 /*#main #post-navigation .next a { font-size: 1.2em; }*/
+
+b.TOP { font-size: 18px; color: black;}
+b.VERSION { font-size: small; font-family : arial, sans-serif; }
+b.NORM  { color: black;  background-color: transparent;}
+b.FIFO  { color: purple; background-color: transparent;}
+b.CHAR  { color: yellow; background-color: transparent;}
+b.DIR   { color: blue;   background-color: transparent;}
+b.BLOCK { color: yellow; background-color: transparent;}
+b.LINK  { color: aqua;   background-color: transparent;}
+b.SOCK  { color: fuchsia;background-color: transparent;}
+b.EXEC  { color: green;  background-color: transparent;}
+div.tree { background-color: fuchsia; width: 200px; padding: 5px; border-radius: 5px; }

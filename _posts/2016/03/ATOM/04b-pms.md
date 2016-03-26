@@ -5,4 +5,4 @@ The following distribution(s) have Atom in their official software repositories:
 
 the following distributions have an Atom package available from unofficial repositories:
 
-{% include_relative 03ba-unofficial.md %}
+{% include_relative 04ba-unofficial.md %}
