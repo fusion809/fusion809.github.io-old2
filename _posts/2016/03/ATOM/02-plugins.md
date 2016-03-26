@@ -1,13 +1,13 @@
 ## Atom Plugins
 As previously mentioned Atom's capabilities and appearance are usually modified or extended by use of **packages** and **themes**, respectively. Henceforth, to save some space, I will refer to packages and themes, collectively, as **plugins**. Some of Atom's plugins even come bundled, or pre-installed, with Atom, while the rest are installed using Atom's own package manager, `apm`, which is sort of like a modified version of Node's `npm` package manager. Using packages it is possible for you to:
 
-* Use an embedded terminal in Atom[^7]
-* Run git commands without a terminal in Atom[^8]
-* Compile source code[^9]
-* Run script files[^10]
+* Use an embedded terminal in Atom<sup id="fnref:7"><a href="#fn:7">7</a></sup>
+* Run git commands without a terminal in Atom<sup id="fnref:8"><a href="#fn:8">8</a></sup>
+* Compile source code<sup id="fnref:9"><a href="#fn:9">9</a></sup>
+* Run script files<sup id="fnref:10"><a href="#fn:10">10</a></sup>
 * Preview markup files (like those written in markdown)
-* Preview colours described by hexadecimals, RGB combinations and alike in Less or CSS style sheets[^11]
-* Quickly synchronize the Atom plugins you have installed on two or more different machines.[^12]
+* Preview colours described by hexadecimals, RGB combinations and alike in Less or CSS style sheets<sup id="fnref:11"><a href="#fn:11">11</a></sup>
+* Quickly synchronize the Atom plugins you have installed on two or more different machines.<sup id="fnref:12"><a href="#fn:12">12</a></sup>
 
 At the time of writing this post there were 3,866 packages and 1,161 themes for Atom available from [https://atom.io/packages](https://atom.io/packages/) and [https://atom.io/themes](https://atom.io/themes), respectively. These plugins are those that have already been built by the community, or by the Atom developers themselves, but everyone is completely free to develop their own plugins for Atom. Unfortunately, some of these plugins will be for older versions of Atom and may not be compatible with the latest releases.
 

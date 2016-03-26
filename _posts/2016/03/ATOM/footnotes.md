@@ -49,10 +49,6 @@ Which is done using the [`package-sync`](https://atom.io/packages/package-sync) 
 {% capture fn13 %}
 Assuming this overlay has already been added, if not, then add it using the line {% include Code/coders.html line1="layman -a sabayon-tools" %} and omit {% include Code/coders.html line1="layman -s sabayon-tools" %} in the follow lines of code. This also assumes that the Portage Tree has been synced before on your current machine using the {% include Code/coders.html line1="emerge-webrsync" %} command, if not do this instead of running {% include Code/coders-fs.html line1="emerge --sync" %}
 {% endcapture %}
-
-{% capture fn14 %}
-
-{% endcapture %}
 <h2>Footnotes</h2>
 <ol>
   <li id="fn:1">{{ fn1 | markdownify }}</li>
@@ -68,5 +64,4 @@ Assuming this overlay has already been added, if not, then add it using the line
   <li id="fn:11">{{ fn11 | markdownify }}</li>
   <li id="fn:12">{{ fn12 | markdownify }}</li>
   <li id="fn:13">{{ fn13 | markdownify }}</li>
-  <li id="fn:14">{{ fn14 | markdownify }}</li>
 </ol>
