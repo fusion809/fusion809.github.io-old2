@@ -33,7 +33,7 @@ those with a sufficiently recent version of Node.js / npm in their official repo
   </ul>
 </div>
 
-Distributions marked with an asterisk (&#42;) can be installed using the distribution's respective package manager, using the distribution's respective NodeSource repository. This method can also be used by older versions of Fedora (namely &le;21). For details see [here](https://nodejs.org/en/download/package-manager/). Fedora users could install a sufficiently recent version of Node.js via another method using their package manager. It involves finding a Copr repository containing a sufficiently recent version of Node.js, for example the `nibbler/nodejs` Copr. To add this particular Copr and install Node.js and npm from it, run:
+Distributions marked with an asterisk (&#42;) can be installed using the distribution's respective package manager, using the distribution's respective NodeSource repository. This method can also be used by older versions of Fedora (namely &le;21). For details see [here](https://nodejs.org/en/download/package-manager/). Fedora &gt;21 users could install a sufficiently recent version of Node.js via another method using their package manager. It involves finding a Copr repository containing a sufficiently recent version of Node.js, for example the `nibbler/nodejs` Copr. To add this particular Copr and install Node.js and npm from it, run:
 
 {% include Code/coder.html line1="dnf copr enable nibbler/nodejs" line2="dnf install -y nodejs-devel npm" %}
 
