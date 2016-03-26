@@ -8,5 +8,3 @@ Atom is nowhere near as straight-forward to install as GNU Emacs, Vim or any oth
 {% include_relative 03a-binaries.md %}
 
 {% include_relative 03b-pms.md %}
-
-{% include_relative 03c-source.md %}

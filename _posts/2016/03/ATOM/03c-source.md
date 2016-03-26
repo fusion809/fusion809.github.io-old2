@@ -1,6 +1,6 @@
-### Building from Source
+## Building from Source
 
-#### Dependencies
+### Dependencies
 The minimum requirements for building Atom on Linux, according to the [official Atom build instructions for Linux platforms](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md), include:
 
 * 32-bit / 64-bit computer architecture. 64-bit is preferable.
@@ -62,7 +62,7 @@ While to build and install Node.js from source code, assuming you have all the r
 
 {% include Code/codeu.html line1="curl http://nodejs.org/dist/v5.9.1/node-v5.9.1.tar.xz | tar -xJ" line2="cd node-v5.9.1" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
 
-#### Building Atom
+### Building Atom
 Building Atom from source code involves of the same basic steps on every distribution. After installing the required build and runtime dependencies, they are:
 
 {% capture getting %}
