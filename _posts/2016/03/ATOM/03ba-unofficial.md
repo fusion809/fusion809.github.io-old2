@@ -15,20 +15,27 @@ this will take the same amount of time, though, but it is less likely to fail on
 
 <!-- item2 -->
 {% capture item2 %}
+{% include Links/distros/centos7.html puncr="." %} Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
+
+{% include Code/coder.html line1="yum copr enable mosquito/atom" line2="yum install -y atom" %}
+{% endcapture %}
+
+<!-- item3 -->
+{% capture item3 %}
 {% include Links/distros/fedora.html puncr="." %} Atom is available from the [Mosquito Copr](https://copr.fedorainfracloud.org/coprs/mosquito/atom/) and can be installed via running:
 
 {% include Code/coder.html line1="dnf copr enable mosquito/atom" line2="dnf install -y atom" %}
 {% endcapture %}
 
-<!-- item3 -->
-{% capture item3 %}
+<!-- item4 -->
+{% capture item4 %}
 {% include Links/distros/gentoolinux.html puncr="." %} Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:[^13]
 
 {% include Code/coder.html line1="layman -s sabayon-tools && emerge --sync" line2="emerge -av app-editors/atom::sabayon-tools" %}
 {% endcapture %}
 
 <!-- item4 -->
-{% capture item4 %}
+{% capture item5 %}
 {% include Links/distros/ubuntu.html puncr="." %} Atom (package name: [`atom`](https://launchpad.net/~webupd8team/+archive/ubuntu/atom)) is available from the Webupd8team Personal Package Archive (PPA). To install Atom from it run:
 
 {% include Code/coder.html line1="add-apt-repository ppa:webupd8team/atom" line2="apt-get update" line3="apt-get install -y atom" %}
@@ -38,4 +45,5 @@ this will take the same amount of time, though, but it is less likely to fail on
   <li>{{ item2 | markdownify }}</li>
   <li>{{ item3 | markdownify }}</li>
   <li>{{ item4 | markdownify }}</li>
+  <li>{{ item5 | markdownify }}</li>
 </ul>

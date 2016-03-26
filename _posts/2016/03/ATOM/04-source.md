@@ -33,9 +33,9 @@ those with a sufficiently recent version of Node.js / npm in their official repo
   </ul>
 </div>
 
-Distributions marked with an asterisk (&#42;) can be installed using the distribution's respective package manager, using the distribution's respective NodeSource repository. This method can also be used by older versions of Fedora (namely &le;21). For details see [here](https://nodejs.org/en/download/package-manager/). Fedora users could install a sufficiently recent version of Node.js via another method using their package manager. It involves finding a Copr repository containing a sufficiently recent version of Node.js, for example the `@nodejs-sig/nodejs-latest` Copr. To add this particular Copr and install Node.js from it, run:
+Distributions marked with an asterisk (&#42;) can be installed using the distribution's respective package manager, using the distribution's respective NodeSource repository. This method can also be used by older versions of Fedora (namely &le;21). For details see [here](https://nodejs.org/en/download/package-manager/). Fedora users could install a sufficiently recent version of Node.js via another method using their package manager. It involves finding a Copr repository containing a sufficiently recent version of Node.js, for example the `nibbler/nodejs` Copr. To add this particular Copr and install Node.js and npm from it, run:
 
-{% include Code/coder.html line1="dnf copr enable @nodejs-sig/nodejs-latest" line2="dnf install -y nodejs" %}
+{% include Code/coder.html line1="dnf copr enable nibbler/nodejs" line2="dnf install -y nodejs-devel npm" %}
 
 On other platforms, one has two main options for installing Node.js and npm: building and installing Node.js from source code (which should automatically also build npm along with it) and installing these packages using the generalized Node.js Linux binary tarballs (GNLBT) officially released by the Node.js project. The latest release of Node.js can be found [here](http://nodejs.org/dist/latest/) (and this link should remain valid indefinitely, even with the release of more recent releases of Node.js). The tarballs relevant to Linux users are (where `x.y.z` refers to the latest version of Node.js, presently at the time of writing this post this is `5.9.1`):
 
@@ -61,6 +61,31 @@ Before you do this, ensure that an older Node.js package is not already installe
 While to build and install Node.js from source code, assuming you have all the required dependencies already installed (including clang and GCC, both with C++ support, Python 2.6 or 2.7 and GNU Make), one would run:
 
 {% include Code/codeu.html line1="curl http://nodejs.org/dist/v5.9.1/node-v5.9.1.tar.xz | tar -xJ" line2="cd node-v5.9.1" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
+
+#### Summary
+On **CentOS** / **Oracle Linux** / **Red Hat Enterprise Linux** running:
+
+{% include Code/coder.html line1="curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -" line2="yum install -y python nodejs-devel npm gcc gcc-c++ make glibc-devel git-core" %}
+
+should install all of Atom's build and runtime dependencies.
+
+On **Debian** / **Ubuntu**, running:
+
+{% include Code/coder.html line1="curl -sL https://deb.nodesource.com/setup_5.x | bash -" line2="apt-get install -y nodejs npm build-essential git libgnome-keyring-dev fakeroot" %}
+
+should install all of Atom's build and runtime dependencies.
+
+On **Fedora** running:
+
+{% include Code/coder.html line1="dnf copr enable nibbler/nodejs" line2="dnf install -y nodejs-devel npm glibc-devel python gcc gcc-c++ make git-core libgnome-keyring-devel" %}
+
+should install all of Atom's build and runtime dependencies.
+
+On **openSUSE** running:
+
+{% include Code/coder.html line1="zypper in -y npm make gcc gcc-c++ glibc-devel git-core libgnome-keyring-devel" %}
+
+should install all of Atom's build and runtime dependencies.
 
 ### Building Atom
 Building Atom from source code involves of the same basic steps on every distribution. After installing the required build and runtime dependencies, they are:
