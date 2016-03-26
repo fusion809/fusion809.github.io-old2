@@ -39,29 +39,39 @@ Such as Python scripts, this functionality is provided by the [`script`](https:/
 {% endcapture %}
 
 {% capture fn11 %}
-Which can be done using the [`pigments`](https://atom.io/packages/pigments) package.
+Provided by the [`markdown-writer`](https://atom.io/packages/markdown-writer) package.
 {% endcapture %}
 
 {% capture fn12 %}
-Which is done using the [`package-sync`](https://atom.io/packages/package-sync) package.
+This functionality is provided by the [`jekyll`](https://atom.io/packages/jekyll)
 {% endcapture %}
 
 {% capture fn13 %}
+Which can be done using the [`pigments`](https://atom.io/packages/pigments) package.
+{% endcapture %}
+
+{% capture fn14 %}
+Which is done using the [`package-sync`](https://atom.io/packages/package-sync) package.
+{% endcapture %}
+
+{% capture fn15 %}
 Assuming this overlay has already been added, if not, then add it using the line {% include Code/coders.html line1="layman -a sabayon-tools" %} and omit {% include Code/coders.html line1="layman -s sabayon-tools" %} in the follow lines of code. This also assumes that the Portage Tree has been synced before on your current machine using the {% include Code/coders.html line1="emerge-webrsync" %} command, if not do this instead of running {% include Code/coders-fs.html line1="emerge --sync" %}
 {% endcapture %}
 <h2>Footnotes</h2>
 <ol>
-  <li id="fn:1">{{ fn1 | markdownify }}</li>
-  <li id="fn:2">{{ fn2 | markdownify }}</li>
-  <li id="fn:3">{{ fn3 | markdownify }}</li>
-  <li id="fn:4">{{ fn4 | markdownify }}</li>
-  <li id="fn:5">{{ fn5 | markdownify }}</li>
-  <li id="fn:6">{{ fn6 | markdownify }}</li>
-  <li id="fn:7">{{ fn7 | markdownify }}</li>
-  <li id="fn:8">{{ fn8 | markdownify }}</li>
-  <li id="fn:9">{{ fn9 | markdownify }}</li>
-  <li id="fn:10">{{ fn10 | markdownify }}</li>
-  <li id="fn:11">{{ fn11 | markdownify }}</li>
-  <li id="fn:12">{{ fn12 | markdownify }}</li>
-  <li id="fn:13">{{ fn13 | markdownify }}</li>
+  <li id="fn:1">{{ fn1 | markdownify }}<a href="#fnref:1" class="reversefootnote">↩</a></li>
+  <li id="fn:2">{{ fn2 | markdownify }}<a href="#fnref:2" class="reversefootnote">↩</a></li>
+  <li id="fn:3">{{ fn3 | markdownify }}<a href="#fnref:3" class="reversefootnote">↩</a></li>
+  <li id="fn:4">{{ fn4 | markdownify }}<a href="#fnref:4" class="reversefootnote">↩</a></li>
+  <li id="fn:5">{{ fn5 | markdownify }}<a href="#fnref:5" class="reversefootnote">↩</a></li>
+  <li id="fn:6">{{ fn6 | markdownify }}<a href="#fnref:6" class="reversefootnote">↩</a></li>
+  <li id="fn:7">{{ fn7 | markdownify }}<a href="#fnref:7" class="reversefootnote">↩</a></li>
+  <li id="fn:8">{{ fn8 | markdownify }}<a href="#fnref:8" class="reversefootnote">↩</a></li>
+  <li id="fn:9">{{ fn9 | markdownify }}<a href="#fnref:9" class="reversefootnote">↩</a></li>
+  <li id="fn:10">{{ fn10 | markdownify }}<a href="#fnref:10" class="reversefootnote">↩</a></li>
+  <li id="fn:11">{{ fn11 | markdownify }}<a href="#fnref:11" class="reversefootnote">↩</a></li>
+  <li id="fn:12">{{ fn12 | markdownify }}<a href="#fnref:12" class="reversefootnote">↩</a></li>
+  <li id="fn:13">{{ fn13 | markdownify }}<a href="#fnref:13" class="reversefootnote">↩</a></li>
+  <li id="fn:14">{{ fn14 | markdownify }}<a href="#fnref:14" class="reversefootnote">↩</a></li>
+  <li id="fn:15">{{ fn15 | markdownify }}<a href="#fnref:15" class="reversefootnote">↩</a></li>
 </ol>

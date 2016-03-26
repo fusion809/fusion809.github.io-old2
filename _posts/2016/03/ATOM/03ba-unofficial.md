@@ -29,7 +29,7 @@ this will take the same amount of time, though, but it is less likely to fail on
 
 <!-- item4 -->
 {% capture item4 %}
-{% include Links/distros/gentoolinux.html puncr="." %} Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:<sup id="fnref:13"><a href="#fn:13">13</a></sup>
+{% include Links/distros/gentoolinux.html puncr="." %} Atom (package name: [`app-editors/atom`](http://gpo.zugaina.org/app-editors/atom)) is available from several unofficial Gentoo Portage Overlays (GPOs), however, including my own [`sabayon-tools`](https://github.com/fusion809/sabayon-tools) overlay and the [`sabayon`](https://github.com/Sabayon/for-gentoo) overlay of Sabayon Linux. To build Atom from the `sabayon-tools` overlay, run:{% include Links/fn.html no="15" %}
 
 {% include Code/coder.html line1="layman -s sabayon-tools && emerge --sync" line2="emerge -av app-editors/atom::sabayon-tools" %}
 {% endcapture %}
