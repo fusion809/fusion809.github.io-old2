@@ -16,20 +16,20 @@ All these requirements can, for most distributions (in fact all of them that I h
 The vast majority of Linux distributions have Node.js and npm in their software repositories, the problem is that the version in their software repositories is seldom ever sufficiently recent for it to be suitable for building Atom with. Popular distributions without a sufficiently current version of Node.js / npm to build Atom with in their official software repositories, include:
 <div class="div-col columns column-count column-count-6" style="-moz-column-count: 6; -webkit-column-count: 6; column-count: 6;">
   <ul>
-    <li>CentOS*</li>
-    <li>Debian*</li>
-    <li>Fedora</li>
-    <li>Mageia</li>
-    <li>Ubuntu*</li>
+    <li>{% include Links/distros/centos.html puncr="&#42;" %}</li>
+    <li>{% include Links/distros/debian.html puncr="&#42;" %}</li>
+    <li>{% include Links/distros/fedora.html %}</li>
+    <li>{% include Links/distros/mageia.html %}</li>
+    <li>{% include Links/distros/ubuntu.html puncr="&#42;" %}</li>
   </ul>
 </div>
 those with a sufficiently recent version of Node.js / npm in their official repositories include:
 <div class="div-col columns column-count column-count-5" style="-moz-column-count: 5; -webkit-column-count: 5; column-count: 5;">
   <ul>
-    <li>Arch Linux</li>
-    <li>Gentoo Linux</li>
-    <li>openSUSE</li>
-    <li>Sabayon Linux</li>
+    <li>{% include Links/distros/archlinux.html %}</li>
+    <li>{% include Links/distros/gentoolinux.html %}</li>
+    <li>{% include Links/distros/opensuse.html %}</li>
+    <li>{% include Links/distros/sabayon.html %}</li>
   </ul>
 </div>
 
@@ -63,25 +63,25 @@ While to build and install Node.js from source code, assuming you have all the r
 {% include Code/codeu.html line1="curl http://nodejs.org/dist/v5.9.1/node-v5.9.1.tar.xz | tar -xJ" line2="cd node-v5.9.1" line3="./configure --prefix=/usr" line4="make" line5="sudo make install" %}
 
 #### Summary
-On **CentOS** / **Oracle Linux** / **Red Hat Enterprise Linux** running:
+On {% include Links/distros/centos.html %} / **Oracle Linux** / **Red Hat Enterprise Linux** running:
 
 {% include Code/coder.html line1="curl --silent --location https://rpm.nodesource.com/setup_5.x | bash -" line2="yum install -y python nodejs-devel npm gcc gcc-c++ make glibc-devel git-core" %}
 
 should install all of Atom's build and runtime dependencies.
 
-On **Debian** / **Ubuntu**, running:
+On {% include Links/distros/debian.html %} / {% include Links/distros/ubuntu.html puncr = "," %} running:
 
 {% include Code/coder.html line1="curl -sL https://deb.nodesource.com/setup_5.x | bash -" line2="apt-get install -y nodejs npm build-essential git libgnome-keyring-dev fakeroot" %}
 
 should install all of Atom's build and runtime dependencies.
 
-On **Fedora** running:
+On {% include Links/distros/fedora.html %} running:
 
 {% include Code/coder.html line1="dnf copr enable nibbler/nodejs" line2="dnf install -y nodejs-devel npm glibc-devel python gcc gcc-c++ make git-core libgnome-keyring-devel" %}
 
 should install all of Atom's build and runtime dependencies.
 
-On **openSUSE** running:
+On {% include Links/distros/opensuse.html %} running:
 
 {% include Code/coder.html line1="zypper in -y npm make gcc gcc-c++ glibc-devel git-core libgnome-keyring-devel" %}
 
