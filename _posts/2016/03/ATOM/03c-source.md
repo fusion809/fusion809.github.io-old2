@@ -4,7 +4,7 @@
 The minimum requirements for building Atom on Linux, according to the [official Atom build instructions for Linux platforms](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md), include:
 
 * 32-bit / 64-bit computer architecture. 64-bit is preferable.
-* C/C++ build tools &mdash; the GNU Compiler Collection (GCC; must also have C++ support, C++ support is usually provided by a separate package called `g++` or `gcc-c++`, depending on one's distribution), the GNU C Library (`glibc`), including its development headers, `glibc-devel`, and GNU Make (usually called `make`) are usually used to satisfy this requirement on Linux platforms.
+* C/C++ build tools &mdash; the GNU Compiler Collection (GCC; must also have C++ support, C++ support is usually provided by a separate package called `g++` or `gcc-c++`, depending on one's distribution), the GNU C Library (`glibc`), including its development headers (sometimes provided by a separate package called `glibc-devel`) and GNU Make (usually called `make`) are usually used to satisfy this requirement on Linux platforms.
 * Git. Usually this package is called `git` on the distribution, in question.
 * Node.js (officially 0.10.x or above is supported, but Fedora has 0.10.x in their repositories and I have never managed to build Atom using their version of Node.js, so I would recommend using the 0.12.x or later series Node.js). The development headers are required, for some distributions this is provided by a package called `nodejs-devel`.
 * npm (officially v1.4.x or above is supported). On most distributions this is provided by a package called `npm`. This requires Python 2.6 / 2.7, usually provided by a `python2` or `python` package.
