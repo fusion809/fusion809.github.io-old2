@@ -13,7 +13,7 @@ The minimum requirements for building Atom on Linux, according to the [official 
 All these requirements can, for most distributions (in fact all of them that I have experience with), be satisfied quite easily by installing packages from official repositories, except for the Node.js / npm requirement.
 
 #### Node.js / npm
-The vast majority of Linux distributions have Node.js and npm in their software repositories, the problem is that the version in their software repositories is seldom ever sufficiently recent for it to be suitable for building Atom with. Popular distributions without a sufficiently current version of Node.js / npm to build Atom with in their official software repositories, include:
+The vast majority of Linux distributions have Node.js and npm in their software repositories, the problem is that the version in their software repositories is seldom ever sufficiently recent for it to be suitable for building Atom with. Popular distributions without a sufficiently recent version of Node.js / npm to build Atom with in their official software repositories, include:
 <div class="div-col columns column-count column-count-6" style="-moz-column-count: 6; -webkit-column-count: 6; column-count: 6;">
   <ul>
     <li>{% include Links/distros/centos.html puncr="&#42;" %}</li>
