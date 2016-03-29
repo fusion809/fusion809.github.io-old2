@@ -24,7 +24,7 @@ The **Arch Linux Packages** (**ALPs**) I develop or maintain are found in three 
 * {% include Links/obs.md project="home:fusion809:arch_extra" name="My Arch_Extra OBS Project" %}
 
 ### Gentoo / Sabayon Linux
-They are stored in {% include Links/fusgr.md repo="sabayon-tools" puncr="," %} I use Docker to main this overlay, and I am afraid some packages in it inadvertently fall through the cracks.
+They are stored in {% include Links/fusgr.md repo="sabayon-tools" puncr="," %} I use Docker to maintain this overlay, and I am afraid some packages in it inadvertently fall through the cracks.
 
 ### Fedora / openSUSE
 They are stored in one of two locations:
