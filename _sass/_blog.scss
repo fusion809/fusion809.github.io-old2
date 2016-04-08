@@ -139,6 +139,18 @@ div.columnizeList {
   column-count: 2;
 }
 
+div.columnizeList3 {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+div.columnizeList4 {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+}
+
 select {
   background: #fff !important;
 }

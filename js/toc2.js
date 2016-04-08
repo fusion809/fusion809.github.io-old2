@@ -48,7 +48,7 @@
 
     var level = get_level(headers[0]),
       this_level,
-      html = settings.title + " <"+settings.listType+">";
+      html = settings.title + " <div class=\"columnizeList4\">" + "<"+settings.listType+">";
     headers.on('click', function() {
       if (!settings.noBackToTopLinks) {
         window.location.hash = this.id;
@@ -61,12 +61,12 @@
         $(header).addClass('top-level-header').after(return_to_top);
       }
       if (this_level === level) // same level as before; same indenting
-        html += '<li class="columns column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;"><a href='#" + fixedEncodeURIComponent(header.id) + ''>" + header.innerHTML + "</a>";
+        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
       else if (this_level <= level){ // higher level than before; end parent ol
         for(i = this_level; i < level; i++) {
           html += "</li></"+settings.listType+">"
         }
-        html += '<li class="columns column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;"><a href='#" + fixedEncodeURIComponent(header.id) + ''>" + header.innerHTML + "</a>";
+        html += "<li><a href='#" + fixedEncodeURIComponent(header.id) + "'>" + header.innerHTML + "</a>";
       }
       else if (this_level > level) { // lower level than before; expand the previous to contain a ol
         for(i = this_level; i > level; i--) {
@@ -76,7 +76,7 @@
       }
       level = this_level; // update for the next one
     });
-    html += "</"+settings.listType+">";
+    html += "</"+settings.listType+">"+"</div>";
     if (!settings.noBackToTopLinks) {
       $(document).on('click', '.back-to-top', function() {
         $(window).scrollTop(0);
