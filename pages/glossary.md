@@ -91,6 +91,11 @@ A **Linux distribution** (**LD** or **distro**) is an individual, specific, oper
 * **GNU Project software**, such as Bash, the coreutils package, glibc, *etc.*
 * A **package management system**, such as APT, DNF, Entropy, pacman, Portage, *etc.*
 
+### Release Models: Fixed vs. Rolling
+In the context of operating system development, there are two main types of **release model**: fixed and rolling. The most popular of these is the fixed release model, with the rolling release model being mostly used by bleeding edge operating systems geared towards advanced users like Arch Linux and Gentoo Linux.
+
+Operating systems that follow a **fixed release model**[^1] have fixed releases,[^2] which users are required to upgrade to, in order to keep their system up-to-date. This upgrade process can be via downloading or otherwise acquiring the installation media[^3] for the latest version and going through its installer,[^4] via one's package manager[^5] or other methods. In my experience
+
 ### File Archive
 A **file archive** is a type of file, that stores one or more files, potentially with associated metadata, in a more portable and easily-compressed format. On Linux and other &#42;nix systems, the most common type of file archive is a tar archive (which have the `.tar` file extension), with rar archives (file extension: `.rar`) being a popular alternative, especially for non-Linux platforms such as Windows. `tar` is a basic Unix utility, the specifics of this utility, its syntax, supported file formats, *etc.* is dependent on the &#42;nix system it belongs to. Most Linux distributions use GNU tar as their default tar utility, but also have FreeBSD's tar (usually called by the `bsdtar` command) utility available from their software repositories.
 
@@ -105,3 +110,10 @@ A **file archive** is a type of file, that stores one or more files, potentially
 * **Deb**: the package format used by Debian's dpkg package manager.
 * **PC**: **Personal computer**. Can be a desktop or laptop, does not matter if it once ran OS X or Windows, still to me it is a PC.
 * **RPM**: [**RPM Package Manager**](http://rpm.org/), originally **Red Hat Package Manager**. This is the name of both a package manager and the package format used by this package manager.
+
+## Footnotes
+[^1]: Such as CentOS, Debian, Fedora, Mageia, openSUSE Leap, OS X, Ubuntu, Windows NT, *etc.*
+[^2]: Usually assigned a release number, e.g., Fedora 22, Fedora 23, Ubuntu 15.04, Ubuntu 15.10, *etc.*
+[^3]: Like its ISO, which one can place on a live CD or USB.
+[^4]: Which for some systems have an *upgrade existing system* option. I am using italics to highlight the fact that quite often different terminology will be used in the installer, if such an option even exists.
+[^5]: I know this can be done for Fedora, openSUSE and Ubuntu.
