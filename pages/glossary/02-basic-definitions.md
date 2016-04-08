@@ -40,7 +40,7 @@
 
 {% include_relative 02-basic-definitions/20-software-repository.md %}
 
-{% include_relative 02-basic-definitions/21-linux-distributions.md %}
+{% include_relative 02-basic-definitions/21-linux-distribution.md %}
 
 {% include_relative 02-basic-definitions/22-software-version-nomenclature.md %}
 
