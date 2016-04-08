@@ -1,5 +1,5 @@
 ---
-layout:           page
+layout:           page2
 title:            "Glossary"
 date:             2016-02-06 +1000
 last_modified_at: 2016-03-04 17:25:52 +1000
