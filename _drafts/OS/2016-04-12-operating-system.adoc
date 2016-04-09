@@ -1,0 +1,16 @@
+---
+tags:
+  - FreeBSD
+  - Linux
+title: "Which free operating system is best for me?"
+layout: post
+date: 2016-04-12 +1000
+comments: true
+sharing: true
+---
+
+{% include_relative 01-introduction.adoc %}
+
+{% include_relative 02-ratings.adoc %}
+
+{% include_relative 03-archlinux.adoc %}
