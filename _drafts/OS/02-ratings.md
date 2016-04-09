@@ -1,4 +1,4 @@
-== Ratings
+## Ratings
 
 {% include Layouts/notei.md note1="I will use the term &ldquo;1-5&rdquo; to refer to characteristics that will be rated on a scale of 1 to 5. A rating of 1 indicates that this property is absent or poor. 5 indicates that this feature is a strong point of this OS." note2="I will also provide acronyms for each question, to be used to save space in the &ldquo;Ratings&rdquo; subsection of each OS section. These acronyms will only be applicable in these Ratings subsections, elsewhere the **PMS** acronym may be used for package management system." %}
 Each operating system will be rated with respect to the following characteristics:
