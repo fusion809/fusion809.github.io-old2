@@ -30,9 +30,17 @@ exclude:
 - assets
 
 gems:
+  - jekyll-asciidoc
   - jekyll-feed
   - jekyll-gist
   - jekyll-redirect-from
+
+asciidoc_ext: asciidoc,adoc,ad
+asciidoctor:
+  attributes:
+    - hardbreaks!
+    - source-highlighter=pygments
+    - pygments-css=style
 
 # Build settings
 markdown:           kramdown
