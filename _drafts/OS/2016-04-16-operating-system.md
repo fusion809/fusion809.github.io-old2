@@ -5,7 +5,7 @@ layout: post
 date: 2016-04-16 +1000
 permalink: /operating-systems/
 ---
-
+{% include Layouts/draft.html %}
 {% include_relative 01-introduction.md %}
 
 {% include_relative 02-ratings.md %}
