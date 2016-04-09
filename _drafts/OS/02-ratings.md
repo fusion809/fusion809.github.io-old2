@@ -9,6 +9,6 @@ Each operating system will be rated with respect to the following characteristic
 * How free and open-source is this system? (**FOS**) 1-5. 5 indicates that it satisfies the Free Software Foundation's definition of a **free operating system**. 4 indicates that its official repositories are entirely FOSS, but it may have binary blobs still attached to its kernel.
 * How comprehensive are its official software repositories? (**OSR**) 1-5.
 * How out-of-the-box is this system? (**OTB**) 1-5.
-* How easy is package manager on this system? (**PMS**) 1-5.
-* On which side of the spectrum of stability vs. bleeding edge software does this OS lie? (**SBE**) 1-5.
-* How comprehensive and easy-to-find are unofficial software repositories? (**USR**) 1-5.
+* How easy is it to pick up package management on this system? (**PMS**) 1-5.
+* On which side of the spectrum of stability vs. bleeding edge software does this OS lie? (**SBE**) 1-5. 5 means the system uses the very latest stable releases of all of its software, while 1 is an incredibly stable, yet out-of-date system.
+* How comprehensive and easy-to-find are its unofficial software repositories? (**USR**) 1-5.
