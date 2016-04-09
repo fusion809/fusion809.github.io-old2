@@ -1,7 +1,7 @@
 ---
 layout:           post
 date:             2016-03-26 +1000
-last_modified_at: 2016-04-09 2:45:00 +1000
+last_modified_at: 2016-04-09 14:45:00 +1000
 title:            "Running Atom on Linux"
 categories:       atom, linux, software-installation
 permalink:        /running-atom-on-linux/
