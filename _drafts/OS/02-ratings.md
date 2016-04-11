@@ -7,6 +7,7 @@ Each operating system will be rated with respect to the following characteristic
 * How comprehensive, extensive, easy-to-find and easy-to-understand is the available documentation for this OS? (**CED**) 1-5.
 * How easy is package development for this OS? (**EPD**) 1-5.
 * How free and open-source is this system? (**FOS**) 1-5. 5 indicates that it satisfies the Free Software Foundation's definition of a **free operating system**. 4 indicates that its official repositories are entirely FOSS, but it may have binary blobs still attached to its kernel.
+* How easy is it to get free support for this distribution and of what quality is this support? (**FSQ**) 1-5. If the distribution has a very active forum or other free support website with friendly users and a helpful answer can be expected within a few hours of asking a question then it will receive a rating of 5.
 * How comprehensive are its official software repositories? (**OSR**) 1-5.
 * How out-of-the-box is this system? (**OTB**) 1-5.
 * How easy is it to pick up package management on this system? (**PMS**) 1-5.
