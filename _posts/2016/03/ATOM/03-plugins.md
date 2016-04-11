@@ -37,3 +37,6 @@ My favourite packages are (in alphabetical order; I also mention how much time i
 Those I have limited experience with, but on paper seem interesting and potentially useful to me at least, depending on the specifics of the programming you do, include:
 
 * [`build`](https://atom.io/package/build){% include Layouts/minus.html %} &mdash; which allows one to compile source code in the editor. `build-0.59.0` added 59ms to the start time of Atom 1.6.2.
+* [`nuclide`](https://atom.io/package/nuclide){% include Layouts/minus.html %} &mdash; a plugin created by Facebook to turn Atom into an IDE for Hack/PHP. `nuclide-0.129.0` added 7,950ms to the start-up time of Atom 1.6.2.
+* [`platformio-ide`](https://atom.io/package/platformio-ide){% include Layouts/minus.html %} &mdash; a plugin created by [PlatformIO](http://platformio.org/) that also turns Atom into an IDE, specifically for C/C++. `platformio-ide-1.1.1` added 126ms to the start-up time of Atom 1.6.2.
+* [`platformio-terminal`](https://atom.io/package/platformio-terminal){% include Layouts/minus.html %} &mdash; a plugin created by [PlatformIO](http://platformio.org/) that adds an embedded terminal to Atom. `platformio-terminal-2.0.3` added 17ms to the start-up time of Atom 1.6.2.
