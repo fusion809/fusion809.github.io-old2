@@ -47,3 +47,21 @@ body:
             "n"
     description:
             "Tools for automating the generation of ISOs for Arch Linux with out-of-the-box support for Broadcom Wireless."
+# atom
+  - repo:
+            "atom"
+    category:
+            "Atom; Configuration files; Text editors"
+    fork:
+            "n"
+    description:
+            "Configuration files for Atom, specifically the configuration files found in my ~/.atom directory."
+# bin
+  - repo:
+            "bin"
+    category:
+            "JavaScript; Node.js; Open Build Service; Programming; Python; Shell script"
+    fork:
+            "n"
+    description:
+            "Executable scripts found in my ~/bin folder that, when added to my PATH, can be used to automate some otherwise tedious OBS tasks."

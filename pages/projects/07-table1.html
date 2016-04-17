@@ -12,7 +12,7 @@
     {% for row in site.data.repositories.body %}
     <tr class="green">
       <td class="green"><a href="https://github.com/fusion809/{{ row.repo }}"><code>{{ row.repo }}</code></td>
-      <td class="green">{{ row.category }}</td>
+      <td class="green" style="width:200px;">{{ row.category }}</td>
       {% if row.fork == 'y' %}<td class="yes"><a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}">Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
       <td class="green">{{ row.description }}</td>
     </tr>
