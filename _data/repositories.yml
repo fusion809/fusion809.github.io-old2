@@ -64,4 +64,13 @@ body:
     fork:
             "n"
     description:
-            "Executable scripts found in my ~/bin folder that, when added to my PATH, can be used to automate some otherwise tedious OBS tasks."
+            "Executable scripts found in my `~/bin` folder that, when added to my `PATH` environment variable, can be used to automate some otherwise tedious OBS tasks."
+# centos-scripts
+  - repo:
+            "centos-scripts"
+    category:
+            "CentOS; Shell profiles"
+    fork:
+            "n"
+    description:
+            "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
