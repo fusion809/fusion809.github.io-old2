@@ -32,7 +32,7 @@
         <div class="title" style="font-size:18px;">Categories</div>
         <ul>
           {% for row in site.data.repositories.foot %}
-          <li>{{ row.category }}: {{ row.description }}</li>
+          <li><b>{{ row.category }}</b>: {{ row.description | markdownify }}</li>
           {% endfor %}
         </ul>
       </td>
