@@ -209,3 +209,21 @@ body:
             "n"
     description:
             "Automated installers for the Moksha window manager."
+# npm2archOBS
+  - repo:
+            "npm2archOBS"
+    category:
+            "Arch Linux; JavaScript; Node.js; Open Build Service; PKGBUILDs; Shell scripts"
+    fork:
+            "y"
+    description:
+            "Tools to automate the process of adding Node.js packages to the Open Build Service. "
+# octave
+  - repo:
+            "octave"
+    category:
+            "Installers; GNU Octave; Shell scripts"
+    fork:
+            "n"
+    description:
+            "Shell script to install GNU Octave from source code, assumming all dependencies are already installed."
