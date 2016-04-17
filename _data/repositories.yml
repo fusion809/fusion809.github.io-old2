@@ -1,15 +1,5 @@
 caption: "Table 1: An Overview of my GitHub Repositories"
 
-head:
-  - Repository
-  - Category(s)
-  - Fork?
-  - LICENSE
-  - README
-  - Maintained?
-  - Working?
-  - Description
-
 body:
 # arch-builder
   - repo:
@@ -38,7 +28,7 @@ body:
   - repo:
             "arch-scripts"
     category:
-            "Arch Linux; Quick Install; Shell profiles; Zsh"
+            "Arch Linux; Quick Install; [Shell profiles](#shell-scripts); Zsh"
     fork:
             "n"
     license:
