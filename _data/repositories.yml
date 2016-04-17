@@ -24,7 +24,7 @@ body:
   - repo:
             "arch-scripts"
     category:
-            "Arch Linux; Shell profiles; Zsh"
+            "Arch Linux; Quick Install; Shell profiles; Zsh"
     fork:
             "n"
     description:
@@ -74,3 +74,30 @@ body:
             "n"
     description:
             "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
+# debian-scripts
+  - repo:
+            "debian-scripts"
+    category:
+            "Debian; Shell profiles"
+    fork:
+            "n"
+    description:
+            "Shell scripts automatically loaded on Bash startup that are designed to automate common tasks, especially package management, under Debian and its derivatives."
+# fedora-scripts
+  - repo:
+            "fedora-scripts"
+    category:
+            "Fedora; Quick Install; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "Shell scripts automatically loaded on Bash/Zsh startup that are designed to automate common command-line tasks on Fedora and other systems using the DNF package manager, including those related to package management."
+# freebsd-scripts
+  - repo:
+            "freebsd-scripts"
+    category:
+            "FreeBSD; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on FreeBSD."
