@@ -644,3 +644,11 @@ foot:
             "GitHub Pages"
     description:
             "This category is for repositories that should be pushing to GitHub Pages."
+  - category:
+            "GNU Octave"
+    description:
+            "This category is for repositories related to GNU Octave."
+  - category:
+            "Installers"
+    description:
+            "This category is for repositories used to install operating systems or other pieces of software."
