@@ -186,7 +186,7 @@ body:
     working:
             "y"
     description:
-            "Shell scripts automatically loaded on Bash/Zsh startup that are designed to automate common command-line tasks on Fedora and other systems using the DNF package manager, including those related to package management."
+            "Shell scripts automatically loaded on Bash/Zsh startup that are designed to automate common command-line tasks on Fedora and other systems using the DNF package manager, including tasks related to package management."
 # freebsd-scripts
   - repo:
             "freebsd-scripts"
@@ -481,7 +481,7 @@ body:
   - repo:
             "PKGBUILDs"
     category:
-            "Arch Linux; Package Development"
+            "Arch Linux; Package development"
     fork:
             "n"
     license:
@@ -533,7 +533,7 @@ body:
     working:
             "y"
     description:
-            "A modified version of the gitsta theme that is used by the Sabayon Blog at http://linux.x10host.com/blog/"
+            "A modified version of the gitsta theme that is used by the Sabayon Blog at [http://linux.x10host.com/blog/](http://linux.x10host.com/blog/)"
 # sabayon-scripts
   - repo:
             "sabayon-scripts"
@@ -610,6 +610,15 @@ body:
             "y"
     description:
             "My `~/.vimrc` file."
+# zsh-theme
+  - repo:
+            "zsh-theme"
+    category:
+            "Themes; Zsh"
+    fork:
+            "n"
+    description:
+            "Zsh themes I have developed."
 
 foot:
   - category:
@@ -628,3 +637,7 @@ foot:
             "Quick Install"
     description:
             "This category is for repositories with a quick-install script (usually entitled `quick-install.sh`), which *should* (if they fail, feel free to start a new issue and report this fact and I will see what I can do about it) quickly install the repository on one's machine. For example, the `arch-scripts` quick-install script replaces `~/.bashrc`, `~/.zshrc` (for both root and standard user) with those from this repository, sets Zsh as the default shell, installs oh-my-zsh and gets one's system ready to use these scripts."
+  - category:
+            "Shell profiles"
+    description:
+            "This category is for modifications to the files automatically loaded on startup by the Unix shells Bash and Zsh, which are `~/.bashrc` and `~/.zshrc`, respectively. If the Zsh category is included also then this means the shell script repository in question contains both `~/.bashrc` and `~/.zshrc`, if not then only the `~/.bashrc` is provided by this repository."
