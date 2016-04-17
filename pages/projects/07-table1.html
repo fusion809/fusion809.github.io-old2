@@ -1,33 +1,21 @@
 <h2>Conclusion</h2>
 <table>
-  <caption>Table 1: An Overview of my GitHub Repositories</caption>
+  <caption>{{ site.data.repositories.caption }}</caption>
   <thead>
     <tr>
-      <td class="title1">Repository</td>
-      <td class="title1">Fork?</td>
-      <td class="title1">Description</td>
+      {% for heading in site.data.repositories.head %}
+        <td class="title1">{{ heading | markdownify }}</td>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
-    <tr><!-- arch-builder -->
-      {% include fghub.html repo="arch-builder" %}
-      {% include ghub.html user="elasticdog" repo="packer-arch" %}
-      <td class="green">Packer template for building Arch Linux VMs.</td>
+    {% for row in site.data.repositories.body %}
+    <tr class="green">
+      <td class="green"><a href="https://github.com/fusion809/{{ row.repo }}"><code>{{ row.repo }}</code></td>
+      <td class="green">{{ row.category }}</td>
+      {% if row.fork == 'y' %}<td class="yes"><a href="https://github.com/{{ row.orig-user }}/{{ row.orig-repo }}">Yes</a></td>{% else %}<td class="no">No</td>{% endif %}
+      <td class="green">{{ row.description }}</td>
     </tr>
-    <tr><!-- arch-scripts -->
-      {% include fghub.html repo="arch-scripts" %}
-      {% include tdyn.html yn="0" %}
-      <td class="green">Shell scripts for Arch Linux.</td>
-    </tr>
-    <tr><!-- arch-setup -->
-      {% include fghub.html repo="arch-setup" %}
-      {% include tdyn.html yn="0" %}
-      <td class="green">Set up scripts for Arch Linux.</td>
-    </tr>
-    <tr><!-- archiso -->
-      {% include fghub.html repo="archiso" %}
-      {% include tdyn.html yn="0" %}
-      <td class="green">Tools for creating an ISO file for Arch Linux with out-of-the-box for Broadcom Wireless.</td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>

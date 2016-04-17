@@ -88,7 +88,7 @@ td.Mixed, td.mixed {
 }
 
 td.yes, td.Yes, td.Compiled {
-  background-color: green;
+  background-color: #2f2;
   color: white;
   text-align: center;
   vertical-align: middle;
@@ -96,6 +96,10 @@ td.yes, td.Yes, td.Compiled {
   border: 2px solid #000 !important;
   border-radius: 4px;
   padding: 8px;
+}
+
+td.yes a {
+  font-weight: bold;
 }
 
 div.title {

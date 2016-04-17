@@ -1,0 +1,49 @@
+caption: "Table 1: An Overview of my GitHub Repositories"
+
+head:
+  - Repository
+  - Category(s)
+  - Fork?
+  - Description
+
+body:
+# arch-builder
+  - repo:
+            "arch-builder"
+    category:
+            "Arch Linux; Packer"
+    fork:
+            "y"
+    orig-user:
+            "elasticdog"
+    orig-repo:
+            "packer-arch"
+    description:
+            "Packer template for building Arch Linux VMs."
+# arch-scripts
+  - repo:
+            "arch-scripts"
+    category:
+            "Arch Linux; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "Shell scripts for automating tasks I frequently perform on Arch Linux and other systems using the pacman package manager."
+# arch-setup
+  - repo:
+            "arch-setup"
+    category:
+            "Arch Linux; Installation; Shell scripts"
+    fork:
+            "n"
+    description:
+            "Scripts for automating the installation of Arch Linux."
+# archiso
+  - repo:
+            "archiso"
+    category:
+            "Arch Linux; ISO"
+    fork:
+            "n"
+    description:
+            "Tools for automating the generation of ISOs for Arch Linux with out-of-the-box support for Broadcom Wireless."
