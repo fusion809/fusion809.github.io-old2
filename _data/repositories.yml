@@ -227,3 +227,21 @@ body:
             "n"
     description:
             "Shell script to install GNU Octave from source code, assumming all dependencies are already installed."
+# opensuse-scripts
+  - repo:
+            "opensuse-scripts"
+    category:
+            "openSUSE; Quick Install; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under openSUSE."
+# pelican-site
+  - repo:
+            "pelican-site"
+    category:
+            "GitHub Pages; Pelican; The Hornery"
+    fork:
+            "n"
+    description:
+            "My (so far failed) attempt at adding a /pelican subdirectory to *The Hornery*. See [issue #1944](https://github.com/getpelican/pelican/issues/1944) for details."
