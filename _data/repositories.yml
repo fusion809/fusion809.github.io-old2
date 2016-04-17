@@ -245,3 +245,66 @@ body:
             "n"
     description:
             "My (so far failed) attempt at adding a /pelican subdirectory to *The Hornery*. See [issue #1944](https://github.com/getpelican/pelican/issues/1944) for details."
+# PKGBUILDs
+  - repo:
+            "PKGBUILDs"
+    category:
+            "Arch Linux; Package Development"
+    fork:
+            "n"
+    description:
+            "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable."
+# python-scripts
+  - repo:
+            "python-scripts"
+    category:
+            "Programming; Python; Scientific computing"
+    fork:
+            "n"
+    description:
+            "Assorted Python scripts used to perform numerical computations."
+# sabayon-gitsta
+  - repo:
+            "sabayon-gitsta"
+    category:
+            "Themes; Unmaintained; WordPress"
+    fork:
+            "n"
+    description:
+            "A modified version of the gitsta theme that is used by the Sabayon Blog at http://linux.x10host.com/blog/"
+# sabayon-scripts
+  - repo:
+            "sabayon-scripts"
+    category:
+            "Quick Install; Sabayon Linux; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "Automatically-loaded shell scripts (mostly containing variable definitions and functions) that can be used to automate some common tasks in Sabayon."
+# sabayon-tools
+  - repo:
+            "sabayon-tools"
+    category:
+            "Gentoo Linux; Package development; Portage overlay; Sabayon Linux"
+    fork:
+            "n"
+    description:
+            "My Portage overlay for Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."
+# spacemacs
+  - repo:
+            "spacemacs"
+    category:
+            "Configuration files; Spacemacs; Text editors"
+    fork:
+            "n"
+    description:
+            "My `~/.spacemacs` file."
+# vim
+  - repo:
+            "vim"
+    category:
+            "Configuration files; Text editors; Vim"
+    fork:
+            "n"
+    description:
+            "My `~/.vimrc` file."
