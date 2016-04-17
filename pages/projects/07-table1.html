@@ -26,17 +26,4 @@
     </tr>
     {% endfor %}
   </tbody>
-  <tfoot>
-    <tr>
-      <td class="blue" colspan="8">
-        <div class="title" style="font-size:18px;">Categories</div>
-        {% include Layouts/note.md note1="Some categories are not mentioned here as their definition is obvious based on their name." %}
-        <ul>
-          {% for row in site.data.repositories.foot %}
-          <li><b>{{ row.category }}</b>: {{ row.description | markdownify }}</li>
-          {% endfor %}
-        </ul>
-      </td>
-    </tr>
-  </tfoot>
 </table>
