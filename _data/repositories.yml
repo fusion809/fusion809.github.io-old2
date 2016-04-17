@@ -201,11 +201,11 @@ body:
     description:
             "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
 # moksha-scripts
-  repo:
+  - repo:
             "moksha-scripts"
-  category:
+    category:
             "Installers; Moksha; Shell scripts"
-  fork:
+    fork:
             "n"
-  description:
+    description:
             "Automated installers for the Moksha window manager."
