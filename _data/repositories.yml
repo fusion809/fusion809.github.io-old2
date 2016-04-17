@@ -613,42 +613,18 @@ body:
 
 foot:
   - category:
-            "Arch Linux"
-    description:
-            "This is used for repositories relating, specifically, to Arch Linux or to its package manager, pacman."
-  - category:
-            "CentOS"
-    description:
-            "This is used for repositories relating, specifically, to CentOS or other systems using the yum package manager."
-  - category:
             "Configuration files"
     description:
             "This category is for files that either modify the appearance or the behaviour of the programs they pertain to. For example, `~/.vimrc` is a configuration file for Vim, and so can be used to modify its appearance and behaviour."
-  - category:
-            "Debian"
-    description:
-            "This category is for repositories pertaining to Debian and its derivatives that use the APT and dpkg package managers."
-  - category:
-            "Fedora"
-    description:
-            "This category is used by repositories that relate to Fedora and its derivatives that use the DNF package manager."
-  - category:
-            "FreeBSD"
-    description:
-            "This category is for repositories relating to FreeBSD or its derivatives that use the same package managers, pkg and the Ports system."
-  - category:
-            "Gentoo Linux"
-    description:
-            "This category is for repositories pertaining to Gentoo Linux or its derivatives that use the Portage package manager."
   - category:
             "GitHub Pages"
     description:
             "This category is for repositories that should be pushing to GitHub Pages."
   - category:
-            "GNU Octave"
-    description:
-            "This category is for repositories related to GNU Octave."
-  - category:
             "Installers"
     description:
             "This category is for repositories used to install operating systems or other pieces of software."
+  - category:
+            "Quick Install"
+    description:
+            "This category is for repositories with a quick-install script (usually entitled `quick-install.sh`), which *should* (if they fail, feel free to start a new issue and report this fact and I will see what I can do about it) quickly install the repository on one's machine. For example, the `arch-scripts` quick-install script replaces `~/.bashrc`, `~/.zshrc` (for both root and standard user) with those from this repository, sets Zsh as the default shell, installs oh-my-zsh and gets one's system ready to use these scripts."
