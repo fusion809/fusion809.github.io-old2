@@ -101,3 +101,12 @@ body:
             "n"
     description:
             "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on FreeBSD."
+# fusion809.github.io
+  - repo:
+            "fusion809.github.io"
+    category:
+            "GitHub Pages; Jekyll; The Hornery"
+    fork:
+            "n"
+    description:
+            "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content."
