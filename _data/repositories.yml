@@ -519,7 +519,7 @@ body:
   - repo:
             "sabayon-gitsta"
     category:
-            "Themes; Unmaintained; WordPress"
+            "Themes; WordPress"
     fork:
             "n"
     license:
