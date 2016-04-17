@@ -137,3 +137,30 @@ body:
             "n"
     description:
             "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Gentoo machine, that automate some common tasks I perform on Gentoo, especially package management tasks."
+# hexo-site
+  - repo:
+            "hexo-site"
+    category:
+            "GitHub Pages; Hexo; The Hornery"
+    fork:
+            "n"
+    description:
+            "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](https://fusion809.github.io/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
+# hubpress.io
+  - repo:
+            "hubpress.io"
+    category:
+            "GitHub Pages; HubPress; The Hornery"
+    fork:
+            "y"
+    description:
+            "A subdirectory ([/hubpress.io](https://fusion809.github.io/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
+# hugo
+  - repo:
+            "hugo"
+    category:
+            "GitHub Pages; Hugo; The Hornery"
+    fork:
+            "n"
+    description:
+            "My failed attempt at generating a subdirectory of *The Hornery* powered by Hugo."
