@@ -4,6 +4,10 @@ head:
   - Repository
   - Category(s)
   - Fork?
+  - LICENSE
+  - README
+  - Maintained?
+  - Working?
   - Description
 
 body:
@@ -18,6 +22,8 @@ body:
             "elasticdog"
     orig-repo:
             "packer-arch"
+    license:
+            "[ISC]"
     description:
             "Packer template for building Arch Linux VMs."
 # arch-scripts
