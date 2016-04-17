@@ -515,6 +515,25 @@ body:
             "y"
     description:
             "Assorted Python scripts used to perform numerical computations."
+# rpmbuild
+  - repo:
+            "rpmbuild"
+    category:
+            "openSUSE; Package development"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Files for building RPM packages for openSUSE."
 # sabayon-gitsta
   - repo:
             "sabayon-gitsta"
