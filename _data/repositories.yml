@@ -11,7 +11,7 @@ body:
   - repo:
             "arch-builder"
     category:
-            "Arch Linux; Packer"
+            "Arch Linux; Packer; Shell script"
     fork:
             "y"
     orig-user:
@@ -119,4 +119,21 @@ body:
             "n"
     description:
             "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content. Two other repositories (fusion809.github.io-{old,old2}) contain the old content of *The Hornery*. The reason why the old content is kept in these two separate repositories is because their overall size exceeded 90 MB and much of this size was due to the accidental committing of content not intended for *The Hornery*."
-# file-icons
+# gentoo-packer
+  - repo:
+            "gentoo-packer"
+    category:
+            "Gentoo Linux; Packer; Shell script"
+    fork:
+            "y"
+    description:
+            "A repository of scripts for the setting up of a Gentoo VM. Originally designed to be used by Packer (by its original developer, Elasticdog), but if you try to use this fork of mine to build a Packer image odds are it will fail."
+# gentoo-scripts
+  - repo:
+            "gentoo-scripts"
+    category:
+            "Gentoo Linux; Quick Install; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Gentoo machine, that automate some common tasks I perform on Gentoo, especially package management tasks."
