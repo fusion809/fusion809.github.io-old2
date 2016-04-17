@@ -617,6 +617,16 @@ body:
             "Themes; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Zsh themes I have developed."
 
