@@ -23,7 +23,15 @@ body:
     orig-repo:
             "packer-arch"
     license:
-            "[ISC]"
+            "ISC"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Packer template for building Arch Linux VMs."
 # arch-scripts
@@ -33,6 +41,16 @@ body:
             "Arch Linux; Quick Install; Shell profiles; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell scripts for automating tasks I frequently perform on Arch Linux and other systems using the pacman package manager."
 # arch-setup
@@ -42,6 +60,16 @@ body:
             "Arch Linux; Installers; Shell scripts"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Scripts for automating the installation of Arch Linux."
 # archiso
@@ -51,6 +79,12 @@ body:
             "Arch Linux; ISO"
     fork:
             "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Tools for automating the generation of ISOs for Arch Linux with out-of-the-box support for Broadcom Wireless."
 # atom
@@ -60,6 +94,16 @@ body:
             "Atom; Configuration files; Text editors"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Configuration files for Atom, specifically the configuration files found in my ~/.atom directory."
 # bin
@@ -69,6 +113,16 @@ body:
             "JavaScript; Node.js; Open Build Service; Programming; Python; Shell script"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Executable scripts found in my `~/bin` folder that, when added to my `PATH` environment variable, can be used to automate some otherwise tedious OBS tasks."
 # centos-scripts
@@ -78,6 +132,16 @@ body:
             "CentOS; Shell profiles"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
 # debian-scripts
@@ -87,6 +151,16 @@ body:
             "Debian; Shell profiles"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell scripts automatically loaded on Bash startup that are designed to automate common tasks, especially package management, under Debian and its derivatives."
 # fedora-ISO
@@ -95,6 +169,12 @@ body:
     category:
             "Fedora; ISO; Work-in-progress"
     fork:
+            "n"
+    readme:
+            "n"
+    maintained:
+            "n"
+    working:
             "n"
     description:
             "A collection of files for the generation of a custom Fedora ISO with out-of-the-box support for Broadcom Wireless. So far this repository is a work-inprogress and not yet ready for use."
@@ -105,6 +185,16 @@ body:
             "Fedora; Quick Install; Shell profiles; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell scripts automatically loaded on Bash/Zsh startup that are designed to automate common command-line tasks on Fedora and other systems using the DNF package manager, including those related to package management."
 # freebsd-scripts
@@ -114,6 +204,16 @@ body:
             "FreeBSD; Shell profiles; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on FreeBSD."
 # fusion809.github.io
@@ -123,6 +223,16 @@ body:
             "GitHub Pages; Jekyll; The Hornery"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content. Two other repositories (fusion809.github.io-{old,old2}) contain the old content of *The Hornery*. The reason why the old content is kept in these two separate repositories is because their overall size exceeded 90 MB and much of this size was due to the accidental committing of content not intended for *The Hornery*."
 # gentoo-packer
@@ -131,6 +241,16 @@ body:
     category:
             "Gentoo Linux; Installers; Packer; Shell script"
     fork:
+            "y"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
             "y"
     description:
             "A repository of scripts for the setting up of a Gentoo VM. Originally designed to be used by Packer (by its original developer, Elasticdog), but if you try to use this fork of mine to build a Packer image odds are it will fail."
@@ -141,6 +261,16 @@ body:
             "Gentoo Linux; Quick Install; Shell profiles; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Gentoo machine, that automate some common tasks I perform on Gentoo, especially package management tasks."
 # GNU_Octave
@@ -150,6 +280,16 @@ body:
             "GNU Octave; Programming; Scientific computing"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Scripts written for scientific computing in GNU Octave"
 # hexo-site
@@ -158,6 +298,12 @@ body:
     category:
             "GitHub Pages; Hexo; The Hornery"
     fork:
+            "n"
+    readme:
+            "n"
+    maintained:
+            "n"
+    working:
             "n"
     description:
             "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](https://fusion809.github.io/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
@@ -168,6 +314,18 @@ body:
             "GitHub Pages; HubPress; The Hornery"
     fork:
             "y"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    readme-file:
+            "README.adoc"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "A subdirectory ([/hubpress.io](https://fusion809.github.io/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
 # hugo
@@ -176,6 +334,12 @@ body:
     category:
             "GitHub Pages; Hugo; The Hornery"
     fork:
+            "n"
+    readme:
+            "n"
+    maintained:
+            "n"
+    working:
             "n"
     description:
             "My failed attempt at generating a subdirectory of *The Hornery* powered by Hugo."
@@ -186,6 +350,16 @@ body:
             "JavaScript; Programming; Scientific computing"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Contains assorted JavaScript scripts written primarily for scientific computing."
 # Linux-scripts
@@ -194,6 +368,16 @@ body:
     category:
             "Linux; Shell profiles; Zsh"
     fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
             "n"
     description:
             "(work in progress) Shell scripts designed to automate tasks on Linux systems, in general."
@@ -204,6 +388,16 @@ body:
             "Mageia; Shell profiles"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
 # moksha-scripts
@@ -213,6 +407,16 @@ body:
             "Installers; Moksha; Shell scripts"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Automated installers for the Moksha window manager."
 # npm2archOBS
@@ -221,6 +425,16 @@ body:
     category:
             "Arch Linux; JavaScript; Node.js; Open Build Service; PKGBUILDs; Shell scripts"
     fork:
+            "y"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
             "y"
     description:
             "Tools to automate the process of adding Node.js packages to the Open Build Service. "
@@ -231,6 +445,12 @@ body:
             "Installers; GNU Octave; Shell scripts"
     fork:
             "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Shell script to install GNU Octave from source code, assumming all dependencies are already installed."
 # opensuse-scripts
@@ -240,6 +460,16 @@ body:
             "openSUSE; Quick Install; Shell profiles; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under openSUSE."
 # pelican-site
@@ -249,6 +479,12 @@ body:
             "GitHub Pages; Pelican; The Hornery"
     fork:
             "n"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "My (so far failed) attempt at adding a /pelican subdirectory to *The Hornery*. See [issue #1944](https://github.com/getpelican/pelican/issues/1944) for details."
 # PKGBUILDs
@@ -258,6 +494,16 @@ body:
             "Arch Linux; Package Development"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable."
 # python-scripts
@@ -267,6 +513,16 @@ body:
             "Programming; Python; Scientific computing"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Assorted Python scripts used to perform numerical computations."
 # sabayon-gitsta
@@ -276,6 +532,16 @@ body:
             "Themes; Unmaintained; WordPress"
     fork:
             "n"
+    license:
+            "GPLv2"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
     description:
             "A modified version of the gitsta theme that is used by the Sabayon Blog at http://linux.x10host.com/blog/"
 # sabayon-scripts
@@ -285,6 +551,16 @@ body:
             "Quick Install; Sabayon Linux; Shell profiles; Zsh"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "Automatically-loaded shell scripts (mostly containing variable definitions and functions) that can be used to automate some common tasks in Sabayon."
 # sabayon-tools
@@ -294,6 +570,16 @@ body:
             "Gentoo Linux; Package development; Portage overlay; Sabayon Linux"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
     description:
             "My Portage overlay for Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."
 # spacemacs
@@ -303,6 +589,16 @@ body:
             "Configuration files; Spacemacs; Text editors"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "My `~/.spacemacs` file."
 # vim
@@ -312,5 +608,15 @@ body:
             "Configuration files; Text editors; Vim"
     fork:
             "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "n"
+    maintained:
+            "y"
+    working:
+            "y"
     description:
             "My `~/.vimrc` file."
