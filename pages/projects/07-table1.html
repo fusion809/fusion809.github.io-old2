@@ -29,9 +29,11 @@
   <tfoot>
     <tr>
       <td class="blue" colspan="8">
-        <div class="title" font-size:"18px;">Categories</div>
+        <div class="title" style="font-size:18px;">Categories</div>
         <ul>
-          <li>Arch Linux: for repositories relating to Arch Linux.</li>
+          {% for row in site.data.repositories.foot %}
+          <li>{{ row.category }}: {{ row.description }}</li>
+          {% endfor %}
         </ul>
       </td>
     </tr>

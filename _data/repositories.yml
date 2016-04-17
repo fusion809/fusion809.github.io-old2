@@ -610,3 +610,37 @@ body:
             "y"
     description:
             "My `~/.vimrc` file."
+
+foot:
+  - category:
+            "Arch Linux"
+    description:
+            "This is used for repositories relating, specifically, to Arch Linux or to its package manager, pacman."
+  - category:
+            "CentOS"
+    description:
+            "This is used for repositories relating, specifically, to CentOS or other systems using the yum package manager."
+  - category:
+            "Configuration files"
+    description:
+            "This category is for files that either modify the appearance or the behaviour of the programs they pertain to. For example, `~/.vimrc` is a configuration file for Vim, and so can be used to modify its appearance and behaviour."
+  - category:
+            "Debian"
+    description:
+            "This category is for repositories pertaining to Debian and its derivatives that use the APT and dpkg package managers."
+  - category:
+            "Fedora"
+    description:
+            "This category is used by repositories that relate to Fedora and its derivatives that use the DNF package manager."
+  - category:
+            "FreeBSD"
+    description:
+            "This category is for repositories relating to FreeBSD or its derivatives that use the same package managers, pkg and the Ports system."
+  - category:
+            "Gentoo Linux"
+    description:
+            "This category is for repositories pertaining to Gentoo Linux or its derivatives that use the Portage package manager."
+  - category:
+            "GitHub Pages"
+    description:
+            "This category is for repositories that should be pushing to GitHub Pages."
