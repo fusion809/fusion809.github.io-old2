@@ -18,4 +18,4 @@ permalink:        /projects/
 
 {% include_relative 06-shell-scripts.md %}
 
-{% include_relative 07-table1.md %}
+{% include_relative 07-table1.html %}
