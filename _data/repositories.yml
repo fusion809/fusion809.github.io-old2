@@ -83,6 +83,15 @@ body:
             "n"
     description:
             "Shell scripts automatically loaded on Bash startup that are designed to automate common tasks, especially package management, under Debian and its derivatives."
+# fedora-ISO
+  - repo:
+            "fedora-ISO"
+    category:
+            "Fedora; ISO; Work-in-progress"
+    fork:
+            "n"
+    description:
+            "A collection of files for the generation of a custom Fedora ISO with out-of-the-box support for Broadcom Wireless. So far this repository is a work-inprogress and not yet ready for use."
 # fedora-scripts
   - repo:
             "fedora-scripts"
@@ -109,4 +118,5 @@ body:
     fork:
             "n"
     description:
-            "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content."
+            "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content. Two other repositories (fusion809.github.io-{old,old2}) contain the old content of *The Hornery*. The reason why the old content is kept in these two separate repositories is because their overall size exceeded 90 MB and much of this size was due to the accidental committing of content not intended for *The Hornery*."
+# file-icons
