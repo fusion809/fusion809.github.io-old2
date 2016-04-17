@@ -33,7 +33,7 @@ body:
   - repo:
             "arch-setup"
     category:
-            "Arch Linux; Installation; Shell scripts"
+            "Arch Linux; Installers; Shell scripts"
     fork:
             "n"
     description:
@@ -123,7 +123,7 @@ body:
   - repo:
             "gentoo-packer"
     category:
-            "Gentoo Linux; Packer; Shell script"
+            "Gentoo Linux; Installers; Packer; Shell script"
     fork:
             "y"
     description:
@@ -137,6 +137,15 @@ body:
             "n"
     description:
             "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Gentoo machine, that automate some common tasks I perform on Gentoo, especially package management tasks."
+# GNU_Octave
+  - repo:
+            "GNU_Octave"
+    category:
+            "GNU Octave; Programming; Scientific computing"
+    fork:
+            "n"
+    description:
+            "Scripts written for scientific computing in GNU Octave"
 # hexo-site
   - repo:
             "hexo-site"
@@ -164,3 +173,39 @@ body:
             "n"
     description:
             "My failed attempt at generating a subdirectory of *The Hornery* powered by Hugo."
+# JScripts
+  - repo:
+            "JScripts"
+    category:
+            "JavaScript; Programming; Scientific computing"
+    fork:
+            "n"
+    description:
+            "Contains assorted JavaScript scripts written primarily for scientific computing."
+# Linux-scripts
+  - repo:
+            "Linux-scripts"
+    category:
+            "Linux; Shell profiles; Zsh"
+    fork:
+            "n"
+    description:
+            "(work in progress) Shell scripts designed to automate tasks on Linux systems, in general."
+# mageia-scripts
+  - repo:
+            "mageia-scripts"
+    category:
+            "Mageia; Shell profiles"
+    fork:
+            "n"
+    description:
+            "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
+# moksha-scripts
+  repo:
+            "moksha-scripts"
+  category:
+            "Installers; Moksha; Shell scripts"
+  fork:
+            "n"
+  description:
+            "Automated installers for the Moksha window manager."
