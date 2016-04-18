@@ -1,8 +1,9 @@
-<h2>Summary</h2>
-<table>
-  <caption>{{ site.data.repositories.caption }}</caption>
-  <thead>
-    <tr>
+<table style="width: 100%; border: 1px; padding: 1em; vertical-align: middle;">
+  <caption id="table-1">
+    <p>{{ site.data.repositories.caption }}</p>
+  </caption>
+  <tbody>
+    <tr class="green">
       <td class="title1">Repository</td>
       <td class="title1">Category(s)</td>
       <td class="title1"><abbr title="Is this repository a fork of another?">Fork?</abbr></td>
@@ -12,8 +13,6 @@
       <td class="title1"><abbr title="Is this repository in working condition, or at least was it the last time I used these scripts?">Working</abbr></td>
       <td class="title1">Description</td>
     </tr>
-  </thead>
-  <tbody>
     {% for row in site.data.repositories.body %}
     <tr class="green">
       <td class="green"><a href="https://github.com/fusion809/{{ row.repo }}"><code>{{ row.repo }}</code></td>
@@ -28,11 +27,3 @@
     {% endfor %}
   </tbody>
 </table><br/>
-
-<h3>Categories</h3>
-{% include Layouts/note.md note1="Some categories are not mentioned here as their definition is considered obvious, based on their name." %}
-<ul>
-  {% for row in site.data.repositories.foot %}
-  <li><b>{{ row.category }}</b>: {{ row.description | markdownify }}</li>
-  {% endfor %}
-</ul>
