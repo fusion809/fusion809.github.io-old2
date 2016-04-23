@@ -3,6 +3,7 @@ layout:        post
 title:         "A Comparison of Programming Languages"
 date:          2016-01-07 +1000
 comments:      true
+id:            "programming-languages"
 categories:    comparisons, programming-languages
 permalink:     /comparison-of-programming-languages/
 redirect_from:

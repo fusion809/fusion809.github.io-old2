@@ -2,6 +2,7 @@
 layout:           post
 title:            "Package Management on Sabayon Linux"
 date:             2015-12-24 +1000
+id:               "pms"
 last_modified_at: 2016-02-13 19:21:00 +1000
 categories:       sabayon, package-management, command-line
 permalink:        /package-management-on-sabayon/

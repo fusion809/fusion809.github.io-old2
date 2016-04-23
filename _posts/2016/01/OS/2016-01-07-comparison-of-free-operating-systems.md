@@ -2,6 +2,7 @@
 layout: post
 title:  "A Comparison of Free Operating Systems"
 date:   2016-01-07 +1000
+id:     "free-operating-systems"
 categories: bsd, linux, comparisons
 permalink:  /comparison-of-free-operating-systems/
 redirect_from:

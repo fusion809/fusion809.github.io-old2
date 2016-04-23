@@ -2,6 +2,7 @@
 layout:        post
 date:          2016-01-30 +1000
 categories:    linux, newcomers
+id:            "linux-newcomers"
 title:         "What's the best Linux distribution for newcomers?"
 permalink:     /linux-newcomers/
 redirect_from:

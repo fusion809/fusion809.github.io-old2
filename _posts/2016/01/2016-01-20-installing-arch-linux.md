@@ -2,6 +2,7 @@
 layout:     post
 title:      "How I managed to install Arch Linux and set it up"
 categories: arch-linux, installation-guide
+id:         "arch-linux-setup"
 date:       2016-01-20 +1000
 permalink:  /how-to-install-arch-linux/
 redirect_from:

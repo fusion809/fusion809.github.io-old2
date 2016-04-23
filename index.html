@@ -8,17 +8,34 @@ layout: default2
     {% capture my_capture %}Welcome to the Hornery, where Brenton Horne (fusion809) stores his thoughts and news relating to technology. This website is powered by the static site generator, [Jekyll](http://jekyllrb.com/), if you would like to create your own Jekyll-powered website and preview it on a Linux platform, I have written a guide on how to do this [here](/how-to-create-your-own-jekyll-site-with-github-pages/).{% endcapture %}{{ my_capture | markdownify }}
   </div><br/>
 
-  <h1>Posts</h1>
+  <div class="posts" style="float:left; background-color: rgb(100,250,100);">
+    <h1>Recommended Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%A, %-d %B %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% if site.rec_posts contains post.url %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%A, %-d %B %Y" }}</span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 
+  <div class="posts" style="float:right; background-color: rgb(250,100,100);">
+    <h1>Latest Posts</h1>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%A, %-d %B %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <br/>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

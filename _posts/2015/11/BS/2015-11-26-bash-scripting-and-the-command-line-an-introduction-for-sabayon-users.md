@@ -2,6 +2,7 @@
 layout:           post
 title:            "Bash Scripting and the Command-Line: an Introduction for Sabayon Users"
 date:             2015-11-26 +1000
+id:               "bash-scripting"
 categories:       sabayon, bash, shell-scripting, command-line
 last_modified_at: 16:00 2016-01-22 +1000
 permalink:        /bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/

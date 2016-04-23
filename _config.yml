@@ -45,3 +45,8 @@ asciidoctor:
 # Build settings
 markdown:           kramdown
 author:             Brenton Horne
+rec_posts:
+  - "/operating-systems/"
+  - "/package-development/"
+  - "/linux-newcomers/"
+  - "/comparison-of-free-operating-systems/"

@@ -188,16 +188,27 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+  font-size:   $small-font-size;
+  color:                  black;
+  font-weight:             bold;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+  display:   block;
+  font-size: 24px;
 }
 
+div.posts {
+  width:            600px;
+  text-align:       left;
+  border:           10px;
+  border-radius:    5px;
+  padding:          10px;
+}
 
+.rss-subscribe {
+  clear: both;
+}
 
 /**
  * Posts

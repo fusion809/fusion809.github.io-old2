@@ -2,6 +2,7 @@
 layout:        post
 title:         "How to create your own Jekyll site with GitHub Pages"
 date:          2016-01-27 +1000
+id:            "jekyll"
 categories:    linux, jekyll, blogging
 permalink:     /how-to-create-your-own-jekyll-site-with-github-pages/
 redirect_from:
