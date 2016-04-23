@@ -1,0 +1,49 @@
+<div class="wrapper">
+  <div class="footer-col-wrapper">
+    <div style="width:550px;" class="footer-col footer-col-2">
+      <b class="site-title" style="font-size:25px;">{{ site.title }}</b> <span style="font-size:12px;">(<a href="https://github.com/{{ site.github_repo }}" link="_blank">source</a>)</span>
+      <p>{{ site.description }}</p>
+    </div>
+
+    <div class="footer-col footer-col-2" style="width:550px">
+      <ul class="contact-list">
+        <li>Like reading <i>The Hornery</i>? Star us on <a href="https://github.com/fusion809/fusion809.github.io">GitHub</a>!</li>
+        <li>Got corrections or improvement ideas? Great, <a href="/contributing/">Tell me!</a></li>
+        <li>Want notifications on new posts? Like us on <a href="https://www.facebook.com/sabayon.blog.77/">Facebook</a> or follow our <a href="/feed">Atom feed</a>.</li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-col-3" style="width:230px;">
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+          {% include Layouts/icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.facebook_username %}
+        <li>
+          {% include Layouts/icon-facebook.html username=site.facebook_name username2=site.facebook_username %}
+        </li>
+        {% endif %}
+
+        {% if site.facebook_username2 %}
+        <li>
+          {% include Layouts/icon-facebook.html username=site.facebook_name2 username2=site.facebook_username2 %}
+        </li>
+        {% endif %}
+
+        {% if site.email %}
+        <li>
+          {% include Layouts/icon-gmail.html email=site.email %}
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="copyright footer-col" style="clear: both;">
+      <p>{{ site.copyright }}</p>
+    </div>
+  </div>
+
+</div>

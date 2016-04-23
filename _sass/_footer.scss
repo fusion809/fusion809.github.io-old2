@@ -68,3 +68,7 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
+
+.rss-subscribe {
+  clear: both;
+}
