@@ -58,3 +58,8 @@ rec_posts:
   - "/package-development/"
   - "/linux-newcomers/"
   - "/comparison-of-free-operating-systems/"
+  - "/comparison-of-text-editors/"
+  - "/comparison-of-package-managers/"
+  - "/linux-for-windows-users/"
+  - "/package-management-on-sabayon/"
+  - "/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/"
