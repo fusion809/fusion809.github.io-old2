@@ -1,0 +1,44 @@
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+  font-size:   $small-font-size;
+  color:                  black;
+  font-weight:             bold;
+}
+
+.post-link {
+  display:   block;
+  font-size: 24px;
+}
+
+.posts {
+  width:            600px;
+  text-align:       left;
+  border:           10px;
+  border-radius:    5px;
+  padding:          10px;
+}
