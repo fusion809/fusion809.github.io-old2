@@ -1,11 +1,5 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+# Jekyll configuration file
+# variables here can be accessed using liquid tags of the form {{ site.variable }}.
 title:                The Hornery
 github_repo:          fusion809/fusion809.github.io
 email:                brentonhorne77@gmail.com
@@ -14,7 +8,7 @@ description:
   "Where Brenton stores his thoughts and news relating to technology."
 
 extended_description:
-  "Welcome to *The Hornery*, where I, Brenton Horne, store my thoughts, guides, ramblings and news relating to free and open-source software (FOSS). If you are unfamiliar with the terminology used in the FOSS world, or otherwise find some terms in this site that confuse you, I suggest you see the [glossary](/glossary/) of this website. For copyright information I suggest you see the [copyright page](/copyright/) of this website. Other pieces of general information that you might be interested in can be found in the site's navigation menu.
+  "Welcome to *The Hornery*, where I, Brenton Horne, store my thoughts, guides, ramblings and news relating to free and open-source software (FOSS). If you are unfamiliar with the terminology used in the FOSS world, or otherwise find some terms in this site that confuse you, I suggest you see the [glossary](/glossary/) of this website. For copyright information I suggest you see the [copyright page](/copyright/) of this website. Other pieces of general information that you might be interested in can be found in the site's pages menu. 
 
 
   This website is powered by the static site generator (SSG), [Jekyll](http://jekyllrb.com/), if you would like to create your own Jekyll-powered website and preview it on a Linux platform, I have written a guide on how to do this [here](/how-to-create-your-own-jekyll-site-with-github-pages/). The [/hexo-site](/hexo-site) subfolder of *The Hornery* is powered by the SSG, Hexo, while the [/hubpress.io](/hubpress.io) subfolder is powered by HubPress."
