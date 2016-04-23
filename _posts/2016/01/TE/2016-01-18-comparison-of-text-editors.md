@@ -2,7 +2,6 @@
 layout:           post
 title:            "A Comparison of Free and Open-Source Text Editors and IDEs for Manjaro and Sabayon Linux"
 date:             2016-01-18 +1000
-id:               "text-editors"
 last_modified_at: 2016-03-03 07:48:37 +1000
 categories:       comparisons, text-editors, integrated-development-environment, manjaro-linux, sabayon-linux
 revision:         3

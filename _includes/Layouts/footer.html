@@ -2,27 +2,27 @@
 
   <div class="wrapper">
 
-    <div style="font-size:20px;"><b>{{ site.title }}</b> <span style="font-size:12px;">(<a href="https://github.com/{{ site.github_repo }}" link="_blank">source</a>)</span></div>
-
     <div class="footer-col-wrapper">
 
-      <div class="footer-col footer-col-1" style="width:550px;">
+      <div style="width:550px;" class="footer-col footer-col-2">
+        <b class="site-title" style="font-size:25px;">{{ site.title }}</b> <span style="font-size:12px;">(<a href="https://github.com/{{ site.github_repo }}" link="_blank">source</a>)</span>
         <p>{{ site.description }}</p>
-
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include Layouts/icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.facebook_username2 %}
-          <li>
-            {% include Layouts/icon-facebook.html username=site.facebook_name2 username2=site.facebook_username2 %}
-          </li>
-          {% endif %}
-        </ul>
       </div>
+
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+          {% include Layouts/icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.facebook_username2 %}
+        <li>
+          {% include Layouts/icon-facebook.html username=site.facebook_name2 username2=site.facebook_username2 %}
+        </li>
+        {% endif %}
+      </ul>
+    </div>
 
       <div class="footer-col footer-col-3" style="width:550px">
         <ul>
