@@ -103,6 +103,9 @@ Compiling the source, which is done by running:
 {% capture installing %}
 Installing Atom to one's live file system, specifically to `/usr` (as opposed to the default location of `/usr/local/`) which is done by running:
 {% include Code/codeu.html line1="sudo script/grunt install --install-dir /usr" %}
+
+Alternatively, you can install Atom to a local directory instead of to one's root file system. This can be helpful, as it is easier to undo (that is, to uninstall Atom). To do this run:
+{% include Code/codeu.html line1="mkdir install" line2="script/grunt install --install-dir install" %}
 {% endcapture %}
 <ol>
   <li>{{ getting | markdownify }}</li>

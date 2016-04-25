@@ -7,6 +7,23 @@ Atom is nowhere near as straight-forward to install as GNU Emacs, Vim or any oth
 
 On some distributions Atom can be installed from official or unofficial package repositories, if your distribution supports this I would strongly recommend you install Atom via this method. This way, when new releases of Atom come out, your Atom installation should be automatically updated when you run your package manager.
 
+On a side note, anyone interested in making Atom easier to install on Linux I would recommend check out my new [`atom-installer`](https://github.com/fusion809/atom-installer) GitHub repository. It is my aim to get this repository capable of automating the installation process of Atom on at least the following distributions:
+
+{% capture dlist %}
+* Arch Linux
+* CentOS
+* Debian
+* Fedora
+* Gentoo Linux
+* Linux Mint
+* Mageia
+* openSUSE
+* Sabayon Linux
+* Ubuntu
+{% endcapture %}{% include Layouts/column.html content=dlist %}
+
+pull request, bug reports, improvement suggestions, *etc.* will be welcome.
+
 {% include_relative 05a-binaries.md %}
 
 {% include_relative 05b-pms.md %}
