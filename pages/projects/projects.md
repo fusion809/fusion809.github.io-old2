@@ -2,7 +2,7 @@
 layout:           page
 title:            "Projects"
 date:             2016-02-13 +1000
-last_modified_at: 2016-03-22 17:23:30 +1000
+last_modified_at: 2016-04-25 18:40:30 +1000
 permalink:        /projects/
 ---
 
@@ -18,4 +18,6 @@ permalink:        /projects/
 
 {% include_relative 06-shell-scripts.md %}
 
-{% include_relative 07-summary.md %}
+{% include_relative 07-atom-installer.md %}
+
+{% include_relative 08-summary.md %}
