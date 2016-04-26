@@ -1,1 +1,1 @@
-[`{{ include.package }}`](https://atom.io/packages/{{ include.package }}){{ include.puncr }}
+{{ include.puncl }}[`{{ include.package }}`](https://atom.io/packages/{{ include.package }}){{ include.puncr }}
