@@ -15,12 +15,12 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colorator (0.1)
-    elasticsearch (1.0.15)
-      elasticsearch-api (= 1.0.15)
-      elasticsearch-transport (= 1.0.15)
-    elasticsearch-api (1.0.15)
+    elasticsearch (1.0.17)
+      elasticsearch-api (= 1.0.17)
+      elasticsearch-transport (= 1.0.17)
+    elasticsearch-api (1.0.17)
       multi_json
-    elasticsearch-transport (1.0.15)
+    elasticsearch-transport (1.0.17)
       faraday
       multi_json
     execjs (2.6.0)
@@ -28,11 +28,11 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
     gemoji (2.1.0)
-    html-pipeline (2.3.0)
+    html-pipeline (2.4.0)
       activesupport (>= 2, < 5)
       nokogiri (>= 1.4)
     i18n (0.7.0)
-    jekyll (3.1.2)
+    jekyll (3.1.3)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -45,7 +45,7 @@ GEM
       asciidoctor (>= 0.1.4)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-feed (0.4.0)
+    jekyll-feed (0.5.1)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -54,8 +54,8 @@ GEM
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-sitemap (0.10.0)
-    jekyll-watch (1.3.1)
-      listen (~> 3.0)
+    jekyll-watch (1.4.0)
+      listen (~> 3.0, < 3.1)
     jekyll_search (0.0.5)
       elasticsearch (~> 1.0.6)
       jekyll (>= 2.5.0)
@@ -76,7 +76,7 @@ GEM
     mercenary (0.3.6)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multipart-post (2.0.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -127,4 +127,4 @@ DEPENDENCIES
   terminal-table
 
 BUNDLED WITH
-   1.11.2
+   1.12.0
