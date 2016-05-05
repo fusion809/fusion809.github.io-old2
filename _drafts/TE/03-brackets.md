@@ -1,2 +1,3 @@
+
 ## Brackets
-The brackets
+The brackets text editor,
