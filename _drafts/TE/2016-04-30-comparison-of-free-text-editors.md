@@ -6,12 +6,19 @@ layout:      post
 permalink:   /free-text-editors-and-ides/
 ---
 
-{% include_relative 01-introduction.md %}
+<!-- Introduction-->
+{% include_relative 01-introduction/01-lead.md %}
 
+{% include_relative 01-introduction/02-merits.md %}
+
+{% include_relative 01-introduction/03-ratings.md %}
+
+<!-- Atom-->
 {% include_relative 02-atom/01-introduction.md %}
 
 {% include_relative 02-atom/02-installation.md %}
 
 {% include_relative 02-atom/03-merits-features.md %}
 
+<!-- Brackets-->
 {% include_relative 03-brackets.md %}
