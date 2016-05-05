@@ -1,4 +1,4 @@
-This post will cover some of *my favourite* **text editors** (**TEs**) and **integrated development environments** (**IDEs**). This post is not meant to be a comprehensive comparison of text editors and IDEs and rather just compares my favourite ones. They include:
+This post will cover some of *my favourite* **text editors** (**TEs**) and **integrated development environments** (**IDEs**). It is not meant to be a comprehensive overview of text editors and IDEs and rather just goes over some of my favourite ones. They include:
 
 {% capture content %}
 * [**Atom**](#atom)
