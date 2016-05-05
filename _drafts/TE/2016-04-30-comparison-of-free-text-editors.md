@@ -20,5 +20,7 @@ permalink:   /free-text-editors-and-ides/
 
 {% include_relative 02-atom/03-merits-features.md %}
 
+{% include_relative 02-atom/04-ratings.md %}
+
 <!-- Brackets-->
 {% include_relative 03-brackets.md %}
