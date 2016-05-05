@@ -8,6 +8,6 @@ permalink:   /free-text-editors-and-ides/
 
 {% include_relative 01-introduction.md %}
 
-{% include_relative 02-atom.md %}
+{% include_relative 02-atom/index.md %}
 
 {% include_relative 03-brackets.md %}
