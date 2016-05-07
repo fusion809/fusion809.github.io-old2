@@ -1,6 +1,6 @@
 ---
 title:       An Overview of my Eight Favourite Text Editors and IDEs
-date:        2016-05-10 +1000
+date:        2016-05-20 +1000
 categories:  text-editors, integrated-development-environments, comparisons
 layout:      post
 permalink:   /free-text-editors-and-ides/
