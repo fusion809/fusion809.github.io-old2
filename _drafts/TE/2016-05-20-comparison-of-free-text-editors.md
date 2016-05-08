@@ -34,5 +34,7 @@ permalink:   /free-text-editors-and-ides/
 <!-- (02-Atom)-04-Ratings-->
 {% include_relative 02-atom/05-ratings.md %}
 
+{% include_relative 02-atom/06-links.md %}
+
 <!-- Brackets-->
 {% include_relative 03-brackets/01-introduction.md %}
