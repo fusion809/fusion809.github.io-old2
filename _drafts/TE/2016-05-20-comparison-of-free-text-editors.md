@@ -18,19 +18,21 @@ permalink:   /free-text-editors-and-ides/
 
 {% include_relative 02-atom/02-installation.md %}
 
+{% include_relative 02-atom/03-customization.md %}
+
 <!-- (02-Atom)-03-Merits/Features-->
-{% include_relative 02-atom/03-merits-features.md %}
+{% include_relative 02-atom/04-merits-features.md %}
 
-{% include_relative 02-atom/03a-general.md %}
+{% include_relative 02-atom/04a-general.md %}
 
-{% include_relative 02-atom/03b-blogging.md %}
+{% include_relative 02-atom/04b-blogging.md %}
 
-{% include_relative 02-atom/03c-programming.md %}
+{% include_relative 02-atom/04c-programming.md %}
 
-{% include_relative 02-atom/03d-package-development.md %}
+{% include_relative 02-atom/04d-package-development.md %}
 
 <!-- (02-Atom)-04-Ratings-->
-{% include_relative 02-atom/04-ratings.md %}
+{% include_relative 02-atom/05-ratings.md %}
 
 <!-- Brackets-->
 {% include_relative 03-brackets/01-introduction.md %}
