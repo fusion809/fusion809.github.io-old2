@@ -44,3 +44,5 @@ permalink:   /free-text-editors-and-ides/
 {% include_relative 03-brackets/03-customization.md %}
 
 {% include_relative 03-brackets/04-ratings.md %}
+
+{% include_relative 03-brackets/05-links.md %}
