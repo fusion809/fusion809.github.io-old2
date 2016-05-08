@@ -5,3 +5,5 @@
 * **Beginner-Friendliness**: 9. Considering its feature-set it is very beginner-friendly.
 * **Customizability**: 9. Very customizable.
 * **Features**: 9.
+* **Stability & System Resource Usage**: 4. 
+* **Overall**: 9.
