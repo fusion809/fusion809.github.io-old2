@@ -46,3 +46,6 @@ permalink:   /free-text-editors-and-ides/
 {% include_relative 03-brackets/04-ratings.md %}
 
 {% include_relative 03-brackets/05-links.md %}
+
+<!-- GNU Emacs-->
+{% include_relative 04-emacs/01-introduction.md %}
