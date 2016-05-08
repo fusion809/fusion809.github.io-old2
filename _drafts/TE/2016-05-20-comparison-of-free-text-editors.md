@@ -27,6 +27,8 @@ permalink:   /free-text-editors-and-ides/
 
 {% include_relative 02-atom/03c-programming.md %}
 
+{% include_relative 02-atom/03d-package-development.md %}
+
 <!-- (02-Atom)-04-Ratings-->
 {% include_relative 02-atom/04-ratings.md %}
 
