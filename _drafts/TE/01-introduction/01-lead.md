@@ -8,6 +8,6 @@ This post will cover some of *my favourite* **text editors** (**TEs**) and **int
 * [**LightTable**](#lighttable)
 * [**Sublime Text**](#sublime-text)
 * [**Vim**](#vim)
-* [**Visual Studio Code**](#visual-studio-code)
+* [**Visual Studio Code**](#visual-studio-code) (**VSCode**)
 {% endcapture %}
 {% include Layouts/column.html no="3" content=content %}

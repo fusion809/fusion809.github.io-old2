@@ -1,7 +1,7 @@
 #### General
 Atom's **general merits** include:
 
-* In-built **embedded file/directory browser** called tree view and provided by the {% include Atom/apm.md package="tree-view" %} package.
+* In-built **embedded file/directory browser** called **tree view** and provided by the {% include Atom/apm.md package="tree-view" %} package.
 * In-built support for **running git commands** in Atom, using the {% include Atom/apm.md package="git-plus" %} package.
 * In-built **syntax-highlighting**, **auto-indentation**, **auto-completion**, **snippets**, *etc.* support for the majority of markup, programming and style sheet languages.
 
