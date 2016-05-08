@@ -1,4 +1,5 @@
 ### Links
+{% capture content %}
 * [Blog](http://blog.atom.io/)
 * [Discuss](https://discuss.atom.io/)
 * [Documentation](https://atom.io/docs)
@@ -10,3 +11,4 @@
 * [Packages](https://atom.io/packages)
 * [Releases](https://atom.io/releases)
 * [Themes](https://atom.io/themes)
+{% endcapture %}{% include Layouts/column.html no="3" content=content %}
