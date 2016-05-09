@@ -61,3 +61,6 @@ permalink:   /free-text-editors-and-ides/
 
 <!-- Vim-->
 {% include_relative 08-vim/01-introduction.md %}
+
+<!-- VScode-->
+{% include_relative 09-vscode/01-introduction.md %}
