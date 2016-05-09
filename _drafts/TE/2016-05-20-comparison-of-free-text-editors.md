@@ -52,6 +52,8 @@ permalink:   /free-text-editors-and-ides/
 
 {% include_relative 04-emacs/02-installation.md %}
 
+{% include_relative 04-emacs/03-customization.md %}
+
 <!-- Komodo Edit-->
 {% include_relative 05-komodo/01-introduction.md %}
 
