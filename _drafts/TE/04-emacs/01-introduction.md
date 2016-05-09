@@ -1,3 +1,4 @@
 
 ## GNU Emacs
-**GNU Emacs** is a free, extendable text editor developed as part of the GNU Project. It was originally developed in the mid 1980s by Richard Stallman, the founder of the GNU Project. It is written in C and Emacs Lisp and has both a command-line and graphical user interface (GUI). Its GUI is built using the GTK+ toolkit. 
+{% include Links/image.html image="Emacs/GNU-Emacs-24.5.png" width="760px" float="none" description="GNU Emacs 24.5 running under Arch Linux" %}
+**GNU Emacs** is a free, extendable text editor developed as part of the GNU Project. It was originally developed in the mid 1980s by Richard Stallman, the founder of the GNU Project. It is written in C and Emacs Lisp and has both a command-line and graphical user interface (GUI). Its GUI is built using the GTK+ toolkit (presently GTK+ 3 is being used). As far as its startup time goes it is faster than Atom and uses less RAM and hard disk drive (HDD) space. For example, on Arch Linux emacs 24.5-3 takes up 99.43 MB HDD space. 
