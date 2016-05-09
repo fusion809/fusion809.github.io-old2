@@ -6,6 +6,7 @@ For the purpose of blog writing Atom has the following helpful features:
 * The in-built git support and embedded terminal mentioned earlier can be handy for those writing blogs hosted by GitHub and other sites using the git version control system. The embedded terminal can also be handy for those using static site generators (SSGs) that need to be re-generated manually before you make any git commits (e.g., Hexo).
 * One can also run certain SSGs from within Atom itself without using the embedded terminal, using plugins. For example, for Jekyll there is a plugin called {% include Atom/apm.md package="jekyll" %} that can be used to run the Jekyll server.
 * Keyboard shortcuts for bolding and italicizing text, inserting code blocks, *etc.* in markdown. This capability is provided by the {% include Atom/apm.md package="markdown-writer" %} package.
-* It has in-built spell-checking abilities.
+* It has in-built spell-checking abilities (provided by the {% include Atom/apm.md package="spell-check" %} package)
+* You can also open a web browser embedded in Atom using the {% include Atom/apm.md package="browser-plus" %} package. I personally have limited experience with this package as it has a [graphical bug](https://github.com/skandasoft/browser-plus/issues/71) that I have noticed on Arch Linux.
 
 Personally I think it is the best text editor out there for writing a blog.
