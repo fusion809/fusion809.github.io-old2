@@ -9,5 +9,5 @@ Additional **general-purpose features** that Atom can gain by the installation o
 
 * Insertion of an **embedded terminal emulator** into Atom {% include Atom/apm.md package="terminal-plus" puncl="(" puncr=")." %}
 * Searching through **past git commits** in a repository {% include Atom/apm.md package="git-time-machine" puncl="(" puncr=")." %}
-* **Suggesting improvements** on existing code or markup in one's opened files {% include Atom/apm.md package="linter" puncl="(" puncr=")." %}
+* **Suggesting improvements** on existing code or markup in one's opened files (provided by {% include Atom/apm.md package="linter" %} and {% include Atom/apm.md package="atom-beautify" puncr=")"%}
 * **Running hg commands** in Atom, using the {% include Atom/apm.md package="atom-hg" %} package.
