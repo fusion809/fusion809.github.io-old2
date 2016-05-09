@@ -6,4 +6,4 @@
 
 The Electron framework that Atom is built on, includes Chromium (the open-source project from which Google Chrome gets most of its source code) in its source code. Electron is also based on and utilizes the [Node.js](https://nodejs.org/en/) JavaScript runtime engine. Electron is open-source and licensed under the MIT License. Electron apps, under Linux, use the GTK+ 2 toolkit. This framework essentially allows developers to create cross-platform desktop applications using web technologies.
 
-Like many other advanced text editors (Sublime Text and Visual Studio Code) it has a command pallette that is opened by the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>. 
+Like many other advanced text editors (such as Sublime Text and Visual Studio Code) it has a command pallette that is opened by the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>. It also has the ability to use tabs and panes for working on more than one file at a time. 
