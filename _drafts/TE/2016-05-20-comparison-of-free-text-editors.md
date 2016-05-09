@@ -49,3 +49,15 @@ permalink:   /free-text-editors-and-ides/
 
 <!-- GNU Emacs-->
 {% include_relative 04-emacs/01-introduction.md %}
+
+<!-- Komodo Edit-->
+{% include_relative 05-komodo/01-introduction.md %}
+
+<!-- LightTable-->
+{% include_relative 06-lighttable/01-introduction.md %}
+
+<!-- Sublime Text-->
+{% include_relative 07-sublime/01-introduction.md %}
+
+<!-- Vim-->
+{% include_relative 08-vim/01-introduction.md %}
