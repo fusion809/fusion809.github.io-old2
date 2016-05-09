@@ -50,6 +50,8 @@ permalink:   /free-text-editors-and-ides/
 <!-- GNU Emacs-->
 {% include_relative 04-emacs/01-introduction.md %}
 
+{% include_relative 04-emacs/02-installation.md %}
+
 <!-- Komodo Edit-->
 {% include_relative 05-komodo/01-introduction.md %}
 
