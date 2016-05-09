@@ -6,6 +6,8 @@
 
 {% include_relative 04-emacs/04-merits-features.md %}
 
+{% include_relative 04-emacs/04a-general.md %}
+
 {% include_relative 04-emacs/05-ratings.md %}
 
 {% include_relative 04-emacs/06-links.md %}

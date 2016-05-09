@@ -5,5 +5,5 @@
 * **Beginner-Friendliness**: 9. Considering its feature-set it is very beginner-friendly.
 * **Customizability**: 9. Very customizable.
 * **Features**: 9.
-* **Stability & System Resource Usage**: 4. 
+* **Stability & System Resource Usage**: 4. On Arch Linux Atom 1.7.3 had the installed size of 222.91 MiB, where Atom was built from a [PKGBUILD](https://github.com/fusion809/PKGBUILDs/tree/master/atom-editor) in my GitHub repository. 
 * **Overall**: 9.
