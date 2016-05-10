@@ -33,5 +33,8 @@ permalink:   /free-text-editors-and-ides/
 <!-- VScode-->
 {% include_relative 09-vscode.md %}
 
+<!-- Table1-->
+{% include_relative 10-table1.html %}
+
 <!-- Footnotes-->
-{% include_relative 10-footnotes.md %}
+{% include_relative 11-footnotes.md %}

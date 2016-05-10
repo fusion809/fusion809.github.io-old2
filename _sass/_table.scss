@@ -1,34 +1,48 @@
 table {
-  display: block;
+  display:          block;
 }
+
 table.green, td.green, tr.green {
-  border-collapse: collapse !important;
-  padding: 8px;
-  vertical-align: middle;
-  border-top: 1px solid #000;
-  border: 2px solid #000 !important;
-  border-radius: 4px;
   background-color: rgb(128, 255, 128);
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  padding:          8px;
+  vertical-align:   middle;
+}
+
+table.cyan, td.cyan, tr.cyan {
+  background-color: #00cccc;
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  color:            rgba(0,0,0,100);
+  font-size:        12px;
+  font-weight:      bold;
+  padding:          8px;
+  vertical-align:   middle;
 }
 
 table.blue, td.blue, tr.blue {
-  border-collapse: collapse !important;
-  padding: 8px;
-  vertical-align: middle;
-  border-top: 1px solid #000;
-  border: 2px solid #000 !important;
-  border-radius: 4px;
   background-color: rgb(128,255,255);
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  padding:          8px;
+  vertical-align:   middle;
 }
 
 table.note, td.note, tr.note {
-  border-collapse: collapse !important;
-  padding: 8px;
-  vertical-align: middle;
-  border-top: 1px solid #000;
-  border: 2px solid #000 !important;
-  border-radius: 4px;
   background-color: #ffa0a0;
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  padding:          8px;
+  vertical-align:   middle;
 }
 
 td.title {
