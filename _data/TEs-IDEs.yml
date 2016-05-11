@@ -1,1 +1,17 @@
 caption: "Table 1: A Comparison of Text Editors and Integrated Development Environments"
+
+body:
+  - program:                '<a href="https://atom.io" link="_blank">Atom</a>'
+    version:                "1.7.3"
+    license:                '<a href="https://github.com/atom/atom/blob/master/LICENSE.md" link="_blank">MIT</a>'
+    availability:           "7"
+    beginner-friendliness:  "9"
+    customizability:        "9"
+    tabs:                   "Yes"
+    panes:                  "Yes"
+    file-manager:           "Yes"
+    web-browser:            "Optional"
+    shell:                  "Optional"
+    installed-size:         "222.91"
+    random-access-memory:   "276.5"
+    overall:                "9"

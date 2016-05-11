@@ -35,5 +35,51 @@
         <abbr title="Overall rating from 1 to 10; 10 being the best editor ever, 1 being a terrible editor.">OA</abbr>
       </td>
     </tr>
+    {% for row in site.data.TEs-IDEs.body %}
+    <tr>
+      <td class="program">
+        {{ row.program }}
+      </td>
+      <td class="version">
+        {{ row.version }}
+      </td>
+      <td class="license">
+        {{ row.license }}
+      </td>
+      <td class="subjective">
+        {{ row.availability }}
+      </td>
+      <td class="subjective">
+        {{ row.beginner-friendliness }}
+      </td>
+      <td class="subjective">
+        {{ row.customizability }}
+      </td>
+      <td class="{{ row.tabs }}">
+        {{ row.tabs }}
+      </td>
+      <td class="{{ row.panes }}">
+        {{ row.panes }}
+      </td>
+      <td class="{{ row.file-manager }}">
+        {{ row.file-manager }}
+      </td>
+      <td class="{{ row.web-browser }}">
+        {{ row.web-browser }}
+      </td>
+      <td class="{{ row.shell }}">
+        {{ row.shell }}
+      </td>
+      <td class="version">
+        {{ row.installed-size }}
+      </td>
+      <td class="version">
+        {{ row.random-access-memory }}
+      </td>
+      <td class="subjective">
+        {{ row.overall }}
+      </td>
+    </tr>
+    {% endfor %}
   </tbody>
 </table>
