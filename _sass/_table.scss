@@ -165,6 +165,34 @@ td.version, td.Version {
   vertical-align:   middle;
 }
 
+td.developer {
+  background-color: rgb(150,50,150);
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  color:            rgba(0,0,0,100);
+  font-size:        14px;
+  font-weight:      bold;
+  padding:          8px;
+  text-align:       center;
+  vertical-align:   middle;
+}
+
+td.language {
+  background-color: rgb(100,80,200);
+  border:           2px solid #000 !important;
+  border-collapse:  collapse !important;
+  border-radius:    4px;
+  border-top:       1px solid #000;
+  color:            rgba(0,0,0,100);
+  font-size:        14px;
+  font-weight:      bold;
+  padding:          8px;
+  text-align:       center;
+  vertical-align:   middle;
+}
+
 td.license, td.License {
   background-color: rgb(255,102,0);
   border:           2px solid #000 !important;
