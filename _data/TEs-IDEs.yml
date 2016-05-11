@@ -95,6 +95,7 @@ body:
     beginner-friendliness:      "8-9"
     beginner-friendliness-abbr: "It is fairly simple to use and you can easily use it for your day-to-day editing without spending too much time mastering it."
     customizability:            "8"
+    customizability-abbr:       "It is fairly extensible, although several functionalities can only be gained if you purchase/start a free trial of the proprietary Komodo IDE editor."
     tabs:                       "Yes"
     panes:                      "Yes (H)"
     file-manager:               "Yes"
@@ -103,6 +104,7 @@ body:
     installed-size:             "243.92"
     random-access-memory:       "213.5"
     overall:                    "8"
+    overall-abbr:               "Its main advantage is its simplicity of use, while its chief disadvantage is that several features are off-limits, unless you upgrade to the proprietary version of Komodo."
 
   # LightTable
   - program:                    "LightTable"
@@ -114,8 +116,11 @@ body:
     developer:                  "Kodowa"
     languages:                  "Clojure, <b>CSS</b>, <abbr title='JavaScript'><b>JS</b></abbr>"
     availability:               "6"
+    availability-abbr:          "A binary tarball for it is available, but it is not found in the official repositories of any Linux distributions I am aware of."
     beginner-friendliness:      "8-9"
+    beginner-friendliness-abbr: "It is fairly simple to use."
     customizability:            "7"
+    customizability-abbr:       "It is not very customizable, due to its limitation to use in web development."
     tabs:                       "Yes"
     panes:                      "Yes (V)"
     file-manager:               "Yes"
@@ -124,6 +129,7 @@ body:
     installed-size:             "128.83"
     random-access-memory:       "30.3"
     overall:                    "8"
+    overall-abbr:               "It is a decent editor, but the fact it can only really be used for web development."
 
   # Sublime Text
   - program:                    "Sublime Text"
@@ -135,8 +141,11 @@ body:
     developer:                  "Sublime HQ"
     languages:                  "C++, <b>Python</b>"
     availability:               "7"
+    availability-abbr:          "Binary tarballs and Debian packages are available for download from their website. It is not in the official repositories of most distributions, likely due to its proprietary licensing."
     beginner-friendliness:      "9"
+    beginner-friendliness-abbr: "It is very easy to use, in my opinion."
     customizability:            "8"
+    customizability-abbr:       "It is extensible via Python scripts, but it is not as customizable as Atom, Emacs or Vim."
     tabs:                       "Yes"
     panes:                      "Yes"
     file-manager:               "Yes"
@@ -145,6 +154,7 @@ body:
     installed-size:             "16.35"
     random-access-memory:       "92.2"
     overall:                    "8"
+    overall-abbr:               "Its chief disadvantage, in my opinion, is its proprietary licensing."
 
   # Vim
   - program:                    "Vim"
@@ -156,8 +166,11 @@ body:
     developer:                  "Bram Moolenaar"
     languages:                  "C, C++, <b>VimL</b>"
     availability:               "10"
+    availability-abbr:          "It is available from the official software repositories of every Linux distribution I am aware of, in both command-line and graphical versions."
     beginner-friendliness:      "2"
+    beginner-friendliness-abbr: "It is so challenging to use that newcomers will likely not even be able to edit using it, until they do some research or use the vimtutor program."
     customizability:            "9"
+    customizability-abbr:       "It is extensively customizable via scripts written in the VimL programming language."
     tabs:                       "Yes"
     panes:                      "Yes"
     file-manager:               "Optional"
@@ -168,6 +181,7 @@ body:
     installed-size:             "28.98"
     random-access-memory:       "15.6"
     overall:                    "8"
+    overall-abbr:               "Its lack of beginner-friendliness is its chief disadvantage in my books."
 
   # Visual Studio Code
   - program:                    "Visual Studio Code"
@@ -179,8 +193,11 @@ body:
     developer:                  "Microsoft"
     languages:                  "<b>CSS</b>, <abbr title='JavaScript'><b>JS</b></abbr>, TypeScript"
     availability:               "6"
+    availability-abbr:          "VScode is not found in the official repositories of any Linux distribution I am aware of. Official binary tarball releases do not exist for VScode. Despite this official 32- and 64-bit Debian and RPM binaries are available from the VScode website."
     beginner-friendliness:      "9"
+    beginner-friendliness-abbr: "It is very ease-to-use for newcomers."
     customizability:            "8"
+    customizability-abbr:       "It is fairly customizable."
     tabs:                       "No"
     panes:                      "Yes"
     file-manager:               "Yes"
@@ -189,3 +206,4 @@ body:
     installed-size:             "125.85"
     random-access-memory:       "335.3"
     overall:                    "8"
+    overall-abbr:               "The fact it lacks tabs, an embedded web browser and terminal emulator are its main disadvantages, in my opinion."
