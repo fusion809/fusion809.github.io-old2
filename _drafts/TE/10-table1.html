@@ -78,6 +78,10 @@
       <td class="optional">
         <a href="{{ row.panes-link }}" link="_blank">Optional</a>
       </td>
+      {% elsif row.panes == 'Yes (H)' %}
+      <td class="partial">Yes (H)</td>
+      {% elsif row.panes == 'Yes (V)' %}
+      <td class="partial">Yes (V)</td>
       {% else %}
       <td class="{{ row.panes }}">
         {{ row.panes }}
