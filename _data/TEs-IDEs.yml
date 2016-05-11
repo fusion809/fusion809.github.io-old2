@@ -1,9 +1,11 @@
 caption: "Table 1: A Comparison of Text Editors and Integrated Development Environments"
 
 body:
+  # Atom
   - program:                'Atom'
     program-link:           "https://atom.io"
     version:                "1.7.3"
+    version-link:           "https://github.com/fusion809/PKGBUILDs/tree/01d09cf0093afc90d198d12bd22c90b77eb5dbdf/atom-editor"
     license:                "MIT"
     license-link:           "https://github.com/atom/atom/blob/master/LICENSE.md"
     availability:           "7"
@@ -19,10 +21,14 @@ body:
     installed-size:         "222.91"
     random-access-memory:   "276.5"
     overall:                "9"
+
+  # Brackets
   - program:                "Brackets"
     program-link:           "http://brackets.io/"
     version:                "1.6"
+    version-link:           "https://github.com/fusion809/PKGBUILDs/tree/01d09cf0093afc90d198d12bd22c90b77eb5dbdf/brackets"
     license:                "MIT"
+    license-link:           "https://github.com/adobe/brackets/blob/master/LICENSE"
     availability:           "4"
     beginner-friendliness:  "9"
     customizability:        "8"
@@ -35,3 +41,26 @@ body:
     installed-size:         "138.38"
     random-access-memory:   "259.9"
     overall:                "7"
+
+  # GNU Emacs
+  - program:                "GNU Emacs"
+    program-link:           "https://www.gnu.org/software/emacs/"
+    version:                "24.5-3"
+    license:                "GPLv3"
+    license-link:           "https://github.com/emacs-mirror/emacs/blob/master/COPYING"
+    availability:           "10"
+    beginner-friendliness:  "4"
+    customizability:        "9"
+    tabs:                   "Optional"
+    tabs-link:              "https://www.emacswiki.org/emacs/TabBarMode"
+    panes:                  "Yes"
+    file-manager:           "Optional"
+    file-manager-link:      "https://github.com/jaypei/emacs-neotree"
+    web-browser:            "Optional"
+    web-browser-link:       "https://www.emacswiki.org/emacs/CategoryWebBrowser"
+    shell:                  "Yes"
+    installed-size:         "99.43"
+    random-access-memory:   "121.5"
+    overall:                "7"
+
+  # Komodo Edit

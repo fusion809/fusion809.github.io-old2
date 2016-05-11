@@ -41,7 +41,7 @@
         <a href="{{ row.program-link }}" link="_blank">{{ row.program }}</a>
       </td>
       <td class="version">
-        {{ row.version }}
+        {% if row.version-link %}<a href="{{ row.version-link }}" link="_blank">{{ row.version }}</a>{% else %}{{ row.version }}{% endif %}
       </td>
       <td class="license">
         <a href="{{ row.license-link }}" link="_blank">{{ row.license }}</a>

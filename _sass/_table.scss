@@ -90,6 +90,7 @@ td.no, td.No {
   border: 2px solid #000 !important;
   border-radius: 4px;
   padding: 8px;
+  font-size: 14px;
 }
 
 td.Interpreted {
@@ -117,6 +118,7 @@ td.Mixed, td.mixed {
 td.yes, td.Yes, td.Compiled {
   background-color: #080;
   color:            #fff;
+  font-size:        14px;
   text-align:       center;
   vertical-align:   middle;
   border-top:       1px solid #000;
@@ -173,6 +175,7 @@ td.license, td.License {
   font-size:        14px;
   font-weight:      bold;
   padding:          8px;
+  text-align:       center;
   vertical-align:   middle;
 }
 
