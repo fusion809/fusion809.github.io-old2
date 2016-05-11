@@ -140,7 +140,7 @@ body:
     license:                "Vim"
     license-link:           "https://github.com/vim/vim/blob/master/runtime/doc/uganda.txt"
     developer:              "Bram Moolenaar"
-    languages:              "C, C++, VimL"
+    languages:              "C, C++, <b>VimL</b>"
     availability:           "10"
     beginner-friendliness:  "2"
     customizability:        "9"
