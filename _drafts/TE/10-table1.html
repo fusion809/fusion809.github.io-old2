@@ -38,13 +38,13 @@
     {% for row in site.data.TEs-IDEs.body %}
     <tr>
       <td class="program">
-        {{ row.program }}
+        <a href="{{ row.program-link }}" link="_blank">{{ row.program }}</a>
       </td>
       <td class="version">
         {{ row.version }}
       </td>
       <td class="license">
-        {{ row.license }}
+        <a href="{{ row.license-link }}" link="_blank">{{ row.license }}</a>
       </td>
       <td class="subjective">
         {{ row.availability }}
@@ -55,21 +55,51 @@
       <td class="subjective">
         {{ row.customizability }}
       </td>
+      {% if row.tabs == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.tabs-link }}" link="_blank">{{ row.tabs }}</a>
+      </td>
+      {% else %}
       <td class="{{ row.tabs }}">
         {{ row.tabs }}
       </td>
+      {% endif %}
+      {% if row.panes == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.panes-link }}" link="_blank">Optional</a>
+      </td>
+      {% else %}
       <td class="{{ row.panes }}">
         {{ row.panes }}
       </td>
+      {% endif %}
+      {% if row.file-manager == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.file-manager-link }}" link="_blank">Optional</a>
+      </td>
+      {% else %}
       <td class="{{ row.file-manager }}">
         {{ row.file-manager }}
       </td>
+      {% endif %}
+      {% if row.web-browser == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.web-browser-link }}" link="_blank">Optional</a>
+      </td>
+      {% else %}
       <td class="{{ row.web-browser }}">
         {{ row.web-browser }}
       </td>
+      {% endif %}
+      {% if row.shell == 'Optional' %}
+      <td class="optional">
+        <a href="{{ row.shell-link }}" link="_blank">Optional</a>
+      </td>
+      {% else %}
       <td class="{{ row.shell }}">
         {{ row.shell }}
       </td>
+      {% endif %}
       <td class="version">
         {{ row.installed-size }}
       </td>
