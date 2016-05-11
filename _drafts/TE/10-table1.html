@@ -60,13 +60,13 @@
         {{ row.languages }}
       </td>
       <td class="subjective">
-        {{ row.availability }}
+        <abbr title="{{ row.availability-abbr }}">{{ row.availability }}</abbr>
       </td>
       <td class="subjective">
-        {{ row.beginner-friendliness }}
+        <abbr title="{{ row.beginner-friendliness-abbr }}">{{ row.beginner-friendliness }}</abbr>
       </td>
       <td class="subjective">
-        {{ row.customizability }}
+        <abbr title="{{ row.customizability-abbr }}">{{ row.customizability }}</abbr>
       </td>
       {% if row.tabs == 'Optional' %}
       <td class="optional">
@@ -132,7 +132,7 @@
         {{ row.random-access-memory }}
       </td>
       <td class="subjective">
-        {{ row.overall }}
+        <abbr title="{{ row.overall-abbr }}">{{ row.overall }}</abbr>
       </td>
     </tr>
     {% endfor %}
