@@ -161,7 +161,7 @@ body:
     license:                "MIT"
     license-link:           "https://github.com/Microsoft/vscode/blob/master/LICENSE.txt"
     developer:              "Microsoft"
-    languages:              "<b>CSS</b>, <abbr title='JavaScript'><b>JS</b></abbr>, <abbr title='TypeScript'>TS</abbr>"
+    languages:              "<b>CSS</b>, <abbr title='JavaScript'><b>JS</b></abbr>, TypeScript"
     availability:           "6"
     beginner-friendliness:  "9"
     customizability:        "8"
