@@ -18,8 +18,8 @@
       <td class="cyan">
         <abbr title="Customizability; rating from 1 to 10 to reflect how extensively this editor can be customized.">CMB</abbr>
       </td>
-      <td class="cyan">Tabs?</td>
-      <td class="cyan">Panes?</td>
+      <td class="cyan">Tabs</td>
+      <td class="cyan">Panes</td>
       <td class="cyan">
         <abbr title="Embedded File Manager">FM?</abbr>
       </td>
@@ -79,9 +79,13 @@
         <a href="{{ row.panes-link }}" link="_blank">Optional</a>
       </td>
       {% elsif row.panes == 'Yes (H)' %}
-      <td class="partial">Yes (H)</td>
+      <td class="partial">
+        <abbr title="Only splits horizontally">Yes (H)</abbr>
+      </td>
       {% elsif row.panes == 'Yes (V)' %}
-      <td class="partial">Yes (V)</td>
+      <td class="partial">
+        <abbr title="Only splits vertically">Yes (V)</abbr>
+      </td>
       {% else %}
       <td class="{{ row.panes }}">
         {{ row.panes }}

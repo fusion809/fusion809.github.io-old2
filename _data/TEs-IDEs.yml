@@ -77,7 +77,7 @@ body:
     license:                "MPL"
     license-link:           "https://github.com/Komodo/KomodoEdit/blob/master/LICENSE.txt"
     developer:              "ActiveState"
-    languages:              "C, C++, <b>CSS</b>, <b>HTML</b>, <abbr title='JavaScript'><b>JS</b></abbr>, <b>Python</b>"
+    languages:              "C, <b>CSS</b>, <b>HTML</b>, <abbr title='JavaScript'><b>JS</b></abbr>, <b>Python</b>"
     availability:           "7"
     beginner-friendliness:  "8-9"
     customizability:        "8"
