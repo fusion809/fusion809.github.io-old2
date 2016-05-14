@@ -18,6 +18,6 @@ permalink:        /projects/
 
 {% include_relative 06-shell-scripts.md %}
 
-{% include_relative 07-atom-installer.md %}
+{% include_relative 07-installers.md %}
 
 {% include_relative 08-summary.md %}
