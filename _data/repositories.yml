@@ -24,6 +24,7 @@ body:
             "y"
     description:
             "Packer template for building Arch Linux VMs."
+
 # arch-scripts
   - repo:
             "arch-scripts"
@@ -43,6 +44,7 @@ body:
             "y"
     description:
             "Shell scripts for automating tasks I frequently perform on Arch Linux and other systems using the pacman package manager."
+
 # arch-setup
   - repo:
             "arch-setup"
@@ -62,6 +64,7 @@ body:
             "y"
     description:
             "Scripts for automating the installation of Arch Linux."
+
 # archiso
   - repo:
             "archiso"
@@ -77,6 +80,7 @@ body:
             "y"
     description:
             "Tools for automating the generation of ISOs for Arch Linux with out-of-the-box support for Broadcom Wireless."
+
 # atom
   - repo:
             "atom"
@@ -96,6 +100,27 @@ body:
             "y"
     description:
             "Configuration files for Atom, specifically the configuration files found in my ~/.atom directory."
+
+# atom-installer
+  - repo:
+            "atom-installer"
+    category:
+            "Atom; Text Editors; Installers;"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [Atom text editor](https://atom.io) that should work on most Linux distributions."
+
 # bin
   - repo:
             "bin"
@@ -115,6 +140,27 @@ body:
             "y"
     description:
             "Executable scripts found in my `~/bin` folder that, when added to my `PATH` environment variable, can be used to automate some otherwise tedious OBS tasks."
+
+# brackets-installer
+  - repo:
+            "brackets-installer"
+    category:
+            "Brackets; Text Editors; Installers;"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [Brackets text editor](http://brackets.io) that should work on most Linux distributions."
+
 # centos-scripts
   - repo:
             "centos-scripts"
@@ -134,6 +180,7 @@ body:
             "y"
     description:
             "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
+
 # debian-scripts
   - repo:
             "debian-scripts"
@@ -153,6 +200,7 @@ body:
             "y"
     description:
             "Shell scripts automatically loaded on Bash startup that are designed to automate common tasks, especially package management, under Debian and its derivatives."
+
 # fedora-ISO
   - repo:
             "fedora-ISO"
@@ -167,7 +215,8 @@ body:
     working:
             "n"
     description:
-            "A collection of files for the generation of a custom Fedora ISO with out-of-the-box support for Broadcom Wireless. So far this repository is a work-inprogress and not yet ready for use."
+            "A collection of files for the generation of a custom Fedora ISO with out-of-the-box support for Broadcom Wireless. So far this repository is a work-in-progress and not yet ready for use."
+
 # fedora-scripts
   - repo:
             "fedora-scripts"
@@ -187,6 +236,7 @@ body:
             "y"
     description:
             "Shell scripts automatically loaded on Bash/Zsh startup that are designed to automate common command-line tasks on Fedora and other systems using the DNF package manager, including tasks related to package management."
+
 # freebsd-scripts
   - repo:
             "freebsd-scripts"
@@ -206,6 +256,7 @@ body:
             "y"
     description:
             "Shell scripts automatically loaded on Zsh startup designed to automate common tasks on FreeBSD."
+
 # fusion809.github.io
   - repo:
             "fusion809.github.io"
@@ -225,6 +276,7 @@ body:
             "y"
     description:
             "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content. Two other repositories (`fusion809.github.io-{old,old2}`) contain the old content of *The Hornery*. The reason why the old content is kept in these two separate repositories is because their overall size exceeded 90 MB and much of this size was due to the accidental committing of content not intended for *The Hornery*."
+
 # gentoo-packer
   - repo:
             "gentoo-packer"
@@ -244,6 +296,7 @@ body:
             "y"
     description:
             "A repository of scripts for the setting up of a Gentoo VM. Originally designed to be used by Packer (by its original developer, Elasticdog), but if you try to use this fork of mine to build a Packer image odds are it will fail."
+
 # gentoo-scripts
   - repo:
             "gentoo-scripts"
@@ -263,6 +316,7 @@ body:
             "y"
     description:
             "Shell scripts that are automatically loaded on startup, provided they are correctly installed on one's Gentoo machine, that automate some common tasks I perform on Gentoo, especially package management tasks."
+
 # GNU_Octave
   - repo:
             "GNU_Octave"
@@ -282,6 +336,7 @@ body:
             "y"
     description:
             "Scripts written for scientific computing in GNU Octave"
+
 # hexo-site
   - repo:
             "hexo-site"
@@ -297,6 +352,7 @@ body:
             "n"
     description:
             "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](https://fusion809.github.io/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
+
 # hubpress.io
   - repo:
             "hubpress.io"
@@ -318,6 +374,7 @@ body:
             "y"
     description:
             "A subdirectory ([/hubpress.io](https://fusion809.github.io/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
+
 # hugo
   - repo:
             "hugo"
@@ -333,6 +390,7 @@ body:
             "n"
     description:
             "My failed attempt at generating a subdirectory of *The Hornery* powered by Hugo."
+
 # JScripts
   - repo:
             "JScripts"
@@ -352,6 +410,27 @@ body:
             "y"
     description:
             "Contains assorted JavaScript scripts written primarily for scientific computing."
+
+# lighttable-installer
+  - repo:
+            "lighttable-installer"
+    category:
+            "LightTable; Integrated Development Environments; Installers;"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [LightTable IDE](http://www.lighttable.com) that should work on most Linux distributions."
+
 # Linux-scripts
   - repo:
             "Linux-scripts"
@@ -371,6 +450,7 @@ body:
             "n"
     description:
             "(work in progress) Shell scripts designed to automate tasks on Linux systems, in general."
+
 # mageia-scripts
   - repo:
             "mageia-scripts"
@@ -390,6 +470,7 @@ body:
             "y"
     description:
             "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
+
 # moksha-scripts
   - repo:
             "moksha-scripts"
@@ -409,6 +490,7 @@ body:
             "y"
     description:
             "Automated installers for the Moksha window manager."
+
 # npm2archOBS
   - repo:
             "npm2archOBS"
@@ -428,6 +510,7 @@ body:
             "y"
     description:
             "Tools to automate the process of adding Node.js packages to the Open Build Service. "
+
 # octave
   - repo:
             "octave"
@@ -443,6 +526,7 @@ body:
             "y"
     description:
             "Shell script to install GNU Octave from source code, assumming all dependencies are already installed."
+
 # opensuse-scripts
   - repo:
             "opensuse-scripts"
@@ -462,6 +546,7 @@ body:
             "y"
     description:
             "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under openSUSE."
+
 # pelican-site
   - repo:
             "pelican-site"
@@ -477,6 +562,7 @@ body:
             "y"
     description:
             "My (so far failed) attempt at adding a /pelican subdirectory to *The Hornery*. See [issue #1944](https://github.com/getpelican/pelican/issues/1944) for details."
+
 # PKGBUILDs
   - repo:
             "PKGBUILDs"
@@ -496,6 +582,7 @@ body:
             "y"
     description:
             "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable."
+
 # python-scripts
   - repo:
             "python-scripts"
@@ -515,6 +602,7 @@ body:
             "y"
     description:
             "Assorted Python scripts used to perform numerical computations."
+
 # rpmbuild
   - repo:
             "rpmbuild"
@@ -534,6 +622,7 @@ body:
             "y"
     description:
             "Files for building RPM packages for openSUSE."
+
 # sabayon-gitsta
   - repo:
             "sabayon-gitsta"
@@ -553,6 +642,7 @@ body:
             "y"
     description:
             "A modified version of the gitsta theme that is used by the Sabayon Blog at [http://linux.x10host.com/blog/](http://linux.x10host.com/blog/)"
+
 # sabayon-scripts
   - repo:
             "sabayon-scripts"
@@ -572,6 +662,7 @@ body:
             "y"
     description:
             "Automatically-loaded shell scripts (mostly containing variable definitions and functions) that can be used to automate some common tasks in Sabayon."
+
 # sabayon-tools
   - repo:
             "sabayon-tools"
@@ -591,6 +682,7 @@ body:
             "y"
     description:
             "My Portage overlay for Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."
+
 # spacemacs
   - repo:
             "spacemacs"
@@ -610,6 +702,7 @@ body:
             "y"
     description:
             "My `~/.spacemacs` file."
+
 # vim
   - repo:
             "vim"
@@ -629,6 +722,27 @@ body:
             "y"
     description:
             "My `~/.vimrc` file."
+
+# VScode-installer
+  - repo:
+            "VScode-installer"
+    category:
+            "Visual Studio Code; Text Editors; Installers;"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for the [Visual Studio Code text editor](http://code.visualstudio.com) that should work on most Linux distributions."
+
 # zsh-theme
   - repo:
             "zsh-theme"
