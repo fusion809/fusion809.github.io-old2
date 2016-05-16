@@ -129,7 +129,40 @@ td.yes, td.Yes, td.Compiled {
 
 td.yes a {
   font-weight: bold;
-  color: #9ff;
+  color:       #9ff;
+}
+
+// All Licenses are hyperlinked
+td.GPLv3, td.GPLv2 {
+  background-color: rgb(20,255,20);
+  font-size:        14px;
+  text-align:       center;
+  vertical-align:   middle;
+  border-top:       1px solid #000;
+  border:           2px solid #000 !important;
+  border-radius:    4px;
+  padding:          8px;
+}
+
+td.GPLv3 a, td.GPLv2 a {
+  font-weight:      bold;
+  color:            rgb(0,0,25);
+}
+
+td.ISC, td.MIT {
+  background-color: rgb(255,150,150);
+  font-size:        14px;
+  text-align:       center;
+  vertical-align:   middle;
+  border-top:       1px solid #000;
+  border:           2px solid #000 !important;
+  border-radius:    4px;
+  padding:          8px;
+}
+
+td.ISC a, td.MIT a {
+  font-weight:      bold;
+  color:            rgb(0,0,25);
 }
 
 div.title {

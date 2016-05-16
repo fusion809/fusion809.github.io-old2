@@ -277,6 +277,26 @@ body:
     description:
             "The main repository containing the contents of [*The Hornery*](https://fusion809.github.io). It is set up to use the Jekyll static site generator to convert its source documents into site content. Two other repositories (`fusion809.github.io-{old,old2}`) contain the old content of *The Hornery*. The reason why the old content is kept in these two separate repositories is because their overall size exceeded 90 MB and much of this size was due to the accidental committing of content not intended for *The Hornery*."
 
+# fusion-ui
+  - repo:
+            "fusion-ui"
+    category:
+            "Atom; Themes;"
+    fork:
+            "y"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            ""
+
 # gentoo-packer
   - repo:
             "gentoo-packer"
