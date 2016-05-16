@@ -5,7 +5,7 @@ body:
   - repo:
             "arch-builder"
     category:
-            "Arch Linux; Packer; Shell script"
+            "Arch Linux; Packer; Shell Script"
     fork:
             "y"
     orig-user:
@@ -29,7 +29,7 @@ body:
   - repo:
             "arch-scripts"
     category:
-            "Arch Linux; Quick Install; [Shell profiles](#shell-scripts); Zsh"
+            "Arch Linux; Quick Install; [Shell Profiles](#shell-scripts); Zsh"
     fork:
             "n"
     license:
@@ -49,7 +49,7 @@ body:
   - repo:
             "arch-setup"
     category:
-            "Arch Linux; Installers; Shell scripts"
+            "Arch Linux; Installers; Shell Scripts"
     fork:
             "n"
     license:
@@ -85,7 +85,7 @@ body:
   - repo:
             "atom"
     category:
-            "Atom; Configuration files; Text editors"
+            "Atom; Configuration files; Quick Install; Text editors"
     fork:
             "n"
     license:
@@ -105,7 +105,7 @@ body:
   - repo:
             "atom-installer"
     category:
-            "Atom; Text Editors; Installers;"
+            "Atom; Installers; Quick Install; Shell Scripts; Text Editors;"
     fork:
             "n"
     license:
@@ -125,7 +125,7 @@ body:
   - repo:
             "bin"
     category:
-            "JavaScript; Node.js; Open Build Service; Programming; Python; Shell script"
+            "JavaScript; Node.js; Open Build Service; Programming; Python; Shell Script"
     fork:
             "n"
     license:
@@ -145,7 +145,7 @@ body:
   - repo:
             "brackets-installer"
     category:
-            "Brackets; Text Editors; Installers;"
+            "Brackets; Installers; Quick Install; Shell Scripts; Text Editors;"
     fork:
             "n"
     license:
@@ -301,7 +301,7 @@ body:
   - repo:
             "gentoo-packer"
     category:
-            "Gentoo Linux; Installers; Packer; Shell script"
+            "Gentoo Linux; Installers; Packer; Shell Script"
     fork:
             "y"
     license:
@@ -435,7 +435,7 @@ body:
   - repo:
             "lighttable-installer"
     category:
-            "LightTable; Integrated Development Environments; Installers;"
+            "LightTable; Installers; Integrated Development Environments; Quick Install; Shell Scripts;"
     fork:
             "n"
     license:
@@ -495,7 +495,7 @@ body:
   - repo:
             "moksha-scripts"
     category:
-            "Installers; Moksha; Shell scripts"
+            "Installers; Moksha; Shell Scripts"
     fork:
             "n"
     license:
@@ -515,7 +515,7 @@ body:
   - repo:
             "npm2archOBS"
     category:
-            "Arch Linux; JavaScript; Node.js; Open Build Service; PKGBUILDs; Shell scripts"
+            "Arch Linux; JavaScript; Node.js; Open Build Service; PKGBUILDs; Shell Scripts"
     fork:
             "y"
     license:
@@ -535,7 +535,7 @@ body:
   - repo:
             "octave"
     category:
-            "Installers; GNU Octave; Shell scripts"
+            "Installers; GNU Octave; Shell Scripts"
     fork:
             "n"
     readme:
@@ -747,7 +747,7 @@ body:
   - repo:
             "VScode-installer"
     category:
-            "Visual Studio Code; Text Editors; Installers;"
+            "Installers; Quick Install; Shell Scripts; Text Editors; Visual Studio Code;"
     fork:
             "n"
     license:
