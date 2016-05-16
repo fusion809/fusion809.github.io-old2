@@ -295,7 +295,7 @@ body:
     working:
             "y"
     description:
-            ""
+            "My customized Atom UI theme forked from accents-ui."
 
 # gentoo-packer
   - repo:
