@@ -29,7 +29,7 @@ body:
   - repo:
             "arch-scripts"
     category:
-            "Arch Linux; Quick Install; [Shell Profiles](#shell-scripts); Zsh"
+            "Arch Linux; Bash; Quick Install; [Shell Profiles](#shell-scripts); Zsh"
     fork:
             "n"
     license:
@@ -165,7 +165,7 @@ body:
   - repo:
             "centos-scripts"
     category:
-            "CentOS; Shell profiles"
+            "Bash; CentOS; Shell Profiles"
     fork:
             "n"
     license:
@@ -185,7 +185,7 @@ body:
   - repo:
             "debian-scripts"
     category:
-            "Debian; Shell profiles"
+            "Bash; Debian; Shell Profiles"
     fork:
             "n"
     license:
@@ -221,7 +221,7 @@ body:
   - repo:
             "fedora-scripts"
     category:
-            "Fedora; Quick Install; Shell profiles; Zsh"
+            "Bash; Fedora; Quick Install; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -241,7 +241,7 @@ body:
   - repo:
             "freebsd-scripts"
     category:
-            "FreeBSD; Shell profiles; Zsh"
+            "FreeBSD; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -321,7 +321,7 @@ body:
   - repo:
             "gentoo-scripts"
     category:
-            "Gentoo Linux; Quick Install; Shell profiles; Zsh"
+            "Bash; Gentoo Linux; Quick Install; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -455,7 +455,7 @@ body:
   - repo:
             "Linux-scripts"
     category:
-            "Linux; Shell profiles; Zsh"
+            "Linux; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -475,7 +475,7 @@ body:
   - repo:
             "mageia-scripts"
     category:
-            "Mageia; Shell profiles"
+            "Bash; Mageia; Shell Profiles"
     fork:
             "n"
     license:
@@ -490,26 +490,6 @@ body:
             "y"
     description:
             "Automatically-loaded from `~/.bashrc` shell script functions for automating common tasks under Mageia."
-
-# moksha-scripts
-  - repo:
-            "moksha-scripts"
-    category:
-            "Installers; Moksha; Shell Scripts"
-    fork:
-            "n"
-    license:
-            "GPLv3"
-    license-file:
-            "LICENSE"
-    readme:
-            "y"
-    maintained:
-            "y"
-    working:
-            "y"
-    description:
-            "Automated installers for the Moksha window manager."
 
 # npm2archOBS
   - repo:
@@ -531,27 +511,11 @@ body:
     description:
             "Tools to automate the process of adding Node.js packages to the Open Build Service. "
 
-# octave
-  - repo:
-            "octave"
-    category:
-            "Installers; GNU Octave; Shell Scripts"
-    fork:
-            "n"
-    readme:
-            "y"
-    maintained:
-            "y"
-    working:
-            "y"
-    description:
-            "Shell script to install GNU Octave from source code, assumming all dependencies are already installed."
-
 # opensuse-scripts
   - repo:
             "opensuse-scripts"
     category:
-            "openSUSE; Quick Install; Shell profiles; Zsh"
+            "Bash; openSUSE; Quick Install; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -667,7 +631,7 @@ body:
   - repo:
             "sabayon-scripts"
     category:
-            "Quick Install; Sabayon Linux; Shell profiles; Zsh"
+            "Bash; Quick Install; Sabayon Linux; Shell Profiles; Zsh"
     fork:
             "n"
     license:
