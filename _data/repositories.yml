@@ -395,22 +395,6 @@ body:
     description:
             "A subdirectory ([/hubpress.io](https://fusion809.github.io/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
 
-# hugo
-  - repo:
-            "hugo"
-    category:
-            "GitHub Pages; Hugo; The Hornery"
-    fork:
-            "n"
-    readme:
-            "n"
-    maintained:
-            "n"
-    working:
-            "n"
-    description:
-            "My failed attempt at generating a subdirectory of *The Hornery* powered by Hugo."
-
 # JScripts
   - repo:
             "JScripts"
