@@ -419,6 +419,26 @@ body:
     description:
             "Contains assorted JavaScript scripts written primarily for scientific computing."
 
+# komodo-installer
+  - repo:
+            "komodo-installer"
+    cateory:
+            "Komodo Edit; Installers; Quick Install; Shell Scripts;"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated shell script installer for [Komodo Edit](http://komodoide.com/komodo-edit/) on Linux."
+
 # lighttable-installer
   - repo:
             "lighttable-installer"

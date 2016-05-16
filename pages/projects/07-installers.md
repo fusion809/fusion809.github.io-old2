@@ -18,5 +18,6 @@ So far I have created the following installers:
 
 * [`atom-installer`](https://github.com/fusion809/atom-installer) &mdash; has experimental support for Gentoo Linux too.
 * [`brackets-installer`](https://github.com/fusion809/brackets-installer)
+* [`komodo-installer`](https://github.com/fusion809/komodo-installer)
 * [`lighttable-installer`](https://github.com/fusion809/lighttable-installer)
 * [`VScode-installer`](https://github.com/fusion809/VScode-installer)
