@@ -365,7 +365,7 @@ body:
     fork:
             "n"
     license:
-            "y"
+            "GPLv3"
     license-file:
             "LICENSE"
     readme:
