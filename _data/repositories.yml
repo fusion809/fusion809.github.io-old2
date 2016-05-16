@@ -422,7 +422,7 @@ body:
 # komodo-installer
   - repo:
             "komodo-installer"
-    cateory:
+    category:
             "Komodo Edit; Installers; Quick Install; Shell Scripts;"
     fork:
             "n"
