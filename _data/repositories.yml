@@ -364,12 +364,16 @@ body:
             "GitHub Pages; Hexo; The Hornery"
     fork:
             "n"
+    license:
+            "y"
+    license-file:
+            "LICENSE"
     readme:
-            "n"
+            "y"
     maintained:
             "n"
     working:
-            "n"
+            "y"
     description:
             "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](https://fusion809.github.io/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
 
