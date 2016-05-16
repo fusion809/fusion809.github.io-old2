@@ -85,7 +85,7 @@ body:
   - repo:
             "atom"
     category:
-            "Atom; Configuration files; Quick Install; Text editors"
+            "Atom; Configuration Files; Quick Install; Text editors"
     fork:
             "n"
     license:
@@ -659,7 +659,7 @@ body:
   - repo:
             "spacemacs"
     category:
-            "Configuration files; Spacemacs; Text editors"
+            "Configuration Files; Spacemacs; Text editors"
     fork:
             "n"
     license:
@@ -679,7 +679,7 @@ body:
   - repo:
             "vim"
     category:
-            "Configuration files; Text editors; Vim"
+            "Configuration Files; Text editors; Vim"
     fork:
             "n"
     license:
