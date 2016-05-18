@@ -16,7 +16,7 @@ extended_description:
   This website is mostly powered by the static site generator (SSG), [Jekyll](http://jekyllrb.com/), if you would like to create your own Jekyll-powered website and preview it on a Linux platform, I have written a guide on how to do this [here](/how-to-create-your-own-jekyll-site-with-github-pages/). The [/hexo-site](/hexo-site) subfolder of *The Hornery* is powered by the SSG, [Hexo](https://hexo.io), while the [/hubpress.io](/hubpress.io) subfolder is powered by [HubPress](http://hubpress.io/), both subfolders are essentially just for testing purposes and not really ready for readers.
 
 
-  If you want to know about my other work on GitHub (namely my [repositories](https://github.com/fusion809?tab=repositories)), please see the [projects page](/projects)."
+  If you want to read about my other work on GitHub (namely my [repositories](https://github.com/fusion809?tab=repositories)), please see the [projects page](/projects)."
 
 url:                  https://fusion809.github.io
 twitter_username:     fusion809
