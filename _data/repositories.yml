@@ -717,7 +717,7 @@ body:
 
 # VScode-installer
   - repo:
-            "VScode-installer"
+            "vscode-installer"
     category:
             "Installers; Quick Install; Shell Scripts; Text Editors; Visual Studio Code;"
     fork:
