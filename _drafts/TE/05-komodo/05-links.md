@@ -4,3 +4,4 @@
   - [Pull Requests](https://github.com/Komodo/KomodoEdit/pulls)
   - [Releases](https://github.com/Komodo/KomodoEdit/releases)
 * [Home Page](https://komodoide.com/komodo-edit/)
+* [Package Repository](http://komodoide.com/packages)

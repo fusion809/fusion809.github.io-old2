@@ -4,3 +4,4 @@
   - [Pull Requests](https://github.com/Microsoft/vscode/pulls)
   - [Releases](https://github.com/Microsoft/vscode/releases)
 * [Home Page](http://code.visualstudio.com/)
+* [Package Repository](https://marketplace.visualstudio.com/VSCode)
