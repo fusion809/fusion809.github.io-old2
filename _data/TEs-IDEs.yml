@@ -84,7 +84,7 @@ body:
   # Komodo Edit
   - program:                    "Komodo Edit"
     program-link:               "http://komodoide.com/komodo-edit/"
-    version:                    "9.3.2"
+    version:                    "10.0.0"
     version-link:               "https://github.com/fusion809/PKGBUILDs-old6/tree/f0633763f7dbe446e8e602d867a4071264baf392/komodo-edit"
     license:                    "MPL"
     license-link:               "https://github.com/Komodo/KomodoEdit/blob/master/LICENSE.txt"
@@ -101,8 +101,8 @@ body:
     file-manager:               "Yes"
     web-browser:                "Yes"
     shell:                      "Yes"
-    installed-size:             "243.92"
-    random-access-memory:       "213.5"
+    installed-size:             "264.66"
+    random-access-memory:       "219.3"
     overall:                    "8"
     overall-abbr:               "Its main advantage is its simplicity of use, while its chief disadvantage is that several features are off-limits, unless you upgrade to the proprietary version of Komodo."
 
