@@ -194,7 +194,7 @@ jQuery.fn.toc.defaults = {
 
 $(document).ready(function() {
   $('#toc').toc({
-      'selectors': 'h1,h2,h3,h4', //elements to use as headings
+      'selectors': 'h1,h2', //elements to use as headings
       'container': 'body', //element to find all selectors in
       'listType': '<ul/>', //use unordered list. If you need ordered one instead pass: '<ol/>'
       'smoothScrolling': true, //enable or disable smooth scrolling on click
@@ -215,11 +215,7 @@ $(document).ready(function() {
           }
       },
       'itemClass': function(i, heading, $heading, prefix) { // custom function for item class
-        if ($heading[0].tagName.toLowerCase()=='h3') {
-          return $heading[0].tagName.toLowerCase() + '.col';
-        } else {
           return $heading[0].tagName.toLowerCase();
-        }
       }
   });
   var counter = 0;
