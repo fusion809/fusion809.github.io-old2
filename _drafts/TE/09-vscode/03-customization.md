@@ -1,2 +1,2 @@
 ### Customization
-VSCode can be extensively customized using plugins written in CSS, JavaScript and TypeScript. Unfortunately, VSCode does not have support for an embedded terminal or web browser. 
+VSCode can be extensively customized using plugins written in CSS, JavaScript and TypeScript. Unfortunately, VSCode does not have support for an embedded terminal or web browser, regardless of any installed extensions. Plugins are search for and installed via opening the command pallette (with the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) and typing "ext install", then pressing <kbd>Enter</kbd>. 
