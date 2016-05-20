@@ -1,6 +1,6 @@
 ### Ratings
 
-* **Availability**: 3.
+* **Availability**: 6. My installer should make its installation easier.
 * **Beginner-Friendliness**: ~9. It is a fairly beginner-friendly editor when used within its scope of web development.
 * **Customizability**: 7. Some customization can be done via plugins, although the editor is designed just for web development so there is only so much customization you can do with it.
 * **Features**: ~8.

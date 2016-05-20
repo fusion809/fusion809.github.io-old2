@@ -1,0 +1,9 @@
+#!/bin/bash
+Private  +   Shared  =  RAM used       Program
+
+440.0 KiB + 248.5 KiB = 688.5 KiB       python
+21.3 MiB +   2.8 MiB =  24.2 MiB       python2.7
+188.7 MiB +   6.2 MiB = 194.9 MiB       komodo
+---------------------------------
+                       219.8 MiB
+=================================
