@@ -1,5 +1,5 @@
 ---
-layout:    page
+layout:    page2
 title:     Visual Studio Code Installer
 permalink: /vscode-installer/
 date:      2016-05-25 +1000
@@ -10,22 +10,69 @@ date:      2016-05-25 +1000
 In order to make the process of installing VSCode easier on Linux I created an automated shell script installer for it, [`vscode-installer`](https://github.com/fusion809/vscode-installer). This page describes the technical details of this installer. The main script of it is `installer.sh`, which is usually invoked by the `quick-install.sh` script. The `quick-install.sh` script downloads the `vscode-installer` repository and then executes the main `installer.sh` script. → ↦ ↛
 
 <pre class="diagram">
-                              &#9484;──> lib/arch.sh
-                              &#9484;──> lib/dest.sh
-                              &#9484;──> lib/install.sh
-                              &#9484;──> lib/method.sh
-                              &#9484;──> lib/src_build.sh
-                              &#9484;──> lib/src_method.sh
-                              &#9484;──> lib/test.sh
-quick-install.sh → installer.sh ─> lib/version.sh
-                              └──| lib/build/
-                                (Arch/Manjaro) - aur.sh
-                                (CentOS)       - centos.sh
-                                (Debian)       - debian.sh
-                                (Fedora)       - fedora.sh
-                                (Mageia)       - mageia.sh
-                                (openSUSE)     - opensuse.sh
-                                (PCLinuxOS)    - pclinuxos.sh
-                                (Sabayon)      - sabayon.sh
-                                (Ubuntu)       - ubuntu.sh
+                               &#9484;──> lib/arch.sh
+                               &#9484;──> lib/dest.sh
+                               &#9484;──> lib/install.sh
+                               &#9484;──> lib/method.sh
+                               &#9484;──> lib/src_build.sh
+                               &#9484;──> lib/src_method.sh
+                               &#9484;──> lib/test.sh
+quick-install.sh ─> installer.sh ─> lib/version.sh
+                               └──> lib/build/
+                                            ├──| [[ Arch/Manjaro ]] ─> aur.sh
+                                            ├──| [[ CentOS ]]       ─> centos.sh
+                                            ├──| [[ Debian ]]       ─> debian.sh
+                                            ├──| [[ Fedora ]]       ─> fedora.sh
+                                            ├──| [[ Mageia ]]       ─> mageia.sh
+                                            ├──| [[ openSUSE ]]     ─> opensuse.sh
+                                            ├──| [[ PCLinuxOS ]]    ─> pclinuxos.sh
+                                            ├──| [[ Sabayon ]]      ─> sabayon.sh
+                                            ├──| [[ Ubuntu ]]       ─> ubuntu.sh
+
 </pre>
+
+<script>
+  var diagram = flowchart.parse("the code definition");
+  diagram.drawSVG('diagram');
+
+  // you can also try to pass options:
+
+  diagram.drawSVG('diagram', {
+                              'x': 0,
+                              'y': 0,
+                              'line-width': 3,
+                              'line-length': 50,
+                              'text-margin': 10,
+                              'font-size': 14,
+                              'font-color': 'black',
+                              'line-color': 'black',
+                              'element-color': 'black',
+                              'fill': 'white',
+                              'yes-text': 'yes',
+                              'no-text': 'no',
+                              'arrow-end': 'block',
+                              'scale': 1,
+                              // style symbol types
+                              'symbols': {
+                                'start': {
+                                  'font-color': 'red',
+                                  'element-color': 'green',
+                                  'fill': 'yellow'
+                                },
+                                'end':{
+                                  'class': 'end-element'
+                                }
+                              },
+                              // even flowstate support ;-)
+                              'flowstate' : {
+                                'past' : { 'fill' : '#CCCCCC', 'font-size' : 12},
+                                'current' : {'fill' : 'yellow', 'font-color' : 'red', 'font-weight' : 'bold'},
+                                'future' : { 'fill' : '#FFFF99'},
+                                'request' : { 'fill' : 'blue'},
+                                'invalid': {'fill' : '#444444'},
+                                'approved' : { 'fill' : '#58C4A3', 'font-size' : 12, 'yes-text' : 'APPROVED', 'no-text' : 'n/a' },
+                                'rejected' : { 'fill' : '#C45879', 'font-size' : 12, 'yes-text' : 'n/a', 'no-text' : 'REJECTED' }
+                              }
+                            })
+</script>
+<div id="diagram"></div>
