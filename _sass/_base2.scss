@@ -228,6 +228,14 @@ div.diagram {
   word-wrap:           normal;
 }
 
+div.diagram a {
+  color:               rgb(80,100,255);
+}
+
+div.diagram a.hovering {
+  color:               rgb(10,20,255);
+}
+
 @import "img";
 @import "blog";
 @import "code";

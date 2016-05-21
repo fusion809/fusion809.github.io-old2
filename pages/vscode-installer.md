@@ -29,7 +29,7 @@ In order to make the process of installing VSCode easier on Linux I created an a
                                     |                         ├──┤ [[ PCLinuxOS ]]         ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/lib/build/pclinuxos.sh" link="_blank">build/pclinuxos.sh</a> ─>
                                     |                         ├──┤ [[ Sabayon ]]           ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/lib/build/sabayon.sh" link="_blank">build/sabayon.sh</a>   ─>
                                     |                         ├──┤ [[ Ubuntu | Zorin OS ]] ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/lib/build/ubuntu.sh" link="_blank">build/ubuntu.sh</a>    ─>
-                                    |                         └──┤ [[ other ]]             ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/lib/build/other.sh" link="_blank">other.sh</a>           ─>
+                                    |                         └──┤ [[ other ]]             ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/lib/other.sh" link="_blank">other.sh</a>           ─>
                                     |
                                     ├──┤ [[ <a href="https://github.com/fusion809/vscode-installer/tree/master/i686" link="_blank">i686</a> | <a href="https://github.com/fusion809/vscode-installer/tree/master/x86_64" link="_blank">x86_64</a> ]] ─┐
                                     |                         ├──┤ [[ Arch | Manjaro ]]    ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/x86_64/arch.sh" link="_blank">arch.sh</a>
@@ -40,5 +40,5 @@ In order to make the process of installing VSCode easier on Linux I created an a
                                     |                         ├──┤ [[ openSUSE ]]          ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/x86_64/opensuse.sh" link="_blank">opensuse.sh</a>
                                     |                         ├──┤ [[ PCLinuxOS ]]         ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/x86_64/pclinuxos.sh" link="_blank">pclinuxos.sh</a>
                                     |                         ├──┤ [[ Sabayon ]]           ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/x86_64/sabayon.sh" link="_blank">sabayon.sh</a>
-                                    |                         ├──┤ [[ Ubuntu | Zorin OS ]] ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/x86_64/ubuntu.sh" link="_blank">ubuntu.sh</a>
+                                    |                         └──┤ [[ Ubuntu | Zorin OS ]] ─> <a href="https://github.com/fusion809/vscode-installer/blob/master/x86_64/ubuntu.sh" link="_blank">ubuntu.sh</a>
 </div>
