@@ -12,7 +12,7 @@
     </a>
     <div class="trigger">
     <div class="pages-nav">Information Pages</div>
-      {% for my_page in site.pages %}
+      {% for my_page in site.main_pages %}
         {% if my_page.title %}
         <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {% endif %}

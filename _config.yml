@@ -62,3 +62,17 @@ rec_posts:
   - "/package-management-on-sabayon/"
   - "/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/"
   - "/running-atom-on-linux/"
+
+main_pages:
+  - title: "About"
+    url:   "/about/"
+  - title: "About Me"
+    url:   "/about-me/"
+  - title: "Contributing"
+    url:   "/contributing/"
+  - title: "Copyright"
+    url:   "/copyright/"
+  - title: "Glossary"
+    url:   "/glossary/"
+  - title: "Projects"
+    url:   "/projects/"
