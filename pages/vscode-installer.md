@@ -10,25 +10,26 @@ date:      2016-05-25 +1000
 In order to make the process of installing VSCode easier on Linux I created an automated shell script installer for it, [`vscode-installer`](https://github.com/fusion809/vscode-installer). This page describes the technical details of this installer. The main script of it is `installer.sh`, which is usually invoked by the `quick-install.sh` script. The `quick-install.sh` script downloads the `vscode-installer` repository and then executes the main `installer.sh` script. → ↦ ↛
 
 <pre class="diagram">
-                               &#9484;──> lib/arch.sh
-                               &#9484;──> lib/dest.sh
-                               &#9484;──> lib/install.sh
-                               &#9484;──> lib/method.sh
-                               &#9484;──> lib/src_build.sh
-                               &#9484;──> lib/src_method.sh
-                               &#9484;──> lib/test.sh
-quick-install.sh ─> installer.sh ─> lib/version.sh
-                               └──> lib ─┐
-                                         ├──┤ [[ Arch | Manjaro ]]   ─> build/aur.sh
-                                         ├──┤ [[ CentOS ]]           ─> build/centos.sh
-                                         ├──┤ [[ Debian ]]           ─> build/debian.sh
-                                         ├──┤ [[ Fedora ]]           ─> build/fedora.sh
-                                         ├──┤ [[ Mageia ]]           ─> build/mageia.sh
-                                         ├──┤ [[ openSUSE ]]         ─> build/opensuse.sh
-                                         ├──┤ [[ PCLinuxOS ]]        ─> build/pclinuxos.sh
-                                         ├──┤ [[ Sabayon ]]          ─> build/sabayon.sh
-                                         ├──┤ [[ Ubuntu | Zorin OS]] ─> build/ubuntu.sh
-                                         └──> [[ other ]]            ─> other.sh
+                                     ┌──> lib/arch.sh
+                                     ├──> lib/dest.sh
+                                     ├──> lib/install.sh
+                                     ├──> lib/method.sh
+                                     ├──> lib/src_build.sh
+                                     ├──> lib/src_method.sh
+                                     ├──> lib/test.sh
+                                     ├──> lib/version.sh
+                                     ├─> lib ─┐
+                                     |         ├──┤ [[ Arch | Manjaro ]]    ─> build/aur.sh       ─> Builds VSCode from the AUR (if binary build is selected) or
+                                     |                                                               my PKGBUILDs GitHub repo (if source build is selected).
+                                     |         ├──┤ [[ CentOS ]]            ─> build/centos.sh    ─>
+                                     |         ├──┤ [[ Debian ]]            ─> build/debian.sh    ─>
+                                     |         ├──┤ [[ Fedora ]]            ─> build/fedora.sh
+                                     |         ├──┤ [[ Mageia ]]            ─> build/mageia.sh
+quick-install.sh ─> installer.sh ──> |         ├──┤ [[ openSUSE ]]          ─> build/opensuse.sh
+                                     |         ├──┤ [[ PCLinuxOS ]]         ─> build/pclinuxos.sh
+                                     |         ├──┤ [[ Sabayon ]]           ─> build/sabayon.sh
+                                     |         ├──┤ [[ Ubuntu | Zorin OS ]] ─> build/ubuntu.sh
+                                     |         └──┤ [[ other ]]             ─> other.sh
 </pre>
 
 <script>
