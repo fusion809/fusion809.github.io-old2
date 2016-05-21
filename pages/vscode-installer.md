@@ -7,9 +7,25 @@ date:      2016-05-25 +1000
 
 [**Visual Studio Code**](http://code.visualstudio.com) (**VSCode**) is a free and open-source text editor developed by Microsoft. It is built on the Electron framework that was originally developed for use by GitHub's Atom text editor, and is written in CSS, JavaScript and TypeScript. While its source code is released under the MIT License, official Linux binary packages for it (including Debian, RPM and zip archives) are licensed under a proprietary End-User License Agreement (EULA). These binaries are the safest and fastest way to install VSCode on Linux, but those that want to use an open-source version of VSCode are left to build VSCode from source code. This process can be daunting for those that are not used to compiling VSCode.
 
-In order to make the process of installing VSCode easier on Linux I created an automated shell script installer for it, [`vscode-installer`](https://github.com/fusion809/vscode-installer). This page describes the technical details of this installer. The main script of it is `installer.sh`, which is usually invoked by the `quick-install.sh` script. The `quick-install.sh` script downloads the `vscode-installer` repository and then executes the main `installer.sh` script. → ↦ &#8603;
+In order to make the process of installing VSCode easier on Linux I created an automated shell script installer for it, [`vscode-installer`](https://github.com/fusion809/vscode-installer). This page describes the technical details of this installer. The main script of it is `installer.sh`, which is usually invoked by the `quick-install.sh` script. The `quick-install.sh` script downloads the `vscode-installer` repository and then executes the main `installer.sh` script. → ↦ ↛
 
-```bash
-quick-install.sh → installer.sh ↦ lib/arch.sh
-                                ↦ lib
-```
+<pre class="diagram">
+                              &#9484;──> lib/arch.sh
+                              &#9484;──> lib/dest.sh
+                              &#9484;──> lib/install.sh
+                              &#9484;──> lib/method.sh
+                              &#9484;──> lib/src_build.sh
+                              &#9484;──> lib/src_method.sh
+                              &#9484;──> lib/test.sh
+quick-install.sh → installer.sh ─> lib/version.sh
+                              └──| lib/build/
+                                (Arch/Manjaro) - aur.sh
+                                (CentOS)       - centos.sh
+                                (Debian)       - debian.sh
+                                (Fedora)       - fedora.sh
+                                (Mageia)       - mageia.sh
+                                (openSUSE)     - opensuse.sh
+                                (PCLinuxOS)    - pclinuxos.sh
+                                (Sabayon)      - sabayon.sh
+                                (Ubuntu)       - ubuntu.sh
+</pre>

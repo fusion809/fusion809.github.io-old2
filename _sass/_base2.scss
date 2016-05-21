@@ -36,31 +36,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
 /**
  * Lists
  */
@@ -194,6 +169,7 @@ blockquote {
 div.page-content {
   color: #111;
   background-color: rgb(250,100,100);
+  padding-bottom: 5px;
 }
 
 
@@ -209,25 +185,50 @@ div.page-content {
     }
 }
 
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+pre.diagram {
+  background-color:    rgb(20,20,20);
+  border-bottom-color: rgb(57, 51, 24);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-collapse:     collapse;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice:  100%;
+  border-image-source: none;
+  border-image-width:  1;
+  border-left-color:   rgb(57, 51, 24);
+  border-left-style:   none;
+  border-left-width:   0px;
+  border-right-color:  rgb(57, 51, 24);
+  border-right-style:  none;
+  border-right-width:  0px;
+  border-top-color:    rgb(57, 51, 24);
+  border-top-style:    none;
+  border-top-width:    0px;
+  color:               rgb(255,255,255);
+  display:             block;
+  font-family:         Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif;
+  font-size:           13px;
+  height:              500px;
+  line-height:         16.9px;
+  margin-bottom:       13px;
+  margin-left:         0px;
+  margin-right:        0px;
+  margin-top:          0px;
+  max-height:          600px;
+  overflow-x:          auto;
+  overflow-y:          auto;
+  padding-bottom:      5px;
+  padding-left:        5px;
+  padding-right:       5px;
+  padding-top:         5px;
+  text-align:          left;
+  white-space:         pre;
+  width:               650px;
+  word-wrap:           normal;
 }
 
+@import "img";
 @import "blog";
 @import "code";
 @import "table";
