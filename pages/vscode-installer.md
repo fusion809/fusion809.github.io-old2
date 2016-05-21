@@ -18,17 +18,17 @@ In order to make the process of installing VSCode easier on Linux I created an a
                                &#9484;──> lib/src_method.sh
                                &#9484;──> lib/test.sh
 quick-install.sh ─> installer.sh ─> lib/version.sh
-                               └──> lib/build/
-                                            ├──| [[ Arch/Manjaro ]] ─> aur.sh
-                                            ├──| [[ CentOS ]]       ─> centos.sh
-                                            ├──| [[ Debian ]]       ─> debian.sh
-                                            ├──| [[ Fedora ]]       ─> fedora.sh
-                                            ├──| [[ Mageia ]]       ─> mageia.sh
-                                            ├──| [[ openSUSE ]]     ─> opensuse.sh
-                                            ├──| [[ PCLinuxOS ]]    ─> pclinuxos.sh
-                                            ├──| [[ Sabayon ]]      ─> sabayon.sh
-                                            ├──| [[ Ubuntu ]]       ─> ubuntu.sh
-
+                               └──> lib ─┐
+                                         ├──┤ [[ Arch | Manjaro ]]   ─> build/aur.sh
+                                         ├──┤ [[ CentOS ]]           ─> build/centos.sh
+                                         ├──┤ [[ Debian ]]           ─> build/debian.sh
+                                         ├──┤ [[ Fedora ]]           ─> build/fedora.sh
+                                         ├──┤ [[ Mageia ]]           ─> build/mageia.sh
+                                         ├──┤ [[ openSUSE ]]         ─> build/opensuse.sh
+                                         ├──┤ [[ PCLinuxOS ]]        ─> build/pclinuxos.sh
+                                         ├──┤ [[ Sabayon ]]          ─> build/sabayon.sh
+                                         ├──┤ [[ Ubuntu | Zorin OS]] ─> build/ubuntu.sh
+                                         └──> [[ other ]]            ─> other.sh
 </pre>
 
 <script>
