@@ -66,25 +66,26 @@ span.codeb {
 * Pre
 */
 
-pre {
-  border-radius: 3px;
-  padding: 3px;
-  margin-bottom: 8px;
-  background-color: rgba(51, 51, 51, 100);
-  font-family: monospace;
-  color: #fff;
-  box-shadow: 0 1px 3px #757575, 0 1px 2px #5b5b5b;
-}
+//pre {
+//  border-radius: 3px;
+//  padding: 3px;
+//  margin-bottom: 8px;
+//  background-color: rgba(51, 51, 51, 100);
+//  font-family: monospace;
+//  color: #fff;
+//  box-shadow: 0 1px 3px #757575, 0 1px 2px #5b5b5b;
+//}
 
 /**
 * Code
 */
 code {
   background-color: rgba(220,220,220,100);
-  color:            rgba(51,51,51,100);
   border-radius:    3px;
+  border:           1px solid rgba(51, 51, 51, 100);
   box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
   padding:          3px;
+  color:            rgb(51,51,51);
   margin-bottom:    8px;
   white-space:      nowrap;
   overflow:         auto;
@@ -93,9 +94,6 @@ code {
 
 a code {
   color:              #11f;
-  white-space:        nowrap;
-  overflow:           auto;
-  font-family:        monospace;
 }
 
 code.language-sh {
@@ -105,17 +103,31 @@ code.language-sh {
 }
 
 code.language-bash {
-  background-color: inherit;
-  color: white;
-  border: none;
+  background-color:   inherit;
+  color:              white;
+  border:             none;
 }
 
 code.language-matlab {
-  background-color: inherit;
-  color: white;
-  border: none;
+  background-color:   inherit;
+  color:              white;
+  border:             none;
 }
 
-div.language-json pre {
-  background-color: rgb(220,220,220);
+div.language-json.highlighter-rouge {
+  $bg-color:          rgba(220,220,220,100);
+  background-color:   $bg-color;
+  padding:            0px;
+  border-radius:      3px;
+  border:             1px solid rgba(51, 51, 51, 100);
+  box-shadow:         0 1px 3px #757575, 0 1px 2px #5b5b5b;
+  padding:            3px;
+  overflow:           auto;
+  font-family:        monospace;
+
+  pre.highlight {
+    color:            rgba(0,0,0,100);
+    margin-bottom:    0px;
+    background-color: $bg-color;
+  }
 }

@@ -1,5 +1,5 @@
 .highlight {
-	margin-bottom: 1.5em;
+	//margin-bottom: 1.5em;
 	@include font(12);
 	color: #fff;
 	border: 1px solid darken($body-color, 5);
@@ -18,7 +18,7 @@
 	.l { color: #ae81ff } /* Literal */
 	.n { color: #f8f8f2 } /* Name */
 	.o { color: #f92672 } /* Operator */
-	.p { color: #111 } /* Punctuation */
+	.p { color: #000 } /* Punctuation */
 	.cm { color: #75715e } /* Comment.Multiline */
 	.cp { color: #75715e } /* Comment.Preproc */
 	.c1 { color: #75715e } /* Comment.Single */

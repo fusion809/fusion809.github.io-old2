@@ -3,6 +3,8 @@
  */
 
 .highlight {
+  font-size: 16px;
+
     @extend %vertical-rhythm;
     .highlighter-pygments & {
     }
@@ -16,7 +18,7 @@
     .act  { color: #1f1; } // Actions
     .r    { color: #c40000; } // red output
     .cy   { color: #06989a; } // Cyan output
-    .p    { color: #111; } // non-comment style
+    .p    { color: #000; } // non-comment style
     .pack { color: #477e03; } // Green output
     .pckv { color: #754e6f; } // Package version
     .pckpv { color: #729fcf; } // Package previous version
@@ -67,7 +69,7 @@
     .sb    { color: #d14 } // Literal.String.Backtick
     .sc    { color: #d14 } // Literal.String.Char
     .sd    { color: #d14 } // Literal.String.Doc
-    .s2    { color: #8ab96c } // Literal.String.Double
+    .s2    { color: rgb(88, 135, 58) } // Literal.String.Double
     .se    { color: #d14 } // Literal.String.Escape
     .sh    { color: #d14 } // Literal.String.Heredoc
     .si    { color: #d14 } // Literal.String.Interpol
