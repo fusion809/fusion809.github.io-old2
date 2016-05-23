@@ -186,7 +186,7 @@ body:
   # Visual Studio Code
   - program:                    "Visual Studio Code"
     program-link:               "http://code.visualstudio.com/"
-    version:                    "1.0.0"
+    version:                    "1.1.1"
     version-link:               "https://github.com/fusion809/PKGBUILDs-old6/blob/88059ac50a4ca4e39b4a5a0f51d2eb5790e39c6a/visual-studio-code-oss"
     license:                    "MIT"
     license-link:               "https://github.com/Microsoft/vscode/blob/master/LICENSE.txt"
@@ -203,7 +203,7 @@ body:
     file-manager:               "Yes"
     web-browser:                "No"
     shell:                      "No"
-    installed-size:             "125.85"
-    random-access-memory:       "335.3"
+    installed-size:             "131.43"
+    random-access-memory:       "486.5"
     overall:                    "8"
     overall-abbr:               "The fact it lacks tabs, an embedded web browser and terminal emulator are its main disadvantages, in my opinion."
