@@ -7,4 +7,4 @@ Vim is extensible via plugins written in VimL, these plugins are enabled by usin
 * [**spec.vim**](https://github.com/vim-scripts/spec.vim), a plugin that adds syntax-highlighting and snippets support for spec (file extension: `.spec`) files.
 * [**vim-colors-solarized**](https://github.com/altercation/vim-colors-solarized), a theme for Vim.
 
-You can run terminal commands in it using the `:! <COMMAND>` command (where `<COMMAND>` is to be replaced with your shell command(s)). You can also add a tab bar to Vim to make it easier to switch between opened file using the [TabBar](https://github.com/vim-scripts/TabBar) plugin.
+You can run terminal commands in it using the `:! <COMMAND>` command (where `<COMMAND>` is to be replaced with your shell command(s)). You can also add a tab bar to Vim to make it easier to switch between opened files using the [TabBar](https://github.com/vim-scripts/TabBar) plugin.
