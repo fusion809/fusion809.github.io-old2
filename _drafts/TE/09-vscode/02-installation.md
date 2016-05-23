@@ -3,3 +3,11 @@ VSCode can be installed via a number of different methods, although it is not in
 
 * Install from a binary package (usually a Debian, RPM package or zip binary provided by Microsoft)
 * Install from source code
+
+To use this installer run:
+
+{% include Code/codeu.html line1='/bin/bash -c "$(curl -sL https://git.io/vrLNn)"' %}
+
+or, alternatively, if you would rather use wget to get the quick-install script:
+
+{% include Code/codeu.html line1='/bin/bash -c "$(wget -cqO- https://git.io/vrLNn)"' %}
