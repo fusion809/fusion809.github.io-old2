@@ -4,6 +4,8 @@
 
 {% include_relative 06-lighttable/03-customization.md %}
 
-{% include_relative 06-lighttable/04-ratings.md %}
+{% include_relative 06-lighttable/04-features.md %}
 
-{% include_relative 06-lighttable/05-links.md %}
+{% include_relative 06-lighttable/05-ratings.md %}
+
+{% include_relative 06-lighttable/06-links.md %}

@@ -37,7 +37,7 @@ body:
     license-link:               "https://github.com/adobe/brackets/blob/master/LICENSE"
     developer:                  "Adobe"
     languages:                  "<b>CSS</b>, HTML and <abbr title='JavaScript'><b>JS</b></abbr>"
-    availability:               "4"
+    availability:               "6"
     availability-abbr:          "Not in the official repositories of any distributions and can be challenging to install on non-Debian based distributions."
     beginner-friendliness:      "9"
     beginner-friendliness-abbr: "It is very beginner-friendly."
