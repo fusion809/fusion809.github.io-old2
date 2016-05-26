@@ -439,6 +439,26 @@ body:
     description:
             "An automated shell script installer for [Komodo Edit](http://komodoide.com/komodo-edit/) on Linux."
 
+# language-gfm2
+  - repo:
+            "language-gfm2"
+    category:
+            "Atom; Forks; Packages;"
+    fork:
+            "y"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `language-gfm2` Atom package. It is essentially just the `language-gfm` package with [pull 154](https://github.com/atom/language-gfm/pull/154) applied."
+            
 # lighttable-installer
   - repo:
             "lighttable-installer"
