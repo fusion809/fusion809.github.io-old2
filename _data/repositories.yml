@@ -24,7 +24,7 @@ body:
     working:
             "y"
     description:
-            "A package that provides an about page for Atom. I forked it, to customize it, for my Arch Linux packages."
+            "A package (Atom package name: `about-arch`) that provides an about page for Atom. I forked it from the official Atom `about` package, to customize it, for my Arch Linux packages and atom-installer builds."
 
 # arch-builder
   - repo:
@@ -464,11 +464,31 @@ body:
     description:
             "An automated shell script installer for [Komodo Edit](http://komodoide.com/komodo-edit/) on Linux."
 
+# language-archlinux
+  - repo:
+            "language-archlinux"
+    category:
+            "Arch Linux; Atom Packages - Development; Atom Packages - Grammar;"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE.md"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An Arch Linux development package for the Atom text editor. While it was not forked on GitHub from any existing GitHub repositories, it borrows much of its source code from the [`language-gentoo`](https://atom.io/packages/language-gentoo) package of Nicolas Laurent."
+
 # language-gfm2
   - repo:
             "language-gfm2"
     category:
-            "Atom Packages; Forks;"
+            "Atom Packages - Grammar; Forks;"
     fork:
             "y"
     orig-user:
@@ -487,6 +507,30 @@ body:
             "y"
     description:
             "My `language-gfm2` Atom package. It is essentially just the `language-gfm` package with [pull 154](https://github.com/atom/language-gfm/pull/154) applied."
+
+# language-shellscript
+  - repo:
+            "language-shellscript"
+    category:
+            "Atom Packages - Grammar"
+    fork:
+            "y"
+    orig-user:
+            "atom"
+    orig-repo:
+            "language-shellscript"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `language-unix-shell` package, which in itself is a fork of the language-shellscript package with support for extra shell grammars."
 
 # lighttable-installer
   - repo:
@@ -622,7 +666,7 @@ body:
     working:
             "y"
     description:
-            "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable."
+            "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable. To help keep its repository size down and make it easier to tag releases of individual packages I have split this repository into a series of submodules &mdash; one for each individual PKGBUILD."
 
 # python-scripts
   - repo:
