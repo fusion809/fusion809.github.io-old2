@@ -20,3 +20,5 @@ body:
   - item: 'The core themes were removed and replaced with [`dark-bint-syntax`](https://atom.io/packages/dark-bint-syntax) and [`fusion-ui`](https://atom.io/packages/fusion-ui) themes. All the previous screenshots shown on this page were with these two themes enabled.'
 
   - item: 'My own custom Hunspell dictionary for Australian English installed. If your `LANG` environment variable is set to `en_AU` this spell-checking dictionary will be used.'
+
+  - item: 'The Electron version used in this build is 0.36.12 instead of the default version of 0.36.8. The reason why is because without this adjustment in Electron version a bug ([issue #10918](https://github.com/atom/atom/issues/10918)) occurs in Atom that is related to FreeType &geq;2.6.3.'
