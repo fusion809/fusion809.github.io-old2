@@ -17,4 +17,4 @@ body:
 
   - item: 'The core [`exception-reporting`](https://atom.io/packages/exception-reporting) and [`metrics`](https://atom.io/packages/metrics) packages were removed.'
 
-  - item: 'The core themes were removed and replaced with [`dark-bint-syntax`](https://atom.io/packages/dark-bint-syntax) and [`fusion-ui`](https://atom.io/packages/fusion-ui) themes.'
+  - item: 'The core themes were removed and replaced with [`dark-bint-syntax`](https://atom.io/packages/dark-bint-syntax) and [`fusion-ui`](https://atom.io/packages/fusion-ui) themes. All the previous screenshots shown on this page were with these two themes enabled.'
