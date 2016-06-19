@@ -1,12 +1,15 @@
 ---
-date:      2016-06-10 +1000
-layout:    page
-title:     How the Atom text editor is built
-permalink: /how-atom-works/
-redirect_from:
-  - "/how-atom-is-built/"
+date:             2016-06-20 +1000
+layout:           page
+title:            "AUR Package: atom-editor-arch"
+last_modified_at: 2016-06-20
+permalink:        /atom-editor-arch/
 ---
 
-**Atom** is my favourite text editor.
+**Atom** is my favourite text editor, and much of what I do in it relates to package development. So I decided to create my own AUR package called {% include ArchLinux/aur.md package="atom-editor-arch" %} which would build the latest stable release of Atom from source code, but with the following adjustments to its bundled (or pre-installed) set of Atom packages/themes:
 
-{% include_relative table1.html %}
+<ol>
+{% for row in site.data.atom.body %}
+  <li>{{ row.item | markdownify }}</li>
+{% endfor %}
+</ol>
