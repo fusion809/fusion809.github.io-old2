@@ -1,0 +1,459 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Tue Jun 21 13:47:17 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>dpkg&minus;deb</title>
+
+</head>
+<body>
+
+<h1 align="center">dpkg&minus;deb</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#COMMANDS">COMMANDS</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#ENVIRONMENT">ENVIRONMENT</a><br>
+<a href="#NOTES">NOTES</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">dpkg&minus;deb
+&minus; Debian package archive (.deb) manipulation tool</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;deb</b>
+[<i>option</i>...] <i>command</i></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><i><b>dpkg&minus;deb</b></i>
+packs, unpacks and provides information about Debian
+archives.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Use <b>dpkg</b>
+to install and remove packages from your system.</p>
+
+<p style="margin-left:11%; margin-top: 1em">You can also
+invoke <b>dpkg&minus;deb</b> by calling <b>dpkg</b> with
+whatever options you want to pass to <b>dpkg&minus;deb</b>.
+<b>dpkg</b> will spot that you wanted <b>dpkg&minus;deb</b>
+and run it for you.</p>
+
+<h2>COMMANDS
+<a name="COMMANDS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>&minus;b</b>,
+<b>&minus;&minus;build</b> <i>directory</i>
+[<i>archive</i>|<i>directory</i>]</p>
+
+<p style="margin-left:22%;">Creates a debian archive from
+the filesystem tree stored in <i>directory</i>.
+<i>directory</i> must have a <b>DEBIAN</b> subdirectory,
+which contains the control information files such as the
+control file itself. This directory will <i>not</i> appear
+in the binary package&rsquo;s filesystem archive, but
+instead the files in it will be put in the binary
+package&rsquo;s control information area.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Unless you
+specify <b>&minus;&minus;nocheck</b>, <b>dpkg&minus;deb</b>
+will read <b>DEBIAN/control</b> and parse it. It will check
+it for syntax errors and other problems, and display the
+name of the binary package being built.
+<b>dpkg&minus;deb</b> will also check the permissions of the
+maintainer scripts and other files found in the
+<b>DEBIAN</b> control information directory.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If no
+<i>archive</i> is specified then <b>dpkg&minus;deb</b> will
+write the package into the file
+<i>directory</i><b>.deb</b>.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If the archive
+to be created already exists it will be overwritten.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If the second
+argument is a directory then <b>dpkg&minus;deb</b> will
+write to the file
+<i>package</i><b>_</b><i>version</i><b>_</b><i>arch</i><b>.deb</b>,
+or <i>package</i><b>_</b><i>version</i><b>.deb</b> if no
+<b>Architecture</b> field is present in the package control
+file. When a target directory is specified, rather than a
+file, the <b>&minus;&minus;nocheck</b> option may not be
+used (since <b>dpkg&minus;deb</b> needs to read and parse
+the package control file to determine which filename to
+use).</p>
+
+<p style="margin-left:11%;"><b>&minus;I</b>,
+<b>&minus;&minus;info</b> <i>archive</i>
+[<i>control-file-name</i>...]</p>
+
+<p style="margin-left:22%;">Provides information about a
+binary package archive.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If no
+<i>control-file-name</i>s are specified then it will print a
+summary of the contents of the package as well as its
+control file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If any
+<i>control-file-name</i>s are specified then
+<b>dpkg&minus;deb</b> will print them in the order they were
+specified; if any of the components weren&rsquo;t present it
+will print an error message to stderr about each one and
+exit with status 2.</p>
+
+<p style="margin-left:11%;"><b>&minus;W</b>,
+<b>&minus;&minus;show</b> <i>archive</i></p>
+
+<p style="margin-left:22%;">Provides information about a
+binary package archive in the format specified by the
+<b>&minus;&minus;showformat</b> argument. The default format
+displays the package&rsquo;s name and version on one line,
+separated by a tabulator.</p>
+
+<p style="margin-left:11%;"><b>&minus;f</b>,
+<b>&minus;&minus;field</b> <i>archive</i>
+[<i>control-field-name</i>...]</p>
+
+<p style="margin-left:22%;">Extracts control file
+information from a binary package archive.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If no
+<b>control&minus;file&minus;field</b>s are specified then it
+will print the whole control file.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If any are
+specified then <b>dpkg&minus;deb</b> will print their
+contents, in the order in which they appear in the control
+file. If more than one <b>control&minus;file&minus;field</b>
+is specified then <b>dpkg&minus;deb</b> will precede each
+with its field name (and a colon and space).</p>
+
+<p style="margin-left:22%; margin-top: 1em">No errors are
+reported for fields requested but not found.</p>
+
+<p style="margin-left:11%;"><b>&minus;c</b>,
+<b>&minus;&minus;contents</b> <i>archive</i></p>
+
+<p style="margin-left:22%;">Lists the contents of the
+filesystem tree archive portion of the package archive. It
+is currently produced in the format generated by
+<b>tar</b>&rsquo;s verbose listing.</p>
+
+<p style="margin-left:11%;"><b>&minus;x</b>,
+<b>&minus;&minus;extract</b> <i>archive directory</i></p>
+
+<p style="margin-left:22%;">Extracts the filesystem tree
+from a package archive into the specified directory.</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note that
+extracting a package to the root directory will <i>not</i>
+result in a correct installation! Use <b>dpkg</b> to install
+packages.</p>
+
+
+<p style="margin-left:22%; margin-top: 1em"><i>directory</i>
+(but not its parents) will be created if necessary, and its
+permissions modified to match the contents of the
+package.</p>
+
+<p style="margin-left:11%;"><b>&minus;X</b>,
+<b>&minus;&minus;vextract</b> <i>archive directory</i></p>
+
+<p style="margin-left:22%;">Is like
+<b>&minus;&minus;extract</b> (<b>&minus;x</b>) with
+<b>&minus;&minus;verbose</b> (<b>&minus;v</b>) which prints
+a listing of the files extracted as it goes.</p>
+
+<p style="margin-left:11%;"><b>&minus;R</b>,
+<b>&minus;&minus;raw&minus;extract</b> <i>archive
+directory</i></p>
+
+<p style="margin-left:22%;">Extracts the filesystem tree
+from a package archive into a specified directory, and the
+control information files into a DEBIAN subdirectory of the
+specified directory.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The target
+directory (but not its parents) will be created if
+necessary.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;ctrl&minus;tarfile</b>
+<i>archive</i></p>
+
+<p style="margin-left:22%;">Extracts the control data from
+a binary package and sends it to standard output in
+<b>tar</b> format (since dpkg 1.17.14). Together with
+<b>tar</b>(1) this can be used to extract a particular
+control file from a package archive. The input archive will
+always be processed sequentially.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;fsys&minus;tarfile</b>
+<i>archive</i></p>
+
+<p style="margin-left:22%;">Extracts the filesystem tree
+data from a binary package and sends it to standard output
+in <b>tar</b> format. Together with <b>tar</b>(1) this can
+be used to extract a particular file from a package archive.
+The input archive will always be processed sequentially.</p>
+
+<p style="margin-left:11%;"><b>&minus;e</b>,
+<b>&minus;&minus;control</b> <i>archive</i>
+[<i>directory</i>]</p>
+
+<p style="margin-left:22%;">Extracts the control
+information files from a package archive into the specified
+directory.</p>
+
+<p style="margin-left:22%; margin-top: 1em">If no directory
+is specified then a subdirectory <b>DEBIAN</b> in the
+current directory is used.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The target
+directory (but not its parents) will be created if
+necessary.</p>
+
+<p style="margin-left:11%;"><b>&minus;?</b>,
+<b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Show the usage message and
+exit.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Show the version and exit.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>&minus;&minus;showformat=</b><i>format</i></p>
+
+<p style="margin-left:22%;">This option is used to specify
+the format of the output <b>&minus;&minus;show</b> will
+produce. The format is a string that will be output for each
+package listed.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The string may
+reference any status field using the
+&quot;${<i>field-name</i>}&quot; form, a list of the valid
+fields can be easily produced using <b>&minus;I</b> on the
+same package. A complete explanation of the formatting
+options (including escape sequences and field tabbing) can
+be found in the explanation of the
+<b>&minus;&minus;showformat</b> option in
+<b>dpkg&minus;query</b>(1).</p>
+
+<p style="margin-left:22%; margin-top: 1em">The default for
+this field is &quot;${Package}\t${Version}\n&quot;.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;z</b><i>compress-level</i></p>
+
+<p style="margin-left:22%;">Specify which compression level
+to use on the compressor backend, when building a package
+(default is 9 for gzip and bzip2, 6 for xz and lzma). The
+accepted values are 0-9 with: 0 being mapped to compressor
+none for gzip and 0 mapped to 1 for bzip2. Before dpkg
+1.16.2 level 0 was equivalent to compressor none for all
+compressors.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;S</b><i>compress-strategy</i></p>
+
+<p style="margin-left:22%;">Specify which compression
+strategy to use on the compressor backend, when building a
+package (since dpkg 1.16.2). Allowed values are <i>none</i>
+(since dpkg 1.16.4), <i>filtered</i>, <i>huffman</i>,
+<i>rle</i> and <i>fixed</i> for gzip (since dpkg 1.17.0) and
+<i>extreme</i> for xz.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;Z</b><i>compress-type</i></p>
+
+<p style="margin-left:22%;">Specify which compression type
+to use when building a package. Allowed values are
+<i>gzip</i>, <i>xz</i>, <i>bzip2</i> (deprecated),
+<i>lzma</i> (deprecated), and <i>none</i> (default is
+<i>xz</i>).</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;uniform&minus;compression</b></p>
+
+<p style="margin-left:22%;">Specify that the same
+compression parameters should be used for all archive
+members (i.e. <b>control.tar</b> and <b>data.tar</b>).
+Otherwise only the <b>data.tar</b> member will use those
+parameters. The only supported compression types allowed to
+be uniformly used are <i>none</i>, <i>gzip</i> and
+<i>xz</i>.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;deb&minus;format=</b><i>format</i></p>
+
+<p style="margin-left:22%;">Set the archive format version
+used when building (since dpkg 1.17.0). Allowed values are
+<i>2.0</i> for the new format, and <i>0.939000</i> for the
+old one (default is <i>2.0</i>).</p>
+
+<p style="margin-left:22%; margin-top: 1em">The old archive
+format is less easily parsed by non-Debian tools and is now
+obsolete; its only use is when building packages to be
+parsed by versions of dpkg older than 0.93.76 (September
+1995), which was released as i386 a.out only.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>&minus;&minus;new</b></p></td>
+<td width="4%"></td>
+<td width="75%">
+
+
+<p>This is a legacy alias for
+<b>&minus;&minus;deb&minus;format=2.0</b>.</p> </td>
+<td width="3%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>&minus;&minus;old</b></p></td>
+<td width="4%"></td>
+<td width="75%">
+
+
+<p>This is a legacy alias for
+<b>&minus;&minus;deb&minus;format=0.939000</b>.</p> </td>
+<td width="3%">
+</td></tr>
+</table>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;nocheck</b></p>
+
+<p style="margin-left:22%;">Inhibits <b>dpkg&minus;deb
+&minus;&minus;build</b>&rsquo;s usual checks on the proposed
+contents of an archive. You can build any archive you want,
+no matter how broken, this way.</p>
+
+<p style="margin-left:11%;"><b>&minus;v</b>,
+<b>&minus;&minus;verbose</b></p>
+
+<p style="margin-left:22%;">Enables verbose output. This
+currently only affects <b>&minus;&minus;extract</b> making
+it behave like <b>&minus;&minus;vextract</b>.</p>
+
+<p style="margin-left:11%;"><b>&minus;D</b>,
+<b>&minus;&minus;debug</b></p>
+
+<p style="margin-left:22%;">Enables debugging output. This
+is not very interesting.</p>
+
+<h2>ENVIRONMENT
+<a name="ENVIRONMENT"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p style="margin-top: 1em"><b>TMPDIR</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em">If set, <b>dpkg&minus;deb</b>
+will use it as the directory in which to create temporary
+files and directories.</p></td></tr>
+</table>
+
+<h2>NOTES
+<a name="NOTES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Do not attempt
+to use just <b>dpkg&minus;deb</b> to install software! You
+must use <b>dpkg</b> proper to ensure that all the files are
+correctly placed and the package&rsquo;s scripts run and its
+status and contents recorded.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;deb
+&minus;I</b> <i>package1</i><b>.deb</b>
+<i>package2</i><b>.deb</b> does the wrong thing.</p>
+
+<p style="margin-left:11%; margin-top: 1em">There is no
+authentication on <b>.deb</b> files; in fact, there
+isn&rsquo;t even a straightforward checksum. (Higher level
+tools like APT support authenticating <b>.deb</b> packages
+retrieved from a given repository, and most packages
+nowadays provide an md5sum control file generated by
+debian/rules. Though this is not directly supported by the
+lower level tools.)</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>deb</b>(5),
+<b>deb&minus;control</b>(5), <b>dpkg</b>(1),
+<b>dselect</b>(1).</p>
+<hr>
+</body>
+</html>

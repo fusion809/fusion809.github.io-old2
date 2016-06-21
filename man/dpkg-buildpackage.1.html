@@ -1,0 +1,843 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Tue Jun 21 13:34:04 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>dpkg&minus;buildpackage</title>
+
+</head>
+<body>
+
+<h1 align="center">dpkg&minus;buildpackage</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#ENVIRONMENT">ENVIRONMENT</a><br>
+<a href="#NOTES">NOTES</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">dpkg&minus;buildpackage
+&minus; build binary or source packages from sources</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;buildpackage</b>
+[<i>option</i>...]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;buildpackage</b>
+is a program that automates the process of building a Debian
+package. It consists of the following steps:</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>1.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It prepares the build environment by setting various
+environment variables (see <b>ENVIRONMENT</b>), runs the
+<b>init</b> hook, and calls <b>dpkg&minus;source
+&minus;&minus;before&minus;build</b> (unless <b>&minus;T</b>
+or <b>&minus;&minus;target</b> has been used).</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>2.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It checks that the build-dependencies and
+build-conflicts are satisfied (unless <b>&minus;d</b> is
+specified).</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>3.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>If a specific target has been selected with the
+<b>&minus;T</b> or <b>&minus;&minus;target</b> option, it
+calls that target and stops here. Otherwise it runs the
+<b>preclean</b> hook and calls <b>fakeroot debian/rules
+clean</b> to clean the build-tree (unless <b>&minus;nc</b>
+is specified).</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>4.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It runs the <b>source</b> hook and calls
+<b>dpkg&minus;source &minus;b</b> to generate the source
+package (unless a binary&minus;only build has been requested
+with <b>&minus;b</b>, <b>&minus;B</b> or
+<b>&minus;A</b>).</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>5.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It runs the <b>build</b> hook and calls
+<b>debian/rules</b> <i>build-target</i>, then runs the
+<b>binary</b> hook followed by <b>fakeroot debian/rules</b>
+<i>binary-target</i> (unless a source-only build has been
+requested with <b>&minus;S</b>). Note that
+<i>build-target</i> and <i>binary-target</i> are either
+<b>build</b> and <b>binary</b> (default case, or if
+<b>&minus;b</b> is specified), or <b>build&minus;arch</b>
+and <b>binary&minus;arch</b> (if <b>&minus;B</b> or
+<b>&minus;G</b> are specified), or <b>build&minus;indep</b>
+and <b>binary&minus;indep</b> (if <b>&minus;A</b> or
+<b>&minus;g</b> are specified).</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>6.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It runs the <b>changes</b> hook and calls
+<b>dpkg&minus;genchanges</b> to generate a <b>.changes</b>
+file. Many <b>dpkg&minus;buildpackage</b> options are
+forwarded to <b>dpkg&minus;genchanges</b>.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>7.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It runs the <b>postclean</b> hook and if
+<b>&minus;tc</b> is specified, it will call <b>fakeroot
+debian/rules clean</b> again.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>8.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It calls <b>dpkg&minus;source
+&minus;&minus;after&minus;build</b>.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>9.</b></p></td>
+<td width="1%"></td>
+<td width="85%">
+
+
+<p>It runs the <b>check</b> hook and calls a package
+checker for the <b>.changes</b> file (if a command is
+specified in <b>DEB_CHECK_COMMAND</b> or with
+<b>&minus;&minus;check&minus;command</b>).</p> </td></tr>
+</table>
+
+<p style="margin-left:11%;"><b>10.</b></p>
+
+<p style="margin-left:15%;">It runs the <b>sign</b> hook
+and calls <b>gpg2</b> or <b>gpg</b> to sign the <b>.dsc</b>
+file (if any, unless <b>&minus;us</b> is specified or on
+UNRELEASED builds), and the <b>.changes</b> file (unless
+<b>&minus;uc</b> is specified or on UNRELEASED builds).</p>
+
+<p style="margin-left:11%;"><b>11.</b></p>
+
+<p style="margin-left:15%;">It runs the <b>done</b>
+hook.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>&minus;g</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em">Specifies a build limited to
+source and architecture independent packages. Passed to
+<b>dpkg&minus;genchanges</b>.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;G</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Specifies a build limited to source and architecture
+specific packages. Passed to
+<b>dpkg&minus;genchanges</b>.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;b</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Specifies a binary-only build, no source files are to be
+built and/or distributed. Passed to
+<b>dpkg&minus;genchanges</b>.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;B</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Specifies a binary-only build, limited to architecture
+dependent packages. Passed to
+<b>dpkg&minus;genchanges</b>.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;A</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Specifies a binary-only build, limited to architecture
+independent packages. Passed to
+<b>dpkg&minus;genchanges</b>.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;S</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Specifies a source-only build, no binary packages need
+to be made. Passed to <b>dpkg&minus;genchanges</b>.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;F</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Specifies a normal full build, binary and source
+packages will be built. This is the same as the default case
+when no build option is specified.</p></td></tr>
+</table>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;target=</b><i>target</i>
+<b><br>
+&minus;&minus;target</b> <i>target</i> <b><br>
+&minus;T</b><i>target</i></p>
+
+<p style="margin-left:22%;">Calls <b>debian/rules</b>
+<i>target</i> after having setup the build environment and
+stops the package build process here. If
+<b>&minus;&minus;as&minus;root</b> is also given, then the
+command is executed as root (see <b>&minus;r</b>). Note that
+official targets that are required to be run as root by the
+Debian policy do not need this option.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;as&minus;root</b></p>
+
+<p style="margin-left:22%;">Only meaningful together with
+<b>&minus;&minus;target</b>. Requires that the target be run
+with root rights.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;si</b></p></td>
+<td width="85%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;sa</b></p></td>
+<td width="85%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;sd</b></p></td>
+<td width="85%">
+</td></tr>
+</table>
+
+<p style="margin-left:11%;"><b>&minus;v</b><i>version</i>
+<b><br>
+&minus;C</b><i>changes-description</i> <b><br>
+&minus;m</b><i>maintainer-address</i> <b><br>
+&minus;e</b><i>maintainer-address</i></p>
+
+<p style="margin-left:22%;">Passed unchanged to
+<b>dpkg&minus;genchanges</b>. See its manual page.</p>
+
+<p style="margin-left:11%;"><b>&minus;a</b>,
+<b>&minus;&minus;host&minus;arch</b> <i>architecture</i></p>
+
+<p style="margin-left:22%;">Specify the Debian architecture
+we build for. The architecture of the machine we build on is
+determined automatically, and is also the default for the
+host machine.</p>
+
+<p style="margin-left:11%;"><b>&minus;t</b>,
+<b>&minus;&minus;host&minus;type</b>
+<i>gnu-system-type</i></p>
+
+<p style="margin-left:22%;">Specify the GNU system type we
+build for. It can be used in place of
+&minus;&minus;host&minus;arch or as a complement to override
+the default GNU system type of the host Debian
+architecture.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;target&minus;arch</b>
+<i>architecture</i></p>
+
+<p style="margin-left:22%;">Specify the Debian architecture
+the binaries built will build for. The default value is the
+host machine.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;target&minus;type</b>
+<i>gnu-system-type</i></p>
+
+<p style="margin-left:22%;">Specify the GNU system type the
+binaries built will build for. It can be used in place of
+&minus;&minus;target&minus;arch or as a complement to
+override the default GNU system type of the target Debian
+architecture.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;P</b><i>profile</i>[<b>,</b>...]</p>
+
+<p style="margin-left:22%;">Specify the profile(s) we
+build, as a comma-separated list. The default behavior is to
+build for no specific profile. Also sets them (as a space
+separated list) as the <b>DEB_BUILD_PROFILES</b> environment
+variable which allows, for example, <b>debian/rules</b>
+files to use this information for conditional builds.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;j</b>[<i>jobs</i>|<b>auto</b>]</p>
+
+<p style="margin-left:22%;">Number of jobs allowed to be
+run simultaneously, number of jobs matching the number of
+online processors if <b>auto</b> is specified, or unlimited
+number if <i>jobs</i> is not specified, equivalent to the
+<b>make</b>(1) option of the same name. Will add itself to
+the <b>MAKEFLAGS</b> environment variable, which should
+cause all subsequent make invocations to inherit the option.
+Also adds <b>parallel=</b><i>jobs</i> or <b>parallel=</b> to
+the <b>DEB_BUILD_OPTIONS</b> environment variable which
+allows debian/rules files to use this information for their
+own purposes. The <b>parallel=</b><i>jobs</i> or
+<b>parallel=</b> option in <b>DEB_BUILD_OPTIONS</b>
+environment variable will override the <b>&minus;j</b> value
+if this option is given. Note that the <b>auto</b> value
+will get replaced by the actual number of currently active
+processors, and as such will not get propagated to any child
+process. If the number of online processors cannot be
+inferred then the code will fallback to using an unlimited
+number.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;D</b></p></td>
+<td width="7%"></td>
+<td width="78%">
+
+
+<p>Check build dependencies and conflicts; abort if
+unsatisfied. This is the default behavior.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;d</b></p></td>
+<td width="7%"></td>
+<td width="78%">
+
+
+<p>Do not check build dependencies and conflicts.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;nc</b></p></td>
+<td width="7%"></td>
+<td width="78%">
+
+
+<p>Do not clean the source tree (implies <b>&minus;b</b> if
+nothing else has been selected among <b>&minus;F</b>,
+<b>&minus;g</b>, <b>&minus;G</b>, <b>&minus;B</b>,
+<b>&minus;A</b> or <b>&minus;S</b>).</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;tc</b></p></td>
+<td width="7%"></td>
+<td width="78%">
+
+
+<p>Clean the source tree (using <i>gain-root-command</i>
+<b>debian/rules clean</b>) after the package has been
+built.</p> </td></tr>
+</table>
+
+
+<p style="margin-left:11%;"><b>&minus;r</b><i>gain-root-command</i></p>
+
+<p style="margin-left:22%;">When
+<b>dpkg&minus;buildpackage</b> needs to execute part of the
+build process as root, it prefixes the command it executes
+with <i>gain-root-command</i> if one has been specified.
+Otherwise, if none has been specified, <b>fakeroot</b> will
+be used by default, if the command is present.
+<i>gain-root-command</i> should start with the name of a
+program on the <b>PATH</b> and will get as arguments the
+name of the real command to run and the arguments it should
+take. <i>gain-root-command</i> can include parameters (they
+must be space-separated) but no shell metacharacters.
+<i>gain-root-command</i> might typically be <b>fakeroot</b>,
+<b>sudo</b>, <b>super</b> or <b>really</b>. <b>su</b> is not
+suitable, since it can only invoke the user&rsquo;s shell
+with <b>&minus;c</b> instead of passing arguments
+individually to the command to be run.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;R</b><i>rules-file</i></p>
+
+<p style="margin-left:22%;">Building a Debian package
+usually involves invoking <b>debian/rules</b> as a command
+with several standard parameters. With this option
+it&rsquo;s possible to use another program invocation to
+build the package (it can include space separated
+parameters). Alternatively it can be used to execute the
+standard rules file with another make program (for example
+by using <b>/usr/local/bin/make &minus;f debian/rules</b> as
+<i>rules-file</i>).</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;check&minus;command=</b><i>check-command</i></p>
+
+<p style="margin-left:22%;">Command used to check the
+<b>.changes</b> file itself and any artifact built
+referenced in the file. The command should take the
+<b>.changes</b> pathname as an argument. This command will
+usually be <b>lintian</b>.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;check&minus;option=</b><i>opt</i></p>
+
+<p style="margin-left:22%;">Pass option <i>opt</i> to the
+<i>check-command</i> specified with <b>DEB_CHECK_COMMAND</b>
+or <b>&minus;&minus;check&minus;command</b>. Can be used
+multiple times.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;hook&minus;</b><i>hook-name</i><b>=</b><i>hook-command</i></p>
+
+<p style="margin-left:22%;">Set the specified shell code
+<i>hook-command</i> as the hook <i>hook-name</i>, which will
+run at the times specified in the run steps. The hooks will
+always be executed even if the following action is not
+performed (except for the <b>binary</b> hook).</p>
+
+<p style="margin-left:22%; margin-top: 1em">Note: Hooks can
+affect the build process, and cause build failures if their
+commands fail, so watch out for unintended consequences.</p>
+
+<p style="margin-left:22%; margin-top: 1em">The current
+<i>hook-name</i> supported are:</p>
+
+<p style="margin-left:22%; margin-top: 1em"><b>init
+preclean source build binary changes postclean check sign
+done</b></p>
+
+<p style="margin-left:22%; margin-top: 1em">The
+<i>hook-command</i> supports the following substitution
+format string, which will get applied to it before
+execution:</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="3%">
+
+
+<p><b>%%</b></p></td>
+<td width="7%"></td>
+<td width="68%">
+
+
+<p>A single % character.</p></td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="3%">
+
+
+<p><b>%a</b></p></td>
+<td width="7%"></td>
+<td width="68%">
+
+
+<p>A boolean value (0 or 1), representing whether the
+following action is being performed.</p></td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="3%">
+
+
+<p><b>%p</b></p></td>
+<td width="7%"></td>
+<td width="68%">
+
+
+<p>The source package name.</p></td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="3%">
+
+
+<p><b>%v</b></p></td>
+<td width="7%"></td>
+<td width="68%">
+
+
+<p>The source package version.</p></td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="3%">
+
+
+<p><b>%s</b></p></td>
+<td width="7%"></td>
+<td width="68%">
+
+
+<p>The source package version (without the epoch).</p></td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="3%">
+
+
+<p><b>%u</b></p></td>
+<td width="7%"></td>
+<td width="68%">
+
+
+<p>The upstream version.</p></td></tr>
+</table>
+
+
+<p style="margin-left:11%;"><b>&minus;p</b><i>sign-command</i></p>
+
+<p style="margin-left:22%;">When
+<b>dpkg&minus;buildpackage</b> needs to execute GPG to sign
+a source control (<b>.dsc</b>) file or a <b>.changes</b>
+file it will run <i>sign-command</i> (searching the
+<b>PATH</b> if necessary) instead of <b>gpg2</b> or
+<b>gpg</b>. <i>sign-command</i> will get all the arguments
+that <b>gpg2</b> or <b>gpg</b> would have gotten.
+<i>sign-command</i> should not contain spaces or any other
+shell metacharacters.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;k</b><i>key-id</i></p>
+
+<p style="margin-left:22%;">Specify a key-ID to use when
+signing packages.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;us</b></p></td>
+<td width="7%"></td>
+<td width="47%">
+
+
+<p>Do not sign the source package.</p></td>
+<td width="31%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+
+<p><b>&minus;uc</b></p></td>
+<td width="7%"></td>
+<td width="47%">
+
+
+<p>Do not sign the <b>.changes</b> file.</p></td>
+<td width="31%">
+</td></tr>
+</table>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;force&minus;sign</b></p>
+
+<p style="margin-left:22%;">Force the signing of the
+resulting files (since dpkg 1.17.0), regardless of
+<b>&minus;us</b> or <b>&minus;uc</b> or other internal
+heuristics.</p>
+
+<p style="margin-left:11%;"><b>&minus;i</b>[<i>regex</i>]
+<b><br>
+&minus;I</b>[<i>pattern</i>] <b><br>
+&minus;s</b>[<b>nsAkurKUR</b>]</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="9%">
+
+
+<p><b>&minus;z</b>, <b>&minus;Z</b></p></td>
+<td width="2%"></td>
+<td width="78%">
+
+
+<p>Passed unchanged to <b>dpkg&minus;source</b>. See its
+manual page.</p></td></tr>
+</table>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;source&minus;option=</b><i>opt</i></p>
+
+<p style="margin-left:22%;">Pass option <i>opt</i> to
+<b>dpkg&minus;source</b>. Can be used multiple times.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;changes&minus;option=</b><i>opt</i></p>
+
+<p style="margin-left:22%;">Pass option <i>opt</i> to
+<b>dpkg&minus;genchanges</b>. Can be used multiple
+times.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;admindir=</b><i>dir</i>
+<b><br>
+&minus;&minus;admindir</b> <i>dir</i></p>
+
+<p style="margin-left:22%;">Change the location of the
+<b>dpkg</b> database. The default location is
+<i>/var/lib/dpkg</i>.</p>
+
+<p style="margin-left:11%;"><b>&minus;?</b>,
+<b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Show the usage message and
+exit.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Show the version and exit.</p>
+
+<h2>ENVIRONMENT
+<a name="ENVIRONMENT"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>DEB_CHECK_COMMAND</b></p>
+
+<p style="margin-left:22%;">If set, it will be used as the
+command to check the <b>.changes</b> file. Overridden by the
+<b>&minus;&minus;check&minus;command</b> option.</p>
+
+<p style="margin-left:11%;"><b>DEB_SIGN_KEYID</b></p>
+
+<p style="margin-left:22%;">If set, it will be used to sign
+the <b>.changes</b> and <b>.dsc</b> files. Overridden by the
+<b>&minus;k</b> option.</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_OPTIONS</b></p>
+
+<p style="margin-left:22%;">If set, and containing
+<b>nocheck</b> the <b>DEB_CHECK_COMMAND</b> variable will be
+ignored.</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_PROFILES</b></p>
+
+<p style="margin-left:22%;">If set, it will be used as the
+active build profile(s) for the package being built. It is a
+space separated list of profile names. Overridden by the
+<b>&minus;P</b> option.</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Reliance on
+exported environment flags</b> <br>
+Even if <b>dpkg&minus;buildpackage</b> exports some
+variables, <b>debian/rules</b> should not rely on their
+presence and should instead use the respective interface to
+retrieve the needed values.</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Variables
+set by dpkg&minus;architecture <br>
+dpkg&minus;architecture</b> is called with the
+<b>&minus;a</b> and <b>&minus;t</b> parameters forwarded.
+Any variable that is output by its <b>&minus;s</b> option is
+integrated in the build environment.</p>
+
+<h2>NOTES
+<a name="NOTES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>Compiler
+flags are no longer exported</b> <br>
+Between dpkg 1.14.17 and 1.16.1,
+<b>dpkg&minus;buildpackage</b> exported compiler flags
+(<b>CFLAGS</b>, <b>CXXFLAGS</b>, <b>FFLAGS</b>,
+<b>CPPFLAGS</b> and <b>LDFLAGS</b>) with values as returned
+by <b>dpkg&minus;buildflags</b>. This is no longer the
+case.</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Default
+build targets <br>
+dpkg&minus;buildpackage</b> is using the
+<b>build&minus;arch</b> and <b>build&minus;indep</b> targets
+since dpkg 1.16.2. Those targets are thus mandatory. But to
+avoid breakages of existing packages, and ease the
+transition, it will fallback to using the <b>build</b>
+target if <b>make &minus;f debian/rules &minus;qn</b>
+<i>build-target</i> returns 2 as exit code.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">It should be
+possible to specify spaces and shell metacharacters and
+initial arguments for <i>gain-root-command</i> and
+<i>sign-command</i>.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;source</b>(1),
+<b>dpkg&minus;architecture</b>(1),
+<b>dpkg&minus;buildflags</b>(1),
+<b>dpkg&minus;genchanges</b>(1), <b>fakeroot</b>(1),
+<b>lintian</b>(1), <b>gpg2</b>(1), <b>gpg</b>(1).</p>
+<hr>
+</body>
+</html>

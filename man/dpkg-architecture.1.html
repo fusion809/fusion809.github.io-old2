@@ -1,0 +1,601 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Tue Jun 21 13:33:17 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>dpkg&minus;architecture</title>
+
+</head>
+<body>
+
+<h1 align="center">dpkg&minus;architecture</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#COMMANDS">COMMANDS</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#TERMS">TERMS</a><br>
+<a href="#VARIABLES">VARIABLES</a><br>
+<a href="#FILES">FILES</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#NOTES">NOTES</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">dpkg&minus;architecture
+&minus; set and determine the architecture for package
+building</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;architecture</b>
+[<i>option</i>...] [<i>command</i>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;architecture</b>
+does provide a facility to determine and set the build and
+host architecture for package building.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The build
+architecture is always determined by an external call to
+<b>dpkg</b>(1), and can not be set at the command line.</p>
+
+<p style="margin-left:11%; margin-top: 1em">You can specify
+the host architecture by providing one or both of the
+options <b>&minus;&minus;host&minus;arch</b> and
+<b>&minus;&minus;host&minus;type</b>. The default is
+determined by an external call to <b>gcc</b>(1), or the same
+as the build architecture if <b>CC</b> or gcc are both not
+available. One out of <b>&minus;&minus;host&minus;arch</b>
+and <b>&minus;&minus;host&minus;type</b> is sufficient, the
+value of the other will be set to a usable default. Indeed,
+it is often better to only specify one, because
+<b>dpkg&minus;architecture</b> will warn you if your choice
+does not match the default.</p>
+
+<h2>COMMANDS
+<a name="COMMANDS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>&minus;l</b>,
+<b>&minus;&minus;list</b></p>
+
+<p style="margin-left:22%;">Print the environment
+variables, one each line, in the format
+<i>VARIABLE=value</i>. This is the default action.</p>
+
+<p style="margin-left:11%;"><b>&minus;e</b>,
+<b>&minus;&minus;equal</b> <i>architecture</i></p>
+
+<p style="margin-left:22%;">Check for equality of
+architecture (since dpkg 1.13.13). It compares the current
+or specified Debian host architecture against
+<i>architecture</i>, to check if they are equal. This action
+will not expand the architecture wildcards. Command finishes
+with an exit status of 0 if matched, 1 if not matched.</p>
+
+<p style="margin-left:11%;"><b>&minus;i</b>,
+<b>&minus;&minus;is</b> <i>architecture-wildcard</i></p>
+
+<p style="margin-left:22%;">Check for identity of
+architecture (since dpkg 1.13.13). It compares the current
+or specified Debian host architecture against
+<i>architecture-wildcard</i> after having expanded it as an
+architecture wildcard, to check if they match. Command
+finishes with an exit status of 0 if matched, 1 if not
+matched.</p>
+
+<p style="margin-left:11%;"><b>&minus;q</b>,
+<b>&minus;&minus;query</b> <i>variable-name</i></p>
+
+<p style="margin-left:22%;">Print the value of a single
+variable.</p>
+
+<p style="margin-left:11%;"><b>&minus;s</b>,
+<b>&minus;&minus;print&minus;set</b></p>
+
+<p style="margin-left:22%;">Print an export command. This
+can be used to set the environment variables using eval.</p>
+
+<p style="margin-left:11%;"><b>&minus;u</b>,
+<b>&minus;&minus;print&minus;unset</b></p>
+
+<p style="margin-left:22%;">Print a similar command to
+<b>&minus;&minus;print&minus;unset</b> but to unset all
+variables.</p>
+
+<p style="margin-left:11%;"><b>&minus;c</b>,
+<b>&minus;&minus;command</b> <i>command</i></p>
+
+<p style="margin-left:22%;">Execute a <i>command</i> in an
+environment which has all variables set to the determined
+value.</p>
+
+<p style="margin-left:11%;"><b>&minus;L</b>,
+<b>&minus;&minus;list&minus;known</b></p>
+
+<p style="margin-left:22%;">Print a list of valid
+architecture names. Possibly restricted by one or more of
+the matching options
+<b>&minus;&minus;match&minus;wildcard</b>,
+<b>&minus;&minus;match&minus;bits</b> or
+<b>&minus;&minus;match&minus;endian</b> (since dpkg
+1.17.14).</p>
+
+<p style="margin-left:11%;"><b>&minus;?</b>,
+<b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Show the usage message and
+exit.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Show the version and exit.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>&minus;a</b>,
+<b>&minus;&minus;host&minus;arch</b> <i>architecture</i></p>
+
+<p style="margin-left:22%;">Set the host Debian
+architecture.</p>
+
+<p style="margin-left:11%;"><b>&minus;t</b>,
+<b>&minus;&minus;host&minus;type</b>
+<i>gnu-system-type</i></p>
+
+<p style="margin-left:22%;">Set the host GNU system
+type.</p>
+
+<p style="margin-left:11%;"><b>&minus;A</b>,
+<b>&minus;&minus;target&minus;arch</b>
+<i>architecture</i></p>
+
+<p style="margin-left:22%;">Set the target Debian
+architecture. This is only needed when building a
+cross-toolchain, one that will be built on the build
+architecture, to be run on the host architecture, and to
+build code for the target architecture.</p>
+
+<p style="margin-left:11%;"><b>&minus;T</b>,
+<b>&minus;&minus;target&minus;type</b>
+<i>gnu-system-type</i></p>
+
+<p style="margin-left:22%;">Set the target GNU system
+type.</p>
+
+<p style="margin-left:11%;"><b>&minus;W</b>,
+<b>&minus;&minus;match&minus;wildcard</b>
+<i>architecture-wildcard</i></p>
+
+<p style="margin-left:22%;">Restrict the architectures
+listed by <b>&minus;&minus;list&minus;known</b> to ones
+matching the specified architecture wildcard (since dpkg
+1.17.14).</p>
+
+<p style="margin-left:11%;"><b>&minus;B</b>,
+<b>&minus;&minus;match&minus;bits</b>
+<i>architecture-bits</i></p>
+
+<p style="margin-left:22%;">Restrict the architectures
+listed by <b>&minus;&minus;list&minus;known</b> to ones with
+the specified CPU bits (since dpkg 1.17.14). Either
+<b>32</b> or <b>64</b>.</p>
+
+<p style="margin-left:11%;"><b>&minus;E</b>,
+<b>&minus;&minus;match&minus;endian</b>
+<i>architecture-endianness</i></p>
+
+<p style="margin-left:22%;">Restrict the architectures
+listed by <b>&minus;&minus;list&minus;known</b> to ones with
+the specified endianness (since dpkg 1.17.14). Either
+<b>little</b> or <b>big</b>.</p>
+
+<p style="margin-left:11%;"><b>&minus;f</b>,
+<b>&minus;&minus;force</b></p>
+
+<p style="margin-left:22%;">Values set by existing
+environment variables with the same name as used by the
+scripts are honored (i.e. used by
+<b>dpkg&minus;architecture</b>), except if this force flag
+is present. This allows the user to override a value even
+when the call to <b>dpkg&minus;architecture</b> is buried in
+some other script (for example
+<b>dpkg&minus;buildpackage</b>(1)).</p>
+
+<h2>TERMS
+<a name="TERMS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">build
+machine</p>
+
+<p style="margin-left:17%;">The machine the package is
+built on.</p>
+
+<p style="margin-left:11%;">host machine</p>
+
+<p style="margin-left:17%;">The machine the package is
+built for.</p>
+
+<p style="margin-left:11%;">target machine</p>
+
+<p style="margin-left:17%;">The machine the compiler is
+building for.</p>
+
+<p style="margin-left:11%;">Debian architecture</p>
+
+<p style="margin-left:17%;">The Debian architecture string,
+which specifies the binary tree in the FTP archive.
+Examples: i386, sparc, hurd&minus;i386.</p>
+
+<p style="margin-left:11%;">architecture wildcard</p>
+
+<p style="margin-left:17%;">An architecture wildcard is a
+special architecture string that will match any real
+architecture being part of it. The general form is
+&lt;kernel&gt;&minus;&lt;cpu&gt;. Examples: linux&minus;any,
+any&minus;i386, hurd&minus;any.</p>
+
+<p style="margin-left:11%;">GNU system type</p>
+
+<p style="margin-left:17%;">An architecture specification
+string consisting of two parts separated by a hyphen: cpu
+and system. Examples: i386&minus;linux&minus;gnu,
+sparc&minus;linux&minus;gnu, i386&minus;gnu,
+x86_64&minus;netbsd.</p>
+
+<h2>VARIABLES
+<a name="VARIABLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The following
+variables are set by <b>dpkg&minus;architecture</b>: <b><br>
+DEB_BUILD_ARCH</b></p>
+
+<p style="margin-left:17%;">The Debian architecture of the
+build machine.</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_ARCH_OS</b></p>
+
+<p style="margin-left:17%;">The Debian system name of the
+build machine (since dpkg 1.13.2).</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_ARCH_CPU</b></p>
+
+<p style="margin-left:17%;">The Debian cpu name of the
+build machine (since dpkg 1.13.2).</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_ARCH_BITS</b></p>
+
+<p style="margin-left:17%;">The pointer size of the build
+machine (in bits; since dpkg 1.15.4).</p>
+
+
+<p style="margin-left:11%;"><b>DEB_BUILD_ARCH_ENDIAN</b></p>
+
+<p style="margin-left:17%;">The endianness of the build
+machine (little / big; since dpkg 1.15.4).</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_GNU_CPU</b></p>
+
+<p style="margin-left:17%;">The CPU part of
+<b>DEB_BUILD_GNU_TYPE</b>.</p>
+
+
+<p style="margin-left:11%;"><b>DEB_BUILD_GNU_SYSTEM</b></p>
+
+<p style="margin-left:17%;">The System part of
+<b>DEB_BUILD_GNU_TYPE</b>.</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_GNU_TYPE</b></p>
+
+<p style="margin-left:17%;">The GNU system type of the
+build machine.</p>
+
+<p style="margin-left:11%;"><b>DEB_BUILD_MULTIARCH</b></p>
+
+<p style="margin-left:17%;">The clarified GNU system type
+of the build machine, used for filesystem paths (since dpkg
+1.16.0).</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_ARCH</b></p>
+
+<p style="margin-left:17%;">The Debian architecture of the
+host machine.</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_ARCH_OS</b></p>
+
+<p style="margin-left:17%;">The Debian system name of the
+host machine (since dpkg 1.13.2).</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_ARCH_CPU</b></p>
+
+<p style="margin-left:17%;">The Debian cpu name of the host
+machine (since dpkg 1.13.2).</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_ARCH_BITS</b></p>
+
+<p style="margin-left:17%;">The pointer size of the host
+machine (in bits; since dpkg 1.15.4).</p>
+
+
+<p style="margin-left:11%;"><b>DEB_HOST_ARCH_ENDIAN</b></p>
+
+<p style="margin-left:17%;">The endianness of the host
+machine (little / big; since dpkg 1.15.4).</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_GNU_CPU</b></p>
+
+<p style="margin-left:17%;">The CPU part of
+<b>DEB_HOST_GNU_TYPE</b>.</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_GNU_SYSTEM</b></p>
+
+<p style="margin-left:17%;">The System part of
+<b>DEB_HOST_GNU_TYPE</b>.</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_GNU_TYPE</b></p>
+
+<p style="margin-left:17%;">The GNU system type of the host
+machine.</p>
+
+<p style="margin-left:11%;"><b>DEB_HOST_MULTIARCH</b></p>
+
+<p style="margin-left:17%;">The clarified GNU system type
+of the host machine, used for filesystem paths (since dpkg
+1.16.0).</p>
+
+<p style="margin-left:11%;"><b>DEB_TARGET_ARCH</b></p>
+
+<p style="margin-left:17%;">The Debian architecture of the
+target machine (since dpkg 1.17.14).</p>
+
+<p style="margin-left:11%;"><b>DEB_TARGET_ARCH_OS</b></p>
+
+<p style="margin-left:17%;">The Debian system name of the
+target machine (since dpkg 1.17.14).</p>
+
+<p style="margin-left:11%;"><b>DEB_TARGET_ARCH_CPU</b></p>
+
+<p style="margin-left:17%;">The Debian cpu name of the
+target machine (since dpkg 1.17.14).</p>
+
+
+<p style="margin-left:11%;"><b>DEB_TARGET_ARCH_BITS</b></p>
+
+<p style="margin-left:17%;">The pointer size of the target
+machine (in bits; since dpkg 1.17.14).</p>
+
+
+<p style="margin-left:11%;"><b>DEB_TARGET_ARCH_ENDIAN</b></p>
+
+<p style="margin-left:17%;">The endianness of the target
+machine (little / big; since dpkg 1.17.14).</p>
+
+<p style="margin-left:11%;"><b>DEB_TARGET_GNU_CPU</b></p>
+
+<p style="margin-left:17%;">The CPU part of
+<b>DEB_TARGET_GNU_TYPE</b> (since dpkg 1.17.14).</p>
+
+
+<p style="margin-left:11%;"><b>DEB_TARGET_GNU_SYSTEM</b></p>
+
+<p style="margin-left:17%;">The System part of
+<b>DEB_TARGET_GNU_TYPE</b> (since dpkg 1.17.14).</p>
+
+<p style="margin-left:11%;"><b>DEB_TARGET_GNU_TYPE</b></p>
+
+<p style="margin-left:17%;">The GNU system type of the
+target machine (since dpkg 1.17.14).</p>
+
+
+<p style="margin-left:11%;"><b>DEB_TARGET_MULTIARCH</b></p>
+
+<p style="margin-left:17%;">The clarified GNU system type
+of the target machine, used for filesystem paths (since dpkg
+1.17.14).</p>
+
+<h2>FILES
+<a name="FILES"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>Architecture
+tables</b> <br>
+All these files have to be present for
+<b>dpkg&minus;architecture</b> to work. Their location can
+be overridden at runtime with the environment variable
+<b>DPKG_DATADIR</b>. <i><br>
+/usr/share/dpkg/cputable</i></p>
+
+<p style="margin-left:22%;">Table of known CPU names and
+mapping to their GNU name.</p>
+
+
+<p style="margin-left:11%;"><i>/usr/share/dpkg/ostable</i></p>
+
+<p style="margin-left:22%;">Table of known operating system
+names and mapping to their GNU name.</p>
+
+
+<p style="margin-left:11%;"><i>/usr/share/dpkg/triplettable</i></p>
+
+<p style="margin-left:22%;">Mapping between Debian
+architecture triplets and Debian architecture names.</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Packaging
+support</b> <i><br>
+/usr/share/dpkg/architecture.mk</i></p>
+
+<p style="margin-left:22%;">Makefile snippet that properly
+sets and exports all the variables that
+<b>dpkg&minus;architecture</b> outputs (since dpkg
+1.16.1).</p>
+
+<h2>EXAMPLES
+<a name="EXAMPLES"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;buildpackage</b>
+accepts the <b>&minus;a</b> option and passes it to
+<b>dpkg&minus;architecture</b>. Other examples:</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">CC=i386&minus;gnu&minus;gcc
+dpkg&minus;architecture &minus;c debian/rules build</p>
+
+<p style="margin-left:22%; margin-top: 1em">eval
+`dpkg&minus;architecture &minus;u`</p>
+
+<p style="margin-left:11%; margin-top: 1em">Check if the
+current or specified host architecture is equal to an
+architecture:</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">dpkg&minus;architecture
+&minus;elinux&minus;alpha</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">dpkg&minus;architecture
+&minus;amips &minus;elinux&minus;mips</p>
+
+<p style="margin-left:11%; margin-top: 1em">Check if the
+current or specified host architecture is a Linux
+system:</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">dpkg&minus;architecture
+&minus;ilinux&minus;any</p>
+
+
+<p style="margin-left:22%; margin-top: 1em">dpkg&minus;architecture
+&minus;ai386 &minus;ilinux&minus;any</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Usage in
+debian/rules</b> <br>
+The environment variables set by
+<b>dpkg&minus;architecture</b> are passed to
+<i>debian/rules</i> as make variables (see make
+documentation). However, you should not rely on them, as
+this breaks manual invocation of the script. Instead, you
+should always initialize them using
+<b>dpkg&minus;architecture</b> with the <b>&minus;q</b>
+option. Here are some examples, which also show how you can
+improve the cross compilation support in your package:</p>
+
+<p style="margin-left:11%; margin-top: 1em">Retrieving the
+GNU system type and forwarding it to ./configure:</p>
+
+
+<p style="margin-left:17%; margin-top: 1em">DEB_BUILD_GNU_TYPE
+?= $(shell dpkg&minus;architecture
+&minus;qDEB_BUILD_GNU_TYPE) <br>
+DEB_HOST_GNU_TYPE ?= $(shell dpkg&minus;architecture
+&minus;qDEB_HOST_GNU_TYPE) <br>
+[...] <br>
+ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE)) <br>
+confflags += &minus;&minus;build=$(DEB_HOST_GNU_TYPE) <br>
+else <br>
+confflags += &minus;&minus;build=$(DEB_BUILD_GNU_TYPE) \
+<br>
+&minus;&minus;host=$(DEB_HOST_GNU_TYPE) <br>
+endif <br>
+[...] <br>
+./configure $(confflags)</p>
+
+<p style="margin-left:11%; margin-top: 1em">Doing something
+only for a specific architecture:</p>
+
+<p style="margin-left:17%; margin-top: 1em">DEB_HOST_ARCH
+?= $(shell dpkg&minus;architecture
+&minus;qDEB_HOST_ARCH)</p>
+
+<p style="margin-left:17%; margin-top: 1em">ifeq
+($(DEB_HOST_ARCH),alpha) <br>
+[...] <br>
+endif</p>
+
+<p style="margin-left:11%; margin-top: 1em">or if you only
+need to check the CPU or OS type, use the
+<b>DEB_HOST_ARCH_CPU</b> or <b>DEB_HOST_ARCH_OS</b>
+variables.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Note that you
+can also rely on an external Makefile snippet to properly
+set all the variables that <b>dpkg&minus;architecture</b>
+can provide:</p>
+
+<p style="margin-left:17%; margin-top: 1em">include
+/usr/share/dpkg/architecture.mk</p>
+
+<p style="margin-left:17%; margin-top: 1em">ifeq
+($(DEB_HOST_ARCH),alpha) <br>
+[...] <br>
+endif</p>
+
+<p style="margin-left:11%; margin-top: 1em">In any case,
+you should never use <b>dpkg
+&minus;&minus;print&minus;architecture</b> to get
+architecture information during a package build.</p>
+
+<h2>NOTES
+<a name="NOTES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">All long
+command and option names available only since dpkg
+1.17.17.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;buildpackage</b>(1),
+<b>dpkg&minus;cross</b>(1).</p>
+<hr>
+</body>
+</html>

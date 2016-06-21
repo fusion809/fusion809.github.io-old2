@@ -1,0 +1,161 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Tue Jun 21 13:34:19 2016 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>dpkg&minus;checkbuilddeps</title>
+
+</head>
+<body>
+
+<h1 align="center">dpkg&minus;checkbuilddeps</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#ENVIRONMENT">ENVIRONMENT</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">dpkg&minus;checkbuilddeps
+&minus; check build dependencies and conflicts</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>dpkg&minus;checkbuilddeps</b>
+[<i>option</i>...] [<i>control-file</i>]</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This program
+checks the installed packages in the system against the
+build dependencies and build conflicts listed in the control
+file. If any are not met, it displays them and exits with a
+nonzero return code.</p>
+
+<p style="margin-left:11%; margin-top: 1em">By default,
+<b>debian/control</b> is read, but an alternate control
+filename may be specified on the command line.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>&minus;&minus;admindir=</b><i>dir</i></p>
+
+<p style="margin-left:22%;">Change the location of the
+<b>dpkg</b> database. The default location is
+<i>/var/lib/dpkg</i>.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;A</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Ignore <b>Build&minus;Depends&minus;Arch</b> and
+<b>Build&minus;Conflicts&minus;Arch</b> lines. Use when only
+arch-indep packages will be built, or combine with
+<b>&minus;B</b> when only a source package is to be
+built.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>&minus;B</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Ignore <b>Build&minus;Depends&minus;Indep</b> and
+<b>Build&minus;Conflicts&minus;Indep</b> lines. Use when
+only arch-dep packages will be built, or combine with
+<b>&minus;A</b> when only a source package is to be
+built.</p> </td></tr>
+</table>
+
+<p style="margin-left:11%;"><b>&minus;d</b>
+<i>build-depends-string</i> <b><br>
+&minus;c</b> <i>build-conflicts-string</i></p>
+
+<p style="margin-left:22%;">Use the given build
+dependencies/conflicts instead of those contained in the
+<i>debian/control</i> file.</p>
+
+<p style="margin-left:11%;"><b>&minus;a</b> <i>arch</i></p>
+
+<p style="margin-left:22%;">Check build
+dependencies/conflicts assuming that the package described
+in the control file is to be built for the given host
+architecture instead of the architecture of the current
+system.</p>
+
+<p style="margin-left:11%;"><b>&minus;P</b>
+<i>profile</i>[<b>,</b>...]</p>
+
+<p style="margin-left:22%;">Check build
+dependencies/conflicts assuming that the package described
+in the control file is to be built for the given build
+profile(s). The argument is a comma-separated list of
+profile names.</p>
+
+<p style="margin-left:11%;"><b>&minus;?</b>,
+<b>&minus;&minus;help</b></p>
+
+<p style="margin-left:22%;">Show the usage message and
+exit.</p>
+
+
+<p style="margin-left:11%;"><b>&minus;&minus;version</b></p>
+
+<p style="margin-left:22%;">Show the version and exit.</p>
+
+<h2>ENVIRONMENT
+<a name="ENVIRONMENT"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>DEB_BUILD_PROFILES</b></p>
+
+<p style="margin-left:22%;">If set, it will be used as the
+active build profile(s) for the package being built. It is a
+space separated list of profile names. Overridden by the
+<b>&minus;P</b> option.</p>
+<hr>
+</body>
+</html>
