@@ -1,0 +1,98 @@
+// Base16 Colours from https://github.com/chriskempson/base16
+
+// Easy config for when user wants to display different icons,
+// but not colourise them.
+@colored-icons: true;
+
+/* @m<x> = .medium-<x>
+ * @l<x> = .light-<x> (<x> lightened 15%)
+ * @d<x> = .dark-<x>  (<x>  darkened 15%)
+ */
+
+// Red
+@mr: #AC4142;
+@lr: lighten(@mr, 15%);
+@dr:  darken(@mr, 15%);
+
+// Green
+@mg: #90A959;
+@lg: lighten(@mg, 15%);
+@dg:  darken(@mg, 15%);
+
+// Yellow
+@my: #F4BF75;
+@ly: lighten(@my, 15%);
+@dy:  darken(@my, 15%);
+
+// Blue
+@mb: #6A9FB5;
+@lb: lighten(@mb, 15%);
+@db:  darken(@mb, 15%);
+
+// Maroon
+@mm: #8F5536;
+@lm: lighten(@mm, 15%);
+@dm:  darken(@mm, 15%);
+
+// Purple
+@mp: #AA759F;
+@lp: lighten(@mp, 15%);
+@dp:  darken(@mp, 15%);
+
+// Orange
+@mo: #D28445;
+@lo: lighten(@mo, 15%);
+@do:  darken(@mo, 15%);
+
+// Cyan
+@mc: #75B5AA;
+@lc: lighten(@mc, 15%);
+@dc:  darken(@mc, 15%);
+
+// Pink
+@mpk: #F0C;
+@lpk: lighten(@mpk, 15%);
+@dpk:  darken(@mpk, 15%);
+
+
+// Darken certain shades that're too bright in light-coloured themes
+
+
+.light-red     { color: @lr; }
+.medium-red    { color: @mr; }
+.dark-red      { color: @dr; }
+
+.light-green   { color: @lg; }
+.medium-green  { color: @mg; }
+.dark-green    { color: @dg; }
+
+.light-yellow  { color: @ly; }
+.medium-yellow { color: @my;  }
+.dark-yellow   { color: @dy;  }
+
+.light-blue    { color: @lb; }
+.medium-blue   { color: @mb; }
+.dark-blue     { color: @db; }
+
+.light-maroon  { color: @lm; }
+.medium-maroon { color: @mm; }
+.dark-maroon   { color: @dm; }
+
+.light-purple  { color: @lp; }
+.medium-purple { color: @mp; }
+.dark-purple   { color: @dp; }
+
+.light-orange  { color: @lo; }
+.medium-orange { color: @mo; }
+.dark-orange   { color: @do; }
+
+.light-cyan    { color: @lc; }
+.medium-cyan   { color: @mc; }
+.dark-cyan     { color: @dc; }
+
+.light-pink    { color: @lpk; }
+.medium-pink   { color: @mpk; }
+.dark-pink     { color: @dpk; }
+
+
+// Pick a dark or medium shade depending on the theme's brightness

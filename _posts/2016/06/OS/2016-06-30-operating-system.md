@@ -2,7 +2,7 @@
 categories: freebsd, linux, operating-systems
 title: "Which free operating system is best for me?"
 layout: post
-date: 2016-04-30 +1000
+date: 2016-06-30 +1000
 permalink: /operating-systems/
 ---
 {% include Layouts/draft.html %}
@@ -10,6 +10,6 @@ permalink: /operating-systems/
 
 {% include_relative 02-ratings.md %}
 
-{% include_relative 03-archlinux.md %}
+{% include_relative 03-archlinux/index.md %}
 
 {% include_relative 100-footnotes.md %}

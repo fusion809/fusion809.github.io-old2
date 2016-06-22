@@ -15,12 +15,12 @@ GEM
       execjs
     coffee-script-source (1.10.0)
     colorator (0.1)
-    elasticsearch (1.0.17)
-      elasticsearch-api (= 1.0.17)
-      elasticsearch-transport (= 1.0.17)
-    elasticsearch-api (1.0.17)
+    elasticsearch (1.0.18)
+      elasticsearch-api (= 1.0.18)
+      elasticsearch-transport (= 1.0.18)
+    elasticsearch-api (1.0.18)
       multi_json
-    elasticsearch-transport (1.0.17)
+    elasticsearch-transport (1.0.18)
       faraday
       multi_json
     execjs (2.7.0)
@@ -92,7 +92,7 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rdiscount (2.2.0.1)
-    rouge (1.11.0)
+    rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
     sawyer (0.7.0)
