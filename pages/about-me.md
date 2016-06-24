@@ -18,15 +18,15 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [CentOS 7](https://www.centos.org/)
 * [Chapeau 22.1](http://chapeaulinux.org/)
 * [Chromixium 1.5](http://chromixium.org/)
-* [Debian 8.0/8.1/8.2/8.3](https://www.debian.org/)
+* [Debian 8.x](https://www.debian.org/)
 * [deepin 2014.3/15](http://www.deepin.org/?lang=en)
 * [elementary OS 0.3](https://elementary.io/)
-* [Fedora 22/23](https://getfedora.org/)
-* [FreeBSD 10.2](https://www.freebsd.org/)
+* [Fedora 22-24](https://getfedora.org/)
+* [FreeBSD 10.2/10.3](https://www.freebsd.org/)
 * [Gentoo Linux](https://www.gentoo.org/)
 * [GhostBSD 10.1](http://ghostbsd.org/)
 * [Kali Linux 2](https://www.kali.org/)
-* [Korora 21/22](https://kororaproject.org/)
+* [Korora 21/22/23](https://kororaproject.org/)
 * [Linux Mint 17.2/17.3](http://linuxmint.com/)
 * [Mageia 5](http://www.mageia.org/en/)
 * [Manjaro Linux](https://manjaro.github.io/)
@@ -36,6 +36,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [PCLinuxOS 2014.12](http://www.pclinuxos.com/)
 * [Sabayon Linux](https://www.sabayon.org/)
 * [Solus OS 1.0-RC1](https://solus-project.com/)
+* [Slackware Linux 14.2-RC2](http://www.slackware.com/)
 * [Vector Linux 7.1](http://vectorlinux.com/)
 * [Zorin OS 7](http://zorinos.com/)
 {% endcapture %}
@@ -72,4 +73,4 @@ openSUSE uses RPM packages like Fedora, but unlike Fedora its system software an
 Fedora is interesting to me, in that installing software packages in its software repositories is usually at least as easy as it is on Ubuntu, but installing software manually from source code or setting up web applications (e.g., MediaWiki or WordPress) tends to be substantially more difficult than on other more user-friendly distributions. Fedora do It is also interesting to me in that its system software and desktop environment-related software is usually the most up-to-date of any distribution following a fixed-release cycle, yet the rest of its software tends to be at least two releases behind the latest available release, in my experience, anyway. It has its own equivalent to the OBS, Copr (although unlike the OBS it can only build packages for Fedora), which does afford packages Internet access during their build, if the packager grants them this. Copr also has the disadvantage, compared to the OBS, of having greater licensing restrictions (namely, that they have to be FOSS) on any packages build and distributed through it.
 
 ## Ubuntu
-Ubuntu was my first distro so I feel very comfortable with it, despite this package development under it is difficult and tedious. Ubuntu affords one comparatively few customization options, which is why I usually do not feel content with it for long, anymore. 
+Ubuntu was my first distro so I feel very comfortable with it, despite this package development under it is difficult and tedious. Ubuntu affords one comparatively few customization options, which is why I usually do not feel content with it for long, anymore.

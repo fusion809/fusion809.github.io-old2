@@ -8,16 +8,18 @@ permalink:        /projects/
 
 {% include_relative 01-introduction.md %}
 
-{% include_relative 02-iso.md %}
+{% include_relative 02-atom.md %}
 
-{% include_relative 03-package-development.md %}
+{% include_relative 03-iso.md %}
 
-{% include_relative 04-preferences.md %}
+{% include_relative 04-package-development.md %}
 
-{% include_relative 05-programming.md %}
+{% include_relative 05-preferences.md %}
 
-{% include_relative 06-shell-scripts.md %}
+{% include_relative 06-programming.md %}
 
-{% include_relative 07-installers.md %}
+{% include_relative 07-shell-scripts.md %}
 
-{% include_relative 08-summary.md %}
+{% include_relative 08-installers.md %}
+
+{% include_relative 09-summary.md %}
