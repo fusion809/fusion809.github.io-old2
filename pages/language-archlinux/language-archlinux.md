@@ -3,7 +3,7 @@ layout:          atom
 package:         "language-archlinux"
 title:           "The Atom Arch Linux Development Package"
 permalink:       "/language-archlinux/"
-date:            "2016-08-29 +1000"
+date:            "2016-07-02 +1000"
 ---
 
 {% include Links/image.html image="Atom/language-archlinux-0.5.2_language-unix-shell-0.34.2_atom-1.8.0.png" description="My atom-editor-elastest PKGBUILD being syntax-highlighted by language-unix-shell with the dark-bint-syntax theme enabled. The menu provided by this package (as of v0.5.2) is also shown." width="1500px" float="center" %}
