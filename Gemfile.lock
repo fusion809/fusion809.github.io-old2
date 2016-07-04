@@ -9,7 +9,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    asciidoctor (1.5.4)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -41,9 +40,6 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-asciidoc (2.0.0)
-      asciidoctor (>= 1.5.0)
-      jekyll (>= 2.3.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-feed (0.5.1)
@@ -111,7 +107,6 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll (~> 3.1)
-  jekyll-asciidoc
   jekyll-coffeescript
   jekyll-feed
   jekyll-gist
