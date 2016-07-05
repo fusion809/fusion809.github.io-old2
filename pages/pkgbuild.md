@@ -1,7 +1,7 @@
 ---
 date:      2016-07-05 +1000
 title:     fusion809 PKGBUILDs GitHub Repository
-permalink: /PKGBUILDs/
+permalink: /PKGBUILDs
 layout:    page
 ---
 
@@ -14,10 +14,10 @@ My [`PKGBUILDs`](https://github.com/fusion809/PKGBUILDs) GitHub repository provi
 
 Many of these packages I have built into 64-bit binary packages and added to the [current tag](https://github.com/fusion809/PKGBUILDs/releases/tag/current) of the repository. Fortunately, I have discovered that this allows one to use GitHub as a package server for pacman. To use this package server one merely needs to add:
 
-```bash
+<pre>
 [pkgbuild-current]
 Server = https://github.com/fusion809/PKGBUILDs/releases/download/current/
 SigLevel = Optional TrustAll
-```
+</pre>
 
-to one's `/etc/pacman.conf` file. I would personally recommend adding it **before** all other repositories, although as I cannot (nor can anyone else) predict the future it is possible that one day I will get behind in maintaining these packages and they will fall behind the versions in the ALORs. 
+to one's `/etc/pacman.conf` file. I would personally recommend adding it **before** all other repositories, although as I cannot (nor can anyone else) predict the future it is possible that one day I will get behind in maintaining these packages and they will fall behind the versions in the ALORs.
