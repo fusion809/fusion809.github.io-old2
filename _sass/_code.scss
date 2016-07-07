@@ -72,49 +72,31 @@ pre {
   border-radius: 3px;
   padding: 3px;
   margin-bottom: 8px;
-  color: rgba(51, 51, 51, 100);
+  background-color: rgba(0, 0, 0, 100);
   font-family: monospace;
-  color: rgb(220,220,220);
+  color: rgb(255,255,255);
   box-shadow: 0 1px 3px #757575, 0 1px 2px #5b5b5b;
 }
 
 /**
 * Code
 */
+
 code {
-  background-color: rgba(220,220,220,100);
+  color:            rgba(255,255,255,100);
   border-radius:    3px;
-  border:           1px solid rgba(51, 51, 51, 100);
+  border:           1px solid rgba(51, 51, 51, 1.0);
   box-shadow:       0 1px 3px #757575, 0 1px 2px #5b5b5b;
   padding:          3px;
-  color:            #000;
+  background-color: #000;
   margin-bottom:    8px;
-  white-space:      nowrap;
-  overflow:         auto;
   font-family:      monospace;
 }
 
-a code {
-  color:              #11f;
-}
-
-code.language-sh {
-  background-color:   inherit;
-  color:              white;
-  border:             none;
-}
-
-code.language-bash {
-  background-color:   inherit;
-  color:              black;
-  background-color:   $bg-color;
-  border:             none;
-}
-
-code.language-matlab {
-  background-color:   inherit;
-  color:              white;
-  border:             none;
+pre code {
+  color:            rgba(255,255,255,100);
+  background-color: #000;
+  font-family:      monospace;
 }
 
 div.language-json.highlighter-rouge {
