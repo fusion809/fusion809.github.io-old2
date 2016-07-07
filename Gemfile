@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 3.1'
+gem 'jekyll'
+gem 'jekyll-asciidoc'
 gem 'jekyll-coffeescript'
 gem 'jekyll-feed'
 gem 'jekyll-gist'

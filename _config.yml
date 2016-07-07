@@ -36,6 +36,7 @@ exclude:
 - assets
 
 gems:
+  - jekyll-asciidoc
   - jekyll-feed
   - jekyll-gist
   - jekyll-redirect-from

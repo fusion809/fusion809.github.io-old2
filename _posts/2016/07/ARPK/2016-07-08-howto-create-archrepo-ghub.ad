@@ -1,0 +1,8 @@
+---
+date:       2016-07-08 +1000
+title:      "How to Create Your Own Arch Linux Package Repository"
+permalink:  /how-to-create-archlinux-repository/
+category:   archlinux
+---
+
+*Arch Linux* is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. The objective of writing a PKGBUILD is to build the package in the `${srcdir}` directory (usually in the `src` subfolder of the directory the PKGBUILD is in)
