@@ -1,8 +1,22 @@
 ---
-date:       2016-07-08 +1000
-title:      "How to Create Your Own Arch Linux Package Repository"
-permalink:  /how-to-create-archlinux-repository/
-category:   archlinux
+date:         2016-07-08 +1000
+title:        "How to Create Your Own Arch Linux Package Repository"
+permalink:    /how-to-create-archlinux-repository/
+categories:   archlinux, package-development, software-repositories
 ---
 
-*Arch Linux* is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. The objective of writing a PKGBUILD is to build the package in the `${srcdir}` directory (usually in the `src` subfolder of the directory the PKGBUILD is in)
+*Arch Linux* is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Shell is my favourite programming language as it is the one that is the most intuitive to me. I have found Python to be too touchy,footnoteref:[python,That is, it does not take much of an error to stuff an entire script up.] and challenging to debug, while I have found JavaScript (JS) too non-intuitive and challenging to pick up. Granted, I work best by trying out some examples and the only examples I can come up with for myself, when it comes to JS and Python, are those in a previous area of study of mine &mdash; technical computing.
+
+== PKGBUILD Format
+PKGBUILDs have the following components to them, in order:
+
+* *Header* &mdash; these are comments that, while not strictly necessary, for the PKGBUILD to work, they can be handy to define important information about the PKGBUILD like who is maintaining it, who has contributed to it and their contact information.
+* *Variable definitions* &mdash; these are specified in the first ten or so lines after the header. The required fields here are:footnoteref:[var-order,Presented in their _usual_, but *not* mandatory order.]footnoteref:[A-superscript,An ^A^ superscript denotes that this variable can be an *array*.]footnoteref:[P-superscript,A ^P^ superscript denotes that this variable should be defined under the individual package's `package_...()` function, *if* the `pkgname` variable is an array. If the variable is defined outside of the package's individual package_...() function, then it will be applied to *all* packages specified in the PKGBUILD.]
+
+  - `pkgname` ^A^ &mdash; the name of the package(s). Sometimes a PKGBUILD will build more than one package, in these instances the packages are usually interconnected and often use the same sources.
+  - `pkgdesc` ^P^ &mdash; a description of the package.
+  - `pkgver` ^P^ &mdash; the upstream version of the package.
+  - `pkgrel` ^P^ &mdash; the revision number of the Arch Linux package,footnoteref:[pkgrel,this version number does *not* come from the upstream source, it is a revision number for the PKGBUILD] since the last `pkgver` update.
+  - `arch` ^AP^
+  - `url` ^A^
+  - `depends` ^A^
