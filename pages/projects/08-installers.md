@@ -19,6 +19,6 @@ So far I have created the following installers:
 
 * [`atom-installer`](https://github.com/fusion809/atom-installer) &mdash; has experimental support for Gentoo Linux too.
 * [`brackets-installer`](https://github.com/fusion809/brackets-installer)
-* [`komodo-installer`](https://github.com/fusion809/komodo-installer) &mdash; this one is unique in that it has no option to compile the editor from source code. This is due to the difficulty I have experienced trying to install Komodo from source. 
+* [`komodo-installer`](https://github.com/fusion809/komodo-installer) &mdash; this one is unique in that it has no option to compile the editor from source code. This is due to the difficulty I have experienced trying to install Komodo from source.
 * [`lighttable-installer`](https://github.com/fusion809/lighttable-installer)
-* [`VScode-installer`](https://github.com/fusion809/VScode-installer)
+* [`vscode-installer`](https://github.com/fusion809/vscode-installer)
