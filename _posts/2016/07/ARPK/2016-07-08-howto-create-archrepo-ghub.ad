@@ -5,18 +5,25 @@ permalink:    /how-to-create-archlinux-repository/
 categories:   archlinux, package-development, software-repositories
 ---
 
-*Arch Linux* is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Shell is my favourite programming language as it is the one that is the most intuitive to me. I have found Python to be too touchy,footnoteref:[python,That is, it does not take much of an error to stuff an entire script up.] and challenging to debug, while I have found JavaScript (JS) too non-intuitive and challenging to pick up. Granted, I work best by trying out some examples and the only examples I can come up with for myself, when it comes to JS and Python, are those in a previous area of study of mine &mdash; technical computing.
+*Arch Linux* is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the main other Linux packaging source file written in Shell, that I have experience with &mdash; ebuilds. They require you know understand eclasses, in a fair degree of detail, in order to effectively write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of correctly-written source files to be written by you, the packager, like is the case for Debian packages, makes Arch Linux packages easier to develop too. The packaging source files they most closely resemble is SlackBuilds for Slackware packages.
+
+Shell is my favourite programming language as it is the one that is the most intuitive to me. I have found Python to be too touchy,footnoteref:[python,That is, it does not take much of an error to stuff an entire script up.] and challenging to debug, while I have found JavaScript (JS) too non-intuitive and challenging to pick up. Granted, I work best by trying out some practical examples and the only examples I can come up with for myself, when it comes to JS and Python, are those in a previous area of study of mine &mdash; technical computing. Unfortunately, I have no clear concept of a program I want to write, besides from examples from technical computing, so it is challenging for me to feel motivated to keep persevering when trying to learn these languages and obstacles arise. If you have a way around this for me, that is free,footnoteref:[free,As I will mention later in this post, I am a cheap so-and-so, always opting for the free option where possible.] I would love to hear it, so please email these suggestions to link:mailto:brentonhorne77@gmail.com[brentonhorne77@gmail.com].
 
 == PKGBUILD Format
+:icons: font
+
+NOTE: *NOTE*: This is a brief introduction, but if you want any degree of detail I would probably see the link:https://wiki.archlinux.org/index.php/PKGBUILD[PKGBUILD] article at _Arch Wiki_. Alternatively, refer to the link:/man/PKGBUILD.5.html[PKGBUILD(5)] man page.
+
+
 PKGBUILDs have the following components to them, in order:
 
 * *Header* &mdash; these are comments that, while not strictly necessary, for the PKGBUILD to work, they can be handy to define important information about the PKGBUILD like who is maintaining it, who has contributed to it and their contact information.
-* *Variable definitions* &mdash; these are specified in the first ten or so lines after the header. The required fields here are:footnoteref:[var-order,Presented in their _usual_, but *not* mandatory order.]footnoteref:[A-superscript,An ^A^ superscript denotes that this variable can be an *array*.]footnoteref:[P-superscript,A ^P^ superscript denotes that this variable should be defined under the individual package's `package_...()` function, *if* the `pkgname` variable is an array. If the variable is defined outside of the package's individual package_...() function, then it will be applied to *all* packages specified in the PKGBUILD.]
+* *Variable definitions* &mdash; these are specified in the first ten or so lines after the header. The default fields include:footnoteref:[var-order,Presented in their _usual_, but *not* mandatory order. Not every single default variable is listed, if you want a list see the link:/man/PKGBUILD.5.html[PKGBUILD(5)] man page.]footnoteref:[A-superscript,An ^A^ superscript denotes that this variable can be an *array*.]footnoteref:[M-superscript,Mandatory field]footnoteref:[P-superscript,A ^P^ superscript denotes that this variable should be defined under the individual package's `package_...()` function, *if* the `pkgname` variable is an array. If the variable is defined outside of the package's individual package_...() function, then it will be applied to *all* packages specified in the PKGBUILD.]
 
-  - `pkgname` ^A^ &mdash; the name of the package(s). Sometimes a PKGBUILD will build more than one package, in these instances the packages are usually interconnected and often use the same sources.
-  - `pkgdesc` ^P^ &mdash; a description of the package.
-  - `pkgver` ^P^ &mdash; the upstream version of the package.
-  - `pkgrel` ^P^ &mdash; the revision number of the Arch Linux package,footnoteref:[pkgrel,this version number does *not* come from the upstream source, it is a revision number for the PKGBUILD] since the last `pkgver` update.
-  - `arch` ^AP^
-  - `url` ^A^
+  - `pkgname` ^AM^ &mdash; the name of the package(s). Sometimes a PKGBUILD will build more than one package, in these instances the packages are usually interconnected and often use the same sources.
+  - `pkgdesc` ^P^ &mdash; a description of the package. Usually no longer than one sentence long.
+  - `pkgver` ^MP^ &mdash; the upstream version of the package.
+  - `pkgrel` ^MP^ &mdash; the revision number of the Arch Linux package,footnoteref:[pkgrel,This version number does *not* come from the upstream source, it is a revision number for the PKGBUILD] since the last `pkgver` update.
+  - `arch` ^AMP^ &mdash; the supported architecture(s) for the package. Allowed architectures include: `arm`, `i686` and `x86_64`.
+  - `url` ^A^ &mdash; the website of the package. Its source VCS repository can also be used. For example, the `atom-editor` package uses the URL of Atom's GitHub repository &mdash; `https://github.com/atom/atom`.
   - `depends` ^A^
