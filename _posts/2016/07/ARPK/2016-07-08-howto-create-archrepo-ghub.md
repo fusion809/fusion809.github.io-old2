@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 19:24:00 +1000
+last_modified_at: 2016-07-08 19:30:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble is SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -141,7 +141,7 @@ GH package databases are updated as soon as your binaries and database files hav
 
 ## Footnotes
 [^1]: That is, it does not take much of an error to stuff an entire script up.
-[^2]: As I will mention later in this post, I am a cheap so-and-so, always opting for the free option where possible.
+[^2]: As I may later mention, I am a cheap so-and-so, always opting for the free option where possible.
 [^3]: Presented in their *usual*, but **not** mandatory order. Not every single default variable is listed, if you want a list see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page.
 [^4]: An <sup>A</sup> superscript denotes that this variable can be an **array**.
 [^5]: <sup>M</sup> superscripts denote a mandatory field.
