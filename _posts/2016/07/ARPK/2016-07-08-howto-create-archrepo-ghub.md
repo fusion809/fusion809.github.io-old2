@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 20:39:00 +1000
+last_modified_at: 2016-07-08 21:46:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They (ebuilds) require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble are SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -155,6 +155,6 @@ GH package databases are updated as soon as your binaries and database files hav
 [^11]: An <sup>AUR</sup> superscript indicates that this package is provided by the AUR and other unofficial sources
 [^12]: A <sup>W</sup> superscript indicates that I would not recommend installing the version of this package linked, as I have a better build. See below for details.
 [^13]: That is, one you can communicate with easily, without fear that the server will be down for server hours at a time and not available for you to communicate with.
-[^14]: It cannot be licensed under a proprietary software, even if it is a freeware license!
+[^14]: It cannot be licensed under a proprietary license, even if it is a freeware license!
 [^15]: Keeping in mind that these people are all volunteers &mdash; they are not being paid a dime for this!
 [^16]: Which, for your information, can be different from your GitHub repository's name.
