@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 20:34:00 +1000
+last_modified_at: 2016-07-08 20:39:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They (ebuilds) require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble are SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -102,14 +102,14 @@ where all these variables are as they were defined in the previous section, exce
 * It runs `pkgver()` if provided. Then it updates the `pkgver` field in the PKGBUILD, accordingly.
 * It removes any existing `$pkgdir` directory(s).
 * It runs `build()` if provided.
-* Enters the fakeroot environment. This is designed as a safety measure against potential security threads in the `package()` function.
-* It runs `package()` and variations thereof (like `package_<PKG1>`, `package_<PKG2>`, `package_<PKG3>`, *etc.*).
-* It 'tidies' the install, which means:
-  * It removes libtool files, static library files and other unwanted files
-  * Compresses man and info pages
-  * Removes unneeded symbols and libraries from the binaries and libraries.
-* It checks for packaging issues, like `$srcdir` and `$pkgdir` being mentioned in files in the `$pkgdir` directory. If there is one, you will be left to fix it yourself. NPM packages with several dependencies are bad for this, see quite often the `package.json` of these dependencies will have `$srcdir` specified in them.
 * For each package specified in the PKGBUILD it:
+  * Enters the fakeroot environment. This is designed as a safety measure against potential security threads in the `package()` function.
+  * It runs `package()` and variations thereof (like `package_<PKG1>`, `package_<PKG2>`, `package_<PKG3>`, *etc.*).
+  * It 'tidies' the install, which means:
+    * It removes libtool files, static library files and other unwanted files
+    * Compresses man and info pages
+    * Removes unneeded symbols and libraries from the binaries and libraries.
+  * It checks for packaging issues, like `$srcdir` and `$pkgdir` being mentioned in files in the `$pkgdir` directory. If there is one, you will be left to fix it yourself. NPM packages with several dependencies are bad for this, see quite often the `package.json` of these dependencies will have `$srcdir` specified in them.
   * Generates the `.MTREE`, `.BUILDINFO` and `.PKGINFO` files, and adds any install file specified.
   * Compresses the package using tar and xzip.
   * Exits the fakeroot environment.
