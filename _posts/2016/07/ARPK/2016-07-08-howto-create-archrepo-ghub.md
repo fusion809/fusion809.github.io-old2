@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 19:09:00 +1000
+last_modified_at: 2016-07-08 19:16:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble is SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -51,7 +51,7 @@ PKGBUILDs are fairly simple shell scripts, usually no longer than 50 lines long,
 Now that we understand the basics of a PKGBUILD's layout, I will discuss some which text editors are best adept at writing PKGBUILDs and where to get help, if you get stuck.
 
 ### Text Editors
-Most modern text editors have in-built syntax-highlighting support for Shell, a few of them even automatically syntax-highlight PKGBUILDs are shell scripts. Open-source text editors that I know[^9] that automatically syntax-highlight opened PKGBUILDs are shell scripts, include:[^10]<sup>,</sup>[^11]<sup>,</sup>[^12]
+Most modern text editors have in-built syntax-highlighting support for Shell, a few of them even automatically syntax-highlight PKGBUILDs as shell scripts. Open-source text editors that I know[^9] that automatically syntax-highlight opened PKGBUILDs as shell scripts, include:[^10]<sup>,</sup>[^11]<sup>,</sup>[^12]
 
 * [Atom](https://aur.archlinux.org/packages/atom-editor)<sup>AUR,W</sup>
 * [GNU Emacs](https://www.archlinux.org/packages/extra/x86_64/emacs)
