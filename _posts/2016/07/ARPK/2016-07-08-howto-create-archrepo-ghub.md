@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 19:33:00 +1000
+last_modified_at: 2016-07-08 19:37:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They (ebuilds) require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble is SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -38,7 +38,7 @@ PKGBUILDs are fairly simple shell scripts, usually no longer than 50 lines long,
   - `source` <sup>A</sup> &mdash; the upstream source(s) for the package, along with any patches, desktop configuration files, *etc.* you intend to use to build the package.
   - `md5sums/sha1sums/sha256sums/sha512sums` <sup>A</sup> &mdash; checksums for the sources specified in `source`. If you are wondering how to fill out this field, just pick one checksum type (e.g., `md5sums`) and write it as `md5sums=('SKIP')` and then run `updpkgsums` in the PKGBUILD's directory and it will generate the checksums for you.
   - `validpgpkeys` <sup>A</sup> &mdash; this is very much an optional field and is seldom ever included, except for in packages that pose significant security threats if invalid, or for core system components (like the kernel). If used the upstream source likely provides the signing files (usually with the `.asc` or `.sig` file extensions), which must be specified in the `source` array.
-  - `install` <sup>A</sup> &mdash; install file for the package, which contains functions run before, during and after installation of the package(s). Most of these relate to icon caches and desktop configuration databases.
+  - `install` <sup>A</sup> &mdash; install file(s) for the package(s), which contains functions run before, during and after the installation of the package(s). Most of these relate to icon caches and desktop configuration databases.
 
 * **Function definitions** &mdash; these are lines that come after variable definitions wherein functions recognized by `makepkg` are defined. Some extra variables are available for use in these functions, such as `$srcdir`, `$pkgdir`, *etc.*. `$srcdir` is the directory where the sources are to be extracted, prepared and compiled. `$pkgdir` is where the package's files are stored before they are compressed, metadata files created and added to the package archive and finally the package is built. `$pkgdir` has the structure `pkg/$pkgname/<FS>` where `<FS>` is like a map where all your package's contents will be placed on your live file system when it is installed. Such functions include, in order of their usual appearance:
 
