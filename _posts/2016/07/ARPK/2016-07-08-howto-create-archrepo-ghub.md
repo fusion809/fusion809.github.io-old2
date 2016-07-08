@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 19:43:00 +1000
+last_modified_at: 2016-07-08 20:34:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They (ebuilds) require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble are SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -85,6 +85,7 @@ When writing your own PKGBUILD it is usually best to attempt to debug your packa
 * Ask for help at the Arch Linux forums. The Arch Linux forums can be an obstacle to newcomers, the key is:
 
   * Give them every detail you can. The bare minimums are your PKGBUILD and your error message(s). With your error message(s) it is important to include at least ten extra lines of output that precedes the actual error message, in order to give those that wish to help you, some much-needed context for the error.
+  * Explain your efforts to fix the problem so far. This is especially important as in my experience, if you do not do this, you will have some people calling you a help vampire.
 
 * Ask someone you know, for help. I am willing to help, if I can but keep in mind I am not perfect, sometimes I will not have an answer for you. Other times I may be too busy with my own work to help you.
 
@@ -111,6 +112,7 @@ where all these variables are as they were defined in the previous section, exce
 * For each package specified in the PKGBUILD it:
   * Generates the `.MTREE`, `.BUILDINFO` and `.PKGINFO` files, and adds any install file specified.
   * Compresses the package using tar and xzip.
+  * Exits the fakeroot environment.
 
 ## Setup A Repository
 You can set up an unofficial Arch Linux package repository, given that you can provide the following:
