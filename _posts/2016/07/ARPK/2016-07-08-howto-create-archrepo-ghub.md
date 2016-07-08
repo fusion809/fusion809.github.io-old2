@@ -144,7 +144,7 @@ GH package databases are updated as soon as your binaries and database files hav
 [^2]: As I will mention later in this post, I am a cheap so-and-so, always opting for the free option where possible.
 [^3]: Presented in their *usual*, but **not** mandatory order. Not every single default variable is listed, if you want a list see the [PKGBUILD(5)](/man/PKGBUILD.5.html) man page.
 [^4]: An <sup>A</sup> superscript denotes that this variable can be an **array**.
-[^5]: Mandatory field.
+[^5]: <sup>M</sup> superscripts denote a mandatory field.
 [^6]: A <sup>P</sup> superscript denotes that this variable should be defined under the individual package's `package_...()` function, **if** the `pkgname` variable is an array. If the variable is defined outside of the package's individual package_...() function, then it will be applied to **all** packages specified in the PKGBUILD.
 [^7]: This version number does **not** come from the upstream source, it is a revision number for the PKGBUILD.
 [^8]: **Excluding** `$pkgname` &mdash; this is automatically added to this array when `makepkg` is run.
