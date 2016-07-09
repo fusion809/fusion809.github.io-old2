@@ -5,7 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
-last_modified_at: 2016-07-08 21:46:00 +1000
+last_modified_at: 2016-07-09 10:40:00 +1000
 ---
 
 **Arch Linux** is my favourite Linux distribution (LD), especially when it comes to building packages. This is because the PKGBUILD format is very intuitive, simple and written in my favourite programming language &mdash; Shell. Writing a PKGBUILD also does not require an awful lot of preliminary knowledge, unlike the other Linux packaging source file written in Shell, that I have a fair amount of experience with, ebuilds. They (ebuilds) require you understand eclasses, in a fair degree of detail, in order to effectively and efficiently write them. The fact that Arch Linux package development only requires that you have a functioning PKGBUILD and does not require a whole intricate directory of syntactically-correct source files to be written by you, the packager, makes Arch Linux packages easier to develop compared to say Debian packages. The packaging source files they most closely resemble are SlackBuilds for Slackware packages, which I have fairly minimal experience with.
@@ -141,6 +141,8 @@ A natural question is, "How do I update my tagged release so that it is for the 
 
 GH package databases are updated as soon as your binaries and database files have been uploaded, so this is certainly an efficient means of disseminating your packages to your friends, colleagues and others.
 
+There are no officially-supported means of attaching binaries from the command-line, I know this as I have sent an email to GitHub asking for help. Their reply did provide a helpful alternative, however &mdash; there is a program written in Go that provides the ability to edit tags and releases, including attaching binaries, from the command-line. It is called [`github-release`](https://github.com/aktau/github-release) and I have created an AUR package for it, [`github-release-bin`](https://aur.archlinux.org/packages/github-release-bin) (building from a pre-compiled binary as I keep getting errors whenever I attempt to build a Go program[^17]). I have not quite mastered using it yet, so I am afraid I cannot share much information about using it. 
+
 ## Footnotes
 [^1]: That is, it does not take much of an error to stuff an entire script up.
 [^2]: As I may later mention, I am a cheap so-and-so, always opting for the free option where possible.
@@ -152,9 +154,10 @@ GH package databases are updated as soon as your binaries and database files hav
 [^8]: **Excluding** `$pkgname` &mdash; this is automatically added to this array when `makepkg` is run.
 [^9]: If there are some open-source text editors I am missing that you know for a fact can run on Arch Linux (that is, you have installed them yourself and they run fine) and have automatic syntax-highlighting for PKGBUILDs.
 [^10]: Hyperlinks are to the editor's Arch Linux package description page, if there are more than one due to architecture differences I will link to the 64-bit version of the package.
-[^11]: An <sup>AUR</sup> superscript indicates that this package is provided by the AUR and other unofficial sources
-[^12]: A <sup>W</sup> superscript indicates that I would not recommend installing the version of this package linked, as I have a better build. See below for details.
+[^11]: An <sup>AUR</sup> superscript indicates that this package is only provided by the AUR and other unofficial sources.
+[^12]: A <sup>W</sup> superscript indicates that I would not recommend installing the version of this package linked, as I have a better build. See the editor's respective section for details.
 [^13]: That is, one you can communicate with easily, without fear that the server will be down for server hours at a time and not available for you to communicate with.
 [^14]: It cannot be licensed under a proprietary license, even if it is a freeware license!
-[^15]: Keeping in mind that these people are all volunteers &mdash; they are not being paid a dime for this!
+[^15]: Keeping in mind that these people are all volunteers &mdash; they are not being paid a cent for this!
 [^16]: Which, for your information, can be different from your GitHub repository's name.
+[^17]: Refer to [lxc/lxd#2174](https://github.com/lxc/lxd/issues/2174) for details, if you are interested in helping (which I would appreciate, of course).
