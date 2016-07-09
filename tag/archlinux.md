@@ -1,6 +1,6 @@
 ---
 layout:     tag_page
-title:      "Arch Linux Tag"
+title:      "Arch Linux Category"
 date:       2016-07-09 +1000
 tag:        "archlinux"
 categories: linux-distribution

@@ -8,6 +8,7 @@ layout: default2
     <p class="tag-meta">
       {% if page.tag %}<b>Tag:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "code" style="font-size: 16px;">{{ page.tag }}</span><br/>{% endif %}
       <time><b>First published</b>: {{ page.date | date: "%A, %-d %B %Y" }}.</time>
+      {% if page.categories %}<br/><span itemprop="categories"><b>Category(s)</b>: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% for item in page.categories %}<span class="tag"><a href="/tag/{{ item | replace:',','' }}/" link="_blank">{{ item | replace:',','' }}</a></span>{% endfor %}{% endif %}
       {% if page.last_modified_at %}<time datetime="{{ page.last_modified_at | date:"%r, %A %d %B %Y %Z" }}" itemprop="dateModified"><br/><b>Last modified</b>: &nbsp;&nbsp;&nbsp;{{ page.last_modified_at | date:"%I:%M %p %A, %d %B %Y" }} (AEST).</time>{% endif %}
     </p>
   </header>
