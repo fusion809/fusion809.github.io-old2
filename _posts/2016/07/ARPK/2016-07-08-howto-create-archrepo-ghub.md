@@ -141,7 +141,7 @@ A natural question is, "How do I update my tagged release so that it is for the 
 
 GH package databases are updated as soon as your binaries and database files have been uploaded, so this is certainly an efficient means of disseminating your packages to your friends, colleagues and others.
 
-There are no officially-supported means of attaching binaries from the command-line, I know this as I have sent an email to GitHub asking for help. Their reply did provide a helpful alternative, however &mdash; there is a program written in Go that provides the ability to edit tags and releases, including attaching binaries, from the command-line. It is called [`github-release`](https://github.com/aktau/github-release) and I have created an AUR package for it, [`github-release-bin`](https://aur.archlinux.org/packages/github-release-bin) (building from a pre-compiled binary as I keep getting errors whenever I attempt to build a Go program[^17]). I have not quite mastered using it yet, so I am afraid I cannot share much information about using it. 
+There are no officially-supported means of attaching binaries from the command-line, I know this as I have sent an email to GitHub asking for help. Their reply did provide a helpful alternative, however &mdash; there is a program written in Go that provides the ability to edit tags and releases, including attaching binaries, from the command-line. It is called [`github-release`](https://github.com/aktau/github-release) and I have created two AUR packages for it, [`github-release-bin`](https://aur.archlinux.org/packages/github-release-bin) and [`github-release`](https://aur.archlinux.org/packages/github-release). I have not quite mastered using it yet, so I am afraid I cannot share much information about using it.
 
 ## Footnotes
 [^1]: That is, it does not take much of an error to stuff an entire script up.
@@ -160,4 +160,3 @@ There are no officially-supported means of attaching binaries from the command-l
 [^14]: It cannot be licensed under a proprietary license, even if it is a freeware license!
 [^15]: Keeping in mind that these people are all volunteers &mdash; they are not being paid a cent for this!
 [^16]: Which, for your information, can be different from your GitHub repository's name.
-[^17]: Refer to [lxc/lxd#2174](https://github.com/lxc/lxd/issues/2174) for details, if you are interested in helping (which I would appreciate, of course).
