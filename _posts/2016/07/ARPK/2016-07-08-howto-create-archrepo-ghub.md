@@ -5,6 +5,7 @@ permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
 draft:            "yes"
+revision:         "21"
 last_modified_at: 2016-07-09 14:20:00 +1000
 ---
 

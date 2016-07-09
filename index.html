@@ -14,8 +14,8 @@ layout: default2
     <ul class="post-list">
       {% for post in site.posts %}
         {% if site.rec_posts contains post.url %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%A, %-d %B %Y" }}</span>
+          <li class="post-meta">
+            <span>{{ post.date | date: "%A, %-d %B %Y" }}</span>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </li>
         {% endif %}
@@ -28,8 +28,8 @@ layout: default2
 
     <ul class="post-list">
       {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%A, %-d %B %Y" }}</span>
+        <li class="post-meta">
+          <span>{{ post.date | date: "%A, %-d %B %Y" }}</span>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </li>
       {% endfor %}

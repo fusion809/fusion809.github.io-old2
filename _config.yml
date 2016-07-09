@@ -40,6 +40,12 @@ gems:
   - jekyll-gist
   - jekyll-redirect-from
 
+tag_permalink_style:  pretty
+tag_page_layout:      tag_page
+tag_page_dir:         tag
+tag_feed_layout:      page
+tag_feed_dir:         tag
+
 # Build settings
 markdown:             kramdown
 author:               Brenton Horne
