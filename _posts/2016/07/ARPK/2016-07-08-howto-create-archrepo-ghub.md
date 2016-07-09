@@ -4,7 +4,7 @@ title:            How to Create Your Own Arch Linux Package Repository, For Free
 permalink:        /how-to-create-archlinux-repository/
 categories:       archlinux, package-development, software-repositories
 layout:           post
-revision:         21
+revision:         24
 last_modified_at: 2016-07-09 18:27:00 +1000
 ---
 
