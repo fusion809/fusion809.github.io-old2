@@ -9,12 +9,12 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    asciidoctor (1.5.4)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
     colorator (0.1)
+    commonjs (0.2.7)
     elasticsearch (1.0.18)
       elasticsearch-api (= 1.0.18)
       elasticsearch-transport (= 1.0.18)
@@ -28,6 +28,11 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.13)
     gemoji (2.1.0)
+    hen (0.8.3)
+      highline (~> 1.6)
+      nuggets (~> 1.0)
+      safe_yaml (~> 1.0)
+    highline (1.7.8)
     html-pipeline (2.4.1)
       activesupport (>= 2, < 5)
       nokogiri (>= 1.4)
@@ -41,20 +46,23 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-asciidoc (2.0.1)
-      asciidoctor (>= 1.5.0)
-      jekyll (>= 2.3.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-feed (0.5.1)
+    jekyll-feed (0.6.0)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
+    jekyll-less (0.0.4)
+      jekyll (>= 0.10.0)
+      less (>= 2.0.5)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.11.0)
       jekyll (>= 2.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
-    jekyll-sitemap (0.10.0)
+    jekyll-sitemap (0.11.0)
+      addressable (~> 2.4.0)
+    jekyll-tagging (1.0.1)
+      ruby-nuggets
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
     jekyll_search (0.0.8)
@@ -67,6 +75,8 @@ GEM
       jekyll (>= 3.0)
     json (1.8.3)
     kramdown (1.11.1)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -82,6 +92,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    nuggets (1.0.0)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     pkg-config (1.1.7)
@@ -89,11 +100,14 @@ GEM
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
+    rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rdiscount (2.2.0.1)
     rouge (1.11.1)
+    ruby-nuggets (1.0.0)
+      nuggets (= 1.0.0)
     safe_yaml (1.0.4)
     sass (3.4.22)
     sawyer (0.7.0)
@@ -110,15 +124,17 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
+  hen
   jekyll
-  jekyll-asciidoc
   jekyll-coffeescript
   jekyll-feed
   jekyll-gist
+  jekyll-less
   jekyll-paginate
   jekyll-redirect-from
   jekyll-sass-converter
   jekyll-sitemap
+  jekyll-tagging
   jekyll_search
   jemoji
   kramdown
@@ -126,7 +142,9 @@ DEPENDENCIES
   maruku
   mercenary
   pygments.rb
+  rake
   rdiscount
+  ruby-nuggets
   terminal-table
 
 BUNDLED WITH
