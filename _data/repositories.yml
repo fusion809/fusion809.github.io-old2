@@ -26,6 +26,26 @@ body:
     description:
             "A package (Atom package name: `about-arch`) that provides an about page for Atom. I forked it from the official Atom `about` package, to customize it, for my Arch Linux packages and atom-installer builds."
 
+# arch-atom
+  - repo:
+            "arch-atom"
+    category:
+            "Arch Linux; Atom; PKGBUILDs"
+    fork:
+            "y"
+    orig-user:
+            "tensor5"
+    orig-repo:
+            "arch-atom"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "PKGBUILDs for building the latest stable release of Atom, with the bare minimum packages needed (so that the rest can be managed with APM) pre-installed, that is built on the latest release of Electron and APM."
+
 # arch-builder
   - repo:
             "arch-builder"
