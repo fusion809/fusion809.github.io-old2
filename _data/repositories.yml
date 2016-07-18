@@ -226,6 +226,26 @@ body:
     description:
             "Shell scripts automatically loaded (as they are referenced in `~/.bashrc` for both root and standard users) in Bash sessions that are designed to automate common system administration tasks under CentOS (and other systems using the yum package manager) like package management."
 
+# CPP-Math-Projects
+  - repo:
+            "CPP-Math-Projects"
+    category:
+            "C++; Math"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Math projects written, predominantly, in C++. Used for the purpose of helping me learn C++."
+
 # debian-scripts
   - repo:
             "debian-scripts"
