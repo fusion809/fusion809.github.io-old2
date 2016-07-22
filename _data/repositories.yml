@@ -528,7 +528,7 @@ body:
   - repo:
             "language-archlinux"
     category:
-            "Arch Linux; Atom Packages - Development; Atom Packages - Grammar;"
+            "Arch Linux; Atom Packages - Development;"
     fork:
             "n"
     license:
@@ -548,7 +548,7 @@ body:
   - repo:
             "language-gfm2"
     category:
-            "Atom Packages - Grammar; Forks;"
+            "Atom Packages - Grammar; Forks; GitHub-flavoured Markdown;"
     fork:
             "y"
     orig-user:
@@ -568,11 +568,59 @@ body:
     description:
             "My `language-gfm2` Atom package. It is essentially just the `language-gfm` package with [pull 154](https://github.com/atom/language-gfm/pull/154) applied."
 
+# language-ini-desktop
+  - repo:
+            "language-ini-desktop"
+    category:
+            "Atom Packages - Grammar; Desktop Configuration Files; INI;"
+    fork:
+            "y"
+    orig-user:
+            "jacobbednarz"
+    orig-repo:
+            "atom-language-ini"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `language-ini-desktop` package, which is a fork of the `language-ini` package with better support for desktop configuration files."
+
+# language-patch2
+  - repo:
+            "language-patch2"
+    category:
+            "Atom Packages - Grammar; Patch;"
+    fork:
+            "y"
+    orig-user:
+            "hexpunK"
+    orig-repo:
+            "language-patch"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `language-patch2` package, which is a fork of the `language-patch` package, with some changes to make it easier to build custom Atom builds with it pre-installed."
+
 # language-shellscript
   - repo:
             "language-shellscript"
     category:
-            "Atom Packages - Grammar"
+            "Atom Packages - Grammar; Shell;"
     fork:
             "y"
     orig-user:
@@ -590,7 +638,31 @@ body:
     working:
             "y"
     description:
-            "My `language-unix-shell` package, which in itself is a fork of the language-shellscript package with support for extra shell grammars."
+            "My `language-unix-shell` package, which in itself is a fork of the core `language-shellscript` package with support for extra shell grammars."
+
+# language-vala-modern
+  - repo:
+            "language-vala-modern"
+    category:
+            "Atom Packages - Grammar; Vala;"
+    fork:
+            "y"
+    orig-user:
+            "evfool"
+    orig-repo:
+            "language-vala"
+    license:
+            "MIT"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My `language-vala-modern` package, which is a fork of the `language-vala` package, the main difference is that it includes the `scopeName` field in its grammar file, so it automatically syntax-highlights files with `.vala` and `.vapi` file extensions."
 
 # lighttable-installer
   - repo:
