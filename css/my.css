@@ -76,8 +76,8 @@ div.tree { background-color: fuchsia; width: 200px; padding: 5px; border-radius:
 .pagesDropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #cc44ff;
+    min-width: 172px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -87,14 +87,19 @@ div.tree { background-color: fuchsia; width: 200px; padding: 5px; border-radius:
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    width: 172px;
 }
 
 /* Change color of dropdown links on hover */
-.pagesDropdown-content a:hover {background-color: #f1f1f1}
+.pagesDropdown-content a:hover {
+  background-color: #f1f1f1;
+  width: 172px;
+}
 
 /* Show the dropdown menu on hover */
 .pagesDropdown:hover .pagesDropdown-content {
     display: block;
+    width: 172px;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
