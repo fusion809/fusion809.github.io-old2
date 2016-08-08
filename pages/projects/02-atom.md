@@ -18,3 +18,5 @@ I have also contributed to the following Atom-related repositories (for a full l
 * {% include Links/gr.md user="DanBrooker" repo="file-icons" %} &mdash; the `file-icons` Atom package.
 * {% include Links/gr.md user="atom" repo="language-less" %} &mdash; the `language-less` core Atom package.
 * {% include Links/gr.md user="puranjayjain" repo="language-liquid" %} &mdash; the `language-liquid` Atom package.
+
+{% include_relative 02a-table1.html %}

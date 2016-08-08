@@ -1,12 +1,12 @@
 caption:
-  "Table 2: Repository Categories"
+  "Table 3: Repository Categories"
 
 body:
     - category:
               "Configuration Files"
       description:
               "This category is for files that either modify the appearance or the behaviour of the programs they pertain to. For example, `~/.vimrc` is a configuration file for Vim, and so can be used to modify its appearance and behaviour."
-              
+
     - category:
               "GitHub Pages"
       description:

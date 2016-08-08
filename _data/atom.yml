@@ -7,6 +7,8 @@ body:
 
   - item: '[`language-archlinux`](https://atom.io/packages/language-archlinux) package was added for Arch Linux package development support.'
 
+  - item: '[`toolbar-fusion`](https://atom.io/packages/toolbar-fusion) package was added to aid in software development.'
+
   - item: '[`language-ini-desktop`](https://atom.io/packages/language-ini-desktop) was added for the purpose of editing desktop configuration files as they are sometimes used as source files specified in PKGBUILDs.<br/>
   ![language-ini-desktop 1.18.2 syntax-highlighting a desktop configuration file on Atom 1.8.0](/images/Atom/language-ini-desktop-1.18.2.png)'
 
