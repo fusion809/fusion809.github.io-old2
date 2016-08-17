@@ -11,13 +11,14 @@
       </svg>
     </a>
     <div class="pagesDropdown">
-      <button onclick="myFunction()" class="dropbtn">Information Pages<span class="caret"></span></button>
+      <button class="dropbtn">Information Pages<span class="caret"></span></button>
       <div id="pagesDropdown" class="pagesDropdown-content">
-        {% for my_page in site.main_pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a class="page-link" href="/about/">About</a>
+        <a class="page-link" href="/about-me/">About Me</a>
+        <a class="page-link" href="/contributing/">Contributing</a>
+        <a class="page-link" href="/copyright/">Copyright</a>
+        <a class="page-link" href="/glossary/">Glossary</a>
+        <a class="page-link" href="/projects/">My Projects</a>
       </div>
     </div>
   </nav>
