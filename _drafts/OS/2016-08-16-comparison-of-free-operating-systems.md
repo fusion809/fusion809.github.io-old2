@@ -12,3 +12,5 @@ permalink:        /ten-favourite-OSs/
 {% include_relative 02-archlinux.md %}
 
 {% include_relative 03-centos.md %}
+
+{% include_relative notes.html %}

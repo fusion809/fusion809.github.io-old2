@@ -3,7 +3,7 @@
     <td colspan="2" class="title1" style="font-size: 18px; text-align: center;">{{ include.distro }}</td>
   </tr>
   <tr style="float: initial;">
-    <td colspan="2">
+    <td colspan="2" style="width:300px;">
       <div class = "infobox-icon">
         <figure>
           <p style="margin-left: auto; margin-right: auto; text-align: center;"><img src="/images/Logos/{{ include.logo }}" alt="{{ include.description }}" style = "width:120px; float: initial; position: relative; margin: auto; text-align: center;"/></p>
@@ -29,10 +29,21 @@
   </tr>
   <tr class="infobox-row">
     <td class="infobox-row-title">Package Manager:</td>
-    <td class="infobox-row">{{ include.pms }}</td>
+    <td class="infobox-row">{{ include.package-manager }}</td>
   </tr>
   <tr class="infobox-row">
     <td class="infobox-row-title">Release Model:</td>
     <td class="infobox-row">{{ include.release-model }}</td>
+  </tr>
+  <tr class="infobox-header">
+    <td class="infobox-header" colspan="2">Ratings</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title"><abbr title="Comprehensibility of the software repositories for the system.">CSR</abbr>:</td>
+    <td class="infobox-row">{{ include.cosr }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title"><abbr title="Stability vs. Bleeding-Edge Spectrum.">SBES</abbr>:</td>
+    <td class="infobox-row">{{ include.sbes }}</td>
   </tr>
 </table>
