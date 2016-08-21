@@ -26,6 +26,7 @@ permalink:        /comparison-of-tes-and-ides/
 {% include_relative 16-kdevelop.md %}
 {% include_relative 17-komodoedit.md %}
 {% include_relative 18-leafpad.md %}
+{% include_relative 28-monodevelop.md %}
 {% include_relative 19-mousepad.md %}
 {% include_relative 20-nano.md %}
 {% include_relative 21-netbeans.md %}
@@ -34,4 +35,5 @@ permalink:        /comparison-of-tes-and-ides/
 {% include_relative 24-pycharm.md %}
 {% include_relative 25-scite.md %}
 {% include_relative 26-vim.md %}
+{% include_relative 29-vscode.md %}
 {% include_relative 27-footnotes.md %}

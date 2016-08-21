@@ -10,18 +10,6 @@ NetBeans is extensible via plugins provided at its [website](http://plugins.netb
 ### Features
 NetBeans has the usual features of IDEs, including those of TEs like syntax highlighting, autocompletion and auto-indentation for its programming languages and the ability to compile programs written in it.
 
-### Obtaining It
-
-#### Manjaro
-On Manjaro installing NetBeans is as simple as running:
-{% include Code/coder.html line1="pacman -S netbeans" %}
-
-#### Sabayon
-On Sabayon installing NetBeans can be done using Entropy or Portage. To install NetBeans using Entropy run:
-{% include Code/coder.html line1="equo i -av dev-util/netbeans" %}
-while to install it with Portage run:
-{% include Code/coder.html line1="emerge -av dev-util/netbeans" %}
-
 ### Advantages (Pros)
 * It is extensible
 * Cross-platform and is able to run on any Java-capable platform.
