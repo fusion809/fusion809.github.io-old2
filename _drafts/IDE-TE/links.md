@@ -1,1 +1,0 @@
-{% if include.link %}[**{{ include.program }}**]({{ include.link }}){% else %}**{{ include.program }}**{% endif %}&nbsp;({% include_relative links-wiki.md %}{% if include.forum or include.gr or include.hr or include.br or include.sr or include.irc or include.sf %};&nbsp;{% include_relative links-extra.md %}{% endif %}){{ include.puncr }}
