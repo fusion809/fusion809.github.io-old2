@@ -1,12 +1,11 @@
 ---
 layout:           post
 title:            "A Comparison of Free and Open-Source Text Editors and IDEs"
-date:             2016-02-29 +1000
-last_modified_at: 2016-02-19 08:00 +1000
+date:             2016-08-29 +1000
+last_modified_at: 2016-08-22 08:00 +1000
 categories:       comparisons, text-editors, integrated-development-environment, linux
-revision:         3
-redirect_from:
-      - /2016/02/19/comparison-of-text-editors/
+revision:         1
+permalink:        /comparison-of-tes-and-ides/
 ---
 
 {% include_relative 01-introduction.md %}
@@ -35,6 +34,4 @@ redirect_from:
 {% include_relative 24-pycharm.md %}
 {% include_relative 25-scite.md %}
 {% include_relative 26-vim.md %}
-{% include_relative 27-poll.md %}
-{% include_relative 28-sru.md %}
-{% include_relative 29-footnotes.md %}
+{% include_relative 27-footnotes.md %}
