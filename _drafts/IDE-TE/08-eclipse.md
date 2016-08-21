@@ -8,7 +8,7 @@
 I do not have enough experience with Eclipse to make any comment on its customizability, but I do know that extra functionality is usually added using plugins.
 
 ### Features
-Eclipse features a text editor with syntax-highlighting, debugging and auto-complete support for most programming languages, in-built support for several compilers and interpreters, it also supports the use of project views, *etc.*
+Eclipse features a text editor with syntax-highlighting, debugging, linting and auto-complete support for most programming languages, in-built support for several compilers and interpreters, it also supports the use of project views, *etc.*
 
 ### Advantages (Pros)
 * Written in Java, so it is incredibly cross-platform. Any Java-capable platform should be able to run Eclipse without a problem.
