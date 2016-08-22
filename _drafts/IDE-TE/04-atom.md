@@ -52,10 +52,19 @@ One package I like, that I would recommend if you wish to use Atom on more than 
 * Intuitive and easy to learn.
 * Support for a wide range of different computer languages.
 * Displays directory structure in (left) side panel.
-* Very feature-packed, so feature packed it can be used as both a text editor and an IDE
+* Very feature-packed, so feature packed it can be used as both a text editor and an IDE.
 
 ### Disadvantages (Cons)
 * Slow to start, although with the release of version 1.3.0 the start time has been supposedly cut by 20-30%.[^1] I personally have not noticed any such improvement, although I cannot say for certain I would even if there was such an improvement.
 
 ### Summary
 {% include_relative 04a-atom-summary.html %}
+
+### External Links
+* [Atom Blog](http://blog.atom.io/) @ blog.atom.io.
+* [Atom Latest Release download page](https://github.com/atom/atom/releases/latest).
+* [Atom Package Repository](https://atom.io/packages) @ atom.io/packages.
+* [Atom Theme Repository](https://atom.io/themes) @ atom.io/themes.
+* [atom-installer](https://github.com/fusion809/atom-installer), my Linux installer for Atom.
+* [Build Instructions for Linux](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md).
+* [Support Forums](https://discuss.atom.io/) @ discuss.atom.io.
