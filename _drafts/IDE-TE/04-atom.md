@@ -5,7 +5,7 @@
 [**Atom**](https://atom.io) ([here](https://github.com/atom/atom) is its GitHub Repository) is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unique amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
 
 ### Customizability
-{% include Links/image.html image="atom-packages-homepage-20160108.png" width="1130px" float="none" description="[Atom Packages Repository Homepage](https://atom.io/packages), note the current count of packages is 3,433." %}
+{% include Links/image.html image="atom-packages-homepage-20160108.png" width="1130px" float="none" description="[Atom Packages Repository Homepage](https://atom.io/packages), note the current count of packages is 3,433 in this screenshot." %}
 Atom is very customizable, via a grand total of over 6,320 themes and plugins that can be installed from the command-line, using the `apm` command, or from within Atom itself. I personally prefer the command-line, as I have had some bad experiences with the built-in installer. From the command-line the command for installing new themes or plugins is:
 {% include Code/codeu.html line1="apm install &lt;PACKAGE&gt;" %}
 where `<PACKAGE>` is the plugin/theme's name. Customizations, including plugins and themes are stored in `~/.atom`. Advanced customization (for example, of keyboard shortcuts) must be done by directly editing files in this directory. For example, in order to edit your keyboard shortcuts you need to edit `~/.atom/keymap.cson`. A guide on how to do this can be found in [Atom's Flight Manual](https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings). For example, to help me write this blog I have been using the following `~/.atom/keymap.cson`:
@@ -68,3 +68,4 @@ One package I like, that I would recommend if you wish to use Atom on more than 
 * [atom-installer](https://github.com/fusion809/atom-installer), my Linux installer for Atom.
 * [Build Instructions for Linux](https://github.com/atom/atom/blob/master/docs/build-instructions/linux.md).
 * [Support Forums](https://discuss.atom.io/) @ discuss.atom.io.
+* [Tutorial for writing Atom Packages &mdash; written for those with a JavaScript background](https://www.sitepoint.com/how-to-write-a-syntax-highlighting-package-for-atom/) @ sitepoint.com.
