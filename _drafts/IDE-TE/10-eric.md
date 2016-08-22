@@ -11,13 +11,13 @@ Eric has an extensive in-built plugin system. These plugins can be installed fro
 Its features include support for managing Mercurial, Subversion and Git repositories, an integrated Python debugger, an interactive embedded Python shell with syntax-highlighting, syntax-highlighting for its text editor component, code autocompletion, *etc.*
 
 ### Advantages (Pros)
-* Cross-platform
-* Supports both Python versions
-* Feature-packed for Python developers
-* Lightweight
+* Cross-platform.
+* Supports both Python versions.
+* Feature-packed for Python developers.
+* Lightweight.
 
 ### Disadvantages (Cons)
-* The latest version is not available via the usual channels on Sabayon
+* The latest version is not available via the usual channels on Sabayon.
 
 ### Summary
 {% include_relative 10a-eric-summary.html %}

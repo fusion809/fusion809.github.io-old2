@@ -13,7 +13,7 @@ It is fairly feature-packed (including git, subversion, GUI-building, *etc.* sup
 ### Advantages (Pros)
 * Cross-platform able to run on Windows, OS X and Linux.
 * Fairly lightweight for an IDE.
-* Feature-packed
+* Feature-packed.
 
 ### Disadvantages (Cons)
 * Support for only four programming languages.

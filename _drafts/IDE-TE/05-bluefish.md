@@ -11,8 +11,8 @@ I have limited experience with Bluefish but from what I can gather, it is custom
 Syntax highlighting is available for almost (if not all) all computer languages used in web development.
 
 ### Advantages (Pros)
-* Customizable
-* Has features that would appeal to a web developer
+* Customizable.
+* Has features that would appeal to a web developer.
 
 ### Disadvantages (Cons)
 * Support for non-web markup/programming languages is less than adequate.

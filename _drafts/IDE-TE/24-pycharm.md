@@ -15,7 +15,7 @@ It is not as feature-packed as its proprietary counterpart, but it does have a p
 * feature-packed.
 
 ### Disadvantages (Cons)
-* Heavy on system resource usage
+* Heavy on system resource usage.
 
 ### Summary
 {% include_relative 24a-pycharm-summary.html %}

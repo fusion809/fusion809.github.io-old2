@@ -19,8 +19,8 @@ It has syntax-highlighting support for almost (if not every) every computer lang
 ### Advantages (Pros)
 
 * Easy to obtain it on virtually every &#42;nix system.
-* Extremely customizable
-* Fairly light on system resources
+* Extremely customizable.
+* Fairly light on system resources.
 
 ### Disadvantages (Cons)
 
@@ -28,3 +28,7 @@ It has syntax-highlighting support for almost (if not every) every computer lang
 
 ### Summary
 {% include_relative 26a-vim-summary.html %}
+
+### External Links
+* [vim/vim GitHub Repository](https://github.com/vim/vim)
+* [Vim Awesome Repository of Plugins](http://vimawesome.com/)

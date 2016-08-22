@@ -12,13 +12,13 @@ SciTE can be customized by editing `.properties` files or via scripting with Lua
 ### Features
 It provides syntax-highlighting for dozens of computer languages. Support for extra languages can be added by creating `.properties` files for them.
 
+### Advantages (Pros)
+* Fairly lightweight.
+* Extensively customizable.
+* Easy to get on most distributions.
+
 ### Disadvantages (Cons)
 * The list of languages it automatically supports is &lt;30.
-
-### Advantages (Pros)
-* Fairly lightweight
-* Extensively customizable
-* Easy to get on most distributions.
 
 ### Summary
 {% include_relative 25a-scite-summary.html %}

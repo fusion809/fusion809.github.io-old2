@@ -14,10 +14,10 @@ pluma has a few plugins that can be used to add features (mostly IDE-like featur
 * Customization is done graphically, making it easier for beginners.
 * Has intuitive keyboard shortcuts.
 * Has several IDE-like features like a Python terminal.
-* Has syntax-highlighting and auto-indenting support for several computer languages
+* Has syntax-highlighting and auto-indenting support for several computer languages.
 
 ### Disadvantages (Cons)
-* Customization options are fairly limited
+* Customization options are fairly limited.
 
 ### Summary
 {% include_relative 23a-pluma-summary.html %}

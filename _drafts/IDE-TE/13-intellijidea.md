@@ -16,7 +16,7 @@ Its features is something I cannot really comment on as I have limited experienc
 
 ### Disadvantages (Cons)
 * Cannot be installed via the usual methods on most distributions.
-* Limited set of features and supported languages
+* Limited set of features and supported languages.
 
 ### Summary
 {% include_relative 13a-intellijidea-summary.html %}

@@ -11,13 +11,13 @@ Some basic customization can be done, graphically, by going to Edit←Preference
 It supports syntax-highlighting for roughly, a couple of dozen computer languages.
 
 ### Advantages (Pros)
-* Lightweight
-* All customization can be done graphically
-* User-friendly
+* Lightweight.
+* All customization can be done graphically.
+* User-friendly.
 
 ### Disadvantages (Cons)
-* Basic, limited computer language support
-* Limited customization options
+* Basic, limited computer language support.
+* Limited customization options.
 
 ### Ratings
 {% include_relative 19a-mousepad-summary.html %}
