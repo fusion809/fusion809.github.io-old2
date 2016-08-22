@@ -10,15 +10,12 @@ Komodo Edit can be customized and extended by use of packages that come in the `
 ### Features
 Komodo Edit can have extra features added to it by use of plugins.
 
-### Obtaining It
-Komodo Edit is built from precompiled binaries on both Manjaro and Sabayon, when installed via the methods outlined below.
-
 ### Advantages (Pros)
 * Seems fairly feature-packed, something tells me that its feature set is likely similar to Atom.
 
 ### Disadvantages (Cons)
 * Komodo Edit is fairly heavy on SRU.
-* Not in the official repositories of any distribution I am aware of.
+* It is not in the official repositories of any distribution I am aware of.
 
 ### Ratings
 {% include_relative 17a-komodoedit-summary.html %}
