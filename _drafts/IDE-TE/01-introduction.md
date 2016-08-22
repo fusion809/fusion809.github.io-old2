@@ -1,4 +1,4 @@
-{% include Links/image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
+{% include Links/image.html image="Atom-1.9.9-Ubuntu-16.04.png" width="1130px" float="none" description="Atom 1.9.9 running under the KDE on Ubuntu 16.04" %}
 
 **Text editors** (**TEs**) are essential programs for software developers and programmers in general, as they enable users to write and edit source code or markup files. They are popular tools used by both experienced and novice Linux users. In this post I will compare the various *free and open-source* text editors available for Linux, with regard to several features and properties of each. It is important to note that I am not an experienced programmer, my experience with programming is limited to mostly MATLAB/GNU Octave scripts, a small handful of Python scripts I wrote for technical computing (that is, numerical analysis), some C/C++ programs I have written and a collection of Shell scripts I have written (mostly to automate some common tasks I perform on Linux).
 

@@ -2,7 +2,7 @@
 {% include Links/image.html image="Atom/Atom-1.9.9-Ubuntu-16.04.png" width="1130px" float="none" description="Atom 1.9.9 running under KDE on Ubuntu 16.04" %}
 
 ### Background
-[**Atom**](https://atom.io) is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unique amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
+[**Atom**](https://atom.io) ([here](https://github.com/atom/atom) is its GitHub Repository) is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unique amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
 
 ### Customizability
 {% include Links/image.html image="atom-packages-homepage-20160108.png" width="1130px" float="none" description="[Atom Packages Repository Homepage](https://atom.io/packages), note the current count of packages is 3,433." %}
