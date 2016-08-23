@@ -1,5 +1,5 @@
 ## KDevelop
-{% include Links/image.html image="KDevelop-4.7.2.png" width="1130px" float="none" description="KDevelop 4.7.2 running under Manjaro Linux" %}
+{% include Links/image.html image="IDEs/KDevelop-4.7.2.png" width="1130px" float="none" description="KDevelop 4.7.2 running under Manjaro Linux" %}
 
 ### Background
 [**KDevelop**](https://www.kdevelop.org/) is an IDE that is part of the KDE Core Applications (KDE-CA) suite, unlike most other members of the KDE-CA suite it is still based on Qt4 and has not yet made the transition to KDE Frameworks 5 (KF5). Plans to transition to KF5 are currently in place for the near future. It is designed for C, C++, PHP and Python development.

@@ -13,7 +13,7 @@ redirect_from:
   - /2015/11/24/bash-scripting-and-the-command-line-an-introduction-for-sabayon-users/
 ---
 
-{% include Links/image.html image="optipng2.png" description="OptiPNG 0.7.5 running under Bash 4.3.39 in LXTerminal 0.2.0" width = "1130px" float = "none" %}
+{% include Links/image.html image="Terminals/optipng2.png" description="OptiPNG 0.7.5 running under Bash 4.3.39 in LXTerminal 0.2.0" width = "1130px" float = "none" %}
 {% include Layouts/note.html note1="Links to Wiki articles are provided in this post for those that wish to learn more, but it is important to note that I cannot guarantee their accuracy." %}
 
 On **Sabayon Linux** and other [Linux distributions](https://en.wikipedia.org/wiki/Linux_distribution), along with other [Unix](https://en.wikipedia.org/wiki/Unix)/[Unix-like](https://en.wikipedia.org/wiki/Unix-like) systems,[^1] the command-line is a pivotal way by which users can interact with the operating system, the files stored on it and the system's various components. The command-line on such systems is usually accessed via so called &ldquo;**[terminal emulators](https://en.wikipedia.org/wiki/Terminal_emulator)**&rdquo;, which start and allow users to interact with their [Unix shell](https://en.wikipedia.org/wiki/Unix_shell). It is Unix shells that really serve as the command-line of &#42;nix systems and from within them various command-line programs can be called and used to perform specific tasks. Examples of such programs include `cp`, `find`, `ls`, `rm`, *etc.* In fact, one of the defining properties of all &#42;nix systems is that they share a set of basic command-line utilities that perform specific and usually singular tasks. On Linux platforms such as Sabayon these basic utilities are usually provided by the [**GNU Core Utilities**](https://en.wikipedia.org/wiki/GNU_Core_Utilities) ([sys-apps/coreutils](https://packages.sabayon.org/show/coreutils,156043,sabayon-weekly,amd64,5,standard)) package and the Unix shell used is usually **[Bash](https://en.wikipdia.org/wiki/Bash_(Unix_shell))**.
@@ -23,7 +23,7 @@ On **Sabayon Linux** and other [Linux distributions](https://en.wikipedia.org/wi
 In this post I will give provide an introduction to the &#42;nix command-line, including some available terminal emulators, Unix shells, with some focus on Bash and how all this relates to Sabayon users. It is important to remember I am not an expert on Bash, Bash scripting or programming in general, I have even had doubts I could even write this blog post. It is important to note too that this post is nowhere near *comprehensive* on this topic, as the only type of text I, or anyone, could write that would be comprehensive on this topic would be an entire several-hundred page book, not a dozen-or-so-page blog post. This post just gives you some of the tools to do many of the basic things a novice or intermediate user of Sabayon would like to be able to do with Bash.
 
 ## Background
-{% include Links/image.html image="BrianJFox.png" width="300px" height="401px" description="Brian J. Fox (1959-), the original developer of Bash" %}
+{% include Links/image.html image="People/BrianJFox.png" width="300px" height="401px" description="Brian J. Fox (1959-), the original developer of Bash" %}
 
 The development of Bash began in January 1988, when [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman), the founder of the GNU Project and the [Free Software Foundation](http://www.fsf.org/) (FSF), became dissatisfied with the previous author of the GNU shell's failure to meet the required deadlines and decided, instead, to get FSF staff member, Brian J. Fox to write a free imitation of the Bourne Shell.[^2] Later in June 1989, the first public release of Bash was made, 0.99 (which was a beta release) and until mid 1992 (when Bash 1.12 was released), Fox remained the lead developer of Bash.[^3] When Fox left the FSF in mid 1992, [Chet Ramey](http://tiswww.case.edu/php/chet/) took over responsibility for Bash's development, which he has kept to this very day.[^4] Bash was and still is written entirely in C, as was its predecessor, the Bourne Shell.
 {% include Layouts/clear.html %}
@@ -31,7 +31,7 @@ The development of Bash began in January 1988, when [Richard Stallman](https://e
 ### Other Unix Shells
 The [Bourne Shell](https://en.wikipedia.org/wiki/Bourne_shell) was one of the first official Unix shells to be developed and was first developed in 1977. I am using the phrasing "official Unix shells", to draw attention to the fact that the Bourne Shell was developed at Bell Labs for use by Research Unix, which was the original Unix system. The Bourne Shell is named after [Stephen Bourne](https://en.wikipedia.org/wiki/Stephen_R._Bourne), its original developer.
 
-{% include Links/image.html image="Bill_Joy.jpg" width="300px" height="375px" description="Bill Joy (1954-), the original developer of Csh and Vi" float="left" %}
+{% include Links/image.html image="People/Bill_Joy.jpg" width="300px" height="375px" description="Bill Joy (1954-), the original developer of Csh and Vi" float="left" %}
 While Bash was originally developed as a free "imitation" of the Bourne Shell, it also has features that it borrows from other Unix shells: including the C shell and the Korn shell. The **[C shell](https://en.wikipedia.org/wiki/C_shell)** (**csh**) is a Unix shell that was originally developed by [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) &mdash; the author of the Vi text editor (which is a direct ancestor of Vim) and was first released in 1978 (and is still under active development today). Its chief distinguishing feature is that its syntax is similar to that of the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)). A notable descendant of C shell that is also widely used today, is **[tcsh](https://en.wikipedia.org/wiki/Tcsh)** (the **TENEX C Shell**), which before release 10.3 was the default shell of OS X and continues to be the default shell of most [Berkeley Software Distribution](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) derivatives such as [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD). The **[Korn shell](https://en.wikipedia.org/wiki/Korn_shell)** (**ksh**) was one of the Unix shells developed at Bell Labs for Research Unix, although unlike most other of the original Unix shells it is still under active development today.
 
 Along with these shells, another free Unix shell that has gained notoriety, that I feel is worthwhile mentioning is the **[Z shell](https://en.wikipedia.org/wiki/Z_shell)** (**Zsh**). Zsh was first released by Paul Falstad in 1990 and at the time Falstad was a student at Princeton University. Since then Zsh's development has become coordinated by Peter Stephenson. What is notable about Zsh, is how feature-packed it is. It has many of the same features as Bash, but it also has spelling-correction, easier customizability and a few other features that Bash lacks.
@@ -901,53 +901,53 @@ Terminal emulators (TEs) for Sabayon include tty1-tty6, the whole-screen virtual
 The following section will involve me comparing the various graphical terminal emulators I have any real experience with.
 
 ### GNOME Terminal
-{% include Links/image.html image="GNOME-Terminal-3.16.2.png" width="743px" description="GNOME Terminal 3.16.2 running under Moksha" float="none" %}
+{% include Links/image.html image="Terminals/GNOME-Terminal-3.16.2.png" width="743px" description="GNOME Terminal 3.16.2 running under Moksha" float="none" %}
 {% include Links/links.html package="x11-terms/gnome-terminal" program="GNOME Terminal" link="https://wiki.gnome.org/Apps/Terminal" wp="GNOME Terminal" %} is a GTE that is part of the GNOME Core Applications suite. It is written in C and licensed under GNU GPLv2. I find it, like most GNOME Core Applications fairly feature-packed, with several customization options being available for the terminal window. These include custom keyboard shortcuts, colour schemes, fonts and behaviours.
 
 #### Rating(s)
 {% include_relative TE-ratings.html availability="10. Comes pre-installed on GNOME edition of Sabayon. Also available from the Entropy Store." customizability="8" features="8" sru="8." gist="d0e2ea07a2def192cacc" overall="9" %}
 
 ### Konsole
-{% include Links/image.html image="Konsole-15.08.2.png" width="1000px" description="Konsole 15.08.2 running under Moksha" float="none" %}
+{% include Links/image.html image="Terminals/Konsole-15.08.2.png" width="1000px" description="Konsole 15.08.2 running under Moksha" float="none" %}
 {% include Links/links.html package="kde-apps/konsole" program="Konsole" link="https://konsole.kde.org/" wp="Konsole" %} is a GTE based on the Qt widget toolkit that is part of the KDE Core Applications (or KDE Frameworks 5). I would probably say that Konsole and Terminator are the most feature-packed GTEs, with custom keyboard shortcuts, colour schemes, fonts and behaviours possible. Konsole does have an advantage, in my opinion, over Terminator, though. See Konsole highlights tabs (in purple/pink, see the screenshot below) that have pushed out extra output since they were last viewed, which can be handy at times.
 
-{% include Links/image.html image="Konsole-purple-tab-colour.png" width="1000px" float="none" description="Konsole showing the purple/pink tab highlighting. Note, how the first tab with its title starting with <code>...09@brenton-pc</code> is coloured purple/pink, this indicates that it has unread output" %}
+{% include Links/image.html image="Terminals/Konsole-purple-tab-colour.png" width="1000px" float="none" description="Konsole showing the purple/pink tab highlighting. Note, how the first tab with its title starting with <code>...09@brenton-pc</code> is coloured purple/pink, this indicates that it has unread output" %}
 
 #### Rating(s)
 {% include_relative TE-ratings.html availability="10. Comes preinstalled on the KDE edition of Sabayon and available from the Entropy Store." customizability="9." sru="8." features="9." overall="9" gist="b03ca0f3e5e6b961ed19" %}
 
 ### LXTerminal
-{% include Links/image.html image="LXTerminal-0.2.0.png" description="LXTerminal 0.2.0 running under Moksha" width="1000px" float="none" %}
+{% include Links/image.html image="Terminals/LXTerminal-0.2.0.png" description="LXTerminal 0.2.0 running under Moksha" width="1000px" float="none" %}
 {% include Links/links.html package="lxde-base/lxterminal" program="LXTerminal" link="http://wiki.lxde.org/en/LXTerminal" %} is a terminal emulator that is part of the core applications suite of LXDE. It uses the GTK+2 toolkit and while lightweight still has a few of the features that more advanced terminal emulators like Konsole boast. These include: ability to customize keyboard shortcuts and fonts (although a custom colour scheme is not permitted).
 
 #### Rating(s)
 {% include_relative TE-ratings.html availability="8, available in the Entropy Store but not preinstalled on any official Sabayon edition." customizability="8" features="8" sru="9." gist="74f4c3c54450760623d2" overall="8" %}
 
 ### MATE Terminal
-{% include Links/image.html image="MATE-Terminal-1.8.1.png" description="MATE Terminal 1.8.1 running under MATE" width="1000px" float="none" %}
+{% include Links/image.html image="Terminals/MATE-Terminal-1.8.1.png" description="MATE Terminal 1.8.1 running under MATE" width="1000px" float="none" %}
 {% include Links/links.html package="x11-terms/mate-terminal" program="MATE Terminal" link="https://github.com/mate-desktop/mate-terminal" %} is a terminal emulator that is part of the core application suite of MATE, a fork of GNOME 2. Consequently the MATE Terminal is based on the GTK+2 toolkit. Unlike most terminal emulators (in fact all of them mentioned in this post) I have found it does not work under Moksha. See whenever I run `mate-terminal` I get segmentation fault messages.
 
 #### Rating(s)
 {% include_relative TE-ratings.html availability="10. Installed, by default, on Sabayon MATE edition." customizability="8. Shares many of the same customizability options of GNOME Terminal." features="8. Same features as GNOME Terminal." sru="9. Like most MATE components it is fairly lightweight." gist="b345c67359307ff5bc17" overall="9. To me the fact that it does not work on Moksha is a big drawback, if for you it launches fine on your desktop of choice, it would probably be a better option than GNOME Terminal as it shares the same features but is lighter on SRU." %}
 
 ### Terminator
-{% include Links/image.html image="Terminator-0.98.png" width="1000px" float="none" description="Terminator 0.98 running under Moksha" %}
+{% include Links/image.html image="Terminals/Terminator-0.98.png" width="1000px" float="none" description="Terminator 0.98 running under Moksha" %}
 {% include Links/links.html package="x11-terms/terminator" program="Terminator" link="https://launchpad.net/terminator" wp="Terminator_(terminal_emulator)" %} is a terminal emulator that uses the GTK toolkit and is written in Python. Compared to other terminal emulators its major advantage is that of window splitting. See, in most terminal emulators the only way you can open another terminal within the same window is by creating another tab (which is something Terminator can do to), which can be annoying if what you want to type into the other terminal is found in the one you are currently working in (as you cannot see what is in the current terminal when you open a new tab and start working in it), while with terminator you can show two terminals side-by-side in the same window, making it easier to work on two or more related things at a time. For example, here is a screenshot of Terminator with two windows in the one tab, with me working on my blog. In the first window I am running `bundle exec jekyll serve` and in the other I am doing the git side of managing my blog.
 
-{% include Links/image.html image="Terminator-0.98-window-splitting.png" float="none" width="1000px" description="Terminator 0.98 running under Moksha, while I work on my blog in both windows" %}
+{% include Links/image.html image="Terminals/Terminator-0.98-window-splitting.png" float="none" width="1000px" description="Terminator 0.98 running under Moksha, while I work on my blog in both windows" %}
 
 #### Rating(s)
 {% include_relative TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, extra features can be added using plugins." sru="5." gist="24dd1c1a4fd65acfe2a9" overall="8" %}
 
 ### Terminology
-{% include Links/image.html image="Terminology-0.9.1.png" width="1000px" float="none" description="Terminology 0.9.1 running under Moksha" %}
+{% include Links/image.html image="Terminals/Terminology-0.9.1.png" width="1000px" float="none" description="Terminology 0.9.1 running under Moksha" %}
 {% include Links/links.html package="x11-terms/terminology" program="Terminology" link="https://www.enlightenment.org/about-terminology" wp="Terminology_(software)" %} is the terminal emulator of the Enlightenment desktop environment. Compared to other GTEs it is less intuitive and can be irritating to get the ropes of, because of how different it is to other GTEs. My experience is fairly limited with it, due to the fact I find it frustrating and hence have usually opted for less irritating alternatives like Konsole and LXTerminal. Despite this it does seem quite customizable and feature-packed, in fact, on their [about page](https://www.enlightenment.org/about-terminology) at enlightenment.org, it even says you can view image files (including bitmap and vector images) in Terminology.  
 
 #### Rating(s)
 {% include_relative TE-ratings.html availability="8. Not pre-installed on any official Sabayon edition, but can be easily installed using Entropy." customizability="9. Colour scheme, keybindings and several other features are customizable." features="9. Feature-packed, can even view image files in it" sru="8." gist="cc49c4322790078ae7e0" overall="8" %}
 
 ### Xfce Terminal
-{% include Links/image.html image="Xfce-terminal.png" width="1000px" float="none" description="Xfce4 Terminal 0.6.3 running under Moksha" %}
+{% include Links/image.html image="Terminals/Xfce-terminal.png" width="1000px" float="none" description="Xfce4 Terminal 0.6.3 running under Moksha" %}
 {% include Links/links.html package="x11-terms/xfce4-terminal" program="Xfce Terminal" link="http://docs.xfce.org/apps/terminal/start" wp="Terminal_(Xfce)" %} is the terminal emulator of Xfce. I have personally found it, despite using more RAM than LXTerminal, less customizable and feature-packed. It is based on the GTK+3 toolkit.
 
 #### Rating(s)
@@ -955,7 +955,7 @@ The following section will involve me comparing the various graphical terminal e
 
 ### Other Terminal Emulators
 I have limited experience with drop-down terminals and X terminals like UXTerm and XTerm, hence I cannot really comment on anything but their system resource usage (SRU) and ease of installation. Here is a graph comparing RAM usage amongst GTEs, note that each of these GTEs are installable using Entropy:
-{% include Links/image.html image="RAM-usage-TEs.png" width="1000px" float="none" description="RAM usage of GTEs" %}
+{% include Links/image.html image="Graphs/RAM-usage-TEs.png" width="1000px" float="none" description="RAM usage of GTEs" %}
 
 ## Free Help Resources
 * [Stack Overflow](http://stackoverflow.com/)[^8]

@@ -21,16 +21,16 @@ greater support for Python 2 than for Python 3. Python also has its own command-
 {% endcapture %}
 {% capture point6 %}
 {% include Links/wp.md name="PyMOL" %} &mdash; an application for viewing and performing calculations relating to molecules, especially macromolecules like proteins, DNA double helices and RNA helices. Which is managed by pip, so running {% include Code/codeus.html line1="sudo pip install pymol" %} should install it.
-{% include Links/image.html image="PyMOL-1.7.6.0-3EIG.png" float="none" %}
+{% include Links/image.html image="PyMOL/PyMOL-1.7.6.0-3EIG.png" float="none" %}
 {% endcapture %}
 {% capture point7 %}
 {% include Links/wp.md name="SageMath" %} &mdash; a mathematics program that uses a Python-like syntax and integrates several free pieces of
 mathematics software in a single command-line and notebook interface, with interfaces available for several proprietary mathematics programs too.
-{% include Links/image.html image="SageMath-6.10.png" float="none" %}
+{% include Links/image.html image="IDEs/SageMath-6.10.png" float="none" %}
 {% endcapture %}
 {% capture point8 %}
 {% include Links/wp.md name="Spyder" cat="software" %} &mdash; a cross-platform free and open-source IDE for scientific computing in Python. It is managed by pip, so running {% include Code/codeus.html line1="sudo pip install spyder" %} should install it, provided its dependency PyQt4/PyQt5 is already installed.
-{% include Links/image.html image="Spyder-2.3.8.png" float="none" %}
+{% include Links/image.html image="IDEs/Spyder-2.3.8.png" float="none" %}
 {% endcapture %}
 {% capture point9 %}
 [youtube-dl](https://rg3.github.io/youtube-dl/) ([`youtube-dl`](/man/youtube-dl.1.html)) &mdash; a command-line program for downloading YouTube videos as media files. It is managed by pip (so running {% include Code/codeus.html line1="sudo pip install youtube-dl" %} should install it)

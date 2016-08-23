@@ -1,5 +1,5 @@
 ## gedit
-{% include Links/image.html image="gedit-screenshot-under-Moksha.png" float="none" width="1130px" description="gedit running under Moksha" %}
+{% include Links/image.html image="text-editors/gedit-screenshot-under-Moksha.png" float="none" width="1130px" description="gedit running under Moksha" %}
 
 ### Background
 [**gedit**](https://wiki.gnome.org/Apps/Gedit) is a GTK+ based text editor that is one of the core applications of GNOME. In my opinion, it is the second most advanced text editor (after Kate) that is part of a desktop environment's core application suite. It is also more advanced than Windows' Notepad and Wordpad text editors. Despite this it is also beginner-friendly and uses a standard keymap.

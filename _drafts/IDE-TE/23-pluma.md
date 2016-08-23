@@ -1,5 +1,5 @@
 ## pluma
-{% include Links/image.html image="Pluma-1.8.1-running-under-Mokhsa.png" description="pluma 1.8.1 running under Moksha" float="none" width="1130px" %}
+{% include Links/image.html image="text-editors/Pluma-1.8.1-running-under-Mokhsa.png" description="pluma 1.8.1 running under Moksha" float="none" width="1130px" %}
 
 ### Background
 [**pluma**](https://github.com/mate-desktop/pluma) is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.

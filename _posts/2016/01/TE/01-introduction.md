@@ -1,4 +1,4 @@
-{% include Links/image.html image="Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
+{% include Links/image.html image="Atom/Atom-1.3.2.png" width="1130px" float="none" description="Atom 1.3.2 running under the Deepin Desktop Environment (DDE) on Manjaro Linux" %}
 
 **Text editors** are essential programs for software developers and programmers in general, as they enable users to write and edit source code or markup files. They are popular tools used by both experienced and novice Linux users. In this post I will compare the various *free and open-source* text editors available for Manjaro and Sabayon, with regard to several features and properties of each. It is important to note that I am not a programmer, my experience with programming is limited to mostly MATLAB/GNU Octave scripts, a small handful of Python scripts I wrote for technical computing (that is, numerical analysis) and a few Bash scripts I have written to make my life easier, when I use Linux systems.
 
@@ -15,7 +15,7 @@ IDEs can usually be found in the `dev-util` category, so to list those available
 {% include Code/codeu.html line1="equo search &quot;dev-util&quot;" %}
 to search all overlays (including the Portage Tree) run:
 {% include Code/codeu.html line1="eix -RCc &quot;dev-util&quot;" %}
-{% include Links/image.html image="PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
+{% include Links/image.html image="Package-Managers/PkgBrowser-text-editors.png" description="How to list the text editors in PkgBrowser" width="1130px" float="none" %}
 On Manjaro Linux many, if not all of these text editors/IDEs, are also available from the [Arch User Repository](https://aur.archlinux.org) (AUR) or the Manjaro repositories. Unfortunately, pacman, does not use categories for its packages, so one cannot use this to search for TEs/IDEs. One can, however, use the graphical PkgBrowser program, which can be installed using the command:
 {% include Code/coder.html line1="pacman -S pkgbrowser" %}
 to show the text editors in the pacman repositories go to the `Categories` menu, press the `app` submenu and then the `editor` submenu under there.

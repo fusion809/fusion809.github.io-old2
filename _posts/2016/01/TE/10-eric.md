@@ -1,5 +1,5 @@
 ## Eric Python IDE
-{% include Links/image.html image="Eric6.png" width="1130px" float="none" description="Eric 6 running under Manjaro Linux" %}
+{% include Links/image.html image="IDEs/Eric6.png" width="1130px" float="none" description="Eric 6 running under Manjaro Linux" %}
 
 ### Background
 {% include_relative links.md program="Eric Python IDE" package="dev-util/eric" pacman="community/any/eric/" link="http://eric-ide.python-projects.org/" wp="Eric_Python_IDE" hr="http://die-offenbachs.homelinux.org:48888/hg/eric/" sf="eric-ide" %} is a free and open-source IDE that is developed by its own community of donation-sponsored developers. It is written in and used to program in Python. As of Eric version 6, it supports both Python 2 and Python 3.

@@ -1,5 +1,5 @@
 ## Bluefish
-{% include Links/image.html image="Bluefish.png" description="Bluefish running under LXDE" width="1130px" float="none" %}
+{% include Links/image.html image="IDEs/Bluefish.png" description="Bluefish running under LXDE" width="1130px" float="none" %}
 
 ### Background
 {% include_relative links.md program="Bluefish" package="app-editors/bluefish" pacman="extra/x86_64/bluefish/" link="http://bluefish.openoffice.nl/index.html" wiki="http://bfwiki.tellefsen.net/index.php/Main_Page" wp="Bluefish_(software)" ml="http://bfwiki.tellefsen.net/index.php/Manual_2_ToC" %} is a text editor, primarily intended for web development and programming, as it provides syntax highlighting support and other features mostly for web markup, programming and style sheet languages.

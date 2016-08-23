@@ -1,5 +1,5 @@
 ## CodeLite
-{% include Links/image.html image="CodeLite-9.0.0.png" description="CodeLite 9.0.0 running under Manjaro" float="none" width="1130px" %}
+{% include Links/image.html image="IDEs/CodeLite-9.0.0.png" description="CodeLite 9.0.0 running under Manjaro" float="none" width="1130px" %}
 
 ### Background
 [**CodeLite**](http://codelite.org/) is a lightweight IDE for C, C++, PHP and Node.js that is written in C and C++. It does not support any other programming languages, besides these four. I personally have found it a nuisance to use, as its interface does not include a button to click in order to compile and/or run your C/C++ program. Plus I have found it a challenge to figure out how to build a program in it anyway.

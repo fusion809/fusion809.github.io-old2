@@ -7,7 +7,7 @@ Programs written, predominantly, in it, that I have experience with, include:
 * {% include Links/wp.md name="dpkg" %} (dpkg)[^1], the default package manager of Debian and its derivatives like Ubuntu.
 * {% include Links/wp.md name="FreeBSD" %} &mdash; the Unix-like operating system, is predominantly written in C.
 * {% include Links/wp.md name="GIMP" %} &mdash; a free and open-source photo-editing program, with similar features to Adobe Photoshop.
-{% include Links/image.html image="GIMP-2.8-editing.png" width="1100px" float="none" %}
+{% include Links/image.html image="Graphics/GIMP-2.8-editing.png" width="1100px" float="none" %}
 * {% include Links/wp.md name="GNU Coreutils" %} &mdash; the command-line utilities package for &#42;nix systems is written predominantly in C.
 * {% include Links/wp.md name="GTK+" %} or the GIMP Toolkit &mdash; is a free widget toolkit developed for use by the GNOME desktop environment.
 * {% include Links/wp.md name="Linux kernel" %} &mdash; the kernel of Linux operating systems.
