@@ -1,8 +1,8 @@
 ---
 layout:           post
 date:             2016-03-26 +1000
-last_modified_at: 2016-08-23 16:09:22 +1000
-revision:         4
+last_modified_at: 2016-08-23 16:49:22 +1000
+revision:         5
 id:               "atom"
 revision_date:    2016-08-23
 title:            "Running Atom on Linux"
