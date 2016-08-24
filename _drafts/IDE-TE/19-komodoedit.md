@@ -18,4 +18,4 @@ Komodo Edit can have extra features added to it by use of plugins.
 * It is not in the official repositories of any distribution I am aware of.
 
 ### Ratings
-{% include_relative 17a-komodoedit-summary.html %}
+{% include_relative 19a-komodoedit-summary.html %}

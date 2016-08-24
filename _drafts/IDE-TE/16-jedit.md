@@ -21,4 +21,4 @@ As previously mentioned auto-indentation and syntax-highlighting support exists 
 * Heavy on system resources.
 
 ### Summary
-{% include_relative 14a-jedit-summary.html %}
+{% include_relative 16a-jedit-summary.html %}

@@ -20,4 +20,4 @@ It supports syntax-highlighting for roughly, a couple of dozen computer language
 * Limited customization options.
 
 ### Ratings
-{% include_relative 19a-mousepad-summary.html %}
+{% include_relative 23a-mousepad-summary.html %}

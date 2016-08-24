@@ -21,4 +21,4 @@ GNU Emacs provides syntax highlighting for dozens of different computer language
 * Has an unconventional keymap, which can take some time to learn. For example, to cut text you use <kbd>Ctrl+W</kbd>, as opposed to the usual <kbd>Ctrl+X</kbd>, while to paste text you use <kbd>Ctrl+Y</kbd>.
 
 ### Summary
-{% include_relative 09a-emacs-summary.html %}
+{% include_relative 11a-emacs-summary.html %}

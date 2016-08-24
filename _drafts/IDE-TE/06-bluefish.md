@@ -18,4 +18,4 @@ Syntax highlighting is available for almost (if not all) all computer languages 
 * Support for non-web markup/programming languages is less than adequate.
 
 ### Summary
-{% include_relative 05a-bluefish-summary.html %}
+{% include_relative 06a-bluefish-summary.html %}

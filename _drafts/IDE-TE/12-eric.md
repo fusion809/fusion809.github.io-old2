@@ -20,4 +20,4 @@ Its features include support for managing Mercurial, Subversion and Git reposito
 * The latest version is not available via the usual channels on Sabayon.
 
 ### Summary
-{% include_relative 10a-eric-summary.html %}
+{% include_relative 12a-eric-summary.html %}

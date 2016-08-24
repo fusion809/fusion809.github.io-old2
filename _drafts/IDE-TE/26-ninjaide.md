@@ -19,4 +19,4 @@ Ninja-IDE seems to be fairly light on features, but it has basic TE features lik
 * Does not support many programming languages.
 
 ### Summary
-{% include_relative 22a-ninjaide-summary.html %}
+{% include_relative 26a-ninjaide-summary.html %}

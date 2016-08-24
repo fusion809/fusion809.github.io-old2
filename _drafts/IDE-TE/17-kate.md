@@ -24,4 +24,4 @@ It has syntax-highlighting and auto-indentation support for over 180 different c
 * Due to it being part of KDE SC it cannot be too easily ported to Microsoft Windows or OS X, although it is readily available on most Linux distributions.
 
 ### Summary
-{% include_relative 15a-kate-summary.html %}
+{% include_relative 17a-kate-summary.html %}

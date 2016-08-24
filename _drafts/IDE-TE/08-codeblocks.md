@@ -22,4 +22,4 @@ It provides many of the advanced features of text editors like syntax highlighti
 * Fairly infrequently updated. New releases come out once every few years.
 
 ### Summary
-{% include_relative 06a-codeblocks-summary.html %}
+{% include_relative 08a-codeblocks-summary.html %}

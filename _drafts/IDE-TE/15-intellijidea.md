@@ -19,4 +19,4 @@ Its features is something I cannot really comment on as I have limited experienc
 * Limited set of features and supported languages.
 
 ### Summary
-{% include_relative 13a-intellijidea-summary.html %}
+{% include_relative 15a-intellijidea-summary.html %}

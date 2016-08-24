@@ -20,4 +20,4 @@ It is fairly feature-packed (including git, subversion, GUI-building, *etc.* sup
 * Not in the official binary package repositories for either Manjaro or Sabayon.
 
 ### Summary
-{% include_relative 07a-codelite-summary.html %}
+{% include_relative 09a-codelite-summary.html %}

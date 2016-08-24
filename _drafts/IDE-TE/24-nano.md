@@ -20,4 +20,4 @@ It offers syntax-highlighting, auto-indenting and miscellaneous other support fo
 * Unintuitive keymap, can take a little getting used to.
 
 ### Summary
-{% include_relative 20a-nano-summary.html %}
+{% include_relative 24a-nano-summary.html %}

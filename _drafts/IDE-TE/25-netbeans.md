@@ -21,4 +21,4 @@ NetBeans has the usual features of IDEs, including those of TEs like syntax high
 * A little buggy for me at least, on Arch Linux.
 
 ### Summary
-{% include_relative 21a-netbeans-summary.html %}
+{% include_relative 25a-netbeans-summary.html %}

@@ -18,4 +18,4 @@ KDevelop features source code editor support (including syntax highlighting, aut
 * Not very customizable.
 
 ### Ratings
-{% include_relative 16a-kdevelop-summary.html %}
+{% include_relative 18a-kdevelop-summary.html %}

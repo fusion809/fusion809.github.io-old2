@@ -21,4 +21,4 @@ Geany provides auto-indentation and syntax-highlighting for over a dozen differe
 {% include Links/image.html image="Geany/Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
 
 ### Summary
-{% include_relative 11a-geany-summary.html %}
+{% include_relative 13a-geany-summary.html %}

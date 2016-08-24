@@ -21,4 +21,4 @@ It provides syntax-highlighting for dozens of computer languages. Support for ex
 * The list of languages it automatically supports is &lt;30.
 
 ### Summary
-{% include_relative 25a-scite-summary.html %}
+{% include_relative 29a-scite-summary.html %}

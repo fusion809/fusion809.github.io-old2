@@ -23,4 +23,4 @@ As previously mentioned VSCode has an embedded terminal and debugger, as well as
 * Not in the official repositories of any distributions I am aware of.
 
 ### Summary
-{% include_relative 29a-vscode-summary.html %}
+{% include_relative 31a-vscode-summary.html %}

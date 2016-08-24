@@ -4,6 +4,8 @@
 ### Background
 [**Atom**](https://atom.io) ([here](https://github.com/atom/atom) is its GitHub Repository) is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unique amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
 
+Atom has an AppImage, which supports all 64-bit Linux platforms: [here](https://bintray.com/probono/AppImages/Atom) is its description page. I have also created my own shell script installer for it, [`atom-installer`](https://github.com/fusion809/atom-installer).
+
 ### Customizability
 {% include Links/image.html image="Atom/atom-packages-homepage-20160108.png" width="1130px" float="none" description="[Atom Packages Repository Homepage](https://atom.io/packages), note the current count of packages is 3,433 in this screenshot." %}
 Atom is very customizable, via a grand total of over 6,320 themes and plugins that can be installed from the command-line, using the `apm` command, or from within Atom itself. I personally prefer the command-line, as I have had some bad experiences with the built-in installer. From the command-line the command for installing new themes or plugins is:
@@ -58,7 +60,7 @@ One package I like, that I would recommend if you wish to use Atom on more than 
 * Slow to start, although with the release of version 1.3.0 the start time has been supposedly cut by 20-30%.[^1] I personally have not noticed any such improvement, although I cannot say for certain I would even if there was such an improvement.
 
 ### Summary
-{% include_relative 04a-atom-summary.html %}
+{% include_relative 05a-atom-summary.html %}
 
 ### External Links
 * [Atom Blog](http://blog.atom.io/) @ blog.atom.io.

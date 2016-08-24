@@ -18,4 +18,4 @@ It is not as feature-packed as its proprietary counterpart, but it does have a p
 * Heavy on system resource usage.
 
 ### Summary
-{% include_relative 24a-pycharm-summary.html %}
+{% include_relative 28a-pycharm-summary.html %}

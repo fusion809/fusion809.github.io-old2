@@ -18,4 +18,4 @@ It offers no syntax highlighting support or auto-indentation support that I am a
 * It is very basic, has minimal customizability or features.
 
 ### Ratings
-{% include_relative 18a-leafpad-summary.html %}
+{% include_relative 20a-leafpad-summary.html %}

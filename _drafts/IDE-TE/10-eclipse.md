@@ -21,4 +21,4 @@ Eclipse features a text editor with syntax-highlighting, debugging, linting and 
 * Extra plugins are required in order to program in other programming languages.
 
 ### Summary
-{% include_relative 08a-eclipse-summary.html %}
+{% include_relative 10a-eclipse-summary.html %}
