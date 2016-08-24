@@ -4,5 +4,6 @@
 ### Background
 {% include Layouts/editor-infobox.html editor="Brackets" focus="Web development IDE." repo="adobe/brackets" date="November 2014." icon="brackets.png" language="CSS, HTML and JavaScript." license="<a href='https://github.com/adobe/brackets/blob/master/LICENSE' link='_blank'>MIT</a>." developers="Adobe Systems." %}
 
+{% include Layouts/clear.html %}<br/>
 ### Summary
 {% include_relative 07a-brackets-summary.html %}
