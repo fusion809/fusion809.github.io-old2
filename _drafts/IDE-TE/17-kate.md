@@ -8,6 +8,7 @@
 
 [**KWrite**](https://projects.kde.org/projects/kde/applications/kate/repository) as I understand it (but I must admit I am a little confused by the degree of overlap between Kate and KWrite) is designed to be a lightweight derivative of Kate.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 Some customization (such as of keyboard shortcuts, the toolbar and a few other features) can be done graphically via going to the "Settings" menu and selecting an option from the menu. From what I can gather, however, limited customization can be done textually via user-supplied scripts.
 

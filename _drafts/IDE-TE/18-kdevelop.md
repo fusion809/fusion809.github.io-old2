@@ -4,6 +4,7 @@
 ### Background
 [**KDevelop**](https://www.kdevelop.org/) is an IDE that is part of the KDE Core Applications (KDE-CA) suite, unlike most other members of the KDE-CA suite it is still based on Qt4 and has not yet made the transition to KDE Frameworks 5 (KF5). Plans to transition to KF5 are currently in place for the near future. It is designed for C, C++, PHP and Python development.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 KDevelop is a program I have little experience with, but if you go to the "Settings" menu you can choose to modify the program's keyboard shortcuts and other aspects of its behaviour.
 

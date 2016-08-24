@@ -4,6 +4,7 @@
 ### Background
 [**Leafpad**](http://tarot.freeshell.org/leafpad/) is a lightweight and basic GTK+ based text editor. Its capabilities (or rather lack thereof) are very similar to those of Windows' Notepad.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 There is little, if any, customizability for Leafpad.
 

@@ -4,6 +4,7 @@
 ### Background
 [**IntelliJ IDEA**](http://www.jetbrains.com/idea/), which I will abbreviate as **IJCE**, is a free and open-source IDE developed by JetBrains that is designed specifically for Java development. It is the free counterpart to a proprietary IDE (called IntelliJ IDEA Ultimate Edition) that is more feature-packed with support for several additional programming languages. Its support for programming languages is extended by use of plugins &mdash; the ultimate edition can even get a Python plugin that will provide it with all the features of PyCharm Professional Edition, which is also developed by JetBrains.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 IntelliJ IDEA's customizability is something I really cannot comment on, but I would imagine it is not very customizable due to the fact that this would defeat the purpose of JetBeans creating a community edition, which is to tempt users to buy the proprietary, Ultimate Edition, with the extra features it has as opposed to the community edition.
 

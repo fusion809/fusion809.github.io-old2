@@ -6,6 +6,7 @@
 
 I first tried it when it was the default text editor used by GNU Octave to edit m files.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 SciTE can be customized by editing `.properties` files or via scripting with Lua. There are no major graphical tools for customizing SciTE.
 

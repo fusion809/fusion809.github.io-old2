@@ -4,6 +4,7 @@
 ### Background
 [**Eric**](http://eric-ide.python-projects.org/) is a free and open-source IDE that is developed by its own community of donation-sponsored developers. It is written in and used to program in Python. As of Eric version 6, it supports both Python 2 and Python 3.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 Eric has an extensive in-built plugin system. These plugins can be installed from within Eric's interface by going to "Plugins&rarr;Plugin Repository" and selecting the required plugin. I have limited experience with it so I cannot comment on its customizability.
 

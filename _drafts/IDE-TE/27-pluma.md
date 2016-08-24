@@ -4,6 +4,7 @@
 ### Background
 [**pluma**](https://github.com/mate-desktop/pluma) is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 Some customization (to the theme or adding some plugins) can be done by going to Edit→Preferences.
 

@@ -4,6 +4,7 @@
 ### Background
 [**Geany**](http://geany.org/) is a lightweight GTK+ and Scintilla-based text editor with basic IDE-type features that was originally developed by Enrico Tr&ouml;ger in 2005. It is licensed under GNU GPLv2.
 
+{% include Layouts/clear.html %}<br/>
 ### Customizability
 The `~/.geany` directory is where customizations are kept. This customization can be made with code [snippets](http://www.geany.org/Download/Extras) (written in HTML, LaTeX, PHP and Python), [plugins](http://www.geany.org/Support/Plugins), [themes](https://github.com/geany/geany-themes/), *etc*.
 
