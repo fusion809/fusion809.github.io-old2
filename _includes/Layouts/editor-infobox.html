@@ -12,7 +12,7 @@
     </td>
   </tr>{% endif %}
   {% if include.date %}<tr class="infobox-row">
-    <td class="infobox-row-title">Initial Release Date:</td>
+    <td class="infobox-row-title">Release Date:</td>
     <td class="infobox-row">{{ include.date }}</td>
   </tr>{% endif %}
   <tr class="infobox-row">
@@ -31,4 +31,20 @@
     <td class="infobox-row-title">Written in:</td>
     <td class="infobox-row">{{ include.language }}</td>
   </tr>
+  {% if include.repo %}<tr class="infobox-row">
+    <td class="infobox-row-title">GitHub Repository:</td>
+    <td class="infobox-row"><a href="https://github.com/{{ include.repo }}" link="_blank">{{ include.repo }}</a></td>
+  </tr>
+  <tr clss="infobox-row">
+    <td class="infobox-row-title">Forks:</td>
+    <td class="infobox-row"><img src="https://img.shields.io/github/forks/{{ include.repo }}.svg"></td>
+  </tr>
+  <tr clss="infobox-row">
+    <td class="infobox-row-title">Stargazers:</td>
+    <td class="infobox-row"><img src="https://img.shields.io/github/stars/{{ include.repo }}.svg"></td>
+  </tr>
+  <tr clss="infobox-row">
+    <td class="infobox-row-title">Watchers:</td>
+    <td class="infobox-row"><img src="https://img.shields.io/github/watchers/{{ include.repo }}.svg"></td>
+  </tr>{% endif %}
 </table>
