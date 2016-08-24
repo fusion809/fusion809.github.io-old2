@@ -2,7 +2,7 @@
 {% include Links/image.html image="IDEs/Bluefish.png" description="Bluefish running under LXDE" width="1130px" float="none" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="Bluefish" focus="Web development IDE." language="C" developers="Bluefish Dev Team" logo="bluefish.png" %}
+{% include Layouts/editor-infobox.html editor="Bluefish" focus="Web development IDE." language="C." license="GPL" developers="Bluefish Dev Team" logo="bluefish.png" %}
 [**Bluefish**](http://bluefish.openoffice.nl/index.html) is a text editor, primarily intended for web development and programming, as it provides syntax highlighting support and other features mostly for web markup, programming and style sheet languages.
 
 {% include Layouts/clear.html %}<br/>
