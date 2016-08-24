@@ -4,6 +4,7 @@
 
 [**Aptana Studio**](http://www.aptana.com/products/studio3.html) is an open-source IDE for web development that is built on [Eclipse](#eclipse). There is not much content to this section as firstly, I am not really all that interested in web development myself, hence have hardly used it and secondly as it is built on Eclipse it should share most of its properties.
 
+### Summary
 {% include_relative 04a-aptana-studio-summary.html %}
 
 ### External Links
