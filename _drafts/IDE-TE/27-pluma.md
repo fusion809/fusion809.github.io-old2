@@ -2,6 +2,7 @@
 {% include Links/image.html image="text-editors/Pluma-1.8.1-running-under-Mokhsa.png" description="pluma 1.8.1 running under Moksha" float="none" width="1130px" %}
 
 ### Background
+{% include Layouts/editor-infobox.html editor="pluma" date="2011." language="C, Python." license="<a href='https://github.com/mate-desktop/pluma/blob/master/COPYING' link='_blank'>GPLv2</a>" developers="MATE Development Team." repo="mate-desktop/pluma" focus="Simple, general-purpose text editor." country="Argentina." %}
 [**pluma**](https://github.com/mate-desktop/pluma) is a fork of gedit 2 created for the MATE desktop environment. It has many of the same features as gedit.
 
 {% include Layouts/clear.html %}<br/>

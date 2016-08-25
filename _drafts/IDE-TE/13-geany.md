@@ -2,6 +2,7 @@
 {% include Links/image.html image="Geany/Geany-1.24.1.png" float="none" width="1130px" description="Geany 1.24.1 running under Moksha" %}
 
 ### Background
+{% include Layouts/editor-infobox.html editor="Geany" repo="geany/geany" date="October 2005." developers="<a href='https://github.com/geany/geany/graphs/contributors' link='_blank'>Geany Development Team</a>." license="<a href='https://github.com/geany/geany/blob/master/COPYING' link='_blank'>GPLv2</a>." country="Germany." language="C, C++." focus="General-purpose IDE." %}
 [**Geany**](http://geany.org/) is a lightweight GTK+ and Scintilla-based text editor with basic IDE-type features that was originally developed by Enrico Tr&ouml;ger in 2005. It is licensed under GNU GPLv2.
 
 {% include Layouts/clear.html %}<br/>

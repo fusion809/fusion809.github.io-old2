@@ -4,6 +4,7 @@
 {% include Links/image.html image="text-editors/KWrite-15.08.0-under-Moksha.png" float="none" description="KWrite 15.08.0 running under Moksha" width="1130px" %}
 
 ### Background
+{% include Layouts/editor-infobox.html editor="Kate" language="C++." license="<a href='https://github.com/KDE/kate/blob/master/COPYING-GPL3' link='_blank'>GPLv3</a>, <a href='https://github.com/KDE/kate/blob/master/COPYING.LIB' link='_blank'>LGPLv2</a>, <a href='https://github.com/KDE/kate/blob/master/COPYING-LGPL3' link='_blank'>LGPLv3</a>." logo="kate.png" date="2001." developers="KDE." repo="KDE/kate" focus="General-purpose text editor." %}
 [**Kate**](http://kate-editor.org) which is abbreviated from <b>K</b>DE <b>A</b>dvanced <b>T</b>ext <b>E</b>ditor, is a text editor that is a KDE Core Application (a part of the KDE Software Compilation or KDE SC) and combines features of an advanced text editor (that is, one geared towards software developers and experienced programmers) such as customizability, extensive syntax-highlighting, code-indentation, *etc.* support with sufficient user-friendliness for it to be suitable for inexperienced Linux users. Its development began in 2001 and has been a central part of KDE SC ever since.
 
 [**KWrite**](https://projects.kde.org/projects/kde/applications/kate/repository) as I understand it (but I must admit I am a little confused by the degree of overlap between Kate and KWrite) is designed to be a lightweight derivative of Kate.

@@ -15,17 +15,21 @@
     <td class="infobox-row-title">Release Date:</td>
     <td class="infobox-row">{{ include.date }}</td>
   </tr>{% endif %}
+  {% if include.country %}<tr class="infobox-row">
+    <td class="infobox-row-title">Country of Origin:</td>
+    <td class="infobox-row">{{ include.country }}</td>
+  </tr>{% endif %}
   <tr class="infobox-row">
     <td class="infobox-row-title">Developer(s):</td>
     <td class="infobox-row">{{ include.developers }}</td>
   </tr>
   <tr class="infobox-row">
-    <td class="infobox-row-title">Focus:</td>
-    <td class="infobox-row">{{ include.focus }}</td>
-  </tr>
-  <tr class="infobox-row">
     <td class="infobox-row-title">License:</td>
     <td class="infobox-row">{{ include.license }}</td>
+  </tr>
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Category:</td>
+    <td class="infobox-row">{{ include.focus }}</td>
   </tr>
   <tr class="infobox-row">
     <td class="infobox-row-title">Written in:</td>
@@ -33,7 +37,7 @@
   </tr>
   {% if include.repo %}<tr class="infobox-row">
     <td class="infobox-row-title">GitHub Repository:</td>
-    <td class="infobox-row"><a href="https://github.com/{{ include.repo }}" link="_blank">{{ include.repo }}</a></td>
+    <td class="infobox-row"><a href="https://github.com/{{ include.repo }}{% if include.subfolder %}/tree/master/{{ include.subfolder }}{% endif %}" link="_blank">{{ include.repo }}{% if include.subfolder %}, {{ include.subfolder }} subfolder.{% endif %}</a></td>
   </tr>
   <tr clss="infobox-row">
     <td class="infobox-row-title">Forks:</td>
@@ -46,5 +50,8 @@
   <tr clss="infobox-row">
     <td class="infobox-row-title">Watchers:</td>
     <td class="infobox-row"><img src="https://img.shields.io/github/watchers/{{ include.repo }}.svg"></td>
+  </tr>{% endif %}{% if include.sf %}<tr class="infobox-row">
+    <td class="infobox-row-title">SourceForge Projects:</td>
+    <td class="infobox-row"><a href="https://sourceforge.net/projects/{{ include.sf }}/" link="_blank">{{ include.sf }}</a></td>
   </tr>{% endif %}
 </table>

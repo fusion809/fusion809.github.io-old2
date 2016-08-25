@@ -2,6 +2,7 @@
 {% include Links/image.html image="text-editors/Leafpad-running-under-Moksha.png" description="Leafpad 0.8.18.1 running under Moksha" float="none" width="1130px" %}
 
 ### Background
+{% include Layouts/editor-infobox.html editor="Leafpad" language="C." developers="LXDE Development Team." focus="Simple text editor." license="GPLv2." %}
 [**Leafpad**](http://tarot.freeshell.org/leafpad/) is a lightweight and basic GTK+ based text editor. Its capabilities (or rather lack thereof) are very similar to those of Windows' Notepad.
 
 {% include Layouts/clear.html %}<br/>

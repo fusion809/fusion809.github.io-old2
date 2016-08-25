@@ -2,7 +2,7 @@
 {% include Links/image.html image="Atom/Atom-1.9.9-Ubuntu-16.04.png" width="1130px" float="none" description="Atom 1.9.9 running under KDE on Ubuntu 16.04" repo="atom/atom" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="Atom" logo="atom.png" focus="General-purpose text editor." date="June 2014." developers="GitHub, Inc." license="<a href='https://github.com/atom/atom/blob/master/LICENSE.md' link='_blank'>MIT</a>." language="CoffeeScript, CSS, JavaScript and Less." repo="atom/atom" %}
+{% include Layouts/editor-infobox.html editor="Atom" logo="atom.png" focus="General-purpose text editor." date="June 2014." developers="GitHub, Inc." license="<a href='https://github.com/atom/atom/blob/master/LICENSE.md' link='_blank'>MIT</a>." language="CoffeeScript, CSS, JavaScript and Less." repo="atom/atom" country="U.S.A." %}
 [**Atom**](https://atom.io) ([here](https://github.com/atom/atom) is its GitHub Repository) is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unusual amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
 
 Atom has an AppImage, which supports all 64-bit Linux platforms: [here](https://bintray.com/probono/AppImages/Atom) is its description page. I have also created my own shell script installer for it, [`atom-installer`](https://github.com/fusion809/atom-installer).

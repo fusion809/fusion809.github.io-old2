@@ -2,7 +2,8 @@
 {% include Links/image.html image="IDEs/NetBeans-8.1.png" width="1130px" float="none" description="NetBeans 8.1 running under Manjaro" %}
 
 ### Background
-[**NetBeans**](https://netbeans.org/) is a cross-platform free and open-source IDE written in Java and developed by the Oracle Corporation. It was originally proprietary, but it has since been re-released under the <abbr title="Common Development and Distribution License">CDDL</abbr> and GNU GPL licenses. It can be used to write programs in C, C++, Java, PHP and HTML5. I have written one program in Java in it; for this purpose it seemed to be a reasonable IDE. I have attempted to work with C/C++ programs in it too, although on Arch Linux I found its project wizard froze on me when working with a C/C++ project.
+{% include Layouts/editor-infobox.html editor="NetBeans" language="Java." focus="C/C++/HTML5/Java/PHP IDE." date="1996." country="Czech Republic." developers="Oracle Corporation." license="<a href='https://netbeans.org/cddl-gplv2.html' link='_blank'>CDDL/GPLv2</a>." logo="netbeans.png" %}
+[**NetBeans**](https://netbeans.org/) is a cross-platform free and open-source IDE written in Java and developed by the Oracle Corporation. It started out as a student project called Xelfi, in the former Czechoslovakia (now the Czech Republic) and was originally proprietary, but it has since been re-released under the <abbr title="Common Development and Distribution License">CDDL</abbr> and GNU GPLv2 licenses.[^5] While originally purely a Java IDE, it has since been re-developed into an IDE for C, C++, Java, PHP and HTML5. I have written one program in Java in it; for this purpose it seemed to be a reasonable IDE. I have attempted to work with C/C++ programs in it too, although on Arch Linux I found its project wizard froze on me when working with a C/C++ project.
 
 {% include Layouts/clear.html %}<br/>
 ### Customizability

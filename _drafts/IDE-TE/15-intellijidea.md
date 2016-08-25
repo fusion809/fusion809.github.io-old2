@@ -2,7 +2,8 @@
 {% include Links/image.html image="IDEs/IntellijIDE-CE-15.0.2.png" description="IntelliJ IDEA Community Edition 15.0.2 running under Manjaro Linux" float="none" width="1130px" %}
 
 ### Background
-[**IntelliJ IDEA**](http://www.jetbrains.com/idea/), which I will abbreviate as **IJCE**, is a free and open-source IDE developed by JetBrains that is designed specifically for Java development. It is the free counterpart to a proprietary IDE (called IntelliJ IDEA Ultimate Edition) that is more feature-packed with support for several additional programming languages. Its support for programming languages is extended by use of plugins &mdash; the ultimate edition can even get a Python plugin that will provide it with all the features of PyCharm Professional Edition, which is also developed by JetBrains.
+{% include Layouts/editor-infobox.html editor="IntelliJ IDEA CE" language="Java." focus="Java IDE." country="U.S.A." developers="JetBrains." license="Apache License 2.0." logo="idea.png" repo="JetBrains/intellij-community" %}
+[**IntelliJ IDEA CE**](http://www.jetbrains.com/idea/), which I will abbreviate as **IJCE**, is a free and open-source IDE developed by JetBrains that is designed specifically for Java development. It is the free counterpart to a proprietary IDE (called IntelliJ IDEA Ultimate Edition) that is more feature-packed with support for several additional programming languages. Its support for programming languages is extended by use of plugins &mdash; the ultimate edition can even get a Python plugin that will provide it with all the features of PyCharm Professional Edition, which is also developed by JetBrains.
 
 {% include Layouts/clear.html %}<br/>
 ### Customizability
