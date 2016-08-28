@@ -10,7 +10,20 @@
 The `~/.geany` directory is where customizations are kept. This customization can be made with code [snippets](http://www.geany.org/Download/Extras) (written in HTML, LaTeX, PHP and Python), [plugins](http://www.geany.org/Support/Plugins), [themes](https://github.com/geany/geany-themes/), *etc*.
 
 ### Features
-Geany provides auto-indentation and syntax-highlighting for over a dozen different computer languages. Geany has an embedded terminal emulator. Several extra features can be added to Geany, using plugins.
+Geany provides auto-indentation and syntax-highlighting for over a dozen different computer languages. Geany has an embedded terminal emulator. Several extra features can be added to Geany, using plugins. It has out-of-the-box support for projects written in the following programming languages:
+
+* C
+* C++
+* D
+* Erlang
+* HTML
+* Java
+* Pascal
+* PHP
+* Python
+* Ruby
+* TeX
+* Vala
 
 ### Advantages (Pros)
 * It has a few IDE-type features.
