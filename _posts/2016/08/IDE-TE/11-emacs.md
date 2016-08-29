@@ -6,6 +6,7 @@
 [**GNU Emacs**](https://www.gnu.org/software/emacs) is an extensively-customizable text editor that is developed as part of the GNU Project. Its original developer was Richard Stallman, the founder of the GNU Project and its first release was in 1985. It belongs to a family of text editors called Emacs, which are text editors that are extensively customizable for users with sufficient programming knowledge. Emacs is abbreviated from <b>E</b>ditor <b>Mac</b>ro<b>s</b>, which refers to its origin as editor macros for the TECO text editor, that were developed, in part, by Richard Stallman. GE is written in C and Emacs Lisp (ELisp), a dialect of the Lisp programming language devised just for GE. ELisp is used to write extensions and provide extra functionalities for GE and related text editors like XEmacs.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only.
 
@@ -13,7 +14,7 @@ GE is one of the most customizable text editors available, but much of this cust
 GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs on Gentoo.
 
 ### Obtaining It
-GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) 64-bit Snappy package. 
+GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) 64-bit Snappy package.
 
 ### Advantages (Pros)
 * Extensively customizable.
