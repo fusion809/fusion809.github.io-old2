@@ -6,6 +6,7 @@
 [**Vim**](http://www.vim.org/) (short for **Vi**-<b>IM</b>proved) is a text editor that was first released in 1991 by Bram Moolenaar, as a clone of Bill Joy's Vi text editor. It and GNU Emacs are seen as the most powerful free text editors available for experienced programmers. Vim is available as a command-line text editor (which is its default and is invoked by running the `vim` command), where users can edit text files from the command-line, or as a graphical text editor (which is called **gVim**). There is also a Qt-based GUI for Vim called Vim-Qt that is only available on a few Linux distributions. Compared to most text editors, Vim is far less intuitive and has a steep learning curve. For one, its keyboard shortcuts are far from conventional, with <kbd>Ctrl</kbd>+<kbd>C</kbd> for copy, <kbd>Ctrl</kbd>+<kbd>V</kbd> for paste, *etc.* not being available. Vim also has its own scripting language (Vim script) for adding functionalities to it.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 Vim is extensively customizable, for people with the required level of finesse in programming. There are also several extensions and other plugins available for it, from the Internet. [Here](http://vimawesome.com/) is a centralized database of Vim plugins, with search tools to help you find the plugin you want. There are several plugin managers available for Vim, some of the more popular ones include:
 
@@ -19,7 +20,7 @@ Vim is extensively customizable, for people with the required level of finesse i
 It has syntax-highlighting support for almost (if not every) every computer language. It also has several IDE-type features, like compiling source code from within it. Several other features can be added to it, for example, I wrote some of this post in Vim when my blog was powered by WordPress, using the [Vimpress plugin](https://github.com/PotHix/Vimpress).
 
 ### Obtaining It
-Aside from nano it is probably the easiest editor mentioned in this post to obtain on Linux. This is because it is found in the official repositories of virtually every Linux distribution. 
+Aside from nano it is probably the easiest editor mentioned in this post to obtain on Linux. This is because it is found in the official repositories of virtually every Linux distribution.
 
 ### Advantages (Pros)
 

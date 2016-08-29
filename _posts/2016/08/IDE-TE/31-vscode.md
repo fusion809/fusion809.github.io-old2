@@ -8,6 +8,7 @@
 You can browse plugins for VSCode by going to the Extension Gallery in VSCode or going to this URL: [https://marketplace.visualstudio.com/](https://marketplace.visualstudio.com/).
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 VSCode is extensively customizable via plugins. I have never written one so I cannot give one any pointers on how to do this, but there are several VSCode plugins available from the previously mentioned marketplace website/extension gallery. Packages can be installed from the extension gallery or via the command palette (toggled via pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) by typing in `ext install <PACKAGE>`, where `<PACKAGE>` is the package's name.
 

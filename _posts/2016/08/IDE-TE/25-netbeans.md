@@ -6,6 +6,7 @@
 [**NetBeans**](https://netbeans.org/) is a cross-platform free and open-source IDE written in Java and developed by the Oracle Corporation. It started out as a student project called Xelfi, in the former Czechoslovakia (now the Czech Republic) and was originally proprietary, but it has since been re-released under the <abbr title="Common Development and Distribution License">CDDL</abbr> and GNU GPLv2 licenses.[^5] While originally purely a Java IDE, it has since been re-developed into an IDE for C, C++, Java, PHP and HTML5. I have written one program in Java in it; for this purpose it seemed to be a reasonable IDE. I have attempted to work with C/C++ programs in it too, although on Arch Linux I found its project wizard froze on me when working with a C/C++ project.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 NetBeans is extensible via plugins provided at its [website](http://plugins.netbeans.org/PluginPortal/). I have little experience with it myself, but I suspect it is reasonably extensible, but not totally.
 

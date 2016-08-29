@@ -6,6 +6,7 @@
 [**nano**](http://www.nano-editor.org/) is a command-line text editor that was once developed as part of the GNU Project, although it left the GNU Project in June 2016.[^4] Its development began in 1999 by Chris Allegretta, as a free alternative to the proprietary Pico text editor. Later, in 2001, it officially became part of the GNU Project. It since left the project in June 2016. Several features (like search, search and replace, save, exit, *etc.*) are accessed using keyboard shortcuts. It can be invoked by running the command "nano" from the command-line. nano can be passed several different options from the command-line, to see a full list see its man page (invoked by running `man nano` or, if you would prefer to view it in your browser, go [here](/man/nano.1.html)). Usually when I want to edit a file with nano I simply run `nano <FILE>` where `<FILE>` is the file's name (potentially also with its path if it is not in my current directory).
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 I am unaware of any possible customization of nano, if you know some please do tell me in the comments of this post.
 

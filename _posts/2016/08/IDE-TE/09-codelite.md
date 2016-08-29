@@ -6,6 +6,7 @@
 [**CodeLite**](http://codelite.org/) is a lightweight IDE for C, C++, PHP and Node.js that is written in C and C++. It does not support any other programming languages, besides these four. I personally have found it a nuisance to use, as its interface does not include a button to click in order to compile and/or run your C/C++ program. Plus I have found it a challenge to figure out how to build a program in it anyway.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 I have limited experience with CodeLite, so I cannot really comment with confidence on its customizability, but from what I understand it is designed to be lightweight and their website does not really mention any plugins or other customizations.
 

@@ -8,6 +8,7 @@
 It started off in 2003 as a cross-platform SharpDevelop fork. Although it has since become very distinct from SharpDevelop. It is developed by Xamarin (which itself is now a subsidiary of Microsoft) and its own FOSS community. Despite being considered "cross-platform", capable of running on Linux, OS X and Windows NT, many of its features are limited to Linux (source: [*Feature List*](http://www.monodevelop.com/documentation/feature-list/)). For example, debugging C/C++ programs with MonoDevelop is limited to Linux platforms.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 {% include Links/image.html image="MonoDevelop/MonoDevelop-5.10-Add-in-Manager-Ubuntu-16.04.png" width="500" float="none" description="MonoDevelop 5.10's Add-in Manager running on Ubuntu 16.04" %}
 

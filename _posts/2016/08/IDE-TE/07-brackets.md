@@ -7,6 +7,7 @@
 **Brackets** is a text editor developed by Adobe Systems that is primarily intended for web development. It is built on the Electron framework and written in web languages.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 It is extensible via plugins, although I have limited experience with Brackets (as I am not much of a web developer).
 

@@ -6,6 +6,7 @@
 [**Geany**](http://geany.org/) is a lightweight GTK+ and Scintilla-based text editor with basic IDE-type features that was originally developed by Enrico Tr&ouml;ger in 2005. It is licensed under GNU GPLv2.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 The `~/.geany` directory is where customizations are kept. This customization can be made with code [snippets](http://www.geany.org/Download/Extras) (written in HTML, LaTeX, PHP and Python), [plugins](http://www.geany.org/Support/Plugins), [themes](https://github.com/geany/geany-themes/), *etc*.
 
@@ -36,7 +37,7 @@ Geany provides auto-indentation and syntax-highlighting for over a dozen differe
 {% include Links/image.html image="Geany/Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
 
 ### Obtaining It
-It is found in the official repositories of most Linux distributions. It also has an [AppImage package](https://bintray.com/probono/AppImages/Geany#files), granted it is fairly out-of-date (version 1.24.1 vs. the latest version of 1.28) as of 29 August 2016. 
+It is found in the official repositories of most Linux distributions. It also has an [AppImage package](https://bintray.com/probono/AppImages/Geany#files), granted it is fairly out-of-date (version 1.24.1 vs. the latest version of 1.28) as of 29 August 2016.
 
 ### Summary
 {% include_relative 13a-geany-summary.html %}

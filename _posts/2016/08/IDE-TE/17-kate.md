@@ -10,6 +10,7 @@
 [**KWrite**](https://projects.kde.org/projects/kde/applications/kate/repository) as I understand it (but I must admit I am a little confused by the degree of overlap between Kate and KWrite) is designed to be a lightweight derivative of Kate.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 Some customization (such as of keyboard shortcuts, the toolbar and a few other features) can be done graphically via going to the "Settings" menu and selecting an option from the menu. From what I can gather, however, limited customization can be done textually via user-supplied scripts.
 
@@ -17,7 +18,7 @@ Some customization (such as of keyboard shortcuts, the toolbar and a few other f
 It has syntax-highlighting and auto-indentation support for over 180 different computer languages, including MediaWiki and shell script, but excluding PyMOL. It also has embedded terminal support.
 
 ### Obtaining It
-Kate and KWrite are found in the official repositories of most distributions &mdash; if the distribution has the KDE desktop environment (regardless of whether they are still packing KDE Plasma 4 or whether they have updated to Plasma 5), then Kate and KWrite should be available from their official repositories. 
+Kate and KWrite are found in the official repositories of most distributions &mdash; if the distribution has the KDE desktop environment (regardless of whether they are still packing KDE Plasma 4 or whether they have updated to Plasma 5), then Kate and KWrite should be available from their official repositories.
 
 ### Advantages (Pros)
 * Easily customizable via graphical tools.

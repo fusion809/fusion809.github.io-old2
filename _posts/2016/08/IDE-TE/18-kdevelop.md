@@ -6,6 +6,7 @@
 [**KDevelop**](https://www.kdevelop.org/) is an IDE that is part of the KDE Core Applications (KDE-CA) suite. It was fairly recently transitioned to the KDE Frameworks 5 (KF5), compared to other members of the KDE-CA suite, with the 5.0.0 release of KDevelop (the first of which to fully transitioned to KF5) being on the 23th of August 2016. Many distributions do not yet have KDevelop 5.0.0 in their repositories, in fact not even Arch Linux has as of the 29th of August 2016. It supports a grand total of six programming languages &mdash; C, C++, JavaScript, PHP, Python and QML. I have used it as a C++ IDE, granted only for one small project.
 
 {% include Layouts/clear.html %}<br/>
+
 ### Customizability
 KDevelop is a program I have little experience with, but if you go to the "Settings" menu you can choose to modify the program's keyboard shortcuts and other aspects of its behaviour. You can also install some plugins, providing an integrated terminal, amongst other features. The amount of plugins available, however, is fairly limited compared to that available to say Atom or Visual Studio Code.
 
