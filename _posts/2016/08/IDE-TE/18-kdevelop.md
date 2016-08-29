@@ -13,10 +13,11 @@ KDevelop is a program I have little experience with, but if you go to the "Setti
 KDevelop features source code editor support (including syntax highlighting, autocompletion, autoindentation, *etc.*) for its six programming languages, it also has in-built support for git and compilers/interpreters for C, C++, PHP and Python.
 
 ### Obtaining It
-It is in the official repositories of the majority of Linux distributions. Although very few, if any, have started packing the 5.0.0 release of KDevelop yet, so if you would like to try it the KDE Development Team has provided a [64-bit AppImage build](http://download.kde.org/stable/kdevelop/5.0.0/bin/linux/KDevelop-5.0.0-1-x86_64.AppImage) of it. 
+It is in the official repositories of the majority of Linux distributions. Although very few, if any, have started packing the 5.0.0 release of KDevelop yet, so if you would like to try it the KDE Development Team has provided a [64-bit AppImage build](http://download.kde.org/stable/kdevelop/5.0.0/bin/linux/KDevelop-5.0.0-1-x86_64.AppImage) of it.
 
 ### Advantages (Pros)
 * Easy to install.
+* Intuitive to use.
 
 ### Disadvantages (Cons)
 * Only supports six programming languages.
