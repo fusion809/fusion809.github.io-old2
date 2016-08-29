@@ -4,7 +4,7 @@
 ### Background
 {% include Layouts/editor-infobox.html editor="Atom" logo="atom.png" focus="General-purpose text editor." date="June 2014." developers="GitHub, Inc." license="<a href='https://github.com/atom/atom/blob/master/LICENSE.md' link='_blank'>MIT</a>." language="CoffeeScript, CSS, JavaScript and Less." repo="atom/atom" country="U.S.A." %}
 [**Atom**](https://atom.io) ([here](https://github.com/atom/atom) is its GitHub Repository) is a free and open-source (licensed under MIT) text editor developed by GitHub, Inc. Its first public release was in 2014, although its first stable release (1.0 release) was not until June 2015. It is unusual amongst the text editors listed here in a few different ways, firstly, its target audience is very wide with it being designed to be usable for inexperienced programmers as well as seasoned programmers and software developers. Secondly, it is written in CoffeeScript, HTML, JavaScript and Less &mdash; computer languages usually used to write web pages.
-
+{% include Layouts/clear.html %}
 ### Customizability
 {% include Links/image.html image="Atom/atom-packages-homepage-20160108.png" width="1130px" float="none" description="[Atom Packages Repository Homepage](https://atom.io/packages), note the current count of packages is 3,433 in this screenshot." %}
 Atom is very customizable, via a grand total of over 6,320 themes and plugins that can be installed from the command-line, using the `apm` command, or from within Atom itself. I personally prefer the command-line, as I have had some bad experiences with the built-in installer. From the command-line the command for installing new themes or plugins is:
