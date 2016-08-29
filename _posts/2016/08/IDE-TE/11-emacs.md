@@ -13,7 +13,7 @@ GE is one of the most customizable text editors available, but much of this cust
 GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs on Gentoo.
 
 ### Obtaining It
-GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) Snappy package. 
+GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) 64-bit Snappy package. 
 
 ### Advantages (Pros)
 * Extensively customizable.
