@@ -12,6 +12,9 @@ I am unaware of any possible customization of nano, if you know some please do t
 ### Features
 It offers syntax-highlighting, auto-indenting and miscellaneous other support for several computer languages. It also auto-detects the computer language using file extensions. It also has search functions (accessable via pressing <kbd>Ctrl</kbd>+<kbd>W</kbd>).
 
+### Obtaining It
+On many distributions nano comes pre-installed with the OS, those it is not usually have it in their official repositories. 
+
 ### Advantages (Pros)
 * Easy to install on Linux. On many distributions it is pre-installed.
 * It is also the lightest-weight of TEs/IDEs.

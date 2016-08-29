@@ -12,6 +12,9 @@ It is extensively customizable, via scripts in supported languages. Several plug
 ### Features
 As previously mentioned auto-indentation and syntax-highlighting support exists for a long list of computer languages. Plugins with extra IDE-like capabilities also exist, including a plugin for using git from within jEdit, another for using a Jython interpreter from within jEdit, another for a Python shell, *etc.*
 
+### Obtaining It
+It is found in the official repositories of many distributions, but as it is written in Java it is fairly easy to run it without installing it. Official Debian and Slackware builds of jEdit are available from its [website](http://www.jedit.org/index.php?page=download). 
+
 ### Advantages (Pros)
 * Easy to obtain it on Linux.
 * Extensively customizable.

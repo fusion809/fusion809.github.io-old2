@@ -10,7 +10,10 @@
 GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only.
 
 ### Features
-GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs.
+GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs on Gentoo.
+
+### Obtaining It
+GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) Snappy package. 
 
 ### Advantages (Pros)
 * Extensively customizable.

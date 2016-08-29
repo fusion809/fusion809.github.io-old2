@@ -8,6 +8,16 @@
 
 {% include Layouts/clear.html %}
 <br/>
+
+### Customizability
+I have not used it, so I do not know how to customize it, but I would imagine any customization would be via plugins, much like its base, Eclipse, is customized.
+
+### Features
+Its features are mostly web-oriented.
+
+### Obtaining It
+It is not in the official repositories of most distributions. 
+
 ### Summary
 {% include_relative 04a-aptana-studio-summary.html %}
 

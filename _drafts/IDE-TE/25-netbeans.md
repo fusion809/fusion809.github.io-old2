@@ -12,6 +12,9 @@ NetBeans is extensible via plugins provided at its [website](http://plugins.netb
 ### Features
 NetBeans has the usual features of IDEs, including those of TEs like syntax highlighting, autocompletion and auto-indentation for its programming languages and the ability to compile programs written in it.
 
+### Obtaining It
+It is found in the official repositories of most distributions. Even for those distributions that it is not in the official repositories of, should not be too challenging to run NetBeans on as official binary tarballs are provided by the Oracle Corporation that funds NetBeans' development. 
+
 ### Advantages (Pros)
 * It is extensible.
 * Cross-platform and is able to run on any Java-capable platform.

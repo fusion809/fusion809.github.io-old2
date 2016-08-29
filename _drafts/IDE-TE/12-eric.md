@@ -12,6 +12,18 @@ Eric has an extensive in-built plugin system. These plugins can be installed fro
 ### Features
 Its features include support for managing Mercurial, Subversion and Git repositories, an integrated Python debugger, an interactive embedded Python shell with syntax-highlighting, syntax-highlighting for its text editor component, code autocompletion, *etc.*
 
+### Obtaining It
+Eric is found in the official repositories of most Linux distributions, including (but not limited to):
+
+* Arch Linux
+* Debian (unstable)
+* Fedora
+* Gentoo Linux
+* Manjaro Linux
+* openSUSE
+* Sabayon Linux
+* Ubuntu
+
 ### Advantages (Pros)
 * Cross-platform.
 * Supports both Python versions.

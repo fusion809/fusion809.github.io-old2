@@ -12,6 +12,9 @@ There is little, if any, customizability for Leafpad.
 ### Features
 It offers no syntax highlighting support or auto-indentation support that I am aware of.
 
+### Obtaining It
+It is often included along with the LXDE core application suite, so it is available from the official repositories of the vast majority of Linux distributions.
+
 ### Advantages (Pros)
 * Its chief advantage is its low system resource usage.
 * Easy to install on most distributions.

@@ -21,5 +21,8 @@ It supports syntax highlighting of several computer languages, including Desktop
 * Customization options, beyond with a limited set of available themes and plugins, are limited.
 * Fairly light on features, beyond syntax highlighting.
 
+### Obtaining It
+The vast majority of Linux distributions have gedit in their official repositories. If the distribution has the GNOME desktop environment in their official repositories they should also have gedit as it is a core application for GNOME.
+
 ### Summary
 {% include_relative 14a-gedit-summary.html %}

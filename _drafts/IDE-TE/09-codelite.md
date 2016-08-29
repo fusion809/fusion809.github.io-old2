@@ -12,6 +12,24 @@ I have limited experience with CodeLite, so I cannot really comment with confide
 ### Features
 It is fairly feature-packed (including git, subversion, GUI-building, *etc.* support) for the programming languages it supports.
 
+### Obtaining It
+CodeLite is in the official repositories of some distributions. Although it can be found in the unofficial repositories of some distributions. Distribution's who's official repositories do not contain it:
+
+* Arch Linux
+* Fedora
+* Gentoo Linux
+* Mageia
+* Manjaro Linux
+
+While:
+
+* Debian (6.1.1 &mdash; stable; 9.2 &mdash; unstable)
+* openSUSE (8.1)
+* Sabayon (4.1.5770)
+* Ubuntu (9.1)
+
+have CodeLite in their official repositories, but fairly outdated versions as of 29 August 2016 (with the precise latest available version listed in brackets after their name).
+
 ### Advantages (Pros)
 * Cross-platform able to run on Windows, OS X and Linux.
 * Fairly lightweight for an IDE.

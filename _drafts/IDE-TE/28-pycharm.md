@@ -12,6 +12,9 @@ It has a [plugin repository](https://plugins.jetbrains.com/?pycharm), with plugi
 ### Features
 It is not as feature-packed as its proprietary counterpart, but it does have a pretty good feature set. This includes the basic text editor amenities such as syntax highlighting for Python, auto-indentation, *etc.* as well as an in-built interpreter for Python that can be set to use whichever interpreter one has installed on one's system.
 
+### Obtaining It
+It is not in the official repositories of any Linux distribution I am aware of, but as it is written in Java it is fairly easy to install, or at least set up for use on most distributions. 
+
 ### Advantages (Pros)
 * Cross-platform.
 * feature-packed.

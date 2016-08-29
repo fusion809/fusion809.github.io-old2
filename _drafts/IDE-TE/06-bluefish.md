@@ -12,6 +12,9 @@ I have limited experience with Bluefish but from what I can gather, it is custom
 ### Features
 Syntax highlighting is available for almost (if not all) all computer languages used in web development.
 
+### Obtaining It
+Bluefish is in the official repositories of most distributions. 
+
 ### Advantages (Pros)
 * Customizable.
 * Has features that would appeal to a web developer.

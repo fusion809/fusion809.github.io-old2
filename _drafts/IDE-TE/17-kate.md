@@ -16,6 +16,9 @@ Some customization (such as of keyboard shortcuts, the toolbar and a few other f
 ### Features
 It has syntax-highlighting and auto-indentation support for over 180 different computer languages, including MediaWiki and shell script, but excluding PyMOL. It also has embedded terminal support.
 
+### Obtaining It
+Kate and KWrite are found in the official repositories of most distributions &mdash; if the distribution has the KDE desktop environment (regardless of whether they are still packing KDE Plasma 4 or whether they have updated to Plasma 5), then Kate and KWrite should be available from their official repositories. 
+
 ### Advantages (Pros)
 * Easily customizable via graphical tools.
 * Intuitive keyboard shortcuts by default.

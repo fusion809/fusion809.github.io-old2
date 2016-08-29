@@ -14,6 +14,9 @@ SciTE can be customized by editing `.properties` files or via scripting with Lua
 ### Features
 It provides syntax-highlighting for dozens of computer languages. Support for extra languages can be added by creating `.properties` files for them.
 
+### Obtaining It
+SciTE is found in the official repositories of most Linux distributions. 
+
 ### Advantages (Pros)
 * Fairly lightweight.
 * Extensively customizable.

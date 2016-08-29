@@ -12,6 +12,11 @@ I do not have enough experience with Eclipse to make any comment on its customiz
 ### Features
 Eclipse features a text editor with syntax-highlighting, debugging, linting and auto-complete support for most programming languages, in-built support for several compilers and interpreters, it also supports the use of project views, *etc.*
 
+### Obtaining It
+It is available from the official repositories of many Linux distributions, although some distributions hold outdated versions of Eclipse in their official repositories. For example, Ubuntu 16.04 LTS holds Eclipse 3.8.1 in its official repositories, even though the latest version of Eclipse as of 29 August 2016 is 4.6.0. Likewise Debian (stable) and all other branches (such as unstable and testing) have, at latest, the 3.8.1 version of Eclipse. While Fedora 24 has [4.6.0](http://koji.fedoraproject.org/koji/buildinfo?buildID=780300) in its official repositories. Not surprisingly Arch Linux and Manjaro Linux have Eclipse 4.6.0 in their official repositories. Neither Gentoo nor Sabayon have an Eclipse binary package in their official repositories. Although the unofficial [`necromancy-overlay`](https://github.com/necrose99/necromancy-overlay/tree/master/dev-util/eclipse-cpp-bin) overlay provides an up-to-date build of Eclipse. Eclipse is not present in the official repositories of openSUSE, although the [`eclipse-classic`](https://build.opensuse.org/package/show?project=home%3Amarec2000&package=eclipse-classic) package is present in the [home:marec2000](https://build.opensuse.org/project/show/home:marec2000) repository.
+
+As it is written in Java, however, it is possible to download binary tarballs for it and run Eclipse without installing it. 
+
 ### Advantages (Pros)
 * Written in Java, so it is incredibly cross-platform. Any Java-capable platform should be able to run Eclipse without a problem.
 * Easy to install, using the new installer.

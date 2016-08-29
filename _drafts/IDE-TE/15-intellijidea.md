@@ -12,6 +12,9 @@ IntelliJ IDEA's customizability is something I really cannot comment on, but I w
 ### Features
 Its features is something I cannot really comment on as I have limited experience with it, but it does not support any programming languages beyond a limited set including and related to Java like the Groovy programming language.
 
+### Obtaining It
+IntelliJ IDEA CE is not in the official repositories of many Linux distributions, although binary tarballs for it are available that can be used to run IntelliJ IDEA CE without installing it. An [AppImage](https://bintray.com/probono/AppImages/IDEA) for it exists. 
+
 ### Advantages (Pros)
 * Easy to install on any Linux platform.
 * Cross-platform.

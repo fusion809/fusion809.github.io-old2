@@ -35,5 +35,8 @@ Geany provides auto-indentation and syntax-highlighting for over a dozen differe
 * The list of supported computer languages, for syntax-highlighting and other features is fairly small, compared to Atom, Gedit, GNU Emacs and Vim. See for example, the screenshot below, showing allowed file types.
 {% include Links/image.html image="Geany/Geany-Document-File-Type-Programming-Languages.png" float="none" width="1100px" %}
 
+### Obtaining It
+It is found in the official repositories of most Linux distributions. It also has an [AppImage package](https://bintray.com/probono/AppImages/Geany#files), granted it is fairly out-of-date (version 1.24.1 vs. the latest version of 1.28) as of 29 August 2016. 
+
 ### Summary
 {% include_relative 13a-geany-summary.html %}

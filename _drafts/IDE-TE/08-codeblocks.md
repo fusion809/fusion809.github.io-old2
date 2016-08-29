@@ -12,6 +12,9 @@ It is extensible through plugins[^3], although I have limited experience with th
 ### Features
 It provides many of the advanced features of text editors like syntax highlighting, code folding, code completion, *etc.* for C, C++, Fortran and XML files.
 
+### Obtaining It
+It is found in the official repositories of most distributions. The only notable exception is Debian (stable)'s official repositories, which lacks Code::Blocks, although the testing and unstable branches do have Code::Blocks builds. 
+
 ### Advantages (Pros)
 * Cross-platform and able to run on Windows, OS X and Linux.
 * Fairly lightweight.

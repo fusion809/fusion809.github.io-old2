@@ -18,6 +18,9 @@ Vim is extensively customizable, for people with the required level of finesse i
 ### Features
 It has syntax-highlighting support for almost (if not every) every computer language. It also has several IDE-type features, like compiling source code from within it. Several other features can be added to it, for example, I wrote some of this post in Vim when my blog was powered by WordPress, using the [Vimpress plugin](https://github.com/PotHix/Vimpress).
 
+### Obtaining It
+Aside from nano it is probably the easiest editor mentioned in this post to obtain on Linux. This is because it is found in the official repositories of virtually every Linux distribution. 
+
 ### Advantages (Pros)
 
 * Easy to obtain it on virtually every &#42;nix system.

@@ -12,6 +12,9 @@ Komodo Edit can be customized and extended by use of packages that come in the `
 ### Features
 Komodo Edit can have extra features added to it by use of plugins.
 
+### Obtaining It
+It is not in the official repositories of any distribution I am aware of. Fortunately, binary tarball releases are available from the Komodo IDE website.
+
 ### Advantages (Pros)
 * Seems fairly feature-packed, something tells me that its feature set is likely similar to Atom.
 
