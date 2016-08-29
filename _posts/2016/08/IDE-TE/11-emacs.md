@@ -2,7 +2,7 @@
 {% include Links/image.html image="Emacs/GNU-Emacs.png" description="GNU Emacs running under Moksha" float="none" width="1130px" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="GNU Emacs" repo="emacs-mirror/emacs" date="March 1985." license="<a href='https://sourceforge.net/p/codeblocks/code/HEAD/tree/trunk/COPYING' link='_blank'>GPLv3</a>." logo="emacs.png" language="C, Emacs Lisp." developers="GNU Projects." country="U.S.A." %}
+{% include Layouts/editor-infobox.html editor="GNU Emacs" repo="emacs-mirror/emacs" date="March 1985." license="<a href='https://sourceforge.net/p/codeblocks/code/HEAD/tree/trunk/COPYING' link='_blank'>GPLv3</a>." logo="emacs.png" language="C, Emacs Lisp." developers="GNU Projects." country="U.S.A." category="General-purpose text editor." %}
 [**GNU Emacs**](https://www.gnu.org/software/emacs) is an extensively-customizable text editor that is developed as part of the GNU Project. Its original developer was Richard Stallman, the founder of the GNU Project and its first release was in 1985. It belongs to a family of text editors called Emacs, which are text editors that are extensively customizable for users with sufficient programming knowledge. Emacs is abbreviated from <b>E</b>ditor <b>Mac</b>ro<b>s</b>, which refers to its origin as editor macros for the TECO text editor, that were developed, in part, by Richard Stallman. GE is written in C and Emacs Lisp (ELisp), a dialect of the Lisp programming language devised just for GE. ELisp is used to write extensions and provide extra functionalities for GE and related text editors like XEmacs.
 
 {% include Layouts/clear.html %}<br/>
