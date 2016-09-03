@@ -1,4 +1,4 @@
-### Limitations
+## Limitations
 This comparison of IDEs and text editors is far from comprehensive, there are several others I am aware of, that I have not included for a variety of different reasons. This comparison is not perfect, as I know to do anything near a perfect comparison I would have to compare each individual IDE/TE in great detail, with specific reference to their individual supported programming languages and how well they support each individual language. This is not done, deliberately, as it would take too long and I am simply not familiar enough with each editor to do this.
 
 There are two text editors/IDEs that I know can run quite well on Linux through Wine:
