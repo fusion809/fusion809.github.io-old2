@@ -24,4 +24,4 @@ It is not in the official repositories of any Linux distribution I am aware of, 
 * Heavy on system resource usage.
 
 ### Summary
-{% include_relative 28a-pycharm-summary.html %}
+{% include_relative 29a-pycharm-summary.html %}

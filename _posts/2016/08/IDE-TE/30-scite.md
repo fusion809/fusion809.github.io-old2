@@ -27,4 +27,4 @@ SciTE is found in the official repositories of most Linux distributions.
 * The list of languages it automatically supports is &lt;30.
 
 ### Summary
-{% include_relative 29a-scite-summary.html %}
+{% include_relative 30a-scite-summary.html %}

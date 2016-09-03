@@ -8,7 +8,7 @@
 {% include Layouts/clear.html %}<br/>
 
 ### Customizability
-GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only.
+GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only. One customization of note that is available is the plugin of [Spacemacs](http://spacemacs.org/), it provides Vim-like features, as well as some theming to Emacs. 
 
 ### Features
 GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs on Gentoo.

@@ -23,4 +23,4 @@ pluma has a few plugins that can be used to add features (mostly IDE-like featur
 * Customization options are fairly limited.
 
 ### Summary
-{% include_relative 27a-pluma-summary.html %}
+{% include_relative 28a-pluma-summary.html %}

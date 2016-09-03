@@ -2,9 +2,9 @@
 layout:           post
 title:            "A Comparison of Free and Open-Source Text Editors and IDEs"
 date:             2016-08-29 +1000
-last_modified_at: 2016-08-29 17:10:00 +1000
+last_modified_at: 2016-09-04 5:40:00 +1000
 categories:       comparisons, text-editors, integrated-development-environments, linux
-revision:         4
+revision:         5
 permalink:        /comparison-of-tes-and-ides/
 ---
 
@@ -34,9 +34,11 @@ permalink:        /comparison-of-tes-and-ides/
 {% include_relative 24-nano.md %}
 {% include_relative 25-netbeans.md %}
 {% include_relative 26-ninjaide.md %}
-{% include_relative 27-pluma.md %}
-{% include_relative 28-pycharm.md %}
-{% include_relative 29-scite.md %}
-{% include_relative 30-vim.md %}
-{% include_relative 31-vscode.md %}
-{% include_relative 32-footnotes.md %}
+{% include_relative 27-notepadqq.md %}
+{% include_relative 28-pluma.md %}
+{% include_relative 29-pycharm.md %}
+{% include_relative 30-scite.md %}
+{% include_relative 31-vim.md %}
+{% include_relative 32-vscode.md %}
+{% include_relative 33-others.md %}
+{% include_relative 34-footnotes.md %}

@@ -33,7 +33,7 @@ Aside from nano it is probably the easiest editor mentioned in this post to obta
 * Steep learning curve, making it difficult to learn. If you run `vimtutor` from the command-line after installing it, you will be taken through a tutorial of how to use it, which can be helpful.
 
 ### Summary
-{% include_relative 30a-vim-summary.html %}
+{% include_relative 31a-vim-summary.html %}
 
 ### External Links
 * [vim/vim GitHub Repository](https://github.com/vim/vim)
