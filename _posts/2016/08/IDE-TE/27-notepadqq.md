@@ -17,7 +17,7 @@ Notepadqq is customizable via going to the menubar, Settings&rarr;Preferences. T
 Provides syntax-highlighting and auto-indentation support for a wide variety of programming languages.
 
 ### Obtaining It
-An [unofficial PPA](https://launchpad.net/~notepadqq-team/+archive/ubuntu/notepadqq) exists for Ubuntu, which allows it to be easily installed. Arch Linux also has a [package](https://aur.archlinux.org/packages/notepadqq/) for it in its AUR. There are no ebuilds for Notepadqq available from any Layman-listed Gentoo overlays as of 4 September 2016 (source: [this search](http://gpo.zugaina.org/Search?search=notepadqq)). For other distributions I imagine it is quite a challenge to install.
+An [unofficial PPA](https://launchpad.net/~notepadqq-team/+archive/ubuntu/notepadqq) exists for Ubuntu, which allows it to be easily installed. Arch Linux also has a [package](https://aur.archlinux.org/packages/notepadqq/) for it in its AUR. There are no ebuilds for Notepadqq available from any overlays on the Layman remote list as of 4 September 2016 (source: [this search](http://gpo.zugaina.org/Search?search=notepadqq)). There is [one overlay](https://gitlab.com/kogaion/kogaion-desktop/) I have been made aware of that is not in the Layman remote list with a [Notepadqq 0.51.0 ebuild](https://gitlab.com/kogaion/kogaion-desktop/blob/master/app-editors/notepadqq/notepadqq-0.51.0.ebuild) in it. For other distributions I imagine it is quite a challenge to install.
 
 ### Advantages
 * Fast to load.
