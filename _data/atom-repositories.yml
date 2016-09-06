@@ -123,6 +123,22 @@ body:
     description:
             "My `language-patch2` package, which is a fork of the `language-patch` package, with some changes to make it easier to build custom Atom builds with it pre-installed."
 
+# language-solus
+  - repo:
+            "language-solus"
+    fork:
+            "n"
+    license-file:
+            "LICENSE.md"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "The `language-solus` package which provides commands for doing common Solus OS package management actions."
+
 # language-shellscript
   - repo:
             "language-shellscript"
