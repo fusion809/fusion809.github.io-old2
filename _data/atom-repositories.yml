@@ -16,6 +16,8 @@ body:
             "MIT"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -36,6 +38,8 @@ body:
             "MIT"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -50,8 +54,12 @@ body:
             "GPLv3"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
+    permalink:
+            "/language-archlinux/"
     description:
             "An Arch Linux development package for the Atom text editor. While it was not forked on GitHub from any existing GitHub repositories, it borrows much of its source code from the [`language-gentoo`](https://atom.io/packages/language-gentoo) package of Nicolas Laurent."
 
@@ -68,6 +76,8 @@ body:
             "MIT"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -86,6 +96,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -104,6 +116,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "n"
     description:
@@ -124,6 +138,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -142,6 +158,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -160,6 +178,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -178,6 +198,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
