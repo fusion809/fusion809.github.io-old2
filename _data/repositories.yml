@@ -1,12 +1,29 @@
 caption: "Table 2: An Overview of my GitHub Repositories"
 
 body:
+# AppImages
+  - repo:
+            "AppImages"
+    fork:
+            "y"
+    orig-user:
+            "probonopd"
+    orig-repo:
+            "AppImages"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    permalink:
+            "/appimages/"
+    description:
+            "Recipes for building AppImages."
 
 # arch-atom
   - repo:
             "arch-atom"
-    category:
-            "Arch Linux; Atom; PKGBUILDs"
     fork:
             "y"
     orig-user:
@@ -19,14 +36,14 @@ body:
             "y"
     working:
             "y"
+    permalink:
+            "/arch-atom/"
     description:
             "PKGBUILDs for building the latest stable release of Atom, with the bare minimum packages needed (so that the rest can be managed with APM) pre-installed, that is built on the latest release of Electron and APM."
 
 # arch-builder
   - repo:
             "arch-builder"
-    category:
-            "Arch Linux; Packer; Shell Script"
     fork:
             "y"
     orig-user:
@@ -49,8 +66,6 @@ body:
 # arch-scripts
   - repo:
             "arch-scripts"
-    category:
-            "Arch Linux; Bash; Quick Install; [Shell Profiles](#shell-scripts); Zsh"
     fork:
             "n"
     license:
@@ -69,8 +84,6 @@ body:
 # arch-setup
   - repo:
             "arch-setup"
-    category:
-            "Arch Linux; Installers; Shell Scripts"
     fork:
             "n"
     license:
@@ -89,8 +102,6 @@ body:
 # archiso
   - repo:
             "archiso"
-    category:
-            "Arch Linux; ISO"
     fork:
             "n"
     readme:
@@ -105,8 +116,6 @@ body:
 # atom
   - repo:
             "atom"
-    category:
-            "Atom; Configuration Files; Quick Install; Text editors"
     fork:
             "n"
     license:
@@ -125,8 +134,6 @@ body:
 # atom-installer
   - repo:
             "atom-installer"
-    category:
-            "Atom; Installers; Quick Install; Shell Scripts; Text Editors;"
     fork:
             "n"
     license:
@@ -145,8 +152,6 @@ body:
 # bin
   - repo:
             "bin"
-    category:
-            "JavaScript; Node.js; Open Build Service; Programming; Python; Shell Script"
     fork:
             "n"
     license:
@@ -165,8 +170,6 @@ body:
 # brackets-installer
   - repo:
             "brackets-installer"
-    category:
-            "Brackets; Installers; Quick Install; Shell Scripts; Text Editors;"
     fork:
             "n"
     license:
@@ -185,8 +188,6 @@ body:
 # centos-scripts
   - repo:
             "centos-scripts"
-    category:
-            "Bash; CentOS; Shell Profiles"
     fork:
             "n"
     license:
@@ -205,8 +206,6 @@ body:
 # C-Math-Projects
   - repo:
             "C-Math-Projects"
-    category:
-            "C; Math"
     fork:
             "n"
     license:
@@ -225,8 +224,6 @@ body:
 # CPP-Math-Projects
   - repo:
             "CPP-Math-Projects"
-    category:
-            "C++; Math"
     fork:
             "n"
     license:
@@ -245,8 +242,6 @@ body:
 # debian-scripts
   - repo:
             "debian-scripts"
-    category:
-            "Bash; Debian; Shell Profiles"
     fork:
             "n"
     license:
@@ -265,8 +260,6 @@ body:
 # fedora-ISO
   - repo:
             "fedora-ISO"
-    category:
-            "Fedora; ISO; Work-in-progress"
     fork:
             "n"
     readme:
@@ -281,8 +274,6 @@ body:
 # fedora-scripts
   - repo:
             "fedora-scripts"
-    category:
-            "Bash; Fedora; Quick Install; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -301,8 +292,6 @@ body:
 # freebsd-scripts
   - repo:
             "freebsd-scripts"
-    category:
-            "FreeBSD; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -321,8 +310,6 @@ body:
 # fusion809.github.io
   - repo:
             "fusion809.github.io"
-    category:
-            "GitHub Pages; Jekyll; The Hornery"
     fork:
             "n"
     license:
@@ -341,8 +328,6 @@ body:
 # gentoo-packer
   - repo:
             "gentoo-packer"
-    category:
-            "Gentoo Linux; Installers; Packer; Shell Script"
     fork:
             "y"
     license:
@@ -361,8 +346,6 @@ body:
 # gentoo-scripts
   - repo:
             "gentoo-scripts"
-    category:
-            "Bash; Gentoo Linux; Quick Install; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -381,8 +364,6 @@ body:
 # GNU_Octave
   - repo:
             "GNU_Octave"
-    category:
-            "GNU Octave; Programming; Scientific computing"
     fork:
             "n"
     license:
@@ -401,8 +382,6 @@ body:
 # hexo-site
   - repo:
             "hexo-site"
-    category:
-            "GitHub Pages; Hexo; The Hornery"
     fork:
             "n"
     license:
@@ -416,13 +395,11 @@ body:
     working:
             "y"
     description:
-            "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](https://fusion809.github.io/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
+            "My attempt at creating a subdirectory of *The Hornery* with Hexo-generated content. It was meant to deploy at the [/hexo](/hexo) subdirectory of *The Hornery*, but as you will see if you go there, it is not working as intended."
 
 # hubpress.io
   - repo:
             "hubpress.io"
-    category:
-            "GitHub Pages; HubPress; The Hornery"
     fork:
             "y"
     license:
@@ -438,13 +415,11 @@ body:
     working:
             "y"
     description:
-            "A subdirectory ([/hubpress.io](https://fusion809.github.io/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
+            "A subdirectory ([/hubpress.io](/hubpress.io)) of *The Hornery* (with no content so far) powered by the static site generator, HubPress."
 
 # JScripts
   - repo:
             "JScripts"
-    category:
-            "JavaScript; Programming; Scientific computing"
     fork:
             "n"
     license:
@@ -463,8 +438,6 @@ body:
 # komodo-installer
   - repo:
             "komodo-installer"
-    category:
-            "Komodo Edit; Installers; Quick Install; Shell Scripts;"
     fork:
             "n"
     license:
@@ -483,8 +456,6 @@ body:
 # lighttable-installer
   - repo:
             "lighttable-installer"
-    category:
-            "LightTable; Installers; Integrated Development Environments; Quick Install; Shell Scripts;"
     fork:
             "n"
     license:
@@ -503,8 +474,6 @@ body:
 # Linux-scripts
   - repo:
             "Linux-scripts"
-    category:
-            "Linux; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -523,8 +492,6 @@ body:
 # mageia-scripts
   - repo:
             "mageia-scripts"
-    category:
-            "Bash; Mageia; Shell Profiles"
     fork:
             "n"
     license:
@@ -543,8 +510,6 @@ body:
 # npm2archOBS
   - repo:
             "npm2archOBS"
-    category:
-            "Arch Linux; JavaScript; Node.js; Open Build Service; PKGBUILDs; Shell Scripts"
     fork:
             "y"
     license:
@@ -563,8 +528,6 @@ body:
 # opensuse-scripts
   - repo:
             "opensuse-scripts"
-    category:
-            "Bash; openSUSE; Quick Install; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -583,8 +546,6 @@ body:
 # pelican-site
   - repo:
             "pelican-site"
-    category:
-            "GitHub Pages; Pelican; The Hornery"
     fork:
             "n"
     readme:
@@ -599,8 +560,6 @@ body:
 # PKGBUILDs
   - repo:
             "PKGBUILDs"
-    category:
-            "Arch Linux; Package development"
     fork:
             "n"
     license:
@@ -613,14 +572,14 @@ body:
             "y"
     working:
             "y"
+    permalink:
+            "/PKGBUILDs/"
     description:
             "Assorted PKGBUILDs for building packages that are not provided (or at least, not adequately provided) by the AUR, Arch Linux official repositories or my Open Build Service project. This repository as `-old` and `-old2` versions, which refer to old versions of this repository that have been discarded due to their size being unacceptable. To help keep its repository size down and make it easier to tag releases of individual packages I have split this repository into a series of submodules &mdash; one for each individual PKGBUILD."
 
 # python-scripts
   - repo:
             "python-scripts"
-    category:
-            "Programming; Python; Scientific computing"
     fork:
             "n"
     license:
@@ -639,8 +598,6 @@ body:
 # rpmbuild
   - repo:
             "rpmbuild"
-    category:
-            "openSUSE; Package development"
     fork:
             "n"
     license:
@@ -659,8 +616,6 @@ body:
 # sabayon-gitsta
   - repo:
             "sabayon-gitsta"
-    category:
-            "Themes; WordPress"
     fork:
             "n"
     license:
@@ -679,8 +634,6 @@ body:
 # sabayon-scripts
   - repo:
             "sabayon-scripts"
-    category:
-            "Bash; Quick Install; Sabayon Linux; Shell Profiles; Zsh"
     fork:
             "n"
     license:
@@ -699,8 +652,6 @@ body:
 # sabayon-tools
   - repo:
             "sabayon-tools"
-    category:
-            "Gentoo Linux; Package development; Portage overlay; Sabayon Linux"
     fork:
             "n"
     license:
@@ -719,8 +670,6 @@ body:
 # spacemacs
   - repo:
             "spacemacs"
-    category:
-            "Configuration Files; Spacemacs; Text editors"
     fork:
             "n"
     license:
@@ -739,8 +688,6 @@ body:
 # vim
   - repo:
             "vim"
-    category:
-            "Configuration Files; Text editors; Vim"
     fork:
             "n"
     license:
@@ -759,8 +706,6 @@ body:
 # VScode-installer
   - repo:
             "vscode-installer"
-    category:
-            "Installers; Quick Install; Shell Scripts; Text Editors; Visual Studio Code;"
     fork:
             "n"
     license:
@@ -779,8 +724,6 @@ body:
 # zsh-theme
   - repo:
             "zsh-theme"
-    category:
-            "Themes; Zsh"
     fork:
             "n"
     license:

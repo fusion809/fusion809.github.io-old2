@@ -10,6 +10,7 @@ Atom is my favourite text editor, and as such I have several GitHub repositories
 * {% include Links/fusgr.md repo="language-patch2" %} &mdash; a fork of the `language-patch` package with better metadata (which is important for custom Atom builds).
 * {% include Links/fusgr.md repo="language-solus" %} &mdash; a package to provide syntax-highlighting for Solus packaging files.
 * {% include Links/fusgr.md repo="terminal-fusion" %} &mdash; an Atom package to provide an embedded, Linux-themed terminal for Atom.
+* {% include Links/fusgr.md repo="toolbar-fusion" %} &mdash; an Atom package that adds a toolbar to Atom. 
 
 I have also contributed to the following Atom-related repositories (for a full list see my [GitHub profile](https://github.com/fusion809)):
 

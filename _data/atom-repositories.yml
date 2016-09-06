@@ -16,6 +16,8 @@ body:
             "MIT"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -36,6 +38,8 @@ body:
             "MIT"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -50,8 +54,12 @@ body:
             "GPLv3"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
+    permalink:
+            "/language-archlinux/"
     description:
             "An Arch Linux development package for the Atom text editor. While it was not forked on GitHub from any existing GitHub repositories, it borrows much of its source code from the [`language-gentoo`](https://atom.io/packages/language-gentoo) package of Nicolas Laurent."
 
@@ -68,6 +76,8 @@ body:
             "MIT"
     license-file:
             "LICENSE.md"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -86,6 +96,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -104,10 +116,28 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "n"
     description:
             "My `language-patch2` package, which is a fork of the `language-patch` package, with some changes to make it easier to build custom Atom builds with it pre-installed."
+
+# language-solus
+  - repo:
+            "language-solus"
+    fork:
+            "n"
+    license-file:
+            "LICENSE.md"
+    license:
+            "GPLv3"
+    readme:
+            "y"
+    registered:
+            "y"
+    description:
+            "The `language-solus` package which provides commands for doing common Solus OS package management actions."
 
 # language-shellscript
   - repo:
@@ -124,6 +154,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -142,6 +174,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -160,6 +194,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
@@ -178,6 +214,8 @@ body:
             "MIT"
     license-file:
             "LICENSE"
+    readme:
+            "y"
     registered:
             "y"
     description:
