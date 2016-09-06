@@ -2,7 +2,7 @@
 date:             2016-06-20 +1000
 layout:           page
 title:            "AUR Package: atom-editor-arch"
-last_modified_at: 2016-07-21 06:10:00 +1000
+last_modified_at: 2016-09-07 09:45:00 +1000
 permalink:        /atom-editor-arch/
 ---
 
