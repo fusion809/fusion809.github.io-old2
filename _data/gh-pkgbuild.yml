@@ -20,6 +20,12 @@ body:
       pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with some extra packages for Arch Linux package development pre-installed."
       notes:     "An <code>atom-editor-arch</code> AUR package is maintained by myself — About page is different."
 
+    - pkgname:   "atom-editor-base"
+      bp:        "Yes"
+      size:      "~235 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with all language packages removed."
+      notes:     "Not present in the AUR. I do not use it myself anymore, as with all extra packages installed with APM it is very slow to startup."
+
     - pkgname:   "atom-editor-beta"
       bp:        "No"
       size:      "~238 MB."
@@ -30,4 +36,10 @@ body:
       bp:        "No"
       size:      "&gt;200 MB."
       pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with some extra packages for Arch Linux package development pre-installed."
+      notes:     "Not present in the AUR."
+
+    - pkgname:   "atom-editor-beta-base"
+      bp:        "No"
+      size:      "&gt;200 MB."
+      pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies, with all language packages removed."
       notes:     "Not present in the AUR."
