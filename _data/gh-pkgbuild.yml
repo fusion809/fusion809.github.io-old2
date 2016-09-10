@@ -22,7 +22,7 @@ body:
 
     - pkgname:   "atom-editor-beta"
       bp:        "No"
-      size:      "&gt;200 MB."
+      size:      "~238 MB."
       pkgdesc:   "Hackable text editor for the 21st Century, built using web technologies — beta channel."
       notes:     "The <code>atom-editor-beta</code> AUR package is also maintained by myself — About page is different."
 
