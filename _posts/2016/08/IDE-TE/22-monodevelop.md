@@ -16,7 +16,7 @@ MonoDevelop is customizable via a plugin system, it has its own add-in manager. 
 
 ### Features
 {% include Links/image.html image="MonoDevelop/MonoDevelop-5.10-debugging-C++.png" width="1130px" float="none" description="MonoDevelop 5.10 C++ debugger" %}
-MonoDevelop has several important features expected of an IDE, such as autocompletion (or intellisense), linting and syntax-highlighting for its supported languages. It also has an integrated debugger for its supported languages. I have used MonoDevelop to work on a very simple C++ program that is completely unrelated to Mono/.NET, and its integrated debugger was quite useful.
+MonoDevelop has several important features expected of an IDE, such as autocompletion (or intellisense), linting and syntax-highlighting for its supported languages. It also has an integrated debugger for its supported languages. I have used MonoDevelop to work on a very simple C++ program that is completely unrelated to Mono/.NET, and its integrated debugger was quite useful. Unfortunately its support for C/C++ is to be removed in the upcoming 6.x release of MonoDevelop.
 
 ### Obtaining It
 MonoDevelop is in the official repositories of most Linux distributions, including:
