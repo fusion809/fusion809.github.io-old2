@@ -7,7 +7,7 @@ redirect_from: /open-source-games/
 permalink:     /overview-of-open-source-games/
 ---
 
-As a Linux user, occasionally I need a means to pass the time, and as such I have tried quite a few open-source Linux games. Linux has not traditionally been seen as a gaming platform. My personal favourites are, in alphabetical order:
+As a Linux user, occasionally I need a means to pass the time, and as such I have tried quite a few **Linux games**. Linux has not traditionally been seen as a gaming platform, although in recent years this has changed significantly. Proprietary games are amongst the most popular (and include Minecraft, RuneScape and Steam games), but I prefer to avoid discussing proprietary software because I want *The Hornery* to be free of advertisement for proprietary products. Despite this there are plenty of open-source alternatives for Linux. My personal favourites are, in alphabetical order:
 
 * [0 A.D.](https://play0ad.com)
 * [OpenRA](http://www.openra.net/)
