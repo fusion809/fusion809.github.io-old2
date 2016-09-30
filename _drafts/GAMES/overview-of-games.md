@@ -21,3 +21,4 @@ In this article I will discuss each Linux game I have experience with, and compa
 * Genre.
 
 ## 0 A.D.
+{% include Links/image.html image="Games/0_A.D._a20.png" width="1120px" float="none" description="0 A.D. alpha 20" %}
