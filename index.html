@@ -9,21 +9,6 @@ layout: default2
   </div><br/>
 
   <div class="posts" style="float:left; background-color: rgb(100,250,100);">
-    <h1>Popular Posts</h1>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-        {% if site.rec_posts contains post.url %}
-          <li class="post-meta">
-            <span>{{ post.date | date: "%A, %-d %B %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="posts" style="float:right; background-color: rgb(255,100,255);">
     <h1>Latest Posts</h1>
 
     <ul class="post-list">
@@ -36,8 +21,7 @@ layout: default2
     </ul>
   </div>
 
-  <br/><br/>
-  <div class="posts" style="float:left; background-color: rgb(205,205,255);">
+  <div class="posts" style="float:right; background-color: rgb(205,205,255);">
     <h1>My GitHub Repositories of Note</h1>
 
     <ul class="post-list">
@@ -48,11 +32,8 @@ layout: default2
         </li>
       {% endfor %}
     </ul>
-  </div>
 
-  <br/><br/>
-  <div class="posts" style="float:right; background-color: rgb(180,230,255);">
-    <h1>Atom Packages of Note</h1>
+    <h1>My Atom Packages</h1>
 
     <ul class="post-list">
       {% for row in site.data.atom-repositories.body %}
