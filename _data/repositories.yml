@@ -665,6 +665,24 @@ body:
     description:
             "My Portage overlay for Gentoo and Sabayon Linux, with ebuilds for programs not (or at least not at the time of me writing them) provided by the Portage Tree or official `sabayon` overlay. This overlay has an `-old` version too."
 
+# snapcraft
+  - repo:
+            "snapcraft"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "n"
+    working:
+            "y"
+    description:
+            "Files for building snap packages for Atom."
+
 # spacemacs
   - repo:
             "spacemacs"
