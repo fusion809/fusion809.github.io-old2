@@ -255,6 +255,24 @@ body:
     description:
             "My emacs configuration settings (stored in `~/.emacs`). Has a quick install script too."
 
+# emacs-snap
+  - repo:
+            "emacs-snap"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "Files for building an emacs snap package."
+
 # fedora-ISO
   - repo:
             "fedora-ISO"
