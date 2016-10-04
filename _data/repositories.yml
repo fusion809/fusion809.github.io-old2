@@ -141,7 +141,7 @@ body:
     readme:
             "y"
     maintained:
-            "y"
+            "n"
     working:
             "y"
     description:
@@ -609,7 +609,7 @@ body:
     working:
             "y"
     description:
-            "A modified version of the gitsta theme that is used by the Sabayon Blog at [http://linux.x10host.com/blog/](http://linux.x10host.com/blog/)"
+            "A modified version of the gitsta theme that is used by the Sabayon Blog at [http://linux.x10host.com/blog/](http://linux.x10host.com/blog/)."
 
 # sabayon-scripts
   - repo:

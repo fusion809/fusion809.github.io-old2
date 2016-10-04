@@ -27,7 +27,7 @@ layout: default2
     <ul class="post-list">
       {% for row in site.data.repositories.body %}
         <li class="post-meta">
-          <img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{{ row.repo }}</a>
+          <a href = "https://github.com/fusion809/{{ row.repo }}/forks"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
           <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
         </li>
       {% endfor %}
@@ -38,7 +38,7 @@ layout: default2
     <ul class="post-list">
       {% for row in site.data.atom-repositories.body %}
         <li class="post-meta">
-          <a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}</a>
+          <a href = "https://github.com/fusion809/{{ row.repo }}/forks"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}</a>
           <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
         </li>
       {% endfor %}
