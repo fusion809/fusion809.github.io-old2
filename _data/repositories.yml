@@ -19,7 +19,7 @@ body:
     permalink:
             "/appimages/"
     description:
-            "Recipes for building AppImages."
+            "Recipes (shell scripts) for building AppImages, forked from [probonopd/AppImages](https://github.com/probonopd/AppImages)."
 
 # arch-builder
   - repo:
