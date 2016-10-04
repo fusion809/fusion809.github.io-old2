@@ -1,4 +1,0 @@
-## CentOS
-{% include Layouts/infobox.html logo="CentOS.svg" date="2004" distro="CentOS" country="U.S.A." developers="CentOS Project <br/>(Sponsored by Red Hat)" package-manager="yum" release-model="Fixed" design="Enterprise, Server" cosr="4" sbes="1" overall="7" %}
-
-**CentOS** (abbreviated from **Community ENTerprise Operating System**) is an enterprise-class Linux distribution based on Fedora. The software repositories of its latest stable release contain system and desktop software from at least one, usually two, years ago. CentOS follows a fixed release model, and presently there are three supported releases available: 5.x, 6.x and 7.x. CentOS still uses the yum package manager previously used by Fedora. Like Fedora it has a strong focus on free software, with the only proprietary software in its official repositories, that I am aware of (feel free to correct me if I am wrong) being the binary blobs on the Linux kernel.

@@ -1,14 +1,1 @@
-Since mid 2012, when I first tried [Ubuntu](#ubuntu) (specifically the latest version of this OS available at the time &mdash; 12.04), free **Unix-like operating systems** (which I will henceforth refer to as **&#42;nixes**) have occupied a very special position in my heart. Most of my favourite &#42;nixes are in fact Linux distributions, although [FreeBSD](#freebsd) is also a favourite of mine. My ten favourite free operating systems are, in descending order of my favour:
-
-{% capture distro-list %}
-1. [**Arch Linux**](#arch-linux)
-2. [**Ubuntu**](#ubuntu)
-3. [**Sabayon Linux**](#sabayon-linux)
-4. [**openSUSE**](#opensuse)
-5. [**Fedora**](#fedora)
-6. [**Debian**](#debian)
-7. [**Gentoo Linux**](#gentoo-linux)
-8. [**CentOS**](#centos)
-9. [**FreeBSD**](#freebsd)
-10. [**Slackware**](#slackware)
-{% endcapture %}{% include Layouts/column.html no="6" content=distro-list %}
+As soon as you enter the {% include Layouts/abbr.md abbr="FOSS" full="Free and Open-Source Software" %} world, you will likely want to start off by switching your **operating system** (OS) from a proprietary one to a more **free** and **open-source** one. I have written posts similar to this one before, but this one I plan on making more comprehensive. I will compare the various free operating systems I have sufficient experience with to review. It is worthwhile noting that many of these operating systems are not 100% free and open-source,[^1] rather they are predominantly free and open-source in terms of the software that comes installed on them, by default, and cost the end-user nothing to legally attain and use.
