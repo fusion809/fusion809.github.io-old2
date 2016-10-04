@@ -1,5 +1,5 @@
 ---
-layout:        draft
+layout:        post
 date:          2016-10-01 +1000
 title:         "An Overview of Open-Source Games for Linux"
 categories:    open-source, games, overviews
@@ -22,3 +22,5 @@ In this article I will discuss each Linux game I have experience with, and compa
 
 ## 0 A.D.
 {% include Links/image.html image="Games/0_A.D._a20.png" width="1120px" float="none" description="0 A.D. alpha 20" %}
+
+**0 A.D.** is a real-time strategy game developed by a team of volunteers known as Wildfire Games. 

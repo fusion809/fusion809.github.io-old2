@@ -21,26 +21,6 @@ body:
     description:
             "Recipes for building AppImages."
 
-# arch-atom
-  - repo:
-            "arch-atom"
-    fork:
-            "y"
-    orig-user:
-            "tensor5"
-    orig-repo:
-            "arch-atom"
-    readme:
-            "y"
-    maintained:
-            "y"
-    working:
-            "y"
-    permalink:
-            "/arch-atom/"
-    description:
-            "PKGBUILDs for building the latest stable release of Atom, with the bare minimum packages needed (so that the rest can be managed with APM) pre-installed, that is built on the latest release of Electron and APM."
-
 # arch-builder
   - repo:
             "arch-builder"

@@ -4,7 +4,7 @@ layout: default2
 
 <div class="home">
 
-  <div style="font-size:18px; background-color: rgb(200,150,200); color: black; border: 5px solid rgb(120,50,120); border-radius: 5px; padding: 5px;">
+  <div style="font-size:18px; background-color: rgb(250,180,250); color: black; border: 5px solid rgb(120,50,120); border-radius: 5px; padding: 5px;">
     {{ site.extended_description | markdownify }}
   </div><br/>
 
@@ -31,6 +31,34 @@ layout: default2
         <li class="post-meta">
           <span>{{ post.date | date: "%A, %-d %B %Y" }}</span>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <br/><br/>
+  <div class="posts" style="float:left; background-color: rgb(205,205,255);">
+    <h1>My GitHub Repositories of Note</h1>
+
+    <ul class="post-list">
+      {% for row in site.data.repositories.body %}
+        <li class="post-meta">
+          <img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{{ row.repo }}</a>
+          <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <br/><br/>
+  <div class="posts" style="float:right; background-color: rgb(180,230,255);">
+    <h1>Atom Packages of Note</h1>
+
+    <ul class="post-list">
+      {% for row in site.data.atom-repositories.body %}
+        <li class="post-meta">
+          <img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}</a>
+          <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
         </li>
       {% endfor %}
     </ul>
