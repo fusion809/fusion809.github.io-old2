@@ -8,40 +8,41 @@ layout: default2
     {{ site.extended_description | markdownify }}
   </div><br/>
 
-  <div class="posts" style="float:left; background-color: rgb(100,250,100);">
-    <h1>Latest Posts</h1>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li class="post-meta">
-          <span>{{ post.date | date: "%A, %-d %B %Y" }}</span>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-
   <div class="posts" style="float:right; background-color: rgb(205,205,255);">
     <h1>My Atom Packages</h1>
 
     <ul class="post-list">
       {% for row in site.data.atom-repositories.body %}
-        <li class="post-meta">
+        <li class="data-meta">
           <a href = "https://github.com/fusion809/{{ row.repo }}/forks"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}</a>
           <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
           <span style="font-weight: normal;"><b><u>Atom Package URL:</u></b> <a href="https://atom.io/packages/{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}" link="_blank">https://atom.io/packages/{% if row.name %}{{ row.name }}{% else %}{{ row.repo }}{% endif %}.</a></span>
         </li>
       {% endfor %}
     </ul>
+  </div>
 
+  <div class="posts" style="float:left; background-color: rgb(185,185,255);">
     <h1>Other GitHub Repositories of Mine</h1>
 
     <ul class="post-list">
       {% for row in site.data.repositories.body %}
-        <li class="post-meta">
+        <li class="data-meta">
           <a href = "https://github.com/fusion809/{{ row.repo }}/forks"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
           <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
           {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a></span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="posts" style="float:right; background-color: rgb(100,250,100);">
+    <h1>Latest Posts</h1>
+
+    <ul>
+      {% for post in site.posts %}
+        <li class="post-meta">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="font-size: 16px;">{{ post.title }}</a> ({{ post.date | date: "%A, %-d %B %Y" }})
         </li>
       {% endfor %}
     </ul>

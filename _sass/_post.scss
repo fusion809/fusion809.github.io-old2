@@ -34,7 +34,7 @@
   background-color: rgb(255,100,255);
 }
 
-.post-meta {
+.data-meta {
   font-size:         $small-font-size;
   color:             black;
   font-weight:       bold;
@@ -44,6 +44,17 @@
   border-radius:     4px;
   border-top:        1px solid #000;
   padding:           6px;
+  max-width:         900px;
+}
+
+.data-meta a {
+  color:             rgba(0,0,255,1.0);
+}
+
+.post-meta {
+  font-size:         14px;
+  color:             black;
+  font-weight:       bold;
   max-width:         900px;
 }
 
