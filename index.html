@@ -29,6 +29,7 @@ layout: default2
         <li class="post-meta">
           <a href = "https://github.com/fusion809/{{ row.repo }}/forks"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
           <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
+          <span style="font-weight: normal;"><b><u>Permalink</u></b>: {{ row.permalink | prepend: site.baseurl }}</span>
         </li>
       {% endfor %}
     </ul>
