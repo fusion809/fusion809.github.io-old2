@@ -81,7 +81,7 @@ body:
     registered:
             "y"
     description:
-            "My `language-gfm2` Atom package. It is essentially just the `language-gfm` package with [pull 154](https://github.com/atom/language-gfm/pull/154) applied."
+            "My `language-gfm2` Atom package. It is essentially just the `language-gfm` package with [pull request 154](https://github.com/atom/language-gfm/pull/154) applied."
 
 # language-ini-desktop
   - repo:
