@@ -30,7 +30,7 @@ layout: default2
         <li class="data-meta">
           <a href = "https://github.com/fusion809/{{ row.repo }}/forks"><img src="https://img.shields.io/github/forks/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/stargazers"><img src="https://img.shields.io/github/stars/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a href = "https://github.com/fusion809/{{ row.repo}}/watchers"><img src="https://img.shields.io/github/watchers/fusion809/{{ row.repo }}.svg" style="float:right;"></a><a class="post-link" href="https://github.com/fusion809/{{ row.repo }}">{{ row.repo }}{% if row.maintained == "n" %} (UNMAINTAINED){% endif %}</a>
           <span style="font-weight: normal;"><b><u>Description</u></b>: {{ row.description | markdownify }}</span>
-          {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a></span>{% endif %}
+          {% if row.permalink %}<span style="font-weight: normal;"><b><u>The Hornery Link</u></b>: <a href="{{ row.permalink | prepend: site.baseurl }}" link="_blank">{{ row.permalink }}</a>.</span>{% endif %}
         </li>
       {% endfor %}
     </ul>
