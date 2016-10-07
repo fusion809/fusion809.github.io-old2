@@ -3,7 +3,7 @@
 
 ### Background
 {% include Layouts/editor-infobox.html date="December 1999." developers="KDE." language="C++." focus="General-purpose IDE." license="<a href='https://github.com/KDE/kdevelop/blob/master/COPYING' link='_blank'>GPLv2</a>, <a href='https://github.com/KDE/kdevelop/blob/master/COPYING.LIB' link='_blank'>LGPLv2.1</a>." repo="KDE/kdevelop" country="Germany." logo="kdevelop.png" editor="KDevelop" %}
-[**KDevelop**](https://www.kdevelop.org/) is an IDE that is part of the KDE Core Applications (KDE-CA) suite. It was fairly recently transitioned to the KDE Frameworks 5 (KF5), compared to other members of the KDE-CA suite, with the 5.0.0 release of KDevelop (the first of which to fully transitioned to KF5) being on the 23th of August 2016. Many distributions do not yet have KDevelop 5.0.0 in their repositories, in fact not even Arch Linux has as of the 29th of August 2016. It supports a grand total of six programming languages &mdash; C, C++, JavaScript, PHP, Python and QML. I have used it as a C++ IDE, granted only for one small project.
+[**KDevelop**](https://www.kdevelop.org/) is an IDE that is part of the KDE Core Applications (KDE-CA) suite. It was fairly recently transitioned to the KDE Frameworks 5 (KF5), compared to other members of the KDE-CA suite, with the 5.0.0 release of KDevelop (the first of which to fully transitioned to KF5) being on the 23th of August 2016. Many distributions do not yet have KDevelop 5.0.x in their repositories. It supports a grand total of six programming languages &mdash; C, C++, JavaScript, PHP, Python and QML. I have used it as a C++ IDE, granted only for one small project.
 
 {% include Layouts/clear.html %}<br/>
 
@@ -14,7 +14,7 @@ KDevelop is a program I have little experience with, but if you go to the "Setti
 KDevelop features source code editor support (including syntax highlighting, autocompletion, autoindentation, *etc.*) for its six programming languages, it also has in-built support for git and compilers/interpreters for C, C++, PHP and Python.
 
 ### Obtaining It
-It is in the official repositories of the majority of Linux distributions. Although very few, if any, have started packing the 5.0.0 release of KDevelop yet, so if you would like to try it the KDE Development Team has provided a [64-bit AppImage build](http://download.kde.org/stable/kdevelop/5.0.0/bin/linux/KDevelop-5.0.0-1-x86_64.AppImage) of it.
+It is in the official repositories of the majority of Linux distributions. Although few have started packing the 5.x release of KDevelop yet, so if you would like to try it the KDE Development Team has provided a [64-bit AppImage build](http://download.kde.org/stable/kdevelop/5.0.1/bin/linux/KDevelop-5.0.1-x86_64.AppImage) of it.
 
 ### Advantages (Pros)
 * Easy to install.
@@ -26,3 +26,6 @@ It is in the official repositories of the majority of Linux distributions. Altho
 
 ### Ratings
 {% include_relative 18a-kdevelop-summary.html %}
+
+### External Links
+* {% include Links/irc.html channel="kdevelop" %} IRC Channel.
