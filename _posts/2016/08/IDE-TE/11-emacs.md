@@ -8,13 +8,13 @@
 {% include Layouts/clear.html %}<br/>
 
 ### Customizability
-GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only. One customization of note that is available is the plugin of [Spacemacs](http://spacemacs.org/), it provides Vim-like features, as well as some theming to Emacs. 
+GE is one of the most customizable text editors available, but much of this customization must be done via writing code in ELisp, which limits much of this customization to advanced users only. One customization of note that is available is the plugin of [Spacemacs](http://spacemacs.org/), it provides Vim-like features, as well as some theming to Emacs.
 
 ### Features
 GNU Emacs provides syntax highlighting for dozens of different computer languages, along with several features of IDEs like shell access, compiling code, using git from within GE, *etc.* The [app-emacs](http://gpo.zugaina.org/app-emacs/) Portage category contains several plugins for GNU Emacs on Gentoo.
 
 ### Obtaining It
-GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) 64-bit Snappy package.
+GNU Emacs is available from the official repositories of most Linux distributions. If your distribution, for whatever reason, does not have Emacs in its official repositories you can install it using [this](https://uappexplorer.com/app/emacs-tealeg.tealeg) 64-bit Snappy package. [Here](https://transfer.sh/14u8jA/emacs-25.1-glibc2.17-x86-64.appimage) is a 64-bit AppImage for GNU Emacs 25.1.
 
 ### Advantages (Pros)
 * Extensively customizable.
