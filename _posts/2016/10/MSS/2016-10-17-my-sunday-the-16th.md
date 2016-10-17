@@ -39,3 +39,5 @@ After I created the live media for 16.04 I installed 16.04 on my `/dev/sda` part
 &rarr; /dev/sdb1 &mdash; Arch Linux installation (ext4). Approximately 1 TB in size.
 &rarr; /dev/sdb2 &mdash; Swap partition.
 </pre>
+
+{% include Links/image.html image="operating-systems/Ubuntu-MATE-16.04-20161017.png" %}
