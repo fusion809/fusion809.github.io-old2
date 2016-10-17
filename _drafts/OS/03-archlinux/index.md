@@ -1,7 +1,6 @@
 ## Arch Linux
 
 ### Background
-{% include_relative 03-archlinux/infobox.html %}
 
 [**Arch Linux**](https://www.archlinux.org/) is a Linux distribution that's development was started by Canadian programmer, Judd Vinet, in early 2001. Arch's first public release, however, was not until March 2002. Vinet wanted to develop a system with the minimalism and simplicity of FreeBSD, Slackware and other **barebones-type operating systems** available at the time, but with a simpler package management system (PMS) than these existing operating systems. This PMS was and is still called **pacman**, which is a binary package manager, written in C, that is quite easily the fastest package manager mentioned in this post. pacman is essentially what makes setting up an Arch system faster and its maintenance easier and less tedious than it is for the source-based barebones operating systems FreeBSD and Gentoo Linux. Arch Linux, like Gentoo Linux, follows a **rolling release model** and is more geared towards **advanced users**. Arch Linux also has some of the best written documentation of any Linux distribution, which can be found at [*The ArchWiki*](https://wiki.archlinux.org).
 
