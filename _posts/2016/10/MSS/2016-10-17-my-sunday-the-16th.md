@@ -7,7 +7,7 @@ categories:        linux, fedora, ubuntu
 last_modified_at:  2016-10-17 17:18:00 +1000
 ---
 
-My Sunday, the 16th of October 2016 started out quite a normal day. When I woke up at 9 am I started installing some needed software on a newly created Ubuntu 16.10 installation. Previously this 16.10 partition had openSUSE Tumbleweed on it. I personally find openSUSE Tumbleweed likened to wet cement, in how hard it is to do basic things on it (like install proprietary firmware and codecs), compared to Arch Linux and Ubuntu. Plus, I find it more prone to bugs and bug-fixing from a user point-of-view tends to be more challenging on openSUSE Tumbleweed, in my opinion, than say on Arch Linux. As building custom packages on Arch Linux is easier using `makepkg` than using openSUSE Tumbleweed's `rpmbuild`. My internal drives were partitioned as so:
+My Sunday, the 16th of October 2016 started out quite a normal day. When I woke up at 9 am I started installing some needed software on a newly created Ubuntu 16.10 installation. Previously this 16.10 partition had openSUSE Tumbleweed on it. I personally find openSUSE Tumbleweed likened to wet cement, in how hard it is to do basic things on it (like install proprietary firmware and codecs), compared to Arch Linux and Ubuntu. Plus, I find it more prone to bugs and bug-fixing from a user point-of-view tends to be more challenging on openSUSE Tumbleweed, in my opinion, than say on Arch Linux. As building custom packages (like those with patches applied or other attempted fixes) on Arch Linux is easier using `makepkg` than using openSUSE Tumbleweed's `rpmbuild`. My internal drives were partitioned as so:
 
 <pre>
 /dev/sda
