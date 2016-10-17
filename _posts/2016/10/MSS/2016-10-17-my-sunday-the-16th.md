@@ -3,7 +3,7 @@ layout:            post
 date:              2016-10-17 +1000
 title:             "My Sunday, the 16th of October"
 permalink:         /my-sunday-the-16th/
-category:          linux, ubuntu, fedora
+categories:        linux, fedora, ubuntu
 last_modified_at:  2016-10-17 17:18:00 +1000
 ---
 
