@@ -28,6 +28,8 @@ I think the reason for this might be because I followed the RuneScape NXT Client
 
 After I learnt my Fedora installation was a bust I decided to delete the Fedora partition and resize my Ubuntu 16.10 to take up the freed space. This I did on my Arch Linux installation. Unfortunately GParted crashed mid-resizing and my Ubuntu 16.10 installation was essentially destroyed. I then booted my Fedora 24 live USB and installed Fedora 24 in the space my 16.10 installation was. This I did so I could boot it and create a live USB for Ubuntu 16.04 on it. See on my Arch Linux partition I had a Ubuntu 16.04.1 ISO, ready to be used to create a live USB for this OS. Something I noticed was that the bootloader (GRUB2) installed by Fedora 24 would not boot my Arch Linux installation. It had an Arch Linux entry, but whenever I clicked them they reported that they could not find `initrd` and `linux`, so they took me back to the bootloader. Oh and yes, I did run `grub2-mkconfig -o /boot/grub2/grub.cfg`, in an attempt to fix this problem, but it failed to fix it. Ubuntu, on the other hand, has never given me this trouble.
 
+{% include Links/image.html image="operating-systems/Ubuntu-MATE-16.04-20161017.png" description="My Ubuntu 16.04 MATE desktop." width="1130px" float="none" %}
+
 After I created the live media for 16.04 I installed 16.04 on my `/dev/sda` partition. Now I am quite content to stick to my present operating systems, partly out of fear of another massive loss of data during resizing of partitions, like I experienced with my previous 16.10 installation. The Arch Linux entry in my Ubuntu's GRUB2 bootloader works fine. Now partition table looks like:
 
 <pre>
@@ -39,5 +41,3 @@ After I created the live media for 16.04 I installed 16.04 on my `/dev/sda` part
 &rarr; /dev/sdb1 &mdash; Arch Linux installation (ext4). Approximately 1 TB in size.
 &rarr; /dev/sdb2 &mdash; Swap partition.
 </pre>
-
-{% include Links/image.html image="operating-systems/Ubuntu-MATE-16.04-20161017.png" description="My Ubuntu 16.04 MATE desktop." width="1130px" float="none" %}
