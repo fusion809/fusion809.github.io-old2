@@ -40,4 +40,4 @@ After I created the live media for 16.04 I installed 16.04 on my `/dev/sda` part
 &rarr; /dev/sdb2 &mdash; Swap partition.
 </pre>
 
-{% include Links/image.html image="operating-systems/Ubuntu-MATE-16.04-20161017.png" %}
+{% include Links/image.html image="operating-systems/Ubuntu-MATE-16.04-20161017.png" description="My Ubuntu 16.04 MATE desktop." width="1130px" float="none" %}
