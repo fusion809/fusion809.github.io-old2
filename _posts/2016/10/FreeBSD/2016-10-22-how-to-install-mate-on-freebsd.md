@@ -4,7 +4,7 @@ date:             2016-10-22 +1000
 title:            "How to install the MATE desktop environment on FreeBSD 11.0"
 permalink:        /mate-freebsd/
 redirect_from:    /how-to-install-mate-on-freebsd/
-last_modified_at: 2016-10-22 02:04 +1000
+last_modified_at: 2016-10-22 02:19 +1000
 categories:       howto, freebsd, mate, installation-guides
 ---
 
