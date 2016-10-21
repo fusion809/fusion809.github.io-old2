@@ -2,7 +2,7 @@
 layout:           page
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2016-03-01 10:35:24 +1000
+last_modified_at: 2016-10-22 07:32:24 +1000
 permalink:        /about-me/
 ---
 {% include Links/image.html image="operating-systems/Ubuntu_12.04.png" description="Desktop of Ubuntu 12.04, with its default wallpaper" id="1" width = "1034px" float="none" %}
