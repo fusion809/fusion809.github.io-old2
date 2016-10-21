@@ -12,6 +12,7 @@ My journey through the world of Linux began in mid 2012, when I first tried [Ubu
 When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/) I tried a variety of operating systems, including:
 
 {% capture my_capture %}
+* [Android-x86 6.0-r1]
 * [antiX 15/15-MX](http://antix.mepis.org/index.php?title=Main_Page)
 * [Arch Linux](https://www.archlinux.org/)
 * [Bodhi Linux 3.10](http://www.bodhilinux.com/)
@@ -22,21 +23,26 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [deepin 2014.3/15](http://www.deepin.org/?lang=en)
 * [elementary OS 0.3](https://elementary.io/)
 * [Fedora 22-24](https://getfedora.org/)
-* [FreeBSD 10.2/10.3](https://www.freebsd.org/)
+* [FreeBSD 10.2/10.3/11.0](https://www.freebsd.org/)
 * [Gentoo Linux](https://www.gentoo.org/)
-* [GhostBSD 10.1](http://ghostbsd.org/)
+* [GhostBSD 10.1/10.2](http://ghostbsd.org/)
 * [Kali Linux 2](https://www.kali.org/)
 * [Korora 21/22/23](https://kororaproject.org/)
 * [Linux Mint 17.2/17.3](http://linuxmint.com/)
 * [Mageia 5](http://www.mageia.org/en/)
 * [Manjaro Linux](https://manjaro.github.io/)
-* [OpenMandriva 2014.2](https://www.openmandriva.org/en)
+* [OpenIndiana 20160421](https://www.openindiana.org/)
+* [OpenMandriva 2014.2/3](https://www.openmandriva.org/en)
 * [openSUSE 13.2/42.1/Tumbleweed](https://www.opensuse.org/)
-* [PC-BSD 10.1/10.2](http://www.pcbsd.org/)
-* [PCLinuxOS 2014.12](http://www.pclinuxos.com/)
+* [PC-BSD 10.1/10.2](http://www.pcbsd.org/) / TrueOS
+* [PCLinuxOS](http://www.pclinuxos.com/)
+* [Pisi Linux](http://www.pisilinux.org/en/)
+* [Q4OS 1.6](http://q4os.org/)
+* [ReactOS 0.4.2](https://www.reactos.org/)
+* [Remix OS 3](http://www.jide.com/remixos)
 * [Sabayon Linux](https://www.sabayon.org/)
 * [Solus OS 1.0-RC1](https://solus-project.com/)
-* [Slackware Linux 14.2-RC2](http://www.slackware.com/)
+* [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
 * [Vector Linux 7.1](http://vectorlinux.com/)
 * [Zorin OS 7](http://zorinos.com/)
 {% endcapture %}
