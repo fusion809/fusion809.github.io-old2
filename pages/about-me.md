@@ -34,7 +34,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [OpenIndiana 20160421](https://www.openindiana.org/)
 * [OpenMandriva 2014.2/3](https://www.openmandriva.org/en)
 * [openSUSE 13.2/42.1/Tumbleweed](https://www.opensuse.org/)
-* [PC-BSD 10.1/10.2](http://www.pcbsd.org/) / TrueOS
+* [PC-BSD 10.1/10.2 / TrueOS](https://www.trueos.org/)
 * [PCLinuxOS](http://www.pclinuxos.com/)
 * [Pisi Linux](http://www.pisilinux.org/en/)
 * [Q4OS 1.6](http://q4os.org/)
