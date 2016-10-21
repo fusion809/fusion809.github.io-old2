@@ -46,4 +46,4 @@ exec mate-session
 
 ## Step 4: Reboot and login
 {% include Links/image.html image="operating-systems/freebsd-11.0-slim.png" width="1130px" float="none" description="SLiM running on FreeBSD 11.0" %}
-At this stage it is time to reboot FreeBSD. When FreeBSD is finished booting you will be welcomed with the SLiM display manager as shown in the above screenshot. Merely enter your login credentials (specifically for the user account in which you placed your `.xinitrc` file in the previous step) and you should be able to login to MATE.
+At this stage it is time to reboot FreeBSD. When FreeBSD is finished rebooting you will be welcomed with the SLiM display manager as shown in the above screenshot. Merely enter your login credentials (specifically for the user account in which you placed your `.xinitrc` file in the previous step) and you should be able to login to MATE.
