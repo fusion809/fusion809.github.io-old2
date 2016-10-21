@@ -12,14 +12,14 @@ categories:       howto, freebsd, mate, installation-guides
 
 This is merely a short guide on how to install MATE on FreeBSD 11.0. I normally do not do these sort of guides, as I prefer to leave it up to the official documentation of the operating system to guide one through the process of installing desktop environments, but in this case I have decided to make an exception as the installation process of MATE on FreeBSD is not covered in the [official FreeBSD handbook](https://www.freebsd.org/doc/handbook/x11-wm.html). I have found one [unofficial guide](http://linoxide.com/linux-how-to/install-freebsd-10-2-mate-desktop/) to installing MATE on FreeBSD but it has some errors in it, so I would like to create a completely accurate guide.
 
-## Part 1: The Actual Installation
+## Step 1: The Actual Installation
 Run:
 
 {% include Code/coder.html line1="pkg install -y mate mate-desktop xorg xf86-video-fbdev slim" %}
 
 This is where the aforementioned guide got it wrong, as they omitted the `slim` package from this command.
 
-## Part 2: Editing your rc.conf file
+## Step 2: Editing your rc.conf file
 I would recommend running:
 
 {% include Code/coder.html line1="pkg install -y nano" %}
@@ -37,13 +37,13 @@ hald_enable="YES"
 slim_enable="YES"
 ~~~
 
-## Part 3: Creating an xinitrc file
+## Step 3: Creating an xinitrc file
 Create a `.xinitrc` file in the home directory of whichever user account you intend to log into MATE as. This file should have the contents:
 
 ~~~bash
 exec mate-session
 ~~~
 
-## Part 4: Reboot and login
+## Step 4: Reboot and login
 {% include Links/image.html image="operating-systems/freebsd-11.0-slim.png" width="1130px" float="none" description="SLiM running on FreeBSD 11.0" %}
 At this stage it is time to reboot FreeBSD. When FreeBSD is finished booting you will be welcomed with the SLiM display manager as shown in the above screenshot. Merely enter your login credentials (specifically for the user account in which you placed your `.xinitrc` file in the previous step) and you should be able to login to MATE.
