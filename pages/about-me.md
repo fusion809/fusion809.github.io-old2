@@ -12,7 +12,7 @@ My journey through the world of Linux began in mid 2012, when I first tried [Ubu
 When I outgrew Ubuntu in mid 2015, I started to search for a new free operating systems to call "home", using [Oracle VM VirtualBox](https://www.virtualbox.org/) I tried a variety of operating systems, including:
 
 {% capture my_capture %}
-* [Android-x86 6.0-r1]
+* [Android-x86 6.0-r1](http://www.android-x86.org/)
 * [antiX 15/15-MX](http://antix.mepis.org/index.php?title=Main_Page)
 * [Arch Linux](https://www.archlinux.org/)
 * [Bodhi Linux 3.10](http://www.bodhilinux.com/)
