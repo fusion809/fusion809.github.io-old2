@@ -1,6 +1,6 @@
 caption:
-  "AppImages provided by Simon Peter's Bintray Repository"
-  
+  "Table 1: AppImages provided by Simon Peter's Bintray Repository"
+
 body:
   - appimage: AppImageAssistant
     url:      https://bintray.com/probono/AppImages/AppImageAssistant
