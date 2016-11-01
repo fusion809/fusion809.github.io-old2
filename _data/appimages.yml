@@ -164,9 +164,6 @@ body:
     url:      http://www.texstudio.org/
   - appimage: Thunderbird
     url:      https://www.mozilla.org/en-US/thunderbird/
-#  - appimage: Typora
-#    url:      http://www.typora.io/
-# See https://github.com/typora/typora-issues/issues/394 for details
   - appimage: VLC
     name:     VLC Media Player
     url:      http://www.videolan.org/vlc/
