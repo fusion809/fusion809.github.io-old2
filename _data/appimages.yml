@@ -139,12 +139,12 @@ body:
     url:      http://www.libretro.com/index.php/retroarch-2/
   - appimage: Ricochet
     url:      https://ricochet.im/
-  - appimage: SER
-    url:      https://sites.google.com/site/astropipp/ser-player
   - appimage: Scilab
     url:      http://www.scilab.org/
   - appimage: Scribus
     url:      https://www.scribus.net/
+  - appimage: SER
+    url:      https://sites.google.com/site/astropipp/ser-player
   - appimage: Sigil
     url:      https://sigil-ebook.com/
   - appimage: SimpleScreenRecorder
