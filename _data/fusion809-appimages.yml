@@ -1,0 +1,12 @@
+caption:
+  "My AppImages at Bintray"
+
+body:
+  - appimage: Atom
+    url:      https://atom.io
+  - appimage: Atom_Beta
+    url:      https://atom.io
+  - appimage: code-oss
+    url:      http://code.visualstudio.com
+  - appimage: gvim
+    url:      http://www.vim.org/
