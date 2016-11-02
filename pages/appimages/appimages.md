@@ -15,7 +15,7 @@ I personally have built a few AppImages, such as my [gVim (GTK+2)](https://githu
 
 {% include_relative table1.html %}
 
-{% include_relative table1.html %}
+{% include_relative table2.html %}
 
 ## See Also
 * [probonopd's AppImages Bintray Repository](https://bintray.com/probono/AppImages/)
