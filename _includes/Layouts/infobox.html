@@ -22,11 +22,16 @@
   <tr class="infobox-row">
     <td class="infobox-row-title">Developer(s):</td>
     <td class="infobox-row">{{ include.developers }}</td>
-  </tr>
+  </tr>{% if include.design %}
   <tr class="infobox-row">
     <td class="infobox-row-title">Design:</td>
     <td class="infobox-row">{{ include.design }}</td>
-  </tr>
+  </tr>{% endif %}
+  {% if include.installer %}
+  <tr class="infobox-row">
+    <td class="infobox-row-title">Installer:</td>
+    <td class="infobox-row">{{ include.installer }}</td>
+  </tr>{% endif %}
   <tr class="infobox-row">
     <td class="infobox-row-title">Package Manager:</td>
     <td class="infobox-row">{{ include.package-manager }}</td>
@@ -34,7 +39,7 @@
   <tr class="infobox-row">
     <td class="infobox-row-title">Release Model:</td>
     <td class="infobox-row">{{ include.release-model }}</td>
-  </tr>
+  </tr>{% if include.cosr %}
   <tr class="infobox-header">
     <td class="infobox-header" colspan="2">Ratings</td>
   </tr>
@@ -50,4 +55,5 @@
     <td class="infobox-row-title">Overall:</td>
     <td class="infobox-row">{{ include.overall }}</td>
   </tr>
+  {% endif %}
 </table>
