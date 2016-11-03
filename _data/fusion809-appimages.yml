@@ -7,9 +7,7 @@ body:
   - appimage: Atom_Beta
     url:      https://atom.io
   - appimage: code-oss
-    url:      http://code.visualstudio.com
-  - appimage: Freeciv
-    url:      http://www.freeciv.org/
+    url:      http://code.visualstudio.
   - appimage: geany
     url:      https://www.geany.org
   - appimage: gvim
