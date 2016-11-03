@@ -8,6 +8,8 @@ body:
     url:      https://atom.io
   - appimage: code-oss
     url:      http://code.visualstudio.com
+  - appimage: Freeciv
+    url:      http://www.freeciv.org/
   - appimage: geany
     url:      https://www.geany.org
   - appimage: gvim
