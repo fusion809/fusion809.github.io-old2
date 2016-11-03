@@ -23,3 +23,4 @@ I should clarify that by a "free operating system" I mean an operating system (O
 * Its base components (such as its kernel, core utlities, *etc.*) are at least mostly open-source. I would like to say "entirely open-source" but most Linux distributions use the standard Linux kernel (complete with proprietary binary blobs).
 
 {% include_relative 01-archlinux.md %}
+{% include_relative 02-bodhi.md %}
