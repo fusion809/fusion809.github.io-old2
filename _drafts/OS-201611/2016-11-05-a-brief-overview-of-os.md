@@ -1,5 +1,5 @@
 ---
-date:             2016-11-05 +1000
+date:             2016-11-10 +1000
 title:            "A brief overview of free operating systems"
 layout:           post
 last_modified_at: 2016-11-03 +18:47:53 +1000
