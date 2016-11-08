@@ -60,6 +60,7 @@ of these operating systems I have also installed the following six on my PC:
 {% capture my_capture %}
 * Arch Linux
 * Fedora
+* Gecko Linux
 * Manjaro Linux
 * openSUSE Tumbleweed (OT)
 * Sabayon Linux
