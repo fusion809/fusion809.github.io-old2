@@ -1,5 +1,5 @@
 ---
-layout:           page
+layout:           page2
 title:            "About Me"
 date:             2015-11-18 +1000
 last_modified_at: 2016-11-08 19:23:40 +1000
