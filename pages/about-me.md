@@ -2,7 +2,7 @@
 layout:           page
 title:            "About Me"
 date:             2015-11-18 +1000
-last_modified_at: 2016-10-22 07:32:24 +1000
+last_modified_at: 2016-11-08 18:30:00 +1000
 permalink:        /about-me/
 ---
 {% include Links/image.html image="operating-systems/Ubuntu_12.04.png" description="Desktop of Ubuntu 12.04, with its default wallpaper" id="1" width = "1034px" float="none" %}
@@ -16,6 +16,7 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [antiX 15/15-MX](http://antix.mepis.org/index.php?title=Main_Page)
 * [Arch Linux](https://www.archlinux.org/)
 * [Bodhi Linux 3.10](http://www.bodhilinux.com/)
+* [Calculate Linux 15.17](http://www.calculate-linux.org/)
 * [CentOS 7](https://www.centos.org/)
 * [Chapeau 22.1](http://chapeaulinux.org/)
 * [Chromixium 1.5](http://chromixium.org/)
@@ -24,6 +25,8 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [elementary OS 0.3](https://elementary.io/)
 * [Fedora 22-24](https://getfedora.org/)
 * [FreeBSD 10.2/10.3/11.0](https://www.freebsd.org/)
+* [Frugalware Linux 2.1](http://frugalware.org/)
+* [Gecko Linux](http://geckolinux.github.io/)
 * [Gentoo Linux](https://www.gentoo.org/)
 * [GhostBSD 10.1/10.2](http://ghostbsd.org/)
 * [Kali Linux 2](https://www.kali.org/)
@@ -31,17 +34,20 @@ When I outgrew Ubuntu in mid 2015, I started to search for a new free operating 
 * [Linux Mint 17.2/17.3](http://linuxmint.com/)
 * [Mageia 5](http://www.mageia.org/en/)
 * [Manjaro Linux](https://manjaro.github.io/)
+* [NetBSD 7](https://www.netbsd.org)
+* [OpenBSD 5.9/6.0](https://www.openbsd.org/)
 * [OpenIndiana 20160421](https://www.openindiana.org/)
 * [OpenMandriva 2014.2/3](https://www.openmandriva.org/en)
 * [openSUSE 13.2/42.1/Tumbleweed](https://www.opensuse.org/)
-* [PC-BSD 10.1/10.2 / TrueOS](https://www.trueos.org/)
+* [PC-BSD 10.1/10.2/TrueOS](https://www.trueos.org/)
 * [PCLinuxOS](http://www.pclinuxos.com/)
 * [Pisi Linux](http://www.pisilinux.org/en/)
 * [Q4OS 1.6](http://q4os.org/)
 * [ReactOS 0.4.2](https://www.reactos.org/)
 * [Remix OS 3](http://www.jide.com/remixos)
+* [ROSA R8](http://en.rosalinux.com/)
 * [Sabayon Linux](https://www.sabayon.org/)
-* [Solus OS 1.0-RC1](https://solus-project.com/)
+* [Solus OS 1.0-RC1/1.2.1](https://solus-project.com/)
 * [Slackware Linux 14.2-RC2/14.2](http://www.slackware.com/)
 * [Vector Linux 7.1](http://vectorlinux.com/)
 * [Zorin OS 7](http://zorinos.com/)
@@ -64,10 +70,15 @@ of these operating systems I have also installed the following six on my PC:
 </div>
 my favourite were, in order:
 
+## Ubuntu
+Ubuntu was my first distro so I feel very comfortable with it, despite this package development under it is difficult and tedious. Ubuntu affords one comparatively few customization options, although it is sufficient for me to use it as my primarily operating system.
+
 ## Arch Linux / Manjaro Linux
 Manjaro Linux is a beginner-friendly derivative of Arch Linux, a Linux distribution based on the "Keep It Simple, Stupid" (KISS) principle, that is geared towards more experienced Linux users. The way it interprets the KISS principle, is that a fresh Arch install should be the barebones and that automation (e.g., there is no automated installer for Arch, by default) should be kept to a minimum. For this reason, Arch Linux was previously out of my reach, until I found some scripts for automating its installation process. Unfortunately, installing Arch on my removable drive did not go well at first (I forgot to install and configure a boot loader for it, I think), so I then opted to use Manjaro Linux in its place on this drive.
 
 Later I managed to install Arch Linux on this removable drive and successfully boot it and then I successfully installed it on my internal hard drive (namely on my `/dev/sda3` partition, with `/dev/sda1` being my Sabayon partition and `/dev/sda2` being my swap partition). Graphics issues caused me to delete this internal drive installation and install OT in its place. Later I deleted this installation and installed Arch in its place. Manjaro Linux uses its own repositories, which are updated approximately once a week, this is apparently to ensure the system's stability.
+
+Arch Linux is my second-preference operating system (OS) and I presently, as of 8 November 2016, dual-boot it along with Ubuntu 16.04. It is not my primary OS as I find it buggy and prone to freeze up on me, without warning.
 
 ## Sabayon Linux
 It is the distribution that I have decided to keep on my `/dev/sda1` partition permanently, because it is a good fallback distribution in case the distro on my `/dev/sda3` partition fails to boot or otherwise has serious issues. It is a Gentoo derivative that has a beginner-friendly binary package manager, Entropy, alongside the complicated yet powerful package manager (oriented towards experienced Linux users) of Gentoo, Portage. Its software is usually fairly up-to-date (e.g., its website claims that its software is "bleeding-edge"), although sometimes you will see a lag, sometimes due to upstream issues (see most packages in its repositories come from the Portage Tree of Gentoo. e.g., GNOME 3.18 was released 23 September 2015, yet it was not until 15 November 2015 that the GNOME Shell 3.18 was finally added to the Portage Tree) and sometimes because only two people directly maintain the Entropy Store and as there are over 13,100 software packages in the Entropy Store it is sometimes impossible for them, from a practical standpoint, to keep all of them up-to-date.
@@ -77,6 +88,3 @@ openSUSE uses RPM packages like Fedora, but unlike Fedora its system software an
 
 ## Fedora
 Fedora is interesting to me, in that installing software packages in its software repositories is usually at least as easy as it is on Ubuntu, but installing software manually from source code or setting up web applications (e.g., MediaWiki or WordPress) tends to be substantially more difficult than on other more user-friendly distributions. Fedora do It is also interesting to me in that its system software and desktop environment-related software is usually the most up-to-date of any distribution following a fixed-release cycle, yet the rest of its software tends to be at least two releases behind the latest available release, in my experience, anyway. It has its own equivalent to the OBS, Copr (although unlike the OBS it can only build packages for Fedora), which does afford packages Internet access during their build, if the packager grants them this. Copr also has the disadvantage, compared to the OBS, of having greater licensing restrictions (namely, that they have to be FOSS) on any packages build and distributed through it.
-
-## Ubuntu
-Ubuntu was my first distro so I feel very comfortable with it, despite this package development under it is difficult and tedious. Ubuntu affords one comparatively few customization options, which is why I usually do not feel content with it for long, anymore.
