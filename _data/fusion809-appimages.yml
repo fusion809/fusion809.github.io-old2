@@ -6,9 +6,17 @@ body:
     url:      https://atom.io
   - appimage: Atom_Beta
     url:      https://atom.io
+  - appimage: Bluefish_Editor
+    url:      http://bluefish.openoffice.nl/index.html
+  - appimage: Brackets
+    url:      http://brackets.io
   - appimage: code-oss
     url:      http://code.visualstudio.com
   - appimage: geany
     url:      https://www.geany.org
   - appimage: gvim
     url:      http://www.vim.org/
+  - appimage: LibreOffice
+    url:      https://www.libreoffice.org/
+  - appimage: Terminix
+    url:      https://github.com/gnunn1/terminix
