@@ -12,7 +12,7 @@ body:
     url:      http://brackets.io
   - appimage: code-oss
     url:      http://code.visualstudio.com
-  - appimage: geany
+  - appimage: Geany
     url:      https://www.geany.org
   - appimage: gvim
     url:      http://www.vim.org/
