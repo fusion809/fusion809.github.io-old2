@@ -36,16 +36,20 @@
 
 {% include_relative 02-basic-definitions/18-bsd.md %}
 
-{% include_relative 02-basic-definitions/19-pms.md %}
+{% include_relative 02-basic-definitions/19-file-archive.md %}
 
-{% include_relative 02-basic-definitions/20-software-repository.md %}
+{% include_relative 02-basic-definitions/20-sp.md %}
 
-{% include_relative 02-basic-definitions/21-linux-distribution.md %}
+{% include_relative 02-basic-definitions/21-pms.md %}
 
-{% include_relative 02-basic-definitions/22-software-version-nomenclature.md %}
+{% include_relative 02-basic-definitions/22-software-repository.md %}
 
-{% include_relative 02-basic-definitions/23-release-models.md %}
+{% include_relative 02-basic-definitions/23-linux-distribution.md %}
 
-{% include_relative 02-basic-definitions/24-file-archive.md %}
+{% include_relative 02-basic-definitions/24-software-version-nomenclature.md %}
 
-{% include_relative 02-basic-definitions/25-virtualization.md %}
+{% include_relative 02-basic-definitions/25-release-models.md %}
+
+{% include_relative 02-basic-definitions/26-virtualization.md %}
+
+{% include_relative 02-basic-definitions/27-cross-distro-packages.md %}
