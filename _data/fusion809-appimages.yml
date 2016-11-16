@@ -12,6 +12,8 @@ body:
     url:      http://brackets.io
   - appimage: code-oss
     url:      http://code.visualstudio.com
+  - appimage: Code::Blocks_IDE
+    url:      http://www.codeblocks.org/
   - appimage: Electron
     url:      http://electron.atom.io/
   - appimage: Geany
