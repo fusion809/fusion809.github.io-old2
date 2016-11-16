@@ -3,10 +3,10 @@ layout:           page
 date:             2016-11-01 +1000
 title:            "AppImages: the Linux packaging format of the future"
 permalink:        /appimages/
-last_modified_at: 2016-11-17 02:20:20 +1000
+last_modified_at: 2016-11-17 05:17:20 +1000
 ---
 
-[**AppImages**](http://appimage.org/) are a type of *cross-distribution packaging format* (CDPF), that are not installed and need no special tools to be run. They contain all the libraries, binaries, desktop configuration files and icons that the application provided by the AppImage requires. In essence they are self-mounting disk image files, that run the application contained within them. They are most similar to the disk image package format (file extension: `.dmg`) of macOS. All that is required to run is them is for them to be made executable (using `chmod +x <AppImage>`, where `<AppImage>` is the file name [with file extension] of the AppImage) and run (with `./<AppImage>`). I personally have not contributed to the development of the AppImage package format itself (as I am not competent enough a programmer, to be honest), but I have collaborated with the developer of the AppImage format, Simon Peter (or [@probonopd](https://github.com/probonopd) as he is known as on GitHub) on creating AppImages for popular Linux apps like [Code::Blocks](https://github.com/probonopd/AppImages/issues/107), [GNU Emacs](https://github.com/probonopd/AppImages/issues/94), [NetBeans](https://github.com/probonopd/AppImages/issues/105) and [SuperTux](https://github.com/probonopd/AppImages/issues/113).
+[**AppImages**](http://appimage.org/) are a type of *cross-distribution packaging format* (CDPF), that are not installed and need no special tools to be run. They contain all the libraries, binaries, desktop configuration files and icons that cannot be reasonably expected to be provided out-of-the-box by the target systems (that is, the Linux distributions one would run them on), the application provided by the AppImage requires. In essence they are self-mounting disk image files, that run the application contained within them. They are most similar to the disk image package format (file extension: `.dmg`) of macOS. Usually, all that is required to run them is for them to be made executable (using `chmod +x <AppImage>`, where `<AppImage>` is the file name [with file extension] of the AppImage) and run (with `./<AppImage>`). Although one does not need to make them executable if the `appimaged` daemon is running. I personally have not contributed to the development of the AppImage package format itself (as I am not competent enough a programmer, to be honest), but I have collaborated with the developer of the AppImage format, Simon Peter (or [@probonopd](https://github.com/probonopd) as he is known as on GitHub) on creating AppImages for popular Linux apps like [Code::Blocks](https://github.com/probonopd/AppImages/issues/107), [GNU Emacs](https://github.com/probonopd/AppImages/issues/94), [NetBeans](https://github.com/probonopd/AppImages/issues/105) and [SuperTux](https://github.com/probonopd/AppImages/issues/113).
 
 ## Available Open-Source AppImages
 {% include Layouts/note.md note1="If you notice an open-source Linux app missing from this list, that you would like to see provided as an AppImage, please request it from the upstream developers." %}
@@ -18,4 +18,4 @@ I personally have built a few AppImages, such as my [gVim (GTK+2)](https://githu
 {% include_relative table2.html %}
 
 ## See Also
-* [probonopd's AppImages Bintray Repository](https://bintray.com/probono/AppImages/)
+* [probonopd's Collection of Example AppImages](https://bintray.com/probono/AppImages/)

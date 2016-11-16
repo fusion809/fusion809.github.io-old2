@@ -7,14 +7,13 @@ bintray: true            # Only specified as needed, most AppImages should not n
 union:   true            # Ditto
 
 ingredients:
-  package: <PACK>   # name of the package that provides <APP>, if only one package is needed
-  packages:                # Use this field if multiple packages need to be specified
+  packages:                # Debian package(s) to be included in the final AppImage. Excl. the dependencies, these will be automatically downloaded!
     - <PACK1>
     - <PACK2>
     - <PACK3>
     - ...
-  dist:    <DIST>      # target distribution codename. For example jessie for Debian 8, oldstable for Debian 7, etc.
-  sources:                 # lines in /etc/apt/sources.list of your target distribution
+  dist:    <DIST>      # packaging distribution codename. For example jessie for Debian 8, oldstable for Debian 7, etc.
+  sources:                 # lines in /etc/apt/sources.list of your packaging distribution
     - <SOURCE1>
     - <SOURCE2>
     - <SOURCE3>
