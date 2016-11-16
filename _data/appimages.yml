@@ -68,6 +68,8 @@ body:
     url:      https://www.geany.org/
   - appimage: GIMP
     url:      https://www.gimp.org/
+  - appimage: GNU_PSPP
+    url:      https://www.gnu.org/software/pspp/
   - appimage: Godot
     url:      https://godotengine.org/
   - appimage: gPodder
