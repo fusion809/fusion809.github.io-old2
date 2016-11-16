@@ -3,5 +3,5 @@
 This post will cover the following:
 
 * How to write a YAML file to build an AppImage
-* How to build an AppImage locally
+* How to build an AppImage locally (although it will only cover how to do this on a Debian-based distribution like deepin, Linux Mint, Q4OS, Ubuntu, *etc.*)
 * How to automate an AppImage build using Travis CI

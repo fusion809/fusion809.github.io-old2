@@ -4,8 +4,7 @@ layout:           post
 date:             2016-11-20 +1000
 permalink:        /how-to-create-appimages/
 title:            "How to create your own AppImages"
-tags:
-  - AppImage
+categories:       docker, appimage, howto
 ---
 
 {% include_relative 01-introduction.md %}
