@@ -20,6 +20,8 @@ body:
     url:      https://www.geany.org
   - appimage: gvim
     url:      http://www.vim.org/
+  - appimage: IDEA
+    url:      https://www.jetbrains.com/idea/
   - appimage: LibreOffice
     url:      https://www.libreoffice.org/
   - appimage: Terminix
