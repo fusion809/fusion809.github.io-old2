@@ -98,6 +98,8 @@ body:
     url:      http://www.harctoolbox.org/IrScrutinizer.html
   - appimage: itch
     url:      https://itch.io/app
+  - appimage: jekyll
+    url:      https://jekyllrb.com/
   - appimage: KiCad
     url:      http://kicad-pcb.org/
   - appimage: Krita
@@ -116,10 +118,20 @@ body:
     url:      https://github.com/visualfc/liteide
   - appimage: MediathekView
     url:      http://zdfmediathk.sourceforge.net/
+  - appimage: Meld
+    url:      http://meldmerge.org/
+  - appimage: Mumble
+    url:      http://wiki.mumble.info/wiki/Main_Page
   - appimage: Natron
     url:      http://natron.fr/
+  - appimage: Notes
+    url:      https://github.com/nuttyartist/notes
   - appimage: OBPM
     url:      https://github.com/LazyT/obpm
+  - appimage: ocenaudio
+    url:      https://www.ocenaudio.com/
+  - appimage: OpenSCAD
+    url:      http://www.openscad.org/
   - appimage: OpenTTD
     url:      https://www.openttd.org/en/
   - appimage: Otter
@@ -130,6 +142,8 @@ body:
     url:      https://github.com/phw/peek
   - appimage: PowerShell
     url:      https://msdn.microsoft.com/en-us/powershell/mt173057.aspx
+  - appimage: puddletag
+    url:      http://docs.puddletag.net/
   - appimage: qBittorrent
     url:      http://www.qbittorrent.org/
   - appimage: Qcad
@@ -159,6 +173,8 @@ body:
     url:      http://www.maartenbaert.be/simplescreenrecorder/
   - appimage: SolveSpace
     url:      http://solvespace.com/index.pl
+  - appimage: SpDrS60
+    url:      http://spdrs60.sourceforge.net/
   - appimage: Stellarium
     url:      http://www.stellarium.org/
   - appimage: Subsurface
@@ -170,6 +186,8 @@ body:
     url:      https://github.com/gnunn1/terminix
   - appimage: TeXstudio
     url:      http://www.texstudio.org/
+  - appimage: travis
+    url:      https://github.com/travis-ci/travis.rb
   - appimage: Thunderbird
     url:      https://www.mozilla.org/en-US/thunderbird/
   - appimage: VLC
@@ -194,3 +212,5 @@ body:
     url:      https://github.com/xdgurl/xdgurl
   - appimage: Zeal
     url:      https://zealdocs.org/
+  - appimage: Zim_Desktop_Wiki
+    url:      http://www.zim-wiki.org/
