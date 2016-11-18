@@ -16,6 +16,8 @@ body:
     url:      http://www.codeblocks.org/
   - appimage: Electron
     url:      http://electron.atom.io/
+  - appimage: Firefox
+    url:      https://www.mozilla.org/en-US/firefox/new/
   - appimage: Geany
     url:      https://www.geany.org
   - appimage: gvim
@@ -26,3 +28,5 @@ body:
     url:      https://www.libreoffice.org/
   - appimage: Terminix
     url:      https://github.com/gnunn1/terminix
+  - appimage: Thunderbird
+    url:      https://www.mozilla.org/en-US/thunderbird/
