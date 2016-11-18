@@ -24,6 +24,8 @@ body:
     url:      http://www.vim.org/
   - appimage: IDEA
     url:      https://www.jetbrains.com/idea/
+  - appimage: jekyll
+    url:      https://jekyllrb.com/
   - appimage: LibreOffice
     url:      https://www.libreoffice.org/
   - appimage: Terminix
