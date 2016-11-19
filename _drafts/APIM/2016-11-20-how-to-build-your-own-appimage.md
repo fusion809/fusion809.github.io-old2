@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2016-11-19 +10:00:20 +1000
+last_modified_at: 2016-11-19 +10:41:20 +1000
 layout:           post
 date:             2016-11-20 +1000
 permalink:        /how-to-create-appimages/
@@ -14,3 +14,5 @@ categories:       docker, appimage, howto
 {% include_relative 03-recipes.md %}
 
 {% include_relative 04-yaml.md %}
+
+{% include_relative 05-docker.md %}

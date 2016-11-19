@@ -8,4 +8,4 @@ As previously mentioned the YAML approach to building an AppImage is only valid 
 * [subsurface](https://github.com/probonopd/AppImages/tree/master/recipes/subsurface)
 * [vlc](https://github.com/probonopd/AppImages/tree/master/recipes/vlc)
 
-It is notable that some of these Recipes do not just build the AppImage from RPM packages but they also build some of the components of the AppImage from source code. Most Docker and Recipe combinations that I have seen use CentOS 6.8 as the base Docker image. 
+It is notable that some of these Recipes do not just build the AppImage from RPM packages but they also build some of the components of the AppImage from source code. Most Docker and Recipe combinations that I have seen use CentOS 6.7 as the base Docker image. 
