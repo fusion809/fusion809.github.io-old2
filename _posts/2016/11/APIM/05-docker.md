@@ -8,4 +8,12 @@ As previously mentioned the YAML approach to building an AppImage is only valid 
 * [subsurface](https://github.com/probonopd/AppImages/tree/master/recipes/subsurface)
 * [vlc](https://github.com/probonopd/AppImages/tree/master/recipes/vlc)
 
-It is notable that some of these Recipes do not just build the AppImage from RPM packages but they also build some of the components of the AppImage from source code. Most Docker and Recipe combinations that I have seen use CentOS 6.7 as the base Docker image. 
+It is notable that some of these Recipes do not just build the AppImage from RPM packages but they also build some of the components of the AppImage from source code. Most Docker and Recipe combinations that I have seen use CentOS 6.7 as the base Docker image. Usually the Dockerfile has the layout:
+
+```docker
+FROM centos:6.7
+ADD https://github.com/<USER>/<REPO>/raw/master/recipes/<RECIPE>/Recipe /Recipe
+RUN sed -i -e 's|sudo ||g' Recipe && bash -ex Recipe && yum clean all && rm -rf /dependencies && rm -rf /out && rm -rf /AppImage* && rm -rf /AppDir
+```
+
+where `<RECIPE>` is the name of the Recipe, `<USER>` is the GitHub username for the repo who's Recipe we are using and `<REPO>` is the name of the repo in which the Recipe is.
