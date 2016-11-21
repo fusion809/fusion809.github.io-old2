@@ -19,7 +19,7 @@ Before I tell you some reasonable choices for a source distribution, I need to c
 Please note how in the above notation examples I did not include dot point releases. That is, technically 8.6 is the latest stable release of Debian as of {{ page.date | date: "%-d %B %Y" }}, but I dropped the dot point release .6 from that to give 8.
 
 So some reasonable choices for a source distribution include:
-* CentOS n-2 or n-1, as of {{ page.date | date: "%-d %B %Y" }} this would be 5 or 6.
+* CentOS n-2/n-1/n, as of {{ page.date | date: "%-d %B %Y" }} this would be 5, 6 or 7.
 * Debian n-1/n, although an older system would be preferable to n.
 * Mageia n-1/n. I personally would not recommend using Mageia, as their repositories are fairly minimalistic, in terms of the incldued software. Although, if you can get it to work, so be it.
 * openSUSE n-1. The latest Leap release of this distro as of {{ page.date | date: "%-d %B %Y" }} is 42 (or if you include dot point releases 42.2). So n-1 is 13 (or 13.2 to be precise). I would say n-2 as well, but only n-1 and n are presently officially supported by the openSUSE development/packaging team.
