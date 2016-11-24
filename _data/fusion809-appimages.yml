@@ -10,6 +10,8 @@ body:
     url:      http://bluefish.openoffice.nl/index.html
   - appimage: Brackets
     url:      http://brackets.io
+  - appimage: Calibre
+    url:      http://calibre-ebook.com/
   - appimage: code-oss
     url:      http://code.visualstudio.com
   - appimage: Code::Blocks_IDE
@@ -20,6 +22,9 @@ body:
     url:      https://www.mozilla.org/en-US/firefox/new/
   - appimage: Geany
     url:      https://www.geany.org
+  - appimage: GNU_Octave
+    name:     "GNU Octave"
+    url:      https://www.gnu.org/software/octave/about.html
   - appimage: gvim
     url:      http://www.vim.org/
   - appimage: IDEA
@@ -30,7 +35,11 @@ body:
     url:      https://www.libreoffice.org/
   - appimage: Messenger_for_Desktop
     url:      https://messengerfordesktop.com/
+  - appimage: qBittorrent
+    url:      http://qbittorrent.org/
   - appimage: Terminix
     url:      https://github.com/gnunn1/terminix
   - appimage: Thunderbird
     url:      https://www.mozilla.org/en-US/thunderbird/
+  - appimage: Transmission-GTK
+    url:      https://transmissionbt.com/
