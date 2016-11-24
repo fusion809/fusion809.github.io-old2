@@ -213,4 +213,5 @@ body:
   - appimage: Zeal
     url:      https://zealdocs.org/
   - appimage: Zim_Desktop_Wiki
+    name:     "Zim Desktop Wiki"
     url:      http://www.zim-wiki.org/
