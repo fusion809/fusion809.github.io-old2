@@ -28,6 +28,8 @@ body:
     url:      https://jekyllrb.com/
   - appimage: LibreOffice
     url:      https://www.libreoffice.org/
+  - appimage: Messenger_for_Desktop
+    url:      https://messengerfordesktop.com/
   - appimage: Terminix
     url:      https://github.com/gnunn1/terminix
   - appimage: Thunderbird
