@@ -46,7 +46,7 @@ body:
     details:     "Built from official binary tarball releases."
     description: "An open-source framework for building desktop applications using web technologies."
   - appimage:    Emacs
-    url:         https://www.gnu.org/software/emacs/about.html
+    url:         https://www.gnu.org/software/emacs/
     details:     "Built from source code on Ubuntu 14.04."
     description: "A free and open-source, extensible and self-documenting text editor with IDE features."
   - appimage:    Firefox
