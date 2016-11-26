@@ -78,6 +78,9 @@ body:
     url:      https://www.gnu.org/software/pspp/
   - appimage: Godot
     url:      https://godotengine.org/
+  - appimage: Go_For_It
+    name:     Go For It
+    url:      http://manuel-kehl.de/projects/go-for-it/
   - appimage: gPodder
     url:      http://gpodder.org/
   - appimage: Gqrx
@@ -167,6 +170,8 @@ body:
     url:      https://www.scribus.net/
   - appimage: SER
     url:      https://sites.google.com/site/astropipp/ser-player
+  - appimage: Shotcut
+    url:      https://www.shotcutapp.com/
   - appimage: Sigil
     url:      https://sigil-ebook.com/
   - appimage: SimpleScreenRecorder
