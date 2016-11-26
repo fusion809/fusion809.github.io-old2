@@ -5,12 +5,18 @@
     </caption>
     <tr class="green">
       <td class="title1">AppImage</td>
-      <td class="title1">Download</td>
+      <td class="title1" style="width:230px;">Download</td>
+      <td class="title1">Source</td>
+      <td class="title1">Build Details</td>
+      <td class="title1">Description</td>
     </tr>
     {% for row in site.data.fusion809-appimages.body %}
     <tr class="green">
       <td class="green"><a href="{{ row.url }}" link="_blank">{% if row.name %}{{ row.name }}{% else %}{{ row.appimage }}{% endif %}</a></td>
       <td class="green"><a href="https://bintray.com/fusion809/AppImages/{{ row.appimage }}/_latestVersion#files" link="_blank"><img src="https://api.bintray.com/packages/fusion809/AppImages/{{ row.appimage }}/images/download.svg"></a></td>
+      <td class="green"><a href="https://github.com/fusion809/AppImages/tree/master/recipes/{{ row.source }}" link="_blank">Link</a></td>
+      <td class="green">{{ row.details }}</td>
+      <td class="green">{{ row.description }}</td>
     </tr>
     {% endfor %}
   </tbody>
