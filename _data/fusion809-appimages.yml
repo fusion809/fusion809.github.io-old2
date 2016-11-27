@@ -45,10 +45,6 @@ body:
     url:         http://electron.atom.io/
     details:     "Built from official binary tarball releases."
     description: "An open-source framework for building desktop applications using web technologies."
-  - appimage:    Emacs
-    url:         https://www.gnu.org/software/emacs/
-    details:     "Built from source code on Ubuntu 14.04."
-    description: "A free and open-source, extensible and self-documenting text editor with IDE features."
   - appimage:    Firefox
     source:      meta/firefox
     url:         https://www.mozilla.org/en-US/firefox/new/
@@ -59,22 +55,27 @@ body:
     url:         https://www.geany.org
     details:     "Built from packages in my brentonhorne/geany2 PPA, along with other 14.04 ingredients."
     description: "A lightweight, free and open-source IDE with support for several different programming languages and built on the GTK+ toolkit."
+  - appimage:    GNU_Emacs
+    url:         https://www.gnu.org/software/emacs/
+    details:     "Built from source code on Ubuntu 14.04."
+    description: "A free and open-source, extensible and self-documenting text editor with IDE features."
   - appimage:    GNU_Octave
     source:      meta/octave-trusty
     name:        "GNU Octave"
     url:         https://www.gnu.org/software/octave/about.html
     details:     "Built from packages in the brentonhorne/octave PPA, along with other 14.04 ingredients."
     description: "A free and open-source environment for technical computing."
+  - appimage:    GNU_PSPP
+    source:      meta/pspp
+    name:        "GNU PSPP"
+    url:         https://www.gnu.org/software/pspp/
+    details:     "Built from the adamzammit/pspp PPA and other 12.04 ingredients."
+    description: "A free and open-source replacement for SPSS, with tools for statistical analysis"
   - appimage:    gvim
     source:      meta/gvim
     url:         http://www.vim.org/
     details:     "Built from packages in the jonathonf/vim PPA and other 14.04 ingredients."
     description: "An open-source, modal and extensible text editor."
-  - appimage:    IDEA
-    source:      idea
-    url:         https://www.jetbrains.com/idea/
-    details:     "Built from official binary releases."
-    description: "IntelliJ IDEA Community Edition: an open-source Java IDE that is itself written in Java."
   - appimage:    jekyll
     source:      meta/jekyll
     url:         https://jekyllrb.com/
