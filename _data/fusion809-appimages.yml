@@ -58,7 +58,7 @@ body:
   - appimage:    GNU_Emacs
     name:        "GNU Emacs"
     url:         https://www.gnu.org/software/emacs/
-    details:     "Built from source code on Ubuntu 14.04."
+    details:     "Built from source code on Ubuntu 12.04."
     description: "A free and open-source, extensible and self-documenting text editor with IDE features."
   - appimage:    GNU_Octave
     source:      meta/octave-trusty
