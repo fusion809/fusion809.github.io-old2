@@ -56,6 +56,7 @@ body:
     details:     "Built from packages in my brentonhorne/geany2 PPA, along with other 14.04 ingredients."
     description: "A lightweight, free and open-source IDE with support for several different programming languages and built on the GTK+ toolkit."
   - appimage:    GNU_Emacs
+    name:        "GNU Emacs"
     url:         https://www.gnu.org/software/emacs/
     details:     "Built from source code on Ubuntu 14.04."
     description: "A free and open-source, extensible and self-documenting text editor with IDE features."
