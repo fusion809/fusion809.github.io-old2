@@ -1,7 +1,7 @@
 (function (opinionStage) {
     if(!opinionStage.legacy) {
         opinionStage.legacy = {};
-
+        
         opinionStage.legacy.state = {};
         opinionStage.legacy.functions = {};
         opinionStage.legacy.hooks = {};
