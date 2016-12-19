@@ -22,10 +22,6 @@
       <td class="green">{{ include.date }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The default desktop environment of this distribution">Default Desktop</abbr></td>
-      <td class="green">{{ include.desktop }}</td>
-    </tr>
-    <tr class="green">
       <td class="title1"><abbr title="Who develops this distro? Is it developed by a community or a company?">Developed by</abbr></td>
       <td class="green">{{ include.developer }}</td>
     </tr>
@@ -34,17 +30,32 @@
       <td class="green">{{ include.funding }}</td>
     </tr>
     <tr class="green">
+      <td class="title1"><abbr title="The release model of this distribution">Release model</abbr></td>
+      <td class="green">{{ include.release-model }}</td>
+    </tr>
+    <tr class="green">
+      <td class="title2" colspan="2" style="text-align: center;">Defaults</td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The default desktop environment of this distribution">Desktop</abbr></td>
+      <td class="green">{{ include.desktop }}</td>
+    </tr>
+    <tr class="green">
       <td class="title1"><abbr title="The default init system of the latest release of this distribution">Init system</abbr></td>
       <td class="green">{{ include.init-system }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The default package manager of the latest release of this distribution">Package manager</abbr></td>
-      <td class="green">{{ include.package-manager }}</td>
+      <td class="title1"><abbr title="The default office suite of the latest release of this distribution">Office suite</abbr></td>
+      <td class="green">{{ include.office-suite }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The release model of this distribution">Release model</abbr></td>
-      <td class="green">{{ include.release-model }}</td>
-    </tr>
+      <td class="title1"><abbr title="The default package manager of the latest release of this distribution">Package manager</abbr></td>
+      <td class="green">{{ include.package-manager }}</td>
+    </tr>{% if include.text-editor %}
+    <tr class="green">
+      <td class="title1"><abbr title="The default text editor of the latest release of this distribution">Text editor</abbr></td>
+      <td class="green">{{ include.text-editor }}</td>
+    </tr>{% endif %}
     <tr class="green">
       <td class="title2" colspan="2" style="text-align: center;">Support</td>
     </tr>
@@ -92,6 +103,10 @@
       <td class="green">{{ include.gnome }}</td>
     </tr>
     <tr class="green">
+      <td class="title1"><abbr title="The latest version of the GNU Emacs in the official repositories of this distribution">GNU Emacs</abbr></td>
+      <td class="green">{{ include.emacs }}</td>
+    </tr>
+    <tr class="green">
       <td class="title1"><abbr title="The latest version of LibreOffice in the official repositories of this distribution">LibreOffice</abbr></td>
       <td class="green">{{ include.libreoffice }}</td>
     </tr>
@@ -100,15 +115,23 @@
       <td class="green">{{ include.linux }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The latest version of the systemd in the official repositories of this distribution">systemd</abbr></td>
+      <td class="title1"><abbr title="The latest version of nano in the official repositories of this distribution">nano</abbr></td>
+      <td class="green">{{ include.nano }}</td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of systemd in the official repositories of this distribution">systemd</abbr></td>
       <td class="green">{{ include.systemd }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The latest version of the Xorg in the official repositories of this distribution">Xorg</abbr></td>
+      <td class="title1"><abbr title="The latest version of systemd in the official repositories of this distribution">Vim</abbr></td>
+      <td class="green">{{ include.vim }}</td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of Xorg in the official repositories of this distribution">Xorg</abbr></td>
       <td class="green">{{ include.xorg }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The latest version of the Zsh in the official repositories of this distribution">Zsh</abbr></td>
+      <td class="title1"><abbr title="The latest version of Zsh in the official repositories of this distribution">Zsh</abbr></td>
       <td class="green">{{ include.zsh }}</td>
     </tr>
   </tbody>
