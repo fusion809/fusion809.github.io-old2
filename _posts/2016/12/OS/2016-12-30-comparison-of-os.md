@@ -9,21 +9,27 @@ permalink:        /comparison-major-linux/
 
 I have used quite a few Linux distributions and I decided to create a more detailed comparison of a small handful of Linux distributions, including:
 
-1. [Arch Linux](#arch-linux)
-2. [CentOS](#centos)
-3. [Debian](#debian)
-4. [deepin](#deepin)
-5. [Fedora](#fedora)
-6. [FreeBSD](#freebsd)
-7. [Gentoo Linux](#gentoo-linux)
-8. [Linux Mint](#linux-mint)
-9. [Mageia](#mageia)
-10. [Manjaro Linux](#manjaro-linux)
-11. [openSUSE](#opensuse)
-12. [PCLinuxOS](#pclinuxos)
-13. [Sabayon Linux](#sabayon-linux)
-14. [Slackware Linux](#slackware-linux)
-15. [Ubuntu](#ubuntu)
+{% capture list %}
+<ol>
+  <li><a href="#arch-linux" link="_blank">Arch Linux</a></li>
+  <li><a href="#centos" link="_blank">CentOS</a></li>
+  <li><a href="#debian" link="_blank">Debian</a></li>
+  <li><a href="#deepin" link="_blank">deepin</a></li>
+  <li><a href="#fedora" link="_blank">Fedora</a></li>
+  <li><a href="#freebsd" link="_blank">FreeBSD</a></li>
+  <li><a href="#gentoo-linux" link="_blank">Gentoo Linux</a></li>
+  <li><a href="#linux-mint" link="_blank">Linux Mint</a></li>
+  <li><a href="#mageia" link="_blank">Mageia</a></li>
+  <li><a href="#manjaro-linux" link="_blank">Manjaro Linux</a></li>
+  <li><a href="#opensuse" link="_blank">openSUSE</a></li>
+  <li><a href="#pclinuxos" link="_blank">PCLinuxOS</a></li>
+  <li><a href="#sabayon-linux" link="_blank">Sabayon Linux</a></li>
+  <li><a href="#slackware-linux" link="_blank">Slackware Linux</a></li>
+  <li><a href="#ubuntu" link="_blank">Ubuntu</a></li>
+</ol>
+{% endcapture %}
+
+{% include Layouts/column.html no="3" content=list %}
 
 {% include_relative 01-arch.md %}
 
