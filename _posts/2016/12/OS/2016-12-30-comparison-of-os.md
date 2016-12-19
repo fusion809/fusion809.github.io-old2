@@ -60,3 +60,8 @@ I have used quite a few Linux distributions and I decided to create a more detai
 {% include_relative 14-slackware.md %}
 
 {% include_relative 15-ubuntu.md %}
+
+## References
+<ol>
+<li id="fn:1"><i><b>Note</b></i>: This section is to give one an idea on how permissive of non-free software the system is, and how easy it is to install some more challenging software on said systems. <br/><span class="partial">Cyan</span> background indicates that while the software is not available in an <i>official</i> repository, it is available from an unofficial one or other source (e.g., some Debian packages are available for download from GitHub release pages or other websites). <span class="no">Red</span> background indicates that the software is not available for this distribution, to my knowledge (feel free to correct me if I am wrong!) <span class="yes">Green</span> background indicates that the software is available for this distribution, from its official repositories.<a href="#fnref:1" class="reversefootnote">↩<a href="#fn:1" class="footnote">1</a></a></li>
+</ol>

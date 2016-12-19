@@ -2,7 +2,7 @@ table {
   display:          block;
 }
 
-table.green, td.green, tr.green {
+span.green, table.green, td.green, tr.green {
   background-color: rgb(128, 255, 128);
   border:           2px solid #000 !important;
   border-collapse:  collapse !important;
@@ -12,7 +12,7 @@ table.green, td.green, tr.green {
   vertical-align:   middle;
 }
 
-table.white, td.white, tr.white {
+span.white, table.white, td.white, tr.white {
   background-color: rgb(255,255,255);
   border:           2px solid #000 !important;
   border-collapse:  collapse !important;
@@ -23,7 +23,7 @@ table.white, td.white, tr.white {
   text-align:       center;
 }
 
-table.cyan, td.cyan, tr.cyan {
+span.cyan, table.cyan, td.cyan, tr.cyan {
   background-color: #00cccc;
   border:           2px solid #000 !important;
   border-collapse:  collapse !important;
@@ -36,7 +36,7 @@ table.cyan, td.cyan, tr.cyan {
   vertical-align:   middle;
 }
 
-table.blue, td.blue, tr.blue {
+span.blue, table.blue, td.blue, tr.blue {
   background-color: rgb(128,255,255);
   border:           2px solid #000 !important;
   border-collapse:  collapse !important;
@@ -46,7 +46,7 @@ table.blue, td.blue, tr.blue {
   vertical-align:   middle;
 }
 
-table.note, td.note, tr.note {
+span.note, table.note, td.note, tr.note {
   background-color: #ffa0a0;
   border:           2px solid #000 !important;
   border-collapse:  collapse !important;
@@ -105,7 +105,7 @@ td.title3 {
   font-size: 20px;
 }
 
-td.no, td.No {
+span.no, td.no, td.No {
   background-color: red;
   color: white;
   text-align: center;
@@ -128,7 +128,7 @@ td.Interpreted {
   padding: 8px;
 }
 
-td.Mixed, td.mixed {
+span.mixed, td.Mixed, td.mixed {
   background-color: rgb(255,255,0);
   color: black;
   text-align: center;
@@ -139,7 +139,7 @@ td.Mixed, td.mixed {
   padding: 8px;
 }
 
-td.yes, td.Yes, td.Compiled {
+span.yes, td.yes, td.Yes, td.Compiled {
   background-color: #080;
   color:            #fff;
   font-size:        14px;
@@ -289,7 +289,7 @@ td.optional, td.Optional {
   vertical-align:   middle;
 }
 
-td.partial, td.Partial {
+span.partial, td.partial, td.Partial {
   background-color: rgb(0,255,255);
   border:           2px solid #000 !important;
   border-collapse:  collapse !important;
