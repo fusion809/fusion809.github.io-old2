@@ -1,3 +1,5 @@
 ## Debian
 
 {% include_relative table.html distro="Debian" logo="Debian.svg" category="Desktop, Server" country="USA" date="1993" developer="Community" funding="Red Hat and donations" init-system="systemd" package-manager="APT" release-model="Fixed (7, 8), Rolling (testing, unstable)" releases="7, 8, testing, unstable" architecture="arm64, armel, armhf, i386, mips, mipsel, powerpc, ppc64el, s390x, x86_64" broadcom="No" fuse="Yes" uefi="Yes" firefox="45.6.0 (8), 50.1.0 (unstable)" glibc="2.19 (8), 2.24 (unstable)" gnome="3.14.4 (8), 3.22.2 (unstable)" libreoffice="5.2.3 (8 backports), 5.2.4 rc1 (unstable)" linux="3.16 (8), 4.7 (8 backports), 4.8 (unstable)" xorg="1.16.4 (8), 1.19.0 (unstable)" bash="4.3 (8), 4.4 (unstable)" zsh="5.0.7 (8), 5.3 (unstable)" %}
+
+{% include Layouts/clear.html %}
