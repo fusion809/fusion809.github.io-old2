@@ -1,0 +1,95 @@
+<table style="width: 1000px; border: 1px; padding: 1em; vertical-align: middle;">
+  <tbody style="width: 1000px;">
+    <caption id="table-1" style="text-align: center; font-size: 30px;">
+      {{ include.distro }}
+    </caption>
+    <tr class="cyan">
+      <td class="white" colspan="2"><img src="/images/Logos/{{ include.logo }}" style = "width:100px;"/></td>
+    </tr>
+    <tr class="green">
+      <td class="title2" colspan="2" style="text-align: center;">Characteristics</td>
+    </tr>
+    <tr class="green">
+      <td class="title1">Category</td>
+      <td class="green">{{ include.category }}</td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The country this distribution originated from. It may nowadays be developed by people from a variety of different countries.">Country</abbr></td>
+      <td class="green"><abbr title="The country this distribution originated from. It may nowadays be developed by people from a variety of different countries.">{{ include.country }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The year that this distribution was official first announced or released">Date</abbr></td>
+      <td class="green"><abbr title="The year that this distribution was official first announced or released">{{ include.date }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Who develops this distro? Is it developed by a community or a company?">Developed by</abbr></td>
+      <td class="green"><abbr title="Who develops this distro? Is it developed by a community or a company?">{{ include.developer }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Where does the funding for this distribution come from?">Funded by</abbr></td>
+      <td class="green"><abbr title="Where does the funding for this distribution come from?">{{ include.funding }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The default init system of the latest release of this distribution">Init system</abbr></td>
+      <td class="green"><abbr title="The default init system of the latest release of this distribution">{{ include.init-system }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The default package manager of the latest release of this distribution">Package manager</abbr></td>
+      <td class="green"><abbr title="The default package manager of the latest release of this distribution">{{ include.package-manager }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The release model of this distribution">Release model</abbr></td>
+      <td class="green"><abbr title="The release model of this distribution">{{ include.release-model }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title2" colspan="2" style="text-align: center;">Support</td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Officially supported CPU architectures for all presently supported releases">Architectures</abbr></td>
+      <td class="green"><abbr title="Officially supported CPU architectures for all presently supported releases">{{ include.architecture }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Does this distribution have out-of-the-box support for Broadcom wireless?">Broadcom</abbr></td>
+      <td class="{{ include.broadcom }}"><abbr title="Does this distribution have out-of-the-box support for Broadcom wireless?">{{ include.broadcom }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Does this distribution have out-of-the-box support for Filesystem in Userspace?">FUSE</abbr></td>
+      <td class="{{ include.fuse }}"><abbr title="Does this distribution have out-of-the-box support for Filesystem in Userspace?">{{ include.fuse }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Presently supported releases">Releases</abbr></td>
+      <td class="green"><abbr title="Presently supported releases">{{ include.releases }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="Does this distribution have out-of-the-box support for UEFI firmware?">UEFI</abbr></td>
+      <td class="{{ include.uefi }}"><abbr title="Does this distribution have out-of-the-box support for UEFI firmware?">{{ include.uefi }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title2" colspan="2" style="text-align: center;">Software</td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of Mozilla Firefox in the official repositories of this distribution">Firefox</abbr></td>
+      <td class="green"><abbr title="The latest version of Mozilla Firefox in the official repositories of this distribution">{{ include.firefox }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of glibc in the official repositories of this distribution">glibc</abbr></td>
+      <td class="green"><abbr title="The latest version of glibc in the official repositories of this distribution">{{ include.glibc }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of GNOME Shell in the official repositories of this distribution">GNOME</abbr></td>
+      <td class="green"><abbr title="The latest version of GNOME Shell in the official repositories of this distribution">{{ include.gnome }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of LibreOffice in the official repositories of this distribution">LibreOffice</abbr></td>
+      <td class="green"><abbr title="The latest version of LibreOffice in the official repositories of this distribution">{{ include.libreoffice }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of the Linux kernel in the official repositories of this distribution">Linux</abbr></td>
+      <td class="green"><abbr title="The latest version of the Linux kernel in the official repositories of this distribution">{{ include.linux }}</abbr></td>
+    </tr>
+    <tr class="green">
+      <td class="title1"><abbr title="The latest version of the Xorg in the official repositories of this distribution">Xorg</abbr></td>
+      <td class="green"><abbr title="The latest version of the Xorg in the official repositories of this distribution">{{ include.xorg }}</abbr></td>
+    </tr>
+  </tbody>
+</table>

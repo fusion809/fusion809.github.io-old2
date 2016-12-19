@@ -9,14 +9,16 @@ permalink:        /comparison-major-linux/
 
 I have used quite a few Linux distributions and I decided to create a more detailed comparison of a small handful of Linux distributions, including:
 
-* Arch Linux
-* CentOS
-* Debian
-* Fedora
-* Gentoo Linux
-* Mageia
-* openSUSE
-* Sabayon Linux
-* Ubuntu
+* [Arch Linux](#arch-linux)
+* [CentOS](#centos)
+* [Debian](#debian)
+* [Fedora](#fedora)
+* [Gentoo Linux](#gentoo-linux)
+* [Mageia](#mageia)
+* [openSUSE](#opensuse)
+* [Sabayon Linux](#sabayon-linux)
+* [Ubuntu](#ubuntu)
 
 {% include_relative 01-archlinux.md %}
+
+{% include_relative 02-centos.md %}
