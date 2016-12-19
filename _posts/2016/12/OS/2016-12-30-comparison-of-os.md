@@ -25,7 +25,7 @@ I have used quite a few Linux distributions and I decided to create a more detai
 14. [Slackware Linux](#slackware-linux)
 15. [Ubuntu](#ubuntu)
 
-{% include_relative 01-arch.md %
+{% include_relative 01-arch.md %}
 
 {% include_relative 02-centos.md %}
 
