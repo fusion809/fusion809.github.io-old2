@@ -1,0 +1,4 @@
+## openSUSE
+{% include_relative table.html distro="openSUSE" logo="openSUSE.svg" category="Desktop, Server" country="Germany (SUSE), USA (openSUSE)" date="1992 (SUSE), 2005 (openSUSE)" developer="Community (openSUSE Project)" funding="Novell" init-system="systemd" package-manager="Zypper" release-model="Fixed (Leap), Rolling (Tumbleweed)" architecture="arm64, armhf, i586, x86_64" broadcom="No" fuse="Yes" uefi="Yes" firefox="50.1.0 (Leap), 50.1.0 (Tumbleweed)" glibc="2.22 (Leap), 2.24 (Tumbleweed)" gnome="3.20.4 (Leap), 3.22.2 (Tumbleweed)" libreoffice="5.2.3 (Leap/Tumbleweed)" linux="4.4.27 (Leap), 4.8.13 (Tumbleweed)" xorg="1.17.2 (Leap), 1.18.4 (Tumbleweed)" bash="4.3 (Leap), 4.4 (Tumbleweed)" zsh="5.3 (Leap/Tumbleweed)" systemd="228 (Leap/Tumbleweed)" gcc="4.8 (Leap), 6 (Tumbleweed)" desktop="GNOME, KDE, LXDE, MATE, Xfce" %}
+
+{% include Layouts/clear.html %}

@@ -16,7 +16,7 @@ I have used quite a few Linux distributions and I decided to create a more detai
 * [Gentoo Linux](#gentoo-linux)
 * [Mageia](#mageia)
 * [openSUSE](#opensuse)
-* [Sabayon Linux](#sabayon-linux)
+* [Slackware Linux](#slackware-linux)
 * [Ubuntu](#ubuntu)
 
 {% include_relative 01-archlinux.md %}
@@ -30,3 +30,9 @@ I have used quite a few Linux distributions and I decided to create a more detai
 {% include_relative 05-gentoolinux.md %}
 
 {% include_relative 06-mageia.md %}
+
+{% include_relative 07-opensuse.md %}
+
+{% include_relative 08-slackware.md %}
+
+{% include_relative 09-ubuntu.md %}
