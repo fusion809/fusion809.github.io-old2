@@ -1,0 +1,4 @@
+## Ubuntu
+{% include_relative table.html distro="Ubuntu" logo="Ubuntu.svg" category="Desktop, Server" country="Isle of Man" date="2004" developer="Canonical Ltd, Community" funding="Canonical Ltd" init-system="systemd" package-manager="APT" release-model="Fixed" architecture="arm, i486, s390, x86_64" broadcom="No" fuse="Yes" uefi="Yes" firefox="50.1.0" releases="12.04, 14.04, 16.04, 16.10" glibc="2.23 (16.04), 2.24 (16.10)" gnome="3.18.4 (16.04), 3.20.4 (16.10)" libreoffice="5.1.4 (16.04), 5.2.2 (16.10)" linux="4.4 (16.04), 4.8 (16.10)" xorg="1.18.3 (16.04), 1.18.4 (16.10)" bash="4.3 (16.04), 4.4 (16.10)" zsh="5.1.1 (16.04), 5.2 (16.10)" systemd="229 (16.04), 231 (16.10)" desktop="KDE, GNOME, LXDE, MATE, Unity, Xfce" %}
+
+{% include Layouts/clear.html %}
