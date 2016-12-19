@@ -22,3 +22,5 @@ I have used quite a few Linux distributions and I decided to create a more detai
 {% include_relative 01-archlinux.md %}
 
 {% include_relative 02-centos.md %}
+
+{% include_relative 03-debian.md %}

@@ -1,5 +1,5 @@
-<table style="width: 1000px; border: 1px; padding: 1em; margin-right: 0px; padding-right: 0px; float:right;">
-  <tbody style="width: 1000px; float:right;">
+<table style="width: 400px; border: 1px; padding: 1em; margin-right: 0px; padding-right: 0px; float:right;">
+  <tbody style="width: 400px; float:right;">
     <caption id="table-1" style="text-align: center; font-size: 30px;">
       {{ include.distro }}
     </caption>
@@ -10,8 +10,8 @@
       <td class="title2" colspan="2" style="text-align: center;">Characteristics</td>
     </tr>
     <tr class="green">
-      <td class="title1">Category</td>
-      <td class="green">{{ include.category }}</td>
+      <td class="title1" style="width: 100px;">Category</td>
+      <td class="green" style="width: 300px;">{{ include.category }}</td>
     </tr>
     <tr class="green">
       <td class="title1"><abbr title="The country this distribution originated from. It may nowadays be developed by people from a variety of different countries.">Country</abbr></td>
@@ -55,11 +55,11 @@
     <tr class="green">
       <td class="title1"><abbr title="Does this distribution have out-of-the-box support for Filesystem in Userspace?">FUSE</abbr></td>
       <td class="{{ include.fuse }}">{{ include.fuse }}</td>
-    </tr>
+    </tr>{% if include.releases %}
     <tr class="green">
       <td class="title1"><abbr title="Presently supported releases">Releases</abbr></td>
       <td class="green">{{ include.releases }}</td>
-    </tr>
+    </tr>{% endif %}
     <tr class="green">
       <td class="title1"><abbr title="Does this distribution have out-of-the-box support for UEFI firmware?">UEFI</abbr></td>
       <td class="{{ include.uefi }}">{{ include.uefi }}</td>
