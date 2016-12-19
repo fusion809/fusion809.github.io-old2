@@ -1,0 +1,4 @@
+## Manjaro Linux
+{% include_relative table.html distro="Manjaro Linux" logo="ManjaroLinux.svg" category="Desktop" country="Austria, France, Germany" date="2011" developer="Community" funding="Donations" init-system="systemd" office-suite="LibreOffice" text-editor="nano/vi" package-manager="pacman" release-model="Rolling" architecture="i686, x86_64" broadcom="Yes" fuse="Yes" uefi="Yes" firefox="50.0.2" glibc="2.24" gnome="3.22.2" libreoffice="5.2.3" linux="4.9" xorg="1.18.4" systemd="232" bash="4.4" zsh="5.1.1" gcc="6.2.1" desktop="KDE, Xfce" vim="8.0" emacs="25.1" nano="2.7.2" %}
+
+{% include Layouts/clear.html %}
