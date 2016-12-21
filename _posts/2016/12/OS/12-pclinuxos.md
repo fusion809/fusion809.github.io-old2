@@ -1,4 +1,4 @@
 ## PCLinuxOS
-{% include_relative 12a-infobox.html %}
+{% include_relative infoboxes/12a-infobox.html %}
 
 {% include Layouts/clear.html %}

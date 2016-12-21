@@ -1,4 +1,4 @@
 ## FreeBSD
-{% include_relative 06a-infobox.html %}
+{% include_relative infoboxes/06a-infobox.html %}
 
 {% include Layouts/clear.html %}
