@@ -8,4 +8,6 @@
 * [Testing](https://wiki.debian.org/DebianTesting) &mdash; which will become the next stable release, presently Stretch (9).
 * [Unstable (sid)](https://wiki.debian.org/DebianUnstable) &mdash; a bleeding-edge rolling release version of Debian.
 
+Debian is the so called, "The universal operating system", probably because it is open-source, customizable and suitable for a wide variety of different platforms. In fact it is the Linux distribution that has been ported to the greatest number of processor architectures. It has even been ported to FreeBSD and GNU Hurd kernels. It uses the APT and dpkg package managers. dpkg provides lower-level package management services, being used for removing, installing and upgrading software packages. APT provides higher-level utilities such as repository management, package downloading, dependency resolution, *etc.*
+
 {% include Layouts/clear.html %}
