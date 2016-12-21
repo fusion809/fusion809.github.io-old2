@@ -8,5 +8,6 @@
 * Know how to write a good, detailed, well-written forum question. The Arch Linux forum community can get quite rude if one does not write one's questions well and detailed.
 * Want a high degree of control over their system. The [Arch Build System](https://wiki.archlinux.org/index.php/Arch_Build_System) (ABS) can be used to re-build software in the official repositories with different configure options and even with different package versions.
 * Do not want to compile (most) their packages from source. Some software (such as that in the [Arch User Repository](https://wiki.archlinux.org/index.php/Arch_User_Repository) (AUR)) has to be compiled from source, unless one wishes to use unofficial, potentially dangerous repositories, that may contain the AUR packages one wants.
+* Learn well by reading written documentation (as opposed to people that learn best from doing, being taught in person, or watching a video tutorial), as it has an extensive Wiki known as *The ArchWiki*.
 
 {% include Layouts/clear.html %}
