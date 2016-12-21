@@ -42,10 +42,10 @@
     </tr>
     <tr class="green">
       <td class="title1"><abbr title="The default init system of the latest release of this operating system">Init system</abbr></td>
-      <td class="green">{{ include.init-system }}</td>
+      <td class="green">{% if include.init-system == "systemd" %}<a href='https://www.freedesktop.org/wiki/Software/systemd/' link='_blank'>systemd</a>{% elsif include.init-system == "OpenRC" %}<a href="https://wiki.gentoo.org/wiki/OpenRC" link="_blank">OpenRC</a>{% elsif include.init-system == "SysVinit" %}<a href="https://en.wikipedia.org/wiki/Init#SysV-style" link="_blank">SysVinit</a>{% else %}{{ include.init-system }}{% endif %}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The default office suite of the latest release of this operating system">Office suite</abbr></td>
+      <td class="title1"><abbr title="The default office suite of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Office_suite" link="_blank">Office suite</a></abbr></td>
       <td class="green">{{ include.office-suite }}</td>
     </tr>
     <tr class="green">
@@ -145,7 +145,7 @@
       <td class="title2" colspan="2" style="text-align: center;">Software availability<sup><a href="#fn:1" class="footnote">1</a></sup></td>
     </tr>
     <tr class="green">
-      <td class="title1">Atom</td>
+      <td class="title1"><a href='https://atom.io' link='_blank'>Atom</a></td>
       <td class="{{ include.atom-avail }}">{{ include.atom }}</td>
     </tr>
     <tr class="green">
