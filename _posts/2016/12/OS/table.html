@@ -30,18 +30,18 @@
       <td class="green">{{ include.funding }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The release model of this operating system">Release model</abbr></td>
+      <td class="title1"><abbr title="The release model of this operating system"><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle" link="_blank">Release model</a></abbr></td>
       <td class="green">{{ include.release-model }}</td>
     </tr>
     <tr class="green">
       <td class="title2" colspan="2" style="text-align: center;">Defaults</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The default desktop environment/window manager of this operating system">Desktop</abbr></td>
+      <td class="title1"><abbr title="The default desktop environment/window manager of this operating system"><a href="https://en.wikipedia.org/wiki/Desktop_environment" link="_blank">Desktop</a></abbr></td>
       <td class="green">{{ include.desktop }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The default init system of the latest release of this operating system">Init system</abbr></td>
+      <td class="title1"><abbr title="The default init system of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Init" link="_blank">Init system</a></abbr></td>
       <td class="green">{% if include.init-system == "systemd" %}<a href='https://www.freedesktop.org/wiki/Software/systemd/' link='_blank'>systemd</a>{% elsif include.init-system == "OpenRC" %}<a href="https://wiki.gentoo.org/wiki/OpenRC" link="_blank">OpenRC</a>{% elsif include.init-system == "SysVinit" %}<a href="https://en.wikipedia.org/wiki/Init#SysV-style" link="_blank">SysVinit</a>{% elsif include.init-system == "BSD-style init system" %}BSD-style <a href="https://en.wikipedia.org/wiki/Init" link="_blank">init</a> system{% else %}{{ include.init-system }}{% endif %}</td>
     </tr>
     <tr class="green">
@@ -49,30 +49,30 @@
       <td class="green">{{ include.office-suite }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The default package manager of the latest release of this operating system">Package manager</abbr></td>
+      <td class="title1"><abbr title="The default package manager of the latest release of this operating system"><a href='https://en.wikipedia.org/wiki/Package_manager' link="_blank">Package manager</a></abbr></td>
       <td class="green">{{ include.package-manager }}</td>
     </tr>{% if include.text-editor %}
     <tr class="green">
-      <td class="title1"><abbr title="The default text editor of the latest release of this operating system">Text editor</abbr></td>
+      <td class="title1"><abbr title="The default text editor of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Text_editor" link="_blank">Text editor</a></abbr></td>
       <td class="green">{{ include.text-editor }}</td>
     </tr>{% endif %}
     <tr class="green">
-      <td class="title1"><abbr title="The default web browser of this operating system, excluding desktop-specific ones like Epiphany and Konqueror">Web browser</abbr></td>
+      <td class="title1"><abbr title="The default web browser of this operating system, excluding desktop-specific ones like Epiphany and Konqueror"><a href="https://en.wikipedia.org/wiki/Web_browser" link="_blank">Web browser</a></abbr></td>
       <td class="green">{{ include.browser }}</td>
     </tr>
     <tr class="green">
       <td class="title2" colspan="2" style="text-align: center;">Support</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="Officially supported CPU architectures for all presently supported releases">Architectures</abbr></td>
+      <td class="title1"><abbr title="Officially supported instruction set architectures for all presently supported releases"><a href="https://en.wikipedia.org/wiki/Instruction_set" link="_blank">Architectures</a></abbr></td>
       <td class="green">{{ include.architecture }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="Does this operating system have out-of-the-box support for Broadcom wireless?">Broadcom</abbr></td>
+      <td class="title1"><abbr title="Does this operating system have out-of-the-box support for Broadcom wireless?"><a href="https://wiki.archlinux.org/index.php/Broadcom_wireless" link="_blank">Broadcom</a></abbr></td>
       <td class="{{ include.broadcom }}">{{ include.broadcom }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="Does this operating system have out-of-the-box support for Filesystem in Userspace?">FUSE</abbr></td>
+      <td class="title1"><abbr title="Does this operating system have out-of-the-box support for Filesystem in Userspace?"><a href="https://en.wikipedia.org/wiki/Filesystem_in_Userspace" link="_blank">FUSE</a></abbr></td>
       <td class="{{ include.fuse }}">{{ include.fuse }}</td>
     </tr>{% if include.releases %}
     <tr class="green">
@@ -80,7 +80,7 @@
       <td class="green">{{ include.releases }}</td>
     </tr>{% endif %}
     <tr class="green">
-      <td class="title1"><abbr title="Does this operating system have out-of-the-box support for UEFI firmware?">UEFI</abbr></td>
+      <td class="title1"><abbr title="Does this operating system have out-of-the-box support for UEFI firmware?"><a href="https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface" link="_blank">UEFI</a></abbr></td>
       <td class="{{ include.uefi }}">{{ include.uefi }}</td>
     </tr>
     <tr class="green">
@@ -90,15 +90,15 @@
       <td class="note" colspan="2" style="text-align: center;"><i><b>Note</b></i>: all of this data is as of 20 December 2016</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The latest version of Bash in the official repositories of this operating system">Bash</abbr> (<abbr title="This is the latest stable version of Bash at the time of writing this article">4.4</abbr>)</td>
+      <td class="title1"><abbr title="The latest version of Bash in the official repositories of this operating system"><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" link="_blank">Bash</a></abbr> (<abbr title="This is the latest stable version of Bash at the time of writing this article">4.4</abbr>)</td>
       <td class="green">{{ include.bash }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The latest version of Mozilla Firefox in the official repositories of this operating system">Firefox</abbr> (<abbr title="This is the latest stable version of Mozilla Firefox at the time of writing this article">50.1.0</abbr>)</td>
+      <td class="title1"><abbr title="The latest version of Mozilla Firefox in the official repositories of this operating system"><a href="https://en.wikipedia.org/wiki/Firefox" link="_blank">Firefox</a></abbr> (<abbr title="This is the latest stable version of Mozilla Firefox at the time of writing this article">50.1.0</abbr>)</td>
       <td class="green">{{ include.firefox }}</td>
     </tr>
     <tr class="green">
-      <td class="title1"><abbr title="The latest version of GCC in the official repositories of this operating system">GCC</abbr> (<abbr title="This is the latest stable version of GCC at the time of writing this article">6.2.0</abbr>)</td>
+      <td class="title1"><abbr title="The latest version of GCC in the official repositories of this operating system"><a href="https://en.wikipedia.org/wiki/GNU_Compiler_Collection" link="_blank">GCC</a></abbr> (<abbr title="This is the latest stable version of GCC at the time of writing this article">6.2.0</abbr>)</td>
       <td class="green">{{ include.gcc }}</td>
     </tr>
     <tr class="green">
