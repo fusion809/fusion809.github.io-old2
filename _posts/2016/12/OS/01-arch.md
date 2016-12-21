@@ -10,4 +10,6 @@
 * Do not want to compile (most) their packages from source. Some software (such as that in the [Arch User Repository](https://wiki.archlinux.org/index.php/Arch_User_Repository) (AUR)) has to be compiled from source, unless one wishes to use unofficial, potentially dangerous repositories, that may contain the AUR packages one wants.
 * Learn well by reading written documentation (as opposed to people that learn best from doing, being taught in person, or watching a video tutorial), as it has an extensive Wiki known as [*The ArchWiki*](https://wiki.archlinux.org/index.php/Main_page).
 
+Arch Linux has the most extensive repositories of any distribution I know of, that is, if one includes the AUR which contains user-submitted PKGBUILDs (PKGBUILDs are the Arch Linux packaging-specific source files). As AUR packages are not all submitted by experts or otherwise experienced packagers it is considered potentially harmful and risky to install software from the AUR. 
+
 {% include Layouts/clear.html %}
