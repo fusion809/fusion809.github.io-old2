@@ -42,7 +42,7 @@
     </tr>
     <tr class="green">
       <td class="title1"><abbr title="The default init system of the latest release of this operating system">Init system</abbr></td>
-      <td class="green">{% if include.init-system == "systemd" %}<a href='https://www.freedesktop.org/wiki/Software/systemd/' link='_blank'>systemd</a>{% elsif include.init-system == "OpenRC" %}<a href="https://wiki.gentoo.org/wiki/OpenRC" link="_blank">OpenRC</a>{% elsif include.init-system == "SysVinit" %}<a href="https://en.wikipedia.org/wiki/Init#SysV-style" link="_blank">SysVinit</a>{% else %}{{ include.init-system }}{% endif %}</td>
+      <td class="green">{% if include.init-system == "systemd" %}<a href='https://www.freedesktop.org/wiki/Software/systemd/' link='_blank'>systemd</a>{% elsif include.init-system == "OpenRC" %}<a href="https://wiki.gentoo.org/wiki/OpenRC" link="_blank">OpenRC</a>{% elsif include.init-system == "SysVinit" %}<a href="https://en.wikipedia.org/wiki/Init#SysV-style" link="_blank">SysVinit</a>{% elsif include.init-system == "BSD-style init system" %}BSD-style <a href="https://en.wikipedia.org/wiki/Init" link="_blank">init</a> system{% else %}{{ include.init-system }}{% endif %}</td>
     </tr>
     <tr class="green">
       <td class="title1"><abbr title="The default office suite of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Office_suite" link="_blank">Office suite</a></abbr></td>
