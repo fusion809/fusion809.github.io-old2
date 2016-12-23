@@ -17,7 +17,7 @@ Debian is the so called, "The universal operating system", probably because it i
 
 Debian's open-source community is one of the largest (with over 1,000 volunteer developers worldwide) and most democratic ones out there and Debian's Project Leader (sort of like the lead developer, or the president of Debian) is elected every few years (range: 1 year - 3 years) by the Debian developers themselves.
 
-Debian's ideal users are intermediate-level users that:
+Debian's ideal users are at least intermediate-level users that:
 * Love open-source, but want the option of installing non-free software if they choose to. If they solely want an open-source system, without even having the option of installing proprietary software from official repositories one should install [gNewSense](https://en.wikipedia.org/wiki/GNewSense) or [Trisquel](https://en.wikipedia.org/wiki/Trisquel), which are Free Software Foundation (FSF)-approved.
 * Favour stability over bleeding-edge software. Sure those that prefer bleeding-edge software can install Debian (unstable), but it is usually less bleeding-edge than Arch Linux or Gentoo Linux.
 * Favour APT package management over, for example, yum. If they favour yum they should ideally use CentOS or one of its derivatives.

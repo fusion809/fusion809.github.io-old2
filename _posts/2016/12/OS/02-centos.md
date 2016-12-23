@@ -7,10 +7,12 @@ It is unusual in that it does not have out-of-the-box FUSE support, despite bein
 
 Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-end.html no="5" %}
 
-Ideal CentOS users are intermediate-level users (so not beginners, unless they are fast learners) that:
+Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
 
 * Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre](https://en.wikipedia.org/wiki/Linux-libre) kernel
-* Favour software stability over the very latest software releases
+* Favour software stability over the very latest software releases.
+* Favour a fixed release model distribution over a rolling release model.
+* Favour a long-term supported distribution over a distribution with a short support cycle (e.g., Fedora). 
 * Do not have a need for any obscure pieces of software, that is, software that is not universally found in virtually every Linux distribution's repositories. CentOS tends to have more comprehensive repositories than Mageia (if one includes [*Extra Packages for Enterprise Linux*](https://fedoraproject.org/wiki/EPEL) (EPEL) repositories), but less comprehensive repositories than Arch Linux or Fedora.
 * Use CentOS or Red Hat Enterprise Linux at work. CentOS and RHEL are very similar (or so I am told, I have never used RHEL myself as it is a paid product and I refuse to pay for operating systems).
 
