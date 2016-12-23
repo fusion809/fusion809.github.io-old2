@@ -7,6 +7,8 @@ CentOS is essentially like a more stable, yet old (in terms of how up-to-date it
 
 It is unusual in that it does not have out-of-the-box FUSE support, despite being a fairly [out-of-the-box](https://en.wikipedia.org/wiki/Out_of_the_box_(feature)) operating system. Aside from its kernel (which has the proprietary [binary blobs](https://en.wikipedia.org/wiki/Binary_blob) in place) it and all the software in its official repositories is open-source, and it has strict licensing requirements for all of its included software (aside from its kernel, apparently), much like the related distribution, Fedora.
 
+The OBS also has support for building packages for CentOS. As does Fedora's Copr, with the [*Extra Packages for Enterprise Linux*](https://fedoraproject.org/wiki/EPEL) (EPEL) chroots enabled.
+
 Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-end.html no="5" %}
 
 Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
@@ -15,7 +17,7 @@ Ideal CentOS users are at least intermediate-level users (so not beginners, unle
 * Favour software stability over the very latest software releases.
 * Favour a fixed release model distribution over a rolling release model.
 * Favour a long-term supported distribution over a distribution with a short support cycle (e.g., Fedora).
-* Do not have a need for any obscure pieces of software, that is, software that is not universally found in virtually every Linux distribution's repositories. CentOS tends to have more comprehensive repositories than Mageia (if one includes [*Extra Packages for Enterprise Linux*](https://fedoraproject.org/wiki/EPEL) (EPEL) repositories), but less comprehensive repositories than Arch Linux or Fedora.
+* Do not have a need for any obscure pieces of software, that is, software that is not universally found in virtually every Linux distribution's repositories. CentOS tends to have more comprehensive repositories than Mageia (if one includes EPEL repositories), but less comprehensive repositories than Arch Linux or Fedora.
 * Use CentOS or Red Hat Enterprise Linux at work. CentOS and RHEL are very similar (or so I am told, I have never used RHEL myself as it is a paid product and I refuse to pay for operating systems).
 
 {% include Layouts/clear.html %}
