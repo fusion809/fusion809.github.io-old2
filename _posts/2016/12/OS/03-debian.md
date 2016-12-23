@@ -10,4 +10,6 @@
 
 Debian is the so called, "The universal operating system", probably because it is open-source, customizable and suitable for a wide variety of different platforms. In fact it is the Linux distribution that has been ported to the greatest number of processor architectures. It has even been ported to FreeBSD and GNU Hurd kernels. It uses the APT and dpkg package managers. dpkg provides lower-level package management services, being used for removing, installing and upgrading software packages. APT provides higher-level utilities such as repository management, package downloading, dependency resolution, *etc.*
 
+Debian's open-source community is one of the largest (with over 1,000 developers worldwide) and most democratic ones out there and Debian's Project Leader (sort of like the lead developer, or the president of Debian) is elected every few years (range: 1 year - 3 years) by the Debian developers themselves. 
+
 {% include Layouts/clear.html %}
