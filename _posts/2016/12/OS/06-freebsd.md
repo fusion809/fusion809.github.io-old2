@@ -18,5 +18,8 @@ Unlike most Linux distributions FreeBSD has no graphical installer, and rather t
 
 * Are at home using the command-line. If using the command-line is a big drama to one odds are FreeBSD will not suite one's needs. Users should be aware that FreeBSD's default shells for root (tcsh) and standard users (sh) are not popular shells on Linux. 
 * Are willing to go without several popular pieces of software that run natively on Linux. Examples of such software include Atom, Google Chrome and Spotify.
+* Prefer a Unix-like operating system with more unity and harmony between its various components than Linux. Namely one where everything comes from the same team of developers, as opposed to Linux where each component of created by a separate team of developers, each with their own goals and intentions for how their software should be used. 
+
+Many Linux distributions provide (often in an optional, not pre-installed package) FreeBSD's version of tar in their official repositories and call it bsdtar (to distinguish it from GNU tar, the version of tar they use by default). This version of tar is more flexible than tar and can decompress a wider variety of different files. For example, it can also be used to extract Debian and RPM packages. 
 
 {% include Layouts/clear.html %}
