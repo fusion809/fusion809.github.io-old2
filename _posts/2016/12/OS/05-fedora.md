@@ -1,4 +1,12 @@
 ## Fedora
 {% include_relative infoboxes/05-fedora.html %}
 
+[**Fedora**](http://getfedora.org/) is a Linux distribution that is developed by its own open-source community project known as the *Fedora Project*. This project is funded by Red Hat, the world's largest (in terms of annual revenue) Linux company, and Red Hat also assumes the legal liability from the project. Around one in four contributors to the Fedora Project are Red Hat employees, but the remaining 75% of Fedora contributors are community volunteers. The most important decisions pertaining to Fedora are made by the [*Fedora Council*](http://fedoraproject.org/wiki/Council), which consists of Red Hat-appointed representatives and members of the volunteer community.{% include_relative includes/fn-inline.html no="6" %} Fedora previously used the yum package manager that CentOS still uses, but as of the release of Fedora 22 in May 2015, it now uses the DNF package manager by default. DNF is essentially a rewrite of yum, using the faster dependency resolver, libsolv, which was originally written for openSUSE's package manager, ZYpp. Fedora is used as the basis for CentOS and the Red Hat Enterprise Linux (RHEL) distribution, the premier product of Red Hat, among several other notable Linux distributions including: [Chapeau](http://chapeaulinux.org/) and [Korora](https://kororaproject.org/).
+
+Fedora is similar to CentOS in that it has strict open-source licensing requirements for all software included in its official repositories. Despite this there are proprietary binary blobs on its build of the Linux kernel. Users that want/require other pieces of proprietary software will likely be able to easily get them by enabling the [RPMFusion non-free repository](https://download1.rpmfusion.org/nonfree/fedora/). This can be done by running:
+
+{% include Code/coder.html line1="dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g').noarch.rpm" %}
+
+where `$(lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g')` uses `lsb_release` to determine the version of Fedora you are running (for example, for me running Fedora 25 executing `lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g'` in my terminal returns `25`) so as to determine the RPMFusion RPM you need to install.
+
 {% include Layouts/clear.html %}
