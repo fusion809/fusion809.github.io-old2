@@ -20,7 +20,11 @@
     "macOS",
     "backported",
     "ebuild",
-    "ebuilds"
+    "ebuilds",
+    "Sabayon",
+    "VirtualBox",
+    "GTK",
+    "AMD64"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",

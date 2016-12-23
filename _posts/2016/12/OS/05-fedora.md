@@ -13,6 +13,7 @@ Fedora is a Linux distribution that is best suited for intermediate-advanced use
 * Like open-source software, but do not love it enough to use the Linux-libre kernel, but do not mind having proprietary repositories available should they wish to use them. If you have a preference for a system that is not quite so strict on open-source you may wish to install Chapeau instead, as it has out-of-the-box support for Broadcom wireless among other devices.
 * Favour having the very latest the open-source world has to offer over the well-tested, conservative stability of distributions such as CentOS and Debian.
 * Use CentOS, RHEL or derivatives thereof at work or elsewhere and want to use something similar, but more bleeding-edge at home.
+* Want a distribution that patches its software as little as possible. Fedora is well-known in the open-source community to work with upstream developers, in the form of bug reports, and usually the only patches one will find packages have are designed to fix bugs reported upstream, until the next release of said software comes out with the bug fix. 
 
 The OBS can be used to build packages for Fedora, although it has limitations that Fedora's own Copr package-building service does not have. Namely, it often lags behind Coprs in terms of support for building packages for new releases of Fedora. For example, it took over a month after the release of Fedora 25 before the OBS began to support building packages for Fedora 25. Coprs can also provide internet access for package builds, which the OBS does not.
 
