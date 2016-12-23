@@ -10,5 +10,6 @@ Its ideal users are those that:
 * Favour an out-of-the-box distribution over a distribution with a focus on open-source software only.
 * Prefer distributions with fairly extensive repositories.
 * Understand Chinese. Not a necessity, as English support is available, but Chinese would likely give one an edge on their online forums and other parts of their website.
+* Like the Deepin Desktop Environment (DDE), macOS users will likely favour it as its [default look](http://distrowatch.com/images/cgfjoewdlbc/deepin-small.png) is similar to that of macOS. 
 
 {% include Layouts/clear.html %}
