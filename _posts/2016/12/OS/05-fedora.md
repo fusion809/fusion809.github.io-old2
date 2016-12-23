@@ -7,6 +7,6 @@ Fedora is similar to CentOS in that it has strict open-source licensing requirem
 
 {% include Code/coder.html line1="dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g').noarch.rpm" %}
 
-where `$(lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g')` uses `lsb_release` to determine the version of Fedora you are running (for example, for me running Fedora 25 executing `lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g'` in my terminal returns `25`) so as to determine the RPMFusion RPM you need to install.
+where `$(lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g')` uses `lsb_release` to determine the version of Fedora you are running (for example, for me running Fedora 25 executing `lsb_release -a | grep 'Release' | cut -d ':' -f 2 | sed 's/\s//g'` in my terminal returns `25`) so as to determine the RPMFusion RPM you need to install. RPMFusion non-free repository most notably contains `broadcom-wl` (the closed-source driver for Broadcom wireless), `lpf-spotify-client` (which is a script to build the Spotify Client from the Debian binaries officially released by the Spotify Company) and [`steam`](https://en.wikipedia.org/wiki/Steam_(software)) (the gaming platform). It is not complete comprehensive, however, and is missing RuneScape's NXT Client, among other pieces of software. 
 
 {% include Layouts/clear.html %}
