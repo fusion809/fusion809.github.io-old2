@@ -18,7 +18,9 @@
     "committers",
     "committer",
     "macOS",
-    "backported"
+    "backported",
+    "ebuild",
+    "ebuilds"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",
