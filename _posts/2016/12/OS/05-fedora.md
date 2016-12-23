@@ -14,6 +14,8 @@ Fedora is a Linux distribution that is best suited for intermediate-advanced use
 * Favour having the very latest the open-source world has to offer over the well-tested, conservative stability of distributions such as CentOS and Debian.
 * Use CentOS, RHEL or derivatives thereof at work or elsewhere and want to use something similar, but more bleeding-edge at home.
 
-The OBS can be used to build packages for Fedora, although it has limitations that Fedora's own Copr package-building service does not have. Namely, it often lags behind Coprs in terms of support for building packages for new releases of Fedora. For example, it took over a month after the release of Fedora 25 before it began to support building packages for Fedora 25. Coprs can also provide internet access for package builds, which the OBS does not. 
+The OBS can be used to build packages for Fedora, although it has limitations that Fedora's own Copr package-building service does not have. Namely, it often lags behind Coprs in terms of support for building packages for new releases of Fedora. For example, it took over a month after the release of Fedora 25 before the OBS began to support building packages for Fedora 25. Coprs can also provide internet access for package builds, which the OBS does not.
+
+Fedora also has a development version called [Rawhide](https://fedoraproject.org/wiki/Releases/Rawhide) which gets all the very latest software updates (including developmental software updates. For example, release candidates of the Linux kernel often make an appearance in Rawhide's repositories) and follows a rolling release model. It is not intended for production use and should only be used by advanced users that know how to fix/workaround system-breaking bugs (like kernel bugs that prevent booting, which semi-frequently occur). Fedora's Copr build system also provides support for building packages for Rawhide. 
 
 {% include Layouts/clear.html %}
