@@ -1,4 +1,4 @@
 ## Mageia
-{% include_relative infoboxes/09a-infobox.html %}
+{% include_relative infoboxes/09-mageia.html %}
 
 {% include Layouts/clear.html %}

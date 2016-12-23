@@ -1,5 +1,5 @@
 ## Debian
-{% include_relative infoboxes/03a-infobox.html %}
+{% include_relative infoboxes/03-debian.html %}
 
 [**Debian**](https://www.debian.org/) is one of the oldest Linux distributions still in active development, second only to Slackware Linux. Ian Murdock started developing it in 1993 (when he was 20 years old) and he named it as a portmanteau of the first name of Debra Lynn, his then girlfriend, and his own first name (Deb + Ian = Debian). Debian and its derivatives make up most of the usage share of Linux distributions on the desktop and laptop. Debian and Ubuntu (a Debian derivative) also make up the majority of the usage share of Linux distributions on servers. Debian has four stable branches (each with different repositories, different purposes, different derivatives and different usage shares):
 

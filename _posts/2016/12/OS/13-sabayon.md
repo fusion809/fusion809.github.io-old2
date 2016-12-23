@@ -1,4 +1,4 @@
 ## Sabayon Linux
-{% include_relative infoboxes/13a-infobox.html %}
+{% include_relative infoboxes/13-sabayon.html %}
 
 {% include Layouts/clear.html %}

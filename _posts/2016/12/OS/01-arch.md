@@ -1,5 +1,5 @@
 ## Arch Linux
-{% include_relative infoboxes/01a-infobox.html %}
+{% include_relative infoboxes/01-arch.html %}
 
 [**Arch Linux**](https://www.archlinux.org/) is a minimalist Linux distribution that follows a bleeding-edge rolling release model. It started out in early 2001 as a side project of Judd Vinet, a Canadian programmer. He was inspired by the *simplicity* of the &#42;BSDs and Slackware, amongst other operating systems available at the time, but disappointed by their lack of suitable package management systems. So he devised a lightweight and simple package manager specifically for Arch Linux and called it pacman. What is meant by *simplicity* in this context is without unnecessary additions or changes. It also means with the minimum set of default, pre-installed software. The set of default pre-installed software are in the [`base`](https://www.archlinux.org/groups/x86_64/base/) group. Arch Linux's first public release was in March 2002.<sup><a href='#fn:3' class='footnote'>3</a></sup> It is more oriented towards intermediate-advanced users, specifically users that are:
 

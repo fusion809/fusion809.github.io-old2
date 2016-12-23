@@ -1,4 +1,4 @@
 ## Ubuntu
-{% include_relative infoboxes/15a-infobox.html %}
+{% include_relative infoboxes/15-ubuntu.html %}
 
 {% include Layouts/clear.html %}

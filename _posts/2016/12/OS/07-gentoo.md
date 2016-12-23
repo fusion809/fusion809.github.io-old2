@@ -1,4 +1,4 @@
 ## Gentoo Linux
-{% include_relative infoboxes/07a-infobox.html %}
+{% include_relative infoboxes/07-gentoo.html %}
 
 {% include Layouts/clear.html %}

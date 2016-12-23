@@ -1,4 +1,4 @@
 ## Linux Mint
-{% include_relative infoboxes/08a-infobox.html %}
+{% include_relative infoboxes/08-mint.html %}
 
 {% include Layouts/clear.html %}
