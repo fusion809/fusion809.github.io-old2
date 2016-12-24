@@ -26,7 +26,12 @@
     "GTK",
     "AMD64",
     "Mageia",
-    "Mandriva"
+    "Mandriva",
+    "coreutils",
+    "urpmi",
+    "Zorin",
+    "systemd",
+    "Devuan"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",
