@@ -13,4 +13,11 @@ Portage is a complicated package manager to use too. Frequently Portage will com
 
 Despite this Gentoo Linux's documentation (which is mostly located at the [*Gentoo Wiki*](https://wiki.gentoo.org/wiki/Main_Page)) is second only to Arch Linux in terms of quality and comprehensibility.
 
+Ideal Gentoo users are advanced users that:
+* Want a lot of freedom to customize their system to their liking.
+* Are not open-source software-obsessed. Proprietary software riddles the Portage Tree.
+* Learn well by reading written documentation or already have plenty of experience with Portage.
+* Need to install obscure pieces of software on the odd occasion. As Gentoo Portage overlays are very extensive it is likely that if one requires any obscure software one will be able to find it by searching [gpo.zugaina.org](http://gpo.zugaina.org/).
+* Are willing to wait a long time to setup one's system to one's liking. If one wants a desktop environment one will likely have to spend several hours compiling the desktop environment components and their dependencies with Portage. 
+
 {% include Layouts/clear.html %}
