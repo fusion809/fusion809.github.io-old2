@@ -24,7 +24,9 @@
     "Sabayon",
     "VirtualBox",
     "GTK",
-    "AMD64"
+    "AMD64",
+    "Mageia",
+    "Mandriva"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",
