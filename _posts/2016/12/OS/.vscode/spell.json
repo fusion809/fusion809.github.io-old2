@@ -31,7 +31,8 @@
     "urpmi",
     "Zorin",
     "systemd",
-    "Devuan"
+    "Devuan",
+    "OpenMandriva"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",
