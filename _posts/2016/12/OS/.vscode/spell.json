@@ -32,7 +32,9 @@
     "Zorin",
     "systemd",
     "Devuan",
-    "OpenMandriva"
+    "OpenMandriva",
+    "Manjaro",
+    "Calamares"
   ],
   "mistakeTypeToStatus": {
     "Passive voice": "Hint",
