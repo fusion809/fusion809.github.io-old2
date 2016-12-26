@@ -9,6 +9,8 @@ Its default package manager is [ZYpp](https://en.opensuse.org/Portal:Libzypp) (w
 
 openSUSE is also unusual in that it has two editions: a fixed release edition, Leap, and a rolling release edition, Tumbleweed. Leap was the original edition of openSUSE and is still the most popular. The Tumbleweed edition attempts to be bleeding-edge, but is not as bleeding-edge as Arch Linux or a bleeding-edge Gentoo Linux system. Usually kernel updates come out so slowly that a new stable upstream release of the kernel will be out by the time the present version of the kernel is added to the official Tumbleweed repositories. 
 
+It is one of the most democratic Linux distributions in the world, that is, its development is more guided by the will of the users and developers than by an individual dictator. They have a [board](https://en.opensuse.org/openSUSE:Board) for making some decisions, with the chair appointed by SUSE (or Novell, as SUSE is now a subsidiary of Novell) and the other 5 members appointed by the community. Most members of this board (except for one whom is in Portland, Oregon) reside in central and eastern Europe. Other decisions are made by other community-guided mechanisms. 
+
 openSUSE is ideal for intermediate-advanced users that:
 * Love open-source, but not enough to use the Libre kernel.
 * Favour distributions with a relatively long fixed release cycle (one new minor release every year) or rolling release model.
