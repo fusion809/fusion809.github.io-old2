@@ -15,6 +15,7 @@ openSUSE is ideal for intermediate-advanced users that:
 * Love open-source, but not enough to use the Libre kernel.
 * Favour distributions with a relatively long fixed release cycle (one new minor release every year) or rolling release model.
 * Like distributions that use the RPM package manager.
+* Favour democratic distributions over authoritarian ones.
 * Like/need distributions with fairly comprehensive, but not as comprehensive as say Arch Linux or Gentoo, repositories. This may include someone that likes to/needs to use obscure/proprietary pieces of software (e.g., Spotify), or people that perform reviews of several pieces of Linux software on a regular basis.
 * Like packaging new/obscure pieces of open-source software. The Open Build Service (OBS) is more oriented towards openSUSE users (as it is, in fact, provided as a free public service of the openSUSE Project) and is easier to use on openSUSE than on other distributions. Far more pieces of software are packaged for openSUSE in the OBS than they are for other distributions. 
 * Do not need out-of-the-box support for hardware with proprietary drivers only. 
