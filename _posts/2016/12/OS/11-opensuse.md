@@ -11,13 +11,15 @@ openSUSE is also unusual in that it has two editions: a fixed release edition, L
 
 It is one of the most democratic Linux distributions in the world, that is, its development is more guided by the will of the users and developers than by an individual dictator. They have a [board](https://en.opensuse.org/openSUSE:Board) for making some decisions, with the chair appointed by SUSE (or Novell, as SUSE is now a subsidiary of Novell) and the other 5 members appointed by the community. Most members of this board (except for one whom is in Portland, Oregon) reside in central and eastern Europe. Other decisions are made by other community-guided mechanisms. 
 
+I personally have successfully created two packages for openSUSE using the Open Build Service, for [Blockify](https://github.com/serialoverflow/blockify) (and yes it is also built for Fedora in my OBS project) and another for [Vim](http://www.vim.org/). These packages can be found [here](https://build.opensuse.org/project/show/home:fusion809).
+
 openSUSE is ideal for intermediate-advanced users that:
 * Love open-source, but not enough to use the Libre kernel.
 * Favour distributions with a relatively long fixed release cycle (one new minor release every year) or rolling release model.
 * Like distributions that use the RPM package manager.
 * Favour democratic distributions over authoritarian ones.
 * Like/need distributions with fairly comprehensive, but not as comprehensive as say Arch Linux or Gentoo, repositories. This may include someone that likes to/needs to use obscure/proprietary pieces of software (e.g., Spotify), or people that perform reviews of several pieces of Linux software on a regular basis.
-* Like packaging new/obscure pieces of open-source software. The Open Build Service (OBS) is more oriented towards openSUSE users (as it is, in fact, provided as a free public service of the openSUSE Project) and is easier to use on openSUSE than on other distributions. Far more pieces of software are packaged for openSUSE in the OBS than they are for other distributions. 
+* Like packaging new/obscure pieces of open-source software. The Open Build Service (OBS) is more oriented towards openSUSE users (as it is, in fact, provided as a free public service of the openSUSE Project) and is easier to use on openSUSE than on other distributions. Far more pieces of software are packaged for openSUSE in the OBS than they are for other distributions. Beware though that the OBS only accepts open-source pieces of software, if you try to build proprietary software there odds are it will be eventually found and deleted by the admin of the OBS. 
 * Do not need out-of-the-box support for hardware with proprietary drivers only. 
 
 {% include Layouts/clear.html %}
