@@ -11,6 +11,6 @@ I personally have found it a fairly buggy distribution for one not using softwar
 
 * Want an out-of-the-box experience
 * Like a conservative distribution, in terms of software versioning, favouring stability or the very latest software versions. 
-* Are OK with an authoritarian distribution. Dictatorships do not sit too well with me personally, partly because I always fear that I will grow to love the distribution and then the dictator will make a decision that turns into a horrible mess. 
+* Are OK with an authoritarian distribution. Dictatorships do not sit too well with me personally, partly because I always fear that I will grow to love the distribution and then the dictator will make a decision that turns the distribution into something I dislike. 
 
 {% include Layouts/clear.html %}
