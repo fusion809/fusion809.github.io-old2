@@ -53,3 +53,5 @@
 {% include_relative 02-basic-definitions/26-virtualization.md %}
 
 {% include_relative 02-basic-definitions/27-cross-distro-packages.md %}
+
+{% include_relative 02-basic-definitions/28-governance.md %}
