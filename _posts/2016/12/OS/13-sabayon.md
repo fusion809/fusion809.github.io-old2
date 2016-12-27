@@ -13,6 +13,8 @@ Sabayon also uses its own custom-branded [kernel sources](https://github.com/Sab
 
 Sabayon uses its own custom branded version of the Calamares installer, although it used to (circa mid 2015) use a re-branded version of Fedora's Anaconda installer. It was abandoned, in favour of Sabayon's present Calamares installer, due to its perceived propensity for bugs. 
 
+I should warn folks though, that I have found the Sabayon developers (esspecially in their IRC channel, not so much in their forums) rather testy, quick to anger (or at least being rude), even when one is not trying to insult them, merely asking questions out of curiousity about the distribution. But that could just be me (or my timing as Sabayon developers only work on Sabayon in their spare time and I could have caught them on a bad day after they got home from work), I do not know why but I seem to get under their skin when that is furthest from my intentions. 
+
 Ideal Sabayon users are those that:
 
 * Enjoying using a beginner-friendly distribution.
@@ -20,6 +22,6 @@ Ideal Sabayon users are those that:
 * Want a fairly bleeding-edge but still rather stable distribution.
 * Do not require any obscure/insufficiently popular (among Sabayon users/developers at least, as otherwise they would be in the Entropy repositories) pieces of software like RuneScape's NXT Client, SageMath or Scilab, or if one does are willing to and able to build and install said packages using Portage. 
 * Do not mind having a fairly slow package manager. I personally find using Entropy annoying at times because when one has several packages upgrades to get it can take well over half an hour to download and install them. 
-* Do not have any qualms using a distribution that is not entirely open-source. 
+* Do not have any qualms about using a distribution that is not entirely open-source. 
 
 {% include Layouts/clear.html %}
