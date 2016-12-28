@@ -27,7 +27,7 @@ Debian's ideal users are at least intermediate-level users that:
 * Do not object to using systemd as an init system. Those with a hatred of systemd as an init system should probably try using [Devuan](https://en.wikipedia.org/wiki/Devuan) or version of Debian that do not use systemd (the latest version of which and the only supported version of which, at the time of writing this post, is Debian 7 or Wheezy). Or they could use Slackware Linux, which does not use systemd and has no plans to change over in the forseable future.
 * Wish to support democracy in the open-source software community.
 
-Debian also has its own MoinMoin-based Wiki, known as the [*Debian Wiki*](https://wiki.debian.org/). It mostly has articles pertaining to packaging, and other very Debian-specific articles. It does also have some rather brief articles on other topics like [desktop environments](https://wiki.debian.org/DesktopEnvironment). I personally find it less comprehensive than the *Arch Wiki* and *Gentoo Wiki*, but more comprehensive than the *Fedora Wiki*. 
+Debian also has its own [MoinMoin](https://moinmo.in/)-based Wiki, known as the [*Debian Wiki*](https://wiki.debian.org/). It mostly has articles pertaining to packaging, and other very Debian-specific articles. It does also have some rather brief articles on other topics like [desktop environments](https://wiki.debian.org/DesktopEnvironment). I personally find it less comprehensive than the *Arch Wiki* and *Gentoo Wiki*, but more comprehensive than the *Fedora Wiki*. 
 
 Those that want a Windows-looking Debian-based distribution may want to use [Q4OS](http://q4os.org/). Those that prefer a macOS-looking Debian derivative should probably use [deepin](#deepin). 
 
