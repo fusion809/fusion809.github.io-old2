@@ -9,4 +9,6 @@ It also has its own home-grown tool for automatic hardware detection, specifical
 
 It is best suited to users that prefer a beginner-friendly distribution (with out-of-the-box support for popular extraneous devices such as Broadcom chips and NVIDIA graphics cards), but one where bug-wranging may sometimes be required (as it is more on the bleeding-edge side of the spectrum, than on the stable side) and those that need/want amongst the most extensive software repositories of any Linux distribution known. It is also suited to beginners who want to get started with Linux packaging, as pacman packages are amongst the easiest to develop. 
 
+Its forums have been irritating to me as whenever I start a question there that includes a hyperlink (like to a pastebin service, containing my long error message or log file) it is subject to review by moderators before it will become visible to others. This process of review can take days. I have not used their forums in months or maybe even a year though, so for all I know they may have fixed that issue. When questions are not subject to review by a moderator the forums works about as quickly and well as Ask Fedora does to answer questions. So it is fairly good, but not as good as Ask Ubuntu, in terms of support quality and swiftness. 
+
 {% include Layouts/clear.html %}
