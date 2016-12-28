@@ -5,7 +5,7 @@
 
 Slackware is unusual amongst modern Linux distributions in that it has no graphical installer, but rather its official installer is a textual installer. In this regard it is most similar to the &#42;BSDs like DragonFlyBSD, FreeBSD, NetBSD and OpenBSD, which all use a textual installer by default. Personally I have found the installers of the &#42;BSDs a little easier to use than Slackware's. Slackware is also unusual in how out-of-date the software is in its repositories (e.g., it is still using KDE Plasma 4, even though KDE Plasma 5 has been out since July 2014) and how relatively small its repositories are. You will find many pieces of software you may want, including open-source software, that are absent from the official repositories of Slackware. Rather one often has to rely on the [SlackBuilds repositories](https://slackbuilds.org).
 
-I have personally found Slackware a fairly easy Linux distribution to inadvertently break, especially with respect to its kernel. After kernel upgrades I have had it fail to boot for me. Despite this, it is not without its charm, especially for those that dislike systemd.
+I have personally found Slackware a fairly easy Linux distribution to inadvertently break, especially with respect to its kernel. After kernel upgrades I have had it fail to boot for me. But most of the time it works fine. It is not without its charm, especially for those that dislike systemd.
 
 Ideally Slackware is best suited to advanced users that:
 
