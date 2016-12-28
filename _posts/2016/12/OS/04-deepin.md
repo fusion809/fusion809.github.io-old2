@@ -10,7 +10,7 @@ Its ideal users are those that:
 * Prefer a beginner-friendly distribution. Not all users of beginner distributions are novice-level Linux users. For example, I triple boot Arch Linux, Fedora and Ubuntu LTS. Ubuntu LTS is a beginner distribution, but I do not use it for the hand-holding that comes with beginner distributions, I use it because it has some of the best support for my favourite proprietary apps (like Spotify and RuneScape) in the Linux world, uses a fast package manager (APT) that I do not mind, is fairly polished and stable (hence I do not have to spend large portions of my days running it swatting bugs), and has a long release cycle (hence I do not have to perform distribution upgrades all that frequently), *etc.*
 * Favour an out-of-the-box distribution over a distribution with a focus on open-source software only.
 * Prefer distributions with fairly extensive repositories.
-* Understand Chinese. Not a necessity, as English support is available, but Chinese would likely give one an edge on their online forums and other parts of their website.
+* Understand Mandarin Chinese. Not a necessity, as English support is available, but Mandarin Chinese would likely give one an edge on their online forums and other parts of their website.
 * Like the Deepin Desktop Environment (DDE), macOS users will likely favour it as its [default look](http://distrowatch.com/images/cgfjoewdlbc/deepin-small.png) is similar to that of macOS.
 
 {% include Layouts/clear.html %}
