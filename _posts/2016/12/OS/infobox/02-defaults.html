@@ -3,7 +3,7 @@
 </tr>
 <tr class="green">
   <td class="title1"><abbr title="The default bootloader of this operating system"><a href="https://en.wikipedia.org/wiki/Booting#BOOT-LOADER" link="_blank">Bootloader</a></abbr></td>
-  <td class="green">{% if include.bootloader == "GRUB2" %}<a href="https://en.wikipedia.org/wiki/GNU_GRUB" link="_blank">GRUB2</a>{% elsif include.bootloader="LILO" %}<a href="https://en.wikipedia.org/wiki/LILO_(boot_loader)" link="_blank">LILO</a>{% else %}{{ include.bootloader }}{% endif %}</td>
+  <td class="green">{% if include.bootloader == "GRUB2" %}<a href="https://en.wikipedia.org/wiki/GNU_GRUB" link="_blank">GRUB2</a>{% elsif include.bootloader == "LILO" %}<a href="https://en.wikipedia.org/wiki/LILO_(boot_loader)" link="_blank">LILO</a>{% else %}{{ include.bootloader }}{% endif %}</td>
 </tr>
 <tr class="green">
   <td class="title1"><abbr title="The default desktop environment/window manager of this operating system"><a href="https://en.wikipedia.org/wiki/Desktop_environment" link="_blank">Desktop</a></abbr></td>
