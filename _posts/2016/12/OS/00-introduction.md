@@ -1,25 +1,20 @@
 I have used quite a few free operating systems and I decided to create a more detailed comparison of a few more popular or major free operating systems, including:
 
-{% capture list %}
-<ol>
-  <li><a href="#arch-linux" link="_blank">Arch Linux</a></li>
-  <li><a href="#centos" link="_blank">CentOS</a></li>
-  <li><a href="#debian" link="_blank">Debian</a></li>
-  <li><a href="#deepin" link="_blank">deepin</a></li>
-  <li><a href="#fedora" link="_blank">Fedora</a></li>
-  <li><a href="#freebsd" link="_blank">FreeBSD</a></li>
-  <li><a href="#gentoo-linux" link="_blank">Gentoo Linux</a></li>
-  <li><a href="#linux-mint" link="_blank">Linux Mint</a></li>
-  <li><a href="#mageia" link="_blank">Mageia</a></li>
-  <li><a href="#manjaro-linux" link="_blank">Manjaro Linux</a></li>
-  <li><a href="#opensuse" link="_blank">openSUSE</a></li>
-  <li><a href="#pclinuxos" link="_blank">PCLinuxOS</a></li>
-  <li><a href="#sabayon-linux" link="_blank">Sabayon Linux</a></li>
-  <li><a href="#slackware-linux" link="_blank">Slackware Linux</a></li>
-  <li><a href="#ubuntu" link="_blank">Ubuntu</a></li>
-</ol>
-{% endcapture %}
-
-{% include Layouts/column.html no="3" content=list %}
+{% include_relative includes/list.html %}
 
 Now to be clear, what I mean by "free" is free of monetary cost to the end user, I am not referring to the [Free Software Foundation](http://www.fsf.org/) (FSF)'s definition of "free".
+
+## FAQs
+Some common questions I am expecting from this post are:
+
+### Question 1
+**Question:** Which distribution is best for an old computer?
+
+**Answer:** Well, one has to account for personal preference and that there is, of course, some variation in what constitutes an old computer, but the following distributions are likely the best for most users operating on old hardware:
+
+* [Bodhi Linux](http://www.bodhilinux.com/) &mdash; a Ubuntu LTS derivative that uses the Moksha window manager (a fork of the Enlightenment window manager) and ships with only four pre-installed applications. 
+* [Lubuntu](http://lubuntu.net/) &mdash; the one I would be recommending for most users, especially beginners. Uses the lightweight LXDE desktop environment.
+* [Puppy Linux](http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm) &mdash; an Australian distribution that I have never managed to get working properly in a VirtualBox VM due to graphics and mouse issues. I have never tried to install it onto my hard disk, so I have no idea how it runs on an actual machine (as opposed to a VirtualBox VM). 
+* [Quirky Linux](http://barryk.org/quirky/) &mdash; a Puppy Linux-derived distribution, that I have also failed to run in a VirtualBox VMs. 
+
+For a list of further, presently maintained operating systems that are designed to run on older computers see [this *DistroWatch* search](http://distrowatch.com/search.php?ostype=All&category=Old+Computers&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&status=Active).
