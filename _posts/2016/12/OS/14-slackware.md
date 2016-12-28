@@ -16,4 +16,6 @@ Ideally Slackware is best suited to advanced users that:
 * Do not mind using a distribution with authoritarian governance. Authoritarian governance always has the chance to lead this project down roads long-time users dislike, whereas democracies tend to keep decisions more conservative and less likely to anger many users.
 * Do not like systemd.
 
+I have never used their forums or IRC channels, that I can recall at least, so I cannot really comment on their quality. 
+
 {% include Layouts/clear.html %}
