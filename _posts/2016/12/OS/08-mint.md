@@ -7,7 +7,7 @@ It is ideal for users that:
 
 * Like the Cinnamon/MATE desktop environments. Cinnamon is probably one of the most Windows-like desktop environments available for Linux, so Windows users may appreciate the similarities. The MATE edition of Linux Mint is also Windows-like in appearance. [Zorin OS](http://zorinos.com/) has a more Windows-like user interface, however, and is, like Linux Mint, based on Ubuntu LTS, so may be more suitable for those that like the Windows user interface. Those that want a similar, but macOS-like in appearance, distribution should probably use [deepin](#deepin) or [elementary OS](https://elementary.io/). 
 * Like a beginner-friendly operating system.
-* Want a distribution with rather comprehensive software repositories (so that it is easier to install any piece of software you want)
+* Want a distribution with rather comprehensive software repositories (so that it is easier to install any piece of software you want).
 * Favour a fairly conservative yet stable distribution, in terms of how up-to-date its software is.
 
 It also has its own set of [official support forums](https://forums.linuxmint.com/), that I have never really had to use (hence I cannot really comment on their quality). 
