@@ -17,7 +17,7 @@ I should warn folks though, that I have found the Sabayon developers (especially
 
 Ideal Sabayon users are those that:
 
-* Enjoying using a beginner-friendly distribution.
+* Enjoy using a beginner-friendly distribution.
 * Like having the freedom to customize one's distribution, but not having to (as doing so can be quite tedious and, at times, frustrating), if one is happy with Sabayon's defaults. One can theoretically create an entirely custom Sabayon installation by using the server edition of Sabayon and setting up everything from the ground-up. 
 * Want a fairly bleeding-edge but still rather stable distribution.
 * Do not require any obscure/insufficiently popular (among Sabayon users/developers at least, as otherwise they would be in the Entropy repositories) pieces of software like RuneScape's NXT Client, SageMath or Scilab, or if one does are willing to and able to build and install said packages using Portage. 
