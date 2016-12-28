@@ -13,7 +13,7 @@ Sabayon also uses its own custom-branded [kernel sources](https://github.com/Sab
 
 Sabayon uses its own custom branded version of the Calamares installer, although it used to (circa mid 2015) use a re-branded version of Fedora's Anaconda installer. It was abandoned, in favour of Sabayon's present Calamares installer, due to its perceived propensity for bugs. 
 
-I should warn folks though, that I have found the Sabayon developers (esspecially in their IRC channel, not so much in their forums) rather testy, quick to anger (or at least being rude), even when one is not trying to insult them, merely asking questions out of curiousity about the distribution. But that could just be me (or my timing as Sabayon developers only work on Sabayon in their spare time and I could have caught them on a bad day after they got home from work), I do not know why but I seem to get under their skin when that is furthest from my intentions. 
+I should warn folks though, that I have found the Sabayon developers (especially in their IRC channel, not so much in their forums) rather testy, quick to anger (or at least being rude), even when one is not trying to insult them, merely asking questions out of curiousity about the distribution. But that could just be me (or my timing as Sabayon developers only work on Sabayon in their spare time and I could have caught them on a bad day after they got home from work), I do not know why but I seem to get under their skin when that is furthest from my intentions. 
 
 Ideal Sabayon users are those that:
 
