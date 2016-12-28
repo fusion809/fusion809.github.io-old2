@@ -13,7 +13,7 @@ Decisions are made by a consensus reached by its own governing board.{% include_
 
 Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
 
-* Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre](https://en.wikipedia.org/wiki/Linux-libre) kernel
+* Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre](https://en.wikipedia.org/wiki/Linux-libre) kernel.
 * Favour software stability over the very latest software releases.
 * Favour a fixed release model distribution over a rolling release model.
 * Favour a long-term supported distribution over a distribution with a short support cycle (e.g., Fedora).
