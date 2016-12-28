@@ -9,7 +9,7 @@ It is unusual in that it does not have out-of-the-box FUSE support, despite bein
 
 The OBS also has support for building packages for CentOS. As does Fedora's Copr, with the [*Extra Packages for Enterprise Linux*](https://fedoraproject.org/wiki/EPEL) (EPEL) chroots enabled.
 
-Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="5" %}
+Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="4" %}
 
 Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
 
