@@ -13,7 +13,7 @@ Ideally Slackware is best suited to advanced users that:
 * Do not need out-of-the-box support for devices with proprietary drivers, like Broadcom wireless.
 * Want to build their system from the ground-up.
 * Favour stability over a bleeding-edge system.
-* Do not mind using a distribution with authoritarian governance. Authoritarian governance always has the chance to lead this project down roads long-time users dislike, where democracies tend to keep decisions more conservative and less likely to anger many users.
+* Do not mind using a distribution with authoritarian governance. Authoritarian governance always has the chance to lead this project down roads long-time users dislike, whereas democracies tend to keep decisions more conservative and less likely to anger many users.
 * Do not like systemd.
 
 {% include Layouts/clear.html %}
