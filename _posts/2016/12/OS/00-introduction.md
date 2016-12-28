@@ -1,4 +1,4 @@
-I have used quite a few Linux distributions and I decided to create a more detailed comparison of a few more popular or major Linux distributions, including:
+I have used quite a few free operating systems and I decided to create a more detailed comparison of a few more popular or major free operating systems, including:
 
 {% capture list %}
 <ol>
@@ -21,3 +21,5 @@ I have used quite a few Linux distributions and I decided to create a more detai
 {% endcapture %}
 
 {% include Layouts/column.html no="3" content=list %}
+
+Now to be clear, what I mean by "free" is free of monetary cost to the end user, I am not referring to the [Free Software Foundation](http://www.fsf.org/) (FSF)'s definition of "free".
