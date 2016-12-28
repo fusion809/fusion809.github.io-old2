@@ -10,7 +10,7 @@
 I personally have found it a fairly buggy distribution for one not using software on the bleeding-edge. I maintain a VirtualBox VM running it, and I have had it broken before by a kernel upgrade. It is fairly beginner-friendly and is best suited for those that:
 
 * Want an out-of-the-box experience
-* Like a conservative distribution, in terms of software versioning, favouring stability or the very latest software versions. 
+* Like a conservative distribution, in terms of software versioning, favouring stability over the very latest software versions. 
 * Are OK with an authoritarian distribution. Dictatorships do not sit too well with me personally, partly because I always fear that I will grow to love the distribution and then the dictator will make a decision that turns the distribution into something I dislike. 
 
 {% include Layouts/clear.html %}
