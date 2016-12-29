@@ -16,7 +16,7 @@ Debian is the so called, "The universal operating system", probably because it i
 2. aptitude has a textual user interface (TUI) based on ncurses.
 3. aptitude does not come pre-installed with Debian.
 
-The Open Build Service (OBS) can also be used to build packages for Debian, other than that I am unaware of any free methods for building packages for Debian.
+The Open Build Service (OBS) can also be used to build packages for Debian, other than that I am unaware of any free methods for building and distributing packages for Debian.
 
 Debian's open-source community is one of the largest (with over 1,000 volunteer developers worldwide) and most democratic ones out there and Debian's Project Leader (sort of like the lead developer, or the president of Debian) is elected every few years (range: 1 year - 3 years) by the Debian developers themselves.
 
