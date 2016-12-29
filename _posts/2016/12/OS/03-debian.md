@@ -12,9 +12,9 @@ its default repositories are entirely free and open-source, but it does have non
 
 Debian is the so called, "The universal operating system", probably because it is open-source (by default, its kernel even has no proprietary binary blobs as of release 6.0 in 2011),{% include_relative includes/fn-inline.html no="5" %} customizable and suitable for a wide variety of different platforms. In fact it is the Linux distribution that has been ported to the greatest number of processor architectures. It has even been ported to FreeBSD and GNU Hurd kernels. It uses the APT and dpkg package managers. dpkg provides lower-level package management services, being used for removing, installing and upgrading software packages. APT provides higher-level utilities such as repository management, package downloading, dependency resolution, *etc.* [aptitude](https://en.wikipedia.org/wiki/Aptitude_(software)) is another higher-level front-end to dpkg, the main differences between it and APT are that:
 
-1. aptitude is more intelligent and able to resolve package conflicts
-2. aptitude has a textual user interface (TUI) based on ncurses
-3. aptitude does not come pre-installed with Debian
+1. aptitude is more intelligent and able to resolve package conflicts.
+2. aptitude has a textual user interface (TUI) based on ncurses.
+3. aptitude does not come pre-installed with Debian.
 
 The Open Build Service (OBS) can also be used to build packages for Debian, other than that I am unaware of any free methods for building packages for Debian.
 
