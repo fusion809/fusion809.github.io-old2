@@ -14,7 +14,7 @@ It is perhaps best suited to use on servers, as its graphical user interface (GU
 * MySQL
 * PostgreSQL
 
-Unlike most Linux distributions FreeBSD has no graphical installer, and rather the installation is performed via a textual installer. In my opinion, however, this installer is fairly easy to use, it should not be a major obstacle in itself to a beginner, provided they have the appropriate help. Despite this I would consider FreeBSD a distribution best suited to intermediate-advanced level users, specifically those that:
+Unlike most Linux distributions FreeBSD has no graphical installer, and rather the installation is performed via a textual installer. In my opinion, however, this installer is fairly easy to use, it should not be a major obstacle in itself to a beginner, provided they have the appropriate help. Despite this I would consider FreeBSD an operating system best suited to intermediate-advanced level users, specifically those that:
 
 * Are at home using the command-line. If using the command-line is a big drama to one odds are FreeBSD will not suite one's needs. Users should be aware that FreeBSD's default shells for root (tcsh) and standard users (sh) are not popular shells on Linux. 
 * Are willing to go without several popular pieces of software that run natively on Linux. Examples of such software include Atom, Google Chrome and Spotify.
