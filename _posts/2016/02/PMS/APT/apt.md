@@ -81,6 +81,6 @@ user    0m1.076s
 sys     0m0.392s
 ~~~
 
-so it took **2.783s** to reinstall Vim. I think this figure is fair enough, as it is the second or third fastest package manager reviewed in this comparison.
+so it took **2.783s** to reinstall Vim. I think this figure is fair enough, as it is the third fastest package manager reviewed in this comparison.
 
 {% include_relative APT/table-1-basic-usage-examples.html %}

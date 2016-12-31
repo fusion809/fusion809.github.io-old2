@@ -91,31 +91,27 @@ Alternatively, for most packages you can use the [**Open Build Service**][2], wh
 ZYpp is very feature-packed, it possesses all the features previously mentioned of DNF, with one exception: group installs. Instead if you wish to install a group of packages you have to use patterns, similarly to APT's tasks. For example, to install all members of the pattern `books` one would run: {% include Code/coders-fs.html line1="zypper in -t pattern books" %} To list all available patterns run {% include Code/coders-fs.html line1="zypper pt" %} YaST2 can also do so called &ldquo;one-click installs&rdquo;, wherein you click a button on a webpage, that is hyperlinked to a file with the `.ymp` file extension, which if your web browser preferences are set properly, should automatically download. If you click on the file either in your browser or in your file manager, it will open YaST2 which will, with your permission, attempt to install the package (or even group of packages specified by some pattern) specified in the `.ymp` file. This system can be handy (and a time-saver) when one wishes to install a package from a repository not presently added, although if I already have the repository in question added, I usually prefer to use `zypper` to install the package.
 
 ### Speed
-On openSUSE Leap 42.1 running {% include Code/coders.html line1="time zypper in -y --force vim" %} returned:
+On openSUSE Tumbleweed running {% include Code/coders.html line1="time zypper --no-refresh in -y --force vim" %} returned:
 
 ~~~
-Warning: Legacy commandline option -y/--no-confirm detected. Please use global option -n/--non-interactive instead.
 Loading repository data...
 Reading installed packages...
-Forcing installation of 'vim-7.4.326-3.10.x86_64' from repository 'Main Repository (OSS)'.
+Forcing installation of 'vim-8.0.130-1.1.x86_64' from repository 'Main Repository (OSS)'.
 Resolving package dependencies...
 
 The following package is going to be reinstalled:
   vim
 
 1 package to reinstall.
-Overall download size: 0 B. Already cached: 1.2 MiB. No additional space will be used or
+Overall download size: 0 B. Already cached: 1.4 MiB. No additional space will be used or
 freed after the operation.
 Continue? [y/n/? shows all options] (y): y
-In cache vim-7.4.326-3.10.x86_64.rpm               (1/1),   1.2 MiB (  2.6 MiB unpacked)
+In cache vim-8.0.130-1.1.x86_64.rpm                (1/1),   1.4 MiB (  2.9 MiB unpacked)
 Checking for file conflicts: .....................................................[done]
-(1/1) Installing: vim-7.4.326-3.10 ...............................................[done]
-
-real    0m12.328s
-user    0m2.272s
-sys     0m0.488s
+(1/1) Installing: vim-8.0.130-1.1.x86_64 .........................................[done]
+zypper --no-refresh install -y --force vim  1.02s user 0.22s system 14% cpu 8.338 total
 ~~~
 
-On my openSUSE Tumbleweed VM I received longer reinstall times, of (the hyperlinks are to where the full output can be found) [19.604s](https://gist.github.com/fusion809/4101245256b3bdb9eb46) and [20.312s](https://gist.github.com/fusion809/37d917ada854db67dec8), respectively. I decided to show the smallest time as I believe from using ZYpp on my non-virtual installation of openSUSE Tumbleweed that these figures may not have been an accurate representation of the speed of ZYpp, under normal working conditions. Despite this from this test it seems like as though ZYpp is third only to DNF and Portage for being the slowest package manager compared in this comparison. I personally think it is faster than all other package managers I have ever used, besides pacman and perhaps APT.
+giving time of `1.02s`. Making it the second-fastest package manager in this comparison.
 
 {% include_relative ZYpp/table-7-basic-usage-examples.html %}
