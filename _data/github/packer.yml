@@ -26,6 +26,10 @@ body:
             "gentoo-packer"
     fork:
             "y"
+    orig-user:
+            "d11wtq"
+    orig-repo:
+            "gentoo-packer"
     license:
             "GPLv3"
     license-file:

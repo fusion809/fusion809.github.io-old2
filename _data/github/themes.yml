@@ -1,4 +1,18 @@
 body:
+# MacBuntu-Remix
+  - repo: 
+            "MacBuntu-Remix"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "A remix of the MacBuntu icon theme."
+
 # osx-arc-white
   - repo:
             "osx-arc-white"
@@ -13,6 +27,19 @@ body:
     description:
             "My OSX-Arc-White theme variant."
             
+# osx-white
+  - repo:
+            "osx-white"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "A theme forked from the OSX-White theme on GNOME Look."
 # sabayon-gitsta
   - repo:
             "sabayon-gitsta"

@@ -1,5 +1,5 @@
 ---
-layout:           page
+layout:           page2
 date:             2017-01-01 16:46:00 +1000
 title:            "My GitHub Repositories"
 permalink:        /repositories/

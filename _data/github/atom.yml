@@ -19,9 +19,9 @@ body:
     readme:
             "y"
     registered:
-            "y"
+            "n"
     description:
-            "A package (Atom package name: `about-arch`) that provides an about page for Atom. I forked it from the official Atom `about` package, to customize it, for my Arch Linux packages and atom-installer builds."
+            "A package (former Atom package name: `about-arch`) that provides an about page for Atom. I forked it from the official Atom `about` package, to customize it, for my Arch Linux packages and atom-installer builds."
 
 # fusion-ui
   - repo:
