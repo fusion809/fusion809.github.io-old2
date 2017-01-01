@@ -62,3 +62,34 @@
 .tag a {
   color: #cff;
 }
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.posts {
+  width:            45%;
+  text-align:       left;
+  border:           10px;
+  border-radius:    5px;
+  padding:          10px;
+}

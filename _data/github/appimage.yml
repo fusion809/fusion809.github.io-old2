@@ -1,0 +1,20 @@
+body:
+# AppImages
+  - repo:
+            "AppImages"
+    fork:
+            "y"
+    orig-user:
+            "probonopd"
+    orig-repo:
+            "AppImages"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    permalink:
+            "/appimages/"
+    description:
+            "Recipes (shell scripts) for building AppImages, forked from [probonopd/AppImages](https://github.com/probonopd/AppImages)."
