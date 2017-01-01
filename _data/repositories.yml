@@ -559,6 +559,20 @@ body:
     description:
             "Automatically-loaded shell scripts for Bash and Zsh shells that helps with common tasks under openSUSE."
 
+# osx-arc-white
+  - repo:
+            "osx-arc-white"
+    fork:
+            "n"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "My OSX-Arc-White theme variant."
+
 # pelican-site
   - repo:
             "pelican-site"
@@ -567,7 +581,7 @@ body:
     readme:
             "n"
     maintained:
-            "y"
+            "n"
     working:
             "y"
     description:
