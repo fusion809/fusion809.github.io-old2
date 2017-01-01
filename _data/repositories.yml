@@ -129,6 +129,24 @@ body:
     description:
             "An automated shell script installer for the [Atom text editor](https://atom.io) that should work on most Linux distributions."
 
+# atom-quick-install
+  - repo:
+            "atom-quick-install"
+    fork:
+            "n"
+    license:
+            "GPLv3"
+    license-file:
+            "LICENSE"
+    readme:
+            "y"
+    maintained:
+            "y"
+    working:
+            "y"
+    description:
+            "An automated quick installer for Atom using only official Linux binaries."
+
 # bin
   - repo:
             "bin"
