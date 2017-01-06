@@ -15,6 +15,12 @@
 
     <div class="footer-col footer-col-3" style="width:230px;">
       <ul class="social-media-list">
+        {% if site.aur_name %}
+        <li>
+          {% include Layouts/icon-aur.html username=site.aur_name %}
+        </li>
+        {% endif %}
+
         {% if site.facebook_username %}
         <li>
           {% include Layouts/icon-facebook.html username=site.facebook_name username2=site.facebook_username %}
