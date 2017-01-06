@@ -15,12 +15,6 @@
 
     <div class="footer-col footer-col-3" style="width:230px;">
       <ul class="social-media-list">
-        {% if site.github_username %}
-        <li>
-          {% include Layouts/icon-github.html username=site.github_username %}
-        </li>
-        {% endif %}
-
         {% if site.facebook_username %}
         <li>
           {% include Layouts/icon-facebook.html username=site.facebook_name username2=site.facebook_username %}
@@ -33,9 +27,33 @@
         </li>
         {% endif %}
 
+        {% if site.fedora_id %}
+        <li>
+          {% include Layouts/icon-fedora.html id=site.fedora_id %}
+        </li>
+        {% endif %}
+
+        {% if site.github_username %}
+        <li>
+          {% include Layouts/icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
         {% if site.email %}
         <li>
           {% include Layouts/icon-gmail.html email=site.email %}
+        </li>
+        {% endif %}
+
+        {% if site.opensuse_name %}
+        <li>
+          {% include Layouts/icon-opensuse.html username=site.opensuse_name %}
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+          {% include Layouts/icon-twitter.html username=site.twitter_username %}
         </li>
         {% endif %}
       </ul>
