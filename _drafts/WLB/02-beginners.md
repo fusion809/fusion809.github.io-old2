@@ -1,6 +1,6 @@
 ## Beginners
 
-Beginners that just want to get their system up and working, and want the system to be easily maintainable should ideally choose a beginner-friendly distribution. Users that are likely to need a lot of support (for example, users that want to use quite a few pieces of proprietary, or obscure software) should probably use a more popular beginner-friendly distribution like [**deepin**](https://www.deepin.org/en/), [**elementary OS**](https://elementary.io/), [**Linux Mint**](https://linuxmint.com/), [**Ubuntu**](https://www.ubuntu.com/) or [**Zorin OS**](https://zorinos.com/).
+Beginners and less advanced users that just want to get their system up and working, and want the system to be easily maintainable should ideally choose a beginner-friendly distribution. Users that are likely to need a lot of support (for example, users that want to use quite a few pieces of proprietary, or obscure software) should probably use a more popular beginner-friendly distribution like [**deepin**](https://www.deepin.org/en/), [**elementary OS**](https://elementary.io/), [**Linux Mint**](https://linuxmint.com/), [**Ubuntu**](https://www.ubuntu.com/) or [**Zorin OS**](https://zorinos.com/).
 
 ### deepin
 {% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/deepin.png" width="600px" float="left" description="The Deepin Desktop Environment running on deepin 15.3" %}
@@ -16,13 +16,6 @@ Those that are a little rusty on Mandarin Chinese (or cannot speak it at all, li
 
 {% include Layouts/clear.html %}
 
-### Zorin OS
-{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/zorin.png" width="600px" float="left" description="Zorin OS's customized GNOME desktop" %}
-
-**Zorin OS** is ideal for users that like Windows 7's desktop layout, but have a need for out-of-the-box Broadcom wireless support (so those with laptops with Broadcom WiFi chips). Zorin OS has a paid edition too, and for all I know free users may get inferior support compared to their paid counterparts. Its releases are built on long-term support (LTS) releases of Ubuntu. By default, Zorin OS has the official repositories of the LTS Ubuntu release it is built on, enabled. So any software you can get on Ubuntu's LTS releases you can get on Zorin OS. Zorin's Windows 7-like user interface is a customized version of GNOME, so it is fairly heavy on system resources. 
-
-{% include Layouts/clear.html %}
-
 ### Linux Mint
 {% include Links/image.html url="http://distrowatch.com/images/screenshots/mint-18-welcome.png" width="600px" float="left" description="Linux Mint 18.1's Cinnamon desktop" %}
 
@@ -30,9 +23,24 @@ Those that are a little rusty on Mandarin Chinese (or cannot speak it at all, li
 
 {% include Layouts/clear.html %}
 
+### PCLinuxOS
+{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/pclinuxos.png" width="600px" float="left" description="PCLinuxOS's default KDE Plasma 4 user interface" %}
+[**PCLinuxOS**](http://www.pclinuxos.com/) is a distribution that is probably best suited to beginners that likely will not need user support, but do want/need out-of-the-box Broadcom WiFi support. I say it is best for those that likely do not need user support, because I personally suspect (but cannot be certain as I have only used it once) that its online support is probably lousy, in terms of response times. This is because I have used their IRC channel before, and asked a question there, and there were only nine people in the channel besides myself and none of them provided me an answer in the over five hours I was there.
+
+{% include Layouts/clear.html %}
+
+### Ubuntu
+{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/ubuntu.png" width="600px" float="left" description="Ubuntu 16.10's Unity user interface" %}
 **Ubuntu** and its official flavours (like Kubuntu, Lubuntu, Ubuntu Budgie, Ubuntu GNOME, Ubuntu Kylin, Ubuntu MATE and Xubuntu) are best for users that do not want/need out-of-the-box Broadcom wireless support, but may want/need it later on, as the `bcmwl-kernel-source` package in Ubuntu's official repositories can be installed in order to provide one with Broadcom WiFi support. Ubuntu's online support is probably superior to that of the other Linux distributions mentioned here. 
 
-[**PCLinuxOS**](http://www.pclinuxos.com/) is a distribution that is probably best suited to beginners that likely will not need user support, but do want/need out-of-the-box Broadcom WiFi support. I say it is best for those that likely do not need user support, because I personally suspect (but cannot be certain as I have only used it once) that its online support is probably lousy, in terms of response times. This is because I have used their IRC channel before, and asked a question there, and there were only nine people in the channel besides myself and none of them provided me an answer in the over five hours I was there.
+{% include Layouts/clear.html %}
+
+### Zorin OS
+{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/zorin.png" width="600px" float="left" description="Zorin OS's customized GNOME desktop" %}
+
+**Zorin OS** is ideal for users that like Windows 7's desktop layout, but have a need for out-of-the-box Broadcom wireless support (so those with laptops with Broadcom WiFi chips). Zorin OS has a paid edition too, and for all I know free users may get inferior support compared to their paid counterparts. Its releases are built on long-term support (LTS) releases of Ubuntu. By default, Zorin OS has the official repositories of the LTS Ubuntu release it is built on, enabled. So any software you can get on Ubuntu's LTS releases you can get on Zorin OS. Zorin's Windows 7-like user interface is a customized version of GNOME, so it is fairly heavy on system resources. 
+
+{% include Layouts/clear.html %}
 
 There are two Linux distributions I can think of, that may be suited to selected beginners. They have excellent out-of-the-box Broadcom WiFi support, but they are also more cutting-edge in terms of how up-to-date their software is and as such may be more prone to severely problematic bugs (such as bugs that prevent one from booting, or bugs that make certain desktop environments unusable). These distributions are Manjaro Linux and Sabayon Linux. Manjaro Linux is often more cutting-edge than Sabayon (although its default kernel is the latest LTS kernel), so it may be more prone to serious bugs, but its free online support is likely superior, in terms of response times. 
 
