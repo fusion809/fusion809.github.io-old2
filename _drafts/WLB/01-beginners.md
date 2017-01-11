@@ -24,7 +24,7 @@ Those that are a little rusty on Mandarin Chinese (or cannot speak it at all, li
 {% include Layouts/clear.html %}
 
 ### Linux Mint
-{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/mint.png" width="600px" float="left" description="Linux Mint 18.1's Cinnamon desktop" %}
+{% include Links/image.html url="http://distrowatch.com/images/screenshots/mint-18-welcome.png" width="600px" float="left" description="Linux Mint 18.1's Cinnamon desktop" %}
 
 **Linux Mint** is ideal for those that like Windows 7's desktop layout, but for whatever reason do not want to use Zorin OS and do not need out-of-the-box Broadcom WiFi support (although users can install the necessary Broadcom firmware later from its official repositories). It too is built on the LTS releases of Ubuntu. Cinnamon is a desktop environment specifically developed for Linux Mint by Linux Mint's developers, it was forked from GNOME 3 early on in GNOME 3's development. It was forked from GNOME 3 due to users' dissatisfications with the user interface of the new GNOME 3 at the time.
 
