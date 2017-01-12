@@ -23,6 +23,24 @@ Those that are a little rusty on Mandarin Chinese (or cannot speak it at all, li
 
 {% include Layouts/clear.html %}
 
+### Manjaro / Sabayon Linux
+{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/manjaro.png" width="600px" float="left" description="Manjaro Linux running the Xfce desktop" %}
+
+{% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/sabayon.png" width="600px" float="left" description="Sabayon Linux running the Xfce desktop" %}
+There are two Linux distributions I can think of, that may be suited to selected beginners. They have excellent out-of-the-box Broadcom WiFi support, but they are also more cutting-edge in terms of how up-to-date their software is and as such may be more prone to severely problematic bugs (such as bugs that prevent one from booting, or bugs that make certain desktop environments unusable). These distributions are Manjaro Linux and Sabayon Linux. Manjaro Linux is often more cutting-edge than Sabayon (although its default kernel is the latest LTS kernel), so it may be more prone to serious bugs, but its free online support is likely superior, in terms of response times. 
+
+It may be more challenging to get some proprietary/obscure pieces of software on Sabayon, compared to Manjaro, however. For example, if one wants to install RuneScape's NXT Client on Sabayon one would have to use the Portage package manager of Gentoo and emerge the `games-rpg/runescape-launcher` package. Using Portage is certainly not something I would recommend to a beginner, as while it is powerful it is very error-prone. While on Manjaro one would merely install it from the Arch User Repository using the Yaourt AUR helper (which comes pre-installed with Manjaro). Several IDEs/text editors (or at least their latest versions) I have also found more challenging to install on Sabayon, compared to Manjaro, including:
+
+* Atom (latest version in the official Sabayon repositories is 1.12.2, while 1.13.0 is the latest upstream release of Atom)
+* Brackets (no version of it is in the official Sabayon repositories)
+* CodeLite (latest in the official Sabayon repositories is 4.x, while the latest release is 10.0)
+* Eclipse (latest in the official repositories is 4.4.x, while 4.6.x is the latest release)
+* LightTable (no version of it is in the official Sabayon repositories)
+* NetBeans (latest in the official repositories is 8.1, while 8.2 is the latest release)
+* Visual Studio Code (no version of it is in the official Sabayon repositories)
+
+while on Manjaro each of these pieces of software are incredibly easy to install in their latest versions using pacman (as is the case of Atom, Eclipse and NetBeans) or Yaourt. Most of these pieces of software are easy to get on the previously mentioned beginner-friendly distributions (deepin, elementary OS, Linux Mint, Ubuntu, Zorin OS) using the default package manager, with the possible exceptions of Eclipse, LightTable and NetBeans. These three IDEs need to be installed via either their own installer (as is the case with Eclipse and NetBeans), or they have to be run from an extracted binary tarball (as is the case with LightTable).
+
 ### PCLinuxOS
 {% include Links/image.html url="http://distrowatch.com/images/cgfjoewdlbc/pclinuxos.png" width="600px" float="left" description="PCLinuxOS's default KDE Plasma 4 user interface" %}
 [**PCLinuxOS**](http://www.pclinuxos.com/) is a distribution that is probably best suited to beginners that likely will not need user support, but do want/need out-of-the-box Broadcom WiFi support. I say it is best for those that likely do not need user support, because I personally suspect (but cannot be certain as I have only used it once) that its online support is probably lousy, in terms of response times. This is because I have used their IRC channel before, and asked a question there, and there were only nine people in the channel besides myself and none of them provided me an answer in the over five hours I was there.
@@ -41,20 +59,6 @@ Those that are a little rusty on Mandarin Chinese (or cannot speak it at all, li
 **Zorin OS** is ideal for users that like Windows 7's desktop layout, but have a need for out-of-the-box Broadcom wireless support (so those with laptops with Broadcom WiFi chips). Zorin OS has a paid edition too, and for all I know free users may get inferior support compared to their paid counterparts. Its releases are built on long-term support (LTS) releases of Ubuntu. By default, Zorin OS has the official repositories of the LTS Ubuntu release it is built on, enabled. So any software you can get on Ubuntu's LTS releases you can get on Zorin OS. Zorin's Windows 7-like user interface is a customized version of GNOME, so it is fairly heavy on system resources. 
 
 {% include Layouts/clear.html %}
-
-There are two Linux distributions I can think of, that may be suited to selected beginners. They have excellent out-of-the-box Broadcom WiFi support, but they are also more cutting-edge in terms of how up-to-date their software is and as such may be more prone to severely problematic bugs (such as bugs that prevent one from booting, or bugs that make certain desktop environments unusable). These distributions are Manjaro Linux and Sabayon Linux. Manjaro Linux is often more cutting-edge than Sabayon (although its default kernel is the latest LTS kernel), so it may be more prone to serious bugs, but its free online support is likely superior, in terms of response times. 
-
-It may be more challenging to get some proprietary/obscure pieces of software on Sabayon, compared to Manjaro, however. For example, if one wants to install RuneScape's NXT Client on Sabayon one would have to use the Portage package manager of Gentoo and emerge the `games-rpg/runescape-launcher` package. Using Portage is certainly not something I would recommend to a beginner, as while it is powerful it is very error-prone. While on Manjaro one would merely install it from the Arch User Repository using the Yaourt AUR helper (which comes pre-installed with Manjaro). Several IDEs/text editors (or at least their latest versions) I have also found more challenging to install on Sabayon, compared to Manjaro, including:
-
-* Atom (latest version in the official Sabayon repositories is 1.12.2, while 1.13.0 is the latest upstream release of Atom)
-* Brackets (no version of it is in the official Sabayon repositories)
-* CodeLite (latest in the official Sabayon repositories is 4.x, while the latest release is 10.0)
-* Eclipse (latest in the official repositories is 4.4.x, while 4.6.x is the latest release)
-* LightTable (no version of it is in the official Sabayon repositories)
-* NetBeans (latest in the official repositories is 8.1, while 8.2 is the latest release)
-* Visual Studio Code (no version of it is in the official Sabayon repositories)
-
-while on Manjaro each of these pieces of software are incredibly easy to install in their latest versions using pacman (as is the case of Atom, Eclipse and NetBeans) or Yaourt. Most of these pieces of software are easy to get on the previously mentioned beginner-friendly distributions (deepin, elementary OS, Linux Mint, Ubuntu, Zorin OS) using the default package manager, with the possible exceptions of Eclipse, LightTable and NetBeans. These three IDEs need to be installed via either their own installer (as is the case with Eclipse and NetBeans), or they have to be run from an extracted binary tarball (as is the case with LightTable).
 
 Beginners using older computers are likely best suited to using a beginner-friendly distribution that uses one of the following lightweight desktop environments:
 
