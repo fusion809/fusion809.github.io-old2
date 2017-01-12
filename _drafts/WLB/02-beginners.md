@@ -1,6 +1,25 @@
 ## Beginners
 
-Beginners and less advanced users that just want to get their system up and working, and want the system to be easily maintainable should ideally choose a beginner-friendly distribution. Users that are likely to need a lot of support (for example, users that want to use quite a few pieces of proprietary, or obscure software) should probably use a more popular beginner-friendly distribution like [**deepin**](https://www.deepin.org/en/), [**elementary OS**](https://elementary.io/), [**Linux Mint**](https://linuxmint.com/), [**Ubuntu**](https://www.ubuntu.com/) or [**Zorin OS**](https://zorinos.com/).
+Beginners and less advanced users that just want to get their system up and working, and want the system to be easily maintainable should ideally choose a beginner-friendly distribution. Some people will argue that beginners should use a more advanced distribution like Gentoo Linux, so that they can learn a lot about the inner workings of Linux, but I personally recommend using a beginner-friendly distribution because not everyone wants to spend hours, days or even weeks setting the system up and making it usable. Users that are likely to need a lot of support (for example, users that want to use quite a few pieces of proprietary, or obscure software) should probably use a more popular beginner-friendly distribution like [**Bodhi Linux**](http://www.bodhilinux.com/), [**deepin**](https://www.deepin.org/en/), [**elementary OS**](https://elementary.io/), [**Linux Mint**](https://linuxmint.com/), [**Ubuntu**](https://www.ubuntu.com/) or [**Zorin OS**](https://zorinos.com/).
+
+### Bodhi Linux
+{% include Links/image.html os="Bodhi_Linux_4.0.0.png" width="600px" float="left" description="Moksha running on Bodhi Linux 4.0.0" %}
+
+**Bodhi Linux** is a distribution built on the LTS releases of Ubuntu and it uses the Moksha window manager as its default user interface. It includes the bare minimum application software by default, in the hope that this will allow it to run on older computers with limited disk space. It is best for users with old computers, computers so old that it is entirely possible that not even Lubuntu will run on it. It can run on i386 processors (as opposed to the oldest processors supported by Ubuntu, i686) and Raspberry Pi computers, as well as the newer x86_64 processors. Its included application software is merely:
+
+{% include Layouts/clear.html %}
+
+* Elementary Configuration
+* ePad &mdash; a text editor
+* ePhoto &mdash; its image viewing software
+* Midori &mdash; its web browser
+* Package management software like AppCenter and System Updater. 
+* PCManFM &mdash; file manager.
+* Terminology &mdash; its terminal emulator
+
+it uses the repositories of the Ubuntu LTS release it is built on.
+
+{% include Layouts/clear.html %}
 
 ### deepin
 {% include Links/image.html os="deepin_15.3.png" width="600px" float="left" description="The Deepin Desktop Environment running on deepin 15.3" %}
@@ -26,13 +45,15 @@ Those that are a little rusty on Mandarin Chinese (or cannot speak it at all, li
 ### Manjaro / Sabayon Linux
 {% include Links/image.html os="Manjaro_Linux_16.10.3.png" width="600px" float="left" description="Manjaro Linux running the Xfce desktop" %}
 
-There are two Linux distributions I can think of, that may be suited to selected beginners. They have excellent out-of-the-box Broadcom WiFi support, but they are also more cutting-edge in terms of how up-to-date their software is and as such may be more prone to severely problematic bugs (such as bugs that prevent one from booting, or bugs that make certain desktop environments unusable). These distributions are Manjaro Linux and Sabayon Linux. Manjaro Linux is often more cutting-edge than Sabayon (although its default kernel is the latest LTS kernel), so it may be more prone to serious bugs, but its free online support is likely superior, in terms of response times. 
+There are two Linux distributions I can think of, that may be suited to selected beginners. They have excellent out-of-the-box Broadcom WiFi support, but they are also more cutting-edge in terms of how up-to-date their software is and as such may be more prone to severely problematic bugs (such as bugs that prevent one from booting, or bugs that make certain desktop environments unusable). These distributions are Manjaro Linux and Sabayon Linux. Manjaro Linux is often more cutting-edge than Sabayon (although its default kernel is the latest LTS kernel), so it may be more prone to serious bugs, but its free online support is likely superior, in terms of response times. Both distributions follow a rolling release model.
 
 {% include Layouts/clear.html %}
 
 {% include Links/image.html os="Sabayon_Linux_Xfce_20170113.png" width="600px" float="left" description="Sabayon Linux running the Xfce desktop" %}
 
 It may be more challenging to get some proprietary/obscure pieces of software on Sabayon, compared to Manjaro, however. For example, if one wants to install RuneScape's NXT Client on Sabayon one would have to use the Portage package manager of Gentoo and emerge the `games-rpg/runescape-launcher` package. Using Portage is certainly not something I would recommend to a beginner, as while it is powerful it is very error-prone. While on Manjaro one would merely install it from the Arch User Repository using the Yaourt AUR helper (which comes pre-installed with Manjaro). Several IDEs/text editors (or at least their latest versions) I have also found more challenging to install on Sabayon, compared to Manjaro, including:
+
+{% include Layouts/clear.html %}
 
 * Atom (latest version in the official Sabayon repositories is 1.12.2, while 1.13.0 is the latest upstream release of Atom)
 * Brackets (no version of it is in the official Sabayon repositories)
@@ -52,8 +73,16 @@ while on Manjaro each of these pieces of software are incredibly easy to install
 
 {% include Layouts/clear.html %}
 
+### Q4OS
+{% include Links/image.html os="Q4OS_1.6.2.png" width="600px" float="left" description="Q4OS running the Trinity Desktop Environment R14.0.4" %}
+
+**Q4OS** is a Linux distribution based on Debian (stable) that uses the Trinity Desktop Environment as its default user interface. Q4OS is aesthetically similar to Windows 7, hence may be appealing to users of the Windows NT family of operating systems (so XP, Vista, 7, 8 and 10). I personally would recommend it only for those that need a very stable Linux distribution, but for whatever reason do not wish to use a Ubuntu-based distribution. It is not as popular as the other distributions mentioned in this post, so I would not expect its free support to be all that exquisite. 
+
+{% include Layouts/clear.html %}
+
 ### Ubuntu
 {% include Links/image.html os="Ubuntu_16.10.png" width="600px" float="left" description="Ubuntu 16.10's Unity user interface" %}
+
 **Ubuntu** and its official flavours (like Kubuntu, Lubuntu, Ubuntu Budgie, Ubuntu GNOME, Ubuntu Kylin, Ubuntu MATE and Xubuntu) are best for users that do not want/need out-of-the-box Broadcom wireless support, but may want/need it later on, as the `bcmwl-kernel-source` package in Ubuntu's official repositories can be installed in order to provide one with Broadcom WiFi support. Ubuntu's online support is probably superior to that of the other Linux distributions mentioned here. 
 
 {% include Layouts/clear.html %}
