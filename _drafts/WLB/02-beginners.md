@@ -63,7 +63,7 @@ It may be more challenging to get some proprietary/obscure pieces of software on
 * NetBeans (latest in the official repositories is 8.1, while 8.2 is the latest release)
 * Visual Studio Code (no version of it is in the official Sabayon repositories)
 
-while on Manjaro each of these pieces of software are incredibly easy to install in their latest versions using pacman (as is the case of Atom, Eclipse and NetBeans) or Yaourt. Most of these pieces of software are easy to get on the previously mentioned beginner-friendly distributions (deepin, elementary OS, Linux Mint, Ubuntu, Zorin OS) using the default package manager, with the possible exceptions of Eclipse, LightTable and NetBeans. These three IDEs need to be installed via either their own installer (as is the case with Eclipse and NetBeans), or they have to be run from an extracted binary tarball (as is the case with LightTable).
+while on Manjaro each of these pieces of software are incredibly easy to install in their latest versions using pacman (as is the case of Atom, Eclipse and NetBeans) or Yaourt. Most of these pieces of software are easy to get on the other beginner-friendly distributions mentioned in this section, using the distribution's default package manager, with the possible exceptions of Eclipse, LightTable and NetBeans. These three IDEs need to be installed via either their own installer (as is the case with Eclipse and NetBeans), or they have to be run from an extracted binary tarball (as is the case with LightTable).
 
 {% include Layouts/clear.html %}
 
