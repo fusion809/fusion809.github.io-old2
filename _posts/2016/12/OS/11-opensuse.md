@@ -13,7 +13,7 @@ openSUSE is also unusual in that it has two editions: a fixed release edition, L
 
 It is one of the most democratic Linux distributions in the world, that is, its development is more guided by the will of the users and developers than by an individual dictator. They have a [board](https://en.opensuse.org/openSUSE:Board) for making some decisions, with the chair appointed by SUSE (or Novell, as SUSE is now a subsidiary of Novell) and the other 5 members appointed by the community. Most members of this board (except for one whom is in Portland in the U.S.) reside in central and eastern Europe. Other decisions are made by other community-guided mechanisms.
 
-I personally have successfully created two packages for openSUSE using the Open Build Service, one for [Blockify](https://github.com/serialoverflow/blockify) (and yes it is also built for Fedora in my OBS project) and another for [Vim](http://www.vim.org/) (with `vim-fedora` providing Vim for Fedora). These packages can be found [here](https://build.opensuse.org/project/show/home:fusion809).
+I personally have successfully created over thirty packages for openSUSE using the Open Build Service, including one for [Blockify](https://github.com/serialoverflow/blockify) (and yes it is also built for Fedora in my OBS project) and another for [Vim](http://www.vim.org/) (with `vim-fedora` providing Vim for Fedora). These packages can be found [here](https://build.opensuse.org/project/show/home:fusion809).
 
 openSUSE is ideal for intermediate-advanced users that:
 
