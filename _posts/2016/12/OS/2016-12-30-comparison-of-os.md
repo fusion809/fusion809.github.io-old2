@@ -1,7 +1,7 @@
 ---
 layout:           post
 date:             2016-12-28 +1000
-last_modified_at: 2017-01-01 14:40:02 +1000
+last_modified_at: 2017-01-14 00:35:31 +1000
 title:            "A Comparison of Major Free Operating Systems"
 categories:       Linux, Comparisons, BSDs
 permalink:        /comparison-major-free-operating-systems/
