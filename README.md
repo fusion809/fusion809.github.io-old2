@@ -5,7 +5,7 @@ This repository contains the Jekyll-powered GitHub Pages-hosted website, [*The H
 
 This repo (fusion809/fusion809.github.io) can also be used for demonstration purposes on how to create a Jekyll site. When I started this site my knowledge of CSS (and SCSS), HTML, JS, YML data files and using Jekyll or any static site generator was minimal/non-existent, and it is still no better than minimal, so my ability to set up this site and maintain it with so little knowledge is a testament to how easy Jekyll makes website creation.
 
-This website is predominantly on Linux-related topics and includes howtos and comparisons of free and open-source software.
+This website is predominantly on Linux-related topics and includes how-tos and comparisons of free and open-source software.
 
 If you want to learn more about my FOSS contributions see the [*Projects*](https://fusion809.github.io/projects/) page on *The Hornery*.
 
