@@ -1,6 +1,6 @@
 ---
 date:             2016-07-05 +1000
-title:            PKGBUILDs GitHub Repository
+title:            PKGBUILDs GitHub Repository (deprecated)
 permalink:        /PKGBUILDs/
 redirect_from:    
   - /PKGBUILDs
@@ -8,7 +8,7 @@ redirect_from:
   - /pkgbuilds
   - /PKGBUILD/
   - /PKGBUILD
-last_modified_at: 2016-09-09 21:06:00 +1000
+last_modified_at: 2017-01-23 19:52:00 +1000
 layout:           page
 ---
 
