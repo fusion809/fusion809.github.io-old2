@@ -1,4 +1,5 @@
 ### Licensing Definitions
+
 #### Copyleft License
 [**Copyleft**](https://en.wikipedia.org/wiki/Copyleft), which is a play on the word &ldquo;copyright&rdquo;, in the context of software licensing, refers to licenses that allow people to freely distribute copies of software licensed under their terms, as well as to make any modifications of the software they see fit and redistribute these modified versions provided they distribute these modified versions under a similar copyleft license. One of the most popular examples of a copyleft license is the [GNU General Public License](https://en.wikipedia.org/wiki/GNU_General_Public_License) (GPL).
 

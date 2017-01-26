@@ -1,4 +1,5 @@
 ### Short Definitions
+
 * **&#42;BSDs**
   * <b>B</b>erkeley <b>S</b>oftware <b>D</b>istribution derivative<b>s</b>.
 * **&#42;nix**

@@ -1,4 +1,5 @@
 ### Basic Definitions
+
 #### Command-Line Interface
 A [**command-line interface**](https://en.wikipedia.org/wiki/Command-line_interface) (**CLI**) or **command-line interpreter** is a type of user interface that allows users to interact with their computer by issuing a series of commands. On &#42;nix systems the most common type of CLI are [Unix shells](#unix-shells).
 
