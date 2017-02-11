@@ -10,6 +10,10 @@
   <td class="green">{{ include.desktop }}</td>
 </tr>
 <tr class="green">
+  <td class="title1"><abbr title="The default file system used by this distribution; others may be available, however."><a href="https://en.wikipedia.org/wiki/File_system" link="_blank">Desktop</a></abbr></td>
+  <td class="green">{{ include.fs }}</td>
+</tr>
+<tr class="green">
   <td class="title1"><abbr title="The default init system of the latest release of this operating system"><a href="https://en.wikipedia.org/wiki/Init" link="_blank">Init system</a></abbr></td>
   <td class="green">{% if include.init-system == "systemd" %}<a href='https://en.wikipedia.org/wiki/Systemd' link='_blank'>systemd</a>{% elsif include.init-system == "OpenRC" %}<a href="https://wiki.gentoo.org/wiki/OpenRC" link="_blank">OpenRC</a>{% elsif include.init-system == "SysVinit" %}<a href="https://en.wikipedia.org/wiki/Init#SysV-style" link="_blank">SysVinit</a>{% elsif include.init-system == "BSD-style init system" %}BSD-style <a href="https://en.wikipedia.org/wiki/Init" link="_blank">init</a> system{% else %}{{ include.init-system }}{% endif %}</td>
 </tr>

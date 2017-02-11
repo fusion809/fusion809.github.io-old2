@@ -1,0 +1,36 @@
+[1]: http://www.fsf.org/
+[2]: http://www.bodhilinux.com/
+[3]: http://lubuntu.net/
+[4]: http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm
+[5]: http://barryk.org/quirky/
+[6]: http://distrowatch.com/search.php?ostype=All&category=Old+Computers&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&status=Active
+<!-- Arch Linux-->
+[7]: https://www.archlinux.org/
+[8]: /comparison-of-package-managers/
+[9]: https://www.archlinux.org/groups/x86_64/base/
+[10]: https://wiki.archlinux.org/index.php/Makepkg
+[11]: https://wiki.archlinux.org/index.php/PKGBUILD
+<!-- CentOS-->
+[12]: https://www.centos.org/
+[13]: https://en.wikipedia.org/wiki/VirtualBox
+[14]: http://appimage.org
+[15]: https://en.wikipedia.org/wiki/GNU_Octave
+[16]: https://en.wikipedia.org/wiki/Out_of_the_box_(feature)
+[17]: https://en.wikipedia.org/wiki/Binary_blob
+[18]: https://fedoraproject.org/wiki/EPEL
+[19]: https://en.wikipedia.org/wiki/Linux-libre
+<!-- Debian -->
+[20]: https://www.debian.org/
+[21]: https://wiki.debian.org/DebianOldStable
+[22]: https://wiki.debian.org/DebianStable
+[23]: https://wiki.debian.org/DebianTesting
+[24]: https://wiki.debian.org/DebianUnstable
+[25]: https://en.wikipedia.org/wiki/Aptitude_(software)
+[26]: https://en.wikipedia.org/wiki/GNewSense
+[27]: https://en.wikipedia.org/wiki/Trisquel
+[28]: https://en.wikipedia.org/wiki/Devuan
+[29]: https://moinmo.in/
+[30]: https://wiki.debian.org/
+[31]: https://wiki.debian.org/DesktopEnvironment
+[32]: http://q4os.org/
+[33]: #deepin
