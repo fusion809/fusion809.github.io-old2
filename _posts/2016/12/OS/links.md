@@ -5,8 +5,9 @@
 [5]: http://lubuntu.net/
 [6]: http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm
 [7]: http://barryk.org/quirky/
-[8]: http://distrowatch.com/search.php?ostype=All&category=Old+Computers&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&status=Active
-[9]: https://en.wikipedia.org/wiki/Btrfs
+[8]: https://www.reactos.org/
+[9]: http://distrowatch.com/search.php?ostype=All&category=Old+Computers&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&status=Active
+[10]: https://en.wikipedia.org/wiki/Btrfs
 <!-- Arch Linux-->
 [100]: https://www.archlinux.org/
 [101]: /comparison-of-package-managers/

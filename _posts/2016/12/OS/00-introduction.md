@@ -18,8 +18,9 @@ This section covers some common questions I expect to arise from this post.
 * [Lubuntu][5] &mdash; the one I would be recommending for most users, especially beginners. It is an official Ubuntu derivative and uses the lightweight LXDE desktop environment.
 * [Puppy Linux][6] &mdash; an Australian distribution that I have never managed to install in a VirtualBox VM due to graphics and mouse issues. I have never tried to install it onto my hard disk, so I have no idea how it runs on an actual machine (as opposed to a VirtualBox VM). 
 * [Quirky Linux][7] &mdash; a Puppy Linux-derived distribution, that I have also failed to install in VirtualBox VMs. 
+* [ReactOS][8] &mdash; a Russian open-source, binary-compatible clone of Microsoft Windows NT. Its aesthetics most closely resemble those of Windows 2000 or XP. Most binaries built for Windows XP are compatible with ReactOS.  
 
-For a list of further, presently maintained operating systems that are designed to run on older computers see [this *DistroWatch* search][8].
+For a list of further, presently maintained operating systems that are designed to run on older computers see [this *DistroWatch* search][9].
 
 ### Question 2
 **Question:** Which free operating system is best suited to a developer? 
@@ -34,4 +35,4 @@ For a list of further, presently maintained operating systems that are designed 
 ### Question 4
 **Question:** What is the relevance of the default file system of operating systems? 
 
-**Answer:** File systems are relevant for a few different reasons. The main reason is that the [Btrfs][9] file system used by openSUSE allows for snapshots of the operating system to be taken, that one can rollback to if the operating system becomes unusable later. This can be incredibly handy, especially when one is using openSUSE Tumbleweed which I have found incredibly easy to inadvertently break, rendering it unusable. 
+**Answer:** File systems are relevant for a few different reasons. The main reason is that the [Btrfs][10] file system used by openSUSE allows for snapshots of the operating system to be taken, that one can rollback to if the operating system becomes unusable later. This can be incredibly handy, especially when one is using openSUSE Tumbleweed which I have found incredibly easy to inadvertently break, rendering it unusable. 
