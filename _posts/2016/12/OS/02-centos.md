@@ -1,19 +1,21 @@
 ## CentOS
 {% include_relative infoboxes/02-centos.html %}
 
-[**CentOS**][12] is a free enterprise Linux distribution that uses the RPM/yum package manager. RPM is written in C and Perl, while yum is written in Python. yum is one of the slower Linux binary package managers, significantly slower than APT and pacman, both of which are mostly written in lower-level compiled languages namely C++ and C, respectively. It is likely that sometime in the near future CentOS will adopt the DNF package manager that Fedora has been using since mid 2015.
+[**CentOS**][200] is a free enterprise Linux distribution that uses the RPM/yum package manager. RPM is written in C and Perl, while yum is written in Python. yum is one of the slower Linux binary package managers, significantly slower than APT and pacman, both of which are mostly written in lower-level compiled languages namely C++ and C, respectively. It is likely that sometime in the near future CentOS will adopt the DNF package manager that Fedora has been using since mid 2015.
 
-CentOS is essentially like a more stable, yet old (in terms of how up-to-date its software is) version of Fedora. I have used it for about year in [VirtualBox][13] VMs. I have found it very stable, but its software is so out-of-date that it can sometimes be a deal-breaker. For example, I have used CentOS Docker containers to compile software from source code so I can build an [AppImage][14] for them. Sometimes the version of GNU Compiler Collection (GCC) is so out-of-date, however, that the compilation fails. This is the case for CentOS 5/6 containers being used to build [GNU Octave][15] 4.2.0 from source code. CentOS 7 is barely up-to-date enough to compile GNU Octave 4.2.0.
+CentOS is essentially like a more stable, yet old (in terms of how up-to-date its software is) version of Fedora. I have used it for about year in [VirtualBox][201] VMs. I have found it very stable, but its software is so out-of-date that it can sometimes be a deal-breaker. For example, I have used CentOS Docker containers to compile software from source code so I can build an [AppImage][202] for them. Sometimes the version of GNU Compiler Collection (GCC) is so out-of-date, however, that the compilation fails. This is the case for CentOS 5/6 containers being used to build [GNU Octave][203] 4.2.0 from source code. CentOS 7 is barely up-to-date enough to compile GNU Octave 4.2.0.
 
-It is unusual in that it does not have out-of-the-box FUSE support, despite being a fairly [out-of-the-box][16] operating system. Aside from its kernel (which has the proprietary [binary blobs][17] in place) it and all the software in its official repositories is open-source, and it has strict licensing requirements for all of its included software (aside from its kernel, apparently), much like the related distribution, Fedora.
+It is unusual in that it does not have out-of-the-box FUSE support, despite being a fairly [out-of-the-box][204] operating system. Aside from its kernel (which has the proprietary [binary blobs][205] in place) it and all the software in its official repositories is open-source, and it has strict licensing requirements for all of its included software (aside from its kernel, apparently), much like the related distribution, Fedora.
 
-The OBS also has support for building packages for CentOS. As does Fedora's Copr, with the [*Extra Packages for Enterprise Linux*][18] (EPEL) chroots enabled.
+Also similarly to Fedora, CentOS uses the Anaconda installer, although I have never had too much of a drama with CentOS's version of the Anaconda installer. Then again I usually only have problem with the Anaconda installer, not when I run in it in a virtual machine (and I have never used CentOS outside a VM), but when I run on it my actual machine. 
+
+The OBS also has support for building packages for CentOS. As does Fedora's Copr, with the [*Extra Packages for Enterprise Linux*][206] (EPEL) chroots enabled. Both support building packages for all presently supported releases of CentOS (so 5-7). 
 
 Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="4" %}
 
 Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
 
-* Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre][19] kernel.
+* Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre][207] kernel.
 * Favour software stability over the very latest software releases.
 * Favour a fixed release model distribution over a rolling release model.
 * Favour a long-term supported distribution over a distribution with a short support cycle (e.g., Fedora). I personally dislike performing distribution upgrades as in my experience, something almost always gets broken, or at least damaged, in the process. 

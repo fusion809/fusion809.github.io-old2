@@ -12,12 +12,14 @@ This section covers some common questions I expect to arise from this post.
 
 **Answer:** Well, one has to account for personal preference and that there is, of course, some variation in what constitutes an old computer, but the following distributions are likely the best for most users operating on old hardware:
 
-* [Bodhi Linux][2] &mdash; a Ubuntu LTS derivative that uses the Moksha window manager (a fork of the Enlightenment window manager) and ships with only four pre-installed applications. 
-* [Lubuntu][3] &mdash; the one I would be recommending for most users, especially beginners. Uses the lightweight LXDE desktop environment.
-* [Puppy Linux][4] &mdash; an Australian distribution that I have never managed to install in a VirtualBox VM due to graphics and mouse issues. I have never tried to install it onto my hard disk, so I have no idea how it runs on an actual machine (as opposed to a VirtualBox VM). 
-* [Quirky Linux][5] &mdash; a Puppy Linux-derived distribution, that I have also failed to install in VirtualBox VMs. 
+* [antiX][2] &mdash; a Greek Debian (stable) derivative that uses the IceWM window manager as its default user interface.
+* [Bodhi Linux][3] &mdash; a Ubuntu LTS derivative that uses the Moksha window manager (a fork of the Enlightenment window manager) and ships with only four pre-installed applications.
+* [LXLE][4] &mdash; a Ubuntu LTS derivative that uses the lightweight LXDE desktop environment by default.
+* [Lubuntu][5] &mdash; the one I would be recommending for most users, especially beginners. It is an official Ubuntu derivative and uses the lightweight LXDE desktop environment.
+* [Puppy Linux][6] &mdash; an Australian distribution that I have never managed to install in a VirtualBox VM due to graphics and mouse issues. I have never tried to install it onto my hard disk, so I have no idea how it runs on an actual machine (as opposed to a VirtualBox VM). 
+* [Quirky Linux][7] &mdash; a Puppy Linux-derived distribution, that I have also failed to install in VirtualBox VMs. 
 
-For a list of further, presently maintained operating systems that are designed to run on older computers see [this *DistroWatch* search][6].
+For a list of further, presently maintained operating systems that are designed to run on older computers see [this *DistroWatch* search][8].
 
 ### Question 2
 **Question:** Which free operating system is best suited to a developer? 
@@ -28,3 +30,8 @@ For a list of further, presently maintained operating systems that are designed 
 **Question:** What is so important about out-of-the-box FUSE support? (Hence why did I include it in my infoboxes?)
 
 **Answer**: FUSE is used for easily mounting file systems without root privileges. It is useful for a few things, including running AppImages (the cross-distribution packaging formats).
+
+### Question 4
+**Question:** What is the relevance of the default file system of operating systems? 
+
+**Answer:** File systems are relevant for a few different reasons. The main reason is that the [Btrfs][9] file system used by openSUSE allows for snapshots of the operating system to be taken, that one can rollback to if the operating system becomes unusable later. This can be incredibly handy, especially when one is using openSUSE Tumbleweed which I have found incredibly easy to inadvertently break, rendering it unusable. 
