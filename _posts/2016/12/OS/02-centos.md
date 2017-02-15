@@ -1,7 +1,7 @@
 ## CentOS
 {% include_relative infoboxes/02-centos.html %}
 
-[**CentOS**][200] is a free enterprise Linux distribution that uses the RPM/yum package manager. RPM is written in C and Perl, while yum is written in Python. yum is one of the slower Linux binary package managers, significantly slower than APT and pacman, both of which are mostly written in lower-level compiled languages namely C++ and C, respectively. It is likely that sometime in the near future CentOS will adopt the DNF package manager that Fedora has been using since mid 2015.
+[**CentOS**][200] is a free enterprise Linux distribution that uses the RPM/yum package manager. It is likely that sometime in the near future CentOS will adopt the DNF package manager that Fedora has been using since mid 2015.
 
 CentOS is essentially like a more stable, yet old (in terms of how up-to-date its software is) version of Fedora. I have used it for about year in [VirtualBox][201] VMs. I have found it very stable, but its software is so out-of-date that it can sometimes be a deal-breaker. For example, I have used CentOS Docker containers to compile software from source code so I can build an [AppImage][202] for them. Sometimes the version of GNU Compiler Collection (GCC) is so out-of-date, however, that the compilation fails. This is the case for CentOS 5/6 containers being used to build [GNU Octave][203] 4.2.0 from source code. CentOS 7 is barely up-to-date enough to compile GNU Octave 4.2.0.
 

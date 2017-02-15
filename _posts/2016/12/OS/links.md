@@ -109,6 +109,7 @@
 [900]: http://www.mageia.org/en/
 [901]: https://wiki.mageia.org/en/URPMI
 [902]: https://www.openmandriva.org/
+[903]: https://build.opensuse.org/package/show/home:fusion809/vim-redhat
 <!-- Manjaro-->
 [1000]: https://manjaro.org/
 [1001]: https://calamares.io
