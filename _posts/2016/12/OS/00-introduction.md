@@ -59,6 +59,9 @@ The `pacman` package on Arch Linux and derived distributions usually includes a 
 ### Portage
 **Portage**, which is used by Gentoo Linux-based distributions and is written in Python and Shell. It is the only source code Linux package management system mentioned in this review, that is, by default it installs software that it manually compiles from source code, as opposed to most Linux package managers which install software from pre-compiled binary packages. Portage works with ebuilds, a type of specialized shell script that Portage command can read, compile software packages and install them by following the instructions contained therein.
 
+### Ports
+FreeBSD and the others BSDs use a ports system and binary pkg package manager. The ports system is a means by which people can build their packages from source code and install them. The pkg package manager installs binary packages that have already been compiled using the ports system on a distant build server. 
+
 ### RPM
 **RPM** and its higher-level front-ends **APT-RPM**, **DNF**, **urpmi**, **yum** and **ZYpp**. Used by Red Hat, SUSE and Mandriva-based distributions. RPM originally stood for Red Hat Package Manager but now it is a recursive acronym (so it stands for RPM package manager). RPM is written predominantly in C, with most of the remainder of its code being made up of Perl and Shell. RPM itself is fairly fast, although some of its most popular front-ends, DNF, urpmi and yum are written in interpreted languages namely Perl and Python and so inherently are rather slow. RPM packages are built using the rpmbuild command and they require a special file directory layout in order for their build to succeed. The most important file for building RPM packages is the so called spec file which is similar in its syntax to shell but with several &ldquo;macros&rdquo; one can use to simplify building tasks. 
 
