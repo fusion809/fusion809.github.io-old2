@@ -79,9 +79,14 @@
 [518]: https://fedoraproject.org/wiki/Special:Contributions/Fusion809
 <!-- FreeBSD -->
 [600]: https://www.freebsd.org/
-[601]: https://en.wikipedia.org/wiki/Apache_Subversion
-[602]: https://en.wikipedia.org/wiki/Darwin_(operating_system)
-[603]: https://en.wikipedia.org/wiki/Fork_(software_development)
+[601]: https://www.dragonflybsd.org/
+[602]: http://netbsd.org/
+[603]: https://www.openbsd.org/
+[604]: https://en.wikipedia.org/wiki/Apache_Subversion
+[605]: https://en.wikipedia.org/wiki/Darwin_(operating_system)
+[606]: https://en.wikipedia.org/wiki/Fork_(software_development)
+[607]: http://ghostbsd.org/
+[608]: https://www.trueos.org/
 <!-- Gentoo-->
 [700]: https://www.gentoo.org/
 [701]: http://www.calculate-linux.org/
