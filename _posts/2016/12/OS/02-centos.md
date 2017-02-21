@@ -11,7 +11,7 @@ Also similarly to Fedora, CentOS uses the Anaconda installer, although I have ne
 
 The OBS also has support for building packages for CentOS. As does Fedora's Copr, with the [*Extra Packages for Enterprise Linux*][206] (EPEL) chroots enabled. Both support building packages for all presently supported releases of CentOS (so 5-7). 
 
-Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="4" %}
+Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="5" %}
 
 Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
 
