@@ -13,7 +13,7 @@ Portage is a complicated package manager to use too. Frequently Portage will com
 
 {% include Code/coder.html line1="emerge --sync && layman -S" line2="emerge -uDU --with-bdeps=y @world" %}
 
-Despite this Gentoo Linux's documentation (which is mostly located at the [*Gentoo Wiki*][710] is second only to Arch Linux in terms of quality and comprehensibility in my opinion. Do see for yourself.
+Despite this Gentoo Linux's documentation (which is mostly located at the [*Gentoo Wiki*][710] is second only to Arch Linux in terms of quality and comprehensibility in my opinion. Do see for yourself).
 
 Creating your own custom ebuilds for Gentoo is more challenging, in my opinion, than packaging for RPM-based distros or Arch Linux. This is partly because ebuilds have security features in place (restricting access to one's file system during the build), that while may make the building process safer, can also make it more annoying. For example, the Atom ebuild in the Portage Tree is incredibly complicated (instead of using the default build system of Atom) mostly because simpler ebuilds (that do use Atom's default build system) give access violation errors and fail. Likewise there are several functions used in ebuilds (that are not usual shell script functions, but rather functions specifically defined for ebuilds) that you need to be familiar with in order to efficiently write a working ebuild. I have found them similar in difficulty to write as Debian packages are to build. I have created my own (at the moment unmaintained) overlay for Gentoo/Sabayon, [`sabayon-tools`][711].
 
