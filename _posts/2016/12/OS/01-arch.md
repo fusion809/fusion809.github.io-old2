@@ -19,7 +19,7 @@ It has no official distribution installer and installing the system must instead
 * Are not too obsessed with open-source. By this I mean, the software in Arch Linux's repositories is *mostly* open-source, but not exclusively. For example, it has got proprietary NVIDIA drivers in its official repositories. If one would prefer an entirely open-source, but otherwise Arch Linux-like system, one should use [Parabola GNU/Linux][115].
 * Want a high degree of control over their system. The [Arch Build System][116] (ABS) can be used to re-build software in the official repositories with different configure options and even with different package versions.
 * Do not want to compile (most) their packages from source. Some software (such as that in the [Arch User Repository][117] (AUR)) has to be compiled from source but most does not.
-* Learn well by reading written documentation (as opposed to people that learn best from doing, being taught in person, or watching a video tutorial), as it has an extensive [MediaWiki][118]-based Wiki known as [*The ArchWiki*][119].
+* Learn well by reading written documentation (as opposed to people that learn best from doing, being taught in person, or watching a video tutorial), as it has an extensive [MediaWiki][118]-powered Wiki known as [*The ArchWiki*][119].
 
 Arch Linux has the most extensive repositories of any distribution I know of, that is, if one includes the AUR which contains user-submitted PKGBUILDs. As AUR packages are not all submitted by experts or otherwise experienced packagers it is considered potentially harmful and risky to install software from the AUR. I have contributed a few AUR packages, to find a list go [here][120].
 
