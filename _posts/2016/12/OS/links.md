@@ -1,8 +1,8 @@
 [1]: http://www.fsf.org/
 [2]: http://antix.mepis.com/
 [3]: http://www.bodhilinux.com/
-[4]: http://lxle.net/
-[5]: http://lubuntu.net/
+[4]: http://lubuntu.net/
+[5]: http://lxle.net/
 [6]: http://puppylinux.org/main/Overview%20and%20Getting%20Started.htm
 [7]: http://barryk.org/quirky/
 [8]: https://www.reactos.org/
