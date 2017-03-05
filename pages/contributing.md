@@ -3,10 +3,10 @@ layout:           page
 title:            Corrections
 permalink:        /contributing/
 date:             2016-03-17 01:13:36 +1000
-last_modified_at: 2017-03-06 05:46:12 +1000
+last_modified_at: 2017-03-06 05:48:11 +1000
 ---
 
-**The Hornery**, as its name suggests (which, if you have not figured out is a play on my surname, Horne, this is not meant to be condescending, just mentioning in case you are wondering) is really just my (fusion809/Brenton)'s personal website. So its format is not really that of a Wiki (wherein everyone is invited to join in and contribute), despite this, if you find something that you feel is inaccurate or misinformed, I am interested in receiving your feedback. Please remember, however, that if your feedback is more subjective than it is objective (in other words you are telling me what you *think* or *believe* and not what you *know* and have evidence to support), odds are it will ignored, as this website is supposed to be from *my point of view*. I will also accept any recommendations of how to improve this website, in its aesthetics and such. There are four main ways you can provide me with feedback:
+**The Hornery**, as its name suggests (which, if you have not figured out is a play on my surname, Horne, this is not meant to be condescending, just mentioning in case you are wondering) is really just my (fusion809/Brenton)'s personal website. So its format is not really that of a Wiki (wherein everyone is invited to join in and contribute), despite this, if you find something that you feel is inaccurate or misinformed, I am interested in receiving your feedback. Please remember, however, that if your feedback is more subjective than it is objective (in other words you are telling me what you *think* or *believe* and not what you *know* and have evidence to support), odds are it will ignored, as this website is supposed to be from *my point of view*, although I do try to let you, the readers, reach your own conclusions, by presenting all the facts. If you ask me to advertise your product, or site, I will ignore you. I have received a few emails that fit into this category that I have ignored. I will also accept any recommendations on how to improve this website, in its aesthetics and such. There are four main ways you can provide me with feedback:
 
 * Comment on the page or post in question.
 * Comment on social media where I have shared the post in question.
