@@ -16,20 +16,20 @@ Debian is the so called, "The universal operating system", probably because it i
 2. aptitude has a textual user interface (TUI) based on ncurses.
 3. aptitude does not come pre-installed with Debian.
 
-The Open Build Service (OBS) can also be used to build packages for Debian, other than that I am unaware of any free methods for building and distributing packages for Debian.
+The Open Build Service (OBS) can also be used to build packages for Debian, other than that I am unaware of any free methods for building and distributing packages for Debian. I package the very latest Vim (and GVim) for Debian 8.x, among other distributions using the OBS. [Here][306] is where you can find my packaging files and [here][113] is the download page for my Vim package (on all the distributions I package it for, including Debian 8.x). 
 
 Debian's open-source community is one of the largest (with over 1,000 volunteer developers worldwide) and most democratic ones out there and Debian's Project Leader (sort of like the lead developer, or the president of Debian) is elected every few years (range: 1 year - 3 years) by the Debian developers themselves.
 
 Debian's ideal users are at least intermediate-level users that:
 
-* Love open-source, but want the option of installing non-free software if they choose to. If they solely want an open-source system, without even having the option of installing proprietary software from official repositories, they should install [gNewSense][306] or [Trisquel][307], which are both Free Software Foundation (FSF)-approved.
+* Love open-source, but want the option of installing non-free software if they choose to. If they solely want an open-source system, without even having the option of installing proprietary software from official repositories, they should install [gNewSense][307] or [Trisquel][308], which are both Free Software Foundation (FSF)-approved.
 * Favour stability over bleeding-edge software. Sure those that prefer bleeding-edge software can install Debian (unstable), but it is usually less bleeding-edge than Arch Linux or Gentoo Linux.
 * Are comfortable using APT. Some users find APT's syntax confusing as APT provides a few different commands, each with their own purpose and syntax. These commands include: `apt-get` (used for installing, removing and upgrading packages; also used for updating package lists), `apt-cache` (for APT cache-related actions such as searching for packages), `add-apt-repository` (for adding APT repositories to one's sources), *etc.* Those that prefer a syntactically simpler package manager may wish to use CentOS, which uses yum. I personally am comfortable using APT as I have been using it for the past four years and are just used to it.
-* Do not object to using systemd as an init system. Those with a hatred of systemd as an init system should probably try using [Devuan][308] or an older version of Debian that does not use systemd (the latest version of which and the only supported version of which, at the time of writing this post, is Debian 7 or Wheezy). Or they could use Slackware Linux, which does not use systemd and has no plans to change over in the foreseeable future.
+* Do not object to using systemd as an init system. Those with a hatred of systemd as an init system should probably try using [Devuan][309] or an older version of Debian that does not use systemd (the latest version of which and the only supported version of which, at the time of writing this post, is Debian 7 or Wheezy). Or they could use Slackware Linux, which does not use systemd and has no plans to change over in the foreseeable future.
 * Wish to support democracy in the open-source software community.
 
-Debian also has its own [MoinMoin][309]-based Wiki, known as the [*Debian Wiki*][310]. It mostly has articles pertaining to packaging, and other very Debian-specific articles. It does also have some rather brief articles on other topics like [desktop environments][311]. I personally find it less comprehensive than the *Arch Wiki* and *Gentoo Wiki*, but more comprehensive than the *Fedora Wiki*. 
+Debian also has its own [MoinMoin][310]-based Wiki, known as the [*Debian Wiki*][311]. It mostly has articles pertaining to packaging, and other very Debian-specific articles. It does also have some rather brief articles on other topics like [desktop environments][312]. I personally find it less comprehensive than the *Arch Wiki* and *Gentoo Wiki*, but more comprehensive than the *Fedora Wiki*. 
 
-Those that want a Windows-looking Debian-based distribution may want to use [Q4OS][312]. Those that prefer a macOS-looking Debian derivative should probably use [deepin][313]. 
+Those that want a Windows-looking Debian-based distribution may want to use [Q4OS][313]. Those that prefer a macOS-looking Debian derivative should probably use [deepin][314]. 
 
 {% include Layouts/clear.html %}

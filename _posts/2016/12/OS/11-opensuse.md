@@ -32,7 +32,7 @@ It is one of the most democratic Linux distributions in the world, that is, its 
 
 I should briefly mention that Novell made a deal with Microsoft in 2006, that has caused a lot of contention in the open-source community. It is supposedly to protect both companies from possible law-suits from one another, but still many open-source community members are less than pleased about this deal.{% include_relative includes/fn-inline.html no="11" %}
 
-I personally have successfully created over fifteen different packages for openSUSE using the Open Build Service, including one for [Blockify][1110] (and yes it is also built for Fedora in my OBS project) and another for [Vim][1111] (with [`vim-redhat`][1112] providing Vim for CentOS/Fedora/RHEL/Scientific Linux and [`vim-suse`][1113] for openSUSE/SLES). These packages can be found [here][1114].
+I personally have successfully created over fifteen different packages for openSUSE using the Open Build Service, including one for [Blockify][1110] (and yes it is also built for Fedora in my OBS project) and another that provides the very latest [Vim][1111] (with [`vim-redhat`][1112] providing Vim for CentOS/Fedora/RHEL/Scientific Linux and [`vim-suse`][1113] for openSUSE/SLES). The download page for my Vim package can be found [here][113]. A list of my OBS packages can be found [here][1114].
 
 The distribution is also rather unique (the only other distribution I am aware of with this capability is the related SLES distribution) in the Linux world in that it has a free online service one can use to create a custom ISO image for it. This service is known as SUSE Studio. This service was actually used to create the Gecko Linux distribution's ISO images. 
 

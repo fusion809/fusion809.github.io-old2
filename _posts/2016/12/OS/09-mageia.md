@@ -13,6 +13,5 @@ Mageia is best suited to intermediate to advanced users that:
 * Are comfortable with a fixed release model with new releases coming out roughly annually.
 * Favour stability over having the very latest software the open-source world has to offer. If you favour bleeding-edge software over stability you will likely be better suited to [OpenMandriva][902].
 
-Fedora's Copr build service can be used to build packages for Mageia 6 (presently a developmental preview release only) and Cauldron. Although it does not support building packages for the present stable release, Mageia 5. The OBS can also be configured to build packages for Mageia 5 and Cauldron. For example, my OBS project builds the very latest Vim for both Mageia 5 and Cauldron, further details can be found [here][903].  
-
+Fedora's Copr build service can be used to build packages for Mageia 6 (presently a developmental preview release only) and Cauldron. Although it does not support building packages for the present stable release, Mageia 5. The OBS can also be configured to build packages for Mageia 5 and Cauldron. For example, my OBS project builds the very latest Vim for both Mageia 5 and Cauldron, the packaging files for this can be found [here][1112] while the download page is [here][113]. 
 {% include Layouts/clear.html %}
