@@ -1,7 +1,7 @@
 ## PCLinuxOS
 {% include_relative infoboxes/12-pclinuxos.html %}
 
-[**PCLinuxOS**][1200] is a Linux distribution with fairly liberal licensing requirements and out-of-the-box support for most hardware with Linux support (including Broadcom wireless). It is unusual among Linux distributions in that it still uses the [APT-RPM][1201] (which was last updated in early 2008){% include_relative includes/fn-inline.html no="11" %} front-end for the RPM package manager. Its official repositories also include some proprietary desktop applications like RuneScape's NXT Client. It is also unusual in a few other ways:
+[**PCLinuxOS**][1200] is a Linux distribution with fairly liberal licensing requirements and out-of-the-box support for most hardware with Linux support (including Broadcom wireless). It is unusual among Linux distributions in that it still uses the [APT-RPM][1201] (which was last updated in early 2008){% include_relative includes/fn-inline.html no="12" %} front-end for the RPM package manager. Its official repositories also include some proprietary desktop applications like RuneScape's NXT Client. It is also unusual in a few other ways:
 
 * It follows a rolling release model, but is fairly conservative, in that it consists mostly of more stable (as opposed to the very latest), well-tested versions of its included software. For example, its kernel is presently of the 4.9.x series (the latest LTS release). Most rolling release distros are more bleeding-edge. Likewise until February 2017 it still used KDE Plasma 4 (despite KDE Plasma 5 being out since July 2014) and had not added Plasma 5 to its official repositories.
 * Has not adopted the systemd init system and has no intention to ever adopt it. 

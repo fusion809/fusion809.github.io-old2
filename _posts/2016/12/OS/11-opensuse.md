@@ -30,7 +30,7 @@ Tumbleweed is unusual in the Linux world, as to my knowledge, other than its own
 
 It is one of the most democratic Linux distributions in the world, that is, its development is more guided by the will of the users and developers than by an individual dictator. They have a [board][1109] for making some decisions, with the chair appointed by SUSE (or Novell, as SUSE is now a subsidiary of Novell) and the other 5 members appointed by the community. Most members of this board (except for one whom is in Portland in the U.S.) reside in central and eastern Europe. Other decisions are made by other community-guided mechanisms.
 
-I should briefly mention that Novell made a deal with Microsoft in 2006, that has caused a lot of contention in the open-source community. It is supposedly to protect both companies from possible law-suits from one another, but still many open-source community members are less than pleased about this deal.{% include_relative includes/fn-inline.html no="10" %}
+I should briefly mention that Novell made a deal with Microsoft in 2006, that has caused a lot of contention in the open-source community. It is supposedly to protect both companies from possible law-suits from one another, but still many open-source community members are less than pleased about this deal.{% include_relative includes/fn-inline.html no="11" %}
 
 I personally have successfully created over fifteen different packages for openSUSE using the Open Build Service, including one for [Blockify][1110] (and yes it is also built for Fedora in my OBS project) and another for [Vim][1111] (with [`vim-redhat`][1112] providing Vim for CentOS/Fedora/RHEL/Scientific Linux and [`vim-suse`][1113] for openSUSE/SLES). These packages can be found [here][1114].
 
