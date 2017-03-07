@@ -119,9 +119,10 @@
 [709]: http://unix.stackexchange.com/a/276072/27613
 [710]: https://wiki.gentoo.org/wiki/Main_Page
 [711]: https://github.com/fusion809/sabayon-tools
-[712]: http://www.funtoo.org/Welcome
-[713]: http://www.ututo.org/
-[714]: http://gpo.zugaina.org/
+[712]: http://www.lunar-linux.org/
+[713]: http://www.funtoo.org/Welcome
+[714]: http://www.ututo.org/
+[715]: http://gpo.zugaina.org/
 <!-- Linux Mint-->
 [800]: https://linuxmint.com/
 [801]: http://distrowatch.com/
