@@ -106,4 +106,43 @@ sys	0m3.964s
 
 as you can see, when I reinstalled `vim-common` the package was re-downloaded (even though I had just installed the package when I ran this command, so I thought, but was clearly mistaken, that it was in the DNF cache), which adds some time to the `real` time. To get a better estimate as to the actual installation time, let us take 17 seconds (the time recorded in this message as the total time taken to download the package) from the real time, getting **16.853s**. This figure I think may be an inaccurate representation of its speed as DNF is supposed to be faster than yum.
 
+On 7 March 2017 I decided to re-perform this test with DNF 2.1.0 on Mageia 6 sta2 (on advice of Neal Gompa, or Pharaoh_Atem in the #mageia IRC channel, as he suggested DNF 2.x would be faster) and I got the output:
+
+~~~bash
+Last metadata expiration check: 0:14:22 ago on Tue Mar 07 15:56:10 2017 AEST.
+Dependencies resolved.
+=============================================================================
+ Package         Arch        Version              Repository            Size
+=============================================================================
+Reinstalling:
+ vim-common      x86_64      8.0.388-1.mga6       cauldron-x86_64      4.6 M
+
+Transaction Summary
+=============================================================================
+
+Total size: 4.6 M
+Downloading Packages:
+[SKIPPED] vim-common-8.0.388-1.mga6.x86_64.rpm: Already downloaded          
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Reinstalling: vim-common-8.0.388-1.mga6.x86_64                         1/2 
+  Erasing     : vim-common-8.0.388-1.mga6.x86_64                         2/2 
+  Verifying   : vim-common-8.0.388-1.mga6.x86_64                         1/2 
+  Verifying   : vim-common-8.0.388-1.mga6.x86_64                         2/2 
+
+Reinstalled:
+  vim-common.x86_64 8.0.388-1.mga6                                           
+
+Complete!
+
+real    0m11.977s
+user    0m3.001s
+sys     0m3.114s
+~~~
+
+as you can see the time was reduced, but not enough to make it faster than the other package managers compared in this article. 
+
 {% include_relative DNF/table-2-basic-usage-examples.html %}
