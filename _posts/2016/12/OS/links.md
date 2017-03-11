@@ -121,6 +121,7 @@
 [711]: https://github.com/fusion809/sabayon-tools
 [712]: http://www.lunar-linux.org/
 [713]: http://www.funtoo.org/Welcome
+[714]: irc://chat.freenode.net/funtoo
 [714]: http://www.ututo.org/
 [715]: http://gpo.zugaina.org/
 <!-- Linux Mint-->
