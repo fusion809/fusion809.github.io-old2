@@ -123,8 +123,8 @@
 [712]: http://www.lunar-linux.org/
 [713]: http://www.funtoo.org/Welcome
 [714]: irc://chat.freenode.net/funtoo
-[714]: http://www.ututo.org/
-[715]: http://gpo.zugaina.org/
+[715]: http://www.ututo.org/
+[716]: http://gpo.zugaina.org/
 <!-- Linux Mint-->
 [800]: https://linuxmint.com/
 [801]: http://distrowatch.com/
