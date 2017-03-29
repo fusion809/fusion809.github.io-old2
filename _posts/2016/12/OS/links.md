@@ -129,6 +129,8 @@
 [718]: irc://chat.freenode.net/gentoo
 [719]: http://www.ututo.org/
 [720]: http://gpo.zugaina.org/
+[721]: https://wiki.gentoo.org/wiki/Handbook:Main_Page
+[722]: http://www.funtoo.org/Install
 <!-- Linux Mint-->
 [800]: https://linuxmint.com/
 [801]: http://distrowatch.com/

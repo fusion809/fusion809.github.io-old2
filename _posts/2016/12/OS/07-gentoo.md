@@ -35,6 +35,6 @@ Ideal Gentoo users are advanced users that:
 * May need to install obscure pieces of software on the odd occasion (not absolutely necessary, but it would suit these users especially well). As Gentoo Portage overlays are very extensive it is likely that if one requires any obscure software one will be able to find it by searching [gpo.zugaina.org][720]. I would say Gentoo is second only to Arch Linux and distros derived from it, in terms of how easy it is to get any piece of software one wants.
 * Are willing to wait a long time to setup one's system to one's liking. If one wants a desktop environment one will likely have to spend several hours (if not days) compiling the desktop environment components and their dependencies with Portage.
 
-Intermediate and even beginners may be able to use Funtoo Linux if they take full advantage of the support in the [#funtoo][717] IRC channel and the official documentation. Using Gentoo is a little more challenging to use as the Wiki guide to installation can be a little overwhelming to new users, while I personally find the Funtoo installation guide incredibly simple to walk through. 
+Intermediate and even beginners may be able to use Funtoo Linux if they take full advantage of the support in the [#funtoo][717] IRC channel and the official documentation. Using Gentoo is a little more challenging to use as the [Wiki guide to installation][721] can be a little overwhelming to new users, while I personally find the [Funtoo installation guide][722] incredibly simple to walk through. 
 
 {% include Layouts/clear.html %}
