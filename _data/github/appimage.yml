@@ -51,6 +51,7 @@ body:
     description:
            "A repository that, using Travis CI, is used to build a Emacs AppImage and upload it to Bintray."
 
+# GVim.AppImage
   - repo:
            "GVim.AppImage"
     fork:

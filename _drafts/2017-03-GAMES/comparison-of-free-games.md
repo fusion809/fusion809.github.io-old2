@@ -8,6 +8,7 @@ permalink:        /free-linux-games/
 categories:       free, games, overviews
 ---
 
+
 As a Linux user I have found it a real challenge to find games that I like. Most Linux games are second-class or worse, compared to the corresponding Windows or even macOS games. This is not surprising given that most high-quality games are proprietary games and macOS and Windows are the most attractive to proprietary software developers. This is because their market share on the desktop and laptop are far higher than that of Linux (most estimates place Linux's usage share at 1% while macOS has a market share of 10-20% and Windows of >80%), plus given macOS and Windows are proprietary operating systems usually their users are more willing to use proprietary and even paid software. Another reason for why most Linux games are second-class or worse is that most Linux-compatible games are developed as side-projects by hobbyists and not professional game developers. I intend on mentioning a wide variety of free games, including those I dislike and even those I have not really used all that much (or even at all). If you feel you have a better write up for a game covered here, or you feel I missed one, feel free to create a pull request into this post. To do so merely fork [fusion809.github.io](https://github.com/fusion809/fusion809.github.io) and edit it.
 
 ## Criteria
@@ -34,3 +35,5 @@ So far I have not found a single fix or workaround to this error besides switchi
 (3) Appeal to my personal taste in games. I like combat-oriented real-time strategy games that are not turn-based, wherein I can pick the difficulty (as to-be-honest I am pretty poor at these games, so if they are too challenging and I cannot adjust their difficulty, I will likely get bored with them), as well as selected role-playing games such as RuneScape, selected board and card games (like Chess), as well as certain arcade/racing games (e.g., SuperTuxKart). Strategy games I like are often similar to the following proprietary Windows games: [Age of Empires III](https://en.wikipedia.org/wiki/Age_of_Empires_III) (AoE 3) and [Outlive](https://en.wikipedia.org/wiki/Outlive), both of which I played before I made my switch to Linux in mid 2012.
 
 (4) High-definition games (that is, those with great graphics like 0 A.D. and RuneScape's NXT Client), but I have learnt to be happy with even lower-definition games like OpenRA, as there are only select few high-definition games that will run on Linux. Java games are rarely high-definition, so while they may fulfil criterion 2 they seldom fulfil this criterion.
+
+(5) High-quality documentation (e.g., *The RuneScape Wiki* for RuneScape) , especially if the game is not especially intuitive. 
