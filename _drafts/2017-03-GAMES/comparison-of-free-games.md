@@ -36,4 +36,9 @@ So far I have not found a single fix or workaround to this error besides switchi
 
 (4) High-definition games (that is, those with great graphics like 0 A.D. and RuneScape's NXT Client), but I have learnt to be happy with even lower-definition games like OpenRA, as there are only select few high-definition games that will run on Linux. Java games are rarely high-definition, so while they may fulfil criterion 2 they seldom fulfil this criterion.
 
-(5) High-quality documentation (e.g., *The RuneScape Wiki* for RuneScape) , especially if the game is not especially intuitive. 
+(5) High-quality documentation (e.g., *The RuneScape Wiki* for RuneScape) , especially if the game is not especially intuitive.
+
+## Open-source games
+
+### 0 A.D.
+{% include_relative %}
