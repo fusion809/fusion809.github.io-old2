@@ -13,7 +13,7 @@ I first tried it when it was the default text editor used by GNU Octave to edit 
 SciTE can be customized by editing `.properties` files or via scripting with Lua. There are no major graphical tools for customizing SciTE.
 
 ### Features
-It provides syntax-highlighting for dozens of computer languages. Support for extra languages can be added by creating `.properties` files for them.
+It provides syntax-highlighting for dozens of computer languages. Support for extra languages can be added by creating `.properties` files for them. One can also build projects in it. 
 
 ### Obtaining It
 SciTE is found in the official repositories of most Linux distributions.
