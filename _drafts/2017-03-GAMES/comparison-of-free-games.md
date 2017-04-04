@@ -36,9 +36,11 @@ So far I have not found a single fix or workaround to this error besides switchi
 
 (4) High-definition games (that is, those with great graphics like 0 A.D. and RuneScape's NXT Client), but I have learnt to be happy with even lower-definition games like OpenRA, as there are only select few high-definition games that will run on Linux. Java games are rarely high-definition, so while they may fulfil criterion 2 they seldom fulfil this criterion.
 
-(5) High-quality documentation (e.g., *The RuneScape Wiki* for RuneScape) , especially if the game is not especially intuitive.
+(5) High-quality documentation (e.g., *The RuneScape Wiki* for RuneScape), especially if the game is not especially intuitive.
 
-## Open-source games
+## 0 A.D.
+{% include Layouts/games-infobox.html width="400px" game="0 A.D." logo="0_A.D..png" screenshot="0_A.D._a21.png" screenshot_caption="Screenshot of 0 A.D. alpha 21, Ulysses" screenshot_width="400px" date="2001" basis="Age of Empires II: The Age of Kings" developers="Wildfire Games" development="alpha" license="GPLv2, MIT, MPL 2.0, <i>etc.</i>.<sup><a href='#fn:1' class='footnote'>1</a></sup>" genre="Real-time strategy" development="Alpha" language="C++" %}
 
-### 0 A.D.
-{% include_relative %}
+**0 A.D.** is a free and open-source, historic real-time strategy (RTS) game. In it, the player is the leader of an ancient civilization and they must defeat their opponents by amassing a sufficiently large military force. 0 A.D. is developed by Wildfire Games, an international team of volunteer developers.
+
+{% include_relative sections/footnotes.html %}

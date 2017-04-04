@@ -14,6 +14,7 @@ layout: default2
   <div class="post-content" itemprop="articleBody">
     {% if page.draft=="yes" %}{% include Layouts/draft.html %}{% endif %}
     {{ content }}
+    {% include Layouts/clear.html %}
     <h2>Comments</h2>
     <div id="disqus_thread"></div>
     <script>

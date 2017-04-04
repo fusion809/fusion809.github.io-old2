@@ -1,7 +1,9 @@
 # The Hornery
-This repository contains the Jekyll-powered GitHub Pages-hosted website, [*The Hornery*](https://fusion809.github.io), that is maintained by fusion809. *The Hornery* also has two subfolders powered by static site generators operating on other GitHub repositories of mine. They are:
+This repository contains the Jekyll-powered GitHub Pages-hosted website, [*The Hornery*](https://fusion809.github.io), that is maintained by fusion809. This site is dedicated to Linux and other free (not necessarily the Free Software Foundation's definition of free, just free of monetary charge) operating systems. It predominantly discusses free and open-source software, although occasionally I will mention freeware software (that is, free to use, but proprietary-licensed software). *The Hornery* also has two subfolders powered by static site generators operating on other GitHub repositories of mine. They are:
 * [/hexo-site](https://fusion809.github.io/hexo-site) (source repository: [fusion809/hexo-site](https://github.com/fusion809/hexo-site)), which is powered by [Hexo](https://hexo.io)
 * [/hubpress.io](https://fusion809.github.io/hubpress.io/) (source repository: [fusion809/hubpress.io](https://github.com/fusion809/hubpress.io)), which is powered by [HubPress](https://hubpress.io)
+
+Those interested in copyright information should see [COPYRIGHT.md](https://github.com/fusion809/fusion809.github.io/blob/master/COPYRIGHT.md). 
 
 This repo (fusion809/fusion809.github.io) can also be used for demonstration purposes on how to create a Jekyll site. When I started this site my knowledge of CSS (and SCSS), HTML, JS, YML data files and using Jekyll or any static site generator was minimal/non-existent, and it is still no better than minimal, so my ability to set up this site and maintain it with so little knowledge is a testament to how easy Jekyll makes website creation.
 
