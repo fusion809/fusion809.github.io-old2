@@ -26,11 +26,6 @@
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
-         <td class="infobox-row-title" style="width: 70px;">Founded</td>
-         <td class="infobox-row">{{ include.date }}</td>
-    </tr>
-
-    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Based on</td>
          <td class="infobox-row">{{ include.basis }}</td>
     </tr>
@@ -41,8 +36,13 @@
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
-         <td class="infobox-row-title" style="width: 70px;">License</td>
-         <td class="infobox-row">{{ include.license }}</td>
+         <td class="infobox-row-title" style="width: 70px;">{% include Layouts/abbr.md full="Stage of development" abbr="Dev. stage" %}</td>
+         <td class="infobox-row">{{ include.development }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Founded</td>
+         <td class="infobox-row">{{ include.date }}</td>
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
@@ -51,8 +51,8 @@
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
-         <td class="infobox-row-title" style="width: 70px;">{% include Layouts/abbr.md full="Stage of development" abbr="Dev. stage" %}</td>
-         <td class="infobox-row">{{ include.development }}</td>
+         <td class="infobox-row-title" style="width: 70px;">License</td>
+         <td class="infobox-row">{{ include.license }}</td>
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
