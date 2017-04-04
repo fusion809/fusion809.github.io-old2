@@ -28,7 +28,7 @@ The error was 'BadMatch (invalid parameter attributes)'.
    backtrace from your debugger if you break on the gdk_x_error() function.)
 ~~~
 
-So far I have not found a single fix or workaround to this error besides switching to the legacy Java client of RuneScape. This Java client is set to be phased out (although an exact date for when it will no longer be usable to play RuneScape has not been publicly announced) too, which adds to the irritation this error causes myself and other RuneScape users operating on Linux. I suspect if we had access to the NXT Client's source code we could probably come up with a better fix to this error. Further details on this error, for those that are interested or think they have a fix, can be found on the [Funtoo Linux bug tracker](https://bugs.funtoo.org/browse/FL-3678).
+Oddly the solution is to merely delete the `~/.runescape` file. 
 
 (2) Are easy to get and run without any major issues on all my favourite Linux distributions. I usually stick to the following distributions for gaming: Arch Linux, Fedora, Funtoo Linux, Gentoo Linux, Manjaro Linux, openSUSE Tumbleweed, Sabayon Linux and Ubuntu. Due to the diversity in my preferred set of distributions it is a fair bet than any game that runs on all of these distributions will likely run on any major distribution. The Steam platform may aid in this if the game is present in their game store, although I have had issues getting Steam to run on Ubuntu 14.04 LTS, for example. Java games are good for this, in theory, but they usually have difficulty fulfilling criterion 4. 
 
