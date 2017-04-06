@@ -7,6 +7,7 @@
 * Has not adopted the systemd init system and has no intention of ever adopting it. 
 * Follows an authoritarian governance model, with a Benevolent Dictator For Life (BDFL), Bill Reynolds (texstar). Or so I think, not certain about this as I have asked for info on this in their IRC channel but I got no reply after waiting for >5 hours. Only 9 or so other people in the channel though so that was not unexpected. 
 
+### Closing remarks
 I personally have found it a fairly buggy distribution for one not using software on the bleeding-edge. I maintain a VirtualBox VM running it, and I have had it broken before by a kernel upgrade. Plasma 5 has also rendered my VM unable to reach a usable target (either the command-line or a GUI). It is fairly beginner-friendly and is best suited for those that:
 
 * Want an out-of-the-box experience.

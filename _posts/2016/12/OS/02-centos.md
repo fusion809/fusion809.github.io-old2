@@ -7,12 +7,16 @@ CentOS is essentially like a more stable, yet old (in terms of how up-to-date it
 
 It is unusual in that it does not have out-of-the-box FUSE support, despite being a fairly [out-of-the-box][204] operating system. Aside from its kernel (which has the proprietary [binary blobs][205] in place) all the software in its official repositories is open-source, and it has strict licensing requirements for all of its included software (aside from its kernel, apparently), much like the related distribution, Fedora.
 
+### Installer
 Also similarly to Fedora, CentOS uses the Anaconda installer, although I have never had too much of a drama with CentOS's version of the Anaconda installer. Then again I usually only have problem with the Anaconda installer, not when I run in it in a virtual machine (and I have never used CentOS outside a VM), but when I run on it my actual machine. 
 
+### Packaging
 The OBS also has support for building packages for CentOS. I build the latest Vim for CentOS 5, 6 and 7 using the OBS too, [here][1112] is where the packaging files can be found and [here][113] is the download page for this package and Vim packages for other distros. Fedora's Copr also has support for building CentOS packages, with the [*Extra Packages for Enterprise Linux*][206] (EPEL) chroots enabled. Both support building packages for all presently supported releases of CentOS (so 5-7). 
 
+### Leadership
 Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="5" %}
 
+### Closing remarks
 Ideal CentOS users are at least intermediate-level users (so not beginners, unless they are fast learners) that:
 
 * Love open-source, but not enough to ditch the standard kernel in favour of the [Linux-libre][207] kernel.

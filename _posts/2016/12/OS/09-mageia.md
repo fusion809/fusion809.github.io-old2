@@ -5,6 +5,7 @@
 
 It is fairly stable but I have inadvertently broken it before in my VirtualBox VMs after a kernel upgrade.
 
+### Closing remarks
 Mageia is best suited to intermediate to advanced users that:
 
 * Love open-source, but not enough to remove the binary blobs from one's kernel.
