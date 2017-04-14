@@ -138,10 +138,11 @@
 [800]: https://linuxmint.com/
 [801]: http://distrowatch.com/
 [802]: #ubuntu
-[803]: http://zorinos.com/
-[804]: #deepin
-[805]: https://elementary.io/
-[806]: https://forums.linuxmint.com/
+[803]: https://community.linuxmint.com/tutorial/view/2
+[804]: http://zorinos.com/
+[805]: #deepin
+[806]: https://elementary.io/
+[807]: https://forums.linuxmint.com/
 <!-- Mageia-->
 [900]: http://www.mageia.org/en/
 [901]: https://wiki.mageia.org/en/URPMI

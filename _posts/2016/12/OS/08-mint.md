@@ -5,16 +5,16 @@
 
 {% include Code/coder.html line1="do-release-upgrade" %}
 
-does not reliably upgrade between discrete releases of Linux Mint (e.g., it may not reliably upgrade a Linux Mint 17.3 system to 18.1). So this is one thing that may reduce this distribution's appeal to beginners. 
+does not reliably upgrade between releases of Linux Mint (e.g., it may not reliably upgrade a Linux Mint 17.3 system to 18.1). So this is one thing that may reduce this distribution's appeal to beginners. An upgrade guide for Linux Mint can be found [here][803].
 
 ### Closing remarks
 It is ideal for users that:
 
-* Like the Cinnamon/MATE desktop environments. Cinnamon is probably one of the most Windows-like desktop environments available for Linux, so Windows users may appreciate the similarities. The MATE edition of Linux Mint is also Windows-like in appearance. [Zorin OS][803] has a more Windows-like user interface, however, and is, like Linux Mint, based on Ubuntu LTS, so may be more suitable for those that like the Windows user interface. Those that want a similar, but macOS-like in appearance, distribution should probably use [deepin][804] or [elementary OS][805]. 
+* Like the Cinnamon/MATE desktop environments. Cinnamon is probably one of the most Windows-like desktop environments available for Linux, so Windows users may appreciate the similarities. The MATE edition of Linux Mint is also Windows-like in appearance. [Zorin OS][804] has a more Windows-like user interface, however, and is, like Linux Mint, based on Ubuntu LTS, so may be more suitable for those that like the Windows user interface. Those that want a similar, but macOS-like in appearance, distribution should probably use [deepin][805] or [elementary OS][806]. 
 * Like a beginner-friendly operating system.
 * Want a distribution with rather comprehensive software repositories (so that it is easier to install any piece of software you want).
 * Favour a fairly conservative yet stable distribution, in terms of how up-to-date its software is.
 
-It also has its own set of [official support forums][806], that I have never really had to use (hence I cannot really comment on their quality). 
+It also has its own set of [official support forums][807], that I have never really had to use (hence I cannot really comment on their quality). 
 
 {% include Layouts/clear.html %}
