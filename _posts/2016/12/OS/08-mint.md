@@ -1,7 +1,11 @@
 ## Linux Mint
 {% include_relative infoboxes/08-mint.html %}
 
-[**Linux Mint**][800] is one of the most popular Linux distributions available (in fact according to [*DistroWatch*][801] it is the most popular Linux distribution). It is a [Ubuntu LTS][802] derivative that has two official editions: one with MATE (which is designed to be used by older computers) and another with Cinnamon, a desktop environment specifically developed by Linux Mint developers for use by Linux Mint. I have personally only ever tried Linux Mint in a VirtualBox VM, but from what I can tell it is very similar to Ubuntu, except it has some home-grown applications to make system management easier.
+[**Linux Mint**][800] is one of the most popular Linux distributions available (in fact according to [*DistroWatch*][801] it is the most popular Linux distribution). It is a [Ubuntu LTS][802] derivative that has two official editions: one with MATE (which is designed to be used by older computers) and another with Cinnamon, a desktop environment specifically developed by Linux Mint developers for use by Linux Mint. I have personally only ever tried Linux Mint in a VirtualBox VM, but from what I can tell it is very similar to Ubuntu, except it has some home-grown applications to make system management easier. The standard command-line upgrade mechanism of Ubuntu, I have been informed, does not reliably work with Linux Mint, namely running:
+
+{% include Code/coder.html line1="do-release-upgrade" %}
+
+does not reliably upgrade between discrete releases of Linux Mint (e.g., it may not reliably upgrade a Linux Mint 17.3 system to 18.1). So this is one thing that may reduce this distribution's appeal to beginners. 
 
 ### Closing remarks
 It is ideal for users that:

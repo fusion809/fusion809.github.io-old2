@@ -199,4 +199,5 @@
 [1514]: http://appimage.org/
 [1515]: http://flatpak.org/
 [1516]: http://snapcraft.io/
-[1517]: https://trisquel.info/
+[1517]: https://arstechnica.com/information-technology/2017/04/ubuntu-unity-is-dead-desktop-will-switch-back-to-gnome-next-year/
+[1518]: https://trisquel.info/

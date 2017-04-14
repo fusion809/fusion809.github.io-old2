@@ -11,7 +11,7 @@ It is unusual in that it does not have out-of-the-box FUSE support, despite bein
 Also similarly to Fedora, CentOS uses the Anaconda installer, although I have never had too much of a drama with CentOS's version of the Anaconda installer. Then again I usually only have problem with the Anaconda installer, not when I run in it in a virtual machine (and I have never used CentOS outside a VM), but when I run on it my actual machine. 
 
 ### Packaging
-The OBS also has support for building packages for CentOS. I build the latest Vim for CentOS 5, 6 and 7 using the OBS too, [here][1112] is where the packaging files can be found and [here][113] is the download page for this package and Vim packages for other distros. Fedora's Copr also has support for building CentOS packages, with the [*Extra Packages for Enterprise Linux*][206] (EPEL) chroots enabled. Both support building packages for all presently supported releases of CentOS (so 5-7). 
+The OBS also has support for building packages for CentOS. I build the latest Vim for CentOS 5, 6 and 7 using the OBS too, [here][1112] is where the packaging files can be found and [here][113] is the download page for this package and Vim packages for other distros. Fedora's Copr also has support for building CentOS packages, with the [*Extra Packages for Enterprise Linux*][206] (EPEL) chroots enabled. Both support building packages for all presently supported releases of CentOS (so 6 and 7). 
 
 ### Leadership
 Decisions are made by a consensus reached by its own governing board.{% include_relative includes/fn-inline.html no="5" %}
