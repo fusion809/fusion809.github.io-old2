@@ -9,7 +9,7 @@ Ubuntu, by default, does not come with any proprietary software that I am aware 
 * [Edubuntu][1501], which only exists for LTS releases of Ubuntu. It is education-oriented, primarily intended for children.
 * [Kubuntu][1502] (using KDE)
 * [Lubuntu][1503] (using LXDE)
-* [Ubuntu GNOME][1504] (using GNOME)
+* [Ubuntu GNOME][1504] (using GNOME), which is to become the default edition in April 2018 with the release of Ubuntu 18.04.
 * [Ubuntu Kylin][1505], which is intended for Chinese Linux users due to it complying with the Chinese government procurement regulations.
 * [Ubuntu MATE][1506] (using MATE)
 * [Xubuntu][1507] (using Xfce)
@@ -20,7 +20,7 @@ Ubuntu is oriented towards both desktop and server users, and has even been port
 Like Fedora and openSUSE, Ubuntu has its own mechanism by which users can create and disseminate their own custom packages, namely via the Canonical Ltd. owned website [Launchpad][1509]. Repositories setup using this website are called Personal Packaging Archives (PPAs). I personally have managed to setup two working PPAs, one for [Geany][1510], the lightweight GTK-based IDE, and another for [GNU Octave][1511]. I have real difficulties building my own custom Debian packages due to challenges related to writing the packaging source files (like the Debian rules and control files), and I only managed to create these two working PPAs via slightly modifying existing packaging files I found online. The OBS can also be used for packaging Ubuntu packages and distributing them. For example, I package the latest Vim using the OBS for Ubuntu 14.04/16.04/16.10, [here][306] are my packaging files (for both Debian and Ubuntu) and [here][113] is the download page for this and my other Vim packages. 
 
 ### Reputation
-Canonical Ltd. has a reputation in the open-source community, of not collaborating with upstream projects on their solutions (to problems facing the open-source community) and instead substituting their own. This has lead to some anger in open-source circles. For example, instead of collaborating on the development of the [Wayland][1512] display protocol as a replacement for the old, deprecated Xorg server, they decided to provide their own replacement, [Mir][1513]. Likewise instead of working with upstream projects on their cross-distribution packaging formats (like [AppImages][1514]) and [Flatpaks][1515] they decided to create their own, [Snaps][1516]. In April 2017 it was [announced][1517] that Canonical was ditching Unity 8's development and hence also the Mir display server.
+Canonical Ltd. has a reputation in the open-source community, of not collaborating with upstream projects on their solutions (to problems facing the open-source community) and instead substituting their own. This has lead to some anger in open-source circles. For example, instead of collaborating on the development of the [Wayland][1512] display protocol as a replacement for the old, deprecated Xorg server, they decided to provide their own replacement, [Mir][1513]. Likewise instead of working with upstream projects on their cross-distribution packaging formats (like [AppImages][1514]) and [Flatpaks][1515] they decided to create their own, [Snaps][1516]. In April 2017 it was [announced][1517] that Canonical was ditching Unity 8's development and hence also the Mir display server, in favour of GNOME and Wayland.
 
 ### Closing remarks
 Ubuntu is perhaps best for users that:
