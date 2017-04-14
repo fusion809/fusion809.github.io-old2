@@ -13,4 +13,4 @@ with the following extra (on top of the Portage tree, of course) overlays enable
 * [`grub2-themes`](https://github.com/gentoo/grub2-themes-overlay)
 * [`steam-overlay`](https://github.com/anyc/steam-overlay)
 
-and it returned: 
+and it returned: [this list](https://github.com/fusion809/fusion809.github.io/blob/master/_drafts/2017-03-GAMES/games-list-gentoo.txt) which is over 1,100 lines long, which corresponds to over 1,100 separate games! Beware, however, that as said in the ["*A Comparison of Major Free Operating Systems*"](/comparison-major-free-operating-systems/) post the Portage tree and these extra overlays are riddled with proprietary and even paid software so not all these games will be free. 
