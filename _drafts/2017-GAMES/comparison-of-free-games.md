@@ -12,6 +12,7 @@ categories:       free, games, overviews
 {% include_relative 02-criteria.md %}
 {% include_relative 0ad.md %}
 {% include_relative alienarena.md %}
+{% include_relative openra.md %}
 {% include_relative urbanterror.md %}
 
 {% include_relative footnotes.html %}
