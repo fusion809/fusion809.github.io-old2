@@ -68,4 +68,20 @@
         <td class="infobox-row-title" style="width: 70px;">Written in</td>
         <td class="infobox-row">{{ include.language }}</td>
     </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="title4" style="{% if include.width %}{{ include.width }}{% else %}300px{% endif %}" colspan="2">External links</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Website</td>
+         <td class="infobox-row">{{ include.website }}</td>
+    </tr>
+
+    {% if include.wiki %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">Wiki</td>
+         <td class="infobox-row">{{ include.wiki }}</td>
+    </tr>
+    {% endif %}
 </table>
