@@ -32,10 +32,12 @@
     </tr>
     {% endif %}
 
+    {% if include.developers %}
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Developer(s)</td>
          <td class="infobox-row">{{ include.developers }}</td>
     </tr>
+    {% endif %}
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">{% include Layouts/abbr.md full="Stage of development" abbr="Dev. stage" %}</td>
@@ -62,6 +64,11 @@
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">License</td>
          <td class="infobox-row">{{ include.license }}</td>
+    </tr>
+
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;"><abbr title="Supported platforms. Linux is not listed if the game has support for both x86 and x86-64 Linux as it is sort of a given">Platform(s)</abbr></td>
+         <td class="infobox-row">{{ include.platforms }}</td>
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">

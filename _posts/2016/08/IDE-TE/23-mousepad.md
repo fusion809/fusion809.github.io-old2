@@ -2,7 +2,7 @@
 {% include Links/image.html image="text-editors/Mousepad-under-Moksha.png" description="Mousepad 0.4.0 running under Moksha" float="none" width="1130px" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="Mousepad" language="C." repo="codebrainz/mousepad" focus="Simple text editor." developers="Xfce Development Team." license="<a href='https://github.com/codebrainz/mousepad/blob/master/COPYING' link='_blank'>GPLv2</a>." %}
+{% include Infoboxes/editor.html editor="Mousepad" language="C." repo="codebrainz/mousepad" focus="Simple text editor." developers="Xfce Development Team." license="<a href='https://github.com/codebrainz/mousepad/blob/master/COPYING' link='_blank'>GPLv2</a>." %}
 [**Mousepad**](http://git.xfce.org/apps/mousepad/) is a core application of the Xfce desktop environment, that was originally forked from Leafpad. Like Leafpad it is fairly lightweight, but unlike Leafpad, Mousepad can be customized and has a few basic features that are absent from Leafpad, such as syntax highlighting support for a few computer languages.
 
 {% include Layouts/clear.html %}<br/>

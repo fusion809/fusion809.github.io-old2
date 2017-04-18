@@ -2,7 +2,7 @@
 {% include Links/image.html image="Komodo/Komodo-Edit-9.3.1.png" width="1130px" float="none" description="Komodo Edit 9.3.1 running under Manjaro Linux" %}
 
 ### Background
-{% include Layouts/editor-infobox.html logo="komodo.png" language="C, C++, JavaScript, Python." date="November 2007." developers="ActiveState." license="<a href='https://github.com/Komodo/KomodoEdit/blob/master/LICENSE.txt' link='_blank'>MPLv1.1</a>." repo="Komodo/KomodoEdit" focus="General-purpose text editor." %}
+{% include Infoboxes/editor.html logo="komodo.png" language="C, C++, JavaScript, Python." date="November 2007." developers="ActiveState." license="<a href='https://github.com/Komodo/KomodoEdit/blob/master/LICENSE.txt' link='_blank'>MPLv1.1</a>." repo="Komodo/KomodoEdit" focus="General-purpose text editor." %}
 [**Komodo Edit**](http://komodoide.com/komodo-edit/) is a free and open-source text editor developed by ActiveState that is based on the Mozilla Platform. ActiveState also develops a proprietary IDE based on Komodo Edit called [Komodo IDE](https://en.wikipedia.org/wiki/Komodo_IDE). It supports several popular computer languages, including: Bash, C, C++, C#, CoffeeScript, CSS, Go, HTML, JavaScript, Less, Markdown, Perl, PHP, Python, Python3, *etc.*
 
 {% include Layouts/clear.html %}<br/>

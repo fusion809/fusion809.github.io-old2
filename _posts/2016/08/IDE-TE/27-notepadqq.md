@@ -2,7 +2,7 @@
 {% include Links/image.html image="text-editors/Notepadqq-0.53.0-Ubuntu-16.04.png" width="1130px" float="none" description="Notepadqq 0.53 running on Ubuntu 16.04" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="Notepadqq" date="2013." developers="Daniel Di Sarli and others." country="Italy." license="GPLv3." language="C++." repo="notepadqq/notepadqq" logo="notepadqq.svg" %}
+{% include Infoboxes/editor.html editor="Notepadqq" date="2013." developers="Daniel Di Sarli and others." country="Italy." license="GPLv3." language="C++." repo="notepadqq/notepadqq" logo="notepadqq.svg" %}
 [**Notepadqq**](http://notepadqq.altervista.org/wp/) is a lightweight text editor built using the Qt widget toolkit. It is designed to be a Linux-compatible equivalent to the Notepad++ text editor. It is still in beta development, and still has not had a "stable" release. I have found it fairly buggy myself, especially when opening up folders in it (as it has a tendency to freeze on me). Despite this it has support for a wide variety of different programming languages. Last point worth mentioning is that its development is donation-funded.
 
 {% include Layouts/clear.html %}

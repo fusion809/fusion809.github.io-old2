@@ -2,7 +2,7 @@
 {% include Links/image.html image="IDEs/LightTable-0.8.1.png" width="1130px" float="none" description="LightTable 0.8.1" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="LightTable" date="April 2012." language="ClojureScript." repo="LightTable/LightTable" license="<a href='https://github.com/LightTable/LightTable/blob/master/LICENSE.md' link='_blank'>MIT</a>." developers="<a href='https://github.com/LightTable/LightTable/graphs/contributors' link='_blank'>LightTable Development Team</a>." logo="lighttable.png" focus="Web development IDE." %}
+{% include Infoboxes/editor.html editor="LightTable" date="April 2012." language="ClojureScript." repo="LightTable/LightTable" license="<a href='https://github.com/LightTable/LightTable/blob/master/LICENSE.md' link='_blank'>MIT</a>." developers="<a href='https://github.com/LightTable/LightTable/graphs/contributors' link='_blank'>LightTable Development Team</a>." logo="lighttable.png" focus="Web development IDE." %}
 **LightTable** is a open-source IDE that is oriented towards web development. It is built on the Electron framework, and written in ClojureScript.
 
 {% include Layouts/clear.html %}<br/>

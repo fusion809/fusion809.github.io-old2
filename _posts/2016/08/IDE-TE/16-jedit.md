@@ -2,7 +2,7 @@
 {% include Links/image.html image="text-editors/jEdit-screenshot.png" description="jEdit 5.2.0 running under Moksha" width="1130px" float="none" %}
 
 ### Background
-{% include Layouts/editor-infobox.html editor="jEdit" sf="jedit" date="1998." developers="jEdit project." language="Java." focus="General-purpose text editor." license="GPLv2." logo="jedit.png" %}
+{% include Infoboxes/editor.html editor="jEdit" sf="jedit" date="1998." developers="jEdit project." language="Java." focus="General-purpose text editor." license="GPLv2." logo="jedit.png" %}
 [**jEdit**](http://www.jedit.org/) is a Java-based text editor that began life in 1998, when Slava Pestov started developing it. Pestov later left the project in 2006, when he handed the reigns to the free software community. jEdit provides syntax highlighting for dozens of computer languages so far, and can be customized using scripts written in a variety of different programming languages such as JavaScript and Jython. As it is written in Java it can run on any Java-capable platform, including Linux.
 
 {% include Layouts/clear.html %}<br/>
