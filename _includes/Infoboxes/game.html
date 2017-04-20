@@ -82,6 +82,27 @@
          <td class="title4" style="{% if include.width %}{{ include.width }}{% else %}300px{% endif %}" colspan="2">External links</td>
     </tr>
 
+    {% if include.github %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">GitHub</td>
+         <td class="infobox-row"><a href='https://github.com/{{ include.github }}' link="_blank">{{ include.github }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if include.irc %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">IRC</td>
+         <td class="infobox-row"><a href='https://kiwiirc.com/client/irc%3A%2F%2Firc.{% if include.irc-server %}{{ include.irc-server }}{% else %}freenode.net{% endif %}{{ include.irc }}' link="_blank">{{ include.irc }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if include.sf %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">SourceForge</td>
+         <td class="infobox-row"><a href="https://sourceforge.net/projects/{{ include.sf }}" link="_blank">{{ include.sf }}</a></td>
+    </tr>
+    {% endif %}
+
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}300px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">Website</td>
          <td class="infobox-row">{{ include.website }}</td>

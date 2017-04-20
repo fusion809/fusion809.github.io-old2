@@ -32,10 +32,15 @@ table.infobox-icon, td.infobox-icon, tr.infobox-icon {
 }
 
 .infobox-row {
-  background-color: $infobox-bg-color;
-  font-size: 12px;
-  border: 1px solid #222;
-  padding: 2px;
+    background-color: $infobox-bg-color;
+    font-size: 12px;
+    border: 1px solid #222;
+    padding: 2px;
+}
+
+.infobox-row a {
+    color: #11f;
+    font-size: 12px;
 }
 
 .infobox-header {
