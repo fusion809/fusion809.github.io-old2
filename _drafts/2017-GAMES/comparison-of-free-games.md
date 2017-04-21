@@ -13,6 +13,8 @@ categories:       free, games, overviews
 {% include_relative 0ad.md %}
 {% include_relative alienarena.md %}
 {% include_relative boswars.md %}
+{% include_relative freeciv.md %}
+{% include_relative freecol.md %}
 {% include_relative freedroidrpg.md %}
 {% include_relative openra.md %}
 {% include_relative supertux.md %}

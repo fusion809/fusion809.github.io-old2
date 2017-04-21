@@ -1,0 +1,19 @@
+## Freeciv
+{% include Infoboxes/game.html game="Freeciv" width="400px" date="November 1995" genre="Turn-based strategy" license="GPLv3" basis="Civilization II" logo="Freeciv.png" logo_width="100px" screenshot="Freeciv-2.5.6.png" screenshot_width="400px" screenshot_caption="Screenshot of <i>Freeciv</i> 2.5.6" development="Post-release" language="Standalone: C, C++, Lua and Python. Web-based: Java, JavaScript and Python." website="<a href='http://freeciv.org/' link='_blank'>freeciv.org</a>" wiki="<a href='http://freeciv.wikia.com/wiki/Main_Page' link='_blank'>freeciv.wikia.com</a>" official-wiki="Yes" platforms="FreeBSD, macOS and Windows NT" sf="freeciv" github="freeciv" irc="#freeciv" %}
+
+***Freeciv*** is a free and open-source turn-based strategy (TBS) game that resembles early versions of Sid Meier's Civilization. Its graphics are of low-quality and it supports both 2D and 3D graphics. In it users build their own civilization and fight opposing teams. I personally have never seen the appeal to TBS games, so I have hardly used Freeciv. It has both a standalone client and a web-based client through which one can play the game.
+
+### Availability
+Distributions with a *Freeciv* package in their official repositories include:
+
+* {% include Packages/archlinux.html no="1" repo="extra" arch="x86_64" package="freeciv" %}
+* {% include Packages/centos.html %}
+* {% include Packages/debian.html no="1" package="freeciv" %}
+* {% include Packages/fedora.html no="1" package="freeciv" %}
+* {% include Packages/gentoo.html no="1" package="games-strategy/freeciv" %}
+* Mageia has two packages belonging to Freeciv: {% include Packages/mageia.html package="freeciv-client" %} and {% include Packages/mageia.html package="freeciv-server" puncr="." %}
+* {% include Packages/opensuse.html no="1" package="freeciv" %}, available for Leap 42.2 and Tumbleweed. Leap 42.1 does not have an official Freeciv package, but there is a package for Freeciv in the unofficial `games` repository. 
+* {% include Packages/sabayon.html no="1" package="games-strategy/freeciv" %}
+* {% include Packages/ubuntu.html no="1" package="freeciv" %}
+
+{% include Layouts/clear.html %}
