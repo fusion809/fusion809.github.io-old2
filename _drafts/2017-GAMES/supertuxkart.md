@@ -8,7 +8,7 @@ This is a game I have personally found rather enjoyable, although I would say it
 ### Availability
 *SuperTuxKart* is officially distributed by its development team as a cross-distribution binary tarball. It is also on [Steam Greenlight](https://steamcommunity.com/sharedfiles/filedetails/?id=850895445), so it is possible one day it will be available on Steam. It is also available from the official repositories of most modern Linux distributions, including:
 
-* {% include Packages/archlinux.html repo="community" arch="x86_64" package="supertuxkart" %}
+* {% include Packages/archlinux.html package="supertuxkart" %}
 * {% include Packages/debian.html package="supertuxkart" %}
 * {% include Packages/fedora.html package="supertuxkart" %}
 * {% include Packages/gentoo.html package="games-action/supertuxkart" %}

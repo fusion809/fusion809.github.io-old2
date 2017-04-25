@@ -7,20 +7,22 @@ It can be played as a single player, or one can play against other players. In s
 
 It utilizes its very own Pyrogenesis game engine; both *0 A.D.* and the Pyrogenesis game engine are written in C++. *0 A.D.*'s graphics are perhaps the best of any open-source Linux-compatible game I have ever seen. In fact, its graphics rival that of many proprietary games like *Age of Empires III* (AoE III) and *RuneScape*. I would argue that *0 A.D.*'s graphics are superior to that of AoE III, as I have used both and found *0 A.D.*'s graphics better. *0 A.D.* is developed by Wildfire Games, an international team of volunteer developers, funded by Software in the Public Interest, Inc. (SPI), a U.S. non-profit organization that also funds several other open-source software projects including Arch Linux, Debian and LibreOffice.{% include_relative fn-inline.html no="3" %}
 
+Most Linux distributions split *0 A.D.* into two packages, that are often named `0ad` and `0ad-data`, respectively. The `0ad` package usually provides the game engine while `0ad-data` provides the game content. Together these two packages are usually over 1 GB in installed size on most distributions. 
+
 ### Availability
 *0 A.D.* is one of the easiest games to get on Linux, the majority of Linux distributions have a *0 A.D.* package in their official repositories (usually named `0ad`, with game content placed in a separate package called `0ad-data`), including:{% include_relative fn-inline.html no="4" puncr="," %}{% include_relative fn-inline.html no="5" %}
 
-* {% include Packages/archlinux.html no="1" repo="community" arch="x86_64" package="0ad" puncr="," %} *0 A.D.* also has an [unofficial package](https://aur.archlinux.org/packages/0ad-git) in its Arch User Repository that builds *0 A.D.* from the latest git snapshot. 
+* {% include Packages/archlinux.html package="0ad" puncr="," %} *0 A.D.* also has an [unofficial package](https://aur.archlinux.org/packages/0ad-git) in its Arch User Repository that builds *0 A.D.* from the latest git snapshot.
 * CentOS 7, the [EPEL repository of CentOS 7](https://dl.fedoraproject.org/pub/epel/7/x86_64/0/) provides the very latest version (alpha 21) of *0 A.D.*
-* {% include Packages/debian.html no="1" package="0ad" puncr="," %} Debian 8 (Jessie) even has the latest *0 A.D.* in its backport repository. The latest *0 A.D.* is also in the testing and unstable repositories. The oldstable (Wheezy), oldstable-backports and stable (Jessie) repositories contain outdated *0 A.D.* releases. 
-* deepin, the official repositories presently house the second-latest release of *0 A.D.*, alpha 20. 
-* {% include Packages/fedora.html no="1" package="0ad" puncr="," %} presently the latest *0 A.D.* release is in the repositories of all supported Fedora releases (24, 25, 26 and rawhide). 
-* {% include Packages/gentoo.html no="1" package="games-strategy/0ad" puncr="," %} the latest and second-latest releases of *0 A.D.* are presently in testing (that is, have `~` in their keyword field for both `x86` and `amd64`). 
-* {% include Packages/mageia.html no="1" package="0ad" puncr="," %} the fairly old releases alpha 18 and 19 are available for Mageia 5. 
-* Manjaro Linux, has the latest *0 A.D.* available from its official repositories. 
-* {% include Packages/opensuse.html no="1" package="0ad" puncr="," %} the official repositories of Tumbleweed has the latest *0 A.D.*, but Leap releases 42.1 and 42.2 do not have 0 A.D. in their official repositories, although the unofficial `games` repository does have the latest *0 A.D.* for these two Leap releases. 
+* {% include Packages/debian.html package="0ad" puncr="," %} Debian 8 (Jessie) even has the latest *0 A.D.* in its backport repository. The latest *0 A.D.* is also in the testing and unstable repositories. The oldstable (Wheezy), oldstable-backports and stable (Jessie) repositories contain outdated *0 A.D.* releases.
+* deepin, the official repositories presently house the second-latest release of *0 A.D.*, alpha 20.
+* {% include Packages/fedora.html package="0ad" puncr="," %} presently the latest *0 A.D.* release is in the repositories of all supported Fedora releases (24, 25, 26 and rawhide).
+* {% include Packages/gentoo.html package="games-strategy/0ad" puncr="," %} the latest and second-latest releases of *0 A.D.* are presently in testing (that is, have `~` in their keyword field for both `x86` and `amd64`).
+* {% include Packages/mageia.html package="0ad" puncr="," %} the fairly old releases alpha 18 and 19 are available for Mageia 5.
+* Manjaro Linux, has the latest *0 A.D.* available from its official repositories.
+* {% include Packages/opensuse.html package="0ad" puncr="," %} the official repositories of Tumbleweed has the latest *0 A.D.*, but Leap releases 42.1 and 42.2 do not have 0 A.D. in their official repositories, although the unofficial `games` repository does have the latest *0 A.D.* for these two Leap releases.
 * [PCLinuxOS](http://rpm.pbone.net/index.php3/stat/4/idpl/34712537/dir/pclinuxos/com/0ad-0.0.21-1pclos2016.x86_64.rpm.html), which presently has the latest *0 A.D.*
-* {% include Packages/sabayon.html no="1" package="games-strategy/0ad" puncr="," %} presently has the latest *0 A.D.* available from its official repositories.  
-* {% include Packages/ubuntu.html no="1" package="0ad" puncr="," %} only the latest stable release of Ubuntu, Zesty (17.04), has the latest *0 A.D.* release in its official repositories. 
+* {% include Packages/sabayon.html package="games-strategy/0ad" puncr="," %} presently has the latest *0 A.D.* available from its official repositories.  
+* {% include Packages/ubuntu.html package="0ad" puncr="," %} only the latest stable release of Ubuntu, Zesty (17.04), has the latest *0 A.D.* release in its official repositories.
 
 {% include Layouts/clear.html %}

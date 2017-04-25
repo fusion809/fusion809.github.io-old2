@@ -6,7 +6,7 @@
 ### Availability
 FreeCol is ubiquitous in the Linux world and found in the official repositories of most distributions. Distributions with a *Freeciv* package in their official repositories include:
 
-* {% include Packages/archlinux.html repo="extra" arch="x86_64" package="freeciv" %}
+* {% include Packages/archlinux.html repo="extra" package="freeciv" %}
 * {% include Packages/centos.html %}
 * {% include Packages/debian.html package="freeciv" %}
 * {% include Packages/fedora.html package="freeciv" %}

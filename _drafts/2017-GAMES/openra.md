@@ -8,7 +8,7 @@
 ### Availability
 Distributions with an *OpenRA* package in their official repository(ies) include:
 
-* {% include Packages/archlinux.html repo="community" arch="any" package="openra" %}
+* {% include Packages/archlinux.html arch="any" package="openra" %}
 * {% include Packages/mageia.html package="openra" %}
 
 while:

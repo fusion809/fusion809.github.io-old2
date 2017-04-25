@@ -6,7 +6,7 @@
 ### Availability
 It is available from the official repositories of:
 
-* {% include Packages/archlinux.html repo="community" arch="x86_64" package="urbanterror" %}
+* {% include Packages/archlinux.html package="urbanterror" %}
 * {% include Packages/gentoo.html package="games-fps/urbanterror" %}
 * {% include Packages/mageia.html package="urbanterror" %}
 * {% include Packages/sabayon.html package="games-fps/urbanterror" %}

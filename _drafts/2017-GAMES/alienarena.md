@@ -8,7 +8,7 @@ The latest release of *Alien Arena* was in September 2013.{% include_relative fn
 ### Availability
 Slightly fewer distributions have official packages for *Alien Arena* than for *0 A.D.* Those that do have official packages for *Alien Arena* include:
 
-* {% include Packages/archlinux.html repo="community" arch="x86_64" package="alienarena" %}
+* {% include Packages/archlinux.html package="alienarena" %}
 * {% include Packages/debian.html package="alien-arena" %}
 * {% include Packages/fedora.html package="alienarena" %}
 * {% include Packages/gentoo.html package="games-fps/alienarena" %}

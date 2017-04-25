@@ -6,7 +6,7 @@
 ### Availability
 The following distributions have a package for *FreeCol* in their official repositories:
 
-* {% include Packages/archlinux.html repo="community" arch="x86_64" package="freecol" %}
+* {% include Packages/archlinux.html package="freecol" %}
 * {% include Packages/debian.html package="freecol" %}
 * {% include Packages/fedora.html package="freecol" %}
 * {% include Packages/gentoo.html package="games-strategy/freecol" %}

@@ -8,7 +8,7 @@ It is one of my favourite games, as while it is simple on paper it can be an ent
 ### Availability
 SuperTux is a fairly ubiquitous game in the Linux world. Distributions with a *SuperTux* package in their official repository(ies) include:
 
-* {% include Packages/archlinux.html repo="community" arch="x86_64" package="supertux" %}
+* {% include Packages/archlinux.html package="supertux" %}
 * {% include Packages/centos.html package="supertux" epel="6" %} although CentOS 7 does not.
 * {% include Packages/debian.html package="supertux" %}
 * {% include Packages/fedora.html package="supertux" %}
