@@ -6,19 +6,19 @@
 ### Availability
 Distributions with a *FreedroidRPG* package in their official repository(ies) include:
 
-* {% include Packages/archlinux.html no="1" repo="community" arch="x86_64" package="freedroidrpg" %}
-* {% include Packages/debian.html no="1" package="freedroidrpg" %}
-* {% include Packages/fedora.html no="1" package="freedroidrpg" %}
-* {% include Packages/gentoo.html no="1" package="games-rpg/freedroidrpg" %}
-* {% include Packages/mageia.html no="1" package="freedroidrpg" %}
-* {% include Packages/sabayon.html no="1" package="games-rpg/freedroidrpg" %}
-* {% include Packages/ubuntu.html no="1" package="freedroidrpg" %}
+* {% include Packages/archlinux.html repo="community" arch="x86_64" package="freedroidrpg" %}
+* {% include Packages/debian.html package="freedroidrpg" %}
+* {% include Packages/fedora.html package="freedroidrpg" %}
+* {% include Packages/gentoo.html package="games-rpg/freedroidrpg" %}
+* {% include Packages/mageia.html package="freedroidrpg" %}
+* {% include Packages/sabayon.html package="games-rpg/freedroidrpg" %}
+* {% include Packages/ubuntu.html package="freedroidrpg" %}
 
 while:
 
 * CentOS
 * openSUSE
 
-do not have a FreedroidRPG package in their official repository(ies). openSUSE does have an outdated version of FreedroidRPG (0.15.1, when 0.16.1 is the latest as of 19 April 2017) in its unofficial `games` repository. 
+do not have a FreedroidRPG package in their official repository(ies). openSUSE does have an outdated version of FreedroidRPG (0.15.1, when 0.16.1 is the latest as of 19 April 2017) in its unofficial `games` repository.
 
 {% include Layouts/clear.html %}

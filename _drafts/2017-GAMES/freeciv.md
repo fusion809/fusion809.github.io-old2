@@ -6,15 +6,15 @@
 ### Availability
 FreeCol is ubiquitous in the Linux world and found in the official repositories of most distributions. Distributions with a *Freeciv* package in their official repositories include:
 
-* {% include Packages/archlinux.html no="1" repo="extra" arch="x86_64" package="freeciv" %}
+* {% include Packages/archlinux.html repo="extra" arch="x86_64" package="freeciv" %}
 * {% include Packages/centos.html %}
-* {% include Packages/debian.html no="1" package="freeciv" %}
-* {% include Packages/fedora.html no="1" package="freeciv" %}
-* {% include Packages/gentoo.html no="1" package="games-strategy/freeciv" %}
-* Mageia has two packages belonging to Freeciv: {% include Packages/mageia.html package="freeciv-client" %} and {% include Packages/mageia.html package="freeciv-server" puncr="." %}
-* {% include Packages/opensuse.html no="1" package="freeciv" %}, available for Leap 42.2 and Tumbleweed. Leap 42.1 does not have an official Freeciv package, but there is a package for Freeciv in the unofficial `games` repository. 
-* PCLinuxOS on which its package name is [freeciv-client](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/freeciv-client-2.5.3-1pclos2016.x86_64.rpm.html) and [freeciv-server](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/freeciv-server-2.5.3-1pclos2016.x86_64.rpm.html). 
-* {% include Packages/sabayon.html no="1" package="games-strategy/freeciv" %}
-* {% include Packages/ubuntu.html no="1" package="freeciv" %}
+* {% include Packages/debian.html package="freeciv" %}
+* {% include Packages/fedora.html package="freeciv" %}
+* {% include Packages/gentoo.html package="games-strategy/freeciv" %}
+* Mageia has two packages belonging to Freeciv: {% include Packages/mageia.html no="1" package="freeciv-client" %} and {% include Packages/mageia.html no="1" package="freeciv-server" puncr="." %}
+* {% include Packages/opensuse.html package="freeciv" %}, available for Leap 42.2 and Tumbleweed. Leap 42.1 does not have an official Freeciv package, but there is a package for Freeciv in the unofficial `games` repository.
+* PCLinuxOS on which its package name is [freeciv-client](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/freeciv-client-2.5.3-1pclos2016.x86_64.rpm.html) and [freeciv-server](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/freeciv-server-2.5.3-1pclos2016.x86_64.rpm.html).
+* {% include Packages/sabayon.html package="games-strategy/freeciv" %}
+* {% include Packages/ubuntu.html package="freeciv" %}
 
 {% include Layouts/clear.html %}

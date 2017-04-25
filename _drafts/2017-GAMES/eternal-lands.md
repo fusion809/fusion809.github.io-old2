@@ -7,8 +7,8 @@
 ### Availability
 *Eternal Lands* is less ubiquitous in the Linux world than 0 A.D. or SuperTux, although a universal shell script installer exists for it on Linux and can be downloaded from the [*Eternal Lands* download page](http://www.eternal-lands.com/page/download.php). A package for *Eternal Lands* is available from the official repositories of the following Linux distributions:
 
-* {% include Packages/gentoo.html no="1" package="games-rpg/eternal-lands" %}, although the official repositories only provide the slightly outdated 1.9.3 version of Eternal Lands (where 1.9.4 is available).
-* {% include Packages/sabayon.html no="1" package="games-rpg/eternal-lands" %}, Sabayon's package is built from the outdated 1.9.3 ebuild in the Portage tree.
+* {% include Packages/gentoo.html package="games-rpg/eternal-lands" %}, although the official repositories only provide the slightly outdated 1.9.3 version of Eternal Lands (where 1.9.4 is available).
+* {% include Packages/sabayon.html package="games-rpg/eternal-lands" %}, Sabayon's package is built from the outdated 1.9.3 ebuild in the Portage tree.
 
 and it is not available for the following distributions, from their official repositories anyway:
 

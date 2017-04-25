@@ -6,10 +6,10 @@
 ### Availability
 It is available from the official repositories of:
 
-* {% include Packages/archlinux.html no="1" repo="community" arch="x86_64" package="urbanterror" %}
-* {% include Packages/gentoo.html no="1" package="games-fps/urbanterror" %}
-* {% include Packages/mageia.html no="1" package="urbanterror" %}
-* {% include Packages/sabayon.html no="1" package="games-fps/urbanterror" %}
+* {% include Packages/archlinux.html repo="community" arch="x86_64" package="urbanterror" %}
+* {% include Packages/gentoo.html package="games-fps/urbanterror" %}
+* {% include Packages/mageia.html package="urbanterror" %}
+* {% include Packages/sabayon.html package="games-fps/urbanterror" %}
 
 While it is not available from the official repositories of:
 
@@ -19,4 +19,4 @@ While it is not available from the official repositories of:
 * openSUSE
 * Ubuntu
 
-this is not surprising as CentOS, Debian, Fedora, openSUSE and Ubuntu have largely open-source only repositories, although in the case of Debian and Ubuntu proprietary device driver packages do exist in their official repositories. 
+this is not surprising as CentOS, Debian, Fedora, openSUSE and Ubuntu have largely open-source only repositories, although in the case of Debian and Ubuntu proprietary device driver and firmware packages exist in their official repositories.

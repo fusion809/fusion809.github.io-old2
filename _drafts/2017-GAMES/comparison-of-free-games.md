@@ -18,6 +18,7 @@ categories:       free, games, overviews
 {% include_relative freecol.md %}
 {% include_relative freedroidrpg.md %}
 {% include_relative openra.md %}
+{% include_relative runescape.md %}
 {% include_relative supertux.md %}
 {% include_relative supertuxkart.md %}
 {% include_relative urbanterror.md %}
