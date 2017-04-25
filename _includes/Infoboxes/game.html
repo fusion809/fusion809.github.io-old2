@@ -69,7 +69,7 @@
     </tr>
 
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
-         <td class="infobox-row-title" style="width: 70px;"><abbr title="Supported platforms. Linux is not listed if the game has support for both x86 and x86-64 Linux as it is sort of a given">Platform(s)</abbr></td>
+         <td class="infobox-row-title" style="width: 70px;"><abbr title="Supported platforms. Linux is not listed as it is sort of a given">Platform(s)</abbr></td>
          <td class="infobox-row">{{ include.platforms }}</td>
     </tr>
 
@@ -86,6 +86,13 @@
     <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
          <td class="infobox-row-title" style="width: 70px;">GitHub</td>
          <td class="infobox-row"><a href='https://github.com/{{ include.github }}' link="_blank">{{ include.github }}</a></td>
+    </tr>
+    {% endif %}
+
+    {% if include.gitlab %}
+    <tr class="infobox-row" style="width:{% if include.width %}{{ include.width }}{% else %}400px{% endif %}">
+         <td class="infobox-row-title" style="width: 70px;">GitLab</td>
+         <td class="infobox-row"><a href='https://gitlab.com/{{ include.gitlab }}' link="_blank">{{ include.gitlab }}</a></td>
     </tr>
     {% endif %}
 

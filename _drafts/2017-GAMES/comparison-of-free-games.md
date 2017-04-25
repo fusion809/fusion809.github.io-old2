@@ -12,6 +12,7 @@ categories:       free, games, overviews
 {% include_relative 02-criteria.md %}
 {% include_relative 0ad.md %}
 {% include_relative alienarena.md %}
+{% include_relative battle-for-wesnoth.md %}
 {% include_relative boswars.md %}
 {% include_relative eternal-lands.md %}
 {% include_relative freeciv.md %}
@@ -22,5 +23,6 @@ categories:       free, games, overviews
 {% include_relative supertux.md %}
 {% include_relative supertuxkart.md %}
 {% include_relative urbanterror.md %}
+{% include_relative xonotic.md %}
 
 {% include_relative footnotes.html %}
