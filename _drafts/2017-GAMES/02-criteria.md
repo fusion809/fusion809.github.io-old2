@@ -9,6 +9,6 @@ Unfortunately, however, no game I am aware of fulfils each of these requirements
 
 The criteria for a game getting a mention in this post are that:
 
-* The game is fairly noteworthy
+* The game is fairly noteworthy or popular.
 * The game *at least* has a free-to-play version available. Despite this fairly loose requirement, most games covered in this post are free and open-source.
 * The game is Linux-compatible.
