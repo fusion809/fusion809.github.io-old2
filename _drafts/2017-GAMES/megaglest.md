@@ -1,4 +1,10 @@
 ## MegaGlest
 {% include Infoboxes/game.html game="MegaGlest" logo="MegaGlest.png" screenshot="MegaGlest_3.13.0.png" screenshot_caption="Screenshot of MegaGlest 3.13.0 running on Gentoo Linux" date="2010" forked="Glest" development="Post-release" license="GPLv3" genre="Real-time strategy" language="C++" website="<a href='https://megaglest.org' link='_blank'>megaglest.org</a>" wiki="<a href='https://docs.megaglest.org/' link='_blank'>docs.megaglest.org</a>" official-wiki="Yes" irc="#MegaGlest" irc-server="megaglest.org" github="MegaGlest/megaglest-source" sf="megaglest" platforms="FreeBSD, macOS, NetBSD, OpenBSD, Windows NT" %}
 
+***MegaGlest*** is a free and open-source, cross-platform, three-dimensional real-time strategy game that was forked from the discontinued *Glest* game in 2010. *Glest*'s development ceased in 2009, so *MegaGlest* is essentially a project to try and keep the game alive in some form. *MegaGlest* has graphics of similar quality to that of *SuperTuxKart*, but they are poorer than that of *0 A.D.* and *RuneScape*. In *MegaGlest* the player leads an army consisting of one of seven different factions: Egypt, Indians, Magic, Norsemen, Persians, Romans or Tech. It is played on one of seventeen different maps. Further details about gameplay are mentioned in this quote from the official website:{% include_relative fn-inline.html no="10" %}
+
+> A game of MegaGlest takes place on a map of varying size, such as large plains and fields, with terrain features like rivers, mountains, seas, or cliffs. Players must establish settlements to gain resources, defend against other players, and train units to explore the map and attack enemies. Different resources have to be gathered by every faction. This can be energy, food, gold, housing, stone and wood. Choose a faction and create its different units and buildings while developing its unique abilities over the course of the game. But beware: micro management and strategy matter, so chose wisely when deciding which units to use when and where if you want a chance to beat the enemy.
+
+### Availability
+
 {% include Layouts/clear.html %}
