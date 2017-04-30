@@ -117,16 +117,14 @@ a {
 
 /**
  * Blockquotes
- *
- * Following CSS code comes from http://codepen.io/maxds/pen/DcveB
-*/
+ */
 
 blockquote {
-    display:block;
     background: #fff;
-    padding: 15px 20px 15px 45px;
-    margin: 0 0 20px;
+    padding: 15px 45px 15px 45px;
+    margin: 0px 420px 20px 0px;
     position: relative;
+    display: flex;
 
     /*Font*/
     font-family: Georgia, serif;
@@ -172,7 +170,7 @@ blockquote:after {
     /*Positioning*/
     position: absolute;
     right: 10px;
-    bottom: -10px;
+    bottom: -20px;
 }
 
 /**
