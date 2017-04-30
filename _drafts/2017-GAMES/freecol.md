@@ -17,6 +17,6 @@ The following distributions have a package for *FreeCol* in their official repos
 while the following distributions have no such official package:
 
 * CentOS
-* openSUSE, although a package for FreeCol 0.10.7 (an outdated version considering the latest, as of 22 April 2017, is 0.11.6) is in the unofficial `games` repository for openSUSE Tumbleweed.
+* openSUSE, although a package for FreeCol 0.10.7 (an outdated version considering the latest, as of 22 April 2017, is 0.11.6) is in the unofficial {% include Packages/gamesr.html %} repository for openSUSE Tumbleweed.
 
 {% include Layouts/clear.html %}

@@ -17,7 +17,7 @@ and it is not in the official repositories of:
 
 * Arch Linux, although it is in the [Arch User Repository](https://aur.archlinux.org/packages/boswars).
 * CentOS
-* openSUSE, although it is in the unofficial `games` repository.
+* openSUSE, although it is in the unofficial {% include Packages/gamesr.html %} repository.
 
 The *Bos Wars* development team also provide an official tarball binary for *Bos Wars*, a link to it can be found on the [downloads page](https://www.boswars.org/download.shtml).
 

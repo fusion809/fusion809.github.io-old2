@@ -13,7 +13,7 @@ No *official* cross-distribution Linux binary is available for *BfW*, as users a
 * {% include Packages/fedora.html package="wesnoth" %}
 * {% include Packages/gentoo.html package="games-strategy/wesnoth" %}
 * {% include Packages/mageia.html package="wesnoth" %}
-* {% include Packages/opensuse.html package="wesnoth" %}
+* {% include Packages/opensuse.html package="wesnoth" variant="Tumbleweed " %}, for Leap one will have to install *BfW* from the unofficial {% include Packages/gamesr.html %} repository. 
 * {% include Packages/sabayon.html package="games-strategy/wesnoth" %}
 * {% include Packages/ubuntu.html package="wesnoth" %}
 

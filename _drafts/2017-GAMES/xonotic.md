@@ -13,7 +13,7 @@
 * {% include Packages/fedora.html package="xonotic" %}
 * {% include Packages/gentoo.html package="games-fps/xonotic" %}
 * {% include Packages/mageia.html package="xonotic" %}
-* {% include Packages/opensuse.html package="xonotic" %}. Official packages are available for Leap 42.2 and Tumbleweed only, the unofficial `games` overlay provides a package for Leap 42.1.
+* {% include Packages/opensuse.html package="xonotic" %}. Official packages are available for Leap 42.2 and Tumbleweed only, the unofficial {% include Packages/gamesr.html %}  overlay provides a package for Leap 42.1.
 * PCLinuxOS (package name: [`xonotic`](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/xonotic-0.8.1-1pclos2015.x86_64.rpm.html))
 * {% include Packages/sabayon.html package="games-fps/xonotic" %}
 

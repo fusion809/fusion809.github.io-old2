@@ -17,7 +17,7 @@ and it is not available for the following distributions, from their official rep
 * Debian
 * Fedora
 * Mageia
-* openSUSE, although an up-to-date [`eternal-lands`](http://software.opensuse.org/package/eternal-lands) package exists in the unofficial `games` repository.
+* openSUSE, although an up-to-date [`eternal-lands`](http://software.opensuse.org/package/eternal-lands) package exists in the unofficial {% include Packages/gamesr.html %}  repository.
 * Ubuntu
 
 {% include Layouts/clear.html %}

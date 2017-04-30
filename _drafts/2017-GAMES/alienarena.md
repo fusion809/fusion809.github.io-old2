@@ -19,6 +19,6 @@ Slightly fewer distributions have official packages for *Alien Arena* than for *
 of note, the following two popular distributions have no official packages for *Alien Arena*:
 
 * CentOS, not even the EPEL repositories have it.
-* openSUSE, neither Leap nor Tumbleweed have official packages for it. Although the unofficial `games` repository does have *Alien Arena* in it for both Leap and Tumbleweed.
+* openSUSE, neither Leap nor Tumbleweed have official packages for it. Although the unofficial {% include Packages/gamesr.html %} repository does have *Alien Arena* in it for both Leap and Tumbleweed.
 
 {% include Layouts/clear.html %}

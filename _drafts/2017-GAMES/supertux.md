@@ -14,7 +14,7 @@ SuperTux is a fairly ubiquitous game in the Linux world. Distributions with a *S
 * {% include Packages/fedora.html package="supertux" %}
 * {% include Packages/gentoo.html package="games-arcade/supertux" %}
 * {% include Packages/mageia.html package="supertux" %}
-* {% include Packages/opensuse.html package="supertux2" %}, only a package in the official repositories of openSUSE Tumbleweed exist. No such package exists in the official repositories of either supported openSUSE Leap release. Despite this, a SuperTux package is available for Leap in the `games` repository.
+* {% include Packages/opensuse.html package="supertux2" %}, only a package in the official repositories of openSUSE Tumbleweed exist. No such package exists in the official repositories of either supported openSUSE Leap release. Despite this, a SuperTux package is available for Leap in the unofficial {% include Packages/gamesr.html %} repository.
 * [PCLinuxOS](http://rpm.pbone.net/index.php3/stat/4/idpl/34715988/dir/pclinuxos/com/supertux-0.5.0-1pclos2016.x86_64.rpm.html)
 * {% include Packages/sabayon.html package="games-arcade/supertux" %}
 * {% include Packages/ubuntu.html package="supertux" %}
