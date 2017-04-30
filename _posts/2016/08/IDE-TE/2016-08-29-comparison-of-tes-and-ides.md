@@ -2,7 +2,7 @@
 layout:           post
 title:            "A Comparison of Free and Open-Source Text Editors and IDEs"
 date:             2016-08-29 +1000
-last_modified_at: 2017-04-05 05:30:43 +1000
+last_modified_at: 2017-04-30 18:06:38 +1000
 categories:       comparisons, text-editors, integrated-development-environments, linux
 revision:         9
 permalink:        /comparison-of-tes-and-ides/
