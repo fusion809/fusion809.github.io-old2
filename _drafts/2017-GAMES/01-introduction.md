@@ -21,3 +21,18 @@ with the following extra (on top of the Portage tree, of course) overlays enable
 * [`steam-overlay`](https://github.com/anyc/steam-overlay)
 
 and it returned: [this list](https://github.com/fusion809/fusion809.github.io/blob/master/_drafts/2017-GAMES/games-list-gentoo.txt) which is over 1,100 lines long, which corresponds to over 1,100 separate games! Beware, however, that as said in the ["*A Comparison of Major Free Operating Systems*"](/comparison-major-free-operating-systems/) post the Portage tree and these extra overlays are riddled with proprietary and even paid software so not all these games will be free.
+
+### Distribution-specific notes
+In each game monograph I will be mentioning how easy it is to get the game on the following popular, sufficiently independent Linux distributions:
+
+* Arch Linux
+* CentOS
+* Debian
+* Fedora
+* Gentoo Linux
+* Mageia
+* openSUSE
+* Sabayon Linux, while it is based on Gentoo Linux it uses its own repositories (containing both packages in the Gentoo Portage tree and in a couple of its own repositories) and binary package manager (Entropy), hence making it sufficiently independent to deserve a mention. 
+* Ubuntu
+
+distributions based on these nine distributions usually have repositories containing at least many of the same packages, hence are not mentioned as there are just too many of them to mention them all. 
