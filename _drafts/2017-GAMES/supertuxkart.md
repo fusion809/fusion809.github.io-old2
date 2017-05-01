@@ -18,7 +18,7 @@ This is a game I have personally found rather enjoyable, although I would say it
 * {% include Packages/gentoo.html package="games-action/supertuxkart" %}
 * {% include Packages/mageia.html package="supertuxkart" %}
 * {% include Packages/opensuse.html package="supertuxkart" %}
-* [PCLinuxOS](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/supertuxkart-0.9.1-1pclos2015.x86_64.rpm.html)
+* PCLinuxOS (package name: [`supertuxkart`](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/supertuxkart-0.9.1-1pclos2015.x86_64.rpm.html)))
 * {% include Packages/sabayon.html package="games-action/supertuxkart" %}
 * {% include Packages/ubuntu.html package="supertuxkart" %}
 
