@@ -5,19 +5,10 @@
 
 > A game of MegaGlest takes place on a map of varying size, such as large plains and fields, with terrain features like rivers, mountains, seas, or cliffs. Players must establish settlements to gain resources, defend against other players, and train units to explore the map and attack enemies. Different resources have to be gathered by every faction. This can be energy, food, gold, housing, stone and wood. Choose a faction and create its different units and buildings while developing its unique abilities over the course of the game. But beware: micro management and strategy matter, so chose wisely when deciding which units to use when and where if you want a chance to beat the enemy.
 
-### Availability
+### Packaging details
 On Linux *MegaGlest* is often split into two packages: `megaglest` and `megaglest-data`, with `megaglest` containing the game engine and `megaglest-data` containing the game content. Together these two packages have an installed size of roughly 500 MB. To illustrate this here is a command I ran on Gentoo Linux (on 30 April 2017) and below it is the output:
 
-<div class="console language-bash highlighter-rouge">
-<pre style="border: none; border-bottom-style: none; border-bottom-color: transparent; border-top-style: none; border-top-color: transparent; border-left-style: none; border-left-color: transparent; border-right-style: none; border-right-color: transparent; box-shadow: none;"><span class="codeu"><abbr title="This command is to be run as standard, non-root, user">user $</abbr></span> equery s games-strategy/megaglest games-strategy/megaglest-data
-<code> <span class="k">*</span> games-strategy/megaglest-data-3.13.0
-         Total files : 6877
-         Total size  : 488.93 MiB
-
- <span class="k">*</span> games-strategy/megaglest-3.13.0
-         Total files : 27
-         Total size  : 10.93 MiB
-</code></pre></div>
+{% include Code/equery.html package1="games-strategy/megaglest-data" package2="games-strategy/megaglest" packageversion1="3.13.0" files1="6877" files2="27" size1="488.93" size2="10.93" %}
 
 Both packages were provided by my own [`fusion809-overlay`](https://github.com/fusion809/fusion809-overlay), building the ebuild in the Portage tree fails, due to an issue I reported in [Gentoo Bug 614408](https://bugs.gentoo.org/show_bug.cgi?id=614408).
 

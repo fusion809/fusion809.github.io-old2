@@ -5,7 +5,11 @@
 
 The latest release of *Alien Arena* was in September 2013.{% include_relative fn-inline.html no="7" %} Despite this, COR Entertainment still seems active in developing *Alien Arena*, as they have asked people to vote for their upcoming game, "[*Alien Arena: Warriors of Mars*](http://steamcommunity.com/sharedfiles/filedetails/?id=897799480)" on Steam Greenlight.{% include_relative fn-inline.html no="8" %}
 
-### Availability
+### Packaging details
+On most Linux distributions the installed size of *Alien Arena* is around 1.15 GB, for example, here is a command I ran on Gentoo Linux (on 1 May 2017) and its output:
+
+{% include Code/equery.html package1="games-fps/alienarena" packageversion1="20130827" files1="4138" size1="1.15" sizeunit1="GiB" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-fps/alienarena/alienarena-20130827.ebuild?id=2717f31754ada85bb68e56df2ae489188d722d1b" %}
+
 Slightly fewer distributions have official packages for *Alien Arena* than for *0 A.D.* Those that do have official packages for *Alien Arena* include:
 
 * {% include Packages/archlinux.html package="alienarena" %}

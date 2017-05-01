@@ -3,7 +3,11 @@
 
 ***FreeCol*** is an open-source clone of [Sid Meier's Colonization](https://en.wikipedia.org/wiki/Sid_Meier%27s_Colonization). Its graphics are similarly two-dimensional and low-quality. It is fairly similar to *Freeciv* in that one has to create a civilization (or colony) of settlers in the New World (the Americas) and defeat the royal expeditionary forces. The storyline of *FreeCol* begins in 1492. In theory, as it is written in Java, it should be runnable on any Java-compatible platform and it is known to run on FreeBSD, Linux, macOS and Windows NT.
 
-### Availability
+### Packaging details
+*FreeCol* has an installed size of approximately 41.15 MB, and here is the output of `equery s` on Gentoo Linux (on 1 May 2017):
+
+{% include Code/equery.html package1="games-strategy/freecol" packageversion1="0.11.6" size1="41.15" files1="1531" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-strategy/freecol/freecol-0.11.6.ebuild?id=fa8320cf0cf3f4543f3163e7b9eb7208305ec0a3" %}
+
 The following distributions have a package for *FreeCol* in their official repositories:
 
 * {% include Packages/archlinux.html package="freecol" %}

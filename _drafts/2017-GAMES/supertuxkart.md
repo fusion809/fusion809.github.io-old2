@@ -5,7 +5,7 @@
 
 This is a game I have personally found rather enjoyable, although I would say its graphics are lower quality than that of *0 A.D.* and *RuneScape*'s NXT client.
 
-### Availability
+### Packaging details
 *SuperTuxKart* is officially distributed by its development team as a cross-distribution binary tarball. It is also on [Steam Greenlight](https://steamcommunity.com/sharedfiles/filedetails/?id=850895445), so it is possible one day it will be available on Steam. It is also available from the official repositories of most modern Linux distributions, including:
 
 * {% include Packages/archlinux.html package="supertuxkart" %}

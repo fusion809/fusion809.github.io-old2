@@ -5,7 +5,7 @@
 
 It is one of my favourite games, as while it is simple on paper it can be an entertaining challenge. One can create one's own maps for the game and otherwise customize it. One can play it with a joystick or just with a mouse.
 
-### Availability
+### Packaging details
 SuperTux is a fairly ubiquitous game in the Linux world. Distributions with a *SuperTux* package in their official repository(ies) include:
 
 * {% include Packages/archlinux.html package="supertux" %}

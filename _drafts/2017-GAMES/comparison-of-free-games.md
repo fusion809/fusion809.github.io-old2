@@ -1,6 +1,6 @@
 ---
 date:             2017-03-27 +1000
-layout:           post
+layout:           post4
 last_modified_at: 2017-05-01 17:24:34 +1000
 title:            "An Overview of Free Games Available for Linux"
 redirect_from:    /free-games/
@@ -18,6 +18,7 @@ categories:       free, games, overviews
 {% include_relative freeciv.md %}
 {% include_relative freecol.md %}
 {% include_relative freedroidrpg.md %}
+{% include_relative gnome-chess.md %}
 {% include_relative megaglest.md %}
 {% include_relative openra.md %}
 {% include_relative runescape.md %}

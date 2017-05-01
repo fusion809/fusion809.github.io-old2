@@ -7,9 +7,11 @@ It can be played as a single player, or one can play against other players. In s
 
 It utilizes its very own Pyrogenesis game engine; both *0 A.D.* and the Pyrogenesis game engine are written in C++. *0 A.D.*'s graphics are perhaps the best of any open-source Linux-compatible game I have ever seen. In fact, its graphics rival that of many proprietary games like *Age of Empires III* (AoE III) and *RuneScape*. I would argue that *0 A.D.*'s graphics are superior to that of AoE III, as I have used both and found *0 A.D.*'s graphics better. *0 A.D.* is developed by Wildfire Games, an international team of volunteer developers, funded by Software in the Public Interest, Inc. (SPI), a U.S. non-profit organization that also funds several other open-source software projects including Arch Linux, Debian and LibreOffice.{% include_relative fn-inline.html no="3" %}
 
-Most Linux distributions split *0 A.D.* into two packages, that are often named `0ad` and `0ad-data`, respectively. The `0ad` package usually provides the game engine while `0ad-data` provides the game content. Together these two packages are usually over 1 GB in installed size on most distributions. 
+### Packaging details
+Most Linux distributions split *0 A.D.* into two packages, that are often named `0ad` and `0ad-data`, respectively. The `0ad` package usually provides the game engine while `0ad-data` provides the game content. Together these two packages are usually over 1.5 GB in installed size on most distributions. To illustrate this fact here is a command I ran on Gentoo Linux (on 1 May 2017) and below it is the output:
 
-### Availability
+{% include Code/equery.html package1="games-strategy/0ad" packageversion1="0.0.21_alpha" files1="46" size1="14.88" files2="61" size2="1.50" sizeunit2="GiB" overlay="fusion809" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/060b3c61570c65a83dabced63ebe71817e56fddf/games-strategy/0ad/0ad-0.0.21_alpha.ebuild" ebuildurl2="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-strategy/0ad-data/0ad-data-0.0.21_alpha.ebuild?id=92e30e27bdb5940d3aa5b5039b3b214204b59cc5" %}
+
 *0 A.D.* is one of the easiest games to get on Linux, the majority of Linux distributions have a *0 A.D.* package in their official repositories (usually named `0ad`, with game content placed in a separate package called `0ad-data`), including:{% include_relative fn-inline.html no="4" puncr="," %}{% include_relative fn-inline.html no="5" %}
 
 * {% include Packages/archlinux.html package="0ad" puncr="," %} *0 A.D.* also has an [unofficial package](https://aur.archlinux.org/packages/0ad-git) in its Arch User Repository that builds *0 A.D.* from the latest git snapshot.

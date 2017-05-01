@@ -5,7 +5,7 @@
 
 *Xonotic* packages for the various Linux distributions often have an installed size of almost 1 GB. 
 
-### Availability
+### Packaging details
 *Xonotic* is distributed by its developers as a zip archive, which can be run on, in theory, an Linux distribution. It is a fairly ubiquitous game in the Linux world, with the following distributions having packages for it in their official repositories:
 
 * {% include Packages/archlinux.html package="xonotic" %}
