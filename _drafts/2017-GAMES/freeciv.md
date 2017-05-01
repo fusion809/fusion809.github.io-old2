@@ -4,7 +4,7 @@
 ***Freeciv*** is a free and open-source turn-based strategy (TBS) game that resembles early versions of Sid Meier's Civilization. Its graphics are of low-quality and it supports both 2D and 3D graphics. In it users build their own civilization and fight opposing teams. I personally have never seen the appeal to TBS games, so I have hardly used Freeciv. It has both a standalone client and a web-based client through which one can play the game.
 
 ### Packaging details
-*Freeciv* has an installed size of approximately 47 MB on Linux; the output of `equery s` on Gentoo Linux (on 1 May 2017) is:
+*Freeciv* 2.5.6 has an installed size of approximately 47 MB on Linux; the output of `equery s` on Gentoo Linux (on 1 May 2017) is:
 
 {% include Code/equery.html package1="games-strategy/freeciv" packageversion1="2.5.6" files1="3594" size1="47.15" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-strategy/freeciv/freeciv-2.5.6.ebuild?id=fa8320cf0cf3f4543f3163e7b9eb7208305ec0a3" %}
 

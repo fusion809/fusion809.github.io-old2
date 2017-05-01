@@ -6,6 +6,10 @@
 *Xonotic* packages for the various Linux distributions often have an installed size of almost 1 GB. 
 
 ### Packaging details
+*Xonotic* 0.8.1  has an installed size of approximately 890 MB. `equery` has this to say about its installed size:
+
+{% include Code/equery.html package1="games-fps/xonotic" packageversion1="0.8.1" files1="53" size1="889.31" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-fps/xonotic/xonotic-0.8.1.ebuild?id=52dce951269764f9aa6e8599b85bd0fc994e8277" %}
+
 *Xonotic* is distributed by its developers as a zip archive, which can be run on, in theory, an Linux distribution. It is a fairly ubiquitous game in the Linux world, with the following distributions having packages for it in their official repositories:
 
 * {% include Packages/archlinux.html package="xonotic" %}

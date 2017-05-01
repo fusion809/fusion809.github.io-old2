@@ -4,6 +4,10 @@
 ***Urban Terror*** is a mixed-licensed, cross-platform FPS game. It uses its own open-source fork of the ioquake3 game engine, but all game content and code is proprietary-licensed. It is unusual among games I have tried in that instead of taking a username (with or without a password too) to play, it requires one to register on its website and then get an authentication key and enter it to login to the game. I personally have found its graphics high-quality, in similar quality to 0 A.D. and RuneScape. I have only limited experience with this game, but from what I can tell it seems rather high-quality. The only thing about it I dislike is its unusual keybindings. In most games one uses the arrow keys to move, but in *Urban Terror* one uses letter keys to move.
 
 ### Packaging details
+*Urban Terror* 4.3.2 has an installed size of approximately 1.4 GB; this is what `equery` has to say about its size:
+
+{% include Code/equery.html package1="games-fps/urbanterror" packageversion1="4.3.2" files1="42" size1="1.37" sizeunit1="GiB" overlay="fusion809" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/b510caa/games-fps/urbanterror/urbanterror-4.3.2.ebuild" %}
+
 It is available from the official repositories of:
 
 * {% include Packages/archlinux.html package="urbanterror" %}

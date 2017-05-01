@@ -6,7 +6,7 @@
 *OpenRA* is unusual among games in that it is written in C# and is built on the Mono framework. Most games are written in C, C++ or occasionally Java or Python. Its graphics are low-quality, although frankly I do not think graphics are really a priority for its development team as otherwise they probably would not write it in C#.
 
 ### Packaging details
-On Linux *OpenRA* has an installed size of approximately 25 MB. Here is what `equery` has to say about its size on Gentoo Linux (on 2 May 2017):
+On Linux *OpenRA* 20170421 has an installed size of approximately 25 MB. Here is what `equery` has to say about its size on Gentoo Linux (on 2 May 2017):
 
 {% include Code/equery.html package1="games-strategy/openra" packageversion1="20170421" files1="2013" size1="26.51" overlay="fusion809" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/63cbd6d/games-strategy/openra/openra-20170421.ebuild" %}
 

@@ -6,7 +6,11 @@
 It is one of my favourite games, as while it is simple on paper it can be an entertaining challenge. One can create one's own maps for the game and otherwise customize it. One can play it with a joystick or just with a mouse.
 
 ### Packaging details
-SuperTux is a fairly ubiquitous game in the Linux world. Distributions with a *SuperTux* package in their official repository(ies) include:
+On Linux *SuperTux* 0.5.1 has an installed size of approximately 125 MB. Here is what `equery` has to say about its installed size:
+
+{% include Code/equery.html package1="games-arcade/supertux" packageversion1="0.5.1" files1="3384" size1="126.82" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-arcade/supertux/supertux-0.5.1.ebuild?id=fabb4eec7e2144c418733c13c958c931cc691bb2" %} 
+
+*SuperTux* is a fairly ubiquitous game in the Linux world. Distributions with a *SuperTux* package in their official repository(ies) include:
 
 * {% include Packages/archlinux.html package="supertux" %}
 * {% include Packages/centos.html package="supertux" epel="6" %} although CentOS 7 does not.

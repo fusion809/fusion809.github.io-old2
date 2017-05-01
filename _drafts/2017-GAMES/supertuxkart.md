@@ -6,6 +6,10 @@
 This is a game I have personally found rather enjoyable, although I would say its graphics are lower quality than that of *0 A.D.* and *RuneScape*'s NXT client.
 
 ### Packaging details
+*SuperTuxKart* 0.9.2 has an installed size of approximately 620 MB and `equery` has this to say about its size:
+
+{% include Code/equery.html package1="games-action/supertuxkart" packageversion1="0.9.2" files1="4633" size1="618.08" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-action/supertuxkart/supertuxkart-0.9.2.ebuild?id=52dce951269764f9aa6e8599b85bd0fc994e8277" %}
+
 *SuperTuxKart* is officially distributed by its development team as a cross-distribution binary tarball. It is also on [Steam Greenlight](https://steamcommunity.com/sharedfiles/filedetails/?id=850895445), so it is possible one day it will be available on Steam. It is also available from the official repositories of most modern Linux distributions, including:
 
 * {% include Packages/archlinux.html package="supertuxkart" %}
