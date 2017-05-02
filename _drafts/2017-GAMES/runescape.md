@@ -12,7 +12,7 @@ The Java client is far easier to use on Linux and it supports at least x86 and x
 #### NXT
 Its installed size on Linux is approximately 8 MB, although it is worthwhile noting that the client downloads an awful lot of data (~3.4 GB for myself as of 2 May 2017) to a folder in the user home directory called `Jagex`. Here is what `equery` has to say about the `games-rpg/runescape-launcher` package's installed size:
 
-{% include Code/equery.html package1="games-rpg/runescape-launcher" packageversion1="2.2.4" files1="41" size1="7.53" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/c0dcbe1/games-rpg/runescape-launcher/runescape-launcher-2.2.4.ebuild" %}
+{% include Code/equery.html package1="games-rpg/runescape-launcher" packageversion1="2.2.4" files1="41" size1="7.53" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/c0dcbe1/games-rpg/runescape-launcher/runescape-launcher-2.2.4.ebuild" overlay="fusion809" %}
 
 The NXT client is only in the official repositories of a small handful of Linux distributions, including:
 

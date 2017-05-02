@@ -26,6 +26,8 @@ categories:       free, games, overviews
 {% include_relative supertuxkart.md %}
 {% include_relative urbanterror.md %}
 {% include_relative warzone2100.md %}
+{% include_relative xboard.md %}
+{% include_relative xmahjongg.md %}
 {% include_relative xonotic.md %}
 
 {% include_relative footnotes.html %}
