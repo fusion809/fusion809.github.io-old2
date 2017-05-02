@@ -8,7 +8,7 @@
 ### Packaging details
 On Linux *MegaGlest* is often split into two packages: `megaglest` and `megaglest-data`, with `megaglest` containing the game engine and `megaglest-data` containing the game content. Together these two packages have an installed size of roughly 500 MB. To illustrate this here is a command I ran on Gentoo Linux (on 30 April 2017) and below it is the output:
 
-{% include Code/equery.html package1="games-strategy/megaglest-data" package2="games-strategy/megaglest" packageversion1="3.13.0" files1="6877" files2="27" size1="488.93" size2="10.93" %}
+{% include Code/equery.html package1="games-strategy/megaglest" packageversion1="3.13.0" files1="27" files2="6877" size1="10.93" size2="488.93" overlay="fusion809" ebuildurl1="https://github.com/fusion809/fusion809-overlay/blob/791d0d6/games-strategy/megaglest/megaglest-3.13.0.ebuild" ebuildurl2="https://github.com/fusion809/fusion809-overlay/blob/0a28377/games-strategy/megaglest-data/megaglest-data-3.13.0.ebuild" %}
 
 Both packages were provided by my own [`fusion809-overlay`](https://github.com/fusion809/fusion809-overlay), building the ebuild in the Portage tree fails, due to an issue I reported in [Gentoo Bug 614408](https://bugs.gentoo.org/show_bug.cgi?id=614408).
 

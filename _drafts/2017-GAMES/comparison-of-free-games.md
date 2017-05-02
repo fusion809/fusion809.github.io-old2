@@ -19,6 +19,7 @@ categories:       free, games, overviews
 {% include_relative freecol.md %}
 {% include_relative freedroidrpg.md %}
 {% include_relative gnome-chess.md %}
+{% include_relative kpatience.md %}
 {% include_relative megaglest.md %}
 {% include_relative openra.md %}
 {% include_relative runescape.md %}
