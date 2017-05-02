@@ -6,7 +6,7 @@ I intend on mentioning a wide variety of free games, including those I dislike a
 
 There are over a thousand different games available for Linux in all, so in here I will only be covering free games of particular interest to myself (and hopefully the majority of Linux gamers).
 
-### Side note
+<h3 style="margin-right: 0px;">Side note</h3>
 To check how many Linux games there were available on Gentoo Linux, on 14 April 2017, I ran the command:
 
 {% include Code/codeu.html line1='emerge -s "%@^games" | grep "*" | cut -d "/" -f 2 | cut -d "[" -f 1 | sort -u' %}
@@ -22,7 +22,7 @@ with the following extra (on top of the Portage tree, of course) overlays enable
 
 and it returned: [this list](https://github.com/fusion809/fusion809.github.io/blob/master/_drafts/2017-GAMES/games-list-gentoo.txt) which is over 1,100 lines long, which corresponds to over 1,100 separate games! Beware, however, that as said in the ["*A Comparison of Major Free Operating Systems*"](/comparison-major-free-operating-systems/) post the Portage tree and these extra overlays are riddled with proprietary and even paid software so not all these games will be free.
 
-### Distribution-specific notes
+<h3 style="margin-right: 0px;">Distribution-specific notes</h3>
 In each game monograph I will be mentioning how easy it is to get the game on the following popular, sufficiently independent Linux distributions:
 
 * Arch Linux

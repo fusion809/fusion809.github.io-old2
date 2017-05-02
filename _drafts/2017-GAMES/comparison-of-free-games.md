@@ -1,7 +1,7 @@
 ---
 date:             2017-03-27 +1000
 layout:           post4
-last_modified_at: 2017-05-02 05:59:42 +1000
+last_modified_at: 2017-05-02 23:47:54 +1000
 title:            "An Overview of Free Games Available for Linux"
 redirect_from:    /free-games/
 permalink:        /free-linux-games/
@@ -25,6 +25,7 @@ categories:       free, games, overviews
 {% include_relative supertux.md %}
 {% include_relative supertuxkart.md %}
 {% include_relative urbanterror.md %}
+{% include_relative warzone2100.md %}
 {% include_relative xonotic.md %}
 
 {% include_relative footnotes.html %}
