@@ -22,6 +22,7 @@ while:
 * Fedora
 * Gentoo Linux
 * openSUSE
+* PCLinuxOS
 * Sabayon Linux
 * SUSE Linux Enterprise (SLE)
 * Ubuntu

@@ -6,7 +6,7 @@
 ### Packaging details
 The installed size of *Bos Wars* 2.7 on Linux is roughly 88 MB, here is an `equery s` command and its output on Gentoo Linux (on 1 May 2017):
 
-{% include Code/equery.html package1="games-strategy/boswars" packageversion1="2.7-r1" size1="87.67" files1="1685" %}
+{% include Code/equery.html package1="games-strategy/boswars" packageversion1="2.7-r1" size1="87.67" files1="1685" ebuildurl1="https://gitweb.gentoo.org/repo/gentoo.git/tree/games-strategy/boswars-2.7-r1.ebuild?id=fcc333a85b1ce79142b43ab773bfc74efdc707ad" %}
 
 *Bos Wars* is a fairly ubiquitous game in the Linux world; the following distributions have a package for *Bos Wars* in their official repository(ies):
 

@@ -17,6 +17,7 @@ Slightly fewer distributions have official packages for *Alien Arena* than for *
 * {% include Packages/fedora.html package="alienarena" %}
 * {% include Packages/gentoo.html package="games-fps/alienarena" %}
 * {% include Packages/mageia.html package="alienarena" %}
+* {% include Packages/pclinuxos.html package="alienarena" %}
 * {% include Packages/sabayon.html package="games-fps/alienarena" %}
 * {% include Packages/ubuntu.html package="alien-arena" %}
 

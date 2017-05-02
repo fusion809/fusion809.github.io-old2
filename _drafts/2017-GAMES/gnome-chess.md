@@ -20,6 +20,6 @@ As *GNOME Chess* is part of the game application suite of GNOME it should be ava
 * {% include Packages/mageia.html package="gnome-chess" %}
 * {% include Packages/opensuse.html package="gnome-chess" %}
 * {% include Packages/sabayon.html package="games-board/gnome-chess" %}
-* {% include Packages/ubuntu.html package="gnome-chess" %}
+* {% include Packages/ubuntu.html package="gnome-chess" %}, only in the official repositories of 14.04 and later releases.
 
 {% include Layouts/clear.html %}

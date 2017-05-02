@@ -12,13 +12,13 @@
 No *official* cross-distribution Linux binary is available for *BfW*, as users are encouraged to get *BfW* from their distribution's package manager or by grabbing the source code and compiling it themselves.{% include_relative fn-inline.html no="9" %} It is probably the single most ubiquitous game in the Linux world and it is available from the official repositories of the following distributions:
 
 * {% include Packages/archlinux.html package="wesnoth" %}
-* {% include Packages/centos.html package="wesnoth" letter="w" %}
+* {% include Packages/centos.html package="wesnoth" %}
 * {% include Packages/debian.html package="wesnoth" %}
 * {% include Packages/fedora.html package="wesnoth" %}
 * {% include Packages/gentoo.html package="games-strategy/wesnoth" %}
 * {% include Packages/mageia.html package="wesnoth" %}
 * {% include Packages/opensuse.html package="wesnoth" variant="Tumbleweed " %}, for Leap one will have to install *BfW* from the unofficial {% include Packages/gamesr.html %} repository.
-* PCLinuxOS (package name: [`wesnoth`](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/wesnoth-1.12.6-1pclos2016.x86_64.rpm.html))
+* {% include Packages/pclinuxos.html package="wesnoth" %}
 * {% include Packages/sabayon.html package="games-strategy/wesnoth" %}
 * {% include Packages/ubuntu.html package="wesnoth" %}
 

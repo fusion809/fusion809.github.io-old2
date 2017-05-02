@@ -11,16 +11,17 @@
 It is available from the official repositories of:
 
 * {% include Packages/archlinux.html package="urbanterror" %}
+* {% include Packages/centos.html package="urbanterror" versions="7" %}
 * {% include Packages/gentoo.html package="games-fps/urbanterror" %}
 * {% include Packages/mageia.html package="urbanterror" %}
 * {% include Packages/sabayon.html package="games-fps/urbanterror" %}
 
 While it is not available from the official repositories of:
 
-* CentOS
 * Debian
 * Fedora
 * openSUSE
+* PCLinuxOS
 * Ubuntu
 
 this is not surprising as CentOS, Debian, Fedora, openSUSE and Ubuntu have largely open-source only repositories, although in the case of Debian and Ubuntu proprietary device driver and firmware packages exist in their official repositories.

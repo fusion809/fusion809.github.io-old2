@@ -19,7 +19,7 @@ Both packages were provided by my own [`fusion809-overlay`](https://github.com/f
 * {% include Packages/fedora.html package="megaglest" %}
 * {% include Packages/gentoo.html package="games-strategy/megaglest" %}
 * {% include Packages/mageia.html package="megaglest" %}
-* PCLinuxOS (package name: [`megaglest`](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/megaglest-3.6.0.3-1pclos2012.x86_64.rpm.html))
+* {% include Packages/pclinuxos.html package="megaglest" %}
 * {% include Packages/ubuntu.html package="megaglest" %}
 
 while it is not available from the official repository(ies) of:

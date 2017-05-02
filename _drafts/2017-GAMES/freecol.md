@@ -15,6 +15,7 @@ The following distributions have a package for *FreeCol* in their official repos
 * {% include Packages/fedora.html package="freecol" %}
 * {% include Packages/gentoo.html package="games-strategy/freecol" %}
 * {% include Packages/mageia.html package="freecol" %}
+* {% include Packages/pclinuxos.html package="freecol" %}
 * {% include Packages/sabayon.html package="games-strategy/freecol" %}
 * {% include Packages/ubuntu.html package="freecol" %}
 

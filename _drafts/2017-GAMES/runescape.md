@@ -17,7 +17,7 @@ Its installed size on Linux is approximately 8 MB, although it is worthwhile not
 The NXT client is only in the official repositories of a small handful of Linux distributions, including:
 
 * {% include Packages/gentoo.html package="games-rpg/runescape-launcher" %}
-* PCLinuxOS (package: [`runescape-launcher`](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/runescape-launcher-2.2.2-1pclos2016.x86_64.rpm.html)), their package is presently (as of 26 April 2017) the outdated 2.2.2 release, which is no longer supported as of the release of 2.2.4 on 3 April 2017.
+* {% include Packages/pclinuxos.html package="runescape-launcher" puncr="," %} their package is presently (as of 26 April 2017) the outdated 2.2.2 release, which is no longer supported as of the release of 2.2.4 on 3 April 2017.
 * {% include Packages/sabayon.html package="games-rpg/runescape-launcher" %}
 
 while it is in the unofficial repositories of:

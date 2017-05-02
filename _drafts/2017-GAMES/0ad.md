@@ -15,7 +15,7 @@ Most Linux distributions split *0 A.D.* into two packages, that are often named 
 *0 A.D.* is one of the easiest games to get on Linux, the majority of Linux distributions have a *0 A.D.* package in their official repositories (usually named `0ad`, with game content placed in a separate package called `0ad-data`), including:{% include_relative fn-inline.html no="4" puncr="," %}{% include_relative fn-inline.html no="5" %}
 
 * {% include Packages/archlinux.html package="0ad" puncr="," %} *0 A.D.* also has an [unofficial package](https://aur.archlinux.org/packages/0ad-git) in its Arch User Repository that builds *0 A.D.* from the latest git snapshot.
-* CentOS 7, the [EPEL repository of CentOS 7](https://dl.fedoraproject.org/pub/epel/7/x86_64/0/) provides the very latest version (alpha 21) of *0 A.D.*
+* {% include Packages/centos.html package="0ad" versions="7" %}, the EPEL repository presently provides the very latest *0 A.D.* release.
 * {% include Packages/debian.html package="0ad" puncr="," %} Debian 8 (Jessie) even has the latest *0 A.D.* in its backport repository. The latest *0 A.D.* is also in the testing and unstable repositories. The oldstable (Wheezy), oldstable-backports and stable (Jessie) repositories contain outdated *0 A.D.* releases.
 * deepin, the official repositories presently house the second-latest release of *0 A.D.*, alpha 20.
 * {% include Packages/fedora.html package="0ad" puncr="," %} presently the latest *0 A.D.* release is in the repositories of all supported Fedora releases (24, 25, 26 and rawhide).

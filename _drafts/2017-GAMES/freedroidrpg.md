@@ -22,6 +22,7 @@ while:
 
 * CentOS
 * openSUSE
+* PCLinuxOS
 
 do not have a FreedroidRPG package in their official repository(ies). openSUSE does have an outdated version of FreedroidRPG (0.15.1, when 0.16.1 is the latest as of 19 April 2017) in its unofficial {% include Packages/gamesr.html %} repository.
 

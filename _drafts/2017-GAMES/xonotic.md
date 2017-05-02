@@ -13,12 +13,12 @@
 *Xonotic* is distributed by its developers as a zip archive, which can be run on, in theory, an Linux distribution. It is a fairly ubiquitous game in the Linux world, with the following distributions having packages for it in their official repositories:
 
 * {% include Packages/archlinux.html package="xonotic" %}
-* {% include Packages/centos.html package="xonotic" letter="x" %}
+* {% include Packages/centos.html package="xonotic" versions="7" %}
 * {% include Packages/fedora.html package="xonotic" %}
 * {% include Packages/gentoo.html package="games-fps/xonotic" %}
 * {% include Packages/mageia.html package="xonotic" %}
 * {% include Packages/opensuse.html package="xonotic" %}. Official packages are available for Leap 42.2 and Tumbleweed only, the unofficial {% include Packages/gamesr.html %}  overlay provides a package for Leap 42.1.
-* PCLinuxOS (package name: [`xonotic`](https://pclinuxos.pkgs.org/rolling/pclinuxos-x86_64/xonotic-0.8.1-1pclos2015.x86_64.rpm.html))
+* {% include Packages/pclinuxos.html package="xonotic" %}
 * {% include Packages/sabayon.html package="games-fps/xonotic" %}
 
 while oddly it does not appear to be available from the official repositories of any Debian or Ubuntu release. In the case of Ubuntu, however, *Xonotic* is available from the [unofficial PlayDeb repository](http://www.playdeb.net/app/Xonotic).
